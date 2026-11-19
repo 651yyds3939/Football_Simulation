@@ -1,0 +1,306 @@
+{
+  "runs": [
+    {
+      "seed": 60155,
+      "scenario": "random",
+      "seconds": 192.99999999999588,
+      "outcome": "OUT",
+      "score": [
+        0,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 1,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "spawn_zones": {
+        "attacker": [
+          -1.0,
+          1.0,
+          -1.1,
+          1.1
+        ],
+        "defender": [
+          1.8,
+          3.2,
+          -1.25,
+          1.25
+        ],
+        "goal_side_margin": 0.25
+      },
+      "baseline_outcome_180s": "CLEARED_GOAL",
+      "selected_outcome_180s": "TIMEOUT"
+    },
+    {
+      "seed": 60405,
+      "scenario": "random",
+      "seconds": 600.0000000000342,
+      "outcome": "TIMEOUT",
+      "score": [
+        0,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "spawn_zones": {
+        "attacker": [
+          -1.0,
+          1.0,
+          -1.1,
+          1.1
+        ],
+        "defender": [
+          1.8,
+          3.2,
+          -1.25,
+          1.25
+        ],
+        "goal_side_margin": 0.25
+      },
+      "baseline_outcome_180s": "OUT",
+      "selected_outcome_180s": "TIMEOUT"
+    },
+    {
+      "seed": 60439,
+      "scenario": "random",
+      "seconds": 279.5599999999954,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "spawn_zones": {
+        "attacker": [
+          -1.0,
+          1.0,
+          -1.1,
+          1.1
+        ],
+        "defender": [
+          1.8,
+          3.2,
+          -1.25,
+          1.25
+        ],
+        "goal_side_margin": 0.25
+      },
+      "baseline_outcome_180s": "OUT",
+      "selected_outcome_180s": "TIMEOUT"
+    },
+    {
+      "seed": 60668,
+      "scenario": "random",
+      "seconds": 600.0000000000342,
+      "outcome": "TIMEOUT",
+      "score": [
+        0,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "spawn_zones": {
+        "attacker": [
+          -1.0,
+          1.0,
+          -1.1,
+          1.1
+        ],
+        "defender": [
+          1.8,
+          3.2,
+          -1.25,
+          1.25
+        ],
+        "goal_side_margin": 0.25
+      },
+      "baseline_outcome_180s": "OUT",
+      "selected_outcome_180s": "TIMEOUT"
+    },
+    {
+      "seed": 60779,
+      "scenario": "random",
+      "seconds": 600.0000000000342,
+      "outcome": "TIMEOUT",
+      "score": [
+        0,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "spawn_zones": {
+        "attacker": [
+          -1.0,
+          1.0,
+          -1.1,
+          1.1
+        ],
+        "defender": [
+          1.8,
+          3.2,
+          -1.25,
+          1.25
+        ],
+        "goal_side_margin": 0.25
+      },
+      "baseline_outcome_180s": "CLEARED_GOAL",
+      "selected_outcome_180s": "TIMEOUT"
+    },
+    {
+      "seed": 60871,
+      "scenario": "random",
+      "seconds": 600.0000000000342,
+      "outcome": "TIMEOUT",
+      "score": [
+        0,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "spawn_zones": {
+        "attacker": [
+          -1.0,
+          1.0,
+          -1.1,
+          1.1
+        ],
+        "defender": [
+          1.8,
+          3.2,
+          -1.25,
+          1.25
+        ],
+        "goal_side_margin": 0.25
+      },
+      "baseline_outcome_180s": "CLEARED_GOAL",
+      "selected_outcome_180s": "TIMEOUT"
+    },
+    {
+      "seed": 60902,
+      "scenario": "random",
+      "seconds": 600.0000000000342,
+      "outcome": "TIMEOUT",
+      "score": [
+        0,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "spawn_zones": {
+        "attacker": [
+          -1.0,
+          1.0,
+          -1.1,
+          1.1
+        ],
+        "defender": [
+          1.8,
+          3.2,
+          -1.25,
+          1.25
+        ],
+        "goal_side_margin": 0.25
+      },
+      "baseline_outcome_180s": "CLEARED_GOAL",
+      "selected_outcome_180s": "TIMEOUT"
+    }
+  ],
+  "note": "Only newly introduced timeouts, selected after the held-out result. Diagnostic 600-second clock; not part of the 180-second performance results."
+}

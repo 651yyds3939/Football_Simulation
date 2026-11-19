@@ -1,0 +1,64 @@
+{
+  "frozen_python_unchanged": true,
+  "one_v_one_files_unchanged": true,
+  "one_v_one_file_count": 30,
+  "zip_members_match_workspace": true,
+  "zip_file_count": 26,
+  "all_heldout_matches_finished": true,
+  "holdout_sources_match_production": true,
+  "browser": {
+    "results": [
+      {
+        "file": "Football_4v4_Demo.html",
+        "frames": 3009,
+        "score": [
+          1,
+          1
+        ],
+        "players": 8,
+        "offline": true,
+        "play_pause_seek_reset_inspect": true,
+        "mobile_no_overflow": true
+      },
+      {
+        "file": "Football_4v4_Demo_ZH.html",
+        "frames": 3009,
+        "score": [
+          1,
+          2
+        ],
+        "players": 8,
+        "offline": true,
+        "play_pause_seek_reset_inspect": true,
+        "mobile_no_overflow": true
+      }
+    ],
+    "errors": [],
+    "no_external_requests": true
+  },
+  "package": {
+    "extracted_batch": {
+      "stdout": "4V4_RESULT 27 [1, 1]\n4V4_RESULT 28 [1, 2]\n4V4_READY /tmp/football-4v4-package-esu2gzvz/out\nCOMPUTATION_SPEEDUP 692.2\n",
+      "score": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    "extracted_replay": true,
+    "existing_output_preserved": true,
+    "zip_sha256": "091be295b4d0082005d6e19deb95786b2e7b50d62bb729ef8d3662aeda05182b",
+    "final_members_match_workspace": true,
+    "only_readme_changed_after_extracted_execution": true
+  },
+  "failure_replay_matches_holdout": true,
+  "session_started_utc": "2026-11-19T16:11:51+00:00",
+  "completed_utc": "2026-11-19T16:36:54.500730+00:00",
+  "elapsed_seconds": 1503.50073,
+  "minimum_25_minutes_met": true
+}

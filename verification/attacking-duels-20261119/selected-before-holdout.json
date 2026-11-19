@@ -1,0 +1,16 @@
+{
+  "selected_utc": "2026-11-19T16:02:36.475115+00:00",
+  "choice": "Clear blocked goal lanes early, maintain one side waypoint, precise carrying heading; minimum start distance 0.65m; hold valid foot contest for existing defender duration 8s, realign invalid foot after 3s. No predictive reachability or ball-side persistent escape.",
+  "reason": "Validation improved first contests and reduced timeout/stalls; high-goal ball-side variants worsened prolonged duels.",
+  "sha256": {
+    "server.py": "6c0a766abfb477fc7a5a161e18fb52ac9cd6f5c2c63f5d6f561c561962f73ebe",
+    "viewer.html": "0d94ea4aa8b69245b123f131a3cc463c0cdfc1730533ed413666c579bedb9387",
+    "backend/tools/soccer2d.py": "65b14132b6b577cee80b5916d27533d217a66a7fdfdbe145b844b24f386e47bc",
+    "backend/Wenao/controllers/Utils/TeamPolicy.py": "fec5b75eab8f093fd14351cf027919c7122224085e13f39423ae5ba89e0f76e9",
+    "backend/Wenao/controllers/Utils/Navigation.py": "b29d896008948b5ca36a496c4ee1a7455c4a95307d4359c9583142b4c06d896e",
+    "backend/Wenao/controllers/Utils/DefensivePlan.py": "35c5a637903a2e9991659c8d3f991455cbc4bfbe2e2c30f158d2d984b82bb1a9",
+    "backend/Wenao/controllers/Utils/MatchEngine.py": "c01066e565731b0fdda8e04dc6d8f8b3cda6d202ff4f0df99f6092e8145ce886"
+  },
+  "initial_policy_selection_utc": "2026-11-19T15:53:03.129933+00:00",
+  "common_referee_fix": "SharedScene begins in open play. Own-restart goal restriction is inactive until a real begin_restart; baseline and candidate use identical corrected rules."
+}

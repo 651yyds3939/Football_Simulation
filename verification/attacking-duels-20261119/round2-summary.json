@@ -1,0 +1,295 @@
+{
+  "accurate-hold": {
+    "tuning": {
+      "evade_enabled": true,
+      "evade_distance": 1.8,
+      "evade_width": 0.65,
+      "striker_duel_seconds": 8.0
+    },
+    "runs": 160,
+    "outcomes": {
+      "CLEARED_GOAL": 34,
+      "GOAL": 116,
+      "OUT": 2,
+      "TIMEOUT": 8
+    },
+    "first_attacking_contests": 150,
+    "first_contest_results": {
+      "LOST": 40,
+      "BROKE_THROUGH": 103,
+      "UNRESOLVED": 6,
+      "GOAL_WITHOUT_MEASURED_BREAK": 1
+    },
+    "body_contact_runs": 101,
+    "body_contact_before_first_loss_runs": 97,
+    "contact_before_loss_results": {
+      "LOST": 37,
+      "BROKE_THROUGH": 54,
+      "UNRESOLVED": 6
+    },
+    "goals_after_body_contact": 58,
+    "exclusive_blue_control_runs": 41,
+    "breakthrough_runs": 117,
+    "attacker_regain_runs": 51,
+    "productive_regain_runs": 30,
+    "stalls_over_20s": 9,
+    "mean_seconds": 75.50325000000086,
+    "wall_seconds": 29.58447189900471
+  },
+  "accurate-twelve": {
+    "tuning": {
+      "evade_enabled": true,
+      "evade_distance": 1.8,
+      "evade_width": 0.65,
+      "striker_duel_seconds": 12.0
+    },
+    "runs": 160,
+    "outcomes": {
+      "CLEARED_GOAL": 32,
+      "GOAL": 118,
+      "OUT": 2,
+      "TIMEOUT": 8
+    },
+    "first_attacking_contests": 150,
+    "first_contest_results": {
+      "LOST": 38,
+      "BROKE_THROUGH": 105,
+      "UNRESOLVED": 6,
+      "GOAL_WITHOUT_MEASURED_BREAK": 1
+    },
+    "body_contact_runs": 101,
+    "body_contact_before_first_loss_runs": 97,
+    "contact_before_loss_results": {
+      "LOST": 35,
+      "BROKE_THROUGH": 56,
+      "UNRESOLVED": 6
+    },
+    "goals_after_body_contact": 60,
+    "exclusive_blue_control_runs": 39,
+    "breakthrough_runs": 119,
+    "attacker_regain_runs": 51,
+    "productive_regain_runs": 32,
+    "stalls_over_20s": 10,
+    "mean_seconds": 75.93225000000086,
+    "wall_seconds": 30.194589079997968
+  },
+  "accurate-early": {
+    "tuning": {
+      "evade_enabled": true,
+      "evade_distance": 1.8,
+      "evade_width": 0.65
+    },
+    "runs": 160,
+    "outcomes": {
+      "CLEARED_GOAL": 57,
+      "GOAL": 91,
+      "TIMEOUT": 10,
+      "OUT": 2
+    },
+    "first_attacking_contests": 150,
+    "first_contest_results": {
+      "LOST": 64,
+      "BROKE_THROUGH": 77,
+      "UNRESOLVED": 8,
+      "GOAL_WITHOUT_MEASURED_BREAK": 1
+    },
+    "body_contact_runs": 101,
+    "body_contact_before_first_loss_runs": 97,
+    "contact_before_loss_results": {
+      "LOST": 61,
+      "BROKE_THROUGH": 28,
+      "UNRESOLVED": 8
+    },
+    "goals_after_body_contact": 33,
+    "exclusive_blue_control_runs": 65,
+    "breakthrough_runs": 92,
+    "attacker_regain_runs": 25,
+    "productive_regain_runs": 8,
+    "stalls_over_20s": 8,
+    "mean_seconds": 83.27525000000162,
+    "wall_seconds": 32.26481323000189
+  },
+  "far-hold": {
+    "tuning": {
+      "evade_enabled": true,
+      "evade_distance": 2.2,
+      "evade_width": 0.8,
+      "striker_duel_seconds": 8.0
+    },
+    "runs": 160,
+    "outcomes": {
+      "CLEARED_GOAL": 21,
+      "GOAL": 124,
+      "TIMEOUT": 11,
+      "OUT": 4
+    },
+    "first_attacking_contests": 138,
+    "first_contest_results": {
+      "LOST": 33,
+      "BROKE_THROUGH": 95,
+      "UNRESOLVED": 7,
+      "GOAL_WITHOUT_MEASURED_BREAK": 3
+    },
+    "body_contact_runs": 88,
+    "body_contact_before_first_loss_runs": 86,
+    "contact_before_loss_results": {
+      "LOST": 32,
+      "BROKE_THROUGH": 46,
+      "UNRESOLVED": 7,
+      "GOAL_WITHOUT_MEASURED_BREAK": 1
+    },
+    "goals_after_body_contact": 53,
+    "exclusive_blue_control_runs": 34,
+    "breakthrough_runs": 124,
+    "attacker_regain_runs": 50,
+    "productive_regain_runs": 31,
+    "stalls_over_20s": 15,
+    "mean_seconds": 76.76975000000047,
+    "wall_seconds": 31.104680140997516
+  },
+  "soft-angle-hold": {
+    "tuning": {
+      "evade_enabled": true,
+      "evade_distance": 1.8,
+      "evade_width": 0.65,
+      "striker_duel_seconds": 8.0,
+      "evade_angle": 18.0,
+      "evade_enter_angle": 8.0
+    },
+    "runs": 160,
+    "outcomes": {
+      "CLEARED_GOAL": 43,
+      "GOAL": 106,
+      "OUT": 2,
+      "TIMEOUT": 9
+    },
+    "first_attacking_contests": 146,
+    "first_contest_results": {
+      "LOST": 47,
+      "BROKE_THROUGH": 90,
+      "UNRESOLVED": 6,
+      "GOAL_WITHOUT_MEASURED_BREAK": 3
+    },
+    "body_contact_runs": 107,
+    "body_contact_before_first_loss_runs": 104,
+    "contact_before_loss_results": {
+      "LOST": 45,
+      "BROKE_THROUGH": 50,
+      "UNRESOLVED": 6,
+      "GOAL_WITHOUT_MEASURED_BREAK": 3
+    },
+    "goals_after_body_contact": 54,
+    "exclusive_blue_control_runs": 48,
+    "breakthrough_runs": 105,
+    "attacker_regain_runs": 53,
+    "productive_regain_runs": 29,
+    "stalls_over_20s": 12,
+    "mean_seconds": 81.35475000000108,
+    "wall_seconds": 31.824792997998884
+  },
+  "ballside-three": {
+    "tuning": {
+      "duel_mode": "ball_side",
+      "duel_step": 0.08
+    },
+    "runs": 160,
+    "outcomes": {
+      "CLEARED_GOAL": 29,
+      "GOAL": 124,
+      "TIMEOUT": 7
+    },
+    "first_attacking_contests": 134,
+    "first_contest_results": {
+      "LOST": 37,
+      "BROKE_THROUGH": 90,
+      "UNRESOLVED": 5,
+      "GOAL_WITHOUT_MEASURED_BREAK": 2
+    },
+    "body_contact_runs": 101,
+    "body_contact_before_first_loss_runs": 97,
+    "contact_before_loss_results": {
+      "LOST": 33,
+      "BROKE_THROUGH": 59,
+      "UNRESOLVED": 5
+    },
+    "goals_after_body_contact": 65,
+    "exclusive_blue_control_runs": 37,
+    "breakthrough_runs": 122,
+    "attacker_regain_runs": 66,
+    "productive_regain_runs": 48,
+    "stalls_over_20s": 41,
+    "mean_seconds": 82.08525000000125,
+    "wall_seconds": 32.445695271999284
+  },
+  "smallstep-eight": {
+    "tuning": {
+      "striker_duel_seconds": 8.0,
+      "duel_step": 0.05
+    },
+    "runs": 160,
+    "outcomes": {
+      "OUT": 1,
+      "GOAL": 102,
+      "CLEARED_GOAL": 51,
+      "TIMEOUT": 6
+    },
+    "first_attacking_contests": 134,
+    "first_contest_results": {
+      "LOST": 62,
+      "BROKE_THROUGH": 67,
+      "UNRESOLVED": 3,
+      "GOAL_WITHOUT_MEASURED_BREAK": 2
+    },
+    "body_contact_runs": 101,
+    "body_contact_before_first_loss_runs": 97,
+    "contact_before_loss_results": {
+      "LOST": 58,
+      "BROKE_THROUGH": 36,
+      "UNRESOLVED": 3
+    },
+    "goals_after_body_contact": 43,
+    "exclusive_blue_control_runs": 62,
+    "breakthrough_runs": 100,
+    "attacker_regain_runs": 59,
+    "productive_regain_runs": 22,
+    "stalls_over_20s": 24,
+    "mean_seconds": 78.07100000000132,
+    "wall_seconds": 30.53075866799918
+  },
+  "ballside-eight": {
+    "tuning": {
+      "striker_duel_seconds": 8.0,
+      "duel_mode": "ball_side",
+      "duel_step": 0.08
+    },
+    "runs": 160,
+    "outcomes": {
+      "OUT": 1,
+      "GOAL": 126,
+      "CLEARED_GOAL": 21,
+      "TIMEOUT": 12
+    },
+    "first_attacking_contests": 134,
+    "first_contest_results": {
+      "LOST": 40,
+      "BROKE_THROUGH": 83,
+      "UNRESOLVED": 9,
+      "GOAL_WITHOUT_MEASURED_BREAK": 2
+    },
+    "body_contact_runs": 101,
+    "body_contact_before_first_loss_runs": 97,
+    "contact_before_loss_results": {
+      "LOST": 36,
+      "BROKE_THROUGH": 52,
+      "UNRESOLVED": 9
+    },
+    "goals_after_body_contact": 67,
+    "exclusive_blue_control_runs": 40,
+    "breakthrough_runs": 126,
+    "attacker_regain_runs": 60,
+    "productive_regain_runs": 47,
+    "stalls_over_20s": 37,
+    "mean_seconds": 79.7047500000009,
+    "wall_seconds": 31.461767057000543
+  }
+}

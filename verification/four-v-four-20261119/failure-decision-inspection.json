@@ -1,0 +1,626 @@
+[
+  {
+    "t": 565.0,
+    "ball": [
+      3.0315134013366594,
+      1.7922463227704852
+    ],
+    "near_ball": [
+      {
+        "name": "RedDefender",
+        "position": [
+          2.9434338978128203,
+          1.8100555015242559
+        ],
+        "yaw": 0.07052148896156618,
+        "decision": {
+          "behaviour": "CHALLENGE",
+          "target": [
+            3.024927602257553,
+            1.7917319849734321
+          ],
+          "face": [
+            3.024927602257553,
+            1.7917319849734321
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "walk",
+        "navigation_stage": "CHALLENGE_POKE_BALL"
+      },
+      {
+        "name": "RedForwardB",
+        "position": [
+          3.371626956665329,
+          2.3266342376254316
+        ],
+        "yaw": -1.8618580361177632,
+        "decision": {
+          "behaviour": "SUPPORT",
+          "target": [
+            3.5,
+            2.4
+          ],
+          "face": [
+            3.024927602257553,
+            1.7917319849734321
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "stand",
+        "navigation_stage": "HOLD_POSITION"
+      },
+      {
+        "name": "BlueDefender",
+        "position": [
+          3.2295730768554876,
+          1.6964675560276803
+        ],
+        "yaw": 2.137419419095517,
+        "decision": {
+          "behaviour": "CHALLENGE",
+          "target": [
+            3.024927602257553,
+            1.7917319849734321
+          ],
+          "face": [
+            3.024927602257553,
+            1.7917319849734321
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "back",
+        "navigation_stage": "CREATE_SPACE_BEFORE_SIDE_ALIGN"
+      }
+    ]
+  },
+  {
+    "t": 570.0,
+    "ball": [
+      3.0765803544249177,
+      1.8281929600624334
+    ],
+    "near_ball": [
+      {
+        "name": "RedDefender",
+        "position": [
+          2.9942854420821727,
+          1.8463091291667466
+        ],
+        "yaw": 0.07052148896156618,
+        "decision": {
+          "behaviour": "CHALLENGE",
+          "target": [
+            3.0758890741980958,
+            1.8264292533809308
+          ],
+          "face": [
+            3.0758890741980958,
+            1.8264292533809308
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "walk",
+        "navigation_stage": "CHALLENGE_POKE_BALL"
+      },
+      {
+        "name": "RedForwardB",
+        "position": [
+          3.371626956665329,
+          2.3266342376254316
+        ],
+        "yaw": -1.8618580361177632,
+        "decision": {
+          "behaviour": "SUPPORT",
+          "target": [
+            3.5,
+            2.4
+          ],
+          "face": [
+            3.0758890741980958,
+            1.8264292533809308
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "stand",
+        "navigation_stage": "HOLD_POSITION"
+      },
+      {
+        "name": "BlueDefender",
+        "position": [
+          3.274602367977752,
+          1.7376451207011596
+        ],
+        "yaw": 2.137419419095517,
+        "decision": {
+          "behaviour": "CHALLENGE",
+          "target": [
+            3.0758890741980958,
+            1.8264292533809308
+          ],
+          "face": [
+            3.0758890741980958,
+            1.8264292533809308
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "walk",
+        "navigation_stage": "CHALLENGE_POKE_BALL"
+      }
+    ]
+  },
+  {
+    "t": 575.0,
+    "ball": [
+      3.1355548904184483,
+      1.8600606684043237
+    ],
+    "near_ball": [
+      {
+        "name": "RedDefender",
+        "position": [
+          3.047475386240748,
+          1.8778698445177076
+        ],
+        "yaw": 0.07052148896156618,
+        "decision": {
+          "behaviour": "CHALLENGE",
+          "target": [
+            3.1289690915563364,
+            1.8595463306204207
+          ],
+          "face": [
+            3.1289690915563364,
+            1.8595463306204207
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "walk",
+        "navigation_stage": "CHALLENGE_POKE_BALL"
+      },
+      {
+        "name": "RedForwardB",
+        "position": [
+          3.371626956665329,
+          2.3266342376254316
+        ],
+        "yaw": -1.8618580361177632,
+        "decision": {
+          "behaviour": "SUPPORT",
+          "target": [
+            3.5,
+            2.4
+          ],
+          "face": [
+            3.1289690915563364,
+            1.8595463306204207
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "stand",
+        "navigation_stage": "HOLD_POSITION"
+      },
+      {
+        "name": "BlueDefender",
+        "position": [
+          3.3336145686123366,
+          1.7642819071907512
+        ],
+        "yaw": 2.137419419095517,
+        "decision": {
+          "behaviour": "CHALLENGE",
+          "target": [
+            3.1289690915563364,
+            1.8595463306204207
+          ],
+          "face": [
+            3.1289690915563364,
+            1.8595463306204207
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "back",
+        "navigation_stage": "CREATE_SPACE_BEFORE_SIDE_ALIGN"
+      }
+    ]
+  },
+  {
+    "t": 580.0,
+    "ball": [
+      3.1806218439763807,
+      1.8960073056506148
+    ],
+    "near_ball": [
+      {
+        "name": "RedDefender",
+        "position": [
+          3.098326931188199,
+          1.914123470994452
+        ],
+        "yaw": 0.07052148896156618,
+        "decision": {
+          "behaviour": "CHALLENGE",
+          "target": [
+            3.1799305637109136,
+            1.894243598984259
+          ],
+          "face": [
+            3.1799305637109136,
+            1.894243598984259
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "walk",
+        "navigation_stage": "CHALLENGE_POKE_BALL"
+      },
+      {
+        "name": "RedForwardB",
+        "position": [
+          3.371626956665329,
+          2.3266342376254316
+        ],
+        "yaw": -1.8618580361177632,
+        "decision": {
+          "behaviour": "SUPPORT",
+          "target": [
+            3.5,
+            2.4
+          ],
+          "face": [
+            3.1799305637109136,
+            1.894243598984259
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "stand",
+        "navigation_stage": "HOLD_POSITION"
+      },
+      {
+        "name": "BlueDefender",
+        "position": [
+          3.3786438588641667,
+          1.8054594630791494
+        ],
+        "yaw": 2.137419419095517,
+        "decision": {
+          "behaviour": "CHALLENGE",
+          "target": [
+            3.1799305637109136,
+            1.894243598984259
+          ],
+          "face": [
+            3.1799305637109136,
+            1.894243598984259
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "walk",
+        "navigation_stage": "CHALLENGE_POKE_BALL"
+      }
+    ]
+  },
+  {
+    "t": 585.0,
+    "ball": [
+      3.2395963843090474,
+      1.927875014089164
+    ],
+    "near_ball": [
+      {
+        "name": "RedDefender",
+        "position": [
+          3.1515168802113984,
+          1.94568419151293
+        ],
+        "yaw": 0.07052148896156618,
+        "decision": {
+          "behaviour": "CHALLENGE",
+          "target": [
+            3.2330105853104567,
+            1.9273606762974709
+          ],
+          "face": [
+            3.2330105853104567,
+            1.9273606762974709
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "walk",
+        "navigation_stage": "CHALLENGE_POKE_BALL"
+      },
+      {
+        "name": "RedForwardB",
+        "position": [
+          3.371626956665329,
+          2.3266342376254316
+        ],
+        "yaw": -1.8618580361177632,
+        "decision": {
+          "behaviour": "SUPPORT",
+          "target": [
+            3.5,
+            2.4
+          ],
+          "face": [
+            3.2330105853104567,
+            1.9273606762974709
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "stand",
+        "navigation_stage": "HOLD_POSITION"
+      },
+      {
+        "name": "BlueDefender",
+        "position": [
+          3.4376560608005473,
+          1.8320962493592332
+        ],
+        "yaw": 2.137419419095517,
+        "decision": {
+          "behaviour": "CHALLENGE",
+          "target": [
+            3.2330105853104567,
+            1.9273606762974709
+          ],
+          "face": [
+            3.2330105853104567,
+            1.9273606762974709
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "back",
+        "navigation_stage": "CREATE_SPACE_BEFORE_SIDE_ALIGN"
+      }
+    ]
+  },
+  {
+    "t": 590.0,
+    "ball": [
+      3.2846633389038287,
+      1.9638216512084683
+    ],
+    "near_ball": [
+      {
+        "name": "RedDefender",
+        "position": [
+          3.2023684257424327,
+          1.9819378184206649
+        ],
+        "yaw": 0.07052148896156618,
+        "decision": {
+          "behaviour": "CHALLENGE",
+          "target": [
+            3.2839720585630787,
+            1.9620579445716195
+          ],
+          "face": [
+            3.2839720585630787,
+            1.9620579445716195
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "walk",
+        "navigation_stage": "CHALLENGE_POKE_BALL"
+      },
+      {
+        "name": "RedForwardB",
+        "position": [
+          3.371626956665329,
+          2.3266342376254316
+        ],
+        "yaw": -1.8618580361177632,
+        "decision": {
+          "behaviour": "SUPPORT",
+          "target": [
+            3.5,
+            2.4
+          ],
+          "face": [
+            3.2839720585630787,
+            1.9620579445716195
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "stand",
+        "navigation_stage": "HOLD_POSITION"
+      },
+      {
+        "name": "BlueDefender",
+        "position": [
+          3.482685349737445,
+          1.8732738053566598
+        ],
+        "yaw": 2.137419419095517,
+        "decision": {
+          "behaviour": "CHALLENGE",
+          "target": [
+            3.2839720585630787,
+            1.9620579445716195
+          ],
+          "face": [
+            3.2839720585630787,
+            1.9620579445716195
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "walk",
+        "navigation_stage": "CHALLENGE_POKE_BALL"
+      }
+    ]
+  },
+  {
+    "t": 595.0,
+    "ball": [
+      3.3436378766051735,
+      1.9956893595632839
+    ],
+    "near_ball": [
+      {
+        "name": "RedDefender",
+        "position": [
+          3.2555583712477247,
+          2.013498532976369
+        ],
+        "yaw": 0.07052148896156618,
+        "decision": {
+          "behaviour": "CHALLENGE",
+          "target": [
+            3.337052077843856,
+            1.9951750217872821
+          ],
+          "face": [
+            3.337052077843856,
+            1.9951750217872821
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "walk",
+        "navigation_stage": "CHALLENGE_POKE_BALL"
+      },
+      {
+        "name": "RedForwardB",
+        "position": [
+          3.371626956665329,
+          2.3266342376254316
+        ],
+        "yaw": -1.8618580361177632,
+        "decision": {
+          "behaviour": "SUPPORT",
+          "target": [
+            3.5,
+            2.4
+          ],
+          "face": [
+            3.337052077843856,
+            1.9951750217872821
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "stand",
+        "navigation_stage": "HOLD_POSITION"
+      },
+      {
+        "name": "BlueDefender",
+        "position": [
+          3.5416975560329558,
+          1.8999106009092326
+        ],
+        "yaw": 2.137419419095517,
+        "decision": {
+          "behaviour": "CHALLENGE",
+          "target": [
+            3.337052077843856,
+            1.9951750217872821
+          ],
+          "face": [
+            3.337052077843856,
+            1.9951750217872821
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "back",
+        "navigation_stage": "CREATE_SPACE_BEFORE_SIDE_ALIGN"
+      }
+    ]
+  },
+  {
+    "t": 600.0,
+    "ball": [
+      3.402428436038134,
+      2.02754759600008
+    ],
+    "near_ball": [
+      {
+        "name": "RedDefender",
+        "position": [
+          3.3143795530628926,
+          2.0449739528920654
+        ],
+        "yaw": 0.07052148896156618,
+        "decision": {
+          "behaviour": "CHALLENGE",
+          "target": [
+            3.3958461738629366,
+            2.027033819733904
+          ],
+          "face": [
+            3.3958461738629366,
+            2.027033819733904
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "walk",
+        "navigation_stage": "CHALLENGE_POKE_BALL"
+      },
+      {
+        "name": "RedForwardB",
+        "position": [
+          3.374469877169418,
+          2.3405778446546197
+        ],
+        "yaw": -1.8618580361177632,
+        "decision": {
+          "behaviour": "SUPPORT",
+          "target": [
+            3.5,
+            2.4
+          ],
+          "face": [
+            3.3958461738629366,
+            2.027033819733904
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "stand",
+        "navigation_stage": "HOLD_POSITION"
+      },
+      {
+        "name": "BlueDefender",
+        "position": [
+          3.6005412772943886,
+          1.9318805697072312
+        ],
+        "yaw": 2.137419419095517,
+        "decision": {
+          "behaviour": "CHALLENGE",
+          "target": [
+            3.3958461738629366,
+            2.027033819733904
+          ],
+          "face": [
+            3.3958461738629366,
+            2.027033819733904
+          ],
+          "kick": "",
+          "receiver": ""
+        },
+        "action": "back",
+        "navigation_stage": "CREATE_SPACE_BEFORE_SIDE_ALIGN"
+      }
+    ]
+  }
+]

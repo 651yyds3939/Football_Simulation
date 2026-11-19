@@ -1,0 +1,235 @@
+{
+  "clear-lane": {
+    "app": "round4-app",
+    "tuning": {
+      "evade_enabled": true,
+      "evade_distance": 1.8,
+      "evade_width": 0.65,
+      "striker_duel_seconds": 8.0,
+      "evade_clear_only": true
+    },
+    "runs": 240,
+    "outcomes": {
+      "GOAL": 171,
+      "CLEARED_GOAL": 59,
+      "TIMEOUT": 9,
+      "OUT": 1
+    },
+    "first_attacking_contests": 205,
+    "first_contest_results": {
+      "LOST": 73,
+      "BROKE_THROUGH": 129,
+      "UNRESOLVED": 2,
+      "GOAL_WITHOUT_MEASURED_BREAK": 1
+    },
+    "body_contact_runs": 149,
+    "body_contact_before_first_loss_runs": 148,
+    "contact_before_loss_results": {
+      "LOST": 72,
+      "BROKE_THROUGH": 74,
+      "UNRESOLVED": 2
+    },
+    "goals_after_body_contact": 81,
+    "exclusive_blue_control_runs": 73,
+    "breakthrough_runs": 170,
+    "attacker_regain_runs": 76,
+    "productive_regain_runs": 40,
+    "stalls_over_20s": 15,
+    "mean_seconds": 76.90200000000125,
+    "wall_seconds": 46.24354708300234
+  },
+  "accurate": {
+    "app": "round4-app",
+    "tuning": {
+      "evade_enabled": true,
+      "evade_distance": 1.8,
+      "evade_width": 0.65,
+      "striker_duel_seconds": 8.0
+    },
+    "runs": 240,
+    "outcomes": {
+      "GOAL": 169,
+      "CLEARED_GOAL": 58,
+      "TIMEOUT": 12,
+      "OUT": 1
+    },
+    "first_attacking_contests": 226,
+    "first_contest_results": {
+      "BROKE_THROUGH": 151,
+      "LOST": 69,
+      "UNRESOLVED": 5,
+      "GOAL_WITHOUT_MEASURED_BREAK": 1
+    },
+    "body_contact_runs": 159,
+    "body_contact_before_first_loss_runs": 156,
+    "contact_before_loss_results": {
+      "LOST": 65,
+      "BROKE_THROUGH": 85,
+      "UNRESOLVED": 5,
+      "GOAL_WITHOUT_MEASURED_BREAK": 1
+    },
+    "goals_after_body_contact": 90,
+    "exclusive_blue_control_runs": 69,
+    "breakthrough_runs": 169,
+    "attacker_regain_runs": 70,
+    "productive_regain_runs": 38,
+    "stalls_over_20s": 17,
+    "mean_seconds": 78.7095000000012,
+    "wall_seconds": 47.1644377249977
+  },
+  "baseline": {
+    "app": "baseline-app",
+    "tuning": {},
+    "runs": 240,
+    "outcomes": {
+      "GOAL": 110,
+      "CLEARED_GOAL": 121,
+      "TIMEOUT": 9
+    },
+    "first_attacking_contests": 204,
+    "first_contest_results": {
+      "LOST": 130,
+      "BROKE_THROUGH": 68,
+      "UNRESOLVED": 6
+    },
+    "body_contact_runs": 162,
+    "body_contact_before_first_loss_runs": 155,
+    "contact_before_loss_results": {
+      "LOST": 123,
+      "BROKE_THROUGH": 26,
+      "UNRESOLVED": 6
+    },
+    "goals_after_body_contact": 32,
+    "exclusive_blue_control_runs": 130,
+    "breakthrough_runs": 108,
+    "attacker_regain_runs": 51,
+    "productive_regain_runs": 13,
+    "stalls_over_20s": 15,
+    "mean_seconds": 84.28716666666882,
+    "wall_seconds": 47.3360694160001
+  },
+  "geometry-clear": {
+    "app": "round4-app",
+    "tuning": {
+      "evade_enabled": true,
+      "evade_distance": 1.8,
+      "evade_width": 0.65,
+      "striker_duel_seconds": 8.0,
+      "duel_geometry_gate": true,
+      "evade_clear_only": true
+    },
+    "runs": 240,
+    "outcomes": {
+      "GOAL": 169,
+      "CLEARED_GOAL": 68,
+      "TIMEOUT": 2,
+      "OUT": 1
+    },
+    "first_attacking_contests": 205,
+    "first_contest_results": {
+      "LOST": 73,
+      "BROKE_THROUGH": 129,
+      "UNRESOLVED": 2,
+      "GOAL_WITHOUT_MEASURED_BREAK": 1
+    },
+    "body_contact_runs": 149,
+    "body_contact_before_first_loss_runs": 148,
+    "contact_before_loss_results": {
+      "LOST": 72,
+      "BROKE_THROUGH": 74,
+      "UNRESOLVED": 2
+    },
+    "goals_after_body_contact": 79,
+    "exclusive_blue_control_runs": 73,
+    "breakthrough_runs": 167,
+    "attacker_regain_runs": 63,
+    "productive_regain_runs": 38,
+    "stalls_over_20s": 10,
+    "mean_seconds": 74.95650000000143,
+    "wall_seconds": 45.150076653000724
+  },
+  "reach-clear": {
+    "app": "round4-app",
+    "tuning": {
+      "evade_enabled": true,
+      "evade_distance": 1.8,
+      "evade_width": 0.65,
+      "striker_duel_seconds": 8.0,
+      "evade_cost": "reachability",
+      "duel_mode": "ball_side",
+      "duel_step": 0.08,
+      "evade_clear_only": true
+    },
+    "runs": 240,
+    "outcomes": {
+      "GOAL": 194,
+      "CLEARED_GOAL": 28,
+      "TIMEOUT": 17,
+      "OUT": 1
+    },
+    "first_attacking_contests": 205,
+    "first_contest_results": {
+      "LOST": 53,
+      "BROKE_THROUGH": 146,
+      "UNRESOLVED": 5,
+      "GOAL_WITHOUT_MEASURED_BREAK": 1
+    },
+    "body_contact_runs": 145,
+    "body_contact_before_first_loss_runs": 144,
+    "contact_before_loss_results": {
+      "LOST": 52,
+      "BROKE_THROUGH": 87,
+      "UNRESOLVED": 5
+    },
+    "goals_after_body_contact": 100,
+    "exclusive_blue_control_runs": 53,
+    "breakthrough_runs": 196,
+    "attacker_regain_runs": 76,
+    "productive_regain_runs": 64,
+    "stalls_over_20s": 21,
+    "mean_seconds": 76.68500000000064,
+    "wall_seconds": 47.11413988900313
+  },
+  "reach-ballside": {
+    "app": "round4-app",
+    "tuning": {
+      "evade_enabled": true,
+      "evade_distance": 1.8,
+      "evade_width": 0.65,
+      "striker_duel_seconds": 8.0,
+      "evade_cost": "reachability",
+      "duel_mode": "ball_side",
+      "duel_step": 0.08
+    },
+    "runs": 240,
+    "outcomes": {
+      "GOAL": 189,
+      "CLEARED_GOAL": 32,
+      "TIMEOUT": 18,
+      "OUT": 1
+    },
+    "first_attacking_contests": 226,
+    "first_contest_results": {
+      "BROKE_THROUGH": 164,
+      "LOST": 55,
+      "GOAL_WITHOUT_MEASURED_BREAK": 2,
+      "UNRESOLVED": 5
+    },
+    "body_contact_runs": 155,
+    "body_contact_before_first_loss_runs": 152,
+    "contact_before_loss_results": {
+      "LOST": 51,
+      "BROKE_THROUGH": 95,
+      "UNRESOLVED": 5,
+      "GOAL_WITHOUT_MEASURED_BREAK": 1
+    },
+    "goals_after_body_contact": 106,
+    "exclusive_blue_control_runs": 55,
+    "breakthrough_runs": 189,
+    "attacker_regain_runs": 71,
+    "productive_regain_runs": 55,
+    "stalls_over_20s": 19,
+    "mean_seconds": 78.62383333333413,
+    "wall_seconds": 48.258088577997114
+  }
+}

@@ -251,6 +251,10 @@ class Simulation:
             dx, dy = (.35*(1-fraction)*(dx-2*inward_travel*nx),
                       .35*(1-fraction)*(dy-2*inward_travel*ny))
 
+    def _stop_after_referee(self, events):
+        """Adapters can end an attempt before issuing post-result commands."""
+        return False
+
     def step(self):
         dt = self.model.dt
         self.time += dt
@@ -264,6 +268,8 @@ class Simulation:
                 self.previous_foot_contact = None
                 self.pass_intent = self.pending_pass = None
                 self.kicking.clear()
+        if self._stop_after_referee(referee_events):
+            return False
         if self.engine.phase == "READY" and self.engine.half not in self.prepared:
             if self.engine.half == 2:
                 self._place_formation(jitter=True)

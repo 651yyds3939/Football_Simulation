@@ -1,0 +1,173 @@
+{
+  "counts": {
+    "carrier_near_seconds": 4146.39999999842,
+    "striker_near_seconds": 2053.000000000324,
+    "defender_near_seconds": 2063.800000000314,
+    "mate_within_1m_player_seconds": 794.4000000000436,
+    "clear_near_mate_seconds": 487.99999999998084,
+    "forward_near_mate_seconds": 252.3999999999942,
+    "goalkeeper_near_seconds": 29.599999999999927
+  },
+  "examples": [
+    {
+      "seed": 210000,
+      "time": 209.99999999999662,
+      "carrier": "BlueDefender",
+      "mate": "BlueForwardA",
+      "gap": 0.8967021967739671,
+      "decision": {
+        "behaviour": "CHALLENGE",
+        "target": [
+          0.5636920105890848,
+          -0.16093664056691478
+        ],
+        "face": [
+          0.5636920105890848,
+          -0.16093664056691478
+        ],
+        "kick": "",
+        "receiver": ""
+      }
+    },
+    {
+      "seed": 210000,
+      "time": 210.1999999999966,
+      "carrier": "BlueDefender",
+      "mate": "BlueForwardA",
+      "gap": 0.8841529000509637,
+      "decision": {
+        "behaviour": "CHALLENGE",
+        "target": [
+          0.5799090679697132,
+          -0.16620218824301913
+        ],
+        "face": [
+          0.5799090679697132,
+          -0.16620218824301913
+        ],
+        "kick": "",
+        "receiver": ""
+      }
+    },
+    {
+      "seed": 210000,
+      "time": 210.3999999999966,
+      "carrier": "BlueDefender",
+      "mate": "BlueForwardA",
+      "gap": 0.871756450806435,
+      "decision": {
+        "behaviour": "CHALLENGE",
+        "target": [
+          0.5961261253503416,
+          -0.17146773591912348
+        ],
+        "face": [
+          0.5961261253503416,
+          -0.17146773591912348
+        ],
+        "kick": "",
+        "receiver": ""
+      }
+    },
+    {
+      "seed": 210000,
+      "time": 210.59999999999658,
+      "carrier": "BlueDefender",
+      "mate": "BlueForwardA",
+      "gap": 0.8595194624099951,
+      "decision": {
+        "behaviour": "CHALLENGE",
+        "target": [
+          0.61234318273097,
+          -0.17673328359522783
+        ],
+        "face": [
+          0.61234318273097,
+          -0.17673328359522783
+        ],
+        "kick": "",
+        "receiver": ""
+      }
+    },
+    {
+      "seed": 210000,
+      "time": 210.79999999999657,
+      "carrier": "BlueDefender",
+      "mate": "BlueForwardA",
+      "gap": 0.8474488426361402,
+      "decision": {
+        "behaviour": "CHALLENGE",
+        "target": [
+          0.6285602401115984,
+          -0.18199883127133218
+        ],
+        "face": [
+          0.6285602401115984,
+          -0.18199883127133218
+        ],
+        "kick": "",
+        "receiver": ""
+      }
+    },
+    {
+      "seed": 210000,
+      "time": 210.99999999999656,
+      "carrier": "BlueDefender",
+      "mate": "BlueForwardA",
+      "gap": 0.8355518017417782,
+      "decision": {
+        "behaviour": "CHALLENGE",
+        "target": [
+          0.6447772974922268,
+          -0.18726437894743653
+        ],
+        "face": [
+          0.6447772974922268,
+          -0.18726437894743653
+        ],
+        "kick": "",
+        "receiver": ""
+      }
+    },
+    {
+      "seed": 210000,
+      "time": 211.19999999999655,
+      "carrier": "BlueDefender",
+      "mate": "BlueForwardA",
+      "gap": 0.8238358597362475,
+      "decision": {
+        "behaviour": "CHALLENGE",
+        "target": [
+          0.6609943548728552,
+          -0.19252992662354088
+        ],
+        "face": [
+          0.6609943548728552,
+          -0.19252992662354088
+        ],
+        "kick": "",
+        "receiver": ""
+      }
+    },
+    {
+      "seed": 210000,
+      "time": 211.39999999999654,
+      "carrier": "BlueDefender",
+      "mate": "BlueForwardA",
+      "gap": 0.8123088526328051,
+      "decision": {
+        "behaviour": "CHALLENGE",
+        "target": [
+          0.6772114122534836,
+          -0.19779547429964522
+        ],
+        "face": [
+          0.6772114122534836,
+          -0.19779547429964522
+        ],
+        "kick": "",
+        "receiver": ""
+      }
+    }
+  ]
+}

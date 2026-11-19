@@ -1,0 +1,118 @@
+{
+  "candidate_matches_without_shot_attempt": 25,
+  "candidate_matches_without_pass_attempt": 27,
+  "highest_crowding": [
+    {
+      "seed": 120013,
+      "candidate_team": "BLUE",
+      "score_red_blue": [
+        1,
+        0
+      ],
+      "crowded_seconds": 98.20000000000086,
+      "longest_stationary_ball_seconds": 78.00000000000057,
+      "live_unattended_seconds": 0.0
+    },
+    {
+      "seed": 120037,
+      "candidate_team": "RED",
+      "score_red_blue": [
+        2,
+        0
+      ],
+      "crowded_seconds": 93.20000000000078,
+      "longest_stationary_ball_seconds": 67.20000000000041,
+      "live_unattended_seconds": 0.0
+    },
+    {
+      "seed": 120048,
+      "candidate_team": "BLUE",
+      "score_red_blue": [
+        1,
+        0
+      ],
+      "crowded_seconds": 90.00000000000074,
+      "longest_stationary_ball_seconds": 120.40000000000117,
+      "live_unattended_seconds": 0.0
+    },
+    {
+      "seed": 120032,
+      "candidate_team": "BLUE",
+      "score_red_blue": [
+        0,
+        1
+      ],
+      "crowded_seconds": 87.6000000000007,
+      "longest_stationary_ball_seconds": 70.40000000000046,
+      "live_unattended_seconds": 0.0
+    },
+    {
+      "seed": 120034,
+      "candidate_team": "RED",
+      "score_red_blue": [
+        0,
+        1
+      ],
+      "crowded_seconds": 87.6000000000007,
+      "longest_stationary_ball_seconds": 98.00000000000085,
+      "live_unattended_seconds": 0.0
+    }
+  ],
+  "longest_stationary": [
+    {
+      "seed": 120000,
+      "candidate_team": "BLUE",
+      "score_red_blue": [
+        0,
+        1
+      ],
+      "crowded_seconds": 81.80000000000062,
+      "longest_stationary_ball_seconds": 120.80000000000118,
+      "live_unattended_seconds": 0.0
+    },
+    {
+      "seed": 120017,
+      "candidate_team": "RED",
+      "score_red_blue": [
+        1,
+        0
+      ],
+      "crowded_seconds": 22.59999999999995,
+      "longest_stationary_ball_seconds": 120.80000000000118,
+      "live_unattended_seconds": 0.0
+    },
+    {
+      "seed": 120016,
+      "candidate_team": "RED",
+      "score_red_blue": [
+        1,
+        1
+      ],
+      "crowded_seconds": 11.399999999999991,
+      "longest_stationary_ball_seconds": 120.60000000000117,
+      "live_unattended_seconds": 0.0
+    },
+    {
+      "seed": 120048,
+      "candidate_team": "BLUE",
+      "score_red_blue": [
+        1,
+        0
+      ],
+      "crowded_seconds": 90.00000000000074,
+      "longest_stationary_ball_seconds": 120.40000000000117,
+      "live_unattended_seconds": 0.0
+    },
+    {
+      "seed": 120049,
+      "candidate_team": "BLUE",
+      "score_red_blue": [
+        0,
+        1
+      ],
+      "crowded_seconds": 85.80000000000068,
+      "longest_stationary_ball_seconds": 120.40000000000117,
+      "live_unattended_seconds": 14.39999999999998
+    }
+  ]
+}

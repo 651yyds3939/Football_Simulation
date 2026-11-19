@@ -1,0 +1,55 @@
+{
+  "steal-press-safe": {
+    "tuning": {
+      "defender_space": true
+    },
+    "runs": 80,
+    "outcomes": {
+      "CLEARED_GOAL": 72,
+      "GOAL": 6,
+      "TIMEOUT": 2
+    },
+    "defender_foot_control_runs": 80,
+    "controlled_retreat_runs": 72,
+    "clearance_completed_runs": 66,
+    "stalls_over_20s": 4,
+    "mean_turn_seconds": 9.344499999999956,
+    "mean_behind_ball_seconds": 5.291999999999932,
+    "mean_duration_seconds": 99.90450000000405,
+    "attacker_productive_regain_runs": 0,
+    "attacker_regain_runs": 30,
+    "attacker_loss_runs": 80,
+    "mean_attacker_wrong_heading_seconds": 0.0,
+    "mean_attacker_alignment_while_lost_seconds": 0.0,
+    "mean_attacker_press_seconds": 0.036,
+    "loss_weighted_attacker_heading_error_degrees": 14.128540256923522,
+    "wall_seconds": 32.357366888005345
+  },
+  "steal-space-only": {
+    "tuning": {
+      "defender_space": true,
+      "press_enabled": false
+    },
+    "runs": 80,
+    "outcomes": {
+      "CLEARED_GOAL": 72,
+      "GOAL": 4,
+      "TIMEOUT": 4
+    },
+    "defender_foot_control_runs": 80,
+    "controlled_retreat_runs": 73,
+    "clearance_completed_runs": 66,
+    "stalls_over_20s": 2,
+    "mean_turn_seconds": 9.649499999999978,
+    "mean_behind_ball_seconds": 7.410000000000044,
+    "mean_duration_seconds": 103.86200000000409,
+    "attacker_productive_regain_runs": 0,
+    "attacker_regain_runs": 19,
+    "attacker_loss_runs": 80,
+    "mean_attacker_wrong_heading_seconds": 0.0005,
+    "mean_attacker_alignment_while_lost_seconds": 0.002,
+    "mean_attacker_press_seconds": 0.0,
+    "loss_weighted_attacker_heading_error_degrees": 34.294784413325615,
+    "wall_seconds": 37.453961691993754
+  }
+}

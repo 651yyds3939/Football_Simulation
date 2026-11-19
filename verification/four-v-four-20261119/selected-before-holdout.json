@@ -1,0 +1,21 @@
+{
+  "selected_utc": "2026-11-19T16:26:07.059590+00:00",
+  "selection": "Only range-aware handoff acceptance and deeper goal-side cover. Reject broad role rewrites, restart assignment and disabling long-kick attempts.",
+  "validation_seeds": "112000-112015, candidate plays both colours",
+  "sha256": {
+    "run.py": "f2a4f5a6ce4fe3ac4930349abe8ba8a243995f5b284b0732f2c17379501b667c",
+    "backend/tools/soccer2d.py": "65b14132b6b577cee80b5916d27533d217a66a7fdfdbe145b844b24f386e47bc",
+    "backend/tools/view_soccer2d.py": "5dcbefa44be06ea4eafac287ce955369737380214ec1ef13d125b48e5bd299ac",
+    "backend/tools/run_policy_experiment.py": "8f52694b1790f9d87c48a95c8b68a36a5b1608619a08d637b42310d465d3fc0b",
+    "backend/Wenao/controllers/Utils/SpawnZones.py": "6cabbdc4885aa120cabebc2debac20a7cc5b65a56b83254212df6ae28422b8ec",
+    "backend/Wenao/controllers/Utils/TeamTactics.py": "c4be7c1143d8aaf5cfa4a3db4e1c3d30121a2b78130b3f1070924e6a0128f252",
+    "backend/Wenao/controllers/Utils/PolicyProfile.py": "fbfc04690cd449acc11817b5cff9d33faf7ada0af1c9454605e38af6d8ae51e2",
+    "backend/Wenao/controllers/Utils/TeamPolicy.py": "fec5b75eab8f093fd14351cf027919c7122224085e13f39423ae5ba89e0f76e9",
+    "backend/Wenao/controllers/Utils/MatchEngine.py": "c01066e565731b0fdda8e04dc6d8f8b3cda6d202ff4f0df99f6092e8145ce886",
+    "backend/Wenao/controllers/Utils/DefensivePlan.py": "35c5a637903a2e9991659c8d3f991455cbc4bfbe2e2c30f158d2d984b82bb1a9",
+    "backend/Wenao/controllers/Utils/ProcessSupervisor.py": "8edaedf1fdb5f00410aa7ecd1e777c5ec95b46e747f35078a52747f4c1bd91a8",
+    "backend/Wenao/controllers/Utils/Navigation.py": "b29d896008948b5ca36a496c4ee1a7455c4a95307d4359c9583142b4c06d896e",
+    "backend/Wenao/controllers/Utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "backend/Wenao/controllers/Utils/CourseSpecs.py": "329cc279f44dc6e3fa19e089319787c2cafd6c33d5118f0be3fb2e6eeb624bf0"
+  }
+}

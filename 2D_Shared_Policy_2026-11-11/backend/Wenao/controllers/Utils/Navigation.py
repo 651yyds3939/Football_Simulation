@@ -1,9 +1,9 @@
 """Body-frame ball alignment and hysteresis, independent of the robot SDK."""
 import math
 from Utils.TeamPolicy import distance, unit, avoid_obstacles
-from Utils.DefensivePlan import route, recovery_action
+from Utils.DefensivePlan import route, recovery_action, SETTINGS
 
-ATTACK = {'INTERCEPT', 'DRIBBLE', 'SHOOT', 'PASS', 'CLEAR', 'RESTART'}
+ATTACK = {'INTERCEPT', 'DRIBBLE', 'EVADE_DRIBBLE', 'SHOOT', 'PASS', 'CLEAR', 'RESTART'}
 
 
 def angle_to(own, target, yaw):
@@ -25,6 +25,20 @@ class Navigator:
         self.aligned = False
 
     def choose(self, decision, own, yaw, ball, robots=()):
+        if decision.behaviour == 'COUNTERPRESS':
+            self.arrived = False
+            dx, dy = ball[0]-own[0], ball[1]-own[1]
+            front = dx*math.cos(yaw)+dy*math.sin(yaw)
+            lateral = -dx*math.sin(yaw)+dy*math.cos(yaw)
+            if .08<front<.28 and abs(lateral)<.12:
+                return 'walk', 'PRESS_CONTEST_FOOT'
+            point = ball if distance(own,ball)<SETTINGS['press_near'] else decision.target
+            angle = angle_to(own,point,yaw)
+            if abs(angle)>(SETTINGS['press_angle'] if self.aligned else 12):
+                self.aligned = False
+                return turn_action(angle), 'PRESS_FACE_BALL'
+            self.aligned = True
+            return 'walk', 'PRESS_CLOSE_BALL'
         if decision.behaviour == 'DEFENSIVE_INTERCEPT':
             self.arrived = self.aligned = False
             _, action, _ = route(own, yaw, decision.target)
@@ -37,6 +51,8 @@ class Navigator:
             dx, dy = ball[0]-own[0], ball[1]-own[1]
             front = dx*math.cos(yaw)+dy*math.sin(yaw)
             lateral = -dx*math.sin(yaw)+dy*math.cos(yaw)
+            if SETTINGS['defender_space'] and distance(own,ball)<.32 and front<.20 and abs(lateral)>=.12:
+                return ('back' if front>=-.02 else 'walk'), 'CREATE_SPACE_BEFORE_SIDE_ALIGN'
             if .08 < front < .30 and abs(lateral) < .12:
                 # The ball is already reachable by the forward foot. Do not
                 # lose the tackle window turning towards a point under the body.
@@ -89,23 +105,27 @@ class Navigator:
             # underneath the torso. This is the old source of 180-degree oscillations.
             facing = (own[0]+forward[0], own[1]+forward[1])
             angle = angle_to(own, facing, yaw)
-            limit = 20 if decision.kick else 25
-            if abs(angle) > (limit if self.aligned else 12):
+            evading=decision.behaviour=='EVADE_DRIBBLE'
+            limit=SETTINGS['evade_angle'] if evading else 20 if decision.kick else 25
+            entry=SETTINGS['evade_enter_angle'] if evading else 12
+            if abs(angle) > (limit if self.aligned else entry):
                 self.aligned = False
-                return turn_action(angle), 'FACE_KICK_DIRECTION'
+                return turn_action(angle), ('EVADE_FACE_LANE' if evading else 'FACE_KICK_DIRECTION')
             self.aligned = True
             dx, dy = ball[0]-own[0], ball[1]-own[1]
             front = dx*math.cos(yaw)+dy*math.sin(yaw)
             left = -dx*math.sin(yaw)+dy*math.cos(yaw)
             lateral_target = .05 if decision.kick else 0
             lateral_limit = .055 if decision.kick else .10
+            if SETTINGS['defender_space'] and decision.behaviour=='CLEAR' and distance(own,ball)<.32 and front<.20 and abs(left-lateral_target)>lateral_limit:
+                return ('back' if front>=-.02 else 'walk'), 'CREATE_SPACE_BEFORE_SIDE_ALIGN'
             if abs(left-lateral_target) > lateral_limit:
-                return ('step_left' if left > lateral_target else 'step_right'), 'ALIGN_FOOT_LATERALLY'
+                return ('step_left' if left > lateral_target else 'step_right'), ('EVADE_ALIGN_FOOT' if evading else 'ALIGN_FOOT_LATERALLY')
             if front < .12:
                 return 'back', 'MAKE_FOOT_SPACE'
             if front > (.24 if decision.kick else .30):
                 return 'walk', 'CLOSE_BALL_DISTANCE'
-            return (decision.kick if decision.kick else 'walk'), ('EXECUTE_KICK' if decision.kick else 'DRIBBLE_TOWARD_GOAL')
+            return (decision.kick if decision.kick else 'walk'), ('EXECUTE_KICK' if decision.kick else 'EVADE_CARRY_LANE' if evading else 'DRIBBLE_TOWARD_GOAL')
         self.aligned = False
         separation = distance(own, decision.target)
         if separation < .15:

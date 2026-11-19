@@ -50,6 +50,9 @@ class TeamPolicy:
         self.duel_escape = None
         self.recovering_defence = False
         self.intercept_plan = None
+        self.counterpressing = False
+        self.carry_plan = None
+        self.own_yaw = 0.
 
     def home(self, direction):
         x = -4.15 if self.role == "goalkeeper" else -2.1 if self.role == "defender" else -.8
@@ -58,6 +61,7 @@ class TeamPolicy:
 
     def decide(self, world):
         own = world["robots"][self.name]["position"]
+        self.own_yaw = world["robots"][self.name].get("yaw",0.)
         match = world["match"]
         direction = match["red_direction"] * (1 if self.team == "RED" else -1)
         home = self.home(direction)
@@ -66,6 +70,8 @@ class TeamPolicy:
         phase = match["phase"]
         if phase != 'PLAYING' or self.name in world.get('penalties', {}):
             self.intercept_plan = None
+            self.counterpressing = False
+            self.carry_plan = None
         if self.name in world.get("penalties", {}):
             self.duel_anchor = self.duel_escape = None
             self.recovering_defence = False
@@ -120,6 +126,10 @@ class TeamPolicy:
                 return Decision("SUPPORT_PASS", (own[0], own[1]), tuple(ball))
             chaser = intent["receiver"]
         if self.name == chaser:
+            pressure = self.counterpress(world, own, ball, velocity, direction, opponents)
+            if pressure is not None:
+                self.carry_plan = None
+                return pressure
             # Begin positioning while there is still time to cover a lane.
             # Close foot contests keep their existing tackle/escape behaviour.
             threatening = min((distance(p, ball) for p in opponents), default=math.inf) < .65
@@ -185,6 +195,40 @@ class TeamPolicy:
         target = (direction*support_x, max(-2.4, min(2.4, ball[1]+side*1.1)))
         return Decision("SUPPORT", target, tuple(ball))
 
+    def counterpress(self, world, own, ball, velocity, direction, opponents):
+        """Recover a lost ball before resuming goal-facing attacking alignment."""
+        if self.role != 'striker' or not SETTINGS['press_enabled']:
+            return None
+        owner = world['match'].get('last_touch')
+        opponent_distance = min((distance(p,ball) for p in opponents), default=math.inf)
+        own_distance = distance(own,ball)
+        yaw = world['robots'][self.name].get('yaw',0)
+        front = (ball[0]-own[0])*math.cos(yaw)+(ball[1]-own[1])*math.sin(yaw)
+        side = -(ball[0]-own[0])*math.sin(yaw)+(ball[1]-own[1])*math.cos(yaw)
+        regained = (owner == self.name and .08 < front < .30 and abs(side)<.12)
+        if regained:
+            self.counterpressing = False
+        opponent_owner = owner and not owner.startswith(self.prefix)
+        if (opponent_owner and opponent_distance < .70 and not regained
+                and opponent_distance+SETTINGS['press_loss_margin']<own_distance):
+            self.counterpressing = True
+        if not self.counterpressing:
+            return None
+        # Clear stale ownership when the ball has become safely recoverable.
+        if opponent_distance > 1.2 and own_distance < .35 and direction*(ball[0]-own[0])>.05:
+            self.counterpressing = False
+            return None
+        escape = self.unblock_duel(world,own,ball,opponents)
+        if escape is not None:
+            return escape
+        # A bounded lead follows the observed ball path. Close contests use
+        # the current ball, so the chaser does not turn towards the attack goal.
+        horizon = SETTINGS['press_lead_seconds'] if own_distance > SETTINGS['press_near'] else 0.
+        horizon = min(horizon,.4/max(math.hypot(*velocity[:2]),.01))
+        target = (max(-4.3,min(4.3,ball[0]+velocity[0]*horizon)),
+                  max(-2.65,min(2.65,ball[1]+velocity[1]*horizon)))
+        return Decision('COUNTERPRESS',tuple(target),tuple(ball))
+
     def defensive_recovery(self, own, ball, velocity, direction, opponents):
         """Get goal-side after being beaten, before attempting a clearance."""
         if self.role != "defender":
@@ -228,7 +272,17 @@ class TeamPolicy:
         if self.duel_anchor is None or distance(ball, self.duel_anchor[0]) > .06 or now < self.duel_anchor[1]:
             self.duel_anchor = (tuple(ball), now)
             return None
-        if now-self.duel_anchor[1] < (8 if self.role == 'defender' else 3):
+        wait=8 if self.role=='defender' else 3
+        if self.role=='striker':
+            yaw=world['robots'][self.name].get('yaw',0.)
+            dx,dy=ball[0]-own[0],ball[1]-own[1]
+            front=dx*math.cos(yaw)+dy*math.sin(yaw)
+            lateral=-dx*math.sin(yaw)+dy*math.cos(yaw)
+            # Match the existing defender's hold only while the ball really
+            # remains in our forward foot window. Else realign promptly.
+            if .08<front<.30 and abs(lateral)<.12:
+                wait=SETTINGS['duel_hold_seconds']
+        if now-self.duel_anchor[1] < wait:
             return None
         other = min(opponents, key=lambda p: distance(p, own))
         yaw = world["robots"][self.name].get("yaw", 0)
@@ -280,6 +334,10 @@ class TeamPolicy:
                 aim, behaviour, kick = goal, "SHOOT", "shoot"
             else:
                 aim, behaviour = goal, "DRIBBLE"
+        if behaviour=='DRIBBLE' and SETTINGS['evade_enabled']:
+            aim=self.carry_around(own,ball,aim,direction,opponents)
+            if self.carry_plan is not None:
+                behaviour='EVADE_DRIBBLE'
         ux, uy = unit(ball, aim)
         # Shoot/LongPass swing the left foot; align the ball with that foot.
         back, lateral = (.17, .05) if kick else (.19, 0)
@@ -288,6 +346,42 @@ class TeamPolicy:
             # Lead a moving ball with a bounded horizon, not an unlimited extrapolation.
             behaviour = "INTERCEPT"
         return Decision(behaviour, target, tuple(aim), kick, receiver)
+
+
+    def carry_around(self, own, ball, goal, direction, opponents):
+        """Commit to one carrying lane around a defender blocking the goal.
+
+        The waypoint is an intended ball path, not a ball placement. Every
+        turn, foot alignment and push still uses the ordinary executor.
+        """
+        if self.carry_plan is not None:
+            anchor,waypoint=self.carry_plan
+            passed=direction*(ball[0]-anchor[0])>.30
+            if passed or distance(ball,waypoint)<.25 or distance(own,ball)>.65:
+                self.carry_plan=None
+            else:
+                return waypoint
+        if distance(own,ball)>.50 or lane_clear(ball,goal,opponents,clearance=.50):
+            return goal
+        # Starting a large turn in an already close tackle exposes the ball.
+        ahead=[p for p in opponents if direction*(p[0]-ball[0])>.20
+               and SETTINGS['evade_min_distance']<distance(p,ball)<SETTINGS['evade_distance']
+               and abs(p[1]-ball[1])<.80]
+        if not ahead:
+            return goal
+        other=min(ahead,key=lambda p:distance(p,ball))
+        options=[]
+        for side in (-1,1):
+            waypoint=(max(-4.15,min(4.15,other[0]+direction*SETTINGS['evade_ahead'])),
+                      max(-2.35,min(2.35,other[1]+side*SETTINGS['evade_width'])))
+            bearing=math.atan2(waypoint[1]-ball[1],waypoint[0]-ball[0])
+            error=abs((bearing-self.own_yaw+math.pi)%(2*math.pi)-math.pi)
+            blocked=not lane_clear(ball,waypoint,opponents,clearance=.30)
+            cost=distance(ball,waypoint)+error*1.2+int(blocked)*2.+max(0,abs(waypoint[1])-1.9)
+            options.append((cost,waypoint))
+        waypoint=min(options,key=lambda item:item[0])[1]
+        self.carry_plan=(tuple(other[:2]),waypoint)
+        return waypoint
 
 
 def avoid_obstacles(own, target, robots, margin=.5):

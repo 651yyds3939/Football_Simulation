@@ -1,0 +1,4776 @@
+{
+  "summary": {
+    "runs": 160,
+    "outcomes": {
+      "CLEARED_GOAL": 29,
+      "GOAL": 119,
+      "TIMEOUT": 10,
+      "OUT": 2
+    },
+    "first_attacking_contests": 134,
+    "first_contest_results": {
+      "LOST": 40,
+      "BROKE_THROUGH": 87,
+      "UNRESOLVED": 5,
+      "GOAL_WITHOUT_MEASURED_BREAK": 2
+    },
+    "body_contact_runs": 94,
+    "body_contact_before_first_loss_runs": 93,
+    "contact_before_loss_results": {
+      "LOST": 40,
+      "BROKE_THROUGH": 48,
+      "UNRESOLVED": 5
+    },
+    "goals_after_body_contact": 54,
+    "exclusive_blue_control_runs": 41,
+    "breakthrough_runs": 119,
+    "attacker_regain_runs": 46,
+    "productive_regain_runs": 35,
+    "stalls_over_20s": 13,
+    "mean_seconds": 77.99675000000092,
+    "wall_seconds": 31.193229883996537
+  },
+  "runs": [
+    {
+      "seed": 80000,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 153.40000000000376,
+      "first_contest_at": 15.519999999999845,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 18.19999999999979,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 59.39999999999891,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.29999999999999977,
+      "attacker_regain": true,
+      "productive_regain": false,
+      "longest_stall_seconds": 16.999999999999815,
+      "attacker_states_seconds": {
+        "DRIBBLE": 10.359999999999955,
+        "EVADE_DRIBBLE": 22.79999999999969,
+        "DUEL_ESCAPE": 26.59999999999961,
+        "COUNTERPRESS": 93.60000000000343
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 24.519999999999655,
+        "FACE_KICK_DIRECTION": 6.320000000000005,
+        "MAKE_FOOT_SPACE": 2.320000000000001,
+        "DUEL_STEP_ASIDE": 12.519999999999909,
+        "DUEL_SPACE_CREATED": 14.079999999999876,
+        "PRESS_CONTEST_FOOT": 1.0400000000000003,
+        "PRESS_FACE_BALL": 43.91999999999924,
+        "PRESS_CLOSE_BALL": 48.63999999999914
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80001,
+      "outcome": "GOAL",
+      "seconds": 27.1199999999996,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 15.27999999999985,
+      "minimum_body_distance": 0.505318954902837,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 20.399999999999743,
+        "SHOOT": 6.680000000000005
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 20.399999999999743,
+        "CLOSE_BALL_DISTANCE": 6.680000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80002,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 97.72000000000408,
+      "first_contest_at": 12.759999999999904,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 15.399999999999848,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 16.519999999999825,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 1.7200000000000009,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 18.879999999999775,
+        "COUNTERPRESS": 78.80000000000112
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 2.120000000000001,
+        "DRIBBLE_TOWARD_GOAL": 13.039999999999898,
+        "ALIGN_FOOT_LATERALLY": 3.7200000000000024,
+        "PRESS_FACE_BALL": 37.27999999999938,
+        "PRESS_CLOSE_BALL": 41.51999999999929
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80003,
+      "outcome": "GOAL",
+      "seconds": 51.11999999999909,
+      "first_contest_at": 19.55999999999976,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 23.27999999999968,
+      "minimum_body_distance": 0.4104626532372257,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 41.75999999999929,
+        "SHOOT": 9.319999999999977
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 41.75999999999929,
+        "ALIGN_FOOT_LATERALLY": 2.6000000000000014,
+        "CLOSE_BALL_DISTANCE": 6.720000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80004,
+      "outcome": "GOAL",
+      "seconds": 32.39999999999949,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 23.199999999999683,
+      "minimum_body_distance": 0.3940040604092545,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 24.35999999999966,
+        "SHOOT": 8.000000000000005
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 24.35999999999966,
+        "ALIGN_FOOT_LATERALLY": 1.2400000000000004,
+        "CLOSE_BALL_DISTANCE": 6.760000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80005,
+      "outcome": "GOAL",
+      "seconds": 59.07999999999892,
+      "first_contest_at": 8.959999999999985,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 32.31999999999949,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 43.319999999999254,
+      "minimum_body_distance": 0.2999999999999997,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 1.4000000000000006,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 14.879999999999859,
+        "DRIBBLE": 37.27999999999938,
+        "SHOOT": 6.880000000000005
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 39.39999999999934,
+        "FACE_KICK_DIRECTION": 8.24,
+        "ALIGN_FOOT_LATERALLY": 4.520000000000003,
+        "CLOSE_BALL_DISTANCE": 6.880000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80006,
+      "outcome": "GOAL",
+      "seconds": 85.56000000000218,
+      "first_contest_at": 7.080000000000005,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 9.319999999999977,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 33.839999999999456,
+      "minimum_body_distance": 0.29999999999999993,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 12.159999999999917,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 22.87999999999969,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "COUNTERPRESS": 3.6400000000000023,
+        "DRIBBLE": 43.19999999999926,
+        "SHOOT": 7.760000000000006
+      },
+      "attacker_stages_seconds": {
+        "ALIGN_FOOT_LATERALLY": 6.720000000000005,
+        "DRIBBLE_TOWARD_GOAL": 50.6399999999991,
+        "MAKE_FOOT_SPACE": 1.1600000000000004,
+        "DUEL_STEP_ASIDE": 8.040000000000004,
+        "PRESS_CONTEST_FOOT": 3.6400000000000023,
+        "FACE_KICK_DIRECTION": 9.479999999999974,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 5.760000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80007,
+      "outcome": "TIMEOUT",
+      "seconds": 179.99999999999847,
+      "first_contest_at": 19.679999999999758,
+      "first_contest_result": "UNRESOLVED",
+      "first_body_contact_at": 29.279999999999553,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "UNRESOLVED",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.299630501200285,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 92.96000000000333,
+      "attacker_states_seconds": {
+        "DRIBBLE": 77.60000000000093,
+        "EVADE_DRIBBLE": 13.239999999999894,
+        "SHOOT": 7.320000000000006,
+        "DUEL_ESCAPE": 78.32000000000104,
+        "INTERCEPT": 3.480000000000002
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 6.600000000000005,
+        "DRIBBLE_TOWARD_GOAL": 18.19999999999979,
+        "ALIGN_FOOT_LATERALLY": 50.03999999999911,
+        "CLOSE_BALL_DISTANCE": 26.799999999999606,
+        "DUEL_STEP_ASIDE": 51.59999999999908,
+        "DUEL_SPACE_CREATED": 26.719999999999608
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80008,
+      "outcome": "GOAL",
+      "seconds": 70.75999999999986,
+      "first_contest_at": 8.71999999999999,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 11.03999999999994,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 28.51999999999957,
+      "minimum_body_distance": 0.29999999999999993,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 8.559999999999993,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 22.079999999999707,
+        "DUEL_ESCAPE": 4.360000000000003,
+        "DRIBBLE": 29.359999999999552,
+        "SHOOT": 14.919999999999858
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 48.79999999999914,
+        "MAKE_FOOT_SPACE": 0.7200000000000001,
+        "ALIGN_FOOT_LATERALLY": 1.6000000000000008,
+        "DUEL_STEP_ASIDE": 4.360000000000003,
+        "FACE_KICK_DIRECTION": 0.32,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.63999999999997,
+        "CLOSE_BALL_DISTANCE": 5.200000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80009,
+      "outcome": "GOAL",
+      "seconds": 65.9199999999991,
+      "first_contest_at": 15.639999999999842,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 17.799999999999798,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 33.51999999999946,
+      "minimum_body_distance": 0.2999999999999998,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 6.000000000000004,
+      "attacker_states_seconds": {
+        "DRIBBLE": 24.119999999999663,
+        "EVADE_DRIBBLE": 21.559999999999718,
+        "DUEL_ESCAPE": 2.4800000000000013,
+        "SHOOT": 17.7199999999998
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 43.35999999999925,
+        "FACE_KICK_DIRECTION": 3.6400000000000023,
+        "MAKE_FOOT_SPACE": 0.64,
+        "ALIGN_FOOT_LATERALLY": 0.9200000000000003,
+        "DUEL_STEP_ASIDE": 2.4800000000000013,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.67999999999997,
+        "CLOSE_BALL_DISTANCE": 5.080000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80010,
+      "outcome": "GOAL",
+      "seconds": 51.279999999999085,
+      "first_contest_at": 6.240000000000005,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 8.399999999999997,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 25.919999999999625,
+      "minimum_body_distance": 0.29999999999999977,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 5.160000000000004,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 24.159999999999663,
+        "DUEL_ESCAPE": 1.760000000000001,
+        "DRIBBLE": 11.639999999999928,
+        "SHOOT": 13.679999999999884
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 8.200000000000001,
+        "DRIBBLE_TOWARD_GOAL": 29.47999999999955,
+        "MAKE_FOOT_SPACE": 0.64,
+        "DUEL_STEP_ASIDE": 1.760000000000001,
+        "ALIGN_FOOT_LATERALLY": 1.2800000000000005,
+        "EXECUTE_KICK": 0.04,
+        "EXECUTING_MOTION": 4.840000000000003,
+        "CLOSE_BALL_DISTANCE": 5.0000000000000036
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80011,
+      "outcome": "GOAL",
+      "seconds": 51.39999999999908,
+      "first_contest_at": 7.600000000000006,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 20.719999999999736,
+      "minimum_body_distance": 0.46684315795163916,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 11.879999999999923,
+        "DRIBBLE": 26.279999999999617,
+        "SHOOT": 13.199999999999894
+      },
+      "attacker_stages_seconds": {
+        "ALIGN_FOOT_LATERALLY": 0.8800000000000002,
+        "DRIBBLE_TOWARD_GOAL": 36.4799999999994,
+        "FACE_KICK_DIRECTION": 7.680000000000006,
+        "CLOSE_BALL_DISTANCE": 6.320000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80012,
+      "outcome": "GOAL",
+      "seconds": 92.00000000000318,
+      "first_contest_at": 10.679999999999948,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 12.999999999999899,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 31.7999999999995,
+      "minimum_body_distance": 0.29999999999999993,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 6.160000000000005,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 29.91999999999954,
+        "DUEL_ESCAPE": 2.4800000000000013,
+        "DRIBBLE": 39.19999999999934,
+        "SHOOT": 20.359999999999744
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 15.799999999999839,
+        "ALIGN_FOOT_LATERALLY": 3.360000000000002,
+        "DRIBBLE_TOWARD_GOAL": 56.03999999999898,
+        "MAKE_FOOT_SPACE": 0.7200000000000001,
+        "DUEL_STEP_ASIDE": 2.4800000000000013,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.599999999999971,
+        "CLOSE_BALL_DISTANCE": 3.8800000000000026
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80013,
+      "outcome": "GOAL",
+      "seconds": 37.03999999999939,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 22.639999999999695,
+      "minimum_body_distance": 0.39890464645806,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 28.43999999999957,
+        "SHOOT": 8.559999999999993
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 28.43999999999957,
+        "ALIGN_FOOT_LATERALLY": 1.880000000000001,
+        "CLOSE_BALL_DISTANCE": 6.680000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80014,
+      "outcome": "GOAL",
+      "seconds": 58.07999999999894,
+      "first_contest_at": 10.55999999999995,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 17.079999999999814,
+      "minimum_body_distance": 0.6078044128078225,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 51.319999999999084,
+        "SHOOT": 6.720000000000005
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 51.319999999999084,
+        "CLOSE_BALL_DISTANCE": 6.720000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80015,
+      "outcome": "GOAL",
+      "seconds": 54.63999999999901,
+      "first_contest_at": 12.119999999999918,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 22.999999999999687,
+      "minimum_body_distance": 0.5032590913002469,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 19.239999999999768,
+        "DRIBBLE": 28.679999999999566,
+        "SHOOT": 6.680000000000005
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 2.7200000000000015,
+        "DRIBBLE_TOWARD_GOAL": 45.199999999999214,
+        "CLOSE_BALL_DISTANCE": 6.680000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80016,
+      "outcome": "GOAL",
+      "seconds": 36.83999999999939,
+      "first_contest_at": 17.7199999999998,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 31.599999999999504,
+      "minimum_body_distance": 0.4732493135374942,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 20.279999999999745,
+        "EVADE_DRIBBLE": 6.280000000000005,
+        "SHOOT": 10.239999999999958
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 26.55999999999961,
+        "ALIGN_FOOT_LATERALLY": 3.480000000000002,
+        "CLOSE_BALL_DISTANCE": 6.760000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80017,
+      "outcome": "GOAL",
+      "seconds": 44.719999999999224,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 20.639999999999738,
+      "minimum_body_distance": 0.6034733908022117,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 36.719999999999395,
+        "SHOOT": 7.960000000000006
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 36.719999999999395,
+        "ALIGN_FOOT_LATERALLY": 1.1200000000000003,
+        "CLOSE_BALL_DISTANCE": 6.840000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80018,
+      "outcome": "GOAL",
+      "seconds": 80.04000000000131,
+      "first_contest_at": 5.960000000000004,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 8.120000000000003,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 37.719999999999374,
+      "minimum_body_distance": 0.29999999999999993,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 6.000000000000004,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 24.839999999999648,
+        "DUEL_ESCAPE": 2.4800000000000013,
+        "DRIBBLE": 46.519999999999186,
+        "SHOOT": 6.160000000000005
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 17.27999999999981,
+        "DRIBBLE_TOWARD_GOAL": 52.91999999999905,
+        "MAKE_FOOT_SPACE": 0.7600000000000001,
+        "ALIGN_FOOT_LATERALLY": 0.39999999999999997,
+        "DUEL_STEP_ASIDE": 2.4800000000000013,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 6.0800000000000045
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80019,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 135.32000000000735,
+      "first_contest_at": 16.35999999999983,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 18.879999999999775,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 25.23999999999964,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.2999999999999996,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.6000000000000014,
+      "attacker_states_seconds": {
+        "DRIBBLE": 11.359999999999934,
+        "EVADE_DRIBBLE": 12.119999999999918,
+        "COUNTERPRESS": 111.80000000000628
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 19.03999999999977,
+        "FACE_KICK_DIRECTION": 4.440000000000003,
+        "PRESS_CONTEST_FOOT": 1.5600000000000007,
+        "PRESS_FACE_BALL": 41.439999999999294,
+        "PRESS_CLOSE_BALL": 68.79999999999956
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80020,
+      "outcome": "GOAL",
+      "seconds": 68.03999999999944,
+      "first_contest_at": 6.600000000000005,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 31.959999999999496,
+      "minimum_body_distance": 0.40124533099343757,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.68,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 16.559999999999825,
+        "DRIBBLE": 34.11999999999945,
+        "SHOOT": 17.31999999999981
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 14.719999999999862,
+        "DRIBBLE_TOWARD_GOAL": 40.59999999999931,
+        "CLOSE_BALL_DISTANCE": 4.640000000000003,
+        "ALIGN_FOOT_LATERALLY": 8.040000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80021,
+      "outcome": "TIMEOUT",
+      "seconds": 179.99999999999847,
+      "first_contest_at": 10.919999999999943,
+      "first_contest_result": "UNRESOLVED",
+      "first_body_contact_at": 13.039999999999898,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "UNRESOLVED",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": true,
+      "productive_regain": false,
+      "longest_stall_seconds": 84.64000000000203,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 89.72000000000283,
+        "DUEL_ESCAPE": 89.00000000000271,
+        "COUNTERPRESS": 1.2400000000000004
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 2.4400000000000013,
+        "DRIBBLE_TOWARD_GOAL": 58.87999999999892,
+        "DUEL_STEP_ASIDE": 21.119999999999727,
+        "DUEL_SPACE_CREATED": 67.87999999999941,
+        "PRESS_CONTEST_FOOT": 1.2400000000000004,
+        "MAKE_FOOT_SPACE": 28.399999999999572
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80022,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 130.20000000000837,
+      "first_contest_at": 13.199999999999894,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 15.359999999999848,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 36.5999999999994,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.29999999999999954,
+      "attacker_regain": true,
+      "productive_regain": false,
+      "longest_stall_seconds": 11.879999999999923,
+      "attacker_states_seconds": {
+        "DRIBBLE": 9.879999999999965,
+        "EVADE_DRIBBLE": 22.999999999999687,
+        "DUEL_ESCAPE": 8.67999999999999,
+        "COUNTERPRESS": 88.60000000000265
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 7.720000000000006,
+        "DRIBBLE_TOWARD_GOAL": 16.83999999999982,
+        "DUEL_SPACE_CREATED": 7.280000000000006,
+        "MAKE_FOOT_SPACE": 8.319999999999999,
+        "DUEL_STEP_ASIDE": 1.4000000000000006,
+        "PRESS_FACE_BALL": 34.879999999999434,
+        "PRESS_CLOSE_BALL": 53.71999999999903
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80023,
+      "outcome": "OUT",
+      "seconds": 71.35999999999996,
+      "first_contest_at": 7.840000000000006,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 27.51999999999959,
+      "minimum_body_distance": 0.3542520385539705,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.280000000000001,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 14.719999999999862,
+        "DRIBBLE": 51.199999999999086,
+        "SHOOT": 5.400000000000004
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 46.519999999999186,
+        "FACE_KICK_DIRECTION": 11.159999999999938,
+        "ALIGN_FOOT_LATERALLY": 8.67999999999999,
+        "EXECUTE_KICK": 0.04,
+        "EXECUTING_MOTION": 4.800000000000003,
+        "CLOSE_BALL_DISTANCE": 0.12
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80024,
+      "outcome": "TIMEOUT",
+      "seconds": 179.99999999999847,
+      "first_contest_at": 5.200000000000004,
+      "first_contest_result": "UNRESOLVED",
+      "first_body_contact_at": 7.360000000000006,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "UNRESOLVED",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.29999999999999993,
+      "attacker_regain": true,
+      "productive_regain": false,
+      "longest_stall_seconds": 86.52000000000233,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 73.96000000000036,
+        "COUNTERPRESS": 10.11999999999996,
+        "DUEL_ESCAPE": 95.88000000000379
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 5.400000000000004,
+        "DRIBBLE_TOWARD_GOAL": 42.95999999999926,
+        "ALIGN_FOOT_LATERALLY": 3.440000000000002,
+        "PRESS_CONTEST_FOOT": 10.11999999999996,
+        "DUEL_STEP_ASIDE": 50.7199999999991,
+        "DUEL_SPACE_CREATED": 45.159999999999215,
+        "MAKE_FOOT_SPACE": 22.159999999999705
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80025,
+      "outcome": "GOAL",
+      "seconds": 34.67999999999944,
+      "first_contest_at": 16.159999999999833,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 24.23999999999966,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 26.279999999999617,
+      "minimum_body_distance": 0.29999999999999993,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.68,
+      "attacker_states_seconds": {
+        "DRIBBLE": 18.19999999999979,
+        "EVADE_DRIBBLE": 9.519999999999973,
+        "SHOOT": 6.920000000000005
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 23.83999999999967,
+        "FACE_KICK_DIRECTION": 3.8800000000000026,
+        "CLOSE_BALL_DISTANCE": 6.920000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80026,
+      "outcome": "GOAL",
+      "seconds": 45.119999999999216,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 23.75999999999967,
+      "minimum_body_distance": 0.5807340586061227,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 38.23999999999936,
+        "SHOOT": 6.840000000000005
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 0.28,
+        "DRIBBLE_TOWARD_GOAL": 37.95999999999937,
+        "CLOSE_BALL_DISTANCE": 6.840000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80027,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 104.64000000000516,
+      "first_contest_at": 18.079999999999792,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 20.199999999999747,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 29.279999999999553,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 5.480000000000004,
+      "attacker_states_seconds": {
+        "DRIBBLE": 0.32,
+        "EVADE_DRIBBLE": 22.199999999999704,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "COUNTERPRESS": 74.04000000000038
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 19.51999999999976,
+        "FACE_KICK_DIRECTION": 3.0000000000000018,
+        "DUEL_STEP_ASIDE": 6.800000000000005,
+        "DUEL_SPACE_CREATED": 1.2400000000000004,
+        "PRESS_FACE_BALL": 38.079999999999366,
+        "PRESS_CLOSE_BALL": 35.95999999999941
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80028,
+      "outcome": "GOAL",
+      "seconds": 43.59999999999925,
+      "first_contest_at": 7.960000000000006,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 25.079999999999643,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 33.15999999999947,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.8000000000000002,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 14.279999999999871,
+        "DRIBBLE": 22.4399999999997,
+        "SHOOT": 6.840000000000005
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 8.319999999999999,
+        "DRIBBLE_TOWARD_GOAL": 28.03999999999958,
+        "ALIGN_FOOT_LATERALLY": 0.32,
+        "CLOSE_BALL_DISTANCE": 6.880000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80029,
+      "outcome": "GOAL",
+      "seconds": 59.8399999999989,
+      "first_contest_at": 6.200000000000005,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 18.11999999999979,
+      "minimum_body_distance": 0.5526023799265333,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 11.279999999999935,
+        "DRIBBLE": 38.47999999999936,
+        "SHOOT": 10.039999999999962
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 45.199999999999214,
+        "FACE_KICK_DIRECTION": 8.71999999999999,
+        "CLOSE_BALL_DISTANCE": 5.880000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80030,
+      "outcome": "GOAL",
+      "seconds": 80.28000000000135,
+      "first_contest_at": 11.599999999999929,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 25.479999999999634,
+      "minimum_body_distance": 0.3095256362301149,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.040000000000001,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 20.199999999999747,
+        "DRIBBLE": 43.239999999999256,
+        "SHOOT": 16.79999999999982
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 12.799999999999903,
+        "DRIBBLE_TOWARD_GOAL": 54.71999999999901,
+        "ALIGN_FOOT_LATERALLY": 6.920000000000005,
+        "CLOSE_BALL_DISTANCE": 5.800000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80031,
+      "outcome": "TIMEOUT",
+      "seconds": 179.99999999999847,
+      "first_contest_at": 13.43999999999989,
+      "first_contest_result": "UNRESOLVED",
+      "first_body_contact_at": 21.119999999999727,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "UNRESOLVED",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.2997568463044027,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 157.60000000000292,
+      "attacker_states_seconds": {
+        "DRIBBLE": 168.52000000000075,
+        "EVADE_DRIBBLE": 11.439999999999932
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 17.27999999999981,
+        "FACE_KICK_DIRECTION": 4.9600000000000035,
+        "ALIGN_FOOT_LATERALLY": 157.7200000000029
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80032,
+      "outcome": "GOAL",
+      "seconds": 48.31999999999915,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 19.479999999999762,
+      "minimum_body_distance": 0.8203700459054121,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 41.59999999999929,
+        "SHOOT": 6.680000000000005
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 41.59999999999929,
+        "CLOSE_BALL_DISTANCE": 6.680000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80033,
+      "outcome": "GOAL",
+      "seconds": 59.239999999998915,
+      "first_contest_at": 10.319999999999956,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 24.67999999999965,
+      "minimum_body_distance": 0.3863034237943399,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.8000000000000002,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 20.279999999999745,
+        "DRIBBLE": 29.159999999999556,
+        "SHOOT": 9.759999999999968
+      },
+      "attacker_stages_seconds": {
+        "ALIGN_FOOT_LATERALLY": 1.1600000000000004,
+        "DRIBBLE_TOWARD_GOAL": 43.759999999999245,
+        "FACE_KICK_DIRECTION": 9.439999999999975,
+        "CLOSE_BALL_DISTANCE": 4.840000000000003
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80034,
+      "outcome": "GOAL",
+      "seconds": 64.99999999999896,
+      "first_contest_at": 4.8800000000000034,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 7.120000000000005,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 8.559999999999993,
+      "first_breakthrough_at": 31.999999999999496,
+      "minimum_body_distance": 0.29999999999999966,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 12.03999999999992,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 19.479999999999762,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "COUNTERPRESS": 3.9200000000000026,
+        "DRIBBLE": 7.2000000000000055,
+        "SHOOT": 26.319999999999617
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 7.280000000000006,
+        "ALIGN_FOOT_LATERALLY": 8.200000000000001,
+        "DRIBBLE_TOWARD_GOAL": 21.91999999999971,
+        "DUEL_STEP_ASIDE": 8.040000000000004,
+        "PRESS_CONTEST_FOOT": 3.9200000000000026,
+        "MAKE_FOOT_SPACE": 1.0400000000000003,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.67999999999997,
+        "CLOSE_BALL_DISTANCE": 4.800000000000003
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80035,
+      "outcome": "GOAL",
+      "seconds": 62.63999999999884,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 24.75999999999965,
+      "minimum_body_distance": 0.7027346932490792,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 48.479999999999144,
+        "SHOOT": 14.119999999999875
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 48.479999999999144,
+        "ALIGN_FOOT_LATERALLY": 3.8400000000000025,
+        "CLOSE_BALL_DISTANCE": 6.280000000000005,
+        "FACE_KICK_DIRECTION": 4.000000000000003
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80036,
+      "outcome": "GOAL",
+      "seconds": 56.359999999998976,
+      "first_contest_at": 19.879999999999754,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 28.639999999999567,
+      "minimum_body_distance": 0.32683254646803844,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.68,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 24.23999999999966,
+        "DRIBBLE": 25.399999999999636,
+        "SHOOT": 6.680000000000005
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 3.080000000000002,
+        "DRIBBLE_TOWARD_GOAL": 46.559999999999185,
+        "CLOSE_BALL_DISTANCE": 6.680000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80037,
+      "outcome": "GOAL",
+      "seconds": 25.19999999999964,
+      "first_contest_at": 10.439999999999953,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 13.999999999999877,
+      "minimum_body_distance": 0.3596516575271429,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 18.399999999999785,
+        "SHOOT": 6.760000000000005
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 18.399999999999785,
+        "ALIGN_FOOT_LATERALLY": 0.08,
+        "CLOSE_BALL_DISTANCE": 6.680000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80038,
+      "outcome": "GOAL",
+      "seconds": 65.8399999999991,
+      "first_contest_at": 6.920000000000005,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 16.079999999999835,
+      "minimum_body_distance": 0.5222985337468538,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 10.439999999999953,
+        "DRIBBLE": 35.95999999999941,
+        "SHOOT": 19.399999999999764
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 46.39999999999919,
+        "FACE_KICK_DIRECTION": 6.360000000000005,
+        "ALIGN_FOOT_LATERALLY": 6.920000000000005,
+        "CLOSE_BALL_DISTANCE": 6.1200000000000045
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80039,
+      "outcome": "GOAL",
+      "seconds": 56.15999999999898,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 20.11999999999975,
+      "minimum_body_distance": 0.5614756291031233,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 45.8399999999992,
+        "SHOOT": 10.279999999999957
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 45.8399999999992,
+        "ALIGN_FOOT_LATERALLY": 3.5600000000000023,
+        "CLOSE_BALL_DISTANCE": 6.720000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80040,
+      "outcome": "GOAL",
+      "seconds": 38.67999999999935,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 23.559999999999675,
+      "minimum_body_distance": 0.5990529696086058,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 29.199999999999555,
+        "SHOOT": 9.439999999999975
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 0.39999999999999997,
+        "DRIBBLE_TOWARD_GOAL": 28.799999999999564,
+        "ALIGN_FOOT_LATERALLY": 2.6000000000000014,
+        "CLOSE_BALL_DISTANCE": 6.840000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80041,
+      "outcome": "GOAL",
+      "seconds": 55.519999999998994,
+      "first_contest_at": 14.79999999999986,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 18.279999999999788,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 25.479999999999634,
+      "minimum_body_distance": 0.29999999999999977,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.080000000000001,
+      "attacker_states_seconds": {
+        "DRIBBLE": 26.479999999999613,
+        "EVADE_DRIBBLE": 18.079999999999792,
+        "SHOOT": 10.919999999999943
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 40.71999999999931,
+        "FACE_KICK_DIRECTION": 3.8400000000000025,
+        "EXECUTE_KICK": 0.04,
+        "EXECUTING_MOTION": 4.840000000000003,
+        "CLOSE_BALL_DISTANCE": 6.0400000000000045
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80042,
+      "outcome": "GOAL",
+      "seconds": 101.56000000000468,
+      "first_contest_at": 11.07999999999994,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 13.279999999999893,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 14.759999999999861,
+      "first_breakthrough_at": 49.15999999999913,
+      "minimum_body_distance": 0.3,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 17.479999999999805,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 37.199999999999385,
+        "COUNTERPRESS": 1.0800000000000003,
+        "DUEL_ESCAPE": 16.079999999999835,
+        "DRIBBLE": 32.31999999999949,
+        "SHOOT": 14.83999999999986
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 5.480000000000004,
+        "ALIGN_FOOT_LATERALLY": 1.920000000000001,
+        "DRIBBLE_TOWARD_GOAL": 61.31999999999887,
+        "PRESS_CONTEST_FOOT": 0.24000000000000002,
+        "PRESS_FACE_BALL": 0.8400000000000002,
+        "DUEL_STEP_ASIDE": 15.71999999999984,
+        "DUEL_SPACE_CREATED": 0.36,
+        "MAKE_FOOT_SPACE": 0.8000000000000002,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.599999999999971,
+        "CLOSE_BALL_DISTANCE": 5.160000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80043,
+      "outcome": "GOAL",
+      "seconds": 30.35999999999953,
+      "first_contest_at": 26.759999999999607,
+      "first_contest_result": "GOAL_WITHOUT_MEASURED_BREAK",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.30876626644134425,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 19.59999999999976,
+        "SHOOT": 10.719999999999947
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 0.8000000000000002,
+        "DRIBBLE_TOWARD_GOAL": 18.799999999999777,
+        "ALIGN_FOOT_LATERALLY": 3.9600000000000026,
+        "CLOSE_BALL_DISTANCE": 6.760000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80044,
+      "outcome": "GOAL",
+      "seconds": 71.07999999999991,
+      "first_contest_at": 8.519999999999994,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 10.839999999999945,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 24.919999999999646,
+      "minimum_body_distance": 0.2999999999999998,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 6.720000000000005,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 19.759999999999756,
+        "DUEL_ESCAPE": 4.360000000000003,
+        "DRIBBLE": 39.87999999999933,
+        "SHOOT": 7.040000000000005
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 52.679999999999055,
+        "MAKE_FOOT_SPACE": 0.68,
+        "DUEL_STEP_ASIDE": 4.360000000000003,
+        "FACE_KICK_DIRECTION": 6.280000000000005,
+        "ALIGN_FOOT_LATERALLY": 1.4400000000000006,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 5.520000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80045,
+      "outcome": "GOAL",
+      "seconds": 66.35999999999918,
+      "first_contest_at": 9.519999999999973,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 28.47999999999957,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 34.75999999999944,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 8.200000000000001,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 19.839999999999755,
+        "DRIBBLE": 37.639999999999375,
+        "DUEL_ESCAPE": 1.800000000000001,
+        "SHOOT": 7.040000000000005
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 10.719999999999947,
+        "DRIBBLE_TOWARD_GOAL": 46.75999999999918,
+        "DUEL_STEP_ASIDE": 1.800000000000001,
+        "ALIGN_FOOT_LATERALLY": 0.43999999999999995,
+        "CLOSE_BALL_DISTANCE": 6.600000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80046,
+      "outcome": "GOAL",
+      "seconds": 34.67999999999944,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 15.479999999999846,
+      "minimum_body_distance": 0.8206092202228168,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 25.799999999999628,
+        "SHOOT": 8.839999999999987
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 25.799999999999628,
+        "CLOSE_BALL_DISTANCE": 6.800000000000005,
+        "FACE_KICK_DIRECTION": 2.040000000000001
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80047,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 113.68000000000657,
+      "first_contest_at": 12.759999999999904,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 15.199999999999852,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 16.959999999999816,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.29999999999999977,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.040000000000001,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 19.59999999999976,
+        "COUNTERPRESS": 94.0400000000035
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 1.0400000000000003,
+        "DRIBBLE_TOWARD_GOAL": 15.119999999999854,
+        "ALIGN_FOOT_LATERALLY": 3.440000000000002,
+        "PRESS_FACE_BALL": 40.15999999999932,
+        "PRESS_CLOSE_BALL": 53.87999999999903
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80048,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 111.00000000000615,
+      "first_contest_at": 12.079999999999918,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 15.199999999999852,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 17.159999999999812,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.29999999999999977,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 1.2800000000000005,
+      "attacker_states_seconds": {
+        "DRIBBLE": 8.120000000000003,
+        "EVADE_DRIBBLE": 9.879999999999965,
+        "COUNTERPRESS": 92.96000000000333
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 5.520000000000004,
+        "ALIGN_FOOT_LATERALLY": 2.4800000000000013,
+        "DRIBBLE_TOWARD_GOAL": 9.999999999999963,
+        "PRESS_FACE_BALL": 38.83999999999935,
+        "PRESS_CLOSE_BALL": 54.119999999999024
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80049,
+      "outcome": "GOAL",
+      "seconds": 67.7599999999994,
+      "first_contest_at": 5.360000000000004,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 7.600000000000006,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 9.119999999999981,
+      "first_breakthrough_at": 29.39999999999955,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 7.2400000000000055,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 20.199999999999747,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "COUNTERPRESS": 0.16,
+        "DRIBBLE": 19.59999999999976,
+        "SHOOT": 11.879999999999923,
+        "INTERCEPT": 7.840000000000006
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 5.600000000000004,
+        "ALIGN_FOOT_LATERALLY": 5.240000000000004,
+        "DRIBBLE_TOWARD_GOAL": 32.999999999999474,
+        "MAKE_FOOT_SPACE": 0.08,
+        "DUEL_STEP_ASIDE": 8.040000000000004,
+        "PRESS_CONTEST_FOOT": 0.16,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.67999999999997,
+        "CLOSE_BALL_DISTANCE": 5.840000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80050,
+      "outcome": "GOAL",
+      "seconds": 67.99999999999943,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 16.079999999999835,
+      "minimum_body_distance": 0.6517249801298521,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 54.83999999999901,
+        "SHOOT": 13.119999999999896
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 48.35999999999915,
+        "FACE_KICK_DIRECTION": 8.28,
+        "ALIGN_FOOT_LATERALLY": 6.360000000000005,
+        "CLOSE_BALL_DISTANCE": 4.9600000000000035
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80051,
+      "outcome": "GOAL",
+      "seconds": 63.35999999999883,
+      "first_contest_at": 7.720000000000006,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 33.79999999999946,
+      "minimum_body_distance": 0.30892338185248813,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.4000000000000012,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 24.559999999999654,
+        "DRIBBLE": 29.279999999999553,
+        "SHOOT": 9.479999999999974
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 15.839999999999838,
+        "ALIGN_FOOT_LATERALLY": 1.3200000000000005,
+        "DRIBBLE_TOWARD_GOAL": 40.83999999999931,
+        "CLOSE_BALL_DISTANCE": 5.320000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80052,
+      "outcome": "TIMEOUT",
+      "seconds": 179.99999999999847,
+      "first_contest_at": 15.359999999999848,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 18.799999999999777,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 143.72000000000568,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.2999252161325969,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 48.23999999999915,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 37.679999999999374,
+        "DRIBBLE": 17.479999999999805,
+        "DUEL_ESCAPE": 32.67999999999948,
+        "SHOOT": 61.03999999999888,
+        "COUNTERPRESS": 31.079999999999515
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 33.959999999999454,
+        "DRIBBLE_TOWARD_GOAL": 18.67999999999978,
+        "ALIGN_FOOT_LATERALLY": 63.55999999999882,
+        "DUEL_STEP_ASIDE": 30.039999999999537,
+        "DUEL_SPACE_CREATED": 2.6400000000000015,
+        "PRESS_FACE_BALL": 20.91999999999973,
+        "PRESS_CLOSE_BALL": 10.15999999999996
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80053,
+      "outcome": "GOAL",
+      "seconds": 59.31999999999891,
+      "first_contest_at": 14.599999999999865,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 23.159999999999684,
+      "minimum_body_distance": 0.5402058488378089,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 18.959999999999773,
+        "DRIBBLE": 33.59999999999946,
+        "SHOOT": 6.720000000000005
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 2.5600000000000014,
+        "DRIBBLE_TOWARD_GOAL": 49.99999999999911,
+        "CLOSE_BALL_DISTANCE": 6.720000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80054,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 123.60000000000812,
+      "first_contest_at": 15.359999999999848,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 19.679999999999758,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 22.199999999999704,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.29999999999999977,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 1.1200000000000003,
+      "attacker_states_seconds": {
+        "DRIBBLE": 12.03999999999992,
+        "EVADE_DRIBBLE": 10.039999999999962,
+        "COUNTERPRESS": 101.48000000000467
+      },
+      "attacker_stages_seconds": {
+        "ALIGN_FOOT_LATERALLY": 0.12,
+        "DRIBBLE_TOWARD_GOAL": 16.999999999999815,
+        "FACE_KICK_DIRECTION": 4.9200000000000035,
+        "CLOSE_BALL_DISTANCE": 0.04,
+        "PRESS_FACE_BALL": 39.79999999999933,
+        "PRESS_CLOSE_BALL": 61.67999999999886
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80055,
+      "outcome": "GOAL",
+      "seconds": 75.76000000000064,
+      "first_contest_at": 7.040000000000005,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 9.399999999999975,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 20.95999999999973,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 2.9600000000000017,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 23.599999999999675,
+        "DRIBBLE": 21.199999999999726,
+        "SHOOT": 30.91999999999952
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 19.399999999999764,
+        "DRIBBLE_TOWARD_GOAL": 29.799999999999542,
+        "MAKE_FOOT_SPACE": 1.0800000000000003,
+        "ALIGN_FOOT_LATERALLY": 12.159999999999917,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.67999999999997,
+        "CLOSE_BALL_DISTANCE": 3.5200000000000022
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80056,
+      "outcome": "GOAL",
+      "seconds": 73.5200000000003,
+      "first_contest_at": 7.480000000000006,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 17.6399999999998,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 36.15999999999941,
+      "minimum_body_distance": 0.29999999999999993,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.080000000000001,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 25.039999999999644,
+        "DRIBBLE": 34.99999999999943,
+        "SHOOT": 13.43999999999989
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 9.719999999999969,
+        "ALIGN_FOOT_LATERALLY": 3.8000000000000025,
+        "DRIBBLE_TOWARD_GOAL": 48.879999999999136,
+        "MAKE_FOOT_SPACE": 0.9600000000000003,
+        "EXECUTE_KICK": 0.04,
+        "EXECUTING_MOTION": 4.800000000000003,
+        "CLOSE_BALL_DISTANCE": 5.280000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80057,
+      "outcome": "GOAL",
+      "seconds": 56.63999999999897,
+      "first_contest_at": 14.879999999999859,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 19.19999999999977,
+      "minimum_body_distance": 0.3328254327631884,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 49.879999999999114,
+        "SHOOT": 6.720000000000005
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 49.879999999999114,
+        "CLOSE_BALL_DISTANCE": 6.720000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80058,
+      "outcome": "GOAL",
+      "seconds": 37.51999999999938,
+      "first_contest_at": 22.999999999999687,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 36.279999999999404,
+      "minimum_body_distance": 0.3831174139743266,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 1.5200000000000007,
+      "attacker_states_seconds": {
+        "DRIBBLE": 14.31999999999987,
+        "EVADE_DRIBBLE": 15.439999999999847,
+        "SHOOT": 7.720000000000006
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 6.360000000000005,
+        "ALIGN_FOOT_LATERALLY": 2.360000000000001,
+        "DRIBBLE_TOWARD_GOAL": 21.91999999999971,
+        "CLOSE_BALL_DISTANCE": 6.840000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80059,
+      "outcome": "GOAL",
+      "seconds": 111.00000000000615,
+      "first_contest_at": 6.320000000000005,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 8.479999999999995,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 10.479999999999952,
+      "first_breakthrough_at": 56.879999999998965,
+      "minimum_body_distance": 0.29999999999999993,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 19.359999999999765,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 31.679999999999502,
+        "COUNTERPRESS": 1.2400000000000004,
+        "DUEL_ESCAPE": 24.119999999999663,
+        "DRIBBLE": 44.159999999999236,
+        "SHOOT": 9.759999999999968
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 16.679999999999822,
+        "DRIBBLE_TOWARD_GOAL": 55.919999999998986,
+        "ALIGN_FOOT_LATERALLY": 6.440000000000005,
+        "PRESS_CONTEST_FOOT": 0.7600000000000001,
+        "PRESS_FACE_BALL": 0.4799999999999999,
+        "DUEL_STEP_ASIDE": 20.359999999999744,
+        "DUEL_SPACE_CREATED": 3.7600000000000025,
+        "MAKE_FOOT_SPACE": 0.8400000000000002,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 5.640000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80060,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 103.32000000000495,
+      "first_contest_at": 13.119999999999896,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 15.239999999999851,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 18.519999999999783,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.29999999999999977,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.9600000000000017,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 20.51999999999974,
+        "COUNTERPRESS": 82.76000000000174
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 3.6800000000000024,
+        "DRIBBLE_TOWARD_GOAL": 13.519999999999888,
+        "ALIGN_FOOT_LATERALLY": 3.320000000000002,
+        "PRESS_FACE_BALL": 39.75999999999933,
+        "PRESS_CLOSE_BALL": 42.99999999999926
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80061,
+      "outcome": "GOAL",
+      "seconds": 44.159999999999236,
+      "first_contest_at": 13.679999999999884,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 21.279999999999724,
+      "minimum_body_distance": 0.3405907155353634,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.68,
+      "attacker_states_seconds": {
+        "DRIBBLE": 24.959999999999646,
+        "EVADE_DRIBBLE": 8.399999999999997,
+        "SHOOT": 10.759999999999946
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 29.03999999999956,
+        "FACE_KICK_DIRECTION": 8.359999999999998,
+        "CLOSE_BALL_DISTANCE": 6.720000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80062,
+      "outcome": "GOAL",
+      "seconds": 58.87999999999892,
+      "first_contest_at": 11.319999999999935,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 16.75999999999982,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 19.719999999999757,
+      "minimum_body_distance": 0.29999999999999977,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.68,
+      "attacker_states_seconds": {
+        "DRIBBLE": 52.159999999999066,
+        "SHOOT": 6.680000000000005
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 52.159999999999066,
+        "CLOSE_BALL_DISTANCE": 6.680000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80063,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 96.48000000000388,
+      "first_contest_at": 7.2000000000000055,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 9.799999999999967,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 15.639999999999842,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.3,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 1.6000000000000008,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 17.479999999999805,
+        "COUNTERPRESS": 78.96000000000114
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 8.319999999999999,
+        "DRIBBLE_TOWARD_GOAL": 9.15999999999998,
+        "PRESS_FACE_BALL": 41.55999999999929,
+        "PRESS_CLOSE_BALL": 37.39999999999938
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80064,
+      "outcome": "GOAL",
+      "seconds": 56.839999999998966,
+      "first_contest_at": 9.15999999999998,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 11.399999999999933,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 33.07999999999947,
+      "minimum_body_distance": 0.29999999999999977,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 6.0400000000000045,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 20.319999999999744,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "DRIBBLE": 14.159999999999874,
+        "SHOOT": 14.279999999999871
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 3.160000000000002,
+        "DRIBBLE_TOWARD_GOAL": 30.239999999999533,
+        "MAKE_FOOT_SPACE": 0.08,
+        "ALIGN_FOOT_LATERALLY": 4.240000000000003,
+        "DUEL_STEP_ASIDE": 6.840000000000005,
+        "DUEL_SPACE_CREATED": 1.2000000000000004,
+        "EXECUTE_KICK": 0.04,
+        "EXECUTING_MOTION": 4.840000000000003,
+        "CLOSE_BALL_DISTANCE": 6.160000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80065,
+      "outcome": "GOAL",
+      "seconds": 62.75999999999884,
+      "first_contest_at": 10.879999999999944,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 26.439999999999614,
+      "minimum_body_distance": 0.38246200165884503,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 1.6800000000000008,
+      "attacker_states_seconds": {
+        "DRIBBLE": 41.1599999999993,
+        "EVADE_DRIBBLE": 13.559999999999887,
+        "SHOOT": 8.000000000000005
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 53.23999999999904,
+        "FACE_KICK_DIRECTION": 1.4800000000000006,
+        "ALIGN_FOOT_LATERALLY": 1.2400000000000004,
+        "CLOSE_BALL_DISTANCE": 6.760000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80066,
+      "outcome": "GOAL",
+      "seconds": 59.47999999999891,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 24.079999999999664,
+      "minimum_body_distance": 0.6506392341501193,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 41.1599999999993,
+        "EVADE_DRIBBLE": 7.2400000000000055,
+        "SHOOT": 11.03999999999994
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 0.8000000000000002,
+        "ALIGN_FOOT_LATERALLY": 5.840000000000004,
+        "DRIBBLE_TOWARD_GOAL": 46.039999999999196,
+        "CLOSE_BALL_DISTANCE": 6.760000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80067,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 127.9600000000088,
+      "first_contest_at": 7.600000000000006,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 9.759999999999968,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 11.399999999999933,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.29999999999999966,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 9.239999999999979,
+      "attacker_states_seconds": {
+        "DRIBBLE": 0.9600000000000003,
+        "EVADE_DRIBBLE": 16.039999999999836,
+        "COUNTERPRESS": 94.80000000000362,
+        "DUEL_ESCAPE": 16.119999999999834
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 3.9600000000000026,
+        "ALIGN_FOOT_LATERALLY": 5.200000000000004,
+        "DRIBBLE_TOWARD_GOAL": 7.840000000000006,
+        "PRESS_CONTEST_FOOT": 3.240000000000002,
+        "PRESS_FACE_BALL": 36.91999999999939,
+        "DUEL_STEP_ASIDE": 10.759999999999946,
+        "DUEL_SPACE_CREATED": 5.360000000000004,
+        "PRESS_CLOSE_BALL": 54.63999999999901
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80068,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 134.36000000000755,
+      "first_contest_at": 8.71999999999999,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 11.319999999999935,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 42.47999999999927,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.29999999999999977,
+      "attacker_regain": true,
+      "productive_regain": false,
+      "longest_stall_seconds": 21.319999999999723,
+      "attacker_states_seconds": {
+        "DRIBBLE": 4.480000000000003,
+        "EVADE_DRIBBLE": 15.119999999999854,
+        "COUNTERPRESS": 91.72000000000314,
+        "DUEL_ESCAPE": 22.999999999999687
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 6.0800000000000045,
+        "DRIBBLE_TOWARD_GOAL": 12.359999999999912,
+        "ALIGN_FOOT_LATERALLY": 0.36,
+        "PRESS_CONTEST_FOOT": 4.480000000000003,
+        "DUEL_STEP_ASIDE": 7.520000000000006,
+        "DUEL_SPACE_CREATED": 15.479999999999846,
+        "MAKE_FOOT_SPACE": 0.8000000000000002,
+        "PRESS_FACE_BALL": 38.599999999999355,
+        "PRESS_CLOSE_BALL": 48.63999999999914
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80069,
+      "outcome": "GOAL",
+      "seconds": 72.36000000000011,
+      "first_contest_at": 11.199999999999937,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 13.359999999999891,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 26.839999999999606,
+      "minimum_body_distance": 0.2999999999999998,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.240000000000001,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 26.15999999999962,
+        "DRIBBLE": 19.959999999999752,
+        "SHOOT": 26.19999999999962
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 9.15999999999998,
+        "DRIBBLE_TOWARD_GOAL": 41.1199999999993,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.67999999999997,
+        "ALIGN_FOOT_LATERALLY": 7.480000000000006,
+        "CLOSE_BALL_DISTANCE": 4.800000000000003
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80070,
+      "outcome": "GOAL",
+      "seconds": 32.11999999999949,
+      "first_contest_at": 10.999999999999941,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 15.359999999999848,
+      "minimum_body_distance": 0.4253306543309843,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 25.399999999999636,
+        "SHOOT": 6.680000000000005
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 25.399999999999636,
+        "CLOSE_BALL_DISTANCE": 6.680000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80071,
+      "outcome": "OUT",
+      "seconds": 71.15999999999993,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": 8.080000000000004,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 5.080000000000004,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.8800000000000017,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 9.799999999999967,
+        "COUNTERPRESS": 61.31999999999887
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 3.6800000000000024,
+        "ALIGN_FOOT_LATERALLY": 6.1200000000000045,
+        "PRESS_FACE_BALL": 46.039999999999196,
+        "PRESS_CLOSE_BALL": 15.27999999999985
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80072,
+      "outcome": "GOAL",
+      "seconds": 69.27999999999963,
+      "first_contest_at": 8.399999999999997,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 24.559999999999654,
+      "minimum_body_distance": 0.34807587270674334,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.040000000000001,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 17.799999999999798,
+        "DRIBBLE": 34.399999999999444,
+        "SHOOT": 17.039999999999814
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 14.959999999999857,
+        "DRIBBLE_TOWARD_GOAL": 41.2799999999993,
+        "ALIGN_FOOT_LATERALLY": 7.280000000000006,
+        "CLOSE_BALL_DISTANCE": 5.720000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80073,
+      "outcome": "GOAL",
+      "seconds": 54.519999999999015,
+      "first_contest_at": 5.640000000000004,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 7.920000000000006,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 25.439999999999635,
+      "minimum_body_distance": 0.2999999999999998,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 8.28,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 21.87999999999971,
+        "DUEL_ESCAPE": 4.360000000000003,
+        "DRIBBLE": 4.720000000000003,
+        "SHOOT": 23.519999999999676
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 9.63999999999997,
+        "DRIBBLE_TOWARD_GOAL": 20.439999999999742,
+        "MAKE_FOOT_SPACE": 1.1200000000000003,
+        "ALIGN_FOOT_LATERALLY": 4.160000000000003,
+        "DUEL_STEP_ASIDE": 4.360000000000003,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.67999999999997,
+        "CLOSE_BALL_DISTANCE": 5.0000000000000036
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80074,
+      "outcome": "GOAL",
+      "seconds": 95.68000000000376,
+      "first_contest_at": 11.439999999999932,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 13.679999999999884,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 31.35999999999951,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 8.519999999999994,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 30.39999999999953,
+        "DUEL_ESCAPE": 4.360000000000003,
+        "DRIBBLE": 32.919999999999476,
+        "SHOOT": 27.95999999999958
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 16.83999999999982,
+        "DRIBBLE_TOWARD_GOAL": 49.63999999999912,
+        "MAKE_FOOT_SPACE": 1.4800000000000006,
+        "ALIGN_FOOT_LATERALLY": 10.239999999999958,
+        "DUEL_STEP_ASIDE": 4.360000000000003,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.599999999999971,
+        "CLOSE_BALL_DISTANCE": 3.400000000000002
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80075,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 98.36000000000418,
+      "first_contest_at": 8.639999999999992,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 10.839999999999945,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 29.639999999999546,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 10.59999999999995,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 15.559999999999844,
+        "COUNTERPRESS": 66.67999999999923,
+        "DUEL_ESCAPE": 16.079999999999835
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 0.6,
+        "ALIGN_FOOT_LATERALLY": 1.4000000000000006,
+        "DRIBBLE_TOWARD_GOAL": 13.559999999999887,
+        "PRESS_CONTEST_FOOT": 0.24000000000000002,
+        "PRESS_FACE_BALL": 35.07999999999943,
+        "DUEL_STEP_ASIDE": 8.120000000000003,
+        "DUEL_SPACE_CREATED": 7.960000000000006,
+        "PRESS_CLOSE_BALL": 31.35999999999951
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80076,
+      "outcome": "GOAL",
+      "seconds": 43.95999999999924,
+      "first_contest_at": 9.919999999999964,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 12.399999999999912,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 21.799999999999713,
+      "minimum_body_distance": 0.2999999999999998,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 2.120000000000001,
+      "attacker_states_seconds": {
+        "DRIBBLE": 12.839999999999902,
+        "EVADE_DRIBBLE": 16.23999999999983,
+        "SHOOT": 14.83999999999986
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 7.1600000000000055,
+        "DRIBBLE_TOWARD_GOAL": 21.279999999999724,
+        "ALIGN_FOOT_LATERALLY": 0.6,
+        "MAKE_FOOT_SPACE": 0.04,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.67999999999997,
+        "CLOSE_BALL_DISTANCE": 5.080000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80077,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 116.16000000000696,
+      "first_contest_at": 16.399999999999828,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 19.399999999999764,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 24.479999999999656,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.29999999999999993,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 1.800000000000001,
+      "attacker_states_seconds": {
+        "DRIBBLE": 11.639999999999928,
+        "EVADE_DRIBBLE": 13.559999999999887,
+        "COUNTERPRESS": 90.92000000000301
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 9.079999999999982,
+        "DRIBBLE_TOWARD_GOAL": 15.799999999999839,
+        "ALIGN_FOOT_LATERALLY": 0.32,
+        "PRESS_FACE_BALL": 43.719999999999246,
+        "PRESS_CLOSE_BALL": 47.19999999999917
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80078,
+      "outcome": "GOAL",
+      "seconds": 117.0800000000071,
+      "first_contest_at": 9.15999999999998,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 11.51999999999993,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 50.5599999999991,
+      "minimum_body_distance": 0.29999999999999993,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 18.59999999999978,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 34.67999999999944,
+        "DUEL_ESCAPE": 19.879999999999754,
+        "COUNTERPRESS": 1.0800000000000003,
+        "DRIBBLE": 34.71999999999944,
+        "SHOOT": 26.67999999999961
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 12.9199999999999,
+        "ALIGN_FOOT_LATERALLY": 14.439999999999868,
+        "DRIBBLE_TOWARD_GOAL": 53.83999999999903,
+        "MAKE_FOOT_SPACE": 1.2800000000000005,
+        "DUEL_STEP_ASIDE": 19.319999999999766,
+        "DUEL_SPACE_CREATED": 0.5599999999999999,
+        "PRESS_CONTEST_FOOT": 1.0800000000000003,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.599999999999971,
+        "CLOSE_BALL_DISTANCE": 3.9200000000000026
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80079,
+      "outcome": "GOAL",
+      "seconds": 39.39999999999934,
+      "first_contest_at": 11.919999999999922,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 14.199999999999873,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 37.47999999999938,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.4000000000000012,
+      "attacker_states_seconds": {
+        "DRIBBLE": 3.7200000000000024,
+        "EVADE_DRIBBLE": 20.99999999999973,
+        "SHOOT": 14.639999999999864
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 21.159999999999727,
+        "FACE_KICK_DIRECTION": 3.200000000000002,
+        "MAKE_FOOT_SPACE": 0.36,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.67999999999997,
+        "CLOSE_BALL_DISTANCE": 4.8800000000000034
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80080,
+      "outcome": "GOAL",
+      "seconds": 52.03999999999907,
+      "first_contest_at": 12.879999999999901,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 22.679999999999694,
+      "minimum_body_distance": 0.5288774967798193,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 34.319999999999446,
+        "EVADE_DRIBBLE": 9.119999999999981,
+        "SHOOT": 8.559999999999993
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 43.43999999999925,
+        "ALIGN_FOOT_LATERALLY": 1.800000000000001,
+        "CLOSE_BALL_DISTANCE": 6.760000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80081,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 89.96000000000286,
+      "first_contest_at": 6.840000000000005,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 8.999999999999984,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 10.999999999999941,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.29999999999999993,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 11.679999999999927,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 10.999999999999941,
+        "COUNTERPRESS": 54.79999999999901,
+        "DUEL_ESCAPE": 24.119999999999663
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 3.8400000000000025,
+        "ALIGN_FOOT_LATERALLY": 3.6800000000000024,
+        "DRIBBLE_TOWARD_GOAL": 3.400000000000002,
+        "MAKE_FOOT_SPACE": 0.08,
+        "PRESS_CONTEST_FOOT": 5.880000000000004,
+        "PRESS_FACE_BALL": 33.55999999999946,
+        "DUEL_STEP_ASIDE": 16.559999999999825,
+        "DUEL_SPACE_CREATED": 7.560000000000006,
+        "PRESS_CLOSE_BALL": 15.359999999999848
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80082,
+      "outcome": "GOAL",
+      "seconds": 26.55999999999961,
+      "first_contest_at": 14.599999999999865,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 18.519999999999783,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 20.679999999999737,
+      "minimum_body_distance": 0.29999999999999993,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.68,
+      "attacker_states_seconds": {
+        "DRIBBLE": 19.679999999999758,
+        "SHOOT": 6.840000000000005
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 19.679999999999758,
+        "CLOSE_BALL_DISTANCE": 6.840000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80083,
+      "outcome": "GOAL",
+      "seconds": 64.75999999999893,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 15.559999999999844,
+      "minimum_body_distance": 0.9334155041396308,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 52.43999999999906,
+        "SHOOT": 12.279999999999914
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 49.19999999999913,
+        "FACE_KICK_DIRECTION": 7.2000000000000055,
+        "CLOSE_BALL_DISTANCE": 5.400000000000004,
+        "ALIGN_FOOT_LATERALLY": 2.9200000000000017
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80084,
+      "outcome": "GOAL",
+      "seconds": 51.15999999999909,
+      "first_contest_at": 9.919999999999964,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 23.559999999999675,
+      "minimum_body_distance": 0.5583063700173314,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 27.359999999999594,
+        "EVADE_DRIBBLE": 14.639999999999864,
+        "SHOOT": 9.119999999999981
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 38.159999999999364,
+        "FACE_KICK_DIRECTION": 3.7600000000000025,
+        "ALIGN_FOOT_LATERALLY": 2.360000000000001,
+        "CLOSE_BALL_DISTANCE": 6.840000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80085,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 138.6800000000067,
+      "first_contest_at": 11.359999999999934,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 14.399999999999869,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 18.319999999999787,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.29999999999999954,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 1.2800000000000005,
+      "attacker_states_seconds": {
+        "DRIBBLE": 6.760000000000005,
+        "EVADE_DRIBBLE": 13.39999999999989,
+        "COUNTERPRESS": 118.48000000000732
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 13.83999999999988,
+        "FACE_KICK_DIRECTION": 6.320000000000005,
+        "PRESS_FACE_BALL": 43.95999999999924,
+        "PRESS_CLOSE_BALL": 74.52000000000045
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80086,
+      "outcome": "GOAL",
+      "seconds": 96.48000000000388,
+      "first_contest_at": 5.440000000000004,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 7.720000000000006,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 24.479999999999656,
+      "minimum_body_distance": 0.3,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 6.920000000000005,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 17.23999999999981,
+        "DUEL_ESCAPE": 4.360000000000003,
+        "DRIBBLE": 48.67999999999914,
+        "SHOOT": 26.15999999999962
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 15.479999999999846,
+        "DRIBBLE_TOWARD_GOAL": 55.519999999998994,
+        "MAKE_FOOT_SPACE": 0.43999999999999995,
+        "DUEL_STEP_ASIDE": 4.360000000000003,
+        "ALIGN_FOOT_LATERALLY": 7.480000000000006,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.599999999999971,
+        "CLOSE_BALL_DISTANCE": 3.480000000000002
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80087,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 101.0800000000046,
+      "first_contest_at": 14.399999999999869,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 16.559999999999825,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 18.279999999999788,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 5.200000000000004,
+      "attacker_states_seconds": {
+        "DRIBBLE": 5.520000000000004,
+        "EVADE_DRIBBLE": 12.159999999999917,
+        "COUNTERPRESS": 68.75999999999955,
+        "DUEL_ESCAPE": 14.599999999999865
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 4.320000000000003,
+        "DRIBBLE_TOWARD_GOAL": 12.199999999999916,
+        "ALIGN_FOOT_LATERALLY": 1.1600000000000004,
+        "PRESS_CONTEST_FOOT": 2.8000000000000016,
+        "PRESS_FACE_BALL": 34.95999999999943,
+        "DUEL_STEP_ASIDE": 12.319999999999913,
+        "DUEL_SPACE_CREATED": 2.280000000000001,
+        "PRESS_CLOSE_BALL": 30.999999999999517
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80088,
+      "outcome": "GOAL",
+      "seconds": 39.15999999999934,
+      "first_contest_at": 9.599999999999971,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 26.759999999999607,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 34.15999999999945,
+      "minimum_body_distance": 0.29999999999999993,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.8400000000000002,
+      "attacker_states_seconds": {
+        "DRIBBLE": 16.519999999999825,
+        "EVADE_DRIBBLE": 15.919999999999837,
+        "SHOOT": 6.680000000000005
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 24.039999999999665,
+        "FACE_KICK_DIRECTION": 8.399999999999997,
+        "CLOSE_BALL_DISTANCE": 6.680000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80089,
+      "outcome": "GOAL",
+      "seconds": 54.39999999999902,
+      "first_contest_at": 9.039999999999983,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 20.359999999999744,
+      "minimum_body_distance": 0.5790437218573325,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 13.43999999999989,
+        "DRIBBLE": 31.8399999999995,
+        "SHOOT": 9.079999999999982
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 2.5200000000000014,
+        "DRIBBLE_TOWARD_GOAL": 42.759999999999266,
+        "ALIGN_FOOT_LATERALLY": 2.240000000000001,
+        "CLOSE_BALL_DISTANCE": 6.840000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80090,
+      "outcome": "GOAL",
+      "seconds": 67.47999999999935,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 18.279999999999788,
+      "minimum_body_distance": 1.051999322154725,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 53.39999999999904,
+        "SHOOT": 14.039999999999877
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 4.640000000000003,
+        "DRIBBLE_TOWARD_GOAL": 52.679999999999055,
+        "ALIGN_FOOT_LATERALLY": 3.6800000000000024,
+        "CLOSE_BALL_DISTANCE": 6.440000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80091,
+      "outcome": "GOAL",
+      "seconds": 33.71999999999946,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 15.959999999999836,
+      "minimum_body_distance": 0.8652257246417953,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 23.679999999999673,
+        "SHOOT": 9.999999999999963
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 23.679999999999673,
+        "ALIGN_FOOT_LATERALLY": 3.240000000000002,
+        "CLOSE_BALL_DISTANCE": 6.760000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80092,
+      "outcome": "TIMEOUT",
+      "seconds": 179.99999999999847,
+      "first_contest_at": 6.400000000000005,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 8.519999999999994,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 142.40000000000595,
+      "minimum_body_distance": 0.2999999999999998,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 97.240000000004,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 74.8000000000005,
+        "COUNTERPRESS": 3.280000000000002,
+        "DUEL_ESCAPE": 81.68000000000157,
+        "DRIBBLE": 20.199999999999747
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 16.75999999999982,
+        "ALIGN_FOOT_LATERALLY": 2.4000000000000012,
+        "DRIBBLE_TOWARD_GOAL": 62.15999999999885,
+        "PRESS_CONTEST_FOOT": 3.280000000000002,
+        "DUEL_STEP_ASIDE": 35.99999999999941,
+        "DUEL_SPACE_CREATED": 45.679999999999204,
+        "MAKE_FOOT_SPACE": 13.679999999999884
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80093,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 113.60000000000656,
+      "first_contest_at": 10.879999999999944,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 13.119999999999896,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 33.19999999999947,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.2999983968721578,
+      "attacker_regain": true,
+      "productive_regain": false,
+      "longest_stall_seconds": 12.559999999999908,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 18.67999999999978,
+        "COUNTERPRESS": 78.80000000000112,
+        "DUEL_ESCAPE": 16.079999999999835
+      },
+      "attacker_stages_seconds": {
+        "ALIGN_FOOT_LATERALLY": 2.4400000000000013,
+        "DRIBBLE_TOWARD_GOAL": 14.31999999999987,
+        "MAKE_FOOT_SPACE": 0.8800000000000002,
+        "PRESS_CONTEST_FOOT": 0.9600000000000003,
+        "DUEL_STEP_ASIDE": 12.679999999999906,
+        "DUEL_SPACE_CREATED": 3.400000000000002,
+        "FACE_KICK_DIRECTION": 1.0400000000000003,
+        "PRESS_FACE_BALL": 36.759999999999394,
+        "PRESS_CLOSE_BALL": 41.0799999999993
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80094,
+      "outcome": "GOAL",
+      "seconds": 59.279999999998914,
+      "first_contest_at": 10.239999999999958,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 12.559999999999908,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 30.479999999999528,
+      "minimum_body_distance": 0.2999999999999998,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 9.079999999999982,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 29.91999999999954,
+        "DUEL_ESCAPE": 4.360000000000003,
+        "DRIBBLE": 1.0400000000000003,
+        "SHOOT": 23.919999999999668
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 10.279999999999957,
+        "ALIGN_FOOT_LATERALLY": 6.960000000000005,
+        "DRIBBLE_TOWARD_GOAL": 21.39999999999972,
+        "MAKE_FOOT_SPACE": 1.2400000000000004,
+        "DUEL_STEP_ASIDE": 4.360000000000003,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.67999999999997,
+        "CLOSE_BALL_DISTANCE": 5.240000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80095,
+      "outcome": "GOAL",
+      "seconds": 98.40000000000418,
+      "first_contest_at": 12.599999999999907,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 14.83999999999986,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 56.439999999998975,
+      "minimum_body_distance": 0.29999999999999977,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 20.199999999999747,
+      "attacker_states_seconds": {
+        "DRIBBLE": 17.879999999999797,
+        "EVADE_DRIBBLE": 39.35999999999934,
+        "DUEL_ESCAPE": 20.439999999999742,
+        "COUNTERPRESS": 2.6800000000000015,
+        "SHOOT": 17.999999999999794
+      },
+      "attacker_stages_seconds": {
+        "ALIGN_FOOT_LATERALLY": 6.360000000000005,
+        "DRIBBLE_TOWARD_GOAL": 47.59999999999916,
+        "FACE_KICK_DIRECTION": 4.640000000000003,
+        "MAKE_FOOT_SPACE": 1.6000000000000008,
+        "DUEL_STEP_ASIDE": 19.439999999999763,
+        "DUEL_SPACE_CREATED": 1.0000000000000002,
+        "PRESS_CONTEST_FOOT": 2.6800000000000015,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.599999999999971,
+        "CLOSE_BALL_DISTANCE": 5.360000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80096,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 95.12000000000367,
+      "first_contest_at": 12.43999999999991,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 14.79999999999986,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 18.279999999999788,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.29999999999999993,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.040000000000001,
+      "attacker_states_seconds": {
+        "DRIBBLE": 6.840000000000005,
+        "EVADE_DRIBBLE": 11.279999999999935,
+        "COUNTERPRESS": 76.96000000000083
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 4.040000000000003,
+        "DRIBBLE_TOWARD_GOAL": 12.47999999999991,
+        "CLOSE_BALL_DISTANCE": 0.04,
+        "ALIGN_FOOT_LATERALLY": 1.5600000000000007,
+        "PRESS_FACE_BALL": 41.3199999999993,
+        "PRESS_CLOSE_BALL": 35.63999999999942
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80097,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 108.7600000000058,
+      "first_contest_at": 8.519999999999994,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 10.759999999999946,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 13.159999999999895,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.29999999999999977,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 4.320000000000003,
+      "attacker_states_seconds": {
+        "DRIBBLE": 3.240000000000002,
+        "EVADE_DRIBBLE": 9.799999999999967,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "COUNTERPRESS": 87.6400000000025
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 3.040000000000002,
+        "ALIGN_FOOT_LATERALLY": 4.280000000000003,
+        "DRIBBLE_TOWARD_GOAL": 5.680000000000004,
+        "MAKE_FOOT_SPACE": 0.04,
+        "DUEL_STEP_ASIDE": 8.040000000000004,
+        "PRESS_CONTEST_FOOT": 0.7600000000000001,
+        "PRESS_FACE_BALL": 35.39999999999942,
+        "PRESS_CLOSE_BALL": 51.47999999999908
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80098,
+      "outcome": "TIMEOUT",
+      "seconds": 179.99999999999847,
+      "first_contest_at": 9.399999999999975,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 11.51999999999993,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 13.479999999999889,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.29999999999999993,
+      "attacker_regain": true,
+      "productive_regain": false,
+      "longest_stall_seconds": 153.2400000000038,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 82.12000000000164,
+        "COUNTERPRESS": 5.120000000000004,
+        "DUEL_ESCAPE": 92.7200000000033
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 0.9200000000000003,
+        "DRIBBLE_TOWARD_GOAL": 48.71999999999914,
+        "ALIGN_FOOT_LATERALLY": 1.0800000000000003,
+        "PRESS_CONTEST_FOOT": 4.560000000000003,
+        "PRESS_FACE_BALL": 0.5599999999999999,
+        "DUEL_STEP_ASIDE": 39.959999999999326,
+        "DUEL_SPACE_CREATED": 52.75999999999905,
+        "MAKE_FOOT_SPACE": 31.39999999999951
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80099,
+      "outcome": "GOAL",
+      "seconds": 72.36000000000011,
+      "first_contest_at": 12.559999999999908,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 14.79999999999986,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 24.79999999999965,
+      "minimum_body_distance": 0.29999999999999993,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.160000000000001,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 23.87999999999967,
+        "DRIBBLE": 33.919999999999455,
+        "SHOOT": 14.519999999999866
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 1.0400000000000003,
+        "DRIBBLE_TOWARD_GOAL": 56.67999999999897,
+        "MAKE_FOOT_SPACE": 0.08,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.63999999999997,
+        "CLOSE_BALL_DISTANCE": 4.800000000000003
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80100,
+      "outcome": "GOAL",
+      "seconds": 30.83999999999952,
+      "first_contest_at": 9.719999999999969,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 18.319999999999787,
+      "minimum_body_distance": 0.5087308777940016,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 24.039999999999665,
+        "SHOOT": 6.760000000000005
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 24.039999999999665,
+        "CLOSE_BALL_DISTANCE": 6.760000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80101,
+      "outcome": "TIMEOUT",
+      "seconds": 179.99999999999847,
+      "first_contest_at": 7.960000000000006,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 10.239999999999958,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 11.839999999999923,
+      "first_breakthrough_at": 176.43999999999917,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 86.9600000000024,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 81.80000000000159,
+        "COUNTERPRESS": 6.0800000000000045,
+        "DUEL_ESCAPE": 92.0800000000032
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 6.280000000000005,
+        "ALIGN_FOOT_LATERALLY": 4.560000000000003,
+        "DRIBBLE_TOWARD_GOAL": 50.5999999999991,
+        "MAKE_FOOT_SPACE": 20.359999999999744,
+        "PRESS_CONTEST_FOOT": 5.320000000000004,
+        "PRESS_FACE_BALL": 0.7600000000000001,
+        "DUEL_STEP_ASIDE": 49.59999999999912,
+        "DUEL_SPACE_CREATED": 42.47999999999927
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80102,
+      "outcome": "GOAL",
+      "seconds": 57.03999999999896,
+      "first_contest_at": 14.399999999999869,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 16.79999999999982,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 27.719999999999587,
+      "minimum_body_distance": 0.2999999999999998,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 1.960000000000001,
+      "attacker_states_seconds": {
+        "DRIBBLE": 24.599999999999653,
+        "EVADE_DRIBBLE": 16.039999999999836,
+        "SHOOT": 11.439999999999932,
+        "INTERCEPT": 4.9200000000000035
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 38.999999999999346,
+        "FACE_KICK_DIRECTION": 1.6400000000000008,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.67999999999997,
+        "ALIGN_FOOT_LATERALLY": 0.8400000000000002,
+        "CLOSE_BALL_DISTANCE": 5.760000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80103,
+      "outcome": "GOAL",
+      "seconds": 34.879999999999434,
+      "first_contest_at": 23.79999999999967,
+      "first_contest_result": "GOAL_WITHOUT_MEASURED_BREAK",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.43201995868300375,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 14.83999999999986,
+        "EVADE_DRIBBLE": 13.199999999999894,
+        "SHOOT": 6.800000000000005
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 23.199999999999683,
+        "FACE_KICK_DIRECTION": 4.840000000000003,
+        "CLOSE_BALL_DISTANCE": 6.800000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80104,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 145.40000000000535,
+      "first_contest_at": 15.479999999999846,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 19.15999999999977,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 22.639999999999695,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.29975874555162,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 1.1200000000000003,
+      "attacker_states_seconds": {
+        "DRIBBLE": 9.15999999999998,
+        "EVADE_DRIBBLE": 14.119999999999875,
+        "COUNTERPRESS": 122.08000000000789
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 8.799999999999988,
+        "DRIBBLE_TOWARD_GOAL": 13.119999999999896,
+        "ALIGN_FOOT_LATERALLY": 1.3600000000000005,
+        "PRESS_FACE_BALL": 46.999999999999176,
+        "PRESS_CLOSE_BALL": 75.08000000000054
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80105,
+      "outcome": "GOAL",
+      "seconds": 59.31999999999891,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 16.599999999999824,
+      "minimum_body_distance": 0.5713509726720167,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 52.55999999999906,
+        "SHOOT": 6.720000000000005
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 52.55999999999906,
+        "CLOSE_BALL_DISTANCE": 6.720000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80106,
+      "outcome": "GOAL",
+      "seconds": 32.31999999999949,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 14.31999999999987,
+      "minimum_body_distance": 0.5625449440795576,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 24.23999999999966,
+        "SHOOT": 8.040000000000004
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 24.23999999999966,
+        "ALIGN_FOOT_LATERALLY": 1.3600000000000005,
+        "CLOSE_BALL_DISTANCE": 6.680000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80107,
+      "outcome": "GOAL",
+      "seconds": 74.48000000000044,
+      "first_contest_at": 10.439999999999953,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 12.679999999999906,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 14.959999999999857,
+      "first_breakthrough_at": 34.71999999999944,
+      "minimum_body_distance": 0.2999999999999998,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 5.800000000000004,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 25.119999999999642,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "COUNTERPRESS": 0.4799999999999999,
+        "DRIBBLE": 25.519999999999634,
+        "SHOOT": 11.799999999999924,
+        "INTERCEPT": 3.480000000000002
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 4.160000000000003,
+        "DRIBBLE_TOWARD_GOAL": 45.39999999999921,
+        "MAKE_FOOT_SPACE": 0.04,
+        "ALIGN_FOOT_LATERALLY": 1.0400000000000003,
+        "DUEL_STEP_ASIDE": 8.040000000000004,
+        "PRESS_CONTEST_FOOT": 0.4799999999999999,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.63999999999997,
+        "CLOSE_BALL_DISTANCE": 5.560000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80108,
+      "outcome": "GOAL",
+      "seconds": 59.43999999999891,
+      "first_contest_at": 8.399999999999997,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 15.959999999999836,
+      "minimum_body_distance": 0.4770126090878894,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 44.75999999999922,
+        "SHOOT": 14.639999999999864
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 7.720000000000006,
+        "DRIBBLE_TOWARD_GOAL": 41.55999999999929,
+        "ALIGN_FOOT_LATERALLY": 4.680000000000003,
+        "CLOSE_BALL_DISTANCE": 5.440000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80109,
+      "outcome": "GOAL",
+      "seconds": 36.199999999999406,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 17.19999999999981,
+      "minimum_body_distance": 0.6651888168523303,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 29.43999999999955,
+        "SHOOT": 6.720000000000005
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 29.43999999999955,
+        "CLOSE_BALL_DISTANCE": 6.720000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80110,
+      "outcome": "GOAL",
+      "seconds": 66.87999999999926,
+      "first_contest_at": 13.91999999999988,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 16.83999999999982,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 25.559999999999633,
+      "minimum_body_distance": 0.2999999999999997,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 1.3600000000000005,
+      "attacker_states_seconds": {
+        "DRIBBLE": 32.71999999999948,
+        "EVADE_DRIBBLE": 18.759999999999778,
+        "SHOOT": 11.839999999999923,
+        "INTERCEPT": 3.5200000000000022
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 49.63999999999912,
+        "FACE_KICK_DIRECTION": 1.840000000000001,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.67999999999997,
+        "CLOSE_BALL_DISTANCE": 5.600000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80111,
+      "outcome": "TIMEOUT",
+      "seconds": 179.99999999999847,
+      "first_contest_at": 12.199999999999916,
+      "first_contest_result": "UNRESOLVED",
+      "first_body_contact_at": 14.399999999999869,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "UNRESOLVED",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.29999999999999977,
+      "attacker_regain": true,
+      "productive_regain": false,
+      "longest_stall_seconds": 62.67999999999884,
+      "attacker_states_seconds": {
+        "DRIBBLE": 3.320000000000002,
+        "EVADE_DRIBBLE": 92.80000000000331,
+        "DUEL_ESCAPE": 82.12000000000164,
+        "COUNTERPRESS": 1.7200000000000009
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 5.320000000000004,
+        "DRIBBLE_TOWARD_GOAL": 56.359999999998976,
+        "MAKE_FOOT_SPACE": 34.43999999999944,
+        "DUEL_STEP_ASIDE": 32.479999999999485,
+        "DUEL_SPACE_CREATED": 49.63999999999912,
+        "PRESS_CONTEST_FOOT": 1.7200000000000009
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80112,
+      "outcome": "GOAL",
+      "seconds": 41.67999999999929,
+      "first_contest_at": 19.919999999999753,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 27.51999999999959,
+      "minimum_body_distance": 0.30530087091717883,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.68,
+      "attacker_states_seconds": {
+        "DRIBBLE": 14.719999999999862,
+        "EVADE_DRIBBLE": 17.799999999999798,
+        "SHOOT": 9.119999999999981
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 28.599999999999568,
+        "FACE_KICK_DIRECTION": 3.9200000000000026,
+        "ALIGN_FOOT_LATERALLY": 2.320000000000001,
+        "CLOSE_BALL_DISTANCE": 6.800000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80113,
+      "outcome": "GOAL",
+      "seconds": 91.36000000000308,
+      "first_contest_at": 8.519999999999994,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 16.83999999999982,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 34.67999999999944,
+      "minimum_body_distance": 0.29999999999999993,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.120000000000001,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 25.15999999999964,
+        "DRIBBLE": 36.759999999999394,
+        "SHOOT": 29.39999999999955
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 16.119999999999834,
+        "ALIGN_FOOT_LATERALLY": 13.359999999999891,
+        "DRIBBLE_TOWARD_GOAL": 47.87999999999916,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.599999999999971,
+        "CLOSE_BALL_DISTANCE": 4.280000000000003
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80114,
+      "outcome": "GOAL",
+      "seconds": 113.44000000000653,
+      "first_contest_at": 7.400000000000006,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 9.519999999999973,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 54.71999999999901,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 19.239999999999768,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 28.03999999999958,
+        "DUEL_ESCAPE": 24.119999999999663,
+        "COUNTERPRESS": 3.480000000000002,
+        "DRIBBLE": 28.599999999999568,
+        "SHOOT": 29.159999999999556
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 14.479999999999867,
+        "DRIBBLE_TOWARD_GOAL": 44.679999999999225,
+        "MAKE_FOOT_SPACE": 2.080000000000001,
+        "DUEL_STEP_ASIDE": 14.519999999999866,
+        "DUEL_SPACE_CREATED": 9.599999999999971,
+        "PRESS_CONTEST_FOOT": 3.480000000000002,
+        "ALIGN_FOOT_LATERALLY": 11.07999999999994,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.599999999999971,
+        "CLOSE_BALL_DISTANCE": 3.8000000000000025
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80115,
+      "outcome": "GOAL",
+      "seconds": 36.99999999999939,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 18.999999999999773,
+      "minimum_body_distance": 0.4353337577941324,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 30.119999999999536,
+        "SHOOT": 6.840000000000005
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 1.1200000000000003,
+        "DRIBBLE_TOWARD_GOAL": 28.99999999999956,
+        "CLOSE_BALL_DISTANCE": 6.840000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80116,
+      "outcome": "GOAL",
+      "seconds": 72.9200000000002,
+      "first_contest_at": 7.320000000000006,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 9.599999999999971,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 23.639999999999674,
+      "minimum_body_distance": 0.29999999999999993,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.9600000000000017,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 24.839999999999648,
+        "DRIBBLE": 42.319999999999276,
+        "SHOOT": 5.720000000000004
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 11.919999999999922,
+        "DRIBBLE_TOWARD_GOAL": 54.27999999999902,
+        "MAKE_FOOT_SPACE": 0.9600000000000003,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 5.640000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80117,
+      "outcome": "GOAL",
+      "seconds": 47.559999999999164,
+      "first_contest_at": 19.51999999999976,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 22.119999999999706,
+      "minimum_body_distance": 0.3563141861275609,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 39.35999999999934,
+        "SHOOT": 8.160000000000002
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 39.35999999999934,
+        "ALIGN_FOOT_LATERALLY": 1.4400000000000006,
+        "CLOSE_BALL_DISTANCE": 6.720000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80118,
+      "outcome": "GOAL",
+      "seconds": 41.2799999999993,
+      "first_contest_at": 10.039999999999962,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 17.27999999999981,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 36.3999999999994,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.4000000000000012,
+      "attacker_states_seconds": {
+        "DRIBBLE": 9.439999999999975,
+        "EVADE_DRIBBLE": 21.51999999999972,
+        "SHOOT": 10.279999999999957
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 13.119999999999896,
+        "DRIBBLE_TOWARD_GOAL": 21.719999999999715,
+        "CLOSE_BALL_DISTANCE": 6.400000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80119,
+      "outcome": "GOAL",
+      "seconds": 56.399999999998975,
+      "first_contest_at": 15.519999999999845,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 32.23999999999949,
+      "minimum_body_distance": 0.3334390023728682,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.160000000000001,
+      "attacker_states_seconds": {
+        "DRIBBLE": 24.519999999999655,
+        "EVADE_DRIBBLE": 19.239999999999768,
+        "SHOOT": 12.599999999999907
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 6.240000000000005,
+        "DRIBBLE_TOWARD_GOAL": 37.51999999999938,
+        "ALIGN_FOOT_LATERALLY": 1.4000000000000006,
+        "EXECUTE_KICK": 0.04,
+        "EXECUTING_MOTION": 4.840000000000003,
+        "CLOSE_BALL_DISTANCE": 6.320000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80120,
+      "outcome": "GOAL",
+      "seconds": 61.91999999999886,
+      "first_contest_at": 13.959999999999878,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 16.559999999999825,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 23.35999999999968,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 1.2800000000000005,
+      "attacker_states_seconds": {
+        "DRIBBLE": 32.75999999999948,
+        "EVADE_DRIBBLE": 10.399999999999954,
+        "SHOOT": 15.199999999999852,
+        "INTERCEPT": 3.5200000000000022
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 43.15999999999926,
+        "ALIGN_FOOT_LATERALLY": 1.4000000000000006,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.67999999999997,
+        "CLOSE_BALL_DISTANCE": 5.560000000000004,
+        "FACE_KICK_DIRECTION": 2.000000000000001
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80121,
+      "outcome": "GOAL",
+      "seconds": 54.35999999999902,
+      "first_contest_at": 10.55999999999995,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 12.719999999999905,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 32.83999999999948,
+      "minimum_body_distance": 0.29999999999999966,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.6000000000000014,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 30.83999999999952,
+        "DRIBBLE": 8.839999999999987,
+        "SHOOT": 14.639999999999864
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 1.920000000000001,
+        "DRIBBLE_TOWARD_GOAL": 37.75999999999937,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.67999999999997,
+        "CLOSE_BALL_DISTANCE": 4.8800000000000034
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80122,
+      "outcome": "GOAL",
+      "seconds": 93.32000000000339,
+      "first_contest_at": 14.479999999999867,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 16.79999999999982,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 31.8399999999995,
+      "minimum_body_distance": 0.29999999999999993,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 6.520000000000005,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 22.79999999999969,
+        "DUEL_ESCAPE": 2.4800000000000013,
+        "DRIBBLE": 39.87999999999933,
+        "SHOOT": 28.119999999999578
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 14.279999999999871,
+        "ALIGN_FOOT_LATERALLY": 10.959999999999942,
+        "DRIBBLE_TOWARD_GOAL": 51.59999999999908,
+        "MAKE_FOOT_SPACE": 0.4799999999999999,
+        "DUEL_STEP_ASIDE": 2.4800000000000013,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.599999999999971,
+        "CLOSE_BALL_DISTANCE": 3.8000000000000025
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80123,
+      "outcome": "GOAL",
+      "seconds": 51.679999999999076,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 15.399999999999848,
+      "minimum_body_distance": 0.6170035802802986,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 43.759999999999245,
+        "SHOOT": 7.880000000000006
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 1.1600000000000004,
+        "DRIBBLE_TOWARD_GOAL": 42.59999999999927,
+        "ALIGN_FOOT_LATERALLY": 1.0800000000000003,
+        "CLOSE_BALL_DISTANCE": 6.800000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80124,
+      "outcome": "GOAL",
+      "seconds": 56.07999999999898,
+      "first_contest_at": 10.919999999999943,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 13.079999999999897,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 38.159999999999364,
+      "minimum_body_distance": 0.29999999999999966,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 5.760000000000004,
+      "attacker_states_seconds": {
+        "DRIBBLE": 18.279999999999788,
+        "EVADE_DRIBBLE": 22.91999999999969,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "SHOOT": 6.800000000000005
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 5.600000000000004,
+        "DRIBBLE_TOWARD_GOAL": 34.839999999999435,
+        "ALIGN_FOOT_LATERALLY": 0.7600000000000001,
+        "DUEL_STEP_ASIDE": 8.040000000000004,
+        "CLOSE_BALL_DISTANCE": 6.800000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80125,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 135.68000000000728,
+      "first_contest_at": 13.079999999999897,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 16.679999999999822,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 19.51999999999976,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.2999999999999998,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.9200000000000003,
+      "attacker_states_seconds": {
+        "DRIBBLE": 7.520000000000006,
+        "EVADE_DRIBBLE": 12.9599999999999,
+        "COUNTERPRESS": 115.1600000000068
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 8.519999999999994,
+        "DRIBBLE_TOWARD_GOAL": 11.959999999999921,
+        "PRESS_FACE_BALL": 44.679999999999225,
+        "PRESS_CLOSE_BALL": 70.47999999999982
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80126,
+      "outcome": "GOAL",
+      "seconds": 106.8400000000055,
+      "first_contest_at": 6.760000000000005,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 9.19999999999998,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 35.15999999999943,
+      "minimum_body_distance": 0.29999999999999993,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 12.799999999999903,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 27.839999999999584,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "DRIBBLE": 44.199999999999235,
+        "SHOOT": 26.719999999999608
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 15.639999999999842,
+        "ALIGN_FOOT_LATERALLY": 13.159999999999895,
+        "DRIBBLE_TOWARD_GOAL": 55.59999999999899,
+        "MAKE_FOOT_SPACE": 1.5600000000000007,
+        "DUEL_STEP_ASIDE": 7.040000000000005,
+        "DUEL_SPACE_CREATED": 1.0000000000000002,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.599999999999971,
+        "CLOSE_BALL_DISTANCE": 3.120000000000002
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80127,
+      "outcome": "GOAL",
+      "seconds": 70.79999999999987,
+      "first_contest_at": 23.599999999999675,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 27.359999999999594,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 33.23999999999947,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.29999999999999977,
+      "attacker_regain": true,
+      "productive_regain": false,
+      "longest_stall_seconds": 19.15999999999977,
+      "attacker_states_seconds": {
+        "DRIBBLE": 33.19999999999947,
+        "SHOOT": 11.07999999999994,
+        "DUEL_ESCAPE": 24.839999999999648,
+        "COUNTERPRESS": 1.6400000000000008
+      },
+      "attacker_stages_seconds": {
+        "ALIGN_FOOT_LATERALLY": 8.000000000000005,
+        "DRIBBLE_TOWARD_GOAL": 20.91999999999973,
+        "CLOSE_BALL_DISTANCE": 3.7600000000000025,
+        "FACE_KICK_DIRECTION": 11.599999999999929,
+        "DUEL_STEP_ASIDE": 19.19999999999977,
+        "PRESS_CLOSE_BALL": 1.6400000000000008,
+        "DUEL_SPACE_CREATED": 5.640000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80128,
+      "outcome": "GOAL",
+      "seconds": 60.99999999999888,
+      "first_contest_at": 16.75999999999982,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 29.639999999999546,
+      "minimum_body_distance": 0.4801964246069008,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 24.35999999999966,
+        "DRIBBLE": 29.759999999999543,
+        "SHOOT": 6.840000000000005
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 50.319999999999105,
+        "FACE_KICK_DIRECTION": 1.5200000000000007,
+        "ALIGN_FOOT_LATERALLY": 2.280000000000001,
+        "CLOSE_BALL_DISTANCE": 6.840000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80129,
+      "outcome": "GOAL",
+      "seconds": 54.479999999999016,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 16.479999999999826,
+      "minimum_body_distance": 0.6345033916064867,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 47.63999999999916,
+        "SHOOT": 6.800000000000005
+      },
+      "attacker_stages_seconds": {
+        "ALIGN_FOOT_LATERALLY": 1.0800000000000003,
+        "DRIBBLE_TOWARD_GOAL": 46.559999999999185,
+        "CLOSE_BALL_DISTANCE": 6.800000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80130,
+      "outcome": "GOAL",
+      "seconds": 61.47999999999887,
+      "first_contest_at": 13.319999999999892,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 15.559999999999844,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 42.63999999999927,
+      "minimum_body_distance": 0.29999999999999954,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 11.399999999999933,
+      "attacker_states_seconds": {
+        "DRIBBLE": 11.479999999999931,
+        "EVADE_DRIBBLE": 22.83999999999969,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "COUNTERPRESS": 3.7200000000000024,
+        "SHOOT": 15.359999999999848
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 28.759999999999565,
+        "FACE_KICK_DIRECTION": 2.9600000000000017,
+        "ALIGN_FOOT_LATERALLY": 2.6000000000000014,
+        "DUEL_STEP_ASIDE": 6.280000000000005,
+        "DUEL_SPACE_CREATED": 1.760000000000001,
+        "PRESS_CONTEST_FOOT": 3.7200000000000024,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.67999999999997,
+        "CLOSE_BALL_DISTANCE": 5.600000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80131,
+      "outcome": "GOAL",
+      "seconds": 61.75999999999886,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 19.99999999999975,
+      "minimum_body_distance": 0.8574765833772243,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 51.47999999999908,
+        "SHOOT": 10.239999999999958
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 10.279999999999957,
+        "DRIBBLE_TOWARD_GOAL": 43.239999999999256,
+        "ALIGN_FOOT_LATERALLY": 4.080000000000003,
+        "CLOSE_BALL_DISTANCE": 4.120000000000003
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80132,
+      "outcome": "GOAL",
+      "seconds": 64.87999999999894,
+      "first_contest_at": 14.039999999999877,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 16.23999999999983,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 31.599999999999504,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 6.000000000000004,
+      "attacker_states_seconds": {
+        "DRIBBLE": 17.439999999999806,
+        "EVADE_DRIBBLE": 27.839999999999584,
+        "DUEL_ESCAPE": 2.4800000000000013,
+        "SHOOT": 17.079999999999814
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 43.95999999999924,
+        "MAKE_FOOT_SPACE": 0.36,
+        "ALIGN_FOOT_LATERALLY": 3.280000000000002,
+        "DUEL_STEP_ASIDE": 2.4800000000000013,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.67999999999997,
+        "CLOSE_BALL_DISTANCE": 5.0000000000000036
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80133,
+      "outcome": "GOAL",
+      "seconds": 56.79999999999897,
+      "first_contest_at": 7.880000000000006,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 10.15999999999996,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 18.63999999999978,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 1.880000000000001,
+      "attacker_states_seconds": {
+        "DRIBBLE": 17.27999999999981,
+        "EVADE_DRIBBLE": 14.559999999999865,
+        "SHOOT": 24.919999999999646
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 30.39999999999953,
+        "FACE_KICK_DIRECTION": 5.680000000000004,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.67999999999997,
+        "ALIGN_FOOT_LATERALLY": 6.320000000000005,
+        "CLOSE_BALL_DISTANCE": 4.600000000000003
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80134,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 111.44000000000622,
+      "first_contest_at": 7.2000000000000055,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 9.479999999999974,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 44.91999999999922,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": true,
+      "productive_regain": false,
+      "longest_stall_seconds": 12.079999999999918,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 24.31999999999966,
+        "DUEL_ESCAPE": 24.119999999999663,
+        "COUNTERPRESS": 62.959999999998836
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 2.6000000000000014,
+        "ALIGN_FOOT_LATERALLY": 12.159999999999917,
+        "DRIBBLE_TOWARD_GOAL": 8.120000000000003,
+        "MAKE_FOOT_SPACE": 0.68,
+        "DUEL_STEP_ASIDE": 15.159999999999853,
+        "DUEL_SPACE_CREATED": 8.959999999999985,
+        "PRESS_CONTEST_FOOT": 3.240000000000002,
+        "APPROACH_BEHIND_BALL": 0.7600000000000001,
+        "PRESS_FACE_BALL": 37.79999999999937,
+        "PRESS_CLOSE_BALL": 21.91999999999971
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80135,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 100.72000000000455,
+      "first_contest_at": 9.799999999999967,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 12.03999999999992,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 19.319999999999766,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.8000000000000016,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 21.47999999999972,
+        "COUNTERPRESS": 79.20000000000118
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 4.520000000000003,
+        "DRIBBLE_TOWARD_GOAL": 13.39999999999989,
+        "ALIGN_FOOT_LATERALLY": 3.5600000000000023,
+        "PRESS_FACE_BALL": 38.639999999999354,
+        "PRESS_CLOSE_BALL": 40.55999999999931
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80136,
+      "outcome": "GOAL",
+      "seconds": 45.9599999999992,
+      "first_contest_at": 5.280000000000004,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 38.75999999999935,
+      "minimum_body_distance": 0.30756012287634354,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.6400000000000015,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 20.199999999999747,
+        "DRIBBLE": 13.83999999999988,
+        "SHOOT": 11.879999999999923
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 18.079999999999792,
+        "DRIBBLE_TOWARD_GOAL": 19.279999999999767,
+        "ALIGN_FOOT_LATERALLY": 2.9600000000000017,
+        "CLOSE_BALL_DISTANCE": 5.600000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80137,
+      "outcome": "GOAL",
+      "seconds": 87.68000000000251,
+      "first_contest_at": 7.2000000000000055,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 9.399999999999975,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 28.47999999999957,
+      "minimum_body_distance": 0.29999999999999993,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 8.359999999999998,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 22.079999999999707,
+        "DUEL_ESCAPE": 4.360000000000003,
+        "DRIBBLE": 34.11999999999945,
+        "SHOOT": 27.0799999999996
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 11.719999999999926,
+        "DRIBBLE_TOWARD_GOAL": 47.559999999999164,
+        "MAKE_FOOT_SPACE": 1.2000000000000004,
+        "ALIGN_FOOT_LATERALLY": 8.200000000000001,
+        "DUEL_STEP_ASIDE": 4.360000000000003,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.599999999999971,
+        "CLOSE_BALL_DISTANCE": 4.9200000000000035
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80138,
+      "outcome": "GOAL",
+      "seconds": 55.79999999999899,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 20.03999999999975,
+      "minimum_body_distance": 0.6752281468874447,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 44.95999999999922,
+        "SHOOT": 10.799999999999946
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 4.360000000000003,
+        "DRIBBLE_TOWARD_GOAL": 44.639999999999226,
+        "CLOSE_BALL_DISTANCE": 6.760000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80139,
+      "outcome": "GOAL",
+      "seconds": 46.31999999999919,
+      "first_contest_at": 13.079999999999897,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 22.759999999999692,
+      "minimum_body_distance": 0.32786783543223547,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 1.1600000000000004,
+      "attacker_states_seconds": {
+        "DRIBBLE": 15.159999999999853,
+        "EVADE_DRIBBLE": 12.719999999999905,
+        "SHOOT": 18.399999999999785
+      },
+      "attacker_stages_seconds": {
+        "ALIGN_FOOT_LATERALLY": 4.160000000000003,
+        "DRIBBLE_TOWARD_GOAL": 26.799999999999606,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.67999999999997,
+        "CLOSE_BALL_DISTANCE": 5.560000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80140,
+      "outcome": "GOAL",
+      "seconds": 59.719999999998905,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 16.75999999999982,
+      "minimum_body_distance": 0.5656395140758125,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 50.7199999999991,
+        "SHOOT": 8.959999999999985
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 50.7199999999991,
+        "ALIGN_FOOT_LATERALLY": 2.240000000000001,
+        "CLOSE_BALL_DISTANCE": 6.720000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80141,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 111.56000000000624,
+      "first_contest_at": 14.679999999999863,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 17.6799999999998,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 20.239999999999746,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.040000000000001,
+      "attacker_states_seconds": {
+        "DRIBBLE": 1.7200000000000009,
+        "EVADE_DRIBBLE": 22.319999999999702,
+        "COUNTERPRESS": 87.48000000000248
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 16.35999999999983,
+        "FACE_KICK_DIRECTION": 7.640000000000006,
+        "ALIGN_FOOT_LATERALLY": 0.04,
+        "PRESS_FACE_BALL": 42.63999999999927,
+        "PRESS_CLOSE_BALL": 44.83999999999922
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80142,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 108.28000000000573,
+      "first_contest_at": 6.1200000000000045,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 8.319999999999999,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 10.039999999999962,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.29999999999999954,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 7.080000000000005,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 10.799999999999946,
+        "COUNTERPRESS": 89.40000000000278,
+        "DUEL_ESCAPE": 8.040000000000004
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 2.7600000000000016,
+        "ALIGN_FOOT_LATERALLY": 3.360000000000002,
+        "DRIBBLE_TOWARD_GOAL": 4.560000000000003,
+        "MAKE_FOOT_SPACE": 0.12,
+        "PRESS_CONTEST_FOOT": 1.0800000000000003,
+        "PRESS_FACE_BALL": 39.71999999999933,
+        "DUEL_STEP_ASIDE": 8.040000000000004,
+        "PRESS_CLOSE_BALL": 48.59999999999914
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80143,
+      "outcome": "GOAL",
+      "seconds": 69.87999999999973,
+      "first_contest_at": 7.920000000000006,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 38.87999999999935,
+      "minimum_body_distance": 0.3438456997560688,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.080000000000001,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 21.639999999999716,
+        "DRIBBLE": 35.87999999999941,
+        "SHOOT": 12.319999999999913
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 42.59999999999927,
+        "FACE_KICK_DIRECTION": 15.079999999999854,
+        "ALIGN_FOOT_LATERALLY": 8.959999999999985,
+        "CLOSE_BALL_DISTANCE": 3.200000000000002
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80144,
+      "outcome": "GOAL",
+      "seconds": 62.23999999999885,
+      "first_contest_at": 10.959999999999942,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 22.3599999999997,
+      "minimum_body_distance": 0.47050758639825613,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 41.839999999999286,
+        "EVADE_DRIBBLE": 13.519999999999888,
+        "SHOOT": 6.840000000000005
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 50.5999999999991,
+        "FACE_KICK_DIRECTION": 4.720000000000003,
+        "CLOSE_BALL_DISTANCE": 6.880000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80145,
+      "outcome": "GOAL",
+      "seconds": 41.2399999999993,
+      "first_contest_at": 9.239999999999979,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 31.27999999999951,
+      "minimum_body_distance": 0.3227764726272237,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 2.8000000000000016,
+      "attacker_states_seconds": {
+        "DRIBBLE": 19.839999999999755,
+        "EVADE_DRIBBLE": 14.639999999999864,
+        "SHOOT": 6.720000000000005
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 26.23999999999962,
+        "FACE_KICK_DIRECTION": 8.24,
+        "CLOSE_BALL_DISTANCE": 6.720000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80146,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 91.08000000000304,
+      "first_contest_at": 14.159999999999874,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 16.23999999999983,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 25.399999999999636,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 5.560000000000004,
+      "attacker_states_seconds": {
+        "DRIBBLE": 1.1200000000000003,
+        "EVADE_DRIBBLE": 17.439999999999806,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "COUNTERPRESS": 64.43999999999888
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 6.280000000000005,
+        "DRIBBLE_TOWARD_GOAL": 12.279999999999914,
+        "DUEL_STEP_ASIDE": 4.080000000000003,
+        "DUEL_SPACE_CREATED": 3.9600000000000026,
+        "PRESS_FACE_BALL": 34.55999999999944,
+        "PRESS_CLOSE_BALL": 29.87999999999954
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80147,
+      "outcome": "GOAL",
+      "seconds": 167.68000000000092,
+      "first_contest_at": 8.879999999999987,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 11.03999999999994,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 12.839999999999902,
+      "first_breakthrough_at": 98.08000000000413,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 65.35999999999902,
+      "attacker_states_seconds": {
+        "DRIBBLE": 54.959999999999006,
+        "EVADE_DRIBBLE": 45.599999999999206,
+        "COUNTERPRESS": 10.199999999999958,
+        "DUEL_ESCAPE": 50.87999999999909,
+        "SHOOT": 6.000000000000004
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 16.639999999999823,
+        "ALIGN_FOOT_LATERALLY": 9.919999999999964,
+        "DRIBBLE_TOWARD_GOAL": 68.67999999999954,
+        "MAKE_FOOT_SPACE": 5.320000000000004,
+        "PRESS_CONTEST_FOOT": 9.519999999999973,
+        "PRESS_FACE_BALL": 0.68,
+        "DUEL_STEP_ASIDE": 25.71999999999963,
+        "DUEL_SPACE_CREATED": 25.15999999999964,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 5.920000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80148,
+      "outcome": "GOAL",
+      "seconds": 33.71999999999946,
+      "first_contest_at": 11.119999999999939,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 18.959999999999773,
+      "minimum_body_distance": 0.6101873304037492,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 13.039999999999898,
+        "DRIBBLE": 9.519999999999973,
+        "SHOOT": 11.119999999999939
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 5.560000000000004,
+        "DRIBBLE_TOWARD_GOAL": 21.07999999999973,
+        "CLOSE_BALL_DISTANCE": 6.800000000000005,
+        "ALIGN_FOOT_LATERALLY": 0.24000000000000002
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80149,
+      "outcome": "GOAL",
+      "seconds": 79.36000000000121,
+      "first_contest_at": 13.39999999999989,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 15.519999999999845,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 37.07999999999939,
+      "minimum_body_distance": 0.29999999999999993,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 4.840000000000003,
+      "attacker_states_seconds": {
+        "DRIBBLE": 36.3199999999994,
+        "EVADE_DRIBBLE": 23.999999999999666,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "SHOOT": 10.959999999999942
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 2.7200000000000015,
+        "DRIBBLE_TOWARD_GOAL": 57.59999999999895,
+        "DUEL_STEP_ASIDE": 8.040000000000004,
+        "EXECUTE_KICK": 0.04,
+        "EXECUTING_MOTION": 4.800000000000003,
+        "CLOSE_BALL_DISTANCE": 6.1200000000000045
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80150,
+      "outcome": "GOAL",
+      "seconds": 89.96000000000286,
+      "first_contest_at": 7.720000000000006,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 9.959999999999964,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 32.67999999999948,
+      "minimum_body_distance": 0.2999999999999999,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 6.680000000000005,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 26.319999999999617,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "DRIBBLE": 24.27999999999966,
+        "SHOOT": 18.799999999999777,
+        "INTERCEPT": 12.47999999999991
+      },
+      "attacker_stages_seconds": {
+        "ALIGN_FOOT_LATERALLY": 18.63999999999978,
+        "DRIBBLE_TOWARD_GOAL": 44.79999999999922,
+        "MAKE_FOOT_SPACE": 0.04,
+        "DUEL_STEP_ASIDE": 7.400000000000006,
+        "DUEL_SPACE_CREATED": 0.64,
+        "FACE_KICK_DIRECTION": 9.239999999999979,
+        "EXECUTE_KICK": 0.04,
+        "EXECUTING_MOTION": 4.800000000000003,
+        "CLOSE_BALL_DISTANCE": 4.320000000000003
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80151,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 132.48000000000792,
+      "first_contest_at": 15.039999999999855,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 17.879999999999797,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 22.239999999999704,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.2999999999999996,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 1.6000000000000008,
+      "attacker_states_seconds": {
+        "DRIBBLE": 10.439999999999953,
+        "EVADE_DRIBBLE": 11.879999999999923,
+        "COUNTERPRESS": 110.12000000000602
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 17.6799999999998,
+        "FACE_KICK_DIRECTION": 4.640000000000003,
+        "PRESS_FACE_BALL": 41.63999999999929,
+        "PRESS_CLOSE_BALL": 68.4799999999995
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80152,
+      "outcome": "GOAL",
+      "seconds": 43.35999999999925,
+      "first_contest_at": 11.759999999999925,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 19.679999999999758,
+      "minimum_body_distance": 0.4990319436735746,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 36.5999999999994,
+        "SHOOT": 6.720000000000005
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 36.5999999999994,
+        "CLOSE_BALL_DISTANCE": 6.720000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80153,
+      "outcome": "CLEARED_GOAL",
+      "seconds": 119.32000000000745,
+      "first_contest_at": 12.679999999999906,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 15.359999999999848,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 18.63999999999978,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.29999999999999977,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 1.2400000000000004,
+      "attacker_states_seconds": {
+        "DRIBBLE": 8.999999999999984,
+        "EVADE_DRIBBLE": 10.199999999999958,
+        "COUNTERPRESS": 100.08000000000445
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 15.079999999999854,
+        "FACE_KICK_DIRECTION": 4.120000000000003,
+        "PRESS_FACE_BALL": 42.19999999999928,
+        "PRESS_CLOSE_BALL": 57.879999999998944
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80154,
+      "outcome": "GOAL",
+      "seconds": 32.87999999999948,
+      "first_contest_at": null,
+      "first_contest_result": null,
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 18.59999999999978,
+      "minimum_body_distance": 0.43411971859959647,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 25.19999999999964,
+        "SHOOT": 7.640000000000006
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 25.19999999999964,
+        "ALIGN_FOOT_LATERALLY": 0.9200000000000003,
+        "CLOSE_BALL_DISTANCE": 6.720000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80155,
+      "outcome": "GOAL",
+      "seconds": 51.79999999999907,
+      "first_contest_at": 12.359999999999912,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 17.439999999999806,
+      "minimum_body_distance": 0.37790398413759296,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "DRIBBLE": 41.67999999999929,
+        "SHOOT": 10.079999999999961
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 41.67999999999929,
+        "ALIGN_FOOT_LATERALLY": 3.320000000000002,
+        "CLOSE_BALL_DISTANCE": 6.760000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80156,
+      "outcome": "GOAL",
+      "seconds": 71.15999999999993,
+      "first_contest_at": 10.279999999999957,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 12.879999999999901,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 21.159999999999727,
+      "minimum_body_distance": 0.29999999999999993,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 1.6800000000000008,
+      "attacker_states_seconds": {
+        "DRIBBLE": 39.71999999999933,
+        "EVADE_DRIBBLE": 13.519999999999888,
+        "SHOOT": 17.879999999999797
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 50.279999999999106,
+        "FACE_KICK_DIRECTION": 5.0000000000000036,
+        "ALIGN_FOOT_LATERALLY": 0.68,
+        "EXECUTE_KICK": 0.08,
+        "EXECUTING_MOTION": 9.67999999999997,
+        "CLOSE_BALL_DISTANCE": 5.400000000000004
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80157,
+      "outcome": "TIMEOUT",
+      "seconds": 179.99999999999847,
+      "first_contest_at": 14.039999999999877,
+      "first_contest_result": "LOST",
+      "first_body_contact_at": 16.27999999999983,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "LOST",
+      "first_exclusive_blue_foot_at": 119.6000000000075,
+      "first_breakthrough_at": null,
+      "minimum_body_distance": 0.29999999999999954,
+      "attacker_regain": true,
+      "productive_regain": false,
+      "longest_stall_seconds": 64.43999999999888,
+      "attacker_states_seconds": {
+        "DRIBBLE": 7.960000000000006,
+        "EVADE_DRIBBLE": 62.559999999998844,
+        "DUEL_ESCAPE": 67.7999999999994,
+        "COUNTERPRESS": 41.63999999999929
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 10.359999999999955,
+        "ALIGN_FOOT_LATERALLY": 9.879999999999965,
+        "DRIBBLE_TOWARD_GOAL": 28.759999999999565,
+        "MAKE_FOOT_SPACE": 21.07999999999973,
+        "DUEL_STEP_ASIDE": 41.439999999999294,
+        "DUEL_SPACE_CREATED": 26.359999999999616,
+        "PRESS_CONTEST_FOOT": 7.560000000000006,
+        "PRESS_FACE_BALL": 34.07999999999945,
+        "APPROACH_BEHIND_BALL": 0.43999999999999995
+      },
+      "terminal_touch": "BlueDefender"
+    },
+    {
+      "seed": 80158,
+      "outcome": "GOAL",
+      "seconds": 87.48000000000248,
+      "first_contest_at": 11.279999999999935,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": 13.479999999999889,
+      "body_contact_before_first_loss": true,
+      "first_contact_result": "BROKE_THROUGH",
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 44.99999999999922,
+      "minimum_body_distance": 0.29999999999999977,
+      "attacker_regain": true,
+      "productive_regain": true,
+      "longest_stall_seconds": 7.640000000000006,
+      "attacker_states_seconds": {
+        "DRIBBLE": 37.35999999999938,
+        "EVADE_DRIBBLE": 31.39999999999951,
+        "COUNTERPRESS": 1.1600000000000004,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "SHOOT": 9.479999999999974
+      },
+      "attacker_stages_seconds": {
+        "DRIBBLE_TOWARD_GOAL": 60.47999999999889,
+        "FACE_KICK_DIRECTION": 10.879999999999944,
+        "PRESS_CONTEST_FOOT": 1.1600000000000004,
+        "ALIGN_FOOT_LATERALLY": 0.12,
+        "DUEL_STEP_ASIDE": 8.040000000000004,
+        "CLOSE_BALL_DISTANCE": 6.760000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    },
+    {
+      "seed": 80159,
+      "outcome": "GOAL",
+      "seconds": 51.15999999999909,
+      "first_contest_at": 13.43999999999989,
+      "first_contest_result": "BROKE_THROUGH",
+      "first_body_contact_at": null,
+      "body_contact_before_first_loss": false,
+      "first_contact_result": null,
+      "first_exclusive_blue_foot_at": null,
+      "first_breakthrough_at": 21.639999999999716,
+      "minimum_body_distance": 0.5666059482792559,
+      "attacker_regain": false,
+      "productive_regain": false,
+      "longest_stall_seconds": 0.0,
+      "attacker_states_seconds": {
+        "EVADE_DRIBBLE": 16.879999999999818,
+        "DRIBBLE": 27.51999999999959,
+        "SHOOT": 6.720000000000005
+      },
+      "attacker_stages_seconds": {
+        "FACE_KICK_DIRECTION": 1.880000000000001,
+        "DRIBBLE_TOWARD_GOAL": 42.51999999999927,
+        "CLOSE_BALL_DISTANCE": 6.720000000000005
+      },
+      "terminal_touch": "RedForwardA"
+    }
+  ],
+  "observer_schema": 1,
+  "source": {
+    "kind": "local snapshot",
+    "modules": [
+      "Utils.TeamPolicy.TeamPolicy.decide",
+      "Utils.Navigation.Navigator.choose"
+    ],
+    "sha256": {
+      "tools/soccer2d.py": "65b14132b6b577cee80b5916d27533d217a66a7fdfdbe145b844b24f386e47bc",
+      "Wenao/controllers/Utils/PolicyProfile.py": "fbfc04690cd449acc11817b5cff9d33faf7ada0af1c9454605e38af6d8ae51e2",
+      "Wenao/controllers/Utils/TeamPolicy.py": "55734930720e1779e2e46a6be04fa6ca07e07a5838e1667ed8f55371786b8f35",
+      "Wenao/controllers/Utils/Navigation.py": "5465c18755a1037e0379b51f937f6a256749800009f99654dceeab31e8b36958",
+      "Wenao/controllers/Utils/CourseSpecs.py": "329cc279f44dc6e3fa19e089319787c2cafd6c33d5118f0be3fb2e6eeb624bf0",
+      "Wenao/controllers/Utils/MatchEngine.py": "d92cab0c4a9618608b503c49014ad53dd03c33b960ef5bfcbf896537ae4b0ed2",
+      "Wenao/controllers/Utils/DefensivePlan.py": "2bd1e96cc9e162c778224a42f4dd790f022e1f68a3a96f6389d2fcc9d465dc69",
+      "Wenao/controllers/Utils/SpawnZones.py": "6cabbdc4885aa120cabebc2debac20a7cc5b65a56b83254212df6ae28422b8ec"
+    }
+  },
+  "tuning": {
+    "evade_enabled": true,
+    "evade_distance": 1.8,
+    "evade_width": 0.65,
+    "duel_mode": "ball_side",
+    "duel_step": 0.08,
+    "evade_clear_only": true
+  },
+  "definitions": {
+    "contest_entry": "Before first loss, Red has held exclusive foot geometry; body separation <0.65m and both within 0.60m of ball.",
+    "loss": "Blue exclusively occupies forward foot window for >=0.24s.",
+    "breakthrough": "Red exclusive foot window >=0.24s; Red x > Blue x+0.25m and ball x > Blue x+0.35m.",
+    "contact": "Body separation <=2*robot_radius+1e-5 after collision resolution.",
+    "warning": "Conditional cohorts change with policy; compare full fixed-layout counts too. Body contact need not be frontal, and later goals do not imply first-contest success."
+  }
+}

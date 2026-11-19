@@ -69,6 +69,8 @@ class SharedScene(Simulation):
         self.engine.red_direction = 1
         self.engine.phase, self.engine.half_started = 'PLAYING', 0
         self.engine.restart_team, self.engine.released = 'RED', True
+        # This exercise starts in open play, without a preceding restart taker.
+        self.engine.restart_goal_guard = False
         self.engine.kickoff_restriction = False
         self.engine.initial_kickoff = 'RED'
         self.spawn_zones = SpawnZones.parse(spawn_zones)
@@ -80,6 +82,13 @@ class SharedScene(Simulation):
         self.clearance = None
         self.clearances_completed = 0
         self._record()
+
+    def _stop_after_referee(self, events):
+        ended = any(e['event']=='goal' or (e['event']=='restart' and e['kind']!='KICKOFF') for e in events)
+        if ended:
+            self.engine.phase = 'FINISHED'
+            self.kicking.clear()
+        return ended
 
     def _finish_kick(self, name, decision):
         before = self.stats[self.policies[name].team]['kick_contacts']
@@ -108,6 +117,7 @@ class SharedScene(Simulation):
             self.outcome = 'TIMEOUT'
         if self.outcome:
             self.engine.phase = 'FINISHED'
+            self.kicking.clear()
         if round(self.time/self.model.dt) % 5 == 0 or self.outcome:
             self._record()
         return self.outcome is None
@@ -121,10 +131,15 @@ class SharedScene(Simulation):
             players[role] = {'name': name, 'role': role, 'x': p['position'][0], 'y': p['position'][1], 'yaw': p['yaw'],
                              'state': decision.behaviour if decision else 'INITIAL',
                              'target': dict(zip(('x', 'y'), decision.target if decision else p['position'][:2])),
+                             'ballTarget': dict(zip(('x','y'),decision.face)) if decision and decision.behaviour=='EVADE_DRIBBLE' else None,
                              'action': self.last_actions.get(name, 'stand'),
                              'stage': self.navigation_stages.get(name, ''),
                              'kick': {'end': kick[0], 'duration': self.model.shot_seconds if kick[1].kick == 'shoot'
                                       else self.model.pass_seconds} if kick else None}
+        if self.outcome:
+            for player in players.values():
+                player.update(state='FINISHED', action='stand', stage='ATTEMPT_FINISHED', kick=None,
+                              target={'x':player['x'], 'y':player['y']}, ballTarget=None)
         return {'t': self.time, **players, 'ball': dict(zip(('x', 'y', 'vx', 'vy'), self.ball[:2]+self.velocity[:2])),
                 'outcome': self.outcome, 'lastTouch': 'attacker' if self.touch == NAMES[0] else 'defender' if self.touch else None,
                 'stats': {'shotAttempts': self.stats['RED']['shot_attempts'],

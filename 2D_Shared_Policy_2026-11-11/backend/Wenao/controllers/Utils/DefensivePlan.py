@@ -11,7 +11,13 @@ LEFT = .012710006709112306
 RIGHT = .02229703610271777
 TURN = math.radians(16.873355846361836)/4
 SETTINGS = {'plan_seconds': .6, 'buffer': .30, 'horizon': 40.,
-            'duel_hold_seconds': 8., 'recovery_lookahead_seconds': 10.}
+            'duel_hold_seconds': 8., 'recovery_lookahead_seconds': 10.,
+            'press_enabled': True, 'press_lead_seconds': 1., 'press_near': .55,
+            'press_angle': 20., 'press_loss_margin': .08, 'defender_space': True,
+            # Carrying/duel policy assumptions; motion rates remain unchanged.
+            'evade_enabled': True, 'evade_distance': 1.8, 'evade_min_distance': .65,
+            'evade_width': 0.65, 'evade_ahead': .35,
+            'evade_angle':10., 'evade_enter_angle':4.}
 
 
 def wrap(angle):

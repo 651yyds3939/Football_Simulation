@@ -1,0 +1,83 @@
+{
+  "cases": 7,
+  "ratio": "3:3:1",
+  "all_original_frames_preserved": true,
+  "all_six_automatic_transitions": true,
+  "final_chapter_stops": true,
+  "seven_key_moments": true,
+  "bilingual": true,
+  "mobile_no_overflow": true,
+  "no_external_requests": true,
+  "errors": [],
+  "video": {
+    "fps": 20,
+    "playback_speed": 8,
+    "frames": 1772,
+    "seconds": 88.6,
+    "chapters": [
+      {
+        "case": 1,
+        "kind": "contact_breakthrough",
+        "seed": 466,
+        "start_seconds": 0,
+        "end_seconds": 10.6,
+        "simulated_seconds": 60.71999999999888,
+        "key_moment": 12.759999999999904
+      },
+      {
+        "case": 2,
+        "kind": "contact_breakthrough",
+        "seed": 456,
+        "start_seconds": 10.6,
+        "end_seconds": 21.55,
+        "simulated_seconds": 63.31999999999883,
+        "key_moment": 17.27999999999981
+      },
+      {
+        "case": 3,
+        "kind": "contact_breakthrough",
+        "seed": 364,
+        "start_seconds": 21.55,
+        "end_seconds": 32.6,
+        "simulated_seconds": 64.11999999999883,
+        "key_moment": 10.639999999999949
+      },
+      {
+        "case": 4,
+        "kind": "tackle_counter_goal",
+        "seed": 440,
+        "start_seconds": 32.6,
+        "end_seconds": 48.3,
+        "simulated_seconds": 101.36000000000465,
+        "key_moment": 22.279999999999703
+      },
+      {
+        "case": 5,
+        "kind": "tackle_counter_goal",
+        "seed": 414,
+        "start_seconds": 48.3,
+        "end_seconds": 64.35,
+        "simulated_seconds": 104.20000000000509,
+        "key_moment": 18.999999999999773
+      },
+      {
+        "case": 6,
+        "kind": "tackle_counter_goal",
+        "seed": 457,
+        "start_seconds": 64.35,
+        "end_seconds": 80.65,
+        "simulated_seconds": 106.24000000000541,
+        "key_moment": 18.759999999999778
+      },
+      {
+        "case": 7,
+        "kind": "failed_recovery",
+        "seed": 431,
+        "start_seconds": 80.65,
+        "end_seconds": 88.6,
+        "simulated_seconds": 39.59999999999933,
+        "key_moment": 19.399999999999764
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "selected_utc": "2026-11-19T15:09:22.137685+00:00",
+  "validated_fixture_count": 300,
+  "choice": "Bounded ball-facing counterpress with distance-based possession loss and duel escape; defender-only foot space; terminal command stop",
+  "sha256": {
+    "server.py": "109b64f20d6b3a21fdd1b8207f06a9e82810e78ca3a5993d92b154c407d92880",
+    "backend/tools/soccer2d.py": "65b14132b6b577cee80b5916d27533d217a66a7fdfdbe145b844b24f386e47bc",
+    "backend/Wenao/controllers/Utils/DefensivePlan.py": "7f17eb2b81a8b14e7eeb146fdb1e5ef9ab6d01fc644992de8ba8901a858b2183",
+    "backend/Wenao/controllers/Utils/TeamPolicy.py": "e8853c3f5636fe5e9d35e27b4c6d3557d80a7e2ac1a3834e20ca42ca2999b07e",
+    "backend/Wenao/controllers/Utils/Navigation.py": "6b26f9f0ef1bbe2ccfd778311b2c562f36ccade6e64ae9276f76cf6a6e776f1a"
+  }
+}

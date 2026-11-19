@@ -1,0 +1,57 @@
+{
+  "seed": 120013,
+  "policies": {
+    "RED": "baseline",
+    "BLUE": "coordinated"
+  },
+  "top_contiguous_crowd_segments": [
+    {
+      "start": 563.8,
+      "end": 601.4,
+      "frames": 189
+    },
+    {
+      "start": 342.2,
+      "end": 365.6,
+      "frames": 118
+    },
+    {
+      "start": 254.6,
+      "end": 273.2,
+      "frames": 94
+    },
+    {
+      "start": 280.8,
+      "end": 290.0,
+      "frames": 47
+    },
+    {
+      "start": 31.8,
+      "end": 40.2,
+      "frames": 43
+    }
+  ],
+  "close_players_behaviour_frame_counts": {
+    "SUPPORT": 459,
+    "EVADE_DRIBBLE": 55,
+    "CHALLENGE": 703,
+    "CLEAR": 2,
+    "RECOVER_DEFENCE": 3,
+    "DEFENSIVE_INTERCEPT": 35,
+    "DEFEND": 32,
+    "COUNTERPRESS": 48,
+    "DUEL_ESCAPE": 103,
+    "DRIBBLE": 33
+  },
+  "close_players_action_frame_counts": {
+    "walk": 734,
+    "back": 129,
+    "right20": 69,
+    "stand": 234,
+    "left40": 197,
+    "step_right": 40,
+    "step_left": 50,
+    "left20": 20
+  },
+  "note": "Frame counts include multiple players per frame, not independent events or skill success."
+}

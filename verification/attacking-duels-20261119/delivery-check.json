@@ -1,0 +1,31 @@
+{
+  "start_utc": "2026-11-19T15:36:46+00:00",
+  "end_utc": "2026-11-19T16:06:57.556409+00:00",
+  "elapsed_seconds": 1811.556409,
+  "unit_regressions_passed": 50,
+  "spawn_seeds_checked": 5000,
+  "independent_full_layout_pairs": 1000,
+  "independent_headon_pairs": 200,
+  "selection_frozen_before_corrected_holdout": true,
+  "policy_parameters_not_retuned_after_common_referee_fix": true,
+  "identical_referee_for_baseline_and_candidate": true,
+  "live_code_matches_frozen_selection": true,
+  "physical_motion_and_contact_file_unchanged": true,
+  "reverse_player_order_cases": 20,
+  "reverse_order_equal_steps": 36040,
+  "browser_runtime_errors": 0,
+  "continuous_browser_seconds": 120.405,
+  "continuous_browser_rounds": 9,
+  "offline_five_examples": true,
+  "zip_matches_live": true,
+  "three_dimensional_project_not_modified": true,
+  "git_commit_or_push_performed": false,
+  "zip_sha256": "aeb5b8ae0d3babd9d59ae8cff8853113e02c56d425eb8b3e9c00bf4b685b6daf",
+  "offline_html_sha256": "92087d971351c4cb6c0ad7d22889c8960b042affb1513e8fc31ec68ea889a358",
+  "remaining_limits": [
+    "151 of 200 close frontal fixtures still lost the first contest.",
+    "Full holdout has six real OUT results versus zero at baseline.",
+    "Two close-start fixtures timed out versus zero at baseline.",
+    "No 3D balance, vision noise or hardware performance demonstrated."
+  ]
+}

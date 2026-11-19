@@ -1,0 +1,13 @@
+{
+  "discarded_observer_results": [
+    "steal-baseline.json",
+    "steal-press-safe.json",
+    "steal-space-only.json",
+    "press-hold-space.json",
+    "production-validation.json"
+  ],
+  "reason": "Indentation error while adding initial Blue possession support; outcomes were computed, but all listed observation metrics are discarded.",
+  "fixed_schema": 3,
+  "invariant": "All per-step attacker states must sum to elapsed seconds minus terminal tick.",
+  "quarantine_directory": "invalid-observer/"
+}

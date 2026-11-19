@@ -1,0 +1,10 @@
+{
+  "physics_file_byte_identical": true,
+  "route_unchanged": true,
+  "interception_unchanged": true,
+  "recovery_action_unchanged": true,
+  "defensive_recovery_unchanged": true,
+  "delivered_source_frozen_before_holdout": true,
+  "reverse_player_update_order_cases": 20,
+  "reverse_order_equal_steps": 36040
+}

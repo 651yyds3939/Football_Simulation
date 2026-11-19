@@ -1,0 +1,303 @@
+{
+  "forward-chasers": {
+    "tuning": {
+      "forward_chase_only": true,
+      "heading_weight": 0.0
+    },
+    "games": 16,
+    "independent_seeds": 8,
+    "wins": 1,
+    "losses": 13,
+    "draws": 2,
+    "goals_for": 13,
+    "goals_against": 29,
+    "mean_crowded_seconds": 63.02500000000025,
+    "mean_playing_seconds": 543.0749999999865,
+    "mean_longest_stationary_ball_seconds": 92.25000000000068,
+    "mean_unattended_seconds": 116.71250000000077,
+    "wall_seconds": 14.984977615000389,
+    "team_totals": {
+      "candidate": {
+        "decision_transitions": 2477,
+        "action_transitions": 24296,
+        "playing_player_seconds": 34756.80000000344,
+        "contact_transitions": 3803,
+        "disc_overlap_player_seconds": 1772.3999999999983,
+        "shot_attempts": 10,
+        "kick_contacts": 10,
+        "danger_ball_player_seconds": 6755.999999999919,
+        "keeper_out_seconds": 0,
+        "role_changes": 405
+      },
+      "opponent": {
+        "decision_transitions": 2780,
+        "action_transitions": 26700,
+        "playing_player_seconds": 34756.80000000344,
+        "support_seconds": 12027.000000000544,
+        "support_behind_ball_seconds": 3798.1999999999216,
+        "defending_support_seconds": 2202.7999999999874,
+        "defending_support_behind_seconds": 193.99999999999983,
+        "disc_overlap_player_seconds": 1188.0000000000025,
+        "contact_transitions": 3851,
+        "danger_ball_player_seconds": 2706.399999999941,
+        "shot_attempts": 4,
+        "kick_contacts": 26,
+        "pass_attempts": 27,
+        "keeper_out_seconds": 0,
+        "role_changes": 709,
+        "kick_misses": 4
+      }
+    }
+  },
+  "recover-nearest": {
+    "tuning": {
+      "heading_weight": 0.0
+    },
+    "games": 16,
+    "independent_seeds": 8,
+    "wins": 4,
+    "losses": 7,
+    "draws": 5,
+    "goals_for": 20,
+    "goals_against": 23,
+    "mean_crowded_seconds": 37.80000000000018,
+    "mean_playing_seconds": 543.2124999999866,
+    "mean_longest_stationary_ball_seconds": 85.62500000000051,
+    "mean_unattended_seconds": 77.71250000000038,
+    "wall_seconds": 15.21684139900026,
+    "team_totals": {
+      "candidate": {
+        "decision_transitions": 2396,
+        "action_transitions": 24333,
+        "playing_player_seconds": 34765.600000003426,
+        "contact_transitions": 2412,
+        "disc_overlap_player_seconds": 1234.6000000000065,
+        "shot_attempts": 19,
+        "kick_contacts": 18,
+        "danger_ball_player_seconds": 5412.000000000023,
+        "keeper_out_seconds": 0,
+        "role_changes": 361,
+        "kick_misses": 1
+      },
+      "opponent": {
+        "decision_transitions": 2558,
+        "action_transitions": 28232,
+        "playing_player_seconds": 34765.600000003426,
+        "support_seconds": 12197.800000000581,
+        "support_behind_ball_seconds": 3123.199999999958,
+        "defending_support_seconds": 3291.9999999999345,
+        "defending_support_behind_seconds": 190.99999999999986,
+        "disc_overlap_player_seconds": 1117.8000000000072,
+        "contact_transitions": 2405,
+        "danger_ball_player_seconds": 4647.99999999995,
+        "shot_attempts": 12,
+        "kick_contacts": 18,
+        "keeper_out_seconds": 0,
+        "role_changes": 658,
+        "pass_attempts": 7,
+        "kick_misses": 1
+      }
+    }
+  },
+  "recover-assignment": {
+    "tuning": {},
+    "games": 16,
+    "independent_seeds": 8,
+    "wins": 5,
+    "losses": 7,
+    "draws": 4,
+    "goals_for": 20,
+    "goals_against": 23,
+    "mean_crowded_seconds": 39.3750000000002,
+    "mean_playing_seconds": 542.9374999999865,
+    "mean_longest_stationary_ball_seconds": 83.81250000000061,
+    "mean_unattended_seconds": 82.92500000000047,
+    "wall_seconds": 15.445191557002545,
+    "team_totals": {
+      "candidate": {
+        "decision_transitions": 2425,
+        "action_transitions": 24694,
+        "playing_player_seconds": 34748.00000000344,
+        "contact_transitions": 3114,
+        "disc_overlap_player_seconds": 1021.6000000000053,
+        "shot_attempts": 21,
+        "kick_contacts": 19,
+        "danger_ball_player_seconds": 5047.200000000038,
+        "keeper_out_seconds": 0,
+        "role_changes": 329,
+        "kick_misses": 1
+      },
+      "opponent": {
+        "decision_transitions": 2545,
+        "action_transitions": 29015,
+        "playing_player_seconds": 34748.00000000344,
+        "support_seconds": 12293.600000000604,
+        "support_behind_ball_seconds": 3235.5999999999517,
+        "defending_support_seconds": 3613.5999999999203,
+        "defending_support_behind_seconds": 194.39999999999984,
+        "disc_overlap_player_seconds": 981.200000000006,
+        "contact_transitions": 4147,
+        "danger_ball_player_seconds": 4692.000000000002,
+        "shot_attempts": 12,
+        "kick_contacts": 21,
+        "pass_attempts": 10,
+        "keeper_out_seconds": 0,
+        "role_changes": 631,
+        "kick_misses": 1
+      }
+    }
+  },
+  "zone-wide": {
+    "tuning": {
+      "heading_weight": 0.0,
+      "support_width": 1.4,
+      "cover_gap": 1.2
+    },
+    "games": 16,
+    "independent_seeds": 8,
+    "wins": 6,
+    "losses": 4,
+    "draws": 6,
+    "goals_for": 26,
+    "goals_against": 22,
+    "mean_crowded_seconds": 32.962500000000176,
+    "mean_playing_seconds": 540.3999999999859,
+    "mean_longest_stationary_ball_seconds": 74.40000000000052,
+    "mean_unattended_seconds": 94.9500000000005,
+    "wall_seconds": 15.123433965003642,
+    "team_totals": {
+      "candidate": {
+        "decision_transitions": 2490,
+        "action_transitions": 26539,
+        "playing_player_seconds": 34585.60000000359,
+        "contact_transitions": 3743,
+        "disc_overlap_player_seconds": 1109.6000000000051,
+        "shot_attempts": 26,
+        "kick_contacts": 23,
+        "danger_ball_player_seconds": 4510.399999999921,
+        "keeper_out_seconds": 0,
+        "role_changes": 332
+      },
+      "opponent": {
+        "decision_transitions": 2643,
+        "action_transitions": 28600,
+        "playing_player_seconds": 34585.60000000359,
+        "support_seconds": 12370.200000000621,
+        "support_behind_ball_seconds": 2995.799999999965,
+        "defending_support_seconds": 4436.799999999883,
+        "defending_support_behind_seconds": 191.39999999999986,
+        "disc_overlap_player_seconds": 1022.400000000005,
+        "contact_transitions": 4491,
+        "danger_ball_player_seconds": 5772.799999999924,
+        "shot_attempts": 13,
+        "kick_contacts": 16,
+        "pass_attempts": 5,
+        "keeper_out_seconds": 0,
+        "role_changes": 670,
+        "kick_misses": 2
+      }
+    }
+  },
+  "quick-nearest": {
+    "tuning": {
+      "heading_weight": 0.0,
+      "switch_margin": 0.12
+    },
+    "games": 16,
+    "independent_seeds": 8,
+    "wins": 4,
+    "losses": 9,
+    "draws": 3,
+    "goals_for": 16,
+    "goals_against": 22,
+    "mean_crowded_seconds": 42.312500000000206,
+    "mean_playing_seconds": 545.7624999999871,
+    "mean_longest_stationary_ball_seconds": 81.86250000000062,
+    "mean_unattended_seconds": 77.17500000000058,
+    "wall_seconds": 15.366388565998932,
+    "team_totals": {
+      "candidate": {
+        "decision_transitions": 2450,
+        "action_transitions": 24506,
+        "playing_player_seconds": 34928.80000000328,
+        "contact_transitions": 2856,
+        "disc_overlap_player_seconds": 1204.0000000000052,
+        "shot_attempts": 17,
+        "kick_contacts": 17,
+        "danger_ball_player_seconds": 6819.200000000055,
+        "keeper_out_seconds": 0,
+        "role_changes": 397
+      },
+      "opponent": {
+        "decision_transitions": 2498,
+        "action_transitions": 28693,
+        "playing_player_seconds": 34928.80000000328,
+        "support_seconds": 12077.000000000553,
+        "support_behind_ball_seconds": 3441.5999999999403,
+        "defending_support_seconds": 3149.999999999932,
+        "defending_support_behind_seconds": 234.19999999999985,
+        "disc_overlap_player_seconds": 862.4000000000037,
+        "contact_transitions": 3900,
+        "danger_ball_player_seconds": 4317.600000000038,
+        "shot_attempts": 16,
+        "kick_contacts": 27,
+        "pass_attempts": 12,
+        "keeper_out_seconds": 0,
+        "role_changes": 600,
+        "kick_misses": 1
+      }
+    }
+  },
+  "no-defensive-intercept": {
+    "tuning": {
+      "heading_weight": 0.0,
+      "defender_intercept": false
+    },
+    "games": 16,
+    "independent_seeds": 8,
+    "wins": 5,
+    "losses": 4,
+    "draws": 7,
+    "goals_for": 24,
+    "goals_against": 22,
+    "mean_crowded_seconds": 46.200000000000166,
+    "mean_playing_seconds": 540.837499999986,
+    "mean_longest_stationary_ball_seconds": 81.96250000000063,
+    "mean_unattended_seconds": 88.48750000000047,
+    "wall_seconds": 15.088109960997826,
+    "team_totals": {
+      "candidate": {
+        "decision_transitions": 2486,
+        "action_transitions": 23871,
+        "playing_player_seconds": 34613.600000003564,
+        "contact_transitions": 4749,
+        "disc_overlap_player_seconds": 1187.600000000007,
+        "shot_attempts": 17,
+        "kick_contacts": 45,
+        "danger_ball_player_seconds": 3897.5999999999594,
+        "keeper_out_seconds": 0,
+        "role_changes": 434,
+        "pass_attempts": 29
+      },
+      "opponent": {
+        "decision_transitions": 2853,
+        "action_transitions": 28152,
+        "playing_player_seconds": 34613.600000003564,
+        "support_seconds": 12187.400000000578,
+        "support_behind_ball_seconds": 2933.5999999999676,
+        "defending_support_seconds": 3701.3999999999173,
+        "defending_support_behind_seconds": 208.39999999999975,
+        "disc_overlap_player_seconds": 1046.8000000000063,
+        "contact_transitions": 6228,
+        "danger_ball_player_seconds": 5355.199999999895,
+        "keeper_out_seconds": 0,
+        "role_changes": 841,
+        "pass_attempts": 9,
+        "kick_contacts": 10,
+        "shot_attempts": 2,
+        "defending_target_behind_seconds": 4.400000000000001,
+        "kick_misses": 1
+      }
+    }
+  }
+}

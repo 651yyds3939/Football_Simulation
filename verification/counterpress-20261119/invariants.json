@@ -1,0 +1,10 @@
+{
+  "Model": true,
+  "_finish_kick": true,
+  "_ball_body_penetration": true,
+  "_body_clear_of_ball": true,
+  "_limit_body_motion_at_ball": true,
+  "_roll_ball": true,
+  "step_identical_except_terminal_hook": true,
+  "attack_decision_function_unchanged": true
+}

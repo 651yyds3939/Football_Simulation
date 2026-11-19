@@ -1,0 +1,30 @@
+{
+  "results": [
+    {
+      "file": "Football_4v4_Demo.html",
+      "frames": 3009,
+      "score": [
+        1,
+        1
+      ],
+      "players": 8,
+      "offline": true,
+      "play_pause_seek_reset_inspect": true,
+      "mobile_no_overflow": true
+    },
+    {
+      "file": "Football_4v4_Demo_ZH.html",
+      "frames": 3009,
+      "score": [
+        1,
+        2
+      ],
+      "players": 8,
+      "offline": true,
+      "play_pause_seek_reset_inspect": true,
+      "mobile_no_overflow": true
+    }
+  ],
+  "errors": [],
+  "no_external_requests": true
+}

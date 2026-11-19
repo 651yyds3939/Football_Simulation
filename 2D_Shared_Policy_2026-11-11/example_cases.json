@@ -1,7 +1,27 @@
 [
-  {"kind": "defence", "seed": 347, "outcome": "CLEARED_GOAL"},
-  {"kind": "attack", "seed": 350, "outcome": "GOAL"},
-  {"kind": "attack_b", "seed": 363, "outcome": "GOAL"},
-  {"kind": "defence_b", "seed": 351, "outcome": "CLEARED_GOAL"},
-  {"kind": "timeout", "seed": 348, "outcome": "TIMEOUT"}
+  {
+    "kind": "defence",
+    "seed": 347,
+    "outcome": "CLEARED_GOAL"
+  },
+  {
+    "kind": "attack",
+    "seed": 350,
+    "outcome": "GOAL"
+  },
+  {
+    "kind": "attack_b",
+    "seed": 349,
+    "outcome": "GOAL"
+  },
+  {
+    "kind": "defence_b",
+    "seed": 351,
+    "outcome": "CLEARED_GOAL"
+  },
+  {
+    "kind": "timeout",
+    "seed": 348,
+    "outcome": "TIMEOUT"
+  }
 ]

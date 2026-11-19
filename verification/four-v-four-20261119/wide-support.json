@@ -1,0 +1,1985 @@
+{
+  "summary": {
+    "games": 16,
+    "independent_seeds": 8,
+    "wins": 1,
+    "losses": 5,
+    "draws": 10,
+    "goals_for": 27,
+    "goals_against": 31,
+    "mean_crowded_seconds": 5.599999999999995,
+    "mean_playing_seconds": 536.699999999985,
+    "mean_longest_stationary_ball_seconds": 62.75000000000022,
+    "mean_unattended_seconds": 89.22500000000073,
+    "wall_seconds": 14.312101509000058,
+    "team_totals": {
+      "candidate": {
+        "decision_transitions": 2445,
+        "action_transitions": 26094,
+        "playing_player_seconds": 34348.80000000381,
+        "contact_transitions": 5338,
+        "disc_overlap_player_seconds": 735.6000000000034,
+        "shot_attempts": 20,
+        "kick_contacts": 20,
+        "danger_ball_player_seconds": 4353.599999999889,
+        "keeper_out_seconds": 0,
+        "role_changes": 344,
+        "pass_attempts": 1,
+        "kick_misses": 1
+      },
+      "opponent": {
+        "decision_transitions": 2628,
+        "action_transitions": 27691,
+        "playing_player_seconds": 34348.80000000381,
+        "support_seconds": 12452.400000000638,
+        "support_behind_ball_seconds": 3059.3999999999614,
+        "defending_support_seconds": 4126.1999999999025,
+        "defending_support_behind_seconds": 192.19999999999985,
+        "disc_overlap_player_seconds": 800.400000000004,
+        "contact_transitions": 5339,
+        "danger_ball_player_seconds": 6225.5999999998685,
+        "keeper_out_seconds": 0,
+        "role_changes": 618,
+        "pass_attempts": 6,
+        "kick_contacts": 9,
+        "shot_attempts": 4
+      }
+    }
+  },
+  "runs": [
+    {
+      "seed": 110000,
+      "candidate_team": "RED",
+      "candidate": "baseline",
+      "score_red_blue": [
+        2,
+        2
+      ],
+      "candidate_goal_difference": 0,
+      "simulated_seconds": 601.5999999999998,
+      "phase": "FINISHED",
+      "team_stats": {
+        "RED": {
+          "decision_transitions": 139,
+          "action_transitions": 1544,
+          "playing_player_seconds": 2128.800000000255,
+          "contact_transitions": 30,
+          "disc_overlap_player_seconds": 19.399999999999963,
+          "shot_attempts": 1,
+          "kick_contacts": 1,
+          "danger_ball_player_seconds": 247.99999999999446
+        },
+        "BLUE": {
+          "decision_transitions": 185,
+          "action_transitions": 1577,
+          "playing_player_seconds": 2128.800000000255,
+          "support_seconds": 718.0000000000263,
+          "support_behind_ball_seconds": 249.1999999999944,
+          "defending_support_seconds": 330.5999999999898,
+          "defending_support_behind_seconds": 10.599999999999994,
+          "disc_overlap_player_seconds": 29.799999999999926,
+          "contact_transitions": 30,
+          "danger_ball_player_seconds": 297.59999999999167
+        }
+      },
+      "model": {
+        "dt": 0.2,
+        "half_seconds": 300,
+        "ready_seconds": 10,
+        "walk_speed": 0.08525241087733532,
+        "back_speed": 0.034151821846239855,
+        "left_speed": 0.012710006709112306,
+        "right_speed": 0.02229703610271777,
+        "left_turn": 0.07362390384491213,
+        "right_turn": 0.07569683357192747,
+        "robot_radius": 0.15,
+        "rolling_deceleration": 0.35,
+        "shot_range": 0.406003256198733,
+        "pass_range": 0.3051396105104535,
+        "shot_seconds": 4.8,
+        "pass_seconds": 3.299,
+        "kick_noise_radians": 0.04
+      },
+      "physics_or_hardware_validated": false,
+      "limitations": [
+        "Kinematic discs and contact impulses; no NAO balance or joint dynamics.",
+        "Perfect ground-truth state; no independent camera localisation.",
+        "Ball friction, noise and contact are uncalibrated model assumptions.",
+        "Formation placement at each half is a declared fixture.",
+        "Uses current referee geometry, but not complete physical-foul rules.",
+        "An abstract pass completion is not a validated Webots pass."
+      ],
+      "playing_seconds": 532.199999999984,
+      "crowded_seconds": 0.0,
+      "longest_stationary_ball_seconds": 49.20000000000016,
+      "ball_unattended_seconds": 122.4000000000012,
+      "keeper_out_seconds": {},
+      "role_changes": {
+        "RED": 15,
+        "BLUE": 42
+      },
+      "states": {
+        "RED": {
+          "FORMATION": 164.5999999999992,
+          "RESTART": 24.199999999999946,
+          "GUARD": 476.3999999999815,
+          "COVER_GOAL": 193.39999999999756,
+          "WIDE_SUPPORT": 391.5999999999863,
+          "DRIBBLE": 58.000000000000284,
+          "EVADE_DRIBBLE": 98.60000000000086,
+          "SHOOT": 31.79999999999992,
+          "INTERCEPT": 133.20000000000098,
+          "RECOVERY_SUPPORT": 391.19999999998635,
+          "RECOVER_DEFENCE": 82.60000000000063,
+          "CLEAR": 16.599999999999973,
+          "COUNTERPRESS": 64.20000000000037,
+          "GUARD_INTERCEPT": 2.4
+        },
+        "BLUE": {
+          "FORMATION": 165.79999999999913,
+          "GUARD": 436.3999999999838,
+          "DEFEND": 266.9999999999934,
+          "COUNTERPRESS": 5.400000000000002,
+          "SUPPORT": 718.0000000000263,
+          "DEFENSIVE_INTERCEPT": 45.60000000000011,
+          "CHALLENGE": 25.79999999999994,
+          "CLEAR": 10.599999999999994,
+          "RECOVER_DEFENCE": 87.0000000000007,
+          "INTERCEPT": 132.60000000000102,
+          "RESTART": 22.99999999999995,
+          "DRIBBLE": 105.00000000000095,
+          "EVADE_DRIBBLE": 93.00000000000078,
+          "SHOOT": 13.599999999999984
+        }
+      },
+      "event_counts": {
+        "phase": 20,
+        "restart": 6,
+        "fixture_formation": 2,
+        "place_ball": 6,
+        "foot_control_change": 6,
+        "contact": 60,
+        "kick_start": 1,
+        "kick_contact": 1,
+        "goal": 4
+      }
+    },
+    {
+      "seed": 110000,
+      "candidate_team": "BLUE",
+      "candidate": "baseline",
+      "score_red_blue": [
+        2,
+        1
+      ],
+      "candidate_goal_difference": -1,
+      "simulated_seconds": 601.5999999999998,
+      "phase": "FINISHED",
+      "team_stats": {
+        "RED": {
+          "decision_transitions": 157,
+          "action_transitions": 1767,
+          "playing_player_seconds": 2174.4000000002134,
+          "contact_transitions": 171,
+          "support_seconds": 849.2000000000561,
+          "support_behind_ball_seconds": 172.59999999999874,
+          "disc_overlap_player_seconds": 127.00000000000126,
+          "defending_support_seconds": 257.79999999999393,
+          "danger_ball_player_seconds": 612.8000000000023,
+          "defending_support_behind_seconds": 11.199999999999992,
+          "pass_attempts": 1,
+          "kick_contacts": 1
+        },
+        "BLUE": {
+          "decision_transitions": 139,
+          "action_transitions": 1621,
+          "playing_player_seconds": 2174.4000000002134,
+          "disc_overlap_player_seconds": 116.20000000000111,
+          "danger_ball_player_seconds": 207.19999999999678,
+          "contact_transitions": 172,
+          "shot_attempts": 1,
+          "kick_contacts": 1
+        }
+      },
+      "model": {
+        "dt": 0.2,
+        "half_seconds": 300,
+        "ready_seconds": 10,
+        "walk_speed": 0.08525241087733532,
+        "back_speed": 0.034151821846239855,
+        "left_speed": 0.012710006709112306,
+        "right_speed": 0.02229703610271777,
+        "left_turn": 0.07362390384491213,
+        "right_turn": 0.07569683357192747,
+        "robot_radius": 0.15,
+        "rolling_deceleration": 0.35,
+        "shot_range": 0.406003256198733,
+        "pass_range": 0.3051396105104535,
+        "shot_seconds": 4.8,
+        "pass_seconds": 3.299,
+        "kick_noise_radians": 0.04
+      },
+      "physics_or_hardware_validated": false,
+      "limitations": [
+        "Kinematic discs and contact impulses; no NAO balance or joint dynamics.",
+        "Perfect ground-truth state; no independent camera localisation.",
+        "Ball friction, noise and contact are uncalibrated model assumptions.",
+        "Formation placement at each half is a declared fixture.",
+        "Uses current referee geometry, but not complete physical-foul rules.",
+        "An abstract pass completion is not a validated Webots pass."
+      ],
+      "playing_seconds": 543.5999999999866,
+      "crowded_seconds": 15.399999999999977,
+      "longest_stationary_ball_seconds": 54.00000000000023,
+      "ball_unattended_seconds": 86.20000000000068,
+      "keeper_out_seconds": {},
+      "role_changes": {
+        "RED": 39,
+        "BLUE": 20
+      },
+      "states": {
+        "RED": {
+          "FORMATION": 127.60000000000127,
+          "RESTART": 11.59999999999999,
+          "GUARD": 449.599999999983,
+          "DEFEND": 148.8000000000001,
+          "SUPPORT": 849.2000000000561,
+          "DRIBBLE": 27.799999999999933,
+          "EVADE_DRIBBLE": 31.39999999999992,
+          "SHOOT": 9.799999999999997,
+          "INTERCEPT": 103.20000000000093,
+          "DEFENSIVE_INTERCEPT": 34.799999999999955,
+          "CHALLENGE": 44.8000000000001,
+          "CLEAR": 84.60000000000066,
+          "RECOVER_DEFENCE": 184.39999999999807,
+          "GUARD_INTERCEPT": 2.4,
+          "COUNTERPRESS": 56.20000000000026,
+          "DUEL_ESCAPE": 8.200000000000003
+        },
+        "BLUE": {
+          "FORMATION": 116.00000000000111,
+          "GUARD": 503.99999999997993,
+          "COVER_GOAL": 82.60000000000063,
+          "COUNTERPRESS": 37.8,
+          "RECOVERY_SUPPORT": 241.7999999999948,
+          "INTERCEPT": 110.00000000000102,
+          "DRIBBLE": 88.20000000000071,
+          "WIDE_SUPPORT": 663.4000000000138,
+          "CLEAR": 9.2,
+          "RECOVER_DEFENCE": 85.00000000000067,
+          "GUARD_INTERCEPT": 4.800000000000002,
+          "RESTART": 23.19999999999995,
+          "EVADE_DRIBBLE": 135.00000000000088,
+          "DUEL_ESCAPE": 32.799999999999926,
+          "SHOOT": 10.799999999999994,
+          "YIELD_TO_CHASER": 29.799999999999926
+        }
+      },
+      "event_counts": {
+        "phase": 17,
+        "restart": 5,
+        "fixture_formation": 2,
+        "place_ball": 5,
+        "foot_control_change": 7,
+        "contact": 343,
+        "goal": 3,
+        "kick_start": 2,
+        "kick_contact": 2
+      }
+    },
+    {
+      "seed": 110001,
+      "candidate_team": "RED",
+      "candidate": "baseline",
+      "score_red_blue": [
+        2,
+        2
+      ],
+      "candidate_goal_difference": 0,
+      "simulated_seconds": 601.5999999999998,
+      "phase": "FINISHED",
+      "team_stats": {
+        "RED": {
+          "decision_transitions": 166,
+          "action_transitions": 1484,
+          "playing_player_seconds": 2128.800000000255,
+          "danger_ball_player_seconds": 407.9999999999854,
+          "contact_transitions": 53,
+          "disc_overlap_player_seconds": 18.399999999999967,
+          "pass_attempts": 1,
+          "kick_misses": 1
+        },
+        "BLUE": {
+          "decision_transitions": 129,
+          "action_transitions": 1516,
+          "playing_player_seconds": 2128.800000000255,
+          "contact_transitions": 55,
+          "support_seconds": 730.000000000029,
+          "support_behind_ball_seconds": 285.79999999999234,
+          "disc_overlap_player_seconds": 25.199999999999942,
+          "shot_attempts": 1,
+          "kick_contacts": 1,
+          "defending_support_seconds": 263.7999999999936,
+          "danger_ball_player_seconds": 281.5999999999926,
+          "defending_support_behind_seconds": 11.99999999999999,
+          "pass_attempts": 1
+        }
+      },
+      "model": {
+        "dt": 0.2,
+        "half_seconds": 300,
+        "ready_seconds": 10,
+        "walk_speed": 0.08525241087733532,
+        "back_speed": 0.034151821846239855,
+        "left_speed": 0.012710006709112306,
+        "right_speed": 0.02229703610271777,
+        "left_turn": 0.07362390384491213,
+        "right_turn": 0.07569683357192747,
+        "robot_radius": 0.15,
+        "rolling_deceleration": 0.35,
+        "shot_range": 0.406003256198733,
+        "pass_range": 0.3051396105104535,
+        "shot_seconds": 4.8,
+        "pass_seconds": 3.299,
+        "kick_noise_radians": 0.04
+      },
+      "physics_or_hardware_validated": false,
+      "limitations": [
+        "Kinematic discs and contact impulses; no NAO balance or joint dynamics.",
+        "Perfect ground-truth state; no independent camera localisation.",
+        "Ball friction, noise and contact are uncalibrated model assumptions.",
+        "Formation placement at each half is a declared fixture.",
+        "Uses current referee geometry, but not complete physical-foul rules.",
+        "An abstract pass completion is not a validated Webots pass."
+      ],
+      "playing_seconds": 532.199999999984,
+      "crowded_seconds": 14.39999999999998,
+      "longest_stationary_ball_seconds": 54.600000000000236,
+      "ball_unattended_seconds": 78.80000000000058,
+      "keeper_out_seconds": {},
+      "role_changes": {
+        "RED": 18,
+        "BLUE": 19
+      },
+      "states": {
+        "RED": {
+          "FORMATION": 148.00000000000014,
+          "GUARD": 472.19999999998174,
+          "COVER_GOAL": 225.59999999999573,
+          "RECOVERY_SUPPORT": 409.1999999999853,
+          "COUNTERPRESS": 78.80000000000058,
+          "INTERCEPT": 117.40000000000113,
+          "DRIBBLE": 85.00000000000067,
+          "WIDE_SUPPORT": 358.7999999999882,
+          "CLEAR": 41.00000000000004,
+          "RECOVER_DEFENCE": 94.4000000000008,
+          "GUARD_INTERCEPT": 1.4,
+          "RESTART": 20.799999999999958,
+          "EVADE_DRIBBLE": 46.800000000000125,
+          "SHOOT": 26.599999999999937,
+          "YIELD_TO_CHASER": 2.8000000000000003
+        },
+        "BLUE": {
+          "FORMATION": 147.40000000000018,
+          "RESTART": 21.399999999999956,
+          "GUARD": 444.3999999999833,
+          "DEFEND": 249.99999999999434,
+          "SUPPORT": 730.000000000029,
+          "DRIBBLE": 188.19999999999786,
+          "EVADE_DRIBBLE": 34.199999999999946,
+          "SHOOT": 18.199999999999967,
+          "INTERCEPT": 105.40000000000096,
+          "DEFENSIVE_INTERCEPT": 32.39999999999992,
+          "CHALLENGE": 56.000000000000256,
+          "CLEAR": 5.000000000000002,
+          "RECOVER_DEFENCE": 86.8000000000007,
+          "COUNTERPRESS": 9.399999999999999
+        }
+      },
+      "event_counts": {
+        "phase": 20,
+        "restart": 6,
+        "fixture_formation": 2,
+        "place_ball": 6,
+        "foot_control_change": 6,
+        "contact": 108,
+        "kick_start": 3,
+        "kick_contact": 1,
+        "goal": 4
+      }
+    },
+    {
+      "seed": 110001,
+      "candidate_team": "BLUE",
+      "candidate": "baseline",
+      "score_red_blue": [
+        2,
+        1
+      ],
+      "candidate_goal_difference": -1,
+      "simulated_seconds": 601.5999999999998,
+      "phase": "FINISHED",
+      "team_stats": {
+        "RED": {
+          "decision_transitions": 134,
+          "action_transitions": 1719,
+          "playing_player_seconds": 2174.4000000002134,
+          "support_seconds": 848.0000000000558,
+          "support_behind_ball_seconds": 168.59999999999897,
+          "defending_support_seconds": 163.39999999999927,
+          "defending_support_behind_seconds": 12.999999999999986,
+          "contact_transitions": 1007,
+          "disc_overlap_player_seconds": 89.80000000000074,
+          "danger_ball_player_seconds": 151.19999999999996
+        },
+        "BLUE": {
+          "decision_transitions": 171,
+          "action_transitions": 1688,
+          "playing_player_seconds": 2174.4000000002134,
+          "contact_transitions": 1007,
+          "disc_overlap_player_seconds": 89.80000000000074,
+          "shot_attempts": 1,
+          "kick_contacts": 1,
+          "danger_ball_player_seconds": 263.9999999999936
+        }
+      },
+      "model": {
+        "dt": 0.2,
+        "half_seconds": 300,
+        "ready_seconds": 10,
+        "walk_speed": 0.08525241087733532,
+        "back_speed": 0.034151821846239855,
+        "left_speed": 0.012710006709112306,
+        "right_speed": 0.02229703610271777,
+        "left_turn": 0.07362390384491213,
+        "right_turn": 0.07569683357192747,
+        "robot_radius": 0.15,
+        "rolling_deceleration": 0.35,
+        "shot_range": 0.406003256198733,
+        "pass_range": 0.3051396105104535,
+        "shot_seconds": 4.8,
+        "pass_seconds": 3.299,
+        "kick_noise_radians": 0.04
+      },
+      "physics_or_hardware_validated": false,
+      "limitations": [
+        "Kinematic discs and contact impulses; no NAO balance or joint dynamics.",
+        "Perfect ground-truth state; no independent camera localisation.",
+        "Ball friction, noise and contact are uncalibrated model assumptions.",
+        "Formation placement at each half is a declared fixture.",
+        "Uses current referee geometry, but not complete physical-foul rules.",
+        "An abstract pass completion is not a validated Webots pass."
+      ],
+      "playing_seconds": 543.5999999999866,
+      "crowded_seconds": 1.2,
+      "longest_stationary_ball_seconds": 63.40000000000036,
+      "ball_unattended_seconds": 76.00000000000054,
+      "keeper_out_seconds": {},
+      "role_changes": {
+        "RED": 36,
+        "BLUE": 34
+      },
+      "states": {
+        "RED": {
+          "FORMATION": 144.40000000000035,
+          "GUARD": 480.3999999999813,
+          "DEFEND": 161.39999999999938,
+          "SUPPORT": 848.0000000000558,
+          "COUNTERPRESS": 4.200000000000001,
+          "DEFENSIVE_INTERCEPT": 33.399999999999935,
+          "CHALLENGE": 141.6000000000005,
+          "CLEAR": 0.6000000000000001,
+          "RECOVER_DEFENCE": 42.40000000000006,
+          "INTERCEPT": 78.20000000000057,
+          "RESTART": 19.599999999999962,
+          "DRIBBLE": 113.00000000000107,
+          "SHOOT": 13.399999999999984,
+          "DUEL_ESCAPE": 67.20000000000041,
+          "EVADE_DRIBBLE": 26.599999999999937
+        },
+        "BLUE": {
+          "FORMATION": 142.60000000000045,
+          "RESTART": 21.399999999999956,
+          "GUARD": 483.5999999999811,
+          "COVER_GOAL": 177.59999999999846,
+          "WIDE_SUPPORT": 551.3999999999884,
+          "DRIBBLE": 51.20000000000019,
+          "EVADE_DRIBBLE": 155.9999999999997,
+          "SHOOT": 15.999999999999975,
+          "INTERCEPT": 86.40000000000069,
+          "RECOVERY_SUPPORT": 291.799999999992,
+          "RECOVER_DEFENCE": 80.80000000000061,
+          "CLEAR": 27.599999999999934,
+          "COUNTERPRESS": 21.599999999999955,
+          "DUEL_ESCAPE": 63.000000000000355,
+          "YIELD_TO_CHASER": 1.2,
+          "GUARD_INTERCEPT": 2.1999999999999997
+        }
+      },
+      "event_counts": {
+        "phase": 17,
+        "restart": 5,
+        "fixture_formation": 2,
+        "place_ball": 5,
+        "foot_control_change": 49,
+        "contact": 2014,
+        "kick_start": 1,
+        "kick_contact": 1,
+        "goal": 3
+      }
+    },
+    {
+      "seed": 110002,
+      "candidate_team": "RED",
+      "candidate": "baseline",
+      "score_red_blue": [
+        2,
+        2
+      ],
+      "candidate_goal_difference": 0,
+      "simulated_seconds": 601.5999999999998,
+      "phase": "FINISHED",
+      "team_stats": {
+        "RED": {
+          "decision_transitions": 155,
+          "action_transitions": 1750,
+          "playing_player_seconds": 2130.4000000002534,
+          "contact_transitions": 45,
+          "disc_overlap_player_seconds": 2.6,
+          "shot_attempts": 2,
+          "kick_contacts": 2,
+          "danger_ball_player_seconds": 259.19999999999385
+        },
+        "BLUE": {
+          "decision_transitions": 146,
+          "action_transitions": 2002,
+          "playing_player_seconds": 2130.4000000002534,
+          "support_seconds": 786.0000000000417,
+          "support_behind_ball_seconds": 152.59999999999988,
+          "defending_support_seconds": 241.39999999999483,
+          "defending_support_behind_seconds": 13.599999999999984,
+          "disc_overlap_player_seconds": 2.6,
+          "contact_transitions": 44,
+          "danger_ball_player_seconds": 514.39999999998,
+          "shot_attempts": 1,
+          "kick_contacts": 1
+        }
+      },
+      "model": {
+        "dt": 0.2,
+        "half_seconds": 300,
+        "ready_seconds": 10,
+        "walk_speed": 0.08525241087733532,
+        "back_speed": 0.034151821846239855,
+        "left_speed": 0.012710006709112306,
+        "right_speed": 0.02229703610271777,
+        "left_turn": 0.07362390384491213,
+        "right_turn": 0.07569683357192747,
+        "robot_radius": 0.15,
+        "rolling_deceleration": 0.35,
+        "shot_range": 0.406003256198733,
+        "pass_range": 0.3051396105104535,
+        "shot_seconds": 4.8,
+        "pass_seconds": 3.299,
+        "kick_noise_radians": 0.04
+      },
+      "physics_or_hardware_validated": false,
+      "limitations": [
+        "Kinematic discs and contact impulses; no NAO balance or joint dynamics.",
+        "Perfect ground-truth state; no independent camera localisation.",
+        "Ball friction, noise and contact are uncalibrated model assumptions.",
+        "Formation placement at each half is a declared fixture.",
+        "Uses current referee geometry, but not complete physical-foul rules.",
+        "An abstract pass completion is not a validated Webots pass."
+      ],
+      "playing_seconds": 532.5999999999841,
+      "crowded_seconds": 4.600000000000001,
+      "longest_stationary_ball_seconds": 65.60000000000039,
+      "ball_unattended_seconds": 115.2000000000011,
+      "keeper_out_seconds": {},
+      "role_changes": {
+        "RED": 19,
+        "BLUE": 24
+      },
+      "states": {
+        "RED": {
+          "FORMATION": 150.20000000000002,
+          "RESTART": 21.799999999999955,
+          "GUARD": 485.79999999998097,
+          "COVER_GOAL": 143.20000000000041,
+          "WIDE_SUPPORT": 392.1999999999863,
+          "DRIBBLE": 73.4000000000005,
+          "EVADE_DRIBBLE": 86.60000000000069,
+          "YIELD_TO_CHASER": 37.8,
+          "SHOOT": 28.79999999999993,
+          "INTERCEPT": 184.59999999999806,
+          "RECOVERY_SUPPORT": 405.9999999999855,
+          "RECOVER_DEFENCE": 72.60000000000049,
+          "COUNTERPRESS": 32.799999999999926,
+          "GUARD_INTERCEPT": 3.800000000000001,
+          "CLEAR": 9.2,
+          "DUEL_ESCAPE": 1.5999999999999999
+        },
+        "BLUE": {
+          "FORMATION": 150.79999999999998,
+          "GUARD": 385.1999999999867,
+          "DEFEND": 256.799999999994,
+          "SUPPORT": 786.0000000000417,
+          "COUNTERPRESS": 3.800000000000001,
+          "DEFENSIVE_INTERCEPT": 28.99999999999993,
+          "CHALLENGE": 20.799999999999958,
+          "CLEAR": 52.2000000000002,
+          "RECOVER_DEFENCE": 111.40000000000104,
+          "INTERCEPT": 138.4000000000007,
+          "RESTART": 21.199999999999957,
+          "DRIBBLE": 109.40000000000101,
+          "EVADE_DRIBBLE": 40.60000000000004,
+          "SHOOT": 24.799999999999944
+        }
+      },
+      "event_counts": {
+        "phase": 20,
+        "restart": 6,
+        "fixture_formation": 2,
+        "place_ball": 6,
+        "foot_control_change": 7,
+        "contact": 89,
+        "kick_start": 3,
+        "kick_contact": 3,
+        "goal": 4
+      }
+    },
+    {
+      "seed": 110002,
+      "candidate_team": "BLUE",
+      "candidate": "baseline",
+      "score_red_blue": [
+        2,
+        2
+      ],
+      "candidate_goal_difference": 0,
+      "simulated_seconds": 601.5999999999998,
+      "phase": "FINISHED",
+      "team_stats": {
+        "RED": {
+          "decision_transitions": 156,
+          "action_transitions": 1510,
+          "playing_player_seconds": 2130.4000000002534,
+          "contact_transitions": 59,
+          "support_seconds": 711.8000000000249,
+          "support_behind_ball_seconds": 301.39999999999145,
+          "defending_support_seconds": 241.39999999999483,
+          "disc_overlap_player_seconds": 22.99999999999995,
+          "danger_ball_player_seconds": 352.79999999998853,
+          "defending_support_behind_seconds": 13.599999999999984
+        },
+        "BLUE": {
+          "decision_transitions": 179,
+          "action_transitions": 1531,
+          "playing_player_seconds": 2130.4000000002534,
+          "danger_ball_player_seconds": 331.19999999998976,
+          "contact_transitions": 59,
+          "disc_overlap_player_seconds": 28.99999999999993
+        }
+      },
+      "model": {
+        "dt": 0.2,
+        "half_seconds": 300,
+        "ready_seconds": 10,
+        "walk_speed": 0.08525241087733532,
+        "back_speed": 0.034151821846239855,
+        "left_speed": 0.012710006709112306,
+        "right_speed": 0.02229703610271777,
+        "left_turn": 0.07362390384491213,
+        "right_turn": 0.07569683357192747,
+        "robot_radius": 0.15,
+        "rolling_deceleration": 0.35,
+        "shot_range": 0.406003256198733,
+        "pass_range": 0.3051396105104535,
+        "shot_seconds": 4.8,
+        "pass_seconds": 3.299,
+        "kick_noise_radians": 0.04
+      },
+      "physics_or_hardware_validated": false,
+      "limitations": [
+        "Kinematic discs and contact impulses; no NAO balance or joint dynamics.",
+        "Perfect ground-truth state; no independent camera localisation.",
+        "Ball friction, noise and contact are uncalibrated model assumptions.",
+        "Formation placement at each half is a declared fixture.",
+        "Uses current referee geometry, but not complete physical-foul rules.",
+        "An abstract pass completion is not a validated Webots pass."
+      ],
+      "playing_seconds": 532.5999999999841,
+      "crowded_seconds": 17.79999999999997,
+      "longest_stationary_ball_seconds": 47.400000000000134,
+      "ball_unattended_seconds": 114.40000000000109,
+      "keeper_out_seconds": {},
+      "role_changes": {
+        "RED": 28,
+        "BLUE": 21
+      },
+      "states": {
+        "RED": {
+          "FORMATION": 150.4,
+          "RESTART": 21.599999999999955,
+          "GUARD": 443.79999999998336,
+          "DEFEND": 211.19999999999655,
+          "SUPPORT": 711.8000000000249,
+          "DRIBBLE": 74.20000000000051,
+          "EVADE_DRIBBLE": 49.40000000000016,
+          "SHOOT": 12.199999999999989,
+          "INTERCEPT": 82.60000000000063,
+          "DEFENSIVE_INTERCEPT": 24.799999999999944,
+          "CHALLENGE": 55.40000000000025,
+          "CLEAR": 83.80000000000065,
+          "RECOVER_DEFENCE": 139.40000000000063,
+          "COUNTERPRESS": 61.600000000000335,
+          "DUEL_ESCAPE": 8.200000000000003
+        },
+        "BLUE": {
+          "FORMATION": 150.6,
+          "GUARD": 482.39999999998116,
+          "COVER_GOAL": 165.79999999999913,
+          "RECOVERY_SUPPORT": 310.19999999999095,
+          "COUNTERPRESS": 80.4000000000006,
+          "INTERCEPT": 89.60000000000073,
+          "DRIBBLE": 97.80000000000085,
+          "EVADE_DRIBBLE": 87.80000000000071,
+          "WIDE_SUPPORT": 492.1999999999806,
+          "CLEAR": 10.199999999999996,
+          "RECOVER_DEFENCE": 86.60000000000069,
+          "GUARD_INTERCEPT": 6.000000000000003,
+          "RESTART": 21.399999999999956,
+          "SHOOT": 23.19999999999995,
+          "DUEL_ESCAPE": 13.999999999999982,
+          "YIELD_TO_CHASER": 12.199999999999989
+        }
+      },
+      "event_counts": {
+        "phase": 20,
+        "restart": 6,
+        "fixture_formation": 2,
+        "place_ball": 6,
+        "foot_control_change": 10,
+        "contact": 118,
+        "goal": 4
+      }
+    },
+    {
+      "seed": 110003,
+      "candidate_team": "RED",
+      "candidate": "baseline",
+      "score_red_blue": [
+        2,
+        2
+      ],
+      "candidate_goal_difference": 0,
+      "simulated_seconds": 601.5999999999998,
+      "phase": "FINISHED",
+      "team_stats": {
+        "RED": {
+          "decision_transitions": 151,
+          "action_transitions": 1373,
+          "playing_player_seconds": 2130.4000000002534,
+          "contact_transitions": 52,
+          "danger_ball_player_seconds": 259.9999999999938,
+          "disc_overlap_player_seconds": 27.999999999999932,
+          "shot_attempts": 2,
+          "kick_contacts": 2
+        },
+        "BLUE": {
+          "decision_transitions": 175,
+          "action_transitions": 1660,
+          "playing_player_seconds": 2130.4000000002534,
+          "contact_transitions": 52,
+          "support_seconds": 751.2000000000338,
+          "support_behind_ball_seconds": 165.59999999999914,
+          "defending_support_seconds": 262.1999999999937,
+          "disc_overlap_player_seconds": 37.19999999999999,
+          "danger_ball_player_seconds": 610.4000000000018,
+          "defending_support_behind_seconds": 18.199999999999967
+        }
+      },
+      "model": {
+        "dt": 0.2,
+        "half_seconds": 300,
+        "ready_seconds": 10,
+        "walk_speed": 0.08525241087733532,
+        "back_speed": 0.034151821846239855,
+        "left_speed": 0.012710006709112306,
+        "right_speed": 0.02229703610271777,
+        "left_turn": 0.07362390384491213,
+        "right_turn": 0.07569683357192747,
+        "robot_radius": 0.15,
+        "rolling_deceleration": 0.35,
+        "shot_range": 0.406003256198733,
+        "pass_range": 0.3051396105104535,
+        "shot_seconds": 4.8,
+        "pass_seconds": 3.299,
+        "kick_noise_radians": 0.04
+      },
+      "physics_or_hardware_validated": false,
+      "limitations": [
+        "Kinematic discs and contact impulses; no NAO balance or joint dynamics.",
+        "Perfect ground-truth state; no independent camera localisation.",
+        "Ball friction, noise and contact are uncalibrated model assumptions.",
+        "Formation placement at each half is a declared fixture.",
+        "Uses current referee geometry, but not complete physical-foul rules.",
+        "An abstract pass completion is not a validated Webots pass."
+      ],
+      "playing_seconds": 532.5999999999841,
+      "crowded_seconds": 0.8,
+      "longest_stationary_ball_seconds": 50.20000000000017,
+      "ball_unattended_seconds": 53.200000000000216,
+      "keeper_out_seconds": {},
+      "role_changes": {
+        "RED": 15,
+        "BLUE": 40
+      },
+      "states": {
+        "RED": {
+          "FORMATION": 154.1999999999998,
+          "GUARD": 483.5999999999811,
+          "COVER_GOAL": 182.99999999999815,
+          "RECOVERY_SUPPORT": 378.1999999999871,
+          "COUNTERPRESS": 50.400000000000176,
+          "INTERCEPT": 129.00000000000122,
+          "DRIBBLE": 140.0000000000006,
+          "EVADE_DRIBBLE": 60.00000000000031,
+          "CLEAR": 10.399999999999995,
+          "WIDE_SUPPORT": 379.999999999987,
+          "RECOVER_DEFENCE": 70.80000000000047,
+          "GUARD_INTERCEPT": 4.600000000000001,
+          "RESTART": 23.39999999999995,
+          "SHOOT": 27.599999999999934,
+          "YIELD_TO_CHASER": 35.19999999999996
+        },
+        "BLUE": {
+          "FORMATION": 156.59999999999965,
+          "RESTART": 20.999999999999957,
+          "GUARD": 363.5999999999879,
+          "DEFEND": 289.39999999999213,
+          "SUPPORT": 751.2000000000338,
+          "DRIBBLE": 131.2000000000011,
+          "EVADE_DRIBBLE": 29.799999999999926,
+          "SHOOT": 21.799999999999955,
+          "INTERCEPT": 109.80000000000102,
+          "DEFENSIVE_INTERCEPT": 26.19999999999994,
+          "CHALLENGE": 25.59999999999994,
+          "CLEAR": 82.80000000000064,
+          "RECOVER_DEFENCE": 113.00000000000107,
+          "DUEL_ESCAPE": 3.2000000000000006,
+          "COUNTERPRESS": 5.200000000000002
+        }
+      },
+      "event_counts": {
+        "phase": 20,
+        "restart": 6,
+        "fixture_formation": 2,
+        "place_ball": 6,
+        "foot_control_change": 8,
+        "contact": 104,
+        "goal": 4,
+        "kick_start": 2,
+        "kick_contact": 2
+      }
+    },
+    {
+      "seed": 110003,
+      "candidate_team": "BLUE",
+      "candidate": "baseline",
+      "score_red_blue": [
+        1,
+        2
+      ],
+      "candidate_goal_difference": 1,
+      "simulated_seconds": 601.5999999999998,
+      "phase": "FINISHED",
+      "team_stats": {
+        "RED": {
+          "decision_transitions": 186,
+          "action_transitions": 1634,
+          "playing_player_seconds": 2174.4000000002134,
+          "support_seconds": 882.0000000000636,
+          "support_behind_ball_seconds": 108.000000000001,
+          "defending_support_seconds": 254.79999999999407,
+          "defending_support_behind_seconds": 10.199999999999996,
+          "disc_overlap_player_seconds": 102.40000000000092,
+          "contact_transitions": 1312,
+          "danger_ball_player_seconds": 444.7999999999833
+        },
+        "BLUE": {
+          "decision_transitions": 151,
+          "action_transitions": 1678,
+          "playing_player_seconds": 2174.4000000002134,
+          "contact_transitions": 1314,
+          "disc_overlap_player_seconds": 95.20000000000081,
+          "shot_attempts": 2,
+          "kick_contacts": 2,
+          "danger_ball_player_seconds": 128.80000000000123
+        }
+      },
+      "model": {
+        "dt": 0.2,
+        "half_seconds": 300,
+        "ready_seconds": 10,
+        "walk_speed": 0.08525241087733532,
+        "back_speed": 0.034151821846239855,
+        "left_speed": 0.012710006709112306,
+        "right_speed": 0.02229703610271777,
+        "left_turn": 0.07362390384491213,
+        "right_turn": 0.07569683357192747,
+        "robot_radius": 0.15,
+        "rolling_deceleration": 0.35,
+        "shot_range": 0.406003256198733,
+        "pass_range": 0.3051396105104535,
+        "shot_seconds": 4.8,
+        "pass_seconds": 3.299,
+        "kick_noise_radians": 0.04
+      },
+      "physics_or_hardware_validated": false,
+      "limitations": [
+        "Kinematic discs and contact impulses; no NAO balance or joint dynamics.",
+        "Perfect ground-truth state; no independent camera localisation.",
+        "Ball friction, noise and contact are uncalibrated model assumptions.",
+        "Formation placement at each half is a declared fixture.",
+        "Uses current referee geometry, but not complete physical-foul rules.",
+        "An abstract pass completion is not a validated Webots pass."
+      ],
+      "playing_seconds": 543.5999999999866,
+      "crowded_seconds": 3.800000000000001,
+      "longest_stationary_ball_seconds": 79.00000000000058,
+      "ball_unattended_seconds": 20.799999999999958,
+      "keeper_out_seconds": {},
+      "role_changes": {
+        "RED": 64,
+        "BLUE": 40
+      },
+      "states": {
+        "RED": {
+          "FORMATION": 114.00000000000108,
+          "GUARD": 421.5999999999846,
+          "DEFEND": 189.1999999999978,
+          "SUPPORT": 882.0000000000636,
+          "COUNTERPRESS": 14.39999999999998,
+          "DEFENSIVE_INTERCEPT": 25.79999999999994,
+          "CHALLENGE": 108.200000000001,
+          "CLEAR": 63.000000000000355,
+          "RECOVER_DEFENCE": 86.8000000000007,
+          "INTERCEPT": 66.0000000000004,
+          "RESTART": 23.599999999999948,
+          "DRIBBLE": 49.20000000000016,
+          "DUEL_ESCAPE": 91.80000000000076,
+          "EVADE_DRIBBLE": 28.59999999999993,
+          "SHOOT": 10.199999999999996
+        },
+        "BLUE": {
+          "FORMATION": 116.80000000000112,
+          "RESTART": 10.799999999999994,
+          "GUARD": 506.7999999999798,
+          "COVER_GOAL": 106.40000000000097,
+          "WIDE_SUPPORT": 683.4000000000184,
+          "DRIBBLE": 65.20000000000039,
+          "EVADE_DRIBBLE": 204.7999999999969,
+          "SHOOT": 37.8,
+          "KEEP_DISTANCE": 9.999999999999996,
+          "INTERCEPT": 80.2000000000006,
+          "RECOVERY_SUPPORT": 192.5999999999976,
+          "DUEL_ESCAPE": 62.40000000000035,
+          "YIELD_TO_CHASER": 35.99999999999997,
+          "COUNTERPRESS": 8.400000000000002,
+          "CLEAR": 6.200000000000003,
+          "RECOVER_DEFENCE": 44.20000000000009,
+          "GUARD_INTERCEPT": 2.4
+        }
+      },
+      "event_counts": {
+        "phase": 17,
+        "restart": 5,
+        "fixture_formation": 2,
+        "place_ball": 5,
+        "foot_control_change": 52,
+        "contact": 2626,
+        "kick_start": 2,
+        "kick_contact": 2,
+        "goal": 3
+      }
+    },
+    {
+      "seed": 110004,
+      "candidate_team": "RED",
+      "candidate": "baseline",
+      "score_red_blue": [
+        2,
+        2
+      ],
+      "candidate_goal_difference": 0,
+      "simulated_seconds": 601.5999999999998,
+      "phase": "FINISHED",
+      "team_stats": {
+        "RED": {
+          "decision_transitions": 150,
+          "action_transitions": 1557,
+          "playing_player_seconds": 2130.4000000002534,
+          "contact_transitions": 37,
+          "disc_overlap_player_seconds": 46.40000000000012,
+          "shot_attempts": 1,
+          "kick_contacts": 1,
+          "danger_ball_player_seconds": 298.3999999999916
+        },
+        "BLUE": {
+          "decision_transitions": 188,
+          "action_transitions": 1652,
+          "playing_player_seconds": 2130.4000000002534,
+          "support_seconds": 698.6000000000219,
+          "support_behind_ball_seconds": 206.39999999999682,
+          "defending_support_seconds": 263.3999999999936,
+          "defending_support_behind_seconds": 10.999999999999993,
+          "disc_overlap_player_seconds": 25.199999999999942,
+          "contact_transitions": 40,
+          "danger_ball_player_seconds": 280.7999999999926,
+          "shot_attempts": 1,
+          "kick_contacts": 1
+        }
+      },
+      "model": {
+        "dt": 0.2,
+        "half_seconds": 300,
+        "ready_seconds": 10,
+        "walk_speed": 0.08525241087733532,
+        "back_speed": 0.034151821846239855,
+        "left_speed": 0.012710006709112306,
+        "right_speed": 0.02229703610271777,
+        "left_turn": 0.07362390384491213,
+        "right_turn": 0.07569683357192747,
+        "robot_radius": 0.15,
+        "rolling_deceleration": 0.35,
+        "shot_range": 0.406003256198733,
+        "pass_range": 0.3051396105104535,
+        "shot_seconds": 4.8,
+        "pass_seconds": 3.299,
+        "kick_noise_radians": 0.04
+      },
+      "physics_or_hardware_validated": false,
+      "limitations": [
+        "Kinematic discs and contact impulses; no NAO balance or joint dynamics.",
+        "Perfect ground-truth state; no independent camera localisation.",
+        "Ball friction, noise and contact are uncalibrated model assumptions.",
+        "Formation placement at each half is a declared fixture.",
+        "Uses current referee geometry, but not complete physical-foul rules.",
+        "An abstract pass completion is not a validated Webots pass."
+      ],
+      "playing_seconds": 532.5999999999841,
+      "crowded_seconds": 12.399999999999988,
+      "longest_stationary_ball_seconds": 48.60000000000015,
+      "ball_unattended_seconds": 121.80000000000119,
+      "keeper_out_seconds": {},
+      "role_changes": {
+        "RED": 18,
+        "BLUE": 46
+      },
+      "states": {
+        "RED": {
+          "FORMATION": 184.79999999999805,
+          "RESTART": 21.599999999999955,
+          "GUARD": 477.19999999998146,
+          "COVER_GOAL": 177.79999999999845,
+          "WIDE_SUPPORT": 302.5999999999914,
+          "DRIBBLE": 81.80000000000062,
+          "EVADE_DRIBBLE": 53.60000000000022,
+          "SHOOT": 27.199999999999935,
+          "INTERCEPT": 150.6,
+          "RECOVERY_SUPPORT": 481.5999999999812,
+          "RECOVER_DEFENCE": 96.60000000000083,
+          "GUARD_INTERCEPT": 3.800000000000001,
+          "COUNTERPRESS": 60.00000000000031,
+          "CLEAR": 11.199999999999992
+        },
+        "BLUE": {
+          "FORMATION": 176.39999999999853,
+          "GUARD": 439.7999999999836,
+          "DEFEND": 268.5999999999933,
+          "COUNTERPRESS": 6.600000000000003,
+          "SUPPORT": 698.6000000000219,
+          "DEFENSIVE_INTERCEPT": 27.999999999999932,
+          "CHALLENGE": 29.399999999999928,
+          "CLEAR": 17.39999999999997,
+          "RECOVER_DEFENCE": 89.80000000000074,
+          "INTERCEPT": 121.80000000000119,
+          "RESTART": 29.999999999999925,
+          "DRIBBLE": 164.99999999999918,
+          "SHOOT": 31.39999999999992,
+          "EVADE_DRIBBLE": 27.599999999999934
+        }
+      },
+      "event_counts": {
+        "phase": 20,
+        "restart": 6,
+        "fixture_formation": 2,
+        "place_ball": 6,
+        "foot_control_change": 8,
+        "contact": 77,
+        "kick_start": 2,
+        "kick_contact": 2,
+        "goal": 4
+      }
+    },
+    {
+      "seed": 110004,
+      "candidate_team": "BLUE",
+      "candidate": "baseline",
+      "score_red_blue": [
+        2,
+        1
+      ],
+      "candidate_goal_difference": -1,
+      "simulated_seconds": 601.5999999999998,
+      "phase": "FINISHED",
+      "team_stats": {
+        "RED": {
+          "decision_transitions": 139,
+          "action_transitions": 1506,
+          "playing_player_seconds": 2176.000000000212,
+          "contact_transitions": 1533,
+          "support_seconds": 830.0000000000517,
+          "support_behind_ball_seconds": 164.3999999999992,
+          "disc_overlap_player_seconds": 98.80000000000086,
+          "shot_attempts": 1,
+          "kick_contacts": 1,
+          "defending_support_seconds": 246.59999999999454,
+          "defending_support_behind_seconds": 9.0,
+          "danger_ball_player_seconds": 183.19999999999814
+        },
+        "BLUE": {
+          "decision_transitions": 170,
+          "action_transitions": 1559,
+          "playing_player_seconds": 2176.000000000212,
+          "contact_transitions": 1533,
+          "disc_overlap_player_seconds": 95.60000000000082,
+          "danger_ball_player_seconds": 274.399999999993,
+          "shot_attempts": 1,
+          "kick_contacts": 1
+        }
+      },
+      "model": {
+        "dt": 0.2,
+        "half_seconds": 300,
+        "ready_seconds": 10,
+        "walk_speed": 0.08525241087733532,
+        "back_speed": 0.034151821846239855,
+        "left_speed": 0.012710006709112306,
+        "right_speed": 0.02229703610271777,
+        "left_turn": 0.07362390384491213,
+        "right_turn": 0.07569683357192747,
+        "robot_radius": 0.15,
+        "rolling_deceleration": 0.35,
+        "shot_range": 0.406003256198733,
+        "pass_range": 0.3051396105104535,
+        "shot_seconds": 4.8,
+        "pass_seconds": 3.299,
+        "kick_noise_radians": 0.04
+      },
+      "physics_or_hardware_validated": false,
+      "limitations": [
+        "Kinematic discs and contact impulses; no NAO balance or joint dynamics.",
+        "Perfect ground-truth state; no independent camera localisation.",
+        "Ball friction, noise and contact are uncalibrated model assumptions.",
+        "Formation placement at each half is a declared fixture.",
+        "Uses current referee geometry, but not complete physical-foul rules.",
+        "An abstract pass completion is not a validated Webots pass."
+      ],
+      "playing_seconds": 543.9999999999867,
+      "crowded_seconds": 7.400000000000004,
+      "longest_stationary_ball_seconds": 158.19999999999956,
+      "ball_unattended_seconds": 62.80000000000035,
+      "keeper_out_seconds": {},
+      "role_changes": {
+        "RED": 36,
+        "BLUE": 37
+      },
+      "states": {
+        "RED": {
+          "FORMATION": 147.80000000000015,
+          "RESTART": 11.399999999999991,
+          "GUARD": 473.99999999998164,
+          "DEFEND": 189.1999999999978,
+          "SUPPORT": 830.0000000000517,
+          "DRIBBLE": 78.40000000000057,
+          "EVADE_DRIBBLE": 70.00000000000045,
+          "SHOOT": 26.19999999999994,
+          "INTERCEPT": 65.00000000000038,
+          "DEFENSIVE_INTERCEPT": 51.20000000000019,
+          "CHALLENGE": 92.80000000000078,
+          "DUEL_ESCAPE": 81.40000000000062,
+          "COUNTERPRESS": 3.800000000000001,
+          "CLEAR": 9.0,
+          "RECOVER_DEFENCE": 45.80000000000011
+        },
+        "BLUE": {
+          "FORMATION": 130.80000000000112,
+          "GUARD": 497.1999999999803,
+          "COVER_GOAL": 101.8000000000009,
+          "COUNTERPRESS": 14.59999999999998,
+          "RECOVERY_SUPPORT": 340.9999999999892,
+          "INTERCEPT": 92.00000000000077,
+          "DRIBBLE": 44.600000000000094,
+          "WIDE_SUPPORT": 563.5999999999912,
+          "CLEAR": 12.399999999999988,
+          "RECOVER_DEFENCE": 94.4000000000008,
+          "GUARD_INTERCEPT": 1.5999999999999999,
+          "RESTART": 28.39999999999993,
+          "EVADE_DRIBBLE": 161.1999999999994,
+          "DUEL_ESCAPE": 64.40000000000038,
+          "YIELD_TO_CHASER": 7.400000000000004,
+          "SHOOT": 20.59999999999996
+        }
+      },
+      "event_counts": {
+        "phase": 17,
+        "restart": 5,
+        "fixture_formation": 2,
+        "place_ball": 5,
+        "foot_control_change": 31,
+        "contact": 3066,
+        "kick_start": 2,
+        "kick_contact": 2,
+        "goal": 3
+      }
+    },
+    {
+      "seed": 110005,
+      "candidate_team": "RED",
+      "candidate": "baseline",
+      "score_red_blue": [
+        1,
+        2
+      ],
+      "candidate_goal_difference": -1,
+      "simulated_seconds": 601.5999999999998,
+      "phase": "FINISHED",
+      "team_stats": {
+        "RED": {
+          "decision_transitions": 153,
+          "action_transitions": 1959,
+          "playing_player_seconds": 2176.000000000212,
+          "disc_overlap_player_seconds": 62.60000000000035,
+          "danger_ball_player_seconds": 269.59999999999326,
+          "contact_transitions": 519,
+          "shot_attempts": 2,
+          "kick_contacts": 2
+        },
+        "BLUE": {
+          "decision_transitions": 137,
+          "action_transitions": 2009,
+          "playing_player_seconds": 2176.000000000212,
+          "contact_transitions": 521,
+          "support_seconds": 825.4000000000507,
+          "support_behind_ball_seconds": 128.20000000000127,
+          "disc_overlap_player_seconds": 85.40000000000067,
+          "defending_support_seconds": 242.59999999999476,
+          "danger_ball_player_seconds": 444.7999999999833,
+          "defending_support_behind_seconds": 8.600000000000001
+        }
+      },
+      "model": {
+        "dt": 0.2,
+        "half_seconds": 300,
+        "ready_seconds": 10,
+        "walk_speed": 0.08525241087733532,
+        "back_speed": 0.034151821846239855,
+        "left_speed": 0.012710006709112306,
+        "right_speed": 0.02229703610271777,
+        "left_turn": 0.07362390384491213,
+        "right_turn": 0.07569683357192747,
+        "robot_radius": 0.15,
+        "rolling_deceleration": 0.35,
+        "shot_range": 0.406003256198733,
+        "pass_range": 0.3051396105104535,
+        "shot_seconds": 4.8,
+        "pass_seconds": 3.299,
+        "kick_noise_radians": 0.04
+      },
+      "physics_or_hardware_validated": false,
+      "limitations": [
+        "Kinematic discs and contact impulses; no NAO balance or joint dynamics.",
+        "Perfect ground-truth state; no independent camera localisation.",
+        "Ball friction, noise and contact are uncalibrated model assumptions.",
+        "Formation placement at each half is a declared fixture.",
+        "Uses current referee geometry, but not complete physical-foul rules.",
+        "An abstract pass completion is not a validated Webots pass."
+      ],
+      "playing_seconds": 543.9999999999867,
+      "crowded_seconds": 7.200000000000004,
+      "longest_stationary_ball_seconds": 45.0000000000001,
+      "ball_unattended_seconds": 68.40000000000043,
+      "keeper_out_seconds": {},
+      "role_changes": {
+        "RED": 16,
+        "BLUE": 25
+      },
+      "states": {
+        "RED": {
+          "FORMATION": 136.80000000000078,
+          "GUARD": 497.3999999999803,
+          "COVER_GOAL": 125.00000000000124,
+          "COUNTERPRESS": 33.19999999999993,
+          "RECOVERY_SUPPORT": 473.99999999998164,
+          "INTERCEPT": 150.20000000000002,
+          "DRIBBLE": 140.20000000000059,
+          "CLEAR": 10.399999999999995,
+          "WIDE_SUPPORT": 372.7999999999874,
+          "RECOVER_DEFENCE": 83.00000000000064,
+          "GUARD_INTERCEPT": 4.800000000000002,
+          "RESTART": 27.999999999999932,
+          "EVADE_DRIBBLE": 59.400000000000304,
+          "SHOOT": 26.399999999999938,
+          "YIELD_TO_CHASER": 34.39999999999995
+        },
+        "BLUE": {
+          "FORMATION": 151.59999999999994,
+          "RESTART": 13.199999999999985,
+          "GUARD": 415.59999999998496,
+          "DEFEND": 232.79999999999532,
+          "SUPPORT": 825.4000000000507,
+          "DRIBBLE": 107.80000000000099,
+          "EVADE_DRIBBLE": 45.2000000000001,
+          "SHOOT": 23.39999999999995,
+          "INTERCEPT": 101.4000000000009,
+          "DEFENSIVE_INTERCEPT": 11.79999999999999,
+          "CHALLENGE": 82.00000000000063,
+          "CLEAR": 46.20000000000012,
+          "RECOVER_DEFENCE": 115.8000000000011,
+          "COUNTERPRESS": 3.800000000000001
+        }
+      },
+      "event_counts": {
+        "phase": 17,
+        "restart": 5,
+        "fixture_formation": 2,
+        "place_ball": 5,
+        "foot_control_change": 9,
+        "contact": 1040,
+        "goal": 3,
+        "kick_start": 2,
+        "kick_contact": 2
+      }
+    },
+    {
+      "seed": 110005,
+      "candidate_team": "BLUE",
+      "candidate": "baseline",
+      "score_red_blue": [
+        2,
+        1
+      ],
+      "candidate_goal_difference": -1,
+      "simulated_seconds": 601.5999999999998,
+      "phase": "FINISHED",
+      "team_stats": {
+        "RED": {
+          "decision_transitions": 157,
+          "action_transitions": 1785,
+          "playing_player_seconds": 2174.4000000002134,
+          "support_seconds": 840.000000000054,
+          "support_behind_ball_seconds": 174.19999999999865,
+          "defending_support_seconds": 167.79999999999902,
+          "defending_support_behind_seconds": 11.199999999999992,
+          "contact_transitions": 344,
+          "disc_overlap_player_seconds": 41.200000000000045,
+          "danger_ball_player_seconds": 259.19999999999385
+        },
+        "BLUE": {
+          "decision_transitions": 118,
+          "action_transitions": 2244,
+          "playing_player_seconds": 2174.4000000002134,
+          "contact_transitions": 344,
+          "disc_overlap_player_seconds": 33.59999999999994,
+          "shot_attempts": 1,
+          "kick_contacts": 1,
+          "danger_ball_player_seconds": 255.19999999999405
+        }
+      },
+      "model": {
+        "dt": 0.2,
+        "half_seconds": 300,
+        "ready_seconds": 10,
+        "walk_speed": 0.08525241087733532,
+        "back_speed": 0.034151821846239855,
+        "left_speed": 0.012710006709112306,
+        "right_speed": 0.02229703610271777,
+        "left_turn": 0.07362390384491213,
+        "right_turn": 0.07569683357192747,
+        "robot_radius": 0.15,
+        "rolling_deceleration": 0.35,
+        "shot_range": 0.406003256198733,
+        "pass_range": 0.3051396105104535,
+        "shot_seconds": 4.8,
+        "pass_seconds": 3.299,
+        "kick_noise_radians": 0.04
+      },
+      "physics_or_hardware_validated": false,
+      "limitations": [
+        "Kinematic discs and contact impulses; no NAO balance or joint dynamics.",
+        "Perfect ground-truth state; no independent camera localisation.",
+        "Ball friction, noise and contact are uncalibrated model assumptions.",
+        "Formation placement at each half is a declared fixture.",
+        "Uses current referee geometry, but not complete physical-foul rules.",
+        "An abstract pass completion is not a validated Webots pass."
+      ],
+      "playing_seconds": 543.5999999999866,
+      "crowded_seconds": 0.0,
+      "longest_stationary_ball_seconds": 53.800000000000225,
+      "ball_unattended_seconds": 84.20000000000066,
+      "keeper_out_seconds": {},
+      "role_changes": {
+        "RED": 38,
+        "BLUE": 16
+      },
+      "states": {
+        "RED": {
+          "FORMATION": 126.00000000000125,
+          "GUARD": 456.9999999999826,
+          "DEFEND": 195.79999999999742,
+          "COUNTERPRESS": 5.8000000000000025,
+          "SUPPORT": 840.000000000054,
+          "DEFENSIVE_INTERCEPT": 15.399999999999977,
+          "CHALLENGE": 165.59999999999914,
+          "CLEAR": 27.599999999999934,
+          "RECOVER_DEFENCE": 59.80000000000031,
+          "INTERCEPT": 89.40000000000073,
+          "RESTART": 10.799999999999994,
+          "DRIBBLE": 76.00000000000054,
+          "EVADE_DRIBBLE": 77.20000000000056,
+          "SHOOT": 19.79999999999996,
+          "DUEL_ESCAPE": 8.200000000000003
+        },
+        "BLUE": {
+          "FORMATION": 113.40000000000107,
+          "RESTART": 23.39999999999995,
+          "GUARD": 500.7999999999801,
+          "COVER_GOAL": 151.99999999999991,
+          "WIDE_SUPPORT": 553.999999999989,
+          "DRIBBLE": 223.79999999999583,
+          "EVADE_DRIBBLE": 29.599999999999927,
+          "SHOOT": 24.199999999999946,
+          "INTERCEPT": 101.6000000000009,
+          "RECOVERY_SUPPORT": 318.99999999999045,
+          "RECOVER_DEFENCE": 61.80000000000034,
+          "COUNTERPRESS": 45.0000000000001,
+          "CLEAR": 17.59999999999997,
+          "GUARD_INTERCEPT": 2.4,
+          "DUEL_ESCAPE": 5.8000000000000025
+        }
+      },
+      "event_counts": {
+        "phase": 17,
+        "restart": 5,
+        "fixture_formation": 2,
+        "place_ball": 5,
+        "foot_control_change": 130,
+        "contact": 688,
+        "kick_start": 1,
+        "kick_contact": 1,
+        "goal": 3
+      }
+    },
+    {
+      "seed": 110006,
+      "candidate_team": "RED",
+      "candidate": "baseline",
+      "score_red_blue": [
+        2,
+        2
+      ],
+      "candidate_goal_difference": 0,
+      "simulated_seconds": 601.5999999999998,
+      "phase": "FINISHED",
+      "team_stats": {
+        "RED": {
+          "decision_transitions": 150,
+          "action_transitions": 1548,
+          "playing_player_seconds": 2128.800000000255,
+          "contact_transitions": 62,
+          "disc_overlap_player_seconds": 15.199999999999978,
+          "shot_attempts": 1,
+          "kick_contacts": 1,
+          "danger_ball_player_seconds": 419.19999999998475
+        },
+        "BLUE": {
+          "decision_transitions": 178,
+          "action_transitions": 1979,
+          "playing_player_seconds": 2128.800000000255,
+          "support_seconds": 714.8000000000255,
+          "support_behind_ball_seconds": 258.3999999999939,
+          "defending_support_seconds": 269.39999999999327,
+          "defending_support_behind_seconds": 11.199999999999992,
+          "disc_overlap_player_seconds": 21.599999999999955,
+          "contact_transitions": 62,
+          "danger_ball_player_seconds": 316.7999999999906
+        }
+      },
+      "model": {
+        "dt": 0.2,
+        "half_seconds": 300,
+        "ready_seconds": 10,
+        "walk_speed": 0.08525241087733532,
+        "back_speed": 0.034151821846239855,
+        "left_speed": 0.012710006709112306,
+        "right_speed": 0.02229703610271777,
+        "left_turn": 0.07362390384491213,
+        "right_turn": 0.07569683357192747,
+        "robot_radius": 0.15,
+        "rolling_deceleration": 0.35,
+        "shot_range": 0.406003256198733,
+        "pass_range": 0.3051396105104535,
+        "shot_seconds": 4.8,
+        "pass_seconds": 3.299,
+        "kick_noise_radians": 0.04
+      },
+      "physics_or_hardware_validated": false,
+      "limitations": [
+        "Kinematic discs and contact impulses; no NAO balance or joint dynamics.",
+        "Perfect ground-truth state; no independent camera localisation.",
+        "Ball friction, noise and contact are uncalibrated model assumptions.",
+        "Formation placement at each half is a declared fixture.",
+        "Uses current referee geometry, but not complete physical-foul rules.",
+        "An abstract pass completion is not a validated Webots pass."
+      ],
+      "playing_seconds": 532.199999999984,
+      "crowded_seconds": 0.0,
+      "longest_stationary_ball_seconds": 65.8000000000004,
+      "ball_unattended_seconds": 103.60000000000093,
+      "keeper_out_seconds": {},
+      "role_changes": {
+        "RED": 16,
+        "BLUE": 42
+      },
+      "states": {
+        "RED": {
+          "FORMATION": 154.79999999999976,
+          "RESTART": 23.599999999999948,
+          "GUARD": 463.39999999998224,
+          "COVER_GOAL": 205.1999999999969,
+          "WIDE_SUPPORT": 388.99999999998647,
+          "DRIBBLE": 97.20000000000084,
+          "EVADE_DRIBBLE": 49.000000000000156,
+          "SHOOT": 35.39999999999996,
+          "INTERCEPT": 117.20000000000113,
+          "RECOVERY_SUPPORT": 400.7999999999858,
+          "RECOVER_DEFENCE": 78.40000000000057,
+          "CLEAR": 27.799999999999933,
+          "DUEL_ESCAPE": 2.1999999999999997,
+          "COUNTERPRESS": 80.4000000000006,
+          "GUARD_INTERCEPT": 4.400000000000001
+        },
+        "BLUE": {
+          "FORMATION": 157.3999999999996,
+          "GUARD": 433.19999999998396,
+          "DEFEND": 270.3999999999932,
+          "SUPPORT": 714.8000000000255,
+          "COUNTERPRESS": 5.8000000000000025,
+          "DEFENSIVE_INTERCEPT": 33.19999999999993,
+          "CHALLENGE": 28.199999999999932,
+          "CLEAR": 7.800000000000004,
+          "RECOVER_DEFENCE": 96.20000000000083,
+          "INTERCEPT": 122.0000000000012,
+          "RESTART": 20.999999999999957,
+          "DRIBBLE": 187.5999999999979,
+          "SHOOT": 23.799999999999947,
+          "EVADE_DRIBBLE": 27.399999999999935
+        }
+      },
+      "event_counts": {
+        "phase": 20,
+        "restart": 6,
+        "fixture_formation": 2,
+        "place_ball": 6,
+        "foot_control_change": 9,
+        "contact": 124,
+        "kick_start": 1,
+        "kick_contact": 1,
+        "goal": 4
+      }
+    },
+    {
+      "seed": 110006,
+      "candidate_team": "BLUE",
+      "candidate": "baseline",
+      "score_red_blue": [
+        2,
+        2
+      ],
+      "candidate_goal_difference": 0,
+      "simulated_seconds": 601.5999999999998,
+      "phase": "FINISHED",
+      "team_stats": {
+        "RED": {
+          "decision_transitions": 200,
+          "action_transitions": 1880,
+          "playing_player_seconds": 2130.4000000002534,
+          "contact_transitions": 31,
+          "support_seconds": 760.800000000036,
+          "support_behind_ball_seconds": 206.9999999999968,
+          "defending_support_seconds": 307.7999999999911,
+          "disc_overlap_player_seconds": 23.599999999999948,
+          "danger_ball_player_seconds": 572.7999999999932,
+          "defending_support_behind_seconds": 17.39999999999997
+        },
+        "BLUE": {
+          "decision_transitions": 156,
+          "action_transitions": 1354,
+          "playing_player_seconds": 2130.4000000002534,
+          "contact_transitions": 32,
+          "danger_ball_player_seconds": 265.5999999999935,
+          "disc_overlap_player_seconds": 22.79999999999995,
+          "shot_attempts": 2,
+          "kick_contacts": 2
+        }
+      },
+      "model": {
+        "dt": 0.2,
+        "half_seconds": 300,
+        "ready_seconds": 10,
+        "walk_speed": 0.08525241087733532,
+        "back_speed": 0.034151821846239855,
+        "left_speed": 0.012710006709112306,
+        "right_speed": 0.02229703610271777,
+        "left_turn": 0.07362390384491213,
+        "right_turn": 0.07569683357192747,
+        "robot_radius": 0.15,
+        "rolling_deceleration": 0.35,
+        "shot_range": 0.406003256198733,
+        "pass_range": 0.3051396105104535,
+        "shot_seconds": 4.8,
+        "pass_seconds": 3.299,
+        "kick_noise_radians": 0.04
+      },
+      "physics_or_hardware_validated": false,
+      "limitations": [
+        "Kinematic discs and contact impulses; no NAO balance or joint dynamics.",
+        "Perfect ground-truth state; no independent camera localisation.",
+        "Ball friction, noise and contact are uncalibrated model assumptions.",
+        "Formation placement at each half is a declared fixture.",
+        "Uses current referee geometry, but not complete physical-foul rules.",
+        "An abstract pass completion is not a validated Webots pass."
+      ],
+      "playing_seconds": 532.5999999999841,
+      "crowded_seconds": 4.600000000000001,
+      "longest_stationary_ball_seconds": 50.400000000000176,
+      "ball_unattended_seconds": 75.60000000000053,
+      "keeper_out_seconds": {},
+      "role_changes": {
+        "RED": 52,
+        "BLUE": 18
+      },
+      "states": {
+        "RED": {
+          "FORMATION": 153.9999999999998,
+          "RESTART": 23.599999999999948,
+          "GUARD": 369.3999999999876,
+          "DEFEND": 262.59999999999366,
+          "SUPPORT": 760.800000000036,
+          "DRIBBLE": 116.60000000000112,
+          "EVADE_DRIBBLE": 41.00000000000004,
+          "SHOOT": 21.399999999999956,
+          "INTERCEPT": 132.20000000000104,
+          "DEFENSIVE_INTERCEPT": 27.399999999999935,
+          "CHALLENGE": 20.999999999999957,
+          "CLEAR": 72.40000000000049,
+          "RECOVER_DEFENCE": 120.60000000000117,
+          "COUNTERPRESS": 7.400000000000004
+        },
+        "BLUE": {
+          "FORMATION": 156.79999999999964,
+          "GUARD": 470.7999999999818,
+          "COVER_GOAL": 150.79999999999998,
+          "RECOVERY_SUPPORT": 372.3999999999874,
+          "COUNTERPRESS": 14.59999999999998,
+          "INTERCEPT": 145.80000000000027,
+          "DRIBBLE": 119.40000000000116,
+          "CLEAR": 25.59999999999994,
+          "WIDE_SUPPORT": 432.799999999984,
+          "RECOVER_DEFENCE": 84.40000000000066,
+          "GUARD_INTERCEPT": 2.1999999999999997,
+          "RESTART": 20.799999999999958,
+          "EVADE_DRIBBLE": 65.8000000000004,
+          "SHOOT": 32.59999999999992,
+          "YIELD_TO_CHASER": 35.599999999999966
+        }
+      },
+      "event_counts": {
+        "phase": 20,
+        "restart": 6,
+        "fixture_formation": 2,
+        "place_ball": 6,
+        "foot_control_change": 11,
+        "contact": 63,
+        "goal": 4,
+        "kick_start": 2,
+        "kick_contact": 2
+      }
+    },
+    {
+      "seed": 110007,
+      "candidate_team": "RED",
+      "candidate": "baseline",
+      "score_red_blue": [
+        2,
+        2
+      ],
+      "candidate_goal_difference": 0,
+      "simulated_seconds": 601.5999999999998,
+      "phase": "FINISHED",
+      "team_stats": {
+        "RED": {
+          "decision_transitions": 142,
+          "action_transitions": 1617,
+          "playing_player_seconds": 2130.4000000002534,
+          "disc_overlap_player_seconds": 22.99999999999995,
+          "danger_ball_player_seconds": 225.59999999999573,
+          "contact_transitions": 71,
+          "shot_attempts": 2,
+          "kick_contacts": 2
+        },
+        "BLUE": {
+          "decision_transitions": 179,
+          "action_transitions": 1760,
+          "playing_player_seconds": 2130.4000000002534,
+          "contact_transitions": 71,
+          "support_seconds": 776.2000000000395,
+          "support_behind_ball_seconds": 151.39999999999995,
+          "disc_overlap_player_seconds": 30.599999999999923,
+          "defending_support_seconds": 285.9999999999923,
+          "danger_ball_player_seconds": 555.1999999999892,
+          "pass_attempts": 4,
+          "kick_contacts": 4,
+          "defending_support_behind_seconds": 10.999999999999993
+        }
+      },
+      "model": {
+        "dt": 0.2,
+        "half_seconds": 300,
+        "ready_seconds": 10,
+        "walk_speed": 0.08525241087733532,
+        "back_speed": 0.034151821846239855,
+        "left_speed": 0.012710006709112306,
+        "right_speed": 0.02229703610271777,
+        "left_turn": 0.07362390384491213,
+        "right_turn": 0.07569683357192747,
+        "robot_radius": 0.15,
+        "rolling_deceleration": 0.35,
+        "shot_range": 0.406003256198733,
+        "pass_range": 0.3051396105104535,
+        "shot_seconds": 4.8,
+        "pass_seconds": 3.299,
+        "kick_noise_radians": 0.04
+      },
+      "physics_or_hardware_validated": false,
+      "limitations": [
+        "Kinematic discs and contact impulses; no NAO balance or joint dynamics.",
+        "Perfect ground-truth state; no independent camera localisation.",
+        "Ball friction, noise and contact are uncalibrated model assumptions.",
+        "Formation placement at each half is a declared fixture.",
+        "Uses current referee geometry, but not complete physical-foul rules.",
+        "An abstract pass completion is not a validated Webots pass."
+      ],
+      "playing_seconds": 532.5999999999841,
+      "crowded_seconds": 0.0,
+      "longest_stationary_ball_seconds": 44.000000000000085,
+      "ball_unattended_seconds": 113.00000000000107,
+      "keeper_out_seconds": {},
+      "role_changes": {
+        "RED": 20,
+        "BLUE": 44
+      },
+      "states": {
+        "RED": {
+          "FORMATION": 156.79999999999964,
+          "GUARD": 479.7999999999813,
+          "COVER_GOAL": 181.79999999999822,
+          "COUNTERPRESS": 46.20000000000012,
+          "RECOVERY_SUPPORT": 361.799999999988,
+          "INTERCEPT": 126.40000000000126,
+          "DRIBBLE": 126.20000000000125,
+          "CLEAR": 15.599999999999977,
+          "WIDE_SUPPORT": 438.59999999998365,
+          "RECOVER_DEFENCE": 57.80000000000028,
+          "GUARD_INTERCEPT": 2.6,
+          "RESTART": 20.799999999999958,
+          "EVADE_DRIBBLE": 78.60000000000058,
+          "DUEL_ESCAPE": 6.200000000000003,
+          "SHOOT": 31.19999999999992
+        },
+        "BLUE": {
+          "FORMATION": 153.9999999999998,
+          "RESTART": 23.599999999999948,
+          "GUARD": 380.9999999999869,
+          "DEFEND": 229.5999999999955,
+          "SUPPORT": 776.2000000000395,
+          "DRIBBLE": 80.80000000000061,
+          "EVADE_DRIBBLE": 74.40000000000052,
+          "SHOOT": 16.799999999999972,
+          "INTERCEPT": 106.20000000000097,
+          "DEFENSIVE_INTERCEPT": 36.999999999999986,
+          "CHALLENGE": 18.399999999999967,
+          "CLEAR": 67.20000000000041,
+          "RECOVER_DEFENCE": 142.00000000000048,
+          "DUEL_ESCAPE": 17.59999999999997,
+          "COUNTERPRESS": 5.600000000000002
+        }
+      },
+      "event_counts": {
+        "phase": 20,
+        "restart": 6,
+        "fixture_formation": 2,
+        "place_ball": 6,
+        "foot_control_change": 14,
+        "contact": 142,
+        "goal": 4,
+        "kick_start": 6,
+        "kick_contact": 6
+      }
+    },
+    {
+      "seed": 110007,
+      "candidate_team": "BLUE",
+      "candidate": "baseline",
+      "score_red_blue": [
+        2,
+        2
+      ],
+      "candidate_goal_difference": 0,
+      "simulated_seconds": 601.5999999999998,
+      "phase": "FINISHED",
+      "team_stats": {
+        "RED": {
+          "decision_transitions": 182,
+          "action_transitions": 1735,
+          "playing_player_seconds": 2130.4000000002534,
+          "support_seconds": 730.4000000000291,
+          "support_behind_ball_seconds": 165.59999999999914,
+          "defending_support_seconds": 327.19999999999,
+          "defending_support_behind_seconds": 10.399999999999995,
+          "disc_overlap_player_seconds": 36.999999999999986,
+          "contact_transitions": 7,
+          "danger_ball_player_seconds": 347.19999999998885
+        },
+        "BLUE": {
+          "decision_transitions": 155,
+          "action_transitions": 1587,
+          "playing_player_seconds": 2130.4000000002534,
+          "contact_transitions": 8,
+          "disc_overlap_player_seconds": 37.8,
+          "shot_attempts": 1,
+          "kick_contacts": 1,
+          "danger_ball_player_seconds": 239.19999999999496
+        }
+      },
+      "model": {
+        "dt": 0.2,
+        "half_seconds": 300,
+        "ready_seconds": 10,
+        "walk_speed": 0.08525241087733532,
+        "back_speed": 0.034151821846239855,
+        "left_speed": 0.012710006709112306,
+        "right_speed": 0.02229703610271777,
+        "left_turn": 0.07362390384491213,
+        "right_turn": 0.07569683357192747,
+        "robot_radius": 0.15,
+        "rolling_deceleration": 0.35,
+        "shot_range": 0.406003256198733,
+        "pass_range": 0.3051396105104535,
+        "shot_seconds": 4.8,
+        "pass_seconds": 3.299,
+        "kick_noise_radians": 0.04
+      },
+      "physics_or_hardware_validated": false,
+      "limitations": [
+        "Kinematic discs and contact impulses; no NAO balance or joint dynamics.",
+        "Perfect ground-truth state; no independent camera localisation.",
+        "Ball friction, noise and contact are uncalibrated model assumptions.",
+        "Formation placement at each half is a declared fixture.",
+        "Uses current referee geometry, but not complete physical-foul rules.",
+        "An abstract pass completion is not a validated Webots pass."
+      ],
+      "playing_seconds": 532.5999999999841,
+      "crowded_seconds": 0.0,
+      "longest_stationary_ball_seconds": 74.80000000000052,
+      "ball_unattended_seconds": 131.2000000000011,
+      "keeper_out_seconds": {},
+      "role_changes": {
+        "RED": 43,
+        "BLUE": 21
+      },
+      "states": {
+        "RED": {
+          "FORMATION": 156.79999999999964,
+          "GUARD": 434.3999999999839,
+          "DEFEND": 258.7999999999939,
+          "COUNTERPRESS": 6.000000000000003,
+          "SUPPORT": 730.4000000000291,
+          "DEFENSIVE_INTERCEPT": 47.600000000000136,
+          "CHALLENGE": 20.19999999999996,
+          "CLEAR": 28.99999999999993,
+          "RECOVER_DEFENCE": 103.40000000000093,
+          "INTERCEPT": 131.2000000000011,
+          "RESTART": 20.799999999999958,
+          "DRIBBLE": 92.80000000000078,
+          "EVADE_DRIBBLE": 74.40000000000052,
+          "SHOOT": 20.39999999999996,
+          "DUEL_ESCAPE": 4.200000000000001
+        },
+        "BLUE": {
+          "FORMATION": 153.9999999999998,
+          "RESTART": 23.599999999999948,
+          "GUARD": 479.7999999999813,
+          "COVER_GOAL": 184.79999999999805,
+          "WIDE_SUPPORT": 428.19999999998424,
+          "DRIBBLE": 79.00000000000058,
+          "EVADE_DRIBBLE": 103.40000000000093,
+          "SHOOT": 33.59999999999994,
+          "INTERCEPT": 144.60000000000034,
+          "RECOVERY_SUPPORT": 369.1999999999876,
+          "RECOVER_DEFENCE": 77.00000000000055,
+          "COUNTERPRESS": 31.79999999999992,
+          "CLEAR": 14.59999999999998,
+          "GUARD_INTERCEPT": 2.6,
+          "DUEL_ESCAPE": 4.200000000000001
+        }
+      },
+      "event_counts": {
+        "phase": 20,
+        "restart": 6,
+        "fixture_formation": 2,
+        "place_ball": 6,
+        "foot_control_change": 5,
+        "contact": 15,
+        "kick_start": 1,
+        "kick_contact": 1,
+        "goal": 4
+      }
+    }
+  ],
+  "source": {
+    "tools/soccer2d.py": "65b14132b6b577cee80b5916d27533d217a66a7fdfdbe145b844b24f386e47bc",
+    "tools/view_soccer2d.py": "5dcbefa44be06ea4eafac287ce955369737380214ec1ef13d125b48e5bd299ac",
+    "tools/run_policy_experiment.py": "8f52694b1790f9d87c48a95c8b68a36a5b1608619a08d637b42310d465d3fc0b",
+    "Wenao/controllers/Utils/SpawnZones.py": "6cabbdc4885aa120cabebc2debac20a7cc5b65a56b83254212df6ae28422b8ec",
+    "Wenao/controllers/Utils/TeamTactics.py": "c1fe7b0371a7bf03472d99244c7fe111b0b0b76ef41c68e11cb35031a234a63e",
+    "Wenao/controllers/Utils/PolicyProfile.py": "fbfc04690cd449acc11817b5cff9d33faf7ada0af1c9454605e38af6d8ae51e2",
+    "Wenao/controllers/Utils/TeamPolicy.py": "fec5b75eab8f093fd14351cf027919c7122224085e13f39423ae5ba89e0f76e9",
+    "Wenao/controllers/Utils/MatchEngine.py": "c01066e565731b0fdda8e04dc6d8f8b3cda6d202ff4f0df99f6092e8145ce886",
+    "Wenao/controllers/Utils/DefensivePlan.py": "35c5a637903a2e9991659c8d3f991455cbc4bfbe2e2c30f158d2d984b82bb1a9",
+    "Wenao/controllers/Utils/ProcessSupervisor.py": "8edaedf1fdb5f00410aa7ecd1e777c5ec95b46e747f35078a52747f4c1bd91a8",
+    "Wenao/controllers/Utils/Navigation.py": "b29d896008948b5ca36a496c4ee1a7455c4a95307d4359c9583142b4c06d896e",
+    "Wenao/controllers/Utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Wenao/controllers/Utils/CourseSpecs.py": "329cc279f44dc6e3fa19e089319787c2cafd6c33d5118f0be3fb2e6eeb624bf0"
+  },
+  "mode": "candidate",
+  "tuning": {
+    "support_width": 1.4,
+    "cover_gap": 1.3
+  },
+  "observer_schema": 1,
+  "limits": "Swapped candidate colours within a seed are paired correlated games. Contacts, passes and possession are simplified 2D proxies."
+}

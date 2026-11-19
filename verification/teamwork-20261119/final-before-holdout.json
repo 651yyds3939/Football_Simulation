@@ -1,0 +1,25 @@
+{
+  "selected_utc": "2026-11-19T17:00:45.935847+00:00",
+  "selection": "Frozen reachability-weighted off-ball support plus strictly gated short passing: ready receiver, clear short lane, bounded sender/receiver turn and pressure. Cancel stale handoff after missed coordinated foot contact.",
+  "development_seeds": "210000-210007",
+  "validation_seeds": "212000-212015",
+  "heldout_seeds": "218000-218049",
+  "source_sha256": {
+    "run.py": "2a0e93951dac3dc3ab781856fab7f8a9a0a40da234ffffb7b8c93e3a94c4aa55",
+    "backend/tools/soccer2d.py": "ec3af9dfcb174b964c6e664a2378b0d20ca3d5521b7dd20401713cf4bf6495de",
+    "backend/tools/view_soccer2d.py": "5dcbefa44be06ea4eafac287ce955369737380214ec1ef13d125b48e5bd299ac",
+    "backend/tools/run_policy_experiment.py": "8f52694b1790f9d87c48a95c8b68a36a5b1608619a08d637b42310d465d3fc0b",
+    "backend/Wenao/controllers/Utils/SpawnZones.py": "6cabbdc4885aa120cabebc2debac20a7cc5b65a56b83254212df6ae28422b8ec",
+    "backend/Wenao/controllers/Utils/TeamTactics.py": "783d414cfcf568f9c0718cea02b6cc147da675b3c5eb5432b09b8b5bf5fd3eb5",
+    "backend/Wenao/controllers/Utils/PreviousTactics.py": "c4be7c1143d8aaf5cfa4a3db4e1c3d30121a2b78130b3f1070924e6a0128f252",
+    "backend/Wenao/controllers/Utils/PolicyProfile.py": "fbfc04690cd449acc11817b5cff9d33faf7ada0af1c9454605e38af6d8ae51e2",
+    "backend/Wenao/controllers/Utils/TeamPolicy.py": "fec5b75eab8f093fd14351cf027919c7122224085e13f39423ae5ba89e0f76e9",
+    "backend/Wenao/controllers/Utils/MatchEngine.py": "c01066e565731b0fdda8e04dc6d8f8b3cda6d202ff4f0df99f6092e8145ce886",
+    "backend/Wenao/controllers/Utils/DefensivePlan.py": "35c5a637903a2e9991659c8d3f991455cbc4bfbe2e2c30f158d2d984b82bb1a9",
+    "backend/Wenao/controllers/Utils/ProcessSupervisor.py": "8edaedf1fdb5f00410aa7ecd1e777c5ec95b46e747f35078a52747f4c1bd91a8",
+    "backend/Wenao/controllers/Utils/Navigation.py": "b29d896008948b5ca36a496c4ee1a7455c4a95307d4359c9583142b4c06d896e",
+    "backend/Wenao/controllers/Utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "backend/Wenao/controllers/Utils/TeamNavigation.py": "ec4b66a0ebff31f4d389b535f53ac406dfcfdd97fb9b0f27bab4bbce965d6b3a",
+    "backend/Wenao/controllers/Utils/CourseSpecs.py": "329cc279f44dc6e3fa19e089319787c2cafd6c33d5118f0be3fb2e6eeb624bf0"
+  }
+}

@@ -1,0 +1,1562 @@
+[
+  {
+    "time": 417.79999999998483,
+    "ball": [
+      4.575589305374179,
+      0.8010801273057336,
+      0.07
+    ],
+    "players": {
+      "RedGoalkeeper": {
+        "position": [
+          -4.062284502484692,
+          -0.25356631096000926,
+          0.334
+        ],
+        "yaw": -0.3654037714579159,
+        "state": "FORMATION",
+        "action": "stand",
+        "stage": "HOLD_POSITION",
+        "target": [
+          -4.15,
+          0
+        ]
+      },
+      "RedDefender": {
+        "position": [
+          -1.4406854544768795,
+          -0.565300198848024,
+          0.334
+        ],
+        "yaw": 0.6031150717317075,
+        "state": "FORMATION",
+        "action": "left40",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          -2.1,
+          0
+        ]
+      },
+      "RedForwardB": {
+        "position": [
+          3.5028965842220616,
+          0.1629028874774388,
+          0.334
+        ],
+        "yaw": -2.2617701569446127,
+        "state": "FORMATION",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          -0.8,
+          1.5
+        ]
+      },
+      "RedForwardA": {
+        "position": [
+          4.300727829701927,
+          -1.1481052791988626,
+          0.334
+        ],
+        "yaw": 1.4337073112959065,
+        "state": "FORMATION",
+        "action": "left40",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          -0.8,
+          -1.5
+        ]
+      },
+      "BlueGoalkeeper": {
+        "position": [
+          4.094521604645342,
+          -0.23901273609065032,
+          0.334
+        ],
+        "yaw": -1.8414518137854219,
+        "state": "FORMATION",
+        "action": "right20",
+        "stage": "WATCH_BALL",
+        "target": [
+          4.15,
+          0
+        ]
+      },
+      "BlueDefender": {
+        "position": [
+          2.272166659127667,
+          -0.21195846765351026,
+          0.334
+        ],
+        "yaw": -2.8752888824975407,
+        "state": "RESTART",
+        "action": "walk",
+        "stage": "APPROACH_BEHIND_BALL",
+        "target": [
+          0.17,
+          0.05
+        ]
+      },
+      "BlueForwardB": {
+        "position": [
+          3.710970826102007,
+          -0.7720814522007621,
+          0.334
+        ],
+        "yaw": -1.3850779940114828,
+        "state": "FORMATION",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          0.8,
+          -1.5
+        ]
+      },
+      "BlueForwardA": {
+        "position": [
+          2.979720387354607,
+          -1.8759225914314885,
+          0.334
+        ],
+        "yaw": -1.9853689744976712,
+        "state": "FORMATION",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          0.8,
+          1.5
+        ]
+      }
+    }
+  },
+  {
+    "time": 422.79999999998455,
+    "ball": [
+      4.575589305374179,
+      0.8010801273057336,
+      0.07
+    ],
+    "players": {
+      "RedGoalkeeper": {
+        "position": [
+          -4.062284502484692,
+          -0.25356631096000926,
+          0.334
+        ],
+        "yaw": -0.3654037714579159,
+        "state": "FORMATION",
+        "action": "stand",
+        "stage": "HOLD_POSITION",
+        "target": [
+          -4.15,
+          0
+        ]
+      },
+      "RedDefender": {
+        "position": [
+          -1.4406854544768795,
+          -0.565300198848024,
+          0.334
+        ],
+        "yaw": 0.9712345909562679,
+        "state": "FORMATION",
+        "action": "left40",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          -2.1,
+          0
+        ]
+      },
+      "RedForwardB": {
+        "position": [
+          3.5028965842220616,
+          0.1629028874774388,
+          0.334
+        ],
+        "yaw": -2.640254324804251,
+        "state": "FORMATION",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          -0.8,
+          1.5
+        ]
+      },
+      "RedForwardA": {
+        "position": [
+          4.300727829701927,
+          -1.1481052791988626,
+          0.334
+        ],
+        "yaw": 1.801826830520481,
+        "state": "FORMATION",
+        "action": "left40",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          -0.8,
+          -1.5
+        ]
+      },
+      "BlueGoalkeeper": {
+        "position": [
+          4.094521604645342,
+          -0.23901273609065032,
+          0.334
+        ],
+        "yaw": -2.2199359816450603,
+        "state": "FORMATION",
+        "action": "right20",
+        "stage": "WATCH_BALL",
+        "target": [
+          4.15,
+          0
+        ]
+      },
+      "BlueDefender": {
+        "position": [
+          1.909501226659284,
+          -0.30767696175925907,
+          0.334
+        ],
+        "yaw": -2.9207069826406973,
+        "state": "RESTART",
+        "action": "right20",
+        "stage": "APPROACH_BEHIND_BALL",
+        "target": [
+          0.17,
+          0.05
+        ]
+      },
+      "BlueForwardB": {
+        "position": [
+          3.710970826102007,
+          -0.7720814522007621,
+          0.334
+        ],
+        "yaw": -1.7635621618711212,
+        "state": "FORMATION",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          0.8,
+          -1.5
+        ]
+      },
+      "BlueForwardA": {
+        "position": [
+          2.979720387354607,
+          -1.8759225914314885,
+          0.334
+        ],
+        "yaw": -2.3638531423573097,
+        "state": "FORMATION",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          0.8,
+          1.5
+        ]
+      }
+    }
+  },
+  {
+    "time": 427.79999999998427,
+    "ball": [
+      4.575589305374179,
+      0.8010801273057336,
+      0.07
+    ],
+    "players": {
+      "RedGoalkeeper": {
+        "position": [
+          -4.062284502484692,
+          -0.25356631096000926,
+          0.334
+        ],
+        "yaw": -0.3654037714579159,
+        "state": "GUARD",
+        "action": "stand",
+        "stage": "HOLD_POSITION",
+        "target": [
+          -4.12,
+          0.0
+        ]
+      },
+      "RedDefender": {
+        "position": [
+          -1.3331464167298668,
+          -0.45585252852422553,
+          0.334
+        ],
+        "yaw": 0.7588688710094669,
+        "state": "INTERCEPT",
+        "action": "right20",
+        "stage": "APPROACH_BEHIND_BALL",
+        "target": [
+          -0.17,
+          -0.05
+        ]
+      },
+      "RedForwardB": {
+        "position": [
+          3.5028965842220616,
+          0.1629028874774388,
+          0.334
+        ],
+        "yaw": -3.0187384926638896,
+        "state": "SUPPORT",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          1,
+          1.1
+        ]
+      },
+      "RedForwardA": {
+        "position": [
+          4.300727829701927,
+          -1.1481052791988626,
+          0.334
+        ],
+        "yaw": 2.1699463497450555,
+        "state": "SUPPORT",
+        "action": "left40",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          1,
+          -1.1
+        ]
+      },
+      "BlueGoalkeeper": {
+        "position": [
+          4.094521604645342,
+          -0.23901273609065032,
+          0.334
+        ],
+        "yaw": -2.598420149504699,
+        "state": "GUARD",
+        "action": "right20",
+        "stage": "WATCH_BALL",
+        "target": [
+          4.12,
+          0.0
+        ]
+      },
+      "BlueDefender": {
+        "position": [
+          1.5744422878530706,
+          -0.3704868188855331,
+          0.334
+        ],
+        "yaw": -2.996403816212625,
+        "state": "INTERCEPT",
+        "action": "walk",
+        "stage": "APPROACH_BEHIND_BALL",
+        "target": [
+          0.17,
+          0.05
+        ]
+      },
+      "BlueForwardB": {
+        "position": [
+          3.710970826102007,
+          -0.7720814522007621,
+          0.334
+        ],
+        "yaw": -2.1420463297307597,
+        "state": "RECOVERY_SUPPORT",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          0.7,
+          1.05
+        ]
+      },
+      "BlueForwardA": {
+        "position": [
+          2.979720387354607,
+          -1.8759225914314885,
+          0.334
+        ],
+        "yaw": -2.742337310216948,
+        "state": "RECOVERY_SUPPORT",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          0.7,
+          -1.05
+        ]
+      }
+    }
+  },
+  {
+    "time": 432.799999999984,
+    "ball": [
+      4.575589305374179,
+      0.8010801273057336,
+      0.07
+    ],
+    "players": {
+      "RedGoalkeeper": {
+        "position": [
+          -4.062284502484692,
+          -0.25356631096000926,
+          0.334
+        ],
+        "yaw": -0.3654037714579159,
+        "state": "GUARD",
+        "action": "stand",
+        "stage": "HOLD_POSITION",
+        "target": [
+          -4.12,
+          0.0
+        ]
+      },
+      "RedDefender": {
+        "position": [
+          -1.1007183235030389,
+          -0.2556985302085575,
+          0.334
+        ],
+        "yaw": 0.6528933040087681,
+        "state": "INTERCEPT",
+        "action": "walk",
+        "stage": "APPROACH_BEHIND_BALL",
+        "target": [
+          -0.17,
+          -0.05
+        ]
+      },
+      "RedForwardB": {
+        "position": [
+          3.1963642267970283,
+          0.14843691595596434,
+          0.334
+        ],
+        "yaw": -3.1247140596645884,
+        "state": "SUPPORT",
+        "action": "walk",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          1,
+          1.1
+        ]
+      },
+      "RedForwardA": {
+        "position": [
+          4.300727829701927,
+          -1.1481052791988626,
+          0.334
+        ],
+        "yaw": 2.53806586896963,
+        "state": "SUPPORT",
+        "action": "left40",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          1,
+          -1.1
+        ]
+      },
+      "BlueGoalkeeper": {
+        "position": [
+          4.094521604645342,
+          -0.23901273609065032,
+          0.334
+        ],
+        "yaw": -2.7649531833629397,
+        "state": "GUARD",
+        "action": "stand",
+        "stage": "HOLD_POSITION",
+        "target": [
+          4.12,
+          0.0
+        ]
+      },
+      "BlueDefender": {
+        "position": [
+          1.2690218758402483,
+          -0.399245287364392,
+          0.334
+        ],
+        "yaw": -3.1023793832133237,
+        "state": "INTERCEPT",
+        "action": "walk",
+        "stage": "APPROACH_BEHIND_BALL",
+        "target": [
+          0.17,
+          0.05
+        ]
+      },
+      "BlueForwardB": {
+        "position": [
+          3.710970826102007,
+          -0.7720814522007621,
+          0.334
+        ],
+        "yaw": -2.520530497590398,
+        "state": "RECOVERY_SUPPORT",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          0.7,
+          1.05
+        ]
+      },
+      "BlueForwardA": {
+        "position": [
+          2.92873801434059,
+          -1.8800780846155707,
+          0.334
+        ],
+        "yaw": -3.07540337793343,
+        "state": "RECOVERY_SUPPORT",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          0.7,
+          -1.05
+        ]
+      }
+    }
+  },
+  {
+    "time": 437.7999999999837,
+    "ball": [
+      4.575589305374179,
+      0.8010801273057336,
+      0.07
+    ],
+    "players": {
+      "RedGoalkeeper": {
+        "position": [
+          -4.062284502484692,
+          -0.25356631096000926,
+          0.334
+        ],
+        "yaw": -0.3654037714579159,
+        "state": "GUARD",
+        "action": "stand",
+        "stage": "HOLD_POSITION",
+        "target": [
+          -4.12,
+          0.0
+        ]
+      },
+      "RedDefender": {
+        "position": [
+          -0.8735713897156531,
+          -0.10501741461005334,
+          0.334
+        ],
+        "yaw": 0.5166390035792983,
+        "state": "INTERCEPT",
+        "action": "walk",
+        "stage": "APPROACH_BEHIND_BALL",
+        "target": [
+          -0.17,
+          -0.05
+        ]
+      },
+      "RedForwardB": {
+        "position": [
+          2.8383981589456404,
+          0.15245961704494165,
+          0.334
+        ],
+        "yaw": 3.0979137806574553,
+        "state": "SUPPORT",
+        "action": "walk",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          1,
+          1.1
+        ]
+      },
+      "RedForwardA": {
+        "position": [
+          4.114904510871144,
+          -1.0624916579338561,
+          0.334
+        ],
+        "yaw": 2.729488018966409,
+        "state": "SUPPORT",
+        "action": "walk",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          1,
+          -1.1
+        ]
+      },
+      "BlueGoalkeeper": {
+        "position": [
+          4.094521604645342,
+          -0.23901273609065032,
+          0.334
+        ],
+        "yaw": -2.7649531833629397,
+        "state": "GUARD",
+        "action": "stand",
+        "stage": "HOLD_POSITION",
+        "target": [
+          4.12,
+          0.0
+        ]
+      },
+      "BlueDefender": {
+        "position": [
+          0.9793543303677448,
+          -0.39564220929351046,
+          0.334
+        ],
+        "yaw": 3.0596909902511777,
+        "state": "INTERCEPT",
+        "action": "right20",
+        "stage": "APPROACH_BEHIND_BALL",
+        "target": [
+          0.17,
+          0.05
+        ]
+      },
+      "BlueForwardB": {
+        "position": [
+          3.710970826102007,
+          -0.7720814522007621,
+          0.334
+        ],
+        "yaw": -2.8990146654500366,
+        "state": "RECOVERY_SUPPORT",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          0.7,
+          1.05
+        ]
+      },
+      "BlueForwardA": {
+        "position": [
+          2.5710385321061957,
+          -1.8944783547944726,
+          0.334
+        ],
+        "yaw": -3.135960844790972,
+        "state": "RECOVERY_SUPPORT",
+        "action": "walk",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          0.7,
+          -1.05
+        ]
+      }
+    }
+  },
+  {
+    "time": 442.7999999999834,
+    "ball": [
+      4.575589305374179,
+      0.8010801273057336,
+      0.07
+    ],
+    "players": {
+      "RedGoalkeeper": {
+        "position": [
+          -4.062284502484692,
+          -0.25356631096000926,
+          0.334
+        ],
+        "yaw": -0.3654037714579159,
+        "state": "GUARD",
+        "action": "stand",
+        "stage": "HOLD_POSITION",
+        "target": [
+          -4.12,
+          0.0
+        ]
+      },
+      "RedDefender": {
+        "position": [
+          -0.6891249659811641,
+          -0.016830196302845976,
+          0.334
+        ],
+        "yaw": 0.31982723629228627,
+        "state": "INTERCEPT",
+        "action": "right20",
+        "stage": "FACE_KICK_DIRECTION",
+        "target": [
+          -0.17,
+          -0.05
+        ]
+      },
+      "RedForwardB": {
+        "position": [
+          2.4986088121801044,
+          0.18022326103063974,
+          0.334
+        ],
+        "yaw": 3.0222169470855276,
+        "state": "SUPPORT",
+        "action": "walk",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          1,
+          1.1
+        ]
+      },
+      "RedForwardA": {
+        "position": [
+          4.114904510871144,
+          -1.0624916579338561,
+          0.334
+        ],
+        "yaw": 3.0976075381909833,
+        "state": "SUPPORT",
+        "action": "left20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          1,
+          -1.1
+        ]
+      },
+      "BlueGoalkeeper": {
+        "position": [
+          4.094521604645342,
+          -0.23901273609065032,
+          0.334
+        ],
+        "yaw": -2.7649531833629397,
+        "state": "GUARD",
+        "action": "stand",
+        "stage": "HOLD_POSITION",
+        "target": [
+          4.12,
+          0.0
+        ]
+      },
+      "BlueDefender": {
+        "position": [
+          0.709376353700769,
+          -0.3579618914131343,
+          0.334
+        ],
+        "yaw": 2.923436689821708,
+        "state": "INTERCEPT",
+        "action": "right20",
+        "stage": "APPROACH_BEHIND_BALL",
+        "target": [
+          0.17,
+          0.05
+        ]
+      },
+      "BlueForwardB": {
+        "position": [
+          3.694044530310411,
+          -0.770027321437804,
+          0.334
+        ],
+        "yaw": 3.0208258405842967,
+        "state": "WIDE_SUPPORT",
+        "action": "walk",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          -0.65,
+          1.05
+        ]
+      },
+      "BlueForwardA": {
+        "position": [
+          2.2302526548495005,
+          -1.8845284724504752,
+          0.334
+        ],
+        "yaw": 3.0715276288166864,
+        "state": "WIDE_SUPPORT",
+        "action": "walk",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          -0.65,
+          -1.05
+        ]
+      }
+    }
+  },
+  {
+    "time": 447.79999999998313,
+    "ball": [
+      4.575589305374179,
+      0.8010801273057336,
+      0.07
+    ],
+    "players": {
+      "RedGoalkeeper": {
+        "position": [
+          -4.062284502484692,
+          -0.25356631096000926,
+          0.334
+        ],
+        "yaw": -0.3654037714579159,
+        "state": "GUARD",
+        "action": "stand",
+        "stage": "HOLD_POSITION",
+        "target": [
+          -4.12,
+          0.0
+        ]
+      },
+      "RedDefender": {
+        "position": [
+          -0.6741595461580504,
+          -0.09114830040113266,
+          0.334
+        ],
+        "yaw": 0.19871230257720196,
+        "state": "INTERCEPT",
+        "action": "step_right",
+        "stage": "ALIGN_FOOT_LATERALLY",
+        "target": [
+          -0.17,
+          -0.05
+        ]
+      },
+      "RedForwardB": {
+        "position": [
+          2.1788809583131323,
+          0.2318250974777035,
+          0.334
+        ],
+        "yaw": 2.9313807467992143,
+        "state": "SUPPORT",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          1,
+          1.1
+        ]
+      },
+      "RedForwardA": {
+        "position": [
+          3.6890547325564333,
+          -1.0437485173415695,
+          0.334
+        ],
+        "yaw": 3.0976075381909833,
+        "state": "SUPPORT",
+        "action": "walk",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          1,
+          -1.1
+        ]
+      },
+      "BlueGoalkeeper": {
+        "position": [
+          4.094521604645342,
+          -0.23901273609065032,
+          0.334
+        ],
+        "yaw": -2.7649531833629397,
+        "state": "GUARD",
+        "action": "stand",
+        "stage": "HOLD_POSITION",
+        "target": [
+          4.12,
+          0.0
+        ]
+      },
+      "BlueDefender": {
+        "position": [
+          0.6192534740844178,
+          -0.2894029186222034,
+          0.334
+        ],
+        "yaw": 2.9365031268090807,
+        "state": "INTERCEPT",
+        "action": "step_right",
+        "stage": "ALIGN_FOOT_LATERALLY",
+        "target": [
+          0.17,
+          0.05
+        ]
+      },
+      "BlueForwardB": {
+        "position": [
+          3.270887135520514,
+          -0.7186740523638507,
+          0.334
+        ],
+        "yaw": 3.0208258405842967,
+        "state": "WIDE_SUPPORT",
+        "action": "walk",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          -0.65,
+          1.05
+        ]
+      },
+      "BlueForwardA": {
+        "position": [
+          1.8050364556724112,
+          -1.8546868410047823,
+          0.334
+        ],
+        "yaw": 3.0715276288166864,
+        "state": "WIDE_SUPPORT",
+        "action": "walk",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          -0.65,
+          -1.05
+        ]
+      }
+    }
+  },
+  {
+    "time": 547.3999999999875,
+    "ball": [
+      4.5,
+      3,
+      0.07
+    ],
+    "players": {
+      "RedGoalkeeper": {
+        "position": [
+          -4.0319423767786375,
+          0.1512773368983244,
+          0.334
+        ],
+        "yaw": 0.4983972219815884,
+        "state": "FORMATION",
+        "action": "stand",
+        "stage": "HOLD_POSITION",
+        "target": [
+          -4.15,
+          0
+        ]
+      },
+      "RedDefender": {
+        "position": [
+          4.3317220229315625,
+          0.7384243507718389,
+          0.334
+        ],
+        "yaw": -0.7560972855854184,
+        "state": "FORMATION",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          -2.1,
+          0
+        ]
+      },
+      "RedForwardB": {
+        "position": [
+          3.358033977929439,
+          1.9240255320660928,
+          0.334
+        ],
+        "yaw": 0.1380744110694958,
+        "state": "RESTART",
+        "action": "left40",
+        "stage": "APPROACH_BEHIND_BALL",
+        "target": [
+          4.364098451924819,
+          3.113713540226172
+        ]
+      },
+      "RedForwardA": {
+        "position": [
+          3.393294806490374,
+          -0.20210593850936,
+          0.334
+        ],
+        "yaw": -0.8166407930285438,
+        "state": "FORMATION",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          -0.8,
+          -1.5
+        ]
+      },
+      "BlueGoalkeeper": {
+        "position": [
+          4.036980675006722,
+          0.14518096548145876,
+          0.334
+        ],
+        "yaw": 0.9041106729871622,
+        "state": "FORMATION",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          4.15,
+          0
+        ]
+      },
+      "BlueDefender": {
+        "position": [
+          2.1796348226867734,
+          -0.12366935720091311,
+          0.334
+        ],
+        "yaw": 2.6173326679707767,
+        "state": "FORMATION",
+        "action": "walk",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          2.1,
+          0
+        ]
+      },
+      "BlueForwardB": {
+        "position": [
+          3.142599934906439,
+          0.9290242953295408,
+          0.334
+        ],
+        "yaw": -0.5234443143635303,
+        "state": "FORMATION",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          0.8,
+          -1.5
+        ]
+      },
+      "BlueForwardA": {
+        "position": [
+          3.058160623385943,
+          -0.12578802199439557,
+          0.334
+        ],
+        "yaw": 0.716019169967943,
+        "state": "FORMATION",
+        "action": "left40",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          0.8,
+          1.5
+        ]
+      }
+    }
+  },
+  {
+    "time": 552.3999999999886,
+    "ball": [
+      4.5,
+      3,
+      0.07
+    ],
+    "players": {
+      "RedGoalkeeper": {
+        "position": [
+          -4.0319423767786375,
+          0.1512773368983244,
+          0.334
+        ],
+        "yaw": 0.4983972219815884,
+        "state": "FORMATION",
+        "action": "stand",
+        "stage": "HOLD_POSITION",
+        "target": [
+          -4.15,
+          0
+        ]
+      },
+      "RedDefender": {
+        "position": [
+          4.3317220229315625,
+          0.7384243507718389,
+          0.334
+        ],
+        "yaw": -1.134581453445057,
+        "state": "FORMATION",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          -2.1,
+          0
+        ]
+      },
+      "RedForwardB": {
+        "position": [
+          3.358033977929439,
+          1.9240255320660928,
+          0.334
+        ],
+        "yaw": 0.5061939302940592,
+        "state": "RESTART",
+        "action": "left40",
+        "stage": "APPROACH_BEHIND_BALL",
+        "target": [
+          4.364098451924819,
+          3.113713540226172
+        ]
+      },
+      "RedForwardA": {
+        "position": [
+          3.393294806490374,
+          -0.20210593850936,
+          0.334
+        ],
+        "yaw": -1.1951249608881822,
+        "state": "FORMATION",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          -0.8,
+          -1.5
+        ]
+      },
+      "BlueGoalkeeper": {
+        "position": [
+          4.036980675006722,
+          0.14518096548145876,
+          0.334
+        ],
+        "yaw": 0.5256265051275237,
+        "state": "FORMATION",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          4.15,
+          0
+        ]
+      },
+      "BlueDefender": {
+        "position": [
+          2.1796348226867734,
+          -0.12366935720091311,
+          0.334
+        ],
+        "yaw": 2.2388485001111382,
+        "state": "FORMATION",
+        "action": "right20",
+        "stage": "WATCH_BALL",
+        "target": [
+          2.1,
+          0
+        ]
+      },
+      "BlueForwardB": {
+        "position": [
+          3.142599934906439,
+          0.9290242953295408,
+          0.334
+        ],
+        "yaw": -0.9019284822231688,
+        "state": "FORMATION",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          0.8,
+          -1.5
+        ]
+      },
+      "BlueForwardA": {
+        "position": [
+          3.058160623385943,
+          -0.12578802199439557,
+          0.334
+        ],
+        "yaw": 1.0841386891925051,
+        "state": "FORMATION",
+        "action": "left40",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          0.8,
+          1.5
+        ]
+      }
+    }
+  },
+  {
+    "time": 557.3999999999897,
+    "ball": [
+      4.5,
+      3,
+      0.07
+    ],
+    "players": {
+      "RedGoalkeeper": {
+        "position": [
+          -4.0319423767786375,
+          0.1512773368983244,
+          0.334
+        ],
+        "yaw": 0.8665167412061514,
+        "state": "GUARD",
+        "action": "left40",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          -4.12,
+          1.0499999999999998
+        ]
+      },
+      "RedDefender": {
+        "position": [
+          4.3317220229315625,
+          0.7384243507718389,
+          0.334
+        ],
+        "yaw": -1.5130656213046954,
+        "state": "DEFEND",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          -1.5,
+          1.9
+        ]
+      },
+      "RedForwardB": {
+        "position": [
+          3.4731721657909924,
+          2.0254498585020966,
+          0.334
+        ],
+        "yaw": 0.7417904225977798,
+        "state": "INTERCEPT",
+        "action": "walk",
+        "stage": "APPROACH_BEHIND_BALL",
+        "target": [
+          4.473129942314912,
+          3.1880904037956217
+        ]
+      },
+      "RedForwardA": {
+        "position": [
+          3.393294806490374,
+          -0.20210593850936,
+          0.334
+        ],
+        "yaw": -0.8270054416636188,
+        "state": "SUPPORT",
+        "action": "left40",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          3.5,
+          1.9
+        ]
+      },
+      "BlueGoalkeeper": {
+        "position": [
+          4.036980675006722,
+          0.14518096548145876,
+          0.334
+        ],
+        "yaw": 0.8937460243520858,
+        "state": "GUARD",
+        "action": "left40",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          4.12,
+          1.0499999999999998
+        ]
+      },
+      "BlueDefender": {
+        "position": [
+          2.1796348226867734,
+          -0.12366935720091311,
+          0.334
+        ],
+        "yaw": 1.8603643322514998,
+        "state": "COVER_GOAL",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          3.65,
+          1.65
+        ]
+      },
+      "BlueForwardB": {
+        "position": [
+          3.142599934906439,
+          0.9290242953295408,
+          0.334
+        ],
+        "yaw": -0.5338089629986054,
+        "state": "INTERCEPT",
+        "action": "left40",
+        "stage": "APPROACH_BEHIND_BALL",
+        "target": [
+          4.685333790392864,
+          3.041849565572582
+        ]
+      },
+      "BlueForwardA": {
+        "position": [
+          3.24089592499309,
+          0.22119086518252673,
+          0.334
+        ],
+        "yaw": 1.113588250730471,
+        "state": "RECOVERY_SUPPORT",
+        "action": "left20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          3.3,
+          1.95
+        ]
+      }
+    }
+  },
+  {
+    "time": 562.3999999999909,
+    "ball": [
+      4.5,
+      3,
+      0.07
+    ],
+    "players": {
+      "RedGoalkeeper": {
+        "position": [
+          -4.0319423767786375,
+          0.1512773368983244,
+          0.334
+        ],
+        "yaw": 1.234636260430717,
+        "state": "GUARD",
+        "action": "left20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          -4.12,
+          1.0499999999999998
+        ]
+      },
+      "RedDefender": {
+        "position": [
+          4.3317220229315625,
+          0.7384243507718389,
+          0.334
+        ],
+        "yaw": -1.8915497891643338,
+        "state": "DEFEND",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          -1.5,
+          1.9
+        ]
+      },
+      "RedForwardB": {
+        "position": [
+          3.6885441667746086,
+          2.243906728734797,
+          0.334
+        ],
+        "yaw": 0.8448638879806576,
+        "state": "INTERCEPT",
+        "action": "walk",
+        "stage": "APPROACH_BEHIND_BALL",
+        "target": [
+          4.473129942314912,
+          3.1880904037956217
+        ]
+      },
+      "RedForwardA": {
+        "position": [
+          3.393294806490374,
+          -0.20210593850936,
+          0.334
+        ],
+        "yaw": -0.45888592243905535,
+        "state": "SUPPORT",
+        "action": "left40",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          3.5,
+          1.9
+        ]
+      },
+      "BlueGoalkeeper": {
+        "position": [
+          4.108813270160879,
+          0.2807449682250667,
+          0.334
+        ],
+        "yaw": 1.1293425166558073,
+        "state": "GUARD",
+        "action": "left20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          4.12,
+          1.0499999999999998
+        ]
+      },
+      "BlueDefender": {
+        "position": [
+          2.1796348226867734,
+          -0.12366935720091311,
+          0.334
+        ],
+        "yaw": 1.4818801643918613,
+        "state": "COVER_GOAL",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          3.65,
+          1.65
+        ]
+      },
+      "BlueForwardB": {
+        "position": [
+          3.142599934906439,
+          0.9290242953295408,
+          0.334
+        ],
+        "yaw": -0.16568944377404193,
+        "state": "INTERCEPT",
+        "action": "left40",
+        "stage": "APPROACH_BEHIND_BALL",
+        "target": [
+          4.685333790392864,
+          3.041849565572582
+        ]
+      },
+      "BlueForwardA": {
+        "position": [
+          3.3877928393116634,
+          0.5476321959898841,
+          0.334
+        ],
+        "yaw": 1.172487373806403,
+        "state": "RECOVERY_SUPPORT",
+        "action": "walk",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          3.3,
+          1.95
+        ]
+      }
+    }
+  },
+  {
+    "time": 567.399999999992,
+    "ball": [
+      4.5,
+      3,
+      0.07
+    ],
+    "players": {
+      "RedGoalkeeper": {
+        "position": [
+          -3.9636829652159653,
+          0.39754312689968835,
+          0.334
+        ],
+        "yaw": 1.3818840681205469,
+        "state": "GUARD",
+        "action": "left20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          -4.12,
+          1.0499999999999998
+        ]
+      },
+      "RedDefender": {
+        "position": [
+          4.3317220229315625,
+          0.7384243507718389,
+          0.334
+        ],
+        "yaw": -2.2700339570239723,
+        "state": "DEFEND",
+        "action": "right20",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          -1.5,
+          1.9
+        ]
+      },
+      "RedForwardB": {
+        "position": [
+          3.9061097292387092,
+          2.5064084907182163,
+          0.334
+        ],
+        "yaw": 0.9184877918255685,
+        "state": "INTERCEPT",
+        "action": "walk",
+        "stage": "APPROACH_BEHIND_BALL",
+        "target": [
+          4.473129942314912,
+          3.1880904037956217
+        ]
+      },
+      "RedForwardA": {
+        "position": [
+          3.393294806490374,
+          -0.20210593850936,
+          0.334
+        ],
+        "yaw": -0.09076640321449192,
+        "state": "SUPPORT",
+        "action": "left40",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          3.5,
+          1.9
+        ]
+      },
+      "BlueGoalkeeper": {
+        "position": [
+          4.116098162867549,
+          0.2961608457760929,
+          0.334
+        ],
+        "yaw": 1.4827372551113989,
+        "state": "GUARD",
+        "action": "left40",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          4.12,
+          1.0499999999999998
+        ]
+      },
+      "BlueDefender": {
+        "position": [
+          2.2315044614680923,
+          0.0565616087837465,
+          0.334
+        ],
+        "yaw": 1.2699290303904638,
+        "state": "COVER_GOAL",
+        "action": "walk",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          3.65,
+          1.65
+        ]
+      },
+      "BlueForwardB": {
+        "position": [
+          3.142599934906439,
+          0.9290242953295408,
+          0.334
+        ],
+        "yaw": 0.2024300754505215,
+        "state": "RECOVERY_SUPPORT",
+        "action": "left40",
+        "stage": "MOVE_TO_ROLE_POSITION",
+        "target": [
+          3.3,
+          2.25
+        ]
+      },
+      "BlueForwardA": {
+        "position": [
+          3.55312293725981,
+          0.9405256901106254,
+          0.334
+        ],
+        "yaw": 1.172487373806403,
+        "state": "INTERCEPT",
+        "action": "walk",
+        "stage": "APPROACH_BEHIND_BALL",
+        "target": [
+          4.680824637374505,
+          3.058330528185324
+        ]
+      }
+    }
+  }
+]

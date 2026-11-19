@@ -1,0 +1,7 @@
+{
+  "counterpress_visible_in_english": true,
+  "counterpress_visible_in_chinese": true,
+  "terminal_stops_without_formation": true,
+  "terminal_repeated_steps_are_idempotent": true,
+  "runtime_errors": []
+}

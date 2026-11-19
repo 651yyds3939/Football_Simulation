@@ -72,6 +72,9 @@ function readZones(){return {attacker:zoneKeys.map(key=>Number($('attacker'+key)
 Object.assign(translations.en,{spawnTitle:'Spawn rectangles · metres',presetLabel:'Preset',balancedZones:'Midfield',nearZones:'Near goal',wideZones:'Wide channel',customZones:'Custom',zoneDrawLabel:'Drag on pitch',moveObjects:'Move players / ball',drawAttacker:'Draw red spawn rectangle',drawDefender:'Draw blue spawn rectangle',goalMargin:'Goal-side margin (m)',showZones:'Show rectangles',zonesHint:'Pause to draw or edit bounds. Random starts keep blue closer to the right goal than both red and the ball.',PRESSURE_CLEAR:'Clear under pressure',CLEAR_WHILE_FOOT_READY:'Kick before losing the aligned foot contact',standalone:'Local Python + browser · no Webots required',RECOVERY_SIDE_COVER:'Cover the lane with a short side-step',RECOVERY_HOLD_LANE:'Hold the goal corridor',title:'One attacker. One defender. One ball.',intro:'Repeatable spawn regions and predictive defence, calculated by the local Python policy.',local:'LOCAL PYTHON POLICY',profileLabel:'Execution profile',TIMEOUT:'Round time limit reached.'});
 Object.assign(translations.zh,{spawnTitle:'出生矩形区域 · 单位：米',presetLabel:'区域预设',balancedZones:'中场攻防',nearZones:'门前攻防',wideZones:'边路攻防',customZones:'自定义',zoneDrawLabel:'在球场上拖动',moveObjects:'移动球员或足球',drawAttacker:'框选红方出生区域',drawDefender:'框选蓝方出生区域',goalMargin:'靠近球门的最小优势（米）',showZones:'显示出生区域',zonesHint:'暂停后可框选区域或输入边界。随机出生时，蓝方始终比红方和足球更靠近右侧球门。',PRESSURE_CLEAR:'贴身主动解围',CLEAR_WHILE_FOOT_READY:'脚位已对准，及时尝试解围',standalone:'本地 Python 与浏览器 · 不需要 Webots',RECOVERY_SIDE_COVER:'用短侧移覆盖球路',RECOVERY_HOLD_LANE:'守住球门通道',title:'一名进攻，一名防守，一个足球。',intro:'可复现的出生区域与预判防守，由本地 Python 策略实时计算。',local:'本地 PYTHON 策略',profileLabel:'执行配置',TIMEOUT:'本轮已达到设定的时间上限。'});
 
+Object.assign(translations.en,{"COUNTERPRESS": "Win back the ball", "PRESS_FACE_BALL": "Turn towards the ball before pursuing", "PRESS_CLOSE_BALL": "Close on the ball path", "PRESS_CONTEST_FOOT": "Contest the reachable ball", "CREATE_SPACE_BEFORE_SIDE_ALIGN": "Make foot space before lateral alignment", "ATTEMPT_FINISHED": "Attempt finished; no further motion", "pressNotice": "Red lost the ball: pursue and contest it before returning to goal-facing attack."});
+Object.assign(translations.zh,{"COUNTERPRESS": "丢球反抢", "PRESS_FACE_BALL": "先转向足球，再回追", "PRESS_CLOSE_BALL": "沿球路接近足球", "PRESS_CONTEST_FOOT": "争抢脚下可触及的球", "CREATE_SPACE_BEFORE_SIDE_ALIGN": "先留出脚前空间，再横向对齐", "ATTEMPT_FINISHED": "本轮结束，停止动作", "pressNotice": "红方丢球：先回追争球，夺回后再转向球门组织进攻。"});
+
 function translate(){document.documentElement.lang=lang==='zh'?'zh-CN':'en';document.querySelectorAll('[data-i]').forEach(el=>el.textContent=tr(el.dataset.i));$('language').textContent=lang==='en'?'中文':'English';update();}
 async function api(path,data){const response=await fetch(path,data===undefined?{cache:'no-store'}:{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});const value=await response.json();if(!response.ok)throw new Error(value.error||response.status);return value;}
 function failure(error){running=false;pendingNextAt=null;inflight=false;busy=false;$('notice').textContent=tr('error')+': '+error.message;update();}
@@ -85,6 +88,8 @@ async function reset(keepSession=false){
  inflight=true;try{const value=await api('/api/new',{seed:Number($('seed').value),scenario:$('scenario').value,seconds:Number($('seconds').value),locomotion:$('profile').value,finishing_aim:'centre',spawn_zones:readZones()});adopt(value,true);}finally{inflight=false;update();}
 }
 async function newSetup(resume=false){if(offline||inflight||busy)return;session.round++;$('scenario').value='random';$('seed').value=crypto.getRandomValues(new Uint32Array(1))[0];await reset(true);running=resume;update();}
+Object.assign(translations.en,{"EVADE_DRIBBLE": "Carry around defender", "EVADE_FACE_LANE": "Turn towards the chosen side lane", "EVADE_ALIGN_FOOT": "Keep the ball in the carrying foot window", "EVADE_CARRY_LANE": "Carry along the committed side lane", "evadeNotice": "Red is carrying towards a side lane around the defender."});
+Object.assign(translations.zh,{"EVADE_DRIBBLE": "绕行带球", "EVADE_FACE_LANE": "转向已选定的侧路", "EVADE_ALIGN_FOOT": "对齐脚位，保持足球可控", "EVADE_CARRY_LANE": "沿选定侧路带球推进", "evadeNotice": "红方正在沿选定侧路带球，尝试绕过防守。"});
 function update(){
  if(!sim)return;const total=Math.round(sim.t*10)/10;
  $('clock').textContent=String(Math.floor(total/60)).padStart(2,'0')+':'+(total%60).toFixed(1).padStart(4,'0');
@@ -94,13 +99,16 @@ function update(){
  $('ballPosition').textContent=sim.ball.x.toFixed(2)+', '+sim.ball.y.toFixed(2);$('ballSpeed').textContent=Math.hypot(sim.ball.vx,sim.ball.vy).toFixed(3)+' m/s';$('touch').textContent=sim.lastTouch?tr(sim.lastTouch+'Short'):'—';$('contacts').textContent=sim.stats.shotContacts+' / '+sim.stats.clearContacts;$('sessionTotals').textContent=session.goals+' / '+session.clearances;
  $('status').textContent=tr(sim.outcome||(!sim.t?'READY':sim.stats.clearancesCompleted?'clearLive':'live'));
  const escaping=!sim.outcome&&[sim.attacker,sim.defender].some(player=>player.state==='DUEL_ESCAPE');
+ const counterpressing=!sim.outcome&&sim.attacker.state==='COUNTERPRESS';
  const recovering=!sim.outcome&&sim.defender.state==='RECOVER_DEFENCE';
  const challenging=!sim.outcome&&sim.defender.state==='CHALLENGE';
  if(escaping)$('status').textContent=tr('duelNotice');
+ else if(counterpressing)$('status').textContent=tr('pressNotice');
+ else if(!sim.outcome&&sim.attacker.state==='EVADE_DRIBBLE')$('status').textContent=tr('evadeNotice');
  else if(recovering)$('status').textContent=tr('recoveryNotice');
  else if(challenging)$('status').textContent=tr('challengeNotice');
  else if(!sim.outcome&&sim.defender.state==='DEFENSIVE_INTERCEPT')$('status').textContent=tr('interceptNotice');
- $('result').style.background=escaping||recovering?'#fff3d6':'';
+ $('result').style.background=escaping||recovering||counterpressing?'#fff3d6':'';
  if(pendingNextAt!==null)$('status').textContent+=' '+tr('nextRound')+' '+Math.max(1,Math.ceil((pendingNextAt-performance.now())/1000))+' s';
  const hash=meta.source.sha256['Wenao/controllers/Utils/TeamPolicy.py'].slice(0,12);
  $('sharedSource').textContent=(offline?tr('offline')+' · ':'')+tr('source')+': '+tr(meta.source.kind==='workspace'?'workspace':'snapshot')+' · TeamPolicy.py '+hash+' · Navigation.py · '+meta.profile.locomotion+' / '+meta.profile.finishing_aim;
@@ -122,6 +130,7 @@ function draw(){
  if(typeof meta!=='undefined'&&meta.spawn_zones&&$('showZones')?.checked){for(const role of ['attacker','defender']){const b=meta.spawn_zones[role],color=role==='attacker'?'#ef9f96':'#9fc4ff';ctx.save();ctx.setLineDash([7,6]);ctx.lineWidth=1.5;const q=point(b[0],b[3]);ctx.strokeStyle=color;ctx.strokeRect(q.x,q.y,(b[1]-b[0])*100,(b[3]-b[2])*100);ctx.fillStyle=role==='attacker'?'rgba(239,159,150,.07)':'rgba(159,196,255,.08)';ctx.fillRect(q.x,q.y,(b[1]-b[0])*100,(b[3]-b[2])*100);ctx.restore();ctx.fillStyle=color;ctx.font='11px system-ui';ctx.textAlign='left';ctx.fillText(role==='attacker'?(lang==='zh'?'红方出生区':'RED START'):(lang==='zh'?'蓝方出生区':'BLUE START'),q.x+5,q.y+14);}}
  if(typeof zoneDrag!=='undefined'&&zoneDrag&&zoneDrag.end){const a=zoneDrag.start,b=zoneDrag.end;ctx.save();ctx.setLineDash([5,4]);ctx.lineWidth=2;rect(Math.min(a.x,b.x),Math.min(a.y,b.y),Math.abs(a.x-b.x),Math.abs(a.y-b.y),'rgba(255,225,125,.12)','#ffe17d');ctx.restore();}
  if($('trail').checked&&sim.trail.length>1){ctx.beginPath();ctx.lineWidth=2;ctx.strokeStyle='rgba(255,231,161,.6)';sim.trail.forEach((v,i)=>{const p=point(v.x,v.y);if(i)ctx.lineTo(p.x,p.y);else ctx.moveTo(p.x,p.y);});ctx.stroke();}
+ if($('targets').checked&&sim.attacker.ballTarget){const target=sim.attacker.ballTarget;line(sim.ball.x,sim.ball.y,target.x,target.y,'#ffd58a',2,[6,5]);circle(target.x,target.y,.07,'#ffd58a');}
  if($('targets').checked)for(const player of [sim.attacker,sim.defender]){line(player.x,player.y,player.target.x,player.target.y,player.role==='attacker'?'#edb0a5':'#a9c8ee',1.3,[4,6]);const t=player.target;line(t.x-.06,t.y,t.x+.06,t.y,'#d7e5d3',1.5);line(t.x,t.y-.06,t.x,t.y+.06,'#d7e5d3',1.5);}
  for(const player of [sim.attacker,sim.defender]){
   const color=player.role==='attacker'?'#de5c55':'#498de5';circle(player.x+.018,player.y-.04,p.robot_radius,'rgba(0,0,0,.19)');circle(player.x,player.y,p.robot_radius,color,'#f6f6e8',2.3);

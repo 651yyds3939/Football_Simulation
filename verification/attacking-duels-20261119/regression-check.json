@@ -1,0 +1,30 @@
+{
+  "tests": [
+    {
+      "test": "verification/attacking-duels-20261119/test_open_play.py",
+      "returncode": 0
+    },
+    {
+      "test": "verification/attacking-duels-20261119/test_attacking_duels.py",
+      "returncode": 0
+    },
+    {
+      "test": "verification/attacking-duels-20261119/test_terminal.py",
+      "returncode": 0
+    },
+    {
+      "test": "verification/counterpress-20261119/test_counterpress.py",
+      "returncode": 0
+    },
+    {
+      "test": "verification/strategy-tuning-20261119-round2/test_recovery_and_duels.py",
+      "returncode": 0
+    },
+    {
+      "test": "verification/defence-tuning-20261119/test_spawn_and_routes.py",
+      "returncode": 0
+    }
+  ],
+  "unit_checks": 50,
+  "passed": true
+}

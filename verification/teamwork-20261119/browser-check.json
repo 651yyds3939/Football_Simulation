@@ -1,0 +1,30 @@
+{
+  "results": [
+    {
+      "file": "verification/teamwork-20261119/release-demo-en/replay.html",
+      "frames": 3009,
+      "score": [
+        1,
+        1
+      ],
+      "players": 8,
+      "offline": true,
+      "play_pause_seek_reset_inspect": true,
+      "mobile_no_overflow": true
+    },
+    {
+      "file": "verification/teamwork-20261119/release-demo-zh/replay.html",
+      "frames": 3009,
+      "score": [
+        1,
+        1
+      ],
+      "players": 8,
+      "offline": true,
+      "play_pause_seek_reset_inspect": true,
+      "mobile_no_overflow": true
+    }
+  ],
+  "errors": [],
+  "no_external_requests": true
+}

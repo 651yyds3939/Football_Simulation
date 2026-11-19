@@ -1,0 +1,352 @@
+{
+  "safe-distance": {
+    "tuning": {
+      "evade_enabled": true,
+      "evade_distance": 1.8,
+      "evade_width": 0.65,
+      "striker_duel_seconds": 8.0,
+      "evade_clear_only": true,
+      "duel_geometry_gate": true,
+      "evade_min_distance": 0.65
+    },
+    "validation": {
+      "frontal_contact_runs": 127,
+      "frontal_contact_results": {
+        "LOST": 70,
+        "BROKE_THROUGH": 57
+      },
+      "runs": 240,
+      "outcomes": {
+        "GOAL": 168,
+        "CLEARED_GOAL": 69,
+        "TIMEOUT": 2,
+        "OUT": 1
+      },
+      "first_attacking_contests": 205,
+      "first_contest_results": {
+        "LOST": 73,
+        "BROKE_THROUGH": 129,
+        "UNRESOLVED": 2,
+        "GOAL_WITHOUT_MEASURED_BREAK": 1
+      },
+      "body_contact_runs": 148,
+      "body_contact_before_first_loss_runs": 147,
+      "contact_before_loss_results": {
+        "LOST": 72,
+        "BROKE_THROUGH": 73,
+        "UNRESOLVED": 2
+      },
+      "goals_after_body_contact": 77,
+      "exclusive_blue_control_runs": 73,
+      "breakthrough_runs": 166,
+      "attacker_regain_runs": 63,
+      "productive_regain_runs": 37,
+      "stalls_over_20s": 10,
+      "mean_seconds": 74.91283333333476,
+      "wall_seconds": 45.034911278002255
+    },
+    "headon": {
+      "frontal_contact_runs": 120,
+      "frontal_contact_results": {
+        "LOST": 85,
+        "UNRESOLVED": 2,
+        "BROKE_THROUGH": 32,
+        "GOAL_WITHOUT_MEASURED_BREAK": 1
+      },
+      "runs": 120,
+      "outcomes": {
+        "CLEARED_GOAL": 83,
+        "TIMEOUT": 4,
+        "GOAL": 33
+      },
+      "first_attacking_contests": 120,
+      "first_contest_results": {
+        "LOST": 85,
+        "UNRESOLVED": 2,
+        "BROKE_THROUGH": 32,
+        "GOAL_WITHOUT_MEASURED_BREAK": 1
+      },
+      "body_contact_runs": 120,
+      "body_contact_before_first_loss_runs": 120,
+      "contact_before_loss_results": {
+        "LOST": 85,
+        "UNRESOLVED": 2,
+        "BROKE_THROUGH": 32,
+        "GOAL_WITHOUT_MEASURED_BREAK": 1
+      },
+      "goals_after_body_contact": 33,
+      "exclusive_blue_control_runs": 85,
+      "breakthrough_runs": 32,
+      "attacker_regain_runs": 92,
+      "productive_regain_runs": 24,
+      "stalls_over_20s": 4,
+      "mean_seconds": 90.06466666666903,
+      "wall_seconds": 26.600614777002193
+    }
+  },
+  "safe-timing": {
+    "tuning": {
+      "evade_enabled": true,
+      "evade_distance": 1.8,
+      "evade_width": 0.65,
+      "striker_duel_seconds": 8.0,
+      "evade_clear_only": true,
+      "duel_geometry_gate": true,
+      "evade_timing_guard": true,
+      "evade_foot_required": true
+    },
+    "validation": {
+      "frontal_contact_runs": 138,
+      "frontal_contact_results": {
+        "LOST": 79,
+        "BROKE_THROUGH": 58,
+        "UNRESOLVED": 1
+      },
+      "runs": 240,
+      "outcomes": {
+        "GOAL": 160,
+        "CLEARED_GOAL": 77,
+        "TIMEOUT": 3
+      },
+      "first_attacking_contests": 206,
+      "first_contest_results": {
+        "LOST": 82,
+        "BROKE_THROUGH": 120,
+        "UNRESOLVED": 3,
+        "GOAL_WITHOUT_MEASURED_BREAK": 1
+      },
+      "body_contact_runs": 155,
+      "body_contact_before_first_loss_runs": 154,
+      "contact_before_loss_results": {
+        "LOST": 81,
+        "BROKE_THROUGH": 70,
+        "UNRESOLVED": 3
+      },
+      "goals_after_body_contact": 75,
+      "exclusive_blue_control_runs": 82,
+      "breakthrough_runs": 157,
+      "attacker_regain_runs": 68,
+      "productive_regain_runs": 35,
+      "stalls_over_20s": 12,
+      "mean_seconds": 76.37750000000148,
+      "wall_seconds": 45.42494827399787
+    },
+    "headon": {
+      "frontal_contact_runs": 120,
+      "frontal_contact_results": {
+        "LOST": 85,
+        "UNRESOLVED": 2,
+        "BROKE_THROUGH": 32,
+        "GOAL_WITHOUT_MEASURED_BREAK": 1
+      },
+      "runs": 120,
+      "outcomes": {
+        "CLEARED_GOAL": 83,
+        "TIMEOUT": 4,
+        "GOAL": 33
+      },
+      "first_attacking_contests": 120,
+      "first_contest_results": {
+        "LOST": 85,
+        "UNRESOLVED": 2,
+        "BROKE_THROUGH": 32,
+        "GOAL_WITHOUT_MEASURED_BREAK": 1
+      },
+      "body_contact_runs": 120,
+      "body_contact_before_first_loss_runs": 120,
+      "contact_before_loss_results": {
+        "LOST": 85,
+        "UNRESOLVED": 2,
+        "BROKE_THROUGH": 32,
+        "GOAL_WITHOUT_MEASURED_BREAK": 1
+      },
+      "goals_after_body_contact": 33,
+      "exclusive_blue_control_runs": 85,
+      "breakthrough_runs": 32,
+      "attacker_regain_runs": 92,
+      "productive_regain_runs": 24,
+      "stalls_over_20s": 4,
+      "mean_seconds": 90.06466666666903,
+      "wall_seconds": 26.55427187999885
+    }
+  },
+  "safe-ballside": {
+    "tuning": {
+      "evade_enabled": true,
+      "evade_distance": 1.8,
+      "evade_width": 0.65,
+      "striker_duel_seconds": 8.0,
+      "evade_clear_only": true,
+      "duel_geometry_gate": true,
+      "evade_min_distance": 0.65,
+      "duel_mode": "ball_side",
+      "duel_step": 0.08
+    },
+    "validation": {
+      "frontal_contact_runs": 127,
+      "frontal_contact_results": {
+        "LOST": 57,
+        "BROKE_THROUGH": 61,
+        "UNRESOLVED": 9
+      },
+      "runs": 240,
+      "outcomes": {
+        "GOAL": 184,
+        "CLEARED_GOAL": 37,
+        "TIMEOUT": 18,
+        "OUT": 1
+      },
+      "first_attacking_contests": 205,
+      "first_contest_results": {
+        "LOST": 60,
+        "BROKE_THROUGH": 133,
+        "UNRESOLVED": 11,
+        "GOAL_WITHOUT_MEASURED_BREAK": 1
+      },
+      "body_contact_runs": 148,
+      "body_contact_before_first_loss_runs": 147,
+      "contact_before_loss_results": {
+        "LOST": 59,
+        "BROKE_THROUGH": 77,
+        "UNRESOLVED": 11
+      },
+      "goals_after_body_contact": 93,
+      "exclusive_blue_control_runs": 60,
+      "breakthrough_runs": 182,
+      "attacker_regain_runs": 76,
+      "productive_regain_runs": 58,
+      "stalls_over_20s": 30,
+      "mean_seconds": 79.90833333333424,
+      "wall_seconds": 51.090833952999674
+    },
+    "headon": {
+      "frontal_contact_runs": 120,
+      "frontal_contact_results": {
+        "BROKE_THROUGH": 91,
+        "UNRESOLVED": 13,
+        "LOST": 15,
+        "GOAL_WITHOUT_MEASURED_BREAK": 1
+      },
+      "runs": 120,
+      "outcomes": {
+        "GOAL": 100,
+        "TIMEOUT": 18,
+        "CLEARED_GOAL": 2
+      },
+      "first_attacking_contests": 120,
+      "first_contest_results": {
+        "BROKE_THROUGH": 91,
+        "UNRESOLVED": 13,
+        "LOST": 15,
+        "GOAL_WITHOUT_MEASURED_BREAK": 1
+      },
+      "body_contact_runs": 120,
+      "body_contact_before_first_loss_runs": 120,
+      "contact_before_loss_results": {
+        "BROKE_THROUGH": 91,
+        "UNRESOLVED": 13,
+        "LOST": 15,
+        "GOAL_WITHOUT_MEASURED_BREAK": 1
+      },
+      "goals_after_body_contact": 100,
+      "exclusive_blue_control_runs": 15,
+      "breakthrough_runs": 99,
+      "attacker_regain_runs": 106,
+      "productive_regain_runs": 93,
+      "stalls_over_20s": 74,
+      "mean_seconds": 105.44066666666832,
+      "wall_seconds": 34.27788668499852
+    }
+  },
+  "safe-reach": {
+    "tuning": {
+      "evade_enabled": true,
+      "evade_distance": 1.8,
+      "evade_width": 0.65,
+      "striker_duel_seconds": 8.0,
+      "evade_clear_only": true,
+      "duel_geometry_gate": true,
+      "evade_timing_guard": true,
+      "evade_foot_required": true,
+      "evade_cost": "reachability",
+      "duel_mode": "ball_side",
+      "duel_step": 0.08
+    },
+    "validation": {
+      "frontal_contact_runs": 132,
+      "frontal_contact_results": {
+        "LOST": 52,
+        "BROKE_THROUGH": 70,
+        "UNRESOLVED": 9,
+        "GOAL_WITHOUT_MEASURED_BREAK": 1
+      },
+      "runs": 240,
+      "outcomes": {
+        "GOAL": 187,
+        "CLEARED_GOAL": 35,
+        "TIMEOUT": 18
+      },
+      "first_attacking_contests": 206,
+      "first_contest_results": {
+        "LOST": 55,
+        "BROKE_THROUGH": 138,
+        "UNRESOLVED": 11,
+        "GOAL_WITHOUT_MEASURED_BREAK": 2
+      },
+      "body_contact_runs": 152,
+      "body_contact_before_first_loss_runs": 151,
+      "contact_before_loss_results": {
+        "LOST": 54,
+        "BROKE_THROUGH": 85,
+        "UNRESOLVED": 11,
+        "GOAL_WITHOUT_MEASURED_BREAK": 1
+      },
+      "goals_after_body_contact": 99,
+      "exclusive_blue_control_runs": 55,
+      "breakthrough_runs": 184,
+      "attacker_regain_runs": 79,
+      "productive_regain_runs": 59,
+      "stalls_over_20s": 32,
+      "mean_seconds": 79.83350000000105,
+      "wall_seconds": 48.89017853000405
+    },
+    "headon": {
+      "frontal_contact_runs": 120,
+      "frontal_contact_results": {
+        "BROKE_THROUGH": 91,
+        "UNRESOLVED": 13,
+        "LOST": 15,
+        "GOAL_WITHOUT_MEASURED_BREAK": 1
+      },
+      "runs": 120,
+      "outcomes": {
+        "GOAL": 100,
+        "TIMEOUT": 18,
+        "CLEARED_GOAL": 2
+      },
+      "first_attacking_contests": 120,
+      "first_contest_results": {
+        "BROKE_THROUGH": 91,
+        "UNRESOLVED": 13,
+        "LOST": 15,
+        "GOAL_WITHOUT_MEASURED_BREAK": 1
+      },
+      "body_contact_runs": 120,
+      "body_contact_before_first_loss_runs": 120,
+      "contact_before_loss_results": {
+        "BROKE_THROUGH": 91,
+        "UNRESOLVED": 13,
+        "LOST": 15,
+        "GOAL_WITHOUT_MEASURED_BREAK": 1
+      },
+      "goals_after_body_contact": 100,
+      "exclusive_blue_control_runs": 15,
+      "breakthrough_runs": 99,
+      "attacker_regain_runs": 106,
+      "productive_regain_runs": 93,
+      "stalls_over_20s": 74,
+      "mean_seconds": 105.44066666666832,
+      "wall_seconds": 33.78346918300667
+    }
+  }
+}

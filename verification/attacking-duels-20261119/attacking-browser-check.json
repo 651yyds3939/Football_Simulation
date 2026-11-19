@@ -1,0 +1,8 @@
+{
+  "english_evasion_label": true,
+  "chinese_evasion_label": true,
+  "intended_ball_lane_in_snapshot": true,
+  "terminal_clears_ball_lane": true,
+  "finished_scene_idempotent": true,
+  "runtime_errors": []
+}

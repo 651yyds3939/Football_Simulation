@@ -1,0 +1,264 @@
+{
+  "summary": {
+    "goal_line_outside_mouth": 6,
+    "restart_guard_disallowed_goal": 5
+  },
+  "runs": [
+    {
+      "geometric_goal": null,
+      "last_restart_guard": {
+        "restart_team": "RED",
+        "restart_touch": "RedForwardA",
+        "last_touch": "RedForwardA",
+        "indirect": false,
+        "kickoff_restriction": false
+      },
+      "seed": 90020,
+      "final_ball": [
+        4.578731883244622,
+        1.246679969736568,
+        0.07
+      ],
+      "terminal_touch": "RedForwardA",
+      "states": {
+        "EVADE_DRIBBLE": 22.4799999999997,
+        "DRIBBLE": 49.67999999999912,
+        "SHOOT": 5.400000000000004
+      },
+      "boundary": "goal_line_outside_mouth"
+    },
+    {
+      "geometric_goal": "BLUE",
+      "last_restart_guard": {
+        "restart_team": "RED",
+        "restart_touch": "BlueDefender",
+        "last_touch": "BlueDefender",
+        "indirect": false,
+        "kickoff_restriction": false
+      },
+      "seed": 90221,
+      "final_ball": [
+        -4.57182792510481,
+        -0.9279440826662894,
+        0.07
+      ],
+      "terminal_touch": "BlueDefender",
+      "states": {
+        "EVADE_DRIBBLE": 12.03999999999992,
+        "COUNTERPRESS": 56.95999999999896,
+        "DRIBBLE": 0.6,
+        "DUEL_ESCAPE": 12.319999999999913
+      },
+      "boundary": "restart_guard_disallowed_goal"
+    },
+    {
+      "geometric_goal": null,
+      "last_restart_guard": {
+        "restart_team": "RED",
+        "restart_touch": "RedForwardA",
+        "last_touch": "RedForwardA",
+        "indirect": false,
+        "kickoff_restriction": false
+      },
+      "seed": 90296,
+      "final_ball": [
+        4.573327581185487,
+        1.250036865276525,
+        0.07
+      ],
+      "terminal_touch": "RedForwardA",
+      "states": {
+        "EVADE_DRIBBLE": 25.559999999999633,
+        "DRIBBLE": 52.51999999999906,
+        "SHOOT": 5.360000000000004
+      },
+      "boundary": "goal_line_outside_mouth"
+    },
+    {
+      "geometric_goal": null,
+      "last_restart_guard": {
+        "restart_team": "RED",
+        "restart_touch": "RedForwardA",
+        "last_touch": "RedForwardA",
+        "indirect": false,
+        "kickoff_restriction": false
+      },
+      "seed": 90329,
+      "final_ball": [
+        4.577455970455954,
+        1.2348096863444922,
+        0.07
+      ],
+      "terminal_touch": "RedForwardA",
+      "states": {
+        "EVADE_DRIBBLE": 23.199999999999683,
+        "DRIBBLE": 44.39999999999923,
+        "SHOOT": 5.360000000000004
+      },
+      "boundary": "goal_line_outside_mouth"
+    },
+    {
+      "geometric_goal": "BLUE",
+      "last_restart_guard": {
+        "restart_team": "RED",
+        "restart_touch": "BlueDefender",
+        "last_touch": "BlueDefender",
+        "indirect": false,
+        "kickoff_restriction": false
+      },
+      "seed": 90385,
+      "final_ball": [
+        -4.572521853088424,
+        -0.5312028372243044,
+        0.07
+      ],
+      "terminal_touch": "BlueDefender",
+      "states": {
+        "EVADE_DRIBBLE": 16.27999999999983,
+        "DUEL_ESCAPE": 7.1600000000000055,
+        "COUNTERPRESS": 80.28000000000135
+      },
+      "boundary": "restart_guard_disallowed_goal"
+    },
+    {
+      "geometric_goal": "BLUE",
+      "last_restart_guard": {
+        "restart_team": "RED",
+        "restart_touch": "BlueDefender",
+        "last_touch": "BlueDefender",
+        "indirect": false,
+        "kickoff_restriction": false
+      },
+      "seed": 90433,
+      "final_ball": [
+        -4.571084627812442,
+        1.0012521953819031,
+        0.07
+      ],
+      "terminal_touch": "BlueDefender",
+      "states": {
+        "EVADE_DRIBBLE": 9.399999999999975,
+        "COUNTERPRESS": 85.56000000000218,
+        "DRIBBLE": 5.160000000000004,
+        "DUEL_ESCAPE": 11.239999999999936
+      },
+      "boundary": "restart_guard_disallowed_goal"
+    },
+    {
+      "geometric_goal": "BLUE",
+      "last_restart_guard": {
+        "restart_team": "RED",
+        "restart_touch": "BlueDefender",
+        "last_touch": "BlueDefender",
+        "indirect": false,
+        "kickoff_restriction": false
+      },
+      "seed": 90556,
+      "final_ball": [
+        -4.570222607325979,
+        1.0140772271266452,
+        0.07
+      ],
+      "terminal_touch": "BlueDefender",
+      "states": {
+        "EVADE_DRIBBLE": 22.199999999999704,
+        "DUEL_ESCAPE": 15.519999999999845,
+        "COUNTERPRESS": 77.16000000000086
+      },
+      "boundary": "restart_guard_disallowed_goal"
+    },
+    {
+      "geometric_goal": null,
+      "last_restart_guard": {
+        "restart_team": "RED",
+        "restart_touch": "RedForwardA",
+        "last_touch": "RedForwardA",
+        "indirect": false,
+        "kickoff_restriction": false
+      },
+      "seed": 90620,
+      "final_ball": [
+        4.5780522319426735,
+        -1.2461590930947457,
+        0.07
+      ],
+      "terminal_touch": "RedForwardA",
+      "states": {
+        "EVADE_DRIBBLE": 24.079999999999664,
+        "DRIBBLE": 55.039999999999004,
+        "SHOOT": 8.879999999999987
+      },
+      "boundary": "goal_line_outside_mouth"
+    },
+    {
+      "geometric_goal": "BLUE",
+      "last_restart_guard": {
+        "restart_team": "RED",
+        "restart_touch": "BlueDefender",
+        "last_touch": "BlueDefender",
+        "indirect": false,
+        "kickoff_restriction": false
+      },
+      "seed": 90724,
+      "final_ball": [
+        -4.573095054959545,
+        -0.9582325639559095,
+        0.07
+      ],
+      "terminal_touch": "BlueDefender",
+      "states": {
+        "DRIBBLE": 2.080000000000001,
+        "EVADE_DRIBBLE": 14.559999999999865,
+        "DUEL_ESCAPE": 4.280000000000003,
+        "COUNTERPRESS": 97.8800000000041
+      },
+      "boundary": "restart_guard_disallowed_goal"
+    },
+    {
+      "geometric_goal": null,
+      "last_restart_guard": {
+        "restart_team": "RED",
+        "restart_touch": "RedForwardA",
+        "last_touch": "RedForwardA",
+        "indirect": false,
+        "kickoff_restriction": false
+      },
+      "seed": 90758,
+      "final_ball": [
+        4.57687296935821,
+        1.2302901706289204,
+        0.07
+      ],
+      "terminal_touch": "RedForwardA",
+      "states": {
+        "EVADE_DRIBBLE": 22.759999999999692,
+        "DRIBBLE": 57.07999999999896,
+        "SHOOT": 11.319999999999935
+      },
+      "boundary": "goal_line_outside_mouth"
+    },
+    {
+      "geometric_goal": null,
+      "last_restart_guard": {
+        "restart_team": "RED",
+        "restart_touch": "RedForwardA",
+        "last_touch": "RedForwardA",
+        "indirect": false,
+        "kickoff_restriction": false
+      },
+      "seed": 90764,
+      "final_ball": [
+        4.575507590663278,
+        -1.2369770033742018,
+        0.07
+      ],
+      "terminal_touch": "RedForwardA",
+      "states": {
+        "EVADE_DRIBBLE": 34.15999999999945,
+        "DRIBBLE": 54.27999999999902,
+        "SHOOT": 9.63999999999997
+      },
+      "boundary": "goal_line_outside_mouth"
+    }
+  ]
+}

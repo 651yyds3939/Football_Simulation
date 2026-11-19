@@ -1,0 +1,16 @@
+{
+  "python_source_matches_frozen_release": true,
+  "python_38_syntax": true,
+  "zip_files": 28,
+  "zip_sha256": "c4742c2de301552a86b91992548b916a357261fd6213678e7df0fc5d1d0d4ce3",
+  "extracted_replay_score": [
+    1,
+    1
+  ],
+  "extracted_outside_repo_path_with_spaces": true,
+  "extracted_directed_receiver_contact": true,
+  "extracted_batch_two_matches": true,
+  "existing_output_preserved": true,
+  "final_members_equal_workspace": true,
+  "only_readme_changed_after_extracted_run": true
+}

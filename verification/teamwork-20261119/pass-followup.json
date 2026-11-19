@@ -1,0 +1,70 @@
+[
+  {
+    "demo": "en",
+    "sender": "BlueDefender",
+    "receiver": "BlueForwardB",
+    "actual_kick_time": 264.4,
+    "receiver_contact_time": 274.0,
+    "seconds_after_kick_to_receive": 9.600000000000023,
+    "receiver_foot_contact_same_time": true,
+    "followup": [
+      {
+        "seconds": 5,
+        "ball_goalward_progress_metres": -0.0017500000000000293,
+        "last_touch": "BlueForwardB",
+        "receiver_behaviour": "EVADE_DRIBBLE",
+        "receiver_action": "right20"
+      },
+      {
+        "seconds": 15,
+        "ball_goalward_progress_metres": -0.0017500000000000293,
+        "last_touch": "BlueForwardB",
+        "receiver_behaviour": "EVADE_DRIBBLE",
+        "receiver_action": "right20"
+      },
+      {
+        "seconds": 20,
+        "ball_goalward_progress_metres": 0.004994999999999972,
+        "last_touch": "RedForwardB",
+        "receiver_behaviour": "EVADE_DRIBBLE",
+        "receiver_action": "right20"
+      }
+    ],
+    "receiver_goal_facing_error_degrees": -108.1819817391746,
+    "estimated_turn_only_seconds": 22.1765189272621
+  },
+  {
+    "demo": "zh",
+    "sender": "BlueDefender",
+    "receiver": "BlueForwardA",
+    "actual_kick_time": 536.0,
+    "receiver_contact_time": 542.4,
+    "seconds_after_kick_to_receive": 6.399999999999977,
+    "receiver_foot_contact_same_time": true,
+    "followup": [
+      {
+        "seconds": 5,
+        "ball_goalward_progress_metres": -0.0024340000000000472,
+        "last_touch": "BlueForwardA",
+        "receiver_behaviour": "DRIBBLE",
+        "receiver_action": "left40"
+      },
+      {
+        "seconds": 15,
+        "ball_goalward_progress_metres": -0.0024340000000000472,
+        "last_touch": "BlueForwardA",
+        "receiver_behaviour": "EVADE_DRIBBLE",
+        "receiver_action": "left40"
+      },
+      {
+        "seconds": 20,
+        "ball_goalward_progress_metres": -0.0024340000000000472,
+        "last_touch": "BlueForwardA",
+        "receiver_behaviour": "EVADE_DRIBBLE",
+        "receiver_action": "left40"
+      }
+    ],
+    "receiver_goal_facing_error_degrees": 116.98825592690213,
+    "estimated_turn_only_seconds": 24.888530031099712
+  }
+]

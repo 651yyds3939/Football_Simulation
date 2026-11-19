@@ -1,0 +1,37 @@
+;FFMETADATA1
+title=1v1 cases - contact breakthrough / tackle counter goal / failed chase - 3:3:1
+[CHAPTER]
+TIMEBASE=1/1000
+START=0
+END=10600
+title=Case 1 - Contact breakthrough
+[CHAPTER]
+TIMEBASE=1/1000
+START=10600
+END=21550
+title=Case 2 - Contact breakthrough
+[CHAPTER]
+TIMEBASE=1/1000
+START=21550
+END=32600
+title=Case 3 - Contact breakthrough
+[CHAPTER]
+TIMEBASE=1/1000
+START=32600
+END=48300
+title=Case 4 - Tackle and counter goal
+[CHAPTER]
+TIMEBASE=1/1000
+START=48300
+END=64350
+title=Case 5 - Tackle and counter goal
+[CHAPTER]
+TIMEBASE=1/1000
+START=64350
+END=80650
+title=Case 6 - Tackle and counter goal
+[CHAPTER]
+TIMEBASE=1/1000
+START=80650
+END=88600
+title=Case 7 - Defender cannot catch up

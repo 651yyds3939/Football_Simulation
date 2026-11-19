@@ -1,0 +1,7268 @@
+{
+  "initial": {
+    "ball": [
+      0.7611781900674255,
+      -0.6145964954715737,
+      0.07
+    ],
+    "robots": {
+      "RedForwardA": {
+        "position": [
+          0.4711781900674255,
+          -0.668380023555613,
+          0.334
+        ],
+        "yaw": 0.2624337211601406
+      },
+      "BlueDefender": {
+        "position": [
+          2.2947123916978143,
+          -0.697198886655022,
+          0.334
+        ],
+        "yaw": 3.1369965466175036
+      }
+    }
+  },
+  "outcome": "GOAL",
+  "frames": [
+    {
+      "t": 0.4,
+      "ball": [
+        0.781,
+        -0.609
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            0.504,
+            -0.66
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            0.596,
+            -0.665
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.295,
+            -0.688
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.277,
+            -0.238
+          ],
+          "face": [
+            1.981,
+            -0.287
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 0.8,
+      "ball": [
+        0.814,
+        -0.6
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            0.537,
+            -0.651
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            0.629,
+            -0.656
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.295,
+            -0.679
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.325,
+            -0.226
+          ],
+          "face": [
+            2.029,
+            -0.274
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 1.2,
+      "ball": [
+        0.847,
+        -0.592
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            0.57,
+            -0.642
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            0.662,
+            -0.648
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.295,
+            -0.67
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.325,
+            -0.226
+          ],
+          "face": [
+            2.029,
+            -0.274
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 1.6,
+      "ball": [
+        0.88,
+        -0.583
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            0.603,
+            -0.633
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            0.695,
+            -0.639
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.295,
+            -0.662
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.375,
+            -0.213
+          ],
+          "face": [
+            2.078,
+            -0.261
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 2.0,
+      "ball": [
+        0.913,
+        -0.574
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            0.636,
+            -0.624
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            0.728,
+            -0.63
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.295,
+            -0.653
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.368,
+            -0.215
+          ],
+          "face": [
+            2.072,
+            -0.263
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 2.4,
+      "ball": [
+        0.946,
+        -0.565
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            0.669,
+            -0.615
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            0.761,
+            -0.621
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.295,
+            -0.644
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.368,
+            -0.215
+          ],
+          "face": [
+            2.072,
+            -0.263
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 2.8,
+      "ball": [
+        0.979,
+        -0.556
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            0.702,
+            -0.606
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            0.794,
+            -0.613
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.295,
+            -0.635
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.361,
+            -0.217
+          ],
+          "face": [
+            2.065,
+            -0.264
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 3.2,
+      "ball": [
+        1.011,
+        -0.547
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            0.735,
+            -0.598
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            0.827,
+            -0.604
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.295,
+            -0.626
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.355,
+            -0.219
+          ],
+          "face": [
+            2.059,
+            -0.266
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 3.6,
+      "ball": [
+        1.044,
+        -0.539
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            0.768,
+            -0.589
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            0.859,
+            -0.595
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.295,
+            -0.617
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.355,
+            -0.219
+          ],
+          "face": [
+            2.059,
+            -0.266
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 4.0,
+      "ball": [
+        1.077,
+        -0.53
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            0.801,
+            -0.58
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            0.892,
+            -0.586
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.295,
+            -0.608
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.348,
+            -0.222
+          ],
+          "face": [
+            2.052,
+            -0.268
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 4.4,
+      "ball": [
+        1.11,
+        -0.521
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            0.833,
+            -0.571
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            0.925,
+            -0.578
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.295,
+            -0.599
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.342,
+            -0.224
+          ],
+          "face": [
+            2.045,
+            -0.27
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 4.8,
+      "ball": [
+        1.143,
+        -0.512
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            0.866,
+            -0.562
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            0.958,
+            -0.569
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.295,
+            -0.59
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.342,
+            -0.224
+          ],
+          "face": [
+            2.045,
+            -0.27
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 5.2,
+      "ball": [
+        1.176,
+        -0.503
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            0.899,
+            -0.553
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            0.991,
+            -0.56
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.295,
+            -0.581
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.335,
+            -0.226
+          ],
+          "face": [
+            2.039,
+            -0.271
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 5.6,
+      "ball": [
+        1.209,
+        -0.494
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            0.932,
+            -0.545
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.024,
+            -0.552
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.295,
+            -0.572
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.329,
+            -0.228
+          ],
+          "face": [
+            2.032,
+            -0.273
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 6.0,
+      "ball": [
+        1.242,
+        -0.485
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            0.965,
+            -0.536
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.057,
+            -0.543
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.295,
+            -0.563
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.329,
+            -0.228
+          ],
+          "face": [
+            2.032,
+            -0.273
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 6.4,
+      "ball": [
+        1.275,
+        -0.477
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            0.998,
+            -0.527
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.09,
+            -0.534
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.295,
+            -0.554
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.378,
+            -0.216
+          ],
+          "face": [
+            2.082,
+            -0.26
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 6.8,
+      "ball": [
+        1.308,
+        -0.468
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.031,
+            -0.518
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.123,
+            -0.526
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.295,
+            -0.546
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.368,
+            -0.219
+          ],
+          "face": [
+            2.071,
+            -0.263
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 7.2,
+      "ball": [
+        1.341,
+        -0.459
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.064,
+            -0.509
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.156,
+            -0.517
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.295,
+            -0.537
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.368,
+            -0.219
+          ],
+          "face": [
+            2.071,
+            -0.263
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 7.6,
+      "ball": [
+        1.374,
+        -0.45
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.097,
+            -0.5
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.189,
+            -0.508
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.295,
+            -0.528
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.364,
+            -0.221
+          ],
+          "face": [
+            2.067,
+            -0.264
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 8.0,
+      "ball": [
+        1.407,
+        -0.441
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.13,
+            -0.491
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.222,
+            -0.5
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.296,
+            -0.519
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.359,
+            -0.223
+          ],
+          "face": [
+            2.062,
+            -0.265
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 8.4,
+      "ball": [
+        1.44,
+        -0.432
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.163,
+            -0.483
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.255,
+            -0.491
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.296,
+            -0.51
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.359,
+            -0.223
+          ],
+          "face": [
+            2.062,
+            -0.265
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 8.8,
+      "ball": [
+        1.473,
+        -0.424
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.196,
+            -0.474
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.288,
+            -0.482
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.296,
+            -0.501
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.356,
+            -0.224
+          ],
+          "face": [
+            2.059,
+            -0.266
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 9.2,
+      "ball": [
+        1.505,
+        -0.415
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.229,
+            -0.465
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.321,
+            -0.474
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.296,
+            -0.492
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.354,
+            -0.225
+          ],
+          "face": [
+            2.056,
+            -0.267
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 9.6,
+      "ball": [
+        1.538,
+        -0.406
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.262,
+            -0.456
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.354,
+            -0.465
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.296,
+            -0.483
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.354,
+            -0.225
+          ],
+          "face": [
+            2.056,
+            -0.267
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 10.0,
+      "ball": [
+        1.571,
+        -0.397
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.295,
+            -0.447
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.387,
+            -0.457
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.296,
+            -0.474
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.351,
+            -0.227
+          ],
+          "face": [
+            2.054,
+            -0.267
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 10.4,
+      "ball": [
+        1.604,
+        -0.388
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.327,
+            -0.438
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.42,
+            -0.448
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.296,
+            -0.465
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.348,
+            -0.228
+          ],
+          "face": [
+            2.051,
+            -0.268
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 10.8,
+      "ball": [
+        1.637,
+        -0.379
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.36,
+            -0.43
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.453,
+            -0.44
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.296,
+            -0.456
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.348,
+            -0.228
+          ],
+          "face": [
+            2.051,
+            -0.268
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 11.2,
+      "ball": [
+        1.67,
+        -0.37
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.393,
+            -0.421
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.486,
+            -0.431
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.296,
+            -0.447
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.345,
+            -0.23
+          ],
+          "face": [
+            2.048,
+            -0.269
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 11.6,
+      "ball": [
+        1.703,
+        -0.362
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.426,
+            -0.412
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.52,
+            -0.423
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.296,
+            -0.439
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.345,
+            -0.23
+          ],
+          "face": [
+            2.048,
+            -0.269
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 12.0,
+      "ball": [
+        1.736,
+        -0.353
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.459,
+            -0.403
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.553,
+            -0.414
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.296,
+            -0.43
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.342,
+            -0.231
+          ],
+          "face": [
+            2.045,
+            -0.27
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 12.4,
+      "ball": [
+        1.769,
+        -0.344
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.492,
+            -0.394
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.586,
+            -0.406
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.296,
+            -0.421
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.339,
+            -0.233
+          ],
+          "face": [
+            2.041,
+            -0.271
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 12.8,
+      "ball": [
+        1.802,
+        -0.335
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.525,
+            -0.385
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.619,
+            -0.397
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.296,
+            -0.412
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.339,
+            -0.233
+          ],
+          "face": [
+            2.041,
+            -0.271
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 13.2,
+      "ball": [
+        1.835,
+        -0.326
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.558,
+            -0.376
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.652,
+            -0.389
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.296,
+            -0.403
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.336,
+            -0.235
+          ],
+          "face": [
+            2.038,
+            -0.272
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 13.6,
+      "ball": [
+        1.868,
+        -0.317
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.591,
+            -0.368
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.685,
+            -0.381
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.296,
+            -0.394
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.332,
+            -0.237
+          ],
+          "face": [
+            2.034,
+            -0.273
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 14.0,
+      "ball": [
+        1.901,
+        -0.308
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.624,
+            -0.359
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.718,
+            -0.372
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.296,
+            -0.385
+          ],
+          "yaw": 179.7,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            2.332,
+            -0.237
+          ],
+          "face": [
+            2.034,
+            -0.273
+          ],
+          "action": "step_right",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 14.4,
+      "ball": [
+        1.934,
+        -0.3
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.657,
+            -0.35
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.751,
+            -0.364
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.265,
+            -0.384
+          ],
+          "yaw": 179.7,
+          "decision": "CHALLENGE",
+          "target": [
+            1.93,
+            -0.301
+          ],
+          "face": [
+            1.93,
+            -0.301
+          ],
+          "action": "walk",
+          "stage": "CHALLENGE_CLOSE_LANE"
+        }
+      }
+    },
+    {
+      "t": 14.8,
+      "ball": [
+        1.96,
+        -0.292
+      ],
+      "touch": null,
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.69,
+            -0.341
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.781,
+            -0.356
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.231,
+            -0.384
+          ],
+          "yaw": 179.7,
+          "decision": "CHALLENGE",
+          "target": [
+            1.96,
+            -0.292
+          ],
+          "face": [
+            1.96,
+            -0.292
+          ],
+          "action": "walk",
+          "stage": "CHALLENGE_POKE_BALL"
+        }
+      }
+    },
+    {
+      "t": 15.2,
+      "ball": [
+        1.96,
+        -0.29
+      ],
+      "touch": null,
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.723,
+            -0.332
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.781,
+            -0.354
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.197,
+            -0.384
+          ],
+          "yaw": 179.7,
+          "decision": "CHALLENGE",
+          "target": [
+            1.96,
+            -0.29
+          ],
+          "face": [
+            1.96,
+            -0.29
+          ],
+          "action": "walk",
+          "stage": "CHALLENGE_POKE_BALL"
+        }
+      }
+    },
+    {
+      "t": 15.6,
+      "ball": [
+        1.959,
+        -0.288
+      ],
+      "touch": null,
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.756,
+            -0.323
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.78,
+            -0.351
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.163,
+            -0.384
+          ],
+          "yaw": 179.7,
+          "decision": "CHALLENGE",
+          "target": [
+            1.959,
+            -0.288
+          ],
+          "face": [
+            1.959,
+            -0.288
+          ],
+          "action": "walk",
+          "stage": "CHALLENGE_POKE_BALL"
+        }
+      }
+    },
+    {
+      "t": 16.0,
+      "ball": [
+        1.959,
+        -0.286
+      ],
+      "touch": null,
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.789,
+            -0.315
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.78,
+            -0.348
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.129,
+            -0.383
+          ],
+          "yaw": 179.7,
+          "decision": "CHALLENGE",
+          "target": [
+            1.959,
+            -0.286
+          ],
+          "face": [
+            1.959,
+            -0.286
+          ],
+          "action": "walk",
+          "stage": "CHALLENGE_POKE_BALL"
+        }
+      }
+    },
+    {
+      "t": 16.4,
+      "ball": [
+        1.959,
+        -0.284
+      ],
+      "touch": null,
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.814,
+            -0.304
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.779,
+            -0.346
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.103,
+            -0.385
+          ],
+          "yaw": 179.7,
+          "decision": "CHALLENGE",
+          "target": [
+            1.959,
+            -0.284
+          ],
+          "face": [
+            1.959,
+            -0.284
+          ],
+          "action": "walk",
+          "stage": "CHALLENGE_POKE_BALL"
+        }
+      }
+    },
+    {
+      "t": 16.8,
+      "ball": [
+        1.959,
+        -0.283
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.818,
+            -0.285
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.779,
+            -0.345
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.097,
+            -0.395
+          ],
+          "yaw": 179.7,
+          "decision": "CHALLENGE",
+          "target": [
+            1.959,
+            -0.283
+          ],
+          "face": [
+            1.959,
+            -0.283
+          ],
+          "action": "walk",
+          "stage": "CHALLENGE_POKE_BALL"
+        }
+      }
+    },
+    {
+      "t": 17.2,
+      "ball": [
+        1.96,
+        -0.278
+      ],
+      "touch": "BlueDefender",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.831,
+            -0.267
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.779,
+            -0.34
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.098,
+            -0.404
+          ],
+          "yaw": 179.7,
+          "decision": "CHALLENGE",
+          "target": [
+            1.959,
+            -0.279
+          ],
+          "face": [
+            1.959,
+            -0.279
+          ],
+          "action": "back",
+          "stage": "CREATE_SPACE_BEFORE_SIDE_ALIGN"
+        }
+      }
+    },
+    {
+      "t": 17.6,
+      "ball": [
+        1.961,
+        -0.269
+      ],
+      "touch": "BlueDefender",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.835,
+            -0.265
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.78,
+            -0.329
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "back",
+          "stage": "MAKE_FOOT_SPACE"
+        },
+        "BlueDefender": {
+          "position": [
+            2.112,
+            -0.404
+          ],
+          "yaw": 179.7,
+          "decision": "CHALLENGE",
+          "target": [
+            1.961,
+            -0.27
+          ],
+          "face": [
+            1.961,
+            -0.27
+          ],
+          "action": "back",
+          "stage": "CREATE_SPACE_BEFORE_SIDE_ALIGN"
+        }
+      }
+    },
+    {
+      "t": 18.0,
+      "ball": [
+        1.962,
+        -0.261
+      ],
+      "touch": "BlueDefender",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.841,
+            -0.264
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.781,
+            -0.32
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.126,
+            -0.404
+          ],
+          "yaw": 179.7,
+          "decision": "CHALLENGE",
+          "target": [
+            1.962,
+            -0.263
+          ],
+          "face": [
+            1.962,
+            -0.263
+          ],
+          "action": "back",
+          "stage": "CREATE_SPACE_BEFORE_SIDE_ALIGN"
+        }
+      }
+    },
+    {
+      "t": 18.4,
+      "ball": [
+        1.979,
+        -0.253
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.855,
+            -0.26
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.794,
+            -0.31
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.139,
+            -0.405
+          ],
+          "yaw": 179.7,
+          "decision": "CHALLENGE",
+          "target": [
+            1.975,
+            -0.254
+          ],
+          "face": [
+            1.975,
+            -0.254
+          ],
+          "action": "back",
+          "stage": "CREATE_SPACE_BEFORE_SIDE_ALIGN"
+        }
+      }
+    },
+    {
+      "t": 18.8,
+      "ball": [
+        2.002,
+        -0.244
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.879,
+            -0.254
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.817,
+            -0.301
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.153,
+            -0.405
+          ],
+          "yaw": 179.7,
+          "decision": "CHALLENGE",
+          "target": [
+            1.999,
+            -0.245
+          ],
+          "face": [
+            1.999,
+            -0.245
+          ],
+          "action": "back",
+          "stage": "CREATE_SPACE_BEFORE_SIDE_ALIGN"
+        }
+      }
+    },
+    {
+      "t": 19.2,
+      "ball": [
+        2.025,
+        -0.235
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.903,
+            -0.247
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.84,
+            -0.291
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.166,
+            -0.405
+          ],
+          "yaw": 179.7,
+          "decision": "CHALLENGE",
+          "target": [
+            2.022,
+            -0.236
+          ],
+          "face": [
+            2.022,
+            -0.236
+          ],
+          "action": "back",
+          "stage": "CREATE_SPACE_BEFORE_SIDE_ALIGN"
+        }
+      }
+    },
+    {
+      "t": 19.6,
+      "ball": [
+        2.052,
+        -0.226
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.931,
+            -0.239
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.867,
+            -0.282
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.181,
+            -0.405
+          ],
+          "yaw": 179.7,
+          "decision": "CHALLENGE",
+          "target": [
+            2.049,
+            -0.227
+          ],
+          "face": [
+            2.049,
+            -0.227
+          ],
+          "action": "back",
+          "stage": "CREATE_SPACE_BEFORE_SIDE_ALIGN"
+        }
+      }
+    },
+    {
+      "t": 20.0,
+      "ball": [
+        2.085,
+        -0.217
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.959,
+            -0.227
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.9,
+            -0.274
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.199,
+            -0.408
+          ],
+          "yaw": 179.7,
+          "decision": "CHALLENGE",
+          "target": [
+            2.082,
+            -0.218
+          ],
+          "face": [
+            2.082,
+            -0.218
+          ],
+          "action": "back",
+          "stage": "CREATE_SPACE_BEFORE_SIDE_ALIGN"
+        }
+      }
+    },
+    {
+      "t": 20.4,
+      "ball": [
+        2.118,
+        -0.209
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            1.988,
+            -0.216
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.933,
+            -0.265
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.216,
+            -0.411
+          ],
+          "yaw": 179.7,
+          "decision": "CHALLENGE",
+          "target": [
+            2.115,
+            -0.209
+          ],
+          "face": [
+            2.115,
+            -0.209
+          ],
+          "action": "back",
+          "stage": "CREATE_SPACE_BEFORE_SIDE_ALIGN"
+        }
+      }
+    },
+    {
+      "t": 20.8,
+      "ball": [
+        2.151,
+        -0.2
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.018,
+            -0.204
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.966,
+            -0.257
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.233,
+            -0.414
+          ],
+          "yaw": 179.7,
+          "decision": "CHALLENGE",
+          "target": [
+            2.147,
+            -0.201
+          ],
+          "face": [
+            2.147,
+            -0.201
+          ],
+          "action": "back",
+          "stage": "CREATE_SPACE_BEFORE_SIDE_ALIGN"
+        }
+      }
+    },
+    {
+      "t": 21.2,
+      "ball": [
+        2.184,
+        -0.191
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.049,
+            -0.193
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            1.999,
+            -0.248
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.249,
+            -0.417
+          ],
+          "yaw": 179.7,
+          "decision": "CHALLENGE",
+          "target": [
+            2.18,
+            -0.192
+          ],
+          "face": [
+            2.18,
+            -0.192
+          ],
+          "action": "back",
+          "stage": "CREATE_SPACE_BEFORE_SIDE_ALIGN"
+        }
+      }
+    },
+    {
+      "t": 21.6,
+      "ball": [
+        2.217,
+        -0.182
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.08,
+            -0.182
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            2.032,
+            -0.24
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.264,
+            -0.419
+          ],
+          "yaw": 179.7,
+          "decision": "CHALLENGE",
+          "target": [
+            2.213,
+            -0.183
+          ],
+          "face": [
+            2.213,
+            -0.183
+          ],
+          "action": "back",
+          "stage": "CREATE_SPACE_BEFORE_SIDE_ALIGN"
+        }
+      }
+    },
+    {
+      "t": 22.0,
+      "ball": [
+        2.25,
+        -0.173
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.112,
+            -0.171
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            2.065,
+            -0.232
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.279,
+            -0.42
+          ],
+          "yaw": 179.7,
+          "decision": "CHALLENGE",
+          "target": [
+            2.246,
+            -0.174
+          ],
+          "face": [
+            2.246,
+            -0.174
+          ],
+          "action": "back",
+          "stage": "CREATE_SPACE_BEFORE_SIDE_ALIGN"
+        }
+      }
+    },
+    {
+      "t": 22.4,
+      "ball": [
+        2.282,
+        -0.164
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.144,
+            -0.161
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            2.098,
+            -0.224
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.293,
+            -0.422
+          ],
+          "yaw": 179.7,
+          "decision": "CHALLENGE",
+          "target": [
+            2.279,
+            -0.165
+          ],
+          "face": [
+            2.279,
+            -0.165
+          ],
+          "action": "back",
+          "stage": "CREATE_SPACE_BEFORE_SIDE_ALIGN"
+        }
+      }
+    },
+    {
+      "t": 22.8,
+      "ball": [
+        2.315,
+        -0.156
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.177,
+            -0.152
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            2.132,
+            -0.216
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.307,
+            -0.422
+          ],
+          "yaw": 179.7,
+          "decision": "CHALLENGE",
+          "target": [
+            2.312,
+            -0.156
+          ],
+          "face": [
+            2.312,
+            -0.156
+          ],
+          "action": "back",
+          "stage": "CREATE_SPACE_BEFORE_SIDE_ALIGN"
+        }
+      }
+    },
+    {
+      "t": 23.2,
+      "ball": [
+        2.348,
+        -0.147
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.209,
+            -0.141
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            2.165,
+            -0.208
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.307,
+            -0.424
+          ],
+          "yaw": 179.7,
+          "decision": "CHALLENGE",
+          "target": [
+            2.345,
+            -0.148
+          ],
+          "face": [
+            2.345,
+            -0.148
+          ],
+          "action": "walk",
+          "stage": "CREATE_SPACE_BEFORE_SIDE_ALIGN"
+        }
+      }
+    },
+    {
+      "t": 23.6,
+      "ball": [
+        2.381,
+        -0.138
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.241,
+            -0.129
+          ],
+          "yaw": 15.0,
+          "decision": "EVADE_DRIBBLE",
+          "target": [
+            2.198,
+            -0.2
+          ],
+          "face": [
+            2.645,
+            -0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.277,
+            -0.427
+          ],
+          "yaw": 179.9,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            -0.067
+          ],
+          "face": [
+            2.378,
+            -0.139
+          ],
+          "action": "left20",
+          "stage": "RECOVERY_CHANGE_HEADING"
+        }
+      }
+    },
+    {
+      "t": 24.0,
+      "ball": [
+        2.414,
+        -0.129
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.274,
+            -0.12
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.221,
+            -0.14
+          ],
+          "face": [
+            4.8,
+            0
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.283,
+            -0.427
+          ],
+          "yaw": -179.1,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            -0.062
+          ],
+          "face": [
+            2.411,
+            -0.13
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 24.4,
+      "ball": [
+        2.447,
+        -0.12
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.307,
+            -0.111
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.254,
+            -0.131
+          ],
+          "face": [
+            4.8,
+            0
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.295,
+            -0.427
+          ],
+          "yaw": -178.9,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            -0.058
+          ],
+          "face": [
+            2.444,
+            -0.121
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 24.8,
+      "ball": [
+        2.48,
+        -0.111
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.34,
+            -0.102
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.287,
+            -0.121
+          ],
+          "face": [
+            4.8,
+            0
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.306,
+            -0.427
+          ],
+          "yaw": -178.6,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            -0.053
+          ],
+          "face": [
+            2.477,
+            -0.112
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 25.2,
+      "ball": [
+        2.513,
+        -0.102
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.373,
+            -0.094
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.32,
+            -0.112
+          ],
+          "face": [
+            4.8,
+            0
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.318,
+            -0.426
+          ],
+          "yaw": -178.4,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            -0.048
+          ],
+          "face": [
+            2.51,
+            -0.103
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 25.6,
+      "ball": [
+        2.546,
+        -0.094
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.406,
+            -0.085
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.353,
+            -0.094
+          ],
+          "face": [
+            4.8,
+            -0.094
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.331,
+            -0.426
+          ],
+          "yaw": -178.2,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            -0.043
+          ],
+          "face": [
+            2.543,
+            -0.094
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 26.0,
+      "ball": [
+        2.579,
+        -0.085
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.439,
+            -0.076
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.386,
+            -0.086
+          ],
+          "face": [
+            4.8,
+            -0.086
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.343,
+            -0.426
+          ],
+          "yaw": -178.1,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            -0.038
+          ],
+          "face": [
+            2.576,
+            -0.086
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 26.4,
+      "ball": [
+        2.612,
+        -0.076
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.472,
+            -0.067
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.419,
+            -0.077
+          ],
+          "face": [
+            4.8,
+            -0.077
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.354,
+            -0.425
+          ],
+          "yaw": -177.7,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            -0.033
+          ],
+          "face": [
+            2.609,
+            -0.077
+          ],
+          "action": "left20",
+          "stage": "RECOVERY_CHANGE_HEADING"
+        }
+      }
+    },
+    {
+      "t": 26.8,
+      "ball": [
+        2.645,
+        -0.067
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.505,
+            -0.058
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.451,
+            -0.068
+          ],
+          "face": [
+            4.8,
+            -0.068
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.366,
+            -0.425
+          ],
+          "yaw": -177.6,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            -0.028
+          ],
+          "face": [
+            2.641,
+            -0.068
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 27.2,
+      "ball": [
+        2.678,
+        -0.058
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.537,
+            -0.049
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.484,
+            -0.059
+          ],
+          "face": [
+            4.8,
+            -0.059
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.378,
+            -0.424
+          ],
+          "yaw": -177.4,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            -0.024
+          ],
+          "face": [
+            2.674,
+            -0.059
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 27.6,
+      "ball": [
+        2.711,
+        -0.049
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.57,
+            -0.04
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.517,
+            -0.05
+          ],
+          "face": [
+            4.8,
+            -0.05
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.391,
+            -0.424
+          ],
+          "yaw": -177.2,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            -0.019
+          ],
+          "face": [
+            2.707,
+            -0.05
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 28.0,
+      "ball": [
+        2.744,
+        -0.041
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.603,
+            -0.032
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.55,
+            -0.041
+          ],
+          "face": [
+            4.8,
+            -0.041
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.402,
+            -0.423
+          ],
+          "yaw": -176.9,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            -0.014
+          ],
+          "face": [
+            2.74,
+            -0.041
+          ],
+          "action": "left20",
+          "stage": "RECOVERY_CHANGE_HEADING"
+        }
+      }
+    },
+    {
+      "t": 28.4,
+      "ball": [
+        2.776,
+        -0.032
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.636,
+            -0.023
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.583,
+            -0.033
+          ],
+          "face": [
+            4.8,
+            -0.033
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.414,
+            -0.422
+          ],
+          "yaw": -176.7,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            -0.009
+          ],
+          "face": [
+            2.773,
+            -0.033
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 28.8,
+      "ball": [
+        2.809,
+        -0.023
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.669,
+            -0.014
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.616,
+            -0.024
+          ],
+          "face": [
+            4.8,
+            -0.024
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.426,
+            -0.422
+          ],
+          "yaw": -176.6,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            -0.004
+          ],
+          "face": [
+            2.806,
+            -0.024
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 29.2,
+      "ball": [
+        2.842,
+        -0.014
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.702,
+            -0.005
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.649,
+            -0.015
+          ],
+          "face": [
+            4.8,
+            -0.015
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.438,
+            -0.421
+          ],
+          "yaw": -176.4,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.001
+          ],
+          "face": [
+            2.839,
+            -0.015
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 29.6,
+      "ball": [
+        2.875,
+        -0.005
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.735,
+            0.004
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.682,
+            -0.006
+          ],
+          "face": [
+            4.8,
+            -0.006
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.449,
+            -0.42
+          ],
+          "yaw": -176.0,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.006
+          ],
+          "face": [
+            2.872,
+            -0.006
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 30.0,
+      "ball": [
+        2.908,
+        0.004
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.768,
+            0.013
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.715,
+            0.003
+          ],
+          "face": [
+            4.8,
+            0.003
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.462,
+            -0.419
+          ],
+          "yaw": -175.9,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.01
+          ],
+          "face": [
+            2.905,
+            0.003
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 30.4,
+      "ball": [
+        2.941,
+        0.013
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.801,
+            0.021
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.748,
+            0.012
+          ],
+          "face": [
+            4.8,
+            0.012
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.474,
+            -0.418
+          ],
+          "yaw": -175.7,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.015
+          ],
+          "face": [
+            2.938,
+            0.012
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 30.8,
+      "ball": [
+        2.974,
+        0.021
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.834,
+            0.03
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.781,
+            0.021
+          ],
+          "face": [
+            4.8,
+            0.021
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.485,
+            -0.418
+          ],
+          "yaw": -175.4,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.02
+          ],
+          "face": [
+            2.971,
+            0.021
+          ],
+          "action": "left20",
+          "stage": "RECOVERY_CHANGE_HEADING"
+        }
+      }
+    },
+    {
+      "t": 31.2,
+      "ball": [
+        3.007,
+        0.03
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.867,
+            0.039
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.814,
+            0.029
+          ],
+          "face": [
+            4.8,
+            0.029
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.497,
+            -0.416
+          ],
+          "yaw": -175.2,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.025
+          ],
+          "face": [
+            3.004,
+            0.029
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 31.6,
+      "ball": [
+        3.04,
+        0.039
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.9,
+            0.048
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.847,
+            0.038
+          ],
+          "face": [
+            4.8,
+            0.038
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.509,
+            -0.415
+          ],
+          "yaw": -175.0,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.03
+          ],
+          "face": [
+            3.037,
+            0.038
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 32.0,
+      "ball": [
+        3.073,
+        0.048
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.933,
+            0.057
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.88,
+            0.047
+          ],
+          "face": [
+            4.8,
+            0.047
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.52,
+            -0.414
+          ],
+          "yaw": -174.7,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.035
+          ],
+          "face": [
+            3.07,
+            0.047
+          ],
+          "action": "left20",
+          "stage": "RECOVERY_CHANGE_HEADING"
+        }
+      }
+    },
+    {
+      "t": 32.4,
+      "ball": [
+        3.106,
+        0.057
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.966,
+            0.066
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.913,
+            0.056
+          ],
+          "face": [
+            4.8,
+            0.056
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.532,
+            -0.413
+          ],
+          "yaw": -174.5,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.04
+          ],
+          "face": [
+            3.103,
+            0.056
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 32.8,
+      "ball": [
+        3.139,
+        0.066
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            2.999,
+            0.075
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.945,
+            0.065
+          ],
+          "face": [
+            4.8,
+            0.065
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.545,
+            -0.412
+          ],
+          "yaw": -174.4,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.045
+          ],
+          "face": [
+            3.135,
+            0.065
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 33.2,
+      "ball": [
+        3.172,
+        0.074
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.031,
+            0.083
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            2.978,
+            0.074
+          ],
+          "face": [
+            4.8,
+            0.074
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.555,
+            -0.411
+          ],
+          "yaw": -174.0,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.049
+          ],
+          "face": [
+            3.168,
+            0.074
+          ],
+          "action": "left20",
+          "stage": "RECOVERY_CHANGE_HEADING"
+        }
+      }
+    },
+    {
+      "t": 33.6,
+      "ball": [
+        3.205,
+        0.083
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.064,
+            0.092
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.011,
+            0.082
+          ],
+          "face": [
+            4.8,
+            0.082
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.568,
+            -0.41
+          ],
+          "yaw": -173.9,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.054
+          ],
+          "face": [
+            3.201,
+            0.082
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 34.0,
+      "ball": [
+        3.238,
+        0.092
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.097,
+            0.101
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.044,
+            0.091
+          ],
+          "face": [
+            4.8,
+            0.091
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.58,
+            -0.408
+          ],
+          "yaw": -173.7,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.059
+          ],
+          "face": [
+            3.234,
+            0.091
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 34.4,
+      "ball": [
+        3.27,
+        0.101
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.13,
+            0.11
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.077,
+            0.1
+          ],
+          "face": [
+            4.8,
+            0.1
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.591,
+            -0.407
+          ],
+          "yaw": -173.3,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.064
+          ],
+          "face": [
+            3.267,
+            0.1
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 34.8,
+      "ball": [
+        3.303,
+        0.11
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.163,
+            0.119
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.11,
+            0.109
+          ],
+          "face": [
+            4.8,
+            0.109
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.603,
+            -0.406
+          ],
+          "yaw": -173.2,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.069
+          ],
+          "face": [
+            3.3,
+            0.109
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 35.2,
+      "ball": [
+        3.336,
+        0.119
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.196,
+            0.128
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.143,
+            0.118
+          ],
+          "face": [
+            4.8,
+            0.118
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.615,
+            -0.404
+          ],
+          "yaw": -173.0,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.074
+          ],
+          "face": [
+            3.333,
+            0.118
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 35.6,
+      "ball": [
+        3.369,
+        0.128
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.229,
+            0.136
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.176,
+            0.127
+          ],
+          "face": [
+            4.8,
+            0.127
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.626,
+            -0.403
+          ],
+          "yaw": -172.7,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.079
+          ],
+          "face": [
+            3.366,
+            0.127
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 36.0,
+      "ball": [
+        3.402,
+        0.136
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.262,
+            0.145
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.209,
+            0.136
+          ],
+          "face": [
+            4.8,
+            0.136
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.638,
+            -0.401
+          ],
+          "yaw": -172.5,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.083
+          ],
+          "face": [
+            3.399,
+            0.136
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 36.4,
+      "ball": [
+        3.435,
+        0.145
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.295,
+            0.154
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.242,
+            0.144
+          ],
+          "face": [
+            4.8,
+            0.144
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.649,
+            -0.4
+          ],
+          "yaw": -172.2,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.088
+          ],
+          "face": [
+            3.432,
+            0.144
+          ],
+          "action": "left20",
+          "stage": "RECOVERY_CHANGE_HEADING"
+        }
+      }
+    },
+    {
+      "t": 36.8,
+      "ball": [
+        3.468,
+        0.154
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.328,
+            0.163
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.275,
+            0.153
+          ],
+          "face": [
+            4.8,
+            0.153
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.661,
+            -0.398
+          ],
+          "yaw": -172.0,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.093
+          ],
+          "face": [
+            3.465,
+            0.153
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 37.2,
+      "ball": [
+        3.501,
+        0.163
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.361,
+            0.172
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.308,
+            0.162
+          ],
+          "face": [
+            4.8,
+            0.162
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.673,
+            -0.396
+          ],
+          "yaw": -171.8,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.098
+          ],
+          "face": [
+            3.498,
+            0.162
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 37.6,
+      "ball": [
+        3.534,
+        0.172
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.394,
+            0.181
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.341,
+            0.171
+          ],
+          "face": [
+            4.8,
+            0.171
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.684,
+            -0.395
+          ],
+          "yaw": -171.5,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.103
+          ],
+          "face": [
+            3.531,
+            0.171
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 38.0,
+      "ball": [
+        3.567,
+        0.181
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.427,
+            0.19
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.374,
+            0.18
+          ],
+          "face": [
+            4.8,
+            0.18
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.696,
+            -0.393
+          ],
+          "yaw": -171.3,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.108
+          ],
+          "face": [
+            3.564,
+            0.18
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 38.4,
+      "ball": [
+        3.6,
+        0.189
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.46,
+            0.198
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.407,
+            0.189
+          ],
+          "face": [
+            4.8,
+            0.189
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.707,
+            -0.391
+          ],
+          "yaw": -171.0,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.113
+          ],
+          "face": [
+            3.597,
+            0.189
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 38.8,
+      "ball": [
+        3.633,
+        0.198
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.493,
+            0.207
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.439,
+            0.197
+          ],
+          "face": [
+            4.8,
+            0.197
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.719,
+            -0.389
+          ],
+          "yaw": -170.8,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.118
+          ],
+          "face": [
+            3.629,
+            0.197
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 39.2,
+      "ball": [
+        3.666,
+        0.207
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.525,
+            0.216
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.472,
+            0.206
+          ],
+          "face": [
+            4.8,
+            0.206
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.73,
+            -0.388
+          ],
+          "yaw": -170.5,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.122
+          ],
+          "face": [
+            3.662,
+            0.206
+          ],
+          "action": "left20",
+          "stage": "RECOVERY_CHANGE_HEADING"
+        }
+      }
+    },
+    {
+      "t": 39.6,
+      "ball": [
+        3.699,
+        0.216
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.558,
+            0.225
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.505,
+            0.215
+          ],
+          "face": [
+            4.8,
+            0.215
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.742,
+            -0.386
+          ],
+          "yaw": -170.3,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.127
+          ],
+          "face": [
+            3.695,
+            0.215
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 40.0,
+      "ball": [
+        3.732,
+        0.225
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.591,
+            0.234
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.538,
+            0.224
+          ],
+          "face": [
+            4.8,
+            0.224
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.753,
+            -0.384
+          ],
+          "yaw": -170.0,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.132
+          ],
+          "face": [
+            3.728,
+            0.224
+          ],
+          "action": "left20",
+          "stage": "RECOVERY_CHANGE_HEADING"
+        }
+      }
+    },
+    {
+      "t": 40.4,
+      "ball": [
+        3.764,
+        0.234
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.624,
+            0.243
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.571,
+            0.233
+          ],
+          "face": [
+            4.8,
+            0.233
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.765,
+            -0.382
+          ],
+          "yaw": -169.8,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.137
+          ],
+          "face": [
+            3.761,
+            0.233
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 40.8,
+      "ball": [
+        3.797,
+        0.243
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.657,
+            0.251
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.604,
+            0.242
+          ],
+          "face": [
+            4.8,
+            0.242
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.776,
+            -0.38
+          ],
+          "yaw": -169.5,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.142
+          ],
+          "face": [
+            3.794,
+            0.242
+          ],
+          "action": "left20",
+          "stage": "RECOVERY_CHANGE_HEADING"
+        }
+      }
+    },
+    {
+      "t": 41.2,
+      "ball": [
+        3.83,
+        0.251
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.69,
+            0.26
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.637,
+            0.251
+          ],
+          "face": [
+            4.8,
+            0.251
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.788,
+            -0.377
+          ],
+          "yaw": -169.3,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.147
+          ],
+          "face": [
+            3.827,
+            0.251
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 41.6,
+      "ball": [
+        3.863,
+        0.26
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.723,
+            0.269
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.67,
+            0.259
+          ],
+          "face": [
+            4.8,
+            0.259
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.799,
+            -0.375
+          ],
+          "yaw": -169.0,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.152
+          ],
+          "face": [
+            3.86,
+            0.259
+          ],
+          "action": "left20",
+          "stage": "RECOVERY_CHANGE_HEADING"
+        }
+      }
+    },
+    {
+      "t": 42.0,
+      "ball": [
+        3.896,
+        0.269
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.756,
+            0.278
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.703,
+            0.268
+          ],
+          "face": [
+            4.8,
+            0.268
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.811,
+            -0.373
+          ],
+          "yaw": -168.8,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.156
+          ],
+          "face": [
+            3.893,
+            0.268
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 42.4,
+      "ball": [
+        3.929,
+        0.278
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.789,
+            0.287
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.736,
+            0.277
+          ],
+          "face": [
+            4.8,
+            0.277
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.821,
+            -0.371
+          ],
+          "yaw": -168.5,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.161
+          ],
+          "face": [
+            3.926,
+            0.277
+          ],
+          "action": "left20",
+          "stage": "RECOVERY_CHANGE_HEADING"
+        }
+      }
+    },
+    {
+      "t": 42.8,
+      "ball": [
+        3.962,
+        0.287
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.822,
+            0.296
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.769,
+            0.286
+          ],
+          "face": [
+            4.8,
+            0.286
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.833,
+            -0.368
+          ],
+          "yaw": -168.3,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.166
+          ],
+          "face": [
+            3.959,
+            0.286
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 43.2,
+      "ball": [
+        3.995,
+        0.296
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.855,
+            0.305
+          ],
+          "yaw": 15.0,
+          "decision": "DRIBBLE",
+          "target": [
+            3.802,
+            0.295
+          ],
+          "face": [
+            4.8,
+            0.295
+          ],
+          "action": "walk",
+          "stage": "DRIBBLE_TOWARD_GOAL"
+        },
+        "BlueDefender": {
+          "position": [
+            2.844,
+            -0.366
+          ],
+          "yaw": -167.9,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.171
+          ],
+          "face": [
+            3.992,
+            0.295
+          ],
+          "action": "left20",
+          "stage": "RECOVERY_CHANGE_HEADING"
+        }
+      }
+    },
+    {
+      "t": 43.6,
+      "ball": [
+        4.01,
+        0.3
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.863,
+            0.299
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            3.84,
+            0.25
+          ],
+          "face": [
+            4.8,
+            0.3
+          ],
+          "action": "step_right",
+          "stage": "ALIGN_FOOT_LATERALLY"
+        },
+        "BlueDefender": {
+          "position": [
+            2.858,
+            -0.363
+          ],
+          "yaw": -167.9,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.165
+          ],
+          "face": [
+            4.01,
+            0.3
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 44.0,
+      "ball": [
+        4.01,
+        0.3
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.866,
+            0.291
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            3.84,
+            0.25
+          ],
+          "face": [
+            4.8,
+            0.3
+          ],
+          "action": "step_right",
+          "stage": "ALIGN_FOOT_LATERALLY"
+        },
+        "BlueDefender": {
+          "position": [
+            2.871,
+            -0.36
+          ],
+          "yaw": -167.9,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.165
+          ],
+          "face": [
+            4.01,
+            0.3
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 44.4,
+      "ball": [
+        4.01,
+        0.3
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.868,
+            0.282
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            3.84,
+            0.25
+          ],
+          "face": [
+            4.8,
+            0.3
+          ],
+          "action": "step_right",
+          "stage": "ALIGN_FOOT_LATERALLY"
+        },
+        "BlueDefender": {
+          "position": [
+            2.884,
+            -0.357
+          ],
+          "yaw": -167.9,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.165
+          ],
+          "face": [
+            4.01,
+            0.3
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 44.8,
+      "ball": [
+        4.01,
+        0.3
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.87,
+            0.274
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            3.84,
+            0.25
+          ],
+          "face": [
+            4.8,
+            0.3
+          ],
+          "action": "step_right",
+          "stage": "ALIGN_FOOT_LATERALLY"
+        },
+        "BlueDefender": {
+          "position": [
+            2.898,
+            -0.355
+          ],
+          "yaw": -167.9,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.165
+          ],
+          "face": [
+            4.01,
+            0.3
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 45.2,
+      "ball": [
+        4.01,
+        0.3
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            3.84,
+            0.25
+          ],
+          "face": [
+            4.8,
+            0.3
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            2.91,
+            -0.352
+          ],
+          "yaw": -167.8,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.165
+          ],
+          "face": [
+            4.01,
+            0.3
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 45.6,
+      "ball": [
+        4.01,
+        0.3
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            3.84,
+            0.25
+          ],
+          "face": [
+            4.8,
+            0.3
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            2.922,
+            -0.349
+          ],
+          "yaw": -167.6,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.165
+          ],
+          "face": [
+            4.01,
+            0.3
+          ],
+          "action": "left20",
+          "stage": "RECOVERY_CHANGE_HEADING"
+        }
+      }
+    },
+    {
+      "t": 46.0,
+      "ball": [
+        4.01,
+        0.3
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            3.84,
+            0.25
+          ],
+          "face": [
+            4.8,
+            0.3
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            2.935,
+            -0.346
+          ],
+          "yaw": -167.6,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.165
+          ],
+          "face": [
+            4.01,
+            0.3
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 46.4,
+      "ball": [
+        4.01,
+        0.3
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            3.84,
+            0.25
+          ],
+          "face": [
+            4.8,
+            0.3
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            2.947,
+            -0.344
+          ],
+          "yaw": -167.4,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.165
+          ],
+          "face": [
+            4.01,
+            0.3
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 46.8,
+      "ball": [
+        4.01,
+        0.3
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            3.84,
+            0.25
+          ],
+          "face": [
+            4.8,
+            0.3
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            2.96,
+            -0.341
+          ],
+          "yaw": -167.4,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.165
+          ],
+          "face": [
+            4.01,
+            0.3
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 47.2,
+      "ball": [
+        4.01,
+        0.3
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            3.84,
+            0.25
+          ],
+          "face": [
+            4.8,
+            0.3
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            2.972,
+            -0.338
+          ],
+          "yaw": -167.3,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.165
+          ],
+          "face": [
+            4.01,
+            0.3
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 47.6,
+      "ball": [
+        4.01,
+        0.3
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            3.84,
+            0.25
+          ],
+          "face": [
+            4.8,
+            0.3
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            2.986,
+            -0.335
+          ],
+          "yaw": -167.3,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.165
+          ],
+          "face": [
+            4.01,
+            0.3
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 48.0,
+      "ball": [
+        4.01,
+        0.3
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            3.84,
+            0.25
+          ],
+          "face": [
+            4.8,
+            0.3
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            2.998,
+            -0.332
+          ],
+          "yaw": -167.1,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.165
+          ],
+          "face": [
+            4.01,
+            0.3
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 48.4,
+      "ball": [
+        4.01,
+        0.3
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            3.84,
+            0.25
+          ],
+          "face": [
+            4.8,
+            0.3
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            3.01,
+            -0.33
+          ],
+          "yaw": -166.9,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.165
+          ],
+          "face": [
+            4.01,
+            0.3
+          ],
+          "action": "left20",
+          "stage": "RECOVERY_CHANGE_HEADING"
+        }
+      }
+    },
+    {
+      "t": 48.8,
+      "ball": [
+        4.01,
+        0.3
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            3.84,
+            0.25
+          ],
+          "face": [
+            4.8,
+            0.3
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            3.023,
+            -0.327
+          ],
+          "yaw": -166.9,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.165
+          ],
+          "face": [
+            4.01,
+            0.3
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 49.2,
+      "ball": [
+        4.01,
+        0.3
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            3.84,
+            0.25
+          ],
+          "face": [
+            4.8,
+            0.3
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            3.035,
+            -0.324
+          ],
+          "yaw": -166.8,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.165
+          ],
+          "face": [
+            4.01,
+            0.3
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 49.6,
+      "ball": [
+        4.01,
+        0.3
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            3.84,
+            0.25
+          ],
+          "face": [
+            4.8,
+            0.3
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            3.048,
+            -0.321
+          ],
+          "yaw": -166.8,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.165
+          ],
+          "face": [
+            4.01,
+            0.3
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 50.0,
+      "ball": [
+        4.05,
+        0.31
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            3.86,
+            0.255
+          ],
+          "face": [
+            4.8,
+            0.305
+          ],
+          "action": "stand",
+          "stage": "EXECUTE_KICK"
+        },
+        "BlueDefender": {
+          "position": [
+            3.059,
+            -0.318
+          ],
+          "yaw": -166.4,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.226
+          ],
+          "face": [
+            4.03,
+            0.305
+          ],
+          "action": "left20",
+          "stage": "RECOVERY_CHANGE_HEADING"
+        }
+      }
+    },
+    {
+      "t": 50.4,
+      "ball": [
+        4.218,
+        0.355
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.034,
+            0.301
+          ],
+          "face": [
+            4.8,
+            0.351
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            3.059,
+            -0.318
+          ],
+          "yaw": -164.7,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.236
+          ],
+          "face": [
+            4.204,
+            0.351
+          ],
+          "action": "left20",
+          "stage": "RECOVERY_CHANGE_HEADING"
+        }
+      }
+    },
+    {
+      "t": 50.8,
+      "ball": [
+        4.333,
+        0.385
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.154,
+            0.333
+          ],
+          "face": [
+            4.8,
+            0.383
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            3.063,
+            -0.317
+          ],
+          "yaw": -163.6,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.237
+          ],
+          "face": [
+            4.324,
+            0.383
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 51.2,
+      "ball": [
+        4.393,
+        0.401
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.219,
+            0.35
+          ],
+          "face": [
+            4.8,
+            0.4
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            3.076,
+            -0.313
+          ],
+          "yaw": -163.6,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.231
+          ],
+          "face": [
+            4.389,
+            0.4
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 51.6,
+      "ball": [
+        4.403,
+        0.404
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.233,
+            0.354
+          ],
+          "face": [
+            4.8,
+            0.404
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            3.089,
+            -0.309
+          ],
+          "yaw": -163.6,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            4.3,
+            0.112
+          ],
+          "face": [
+            4.402,
+            0.404
+          ],
+          "action": "back",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 52.0,
+      "ball": [
+        4.403,
+        0.404
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.233,
+            0.354
+          ],
+          "face": [
+            4.8,
+            0.404
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            3.102,
+            -0.305
+          ],
+          "yaw": -163.6,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            4.3,
+            0.112
+          ],
+          "face": [
+            4.402,
+            0.404
+          ],
+          "action": "back",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 52.4,
+      "ball": [
+        4.403,
+        0.404
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.233,
+            0.354
+          ],
+          "face": [
+            4.8,
+            0.404
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            3.115,
+            -0.302
+          ],
+          "yaw": -163.6,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            4.3,
+            0.112
+          ],
+          "face": [
+            4.403,
+            0.404
+          ],
+          "action": "back",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 52.8,
+      "ball": [
+        4.403,
+        0.404
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.233,
+            0.354
+          ],
+          "face": [
+            4.8,
+            0.404
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            3.128,
+            -0.298
+          ],
+          "yaw": -163.6,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            4.3,
+            0.112
+          ],
+          "face": [
+            4.403,
+            0.404
+          ],
+          "action": "back",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 53.2,
+      "ball": [
+        4.403,
+        0.404
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.233,
+            0.354
+          ],
+          "face": [
+            4.8,
+            0.404
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            3.141,
+            -0.294
+          ],
+          "yaw": -163.6,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            4.3,
+            0.112
+          ],
+          "face": [
+            4.403,
+            0.404
+          ],
+          "action": "back",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 53.6,
+      "ball": [
+        4.403,
+        0.404
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.233,
+            0.354
+          ],
+          "face": [
+            4.8,
+            0.404
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            3.154,
+            -0.29
+          ],
+          "yaw": -163.6,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            4.3,
+            0.112
+          ],
+          "face": [
+            4.403,
+            0.404
+          ],
+          "action": "back",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 54.0,
+      "ball": [
+        4.403,
+        0.404
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.233,
+            0.354
+          ],
+          "face": [
+            4.8,
+            0.404
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            3.168,
+            -0.286
+          ],
+          "yaw": -163.6,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            4.3,
+            0.112
+          ],
+          "face": [
+            4.403,
+            0.404
+          ],
+          "action": "back",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 54.4,
+      "ball": [
+        4.403,
+        0.404
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.233,
+            0.354
+          ],
+          "face": [
+            4.8,
+            0.404
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            3.181,
+            -0.282
+          ],
+          "yaw": -163.6,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            4.3,
+            0.112
+          ],
+          "face": [
+            4.403,
+            0.404
+          ],
+          "action": "back",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 54.8,
+      "ball": [
+        4.403,
+        0.404
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.872,
+            0.268
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.233,
+            0.354
+          ],
+          "face": [
+            4.8,
+            0.404
+          ],
+          "action": "stand",
+          "stage": "EXECUTING_MOTION"
+        },
+        "BlueDefender": {
+          "position": [
+            3.194,
+            -0.278
+          ],
+          "yaw": -163.6,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            4.3,
+            0.112
+          ],
+          "face": [
+            4.403,
+            0.404
+          ],
+          "action": "back",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 55.2,
+      "ball": [
+        4.403,
+        0.404
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.895,
+            0.272
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.233,
+            0.354
+          ],
+          "face": [
+            4.8,
+            0.404
+          ],
+          "action": "walk",
+          "stage": "CLOSE_BALL_DISTANCE"
+        },
+        "BlueDefender": {
+          "position": [
+            3.207,
+            -0.274
+          ],
+          "yaw": -163.6,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            4.3,
+            0.112
+          ],
+          "face": [
+            4.403,
+            0.404
+          ],
+          "action": "back",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 55.6,
+      "ball": [
+        4.403,
+        0.404
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.928,
+            0.281
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.233,
+            0.354
+          ],
+          "face": [
+            4.8,
+            0.404
+          ],
+          "action": "walk",
+          "stage": "CLOSE_BALL_DISTANCE"
+        },
+        "BlueDefender": {
+          "position": [
+            3.22,
+            -0.271
+          ],
+          "yaw": -163.6,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            4.3,
+            0.112
+          ],
+          "face": [
+            4.403,
+            0.404
+          ],
+          "action": "back",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 56.0,
+      "ball": [
+        4.403,
+        0.404
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.961,
+            0.29
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.233,
+            0.354
+          ],
+          "face": [
+            4.8,
+            0.404
+          ],
+          "action": "walk",
+          "stage": "CLOSE_BALL_DISTANCE"
+        },
+        "BlueDefender": {
+          "position": [
+            3.233,
+            -0.267
+          ],
+          "yaw": -163.6,
+          "decision": "DEFENSIVE_INTERCEPT",
+          "target": [
+            4.3,
+            0.112
+          ],
+          "face": [
+            4.403,
+            0.404
+          ],
+          "action": "back",
+          "stage": "INTERCEPT_MOVE_EARLY"
+        }
+      }
+    },
+    {
+      "t": 56.4,
+      "ball": [
+        4.403,
+        0.404
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            3.994,
+            0.299
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.233,
+            0.354
+          ],
+          "face": [
+            4.8,
+            0.404
+          ],
+          "action": "walk",
+          "stage": "CLOSE_BALL_DISTANCE"
+        },
+        "BlueDefender": {
+          "position": [
+            3.238,
+            -0.265
+          ],
+          "yaw": -162.5,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.222
+          ],
+          "face": [
+            4.403,
+            0.404
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 56.8,
+      "ball": [
+        4.403,
+        0.404
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            4.027,
+            0.307
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.233,
+            0.354
+          ],
+          "face": [
+            4.8,
+            0.404
+          ],
+          "action": "walk",
+          "stage": "CLOSE_BALL_DISTANCE"
+        },
+        "BlueDefender": {
+          "position": [
+            3.25,
+            -0.261
+          ],
+          "yaw": -162.4,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.222
+          ],
+          "face": [
+            4.403,
+            0.404
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 57.2,
+      "ball": [
+        4.403,
+        0.404
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            4.06,
+            0.316
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.233,
+            0.354
+          ],
+          "face": [
+            4.8,
+            0.404
+          ],
+          "action": "walk",
+          "stage": "CLOSE_BALL_DISTANCE"
+        },
+        "BlueDefender": {
+          "position": [
+            3.263,
+            -0.257
+          ],
+          "yaw": -162.4,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.222
+          ],
+          "face": [
+            4.403,
+            0.404
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 57.6,
+      "ball": [
+        4.403,
+        0.404
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            4.093,
+            0.325
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.233,
+            0.354
+          ],
+          "face": [
+            4.8,
+            0.404
+          ],
+          "action": "walk",
+          "stage": "CLOSE_BALL_DISTANCE"
+        },
+        "BlueDefender": {
+          "position": [
+            3.275,
+            -0.254
+          ],
+          "yaw": -162.2,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.222
+          ],
+          "face": [
+            4.403,
+            0.404
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 58.0,
+      "ball": [
+        4.403,
+        0.404
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            4.126,
+            0.334
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.233,
+            0.354
+          ],
+          "face": [
+            4.8,
+            0.404
+          ],
+          "action": "walk",
+          "stage": "CLOSE_BALL_DISTANCE"
+        },
+        "BlueDefender": {
+          "position": [
+            3.286,
+            -0.25
+          ],
+          "yaw": -162.0,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.222
+          ],
+          "face": [
+            4.403,
+            0.404
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 58.4,
+      "ball": [
+        4.432,
+        0.412
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            4.159,
+            0.343
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.259,
+            0.361
+          ],
+          "face": [
+            4.8,
+            0.411
+          ],
+          "action": "walk",
+          "stage": "CLOSE_BALL_DISTANCE"
+        },
+        "BlueDefender": {
+          "position": [
+            3.294,
+            -0.247
+          ],
+          "yaw": -161.4,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.235
+          ],
+          "face": [
+            4.429,
+            0.411
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 58.8,
+      "ball": [
+        4.465,
+        0.42
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            4.192,
+            0.352
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.292,
+            0.37
+          ],
+          "face": [
+            4.8,
+            0.42
+          ],
+          "action": "walk",
+          "stage": "CLOSE_BALL_DISTANCE"
+        },
+        "BlueDefender": {
+          "position": [
+            3.305,
+            -0.244
+          ],
+          "yaw": -161.0,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.24
+          ],
+          "face": [
+            4.462,
+            0.42
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 59.2,
+      "ball": [
+        4.498,
+        0.429
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            4.225,
+            0.361
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.325,
+            0.378
+          ],
+          "face": [
+            4.8,
+            0.428
+          ],
+          "action": "walk",
+          "stage": "CLOSE_BALL_DISTANCE"
+        },
+        "BlueDefender": {
+          "position": [
+            3.315,
+            -0.24
+          ],
+          "yaw": -160.7,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.245
+          ],
+          "face": [
+            4.495,
+            0.428
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 59.6,
+      "ball": [
+        4.531,
+        0.438
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            4.258,
+            0.369
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.358,
+            0.387
+          ],
+          "face": [
+            4.8,
+            0.437
+          ],
+          "action": "walk",
+          "stage": "CLOSE_BALL_DISTANCE"
+        },
+        "BlueDefender": {
+          "position": [
+            3.325,
+            -0.236
+          ],
+          "yaw": -160.4,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.249
+          ],
+          "face": [
+            4.528,
+            0.437
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    },
+    {
+      "t": 60.0,
+      "ball": [
+        4.564,
+        0.447
+      ],
+      "touch": "RedForwardA",
+      "players": {
+        "RedForwardA": {
+          "position": [
+            4.29,
+            0.378
+          ],
+          "yaw": 15.0,
+          "decision": "SHOOT",
+          "target": [
+            4.391,
+            0.396
+          ],
+          "face": [
+            4.8,
+            0.446
+          ],
+          "action": "walk",
+          "stage": "CLOSE_BALL_DISTANCE"
+        },
+        "BlueDefender": {
+          "position": [
+            3.335,
+            -0.233
+          ],
+          "yaw": -160.0,
+          "decision": "RECOVER_DEFENCE",
+          "target": [
+            4.18,
+            0.254
+          ],
+          "face": [
+            4.561,
+            0.446
+          ],
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK"
+        }
+      }
+    }
+  ],
+  "events": [
+    {
+      "event": "foot_control_change",
+      "time": 0.2,
+      "robot": "RedForwardA",
+      "source": "push",
+      "point": [
+        0.7611781900674255,
+        -0.6145964954715737
+      ]
+    },
+    {
+      "event": "contact",
+      "time": 0.2,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 17.08,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 17.12,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 17.12,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 17.16,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 17.16,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 17.2,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 17.2,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 17.24,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 17.24,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 17.32,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 17.32,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 17.44,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 17.44,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 17.56,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 17.56,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 17.64,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 17.64,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 17.76,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 17.76,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 17.88,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 17.88,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 18.0,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 18.0,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 18.12,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 18.12,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 18.2,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 18.28,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 18.32,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 18.32,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 18.4,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 18.48,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 18.56,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 18.64,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 18.68,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 18.68,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 18.76,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 18.84,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 18.88,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 18.88,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 18.96,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 19.04,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 19.08,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 19.08,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 19.12,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 19.12,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 19.2,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 19.28,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 19.32,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 19.32,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 19.4,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 19.48,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 19.52,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 19.52,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 19.56,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "contact",
+      "time": 19.56,
+      "robot": "BlueDefender"
+    },
+    {
+      "event": "contact",
+      "time": 19.6,
+      "robot": "RedForwardA"
+    },
+    {
+      "event": "kick_start",
+      "time": 45.12,
+      "robot": "RedForwardA",
+      "action": "shoot",
+      "receiver": ""
+    },
+    {
+      "event": "kick_contact",
+      "time": 49.96,
+      "robot": "RedForwardA",
+      "action": "shoot"
+    },
+    {
+      "event": "kick_start",
+      "time": 50.0,
+      "robot": "RedForwardA",
+      "action": "shoot",
+      "receiver": ""
+    },
+    {
+      "event": "goal",
+      "team": "RED",
+      "time": 60.119999999998896
+    },
+    {
+      "event": "phase",
+      "phase": "READY",
+      "time": 60.119999999998896
+    },
+    {
+      "event": "restart",
+      "kind": "KICKOFF",
+      "team": "BLUE",
+      "point": [
+        0,
+        0,
+        0.07
+      ],
+      "time": 60.119999999998896
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "start_utc": "2026-11-19T14:54:02+00:00",
+  "end_utc": "2026-11-19T15:24:13.789496+00:00",
+  "elapsed_seconds": 1811.789496,
+  "paired_final_fixtures": 1000,
+  "unit_regressions_passed": 31,
+  "spawn_seeds_checked": 5000,
+  "selection_frozen_before_final_holdout": true,
+  "live_sources_match_frozen_selection": true,
+  "motion_rates_and_contact_physics_unchanged": true,
+  "simulation_step_change": "Terminal stop hook before post-result policy execution",
+  "browser_runtime_errors": 0,
+  "continuous_play_rounds_started": 8,
+  "continuous_browser_wall_seconds": 120.379,
+  "offline_five_examples_checked": true,
+  "zip_matches_workspace": true,
+  "three_dimensional_project_not_modified": true,
+  "git_commit_or_push_performed": false,
+  "zip_sha256": "2fc299fa7a919af96dd5e91f073514660dad47e3df72764bc99f485e5514a8be",
+  "offline_html_sha256": "e7d168562d2672f82e92962ca8a0234004312e4c47269d165089c372268fc5cf",
+  "known_limitations": [
+    "Productive post-regain advances declined from 12 to 9 in the 1000 paired fixtures.",
+    "Near-goal long stalls increased from 16 to 18, despite aggregate reduction 55 to 39.",
+    "33 of 1000 final fixtures timed out; 32 ended in stationary close contests.",
+    "2D exact-state results do not establish 3D or hardware behaviour."
+  ]
+}

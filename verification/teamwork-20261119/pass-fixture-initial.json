@@ -1,0 +1,1322 @@
+[
+  {
+    "seed": 0,
+    "stats": {
+      "RED": {
+        "playing_player_seconds": 120.00000000000756,
+        "decision_transitions": 7,
+        "action_transitions": 336,
+        "pass_attempts": 1,
+        "contact_transitions": 2,
+        "kick_contacts": 1,
+        "completed_passes": 1
+      },
+      "BLUE": {
+        "playing_player_seconds": 59.9999999999989,
+        "decision_transitions": 1,
+        "action_transitions": 1
+      }
+    },
+    "passes": [
+      {
+        "event": "kick_start",
+        "time": 10.08,
+        "robot": "RedForwardA",
+        "action": "pass",
+        "receiver": "RedForwardB"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "source": "kick",
+        "point": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "event": "kick_contact",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "action": "pass"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 29.32,
+        "robot": "RedForwardB",
+        "source": "push",
+        "point": [
+          0.24527478195825714,
+          0.1815226245893347
+        ]
+      },
+      {
+        "event": "pass_result",
+        "time": 29.32,
+        "sender": "RedForwardA",
+        "receiver": "RedForwardB",
+        "completed": true
+      }
+    ],
+    "final_ball": [
+      0.23611507514487637,
+      0.17352803170302794,
+      0.07
+    ]
+  },
+  {
+    "seed": 1,
+    "stats": {
+      "RED": {
+        "playing_player_seconds": 120.00000000000756,
+        "decision_transitions": 7,
+        "action_transitions": 338,
+        "pass_attempts": 1,
+        "contact_transitions": 2,
+        "kick_contacts": 1,
+        "completed_passes": 1
+      },
+      "BLUE": {
+        "playing_player_seconds": 59.9999999999989,
+        "decision_transitions": 1,
+        "action_transitions": 1
+      }
+    },
+    "passes": [
+      {
+        "event": "kick_start",
+        "time": 10.08,
+        "robot": "RedForwardA",
+        "action": "pass",
+        "receiver": "RedForwardB"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "source": "kick",
+        "point": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "event": "kick_contact",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "action": "pass"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 29.12,
+        "robot": "RedForwardB",
+        "source": "push",
+        "point": [
+          0.2438165647015725,
+          0.18347660526507203
+        ]
+      },
+      {
+        "event": "pass_result",
+        "time": 29.12,
+        "sender": "RedForwardA",
+        "receiver": "RedForwardB",
+        "completed": true
+      }
+    ],
+    "final_ball": [
+      0.23456332067678112,
+      0.17559046429863334,
+      0.07
+    ]
+  },
+  {
+    "seed": 2,
+    "stats": {
+      "RED": {
+        "playing_player_seconds": 120.00000000000756,
+        "decision_transitions": 6,
+        "action_transitions": 335,
+        "pass_attempts": 1,
+        "contact_transitions": 2,
+        "kick_contacts": 1,
+        "completed_passes": 1
+      },
+      "BLUE": {
+        "playing_player_seconds": 59.9999999999989,
+        "decision_transitions": 1,
+        "action_transitions": 1
+      }
+    },
+    "passes": [
+      {
+        "event": "kick_start",
+        "time": 10.08,
+        "robot": "RedForwardA",
+        "action": "pass",
+        "receiver": "RedForwardB"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "source": "kick",
+        "point": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "event": "kick_contact",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "action": "pass"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 30.6,
+        "robot": "RedForwardB",
+        "source": "push",
+        "point": [
+          0.25818410890251203,
+          0.1626380884439035
+        ]
+      },
+      {
+        "event": "pass_result",
+        "time": 30.6,
+        "sender": "RedForwardA",
+        "receiver": "RedForwardB",
+        "completed": true
+      }
+    ],
+    "final_ball": [
+      0.24971400243661732,
+      0.1539162170402833,
+      0.07
+    ]
+  },
+  {
+    "seed": 3,
+    "stats": {
+      "RED": {
+        "playing_player_seconds": 120.00000000000756,
+        "decision_transitions": 6,
+        "action_transitions": 336,
+        "pass_attempts": 1,
+        "contact_transitions": 2,
+        "kick_contacts": 1,
+        "completed_passes": 1
+      },
+      "BLUE": {
+        "playing_player_seconds": 59.9999999999989,
+        "decision_transitions": 1,
+        "action_transitions": 1
+      }
+    },
+    "passes": [
+      {
+        "event": "kick_start",
+        "time": 10.08,
+        "robot": "RedForwardA",
+        "action": "pass",
+        "receiver": "RedForwardB"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "source": "kick",
+        "point": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "event": "kick_contact",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "action": "pass"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 30.68,
+        "robot": "RedForwardB",
+        "source": "push",
+        "point": [
+          0.2593938440769438,
+          0.16070163520467748
+        ]
+      },
+      {
+        "event": "pass_result",
+        "time": 30.68,
+        "sender": "RedForwardA",
+        "receiver": "RedForwardB",
+        "completed": true
+      }
+    ],
+    "final_ball": [
+      0.25097525528984616,
+      0.1519300271902576,
+      0.07
+    ]
+  },
+  {
+    "seed": 4,
+    "stats": {
+      "RED": {
+        "playing_player_seconds": 120.00000000000756,
+        "decision_transitions": 7,
+        "action_transitions": 330,
+        "pass_attempts": 1,
+        "contact_transitions": 2,
+        "kick_contacts": 1,
+        "completed_passes": 1
+      },
+      "BLUE": {
+        "playing_player_seconds": 59.9999999999989,
+        "decision_transitions": 1,
+        "action_transitions": 1
+      }
+    },
+    "passes": [
+      {
+        "event": "kick_start",
+        "time": 10.08,
+        "robot": "RedForwardA",
+        "action": "pass",
+        "receiver": "RedForwardB"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "source": "kick",
+        "point": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "event": "kick_contact",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "action": "pass"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 29.64,
+        "robot": "RedForwardB",
+        "source": "push",
+        "point": [
+          0.24848491632625136,
+          0.1771028747954334
+        ]
+      },
+      {
+        "event": "pass_result",
+        "time": 29.64,
+        "sender": "RedForwardA",
+        "receiver": "RedForwardB",
+        "completed": true
+      }
+    ],
+    "final_ball": [
+      0.239491950130016,
+      0.16892116939140855,
+      0.07
+    ]
+  },
+  {
+    "seed": 5,
+    "stats": {
+      "RED": {
+        "playing_player_seconds": 120.00000000000756,
+        "decision_transitions": 7,
+        "action_transitions": 340,
+        "pass_attempts": 1,
+        "contact_transitions": 2,
+        "kick_contacts": 1,
+        "completed_passes": 1
+      },
+      "BLUE": {
+        "playing_player_seconds": 59.9999999999989,
+        "decision_transitions": 1,
+        "action_transitions": 1
+      }
+    },
+    "passes": [
+      {
+        "event": "kick_start",
+        "time": 10.08,
+        "robot": "RedForwardA",
+        "action": "pass",
+        "receiver": "RedForwardB"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "source": "kick",
+        "point": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "event": "kick_contact",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "action": "pass"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 30.08,
+        "robot": "RedForwardB",
+        "source": "push",
+        "point": [
+          0.2536308235964336,
+          0.1696513696504271
+        ]
+      },
+      {
+        "event": "pass_result",
+        "time": 30.08,
+        "sender": "RedForwardA",
+        "receiver": "RedForwardB",
+        "completed": true
+      }
+    ],
+    "final_ball": [
+      0.24488266962352045,
+      0.1612084112594906,
+      0.07
+    ]
+  },
+  {
+    "seed": 6,
+    "stats": {
+      "RED": {
+        "playing_player_seconds": 120.00000000000756,
+        "decision_transitions": 7,
+        "action_transitions": 340,
+        "pass_attempts": 1,
+        "contact_transitions": 2,
+        "kick_contacts": 1,
+        "completed_passes": 1
+      },
+      "BLUE": {
+        "playing_player_seconds": 59.9999999999989,
+        "decision_transitions": 1,
+        "action_transitions": 1
+      }
+    },
+    "passes": [
+      {
+        "event": "kick_start",
+        "time": 10.08,
+        "robot": "RedForwardA",
+        "action": "pass",
+        "receiver": "RedForwardB"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "source": "kick",
+        "point": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "event": "kick_contact",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "action": "pass"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 30.08,
+        "robot": "RedForwardB",
+        "source": "push",
+        "point": [
+          0.253833015282167,
+          0.16934870018761378
+        ]
+      },
+      {
+        "event": "pass_result",
+        "time": 30.08,
+        "sender": "RedForwardA",
+        "receiver": "RedForwardB",
+        "completed": true
+      }
+    ],
+    "final_ball": [
+      0.2450848613092539,
+      0.16090574179667727,
+      0.07
+    ]
+  },
+  {
+    "seed": 7,
+    "stats": {
+      "RED": {
+        "playing_player_seconds": 120.00000000000756,
+        "decision_transitions": 7,
+        "action_transitions": 338,
+        "pass_attempts": 1,
+        "contact_transitions": 2,
+        "kick_contacts": 1,
+        "completed_passes": 1
+      },
+      "BLUE": {
+        "playing_player_seconds": 59.9999999999989,
+        "decision_transitions": 1,
+        "action_transitions": 1
+      }
+    },
+    "passes": [
+      {
+        "event": "kick_start",
+        "time": 10.08,
+        "robot": "RedForwardA",
+        "action": "pass",
+        "receiver": "RedForwardB"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "source": "kick",
+        "point": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "event": "kick_contact",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "action": "pass"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 29.8,
+        "robot": "RedForwardB",
+        "source": "push",
+        "point": [
+          0.25094442855594784,
+          0.17360033317709944
+        ]
+      },
+      {
+        "event": "pass_result",
+        "time": 29.8,
+        "sender": "RedForwardA",
+        "receiver": "RedForwardB",
+        "completed": true
+      }
+    ],
+    "final_ball": [
+      0.24204846312941605,
+      0.16531326231612375,
+      0.07
+    ]
+  },
+  {
+    "seed": 8,
+    "stats": {
+      "RED": {
+        "playing_player_seconds": 120.00000000000756,
+        "decision_transitions": 7,
+        "action_transitions": 339,
+        "pass_attempts": 1,
+        "contact_transitions": 2,
+        "kick_contacts": 1,
+        "completed_passes": 1
+      },
+      "BLUE": {
+        "playing_player_seconds": 59.9999999999989,
+        "decision_transitions": 1,
+        "action_transitions": 1
+      }
+    },
+    "passes": [
+      {
+        "event": "kick_start",
+        "time": 10.08,
+        "robot": "RedForwardA",
+        "action": "pass",
+        "receiver": "RedForwardB"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "source": "kick",
+        "point": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "event": "kick_contact",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "action": "pass"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 30.28,
+        "robot": "RedForwardB",
+        "source": "push",
+        "point": [
+          0.25497556727682413,
+          0.1676235126536039
+        ]
+      },
+      {
+        "event": "pass_result",
+        "time": 30.28,
+        "sender": "RedForwardA",
+        "receiver": "RedForwardB",
+        "completed": true
+      }
+    ],
+    "final_ball": [
+      0.2463274745314081,
+      0.1590780907101558,
+      0.07
+    ]
+  },
+  {
+    "seed": 9,
+    "stats": {
+      "RED": {
+        "playing_player_seconds": 120.00000000000756,
+        "decision_transitions": 7,
+        "action_transitions": 340,
+        "pass_attempts": 1,
+        "contact_transitions": 2,
+        "kick_contacts": 1,
+        "completed_passes": 1
+      },
+      "BLUE": {
+        "playing_player_seconds": 59.9999999999989,
+        "decision_transitions": 1,
+        "action_transitions": 1
+      }
+    },
+    "passes": [
+      {
+        "event": "kick_start",
+        "time": 10.08,
+        "robot": "RedForwardA",
+        "action": "pass",
+        "receiver": "RedForwardB"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "source": "kick",
+        "point": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "event": "kick_contact",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "action": "pass"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 30.12,
+        "robot": "RedForwardB",
+        "source": "push",
+        "point": [
+          0.2542598804769312,
+          0.16870712813135016
+        ]
+      },
+      {
+        "event": "pass_result",
+        "time": 30.12,
+        "sender": "RedForwardA",
+        "receiver": "RedForwardB",
+        "completed": true
+      }
+    ],
+    "final_ball": [
+      0.24553662854566957,
+      0.16023844345965402,
+      0.07
+    ]
+  },
+  {
+    "seed": 10,
+    "stats": {
+      "RED": {
+        "playing_player_seconds": 120.00000000000756,
+        "decision_transitions": 7,
+        "action_transitions": 334,
+        "pass_attempts": 1,
+        "contact_transitions": 2,
+        "kick_contacts": 1,
+        "completed_passes": 1
+      },
+      "BLUE": {
+        "playing_player_seconds": 59.9999999999989,
+        "decision_transitions": 1,
+        "action_transitions": 1
+      }
+    },
+    "passes": [
+      {
+        "event": "kick_start",
+        "time": 10.08,
+        "robot": "RedForwardA",
+        "action": "pass",
+        "receiver": "RedForwardB"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "source": "kick",
+        "point": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "event": "kick_contact",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "action": "pass"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 29.4,
+        "robot": "RedForwardB",
+        "source": "push",
+        "point": [
+          0.24683489157939603,
+          0.1793954241374594
+        ]
+      },
+      {
+        "event": "pass_result",
+        "time": 29.4,
+        "sender": "RedForwardA",
+        "receiver": "RedForwardB",
+        "completed": true
+      }
+    ],
+    "final_ball": [
+      0.2377224308243407,
+      0.1713470203632656,
+      0.07
+    ]
+  },
+  {
+    "seed": 11,
+    "stats": {
+      "RED": {
+        "playing_player_seconds": 120.00000000000756,
+        "decision_transitions": 7,
+        "action_transitions": 336,
+        "pass_attempts": 1,
+        "contact_transitions": 2,
+        "kick_contacts": 1,
+        "completed_passes": 1
+      },
+      "BLUE": {
+        "playing_player_seconds": 59.9999999999989,
+        "decision_transitions": 1,
+        "action_transitions": 1
+      }
+    },
+    "passes": [
+      {
+        "event": "kick_start",
+        "time": 10.08,
+        "robot": "RedForwardA",
+        "action": "pass",
+        "receiver": "RedForwardB"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "source": "kick",
+        "point": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "event": "kick_contact",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "action": "pass"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 29.2,
+        "robot": "RedForwardB",
+        "source": "push",
+        "point": [
+          0.24496420719595846,
+          0.18194152658292914
+        ]
+      },
+      {
+        "event": "pass_result",
+        "time": 29.2,
+        "sender": "RedForwardA",
+        "receiver": "RedForwardB",
+        "completed": true
+      }
+    ],
+    "final_ball": [
+      0.2357575720833363,
+      0.17400102192466502,
+      0.07
+    ]
+  },
+  {
+    "seed": 12,
+    "stats": {
+      "RED": {
+        "playing_player_seconds": 120.00000000000756,
+        "decision_transitions": 7,
+        "action_transitions": 340,
+        "pass_attempts": 1,
+        "contact_transitions": 2,
+        "kick_contacts": 1,
+        "completed_passes": 1
+      },
+      "BLUE": {
+        "playing_player_seconds": 59.9999999999989,
+        "decision_transitions": 1,
+        "action_transitions": 1
+      }
+    },
+    "passes": [
+      {
+        "event": "kick_start",
+        "time": 10.08,
+        "robot": "RedForwardA",
+        "action": "pass",
+        "receiver": "RedForwardB"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "source": "kick",
+        "point": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "event": "kick_contact",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "action": "pass"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 29.76,
+        "robot": "RedForwardB",
+        "source": "push",
+        "point": [
+          0.250503314818981,
+          0.1742362510133115
+        ]
+      },
+      {
+        "event": "pass_result",
+        "time": 29.76,
+        "sender": "RedForwardA",
+        "receiver": "RedForwardB",
+        "completed": true
+      }
+    ],
+    "final_ball": [
+      0.24158298294368552,
+      0.1659754142784845,
+      0.07
+    ]
+  },
+  {
+    "seed": 13,
+    "stats": {
+      "RED": {
+        "playing_player_seconds": 120.00000000000756,
+        "decision_transitions": 7,
+        "action_transitions": 341,
+        "pass_attempts": 1,
+        "contact_transitions": 2,
+        "kick_contacts": 1,
+        "completed_passes": 1
+      },
+      "BLUE": {
+        "playing_player_seconds": 59.9999999999989,
+        "decision_transitions": 1,
+        "action_transitions": 1
+      }
+    },
+    "passes": [
+      {
+        "event": "kick_start",
+        "time": 10.08,
+        "robot": "RedForwardA",
+        "action": "pass",
+        "receiver": "RedForwardB"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "source": "kick",
+        "point": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "event": "kick_contact",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "action": "pass"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 29.0,
+        "robot": "RedForwardB",
+        "source": "push",
+        "point": [
+          0.24200757375703766,
+          0.1858561705908712
+        ]
+      },
+      {
+        "event": "pass_result",
+        "time": 29.0,
+        "sender": "RedForwardA",
+        "receiver": "RedForwardB",
+        "completed": true
+      }
+    ],
+    "final_ball": [
+      0.23268501874869593,
+      0.17805208752869645,
+      0.07
+    ]
+  },
+  {
+    "seed": 14,
+    "stats": {
+      "RED": {
+        "playing_player_seconds": 120.00000000000756,
+        "decision_transitions": 7,
+        "action_transitions": 338,
+        "pass_attempts": 1,
+        "contact_transitions": 2,
+        "kick_contacts": 1,
+        "completed_passes": 1
+      },
+      "BLUE": {
+        "playing_player_seconds": 59.9999999999989,
+        "decision_transitions": 1,
+        "action_transitions": 1
+      }
+    },
+    "passes": [
+      {
+        "event": "kick_start",
+        "time": 10.08,
+        "robot": "RedForwardA",
+        "action": "pass",
+        "receiver": "RedForwardB"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "source": "kick",
+        "point": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "event": "kick_contact",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "action": "pass"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 29.88,
+        "robot": "RedForwardB",
+        "source": "push",
+        "point": [
+          0.25194371775625357,
+          0.1721468703916175
+        ]
+      },
+      {
+        "event": "pass_result",
+        "time": 29.88,
+        "sender": "RedForwardA",
+        "receiver": "RedForwardB",
+        "completed": true
+      }
+    ],
+    "final_ball": [
+      0.24309671647298792,
+      0.16380754712058548,
+      0.07
+    ]
+  },
+  {
+    "seed": 15,
+    "stats": {
+      "RED": {
+        "playing_player_seconds": 120.00000000000756,
+        "decision_transitions": 7,
+        "action_transitions": 340,
+        "pass_attempts": 1,
+        "contact_transitions": 2,
+        "kick_contacts": 1,
+        "completed_passes": 1
+      },
+      "BLUE": {
+        "playing_player_seconds": 59.9999999999989,
+        "decision_transitions": 1,
+        "action_transitions": 1
+      }
+    },
+    "passes": [
+      {
+        "event": "kick_start",
+        "time": 10.08,
+        "robot": "RedForwardA",
+        "action": "pass",
+        "receiver": "RedForwardB"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "source": "kick",
+        "point": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "event": "kick_contact",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "action": "pass"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 30.12,
+        "robot": "RedForwardB",
+        "source": "push",
+        "point": [
+          0.2539666176969716,
+          0.1691482751849139
+        ]
+      },
+      {
+        "event": "pass_result",
+        "time": 30.12,
+        "sender": "RedForwardA",
+        "receiver": "RedForwardB",
+        "completed": true
+      }
+    ],
+    "final_ball": [
+      0.24524336576570996,
+      0.16067959051321776,
+      0.07
+    ]
+  },
+  {
+    "seed": 16,
+    "stats": {
+      "RED": {
+        "playing_player_seconds": 120.00000000000756,
+        "decision_transitions": 7,
+        "action_transitions": 340,
+        "pass_attempts": 1,
+        "contact_transitions": 2,
+        "kick_contacts": 1,
+        "completed_passes": 1
+      },
+      "BLUE": {
+        "playing_player_seconds": 59.9999999999989,
+        "decision_transitions": 1,
+        "action_transitions": 1
+      }
+    },
+    "passes": [
+      {
+        "event": "kick_start",
+        "time": 10.08,
+        "robot": "RedForwardA",
+        "action": "pass",
+        "receiver": "RedForwardB"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "source": "kick",
+        "point": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "event": "kick_contact",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "action": "pass"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 29.76,
+        "robot": "RedForwardB",
+        "source": "push",
+        "point": [
+          0.25034259221858907,
+          0.1744670983989486
+        ]
+      },
+      {
+        "event": "pass_result",
+        "time": 29.76,
+        "sender": "RedForwardA",
+        "receiver": "RedForwardB",
+        "completed": true
+      }
+    ],
+    "final_ball": [
+      0.24142226034329356,
+      0.1662062616641216,
+      0.07
+    ]
+  },
+  {
+    "seed": 17,
+    "stats": {
+      "RED": {
+        "playing_player_seconds": 120.00000000000756,
+        "decision_transitions": 7,
+        "action_transitions": 340,
+        "pass_attempts": 1,
+        "contact_transitions": 2,
+        "kick_contacts": 1,
+        "completed_passes": 1
+      },
+      "BLUE": {
+        "playing_player_seconds": 59.9999999999989,
+        "decision_transitions": 1,
+        "action_transitions": 1
+      }
+    },
+    "passes": [
+      {
+        "event": "kick_start",
+        "time": 10.08,
+        "robot": "RedForwardA",
+        "action": "pass",
+        "receiver": "RedForwardB"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "source": "kick",
+        "point": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "event": "kick_contact",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "action": "pass"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 30.0,
+        "robot": "RedForwardB",
+        "source": "push",
+        "point": [
+          0.25261585556065275,
+          0.17115902378148365
+        ]
+      },
+      {
+        "event": "pass_result",
+        "time": 30.0,
+        "sender": "RedForwardA",
+        "receiver": "RedForwardB",
+        "completed": true
+      }
+    ],
+    "final_ball": [
+      0.2438181253316801,
+      0.1627677373995811,
+      0.07
+    ]
+  },
+  {
+    "seed": 18,
+    "stats": {
+      "RED": {
+        "playing_player_seconds": 120.00000000000756,
+        "decision_transitions": 7,
+        "action_transitions": 342,
+        "pass_attempts": 1,
+        "contact_transitions": 2,
+        "kick_contacts": 1,
+        "completed_passes": 1
+      },
+      "BLUE": {
+        "playing_player_seconds": 59.9999999999989,
+        "decision_transitions": 1,
+        "action_transitions": 1
+      }
+    },
+    "passes": [
+      {
+        "event": "kick_start",
+        "time": 10.08,
+        "robot": "RedForwardA",
+        "action": "pass",
+        "receiver": "RedForwardB"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "source": "kick",
+        "point": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "event": "kick_contact",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "action": "pass"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 29.04,
+        "robot": "RedForwardB",
+        "source": "push",
+        "point": [
+          0.24282683044350922,
+          0.18478450237839333
+        ]
+      },
+      {
+        "event": "pass_result",
+        "time": 29.04,
+        "sender": "RedForwardA",
+        "receiver": "RedForwardB",
+        "completed": true
+      }
+    ],
+    "final_ball": [
+      0.23352729851052895,
+      0.1769529986816336,
+      0.07
+    ]
+  },
+  {
+    "seed": 19,
+    "stats": {
+      "RED": {
+        "playing_player_seconds": 120.00000000000756,
+        "decision_transitions": 6,
+        "action_transitions": 335,
+        "pass_attempts": 1,
+        "contact_transitions": 2,
+        "kick_contacts": 1,
+        "completed_passes": 1
+      },
+      "BLUE": {
+        "playing_player_seconds": 59.9999999999989,
+        "decision_transitions": 1,
+        "action_transitions": 1
+      }
+    },
+    "passes": [
+      {
+        "event": "kick_start",
+        "time": 10.08,
+        "robot": "RedForwardA",
+        "action": "pass",
+        "receiver": "RedForwardB"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "source": "kick",
+        "point": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "event": "kick_contact",
+        "time": 13.4,
+        "robot": "RedForwardA",
+        "action": "pass"
+      },
+      {
+        "event": "foot_control_change",
+        "time": 30.44,
+        "robot": "RedForwardB",
+        "source": "push",
+        "point": [
+          0.2575115846818073,
+          0.1637008419560985
+        ]
+      },
+      {
+        "event": "pass_result",
+        "time": 30.44,
+        "sender": "RedForwardA",
+        "receiver": "RedForwardB",
+        "completed": true
+      }
+    ],
+    "final_ball": [
+      0.24896475319627062,
+      0.15505414224564712,
+      0.07
+    ]
+  }
+]

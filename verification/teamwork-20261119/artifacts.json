@@ -1,0 +1,26 @@
+{
+  "Football_4v4_Demo.html": {
+    "bytes": 3667446,
+    "sha256": "fde75ff12baf9321ef4b1005aa26c59a35552b8ea97fe279d7537ef168bec9cb"
+  },
+  "Football_4v4_Demo_ZH.html": {
+    "bytes": 3778013,
+    "sha256": "bb406b953027d1a409c69fd596baedd038bf24acacd757549106f64b07e78e57"
+  },
+  "Football_4v4.zip": {
+    "bytes": 393330,
+    "sha256": "c4742c2de301552a86b91992548b916a357261fd6213678e7df0fc5d1d0d4ce3"
+  },
+  "Four_vs_Four/run.py": {
+    "bytes": 5694,
+    "sha256": "2a0e93951dac3dc3ab781856fab7f8a9a0a40da234ffffb7b8c93e3a94c4aa55"
+  },
+  "Four_vs_Four/README.md": {
+    "bytes": 3401,
+    "sha256": "32ca87dac6a22b0767816ebe934a12ec44df118310065475eab086b71d6b10be"
+  },
+  "docs/FOUR_V_FOUR_TEAMWORK_2026-11-19.md": {
+    "bytes": 10444,
+    "sha256": "9bdab08083aa0933f7c60dff75595eda89d1f5afd2588f2bb98c973005a3a74e"
+  }
+}

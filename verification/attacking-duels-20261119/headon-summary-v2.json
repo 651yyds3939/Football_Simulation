@@ -1,0 +1,87 @@
+{
+  "baseline": {
+    "runs": 120,
+    "outcomes": {
+      "CLEARED_GOAL": 116,
+      "OUT": 1,
+      "GOAL": 3
+    },
+    "first_attacking_contests": 120,
+    "first_contest_results": {
+      "LOST": 117,
+      "BROKE_THROUGH": 3
+    },
+    "body_contact_runs": 120,
+    "body_contact_before_first_loss_runs": 120,
+    "contact_before_loss_results": {
+      "LOST": 117,
+      "BROKE_THROUGH": 3
+    },
+    "goals_after_body_contact": 3,
+    "exclusive_blue_control_runs": 117,
+    "breakthrough_runs": 3,
+    "attacker_regain_runs": 50,
+    "productive_regain_runs": 2,
+    "stalls_over_20s": 10,
+    "mean_seconds": 92.13333333333657,
+    "wall_seconds": 25.651300407000235
+  },
+  "clear-lane": {
+    "runs": 120,
+    "outcomes": {
+      "OUT": 52,
+      "GOAL": 59,
+      "CLEARED_GOAL": 6,
+      "TIMEOUT": 3
+    },
+    "first_attacking_contests": 68,
+    "first_contest_results": {
+      "LOST": 23,
+      "BROKE_THROUGH": 45
+    },
+    "body_contact_runs": 113,
+    "body_contact_before_first_loss_runs": 92,
+    "contact_before_loss_results": {
+      "LOST": 52,
+      "BROKE_THROUGH": 40
+    },
+    "goals_after_body_contact": 54,
+    "exclusive_blue_control_runs": 73,
+    "breakthrough_runs": 59,
+    "attacker_regain_runs": 113,
+    "productive_regain_runs": 60,
+    "stalls_over_20s": 13,
+    "mean_seconds": 89.34466666666889,
+    "wall_seconds": 26.720464185003948
+  },
+  "reach-clear": {
+    "runs": 120,
+    "outcomes": {
+      "OUT": 9,
+      "GOAL": 101,
+      "TIMEOUT": 9,
+      "CLEARED_GOAL": 1
+    },
+    "first_attacking_contests": 80,
+    "first_contest_results": {
+      "LOST": 19,
+      "BROKE_THROUGH": 56,
+      "UNRESOLVED": 5
+    },
+    "body_contact_runs": 112,
+    "body_contact_before_first_loss_runs": 94,
+    "contact_before_loss_results": {
+      "LOST": 39,
+      "BROKE_THROUGH": 50,
+      "UNRESOLVED": 5
+    },
+    "goals_after_body_contact": 95,
+    "exclusive_blue_control_runs": 57,
+    "breakthrough_runs": 101,
+    "attacker_regain_runs": 117,
+    "productive_regain_runs": 100,
+    "stalls_over_20s": 32,
+    "mean_seconds": 90.183666666668,
+    "wall_seconds": 27.7112035809987
+  }
+}

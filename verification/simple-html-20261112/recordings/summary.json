@@ -2,7 +2,7 @@
   {
     "seed": 347,
     "scenario": "random",
-    "seconds": 116.68000000000704,
+    "seconds": 130.16000000000838,
     "outcome": "CLEARED_GOAL",
     "score": [
       0,
@@ -39,7 +39,7 @@
       ],
       "goal_side_margin": 0.25
     },
-    "frames": 585
+    "frames": 652
   },
   {
     "seed": 350,
@@ -84,16 +84,16 @@
     "frames": 211
   },
   {
-    "seed": 363,
+    "seed": 349,
     "scenario": "random",
-    "seconds": 49.71999999999912,
+    "seconds": 74.36000000000043,
     "outcome": "GOAL",
     "score": [
       1,
       0
     ],
     "stats": {
-      "shotAttempts": 1,
+      "shotAttempts": 2,
       "shotContacts": 1,
       "clearAttempts": 0,
       "clearContacts": 0,
@@ -123,12 +123,12 @@
       ],
       "goal_side_margin": 0.25
     },
-    "frames": 250
+    "frames": 373
   },
   {
     "seed": 351,
     "scenario": "random",
-    "seconds": 117.88000000000723,
+    "seconds": 125.60000000000844,
     "outcome": "CLEARED_GOAL",
     "score": [
       0,
@@ -137,9 +137,9 @@
     "stats": {
       "shotAttempts": 0,
       "shotContacts": 0,
-      "clearAttempts": 2,
-      "clearContacts": 1,
-      "clearancesCompleted": 1
+      "clearAttempts": 0,
+      "clearContacts": 0,
+      "clearancesCompleted": 0
     },
     "profile": {
       "locomotion": "guarded",
@@ -165,7 +165,7 @@
       ],
       "goal_side_margin": 0.25
     },
-    "frames": 591
+    "frames": 629
   },
   {
     "seed": 348,

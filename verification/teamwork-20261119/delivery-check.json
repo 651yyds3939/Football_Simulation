@@ -1,0 +1,67 @@
+{
+  "shipping_python_matches_frozen_release": true,
+  "one_v_one_preserved": true,
+  "one_v_one_file_count": 30,
+  "demo_en_matches_recording": true,
+  "demo_en_source_matches_shipping": true,
+  "demo_en_has_receiver_foot_contact": true,
+  "demo_zh_matches_recording": true,
+  "demo_zh_source_matches_shipping": true,
+  "demo_zh_has_receiver_foot_contact": true,
+  "archive_matches_workspace": true,
+  "release_candidate_all_finished": true,
+  "release_candidate_source_matches_shipping": true,
+  "release_reference_all_finished": true,
+  "release_reference_source_matches_shipping": true,
+  "release_unit_checks_pass": true,
+  "browser": {
+    "results": [
+      {
+        "file": "verification/teamwork-20261119/release-demo-en/replay.html",
+        "frames": 3009,
+        "score": [
+          1,
+          1
+        ],
+        "players": 8,
+        "offline": true,
+        "play_pause_seek_reset_inspect": true,
+        "mobile_no_overflow": true
+      },
+      {
+        "file": "verification/teamwork-20261119/release-demo-zh/replay.html",
+        "frames": 3009,
+        "score": [
+          1,
+          1
+        ],
+        "players": 8,
+        "offline": true,
+        "play_pause_seek_reset_inspect": true,
+        "mobile_no_overflow": true
+      }
+    ],
+    "errors": [],
+    "no_external_requests": true
+  },
+  "package": {
+    "python_source_matches_frozen_release": true,
+    "python_38_syntax": true,
+    "zip_files": 28,
+    "zip_sha256": "c4742c2de301552a86b91992548b916a357261fd6213678e7df0fc5d1d0d4ce3",
+    "extracted_replay_score": [
+      1,
+      1
+    ],
+    "extracted_outside_repo_path_with_spaces": true,
+    "extracted_directed_receiver_contact": true,
+    "extracted_batch_two_matches": true,
+    "existing_output_preserved": true,
+    "final_members_equal_workspace": true,
+    "only_readme_changed_after_extracted_run": true
+  },
+  "session_started_utc": "2026-11-19T16:40:15+00:00",
+  "completed_utc": "2026-11-19T17:10:27.720067+00:00",
+  "elapsed_seconds": 1812.720067,
+  "minimum_30_minutes_met": true
+}

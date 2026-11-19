@@ -1,0 +1,112 @@
+{
+  "games": 1,
+  "policies": {
+    "RED": "coordinated",
+    "BLUE": "coordinated"
+  },
+  "goals_red": 2,
+  "goals_blue": 1,
+  "simulated_seconds": 601.5999999999998,
+  "wall_seconds": 1.4387307979995967,
+  "computation_speedup": 418.1463278859819,
+  "runs": [
+    {
+      "seed": 28,
+      "candidate_team": "RED",
+      "candidate": "baseline",
+      "score_red_blue": [
+        2,
+        1
+      ],
+      "candidate_goal_difference": 1,
+      "simulated_seconds": 601.5999999999998,
+      "phase": "FINISHED",
+      "team_stats": {
+        "RED": {
+          "decision_transitions": 252,
+          "action_transitions": 1513,
+          "playing_player_seconds": 2150.400000000235,
+          "contact_transitions": 429,
+          "disc_overlap_player_seconds": 53.800000000000225,
+          "support_seconds": 411.99999999998516,
+          "support_behind_ball_seconds": 34.199999999999946,
+          "shot_attempts": 1,
+          "kick_contacts": 3,
+          "defending_support_seconds": 263.1999999999936,
+          "pass_attempts": 3,
+          "defending_support_behind_seconds": 14.999999999999979,
+          "kick_misses": 1,
+          "danger_ball_player_seconds": 197.59999999999732
+        },
+        "BLUE": {
+          "decision_transitions": 218,
+          "action_transitions": 1608,
+          "playing_player_seconds": 2150.400000000235,
+          "support_seconds": 440.19999999998356,
+          "support_behind_ball_seconds": 111.60000000000105,
+          "defending_support_seconds": 216.99999999999622,
+          "defending_support_behind_seconds": 13.799999999999983,
+          "disc_overlap_player_seconds": 53.800000000000225,
+          "contact_transitions": 430,
+          "danger_ball_player_seconds": 286.3999999999923,
+          "shot_attempts": 1,
+          "kick_contacts": 1
+        }
+      },
+      "model": {
+        "dt": 0.2,
+        "half_seconds": 300,
+        "ready_seconds": 10,
+        "walk_speed": 0.08525241087733532,
+        "back_speed": 0.034151821846239855,
+        "left_speed": 0.012710006709112306,
+        "right_speed": 0.02229703610271777,
+        "left_turn": 0.07362390384491213,
+        "right_turn": 0.07569683357192747,
+        "robot_radius": 0.15,
+        "rolling_deceleration": 0.35,
+        "shot_range": 0.406003256198733,
+        "pass_range": 0.3051396105104535,
+        "shot_seconds": 4.8,
+        "pass_seconds": 3.299,
+        "kick_noise_radians": 0.04
+      },
+      "physics_or_hardware_validated": false,
+      "limitations": [
+        "Kinematic discs and contact impulses; no NAO balance or joint dynamics.",
+        "Perfect ground-truth state; no independent camera localisation.",
+        "Ball friction, noise and contact are uncalibrated model assumptions.",
+        "Formation placement at each half is a declared fixture.",
+        "Uses current referee geometry, but not complete physical-foul rules.",
+        "An abstract pass completion is not a validated Webots pass."
+      ],
+      "policies": {
+        "RED": "coordinated",
+        "BLUE": "coordinated"
+      }
+    }
+  ],
+  "source_sha256": {
+    "run.py": "2a0e93951dac3dc3ab781856fab7f8a9a0a40da234ffffb7b8c93e3a94c4aa55",
+    "backend/tools/soccer2d.py": "65b14132b6b577cee80b5916d27533d217a66a7fdfdbe145b844b24f386e47bc",
+    "backend/tools/view_soccer2d.py": "5dcbefa44be06ea4eafac287ce955369737380214ec1ef13d125b48e5bd299ac",
+    "backend/tools/run_policy_experiment.py": "8f52694b1790f9d87c48a95c8b68a36a5b1608619a08d637b42310d465d3fc0b",
+    "backend/Wenao/controllers/Utils/SpawnZones.py": "6cabbdc4885aa120cabebc2debac20a7cc5b65a56b83254212df6ae28422b8ec",
+    "backend/Wenao/controllers/Utils/TeamTactics.py": "9c806c49cbefcff8fb0daccab2648b6d385d4593ec766eca22d5c469fc221854",
+    "backend/Wenao/controllers/Utils/PreviousTactics.py": "c4be7c1143d8aaf5cfa4a3db4e1c3d30121a2b78130b3f1070924e6a0128f252",
+    "backend/Wenao/controllers/Utils/PolicyProfile.py": "fbfc04690cd449acc11817b5cff9d33faf7ada0af1c9454605e38af6d8ae51e2",
+    "backend/Wenao/controllers/Utils/TeamPolicy.py": "fec5b75eab8f093fd14351cf027919c7122224085e13f39423ae5ba89e0f76e9",
+    "backend/Wenao/controllers/Utils/MatchEngine.py": "c01066e565731b0fdda8e04dc6d8f8b3cda6d202ff4f0df99f6092e8145ce886",
+    "backend/Wenao/controllers/Utils/DefensivePlan.py": "35c5a637903a2e9991659c8d3f991455cbc4bfbe2e2c30f158d2d984b82bb1a9",
+    "backend/Wenao/controllers/Utils/ProcessSupervisor.py": "8edaedf1fdb5f00410aa7ecd1e777c5ec95b46e747f35078a52747f4c1bd91a8",
+    "backend/Wenao/controllers/Utils/Navigation.py": "b29d896008948b5ca36a496c4ee1a7455c4a95307d4359c9583142b4c06d896e",
+    "backend/Wenao/controllers/Utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "backend/Wenao/controllers/Utils/TeamNavigation.py": "a29e45f81c9ef86615ba940660f07b715c8af1bae4425d3e8657012669496547",
+    "backend/Wenao/controllers/Utils/CourseSpecs.py": "329cc279f44dc6e3fa19e089319787c2cafd6c33d5118f0be3fb2e6eeb624bf0"
+  },
+  "limits": [
+    "2D exact-state kinematic discs; no balance, falls or cameras.",
+    "Playback speed does not change model rates.",
+    "Both improved teams playing each other is not evidence against the baseline."
+  ]
+}

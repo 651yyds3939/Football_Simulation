@@ -64,6 +64,7 @@ class MatchEngine:
         self.restart_team = self.initial_kickoff
         self.restart_point = [0.0, 0.0, BALL_RADIUS]
         self.restart_touch = None
+        self.restart_goal_guard = True
         self.indirect = False
         self.kickoff_restriction = True
         self.released = False
@@ -83,6 +84,7 @@ class MatchEngine:
     def begin_restart(self, kind, team, point, now):
         self.restart, self.restart_team = kind, team
         self.restart_point = list(point)
+        self.restart_goal_guard = True
         self.restart_touch = None
         self.last_touch = None
         self.indirect = kind in ("THROW_IN", "INDIRECT_FREE_KICK")
@@ -162,7 +164,7 @@ class MatchEngine:
                 if geometric:
                     scoring = "RED" if self.direction("RED") == end else "BLUE"
                     disallowed = self.indirect or (self.kickoff_restriction and scoring == self.restart_team)
-                    own_restart_goal = (self.restart_touch and scoring != self.restart_team
+                    own_restart_goal = (self.restart_goal_guard and self.restart_touch and scoring != self.restart_team
                                         and self.last_touch == self.restart_touch)
                     if disallowed or own_restart_goal:
                         # Direct restart into own goal -> corner; indirect into opponents' -> goal kick.

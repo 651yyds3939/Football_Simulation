@@ -1,0 +1,532 @@
+{
+  "ratio": "3:3:1 by case count, not duration or population success rate",
+  "cases": [
+    {
+      "seed": 466,
+      "scenario": "random",
+      "seconds": 60.71999999999888,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 2,
+        "shotContacts": 1,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "spawn_zones": {
+        "attacker": [
+          -1.0,
+          1.0,
+          -1.1,
+          1.1
+        ],
+        "defender": [
+          1.8,
+          3.2,
+          -1.25,
+          1.25
+        ],
+        "goal_side_margin": 0.25
+      },
+      "kind": "contact_breakthrough",
+      "frames": 307,
+      "first_contact_at": 12.759999999999904,
+      "frontal_contact_at": 12.759999999999904,
+      "first_frontal_result": "BROKE_THROUGH",
+      "breakthrough_at": 26.439999999999614,
+      "exclusive_blue_foot_at": null,
+      "minimum_body_separation": 0.2999999999999998,
+      "max_ball_ahead_of_defender": 1.5059600221333262,
+      "foot_control_events": [
+        {
+          "event": "foot_control_change",
+          "time": 0.96,
+          "robot": "RedForwardA",
+          "source": "push",
+          "point": [
+            1.0991124678910371,
+            -0.7538120759864301
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 456,
+      "scenario": "random",
+      "seconds": 63.31999999999883,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 1,
+        "shotContacts": 1,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "spawn_zones": {
+        "attacker": [
+          -1.0,
+          1.0,
+          -1.1,
+          1.1
+        ],
+        "defender": [
+          1.8,
+          3.2,
+          -1.25,
+          1.25
+        ],
+        "goal_side_margin": 0.25
+      },
+      "kind": "contact_breakthrough",
+      "frames": 319,
+      "first_contact_at": 17.27999999999981,
+      "frontal_contact_at": 17.27999999999981,
+      "first_frontal_result": "BROKE_THROUGH",
+      "breakthrough_at": 28.599999999999568,
+      "exclusive_blue_foot_at": null,
+      "minimum_body_separation": 0.2999999999999998,
+      "max_ball_ahead_of_defender": 1.7074766662041165,
+      "foot_control_events": [
+        {
+          "event": "foot_control_change",
+          "time": 0.48,
+          "robot": "RedForwardA",
+          "source": "push",
+          "point": [
+            0.7953785945507259,
+            0.9784695075079938
+          ]
+        },
+        {
+          "event": "foot_control_change",
+          "time": 18.96,
+          "robot": "BlueDefender",
+          "source": "push",
+          "point": [
+            1.8201066320202584,
+            0.977384294180107
+          ]
+        },
+        {
+          "event": "foot_control_change",
+          "time": 19.8,
+          "robot": "RedForwardA",
+          "source": "push",
+          "point": [
+            1.823121753474444,
+            0.9799039003946317
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 364,
+      "scenario": "random",
+      "seconds": 64.11999999999883,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 1,
+        "shotContacts": 1,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "spawn_zones": {
+        "attacker": [
+          -1.0,
+          1.0,
+          -1.1,
+          1.1
+        ],
+        "defender": [
+          1.8,
+          3.2,
+          -1.25,
+          1.25
+        ],
+        "goal_side_margin": 0.25
+      },
+      "kind": "contact_breakthrough",
+      "frames": 324,
+      "first_contact_at": 10.639999999999949,
+      "frontal_contact_at": 10.639999999999949,
+      "first_frontal_result": "BROKE_THROUGH",
+      "breakthrough_at": 34.71999999999944,
+      "exclusive_blue_foot_at": null,
+      "minimum_body_separation": 0.29999999999999977,
+      "max_ball_ahead_of_defender": 1.4818380218021705,
+      "foot_control_events": [
+        {
+          "event": "foot_control_change",
+          "time": 2.12,
+          "robot": "RedForwardA",
+          "source": "push",
+          "point": [
+            0.8569034957149115,
+            -0.795024455310448
+          ]
+        },
+        {
+          "event": "foot_control_change",
+          "time": 12.36,
+          "robot": "BlueDefender",
+          "source": "push",
+          "point": [
+            1.4054135435989719,
+            -0.5514045394296402
+          ]
+        },
+        {
+          "event": "foot_control_change",
+          "time": 12.6,
+          "robot": "RedForwardA",
+          "source": "push",
+          "point": [
+            1.4056190918660016,
+            -0.5510349795222711
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 440,
+      "scenario": "random",
+      "seconds": 101.36000000000465,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "spawn_zones": {
+        "attacker": [
+          -1.0,
+          1.0,
+          -1.1,
+          1.1
+        ],
+        "defender": [
+          1.8,
+          3.2,
+          -1.25,
+          1.25
+        ],
+        "goal_side_margin": 0.25
+      },
+      "kind": "tackle_counter_goal",
+      "frames": 510,
+      "first_contact_at": 19.359999999999765,
+      "frontal_contact_at": 19.359999999999765,
+      "first_frontal_result": "LOST",
+      "breakthrough_at": null,
+      "exclusive_blue_foot_at": 22.279999999999703,
+      "minimum_body_separation": 0.2999999999999999,
+      "max_ball_ahead_of_defender": 0,
+      "foot_control_events": [
+        {
+          "event": "foot_control_change",
+          "time": 0.04,
+          "robot": "RedForwardA",
+          "source": "push",
+          "point": [
+            -0.4759124959742695,
+            -0.853847818249626
+          ]
+        },
+        {
+          "event": "foot_control_change",
+          "time": 21.2,
+          "robot": "BlueDefender",
+          "source": "push",
+          "point": [
+            1.0297668164778584,
+            -0.5859080407635345
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 414,
+      "scenario": "random",
+      "seconds": 104.20000000000509,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "spawn_zones": {
+        "attacker": [
+          -1.0,
+          1.0,
+          -1.1,
+          1.1
+        ],
+        "defender": [
+          1.8,
+          3.2,
+          -1.25,
+          1.25
+        ],
+        "goal_side_margin": 0.25
+      },
+      "kind": "tackle_counter_goal",
+      "frames": 523,
+      "first_contact_at": 16.119999999999834,
+      "frontal_contact_at": 16.119999999999834,
+      "first_frontal_result": "LOST",
+      "breakthrough_at": null,
+      "exclusive_blue_foot_at": 18.999999999999773,
+      "minimum_body_separation": 0.29999999999999977,
+      "max_ball_ahead_of_defender": 0,
+      "foot_control_events": [
+        {
+          "event": "foot_control_change",
+          "time": 0.24,
+          "robot": "RedForwardA",
+          "source": "push",
+          "point": [
+            0.13932606267822123,
+            -0.2724595793614269
+          ]
+        },
+        {
+          "event": "foot_control_change",
+          "time": 18.0,
+          "robot": "BlueDefender",
+          "source": "push",
+          "point": [
+            1.3716146271193437,
+            -0.050164081609621505
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 457,
+      "scenario": "random",
+      "seconds": 106.24000000000541,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "spawn_zones": {
+        "attacker": [
+          -1.0,
+          1.0,
+          -1.1,
+          1.1
+        ],
+        "defender": [
+          1.8,
+          3.2,
+          -1.25,
+          1.25
+        ],
+        "goal_side_margin": 0.25
+      },
+      "kind": "tackle_counter_goal",
+      "frames": 535,
+      "first_contact_at": 14.919999999999858,
+      "frontal_contact_at": 14.919999999999858,
+      "first_frontal_result": "LOST",
+      "breakthrough_at": null,
+      "exclusive_blue_foot_at": 18.759999999999778,
+      "minimum_body_separation": 0.29999999999999977,
+      "max_ball_ahead_of_defender": 0,
+      "foot_control_events": [
+        {
+          "event": "foot_control_change",
+          "time": 0.12,
+          "robot": "RedForwardA",
+          "source": "push",
+          "point": [
+            0.7889277899618554,
+            1.0479552185137098
+          ]
+        },
+        {
+          "event": "foot_control_change",
+          "time": 16.32,
+          "robot": "BlueDefender",
+          "source": "push",
+          "point": [
+            1.7321912467863114,
+            0.7028991817735152
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 431,
+      "scenario": "random",
+      "seconds": 39.59999999999933,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "spawn_zones": {
+        "attacker": [
+          -1.0,
+          1.0,
+          -1.1,
+          1.1
+        ],
+        "defender": [
+          1.8,
+          3.2,
+          -1.25,
+          1.25
+        ],
+        "goal_side_margin": 0.25
+      },
+      "kind": "failed_recovery",
+      "frames": 199,
+      "first_contact_at": null,
+      "frontal_contact_at": null,
+      "first_frontal_result": null,
+      "breakthrough_at": 14.999999999999856,
+      "exclusive_blue_foot_at": null,
+      "minimum_body_separation": 0.6833251876384954,
+      "max_ball_ahead_of_defender": 2.1668508200108363,
+      "foot_control_events": [
+        {
+          "event": "foot_control_change",
+          "time": 0.28,
+          "robot": "RedForwardA",
+          "source": "push",
+          "point": [
+            1.2377259568094099,
+            0.6031132564002938
+          ]
+        }
+      ]
+    }
+  ],
+  "simulated_seconds_total": 539.560000000011,
+  "source_sha256": {
+    "kind": "local snapshot",
+    "modules": [
+      "Utils.TeamPolicy.TeamPolicy.decide",
+      "Utils.Navigation.Navigator.choose"
+    ],
+    "sha256": {
+      "tools/soccer2d.py": "65b14132b6b577cee80b5916d27533d217a66a7fdfdbe145b844b24f386e47bc",
+      "Wenao/controllers/Utils/PolicyProfile.py": "fbfc04690cd449acc11817b5cff9d33faf7ada0af1c9454605e38af6d8ae51e2",
+      "Wenao/controllers/Utils/TeamPolicy.py": "fec5b75eab8f093fd14351cf027919c7122224085e13f39423ae5ba89e0f76e9",
+      "Wenao/controllers/Utils/Navigation.py": "b29d896008948b5ca36a496c4ee1a7455c4a95307d4359c9583142b4c06d896e",
+      "Wenao/controllers/Utils/CourseSpecs.py": "329cc279f44dc6e3fa19e089319787c2cafd6c33d5118f0be3fb2e6eeb624bf0",
+      "Wenao/controllers/Utils/MatchEngine.py": "c01066e565731b0fdda8e04dc6d8f8b3cda6d202ff4f0df99f6092e8145ce886",
+      "Wenao/controllers/Utils/DefensivePlan.py": "35c5a637903a2e9991659c8d3f991455cbc4bfbe2e2c30f158d2d984b82bb1a9",
+      "Wenao/controllers/Utils/SpawnZones.py": "6cabbdc4885aa120cabebc2debac20a7cc5b65a56b83254212df6ae28422b8ec"
+    }
+  },
+  "limits": [
+    "Kinematic-disc contact, not real humanoid collision.",
+    "Selected examples, not a measured success distribution.",
+    "Same recorded data used by HTML and video."
+  ]
+}

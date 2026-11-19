@@ -1,0 +1,26 @@
+{
+  "Football_4v4_Demo.html": {
+    "bytes": 2352294,
+    "sha256": "693cd64512eb803c94f204ae96a27d5cb1aac27a7fe5211b2343217e3919af62"
+  },
+  "Football_4v4_Demo_ZH.html": {
+    "bytes": 2335051,
+    "sha256": "99893c23c370c894dc9169f11f5064ca785ef78efb4dd6413b7abea1be506b8e"
+  },
+  "Football_4v4.zip": {
+    "bytes": 267696,
+    "sha256": "091be295b4d0082005d6e19deb95786b2e7b50d62bb729ef8d3662aeda05182b"
+  },
+  "Four_vs_Four/run.py": {
+    "bytes": 5250,
+    "sha256": "f2a4f5a6ce4fe3ac4930349abe8ba8a243995f5b284b0732f2c17379501b667c"
+  },
+  "Four_vs_Four/README.md": {
+    "bytes": 3120,
+    "sha256": "4d553a38c4ebee646ba6e304045f581d47de2850acac1657b0fb0ec22146f6ef"
+  },
+  "docs/FOUR_V_FOUR_TUNING_2026-11-19.md": {
+    "bytes": 9061,
+    "sha256": "00baf6d71e690950a29f7c7745f5454c3998d107eea4f39cf3d2fd9877b4873a"
+  }
+}

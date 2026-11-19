@@ -1,0 +1,157 @@
+{
+  "baseline": {
+    "runs": 1000,
+    "outcomes": {
+      "CLEARED_GOAL": 602,
+      "GOAL": 327,
+      "TIMEOUT": 66,
+      "OUT": 5
+    },
+    "defender_foot_control_runs": 666,
+    "controlled_retreat_runs": 624,
+    "clearance_completed_runs": 599,
+    "stalls_over_20s": 55,
+    "mean_turn_seconds": 14.46955999999993,
+    "mean_behind_ball_seconds": 10.480200000000023,
+    "mean_duration_seconds": 98.6842800000036,
+    "attacker_productive_regain_runs": 12,
+    "attacker_regain_runs": 151,
+    "attacker_loss_runs": 666,
+    "mean_attacker_wrong_heading_seconds": 12.881639999999845,
+    "mean_attacker_alignment_while_lost_seconds": 2.323600000000025,
+    "mean_attacker_press_seconds": 0.0,
+    "loss_weighted_attacker_heading_error_degrees": 60.625554271303464,
+    "wall_seconds": 243.51274759999797
+  },
+  "candidate": {
+    "runs": 1000,
+    "outcomes": {
+      "CLEARED_GOAL": 639,
+      "GOAL": 328,
+      "TIMEOUT": 33
+    },
+    "defender_foot_control_runs": 667,
+    "controlled_retreat_runs": 644,
+    "clearance_completed_runs": 611,
+    "stalls_over_20s": 39,
+    "mean_turn_seconds": 13.644919999999933,
+    "mean_behind_ball_seconds": 10.432040000000011,
+    "mean_duration_seconds": 95.88084000000403,
+    "attacker_productive_regain_runs": 9,
+    "attacker_regain_runs": 165,
+    "attacker_loss_runs": 667,
+    "mean_attacker_wrong_heading_seconds": 7.5074399999999315,
+    "mean_attacker_alignment_while_lost_seconds": 0.10128000000000247,
+    "mean_attacker_press_seconds": 58.64460000000195,
+    "loss_weighted_attacker_heading_error_degrees": 37.0580059666553,
+    "wall_seconds": 221.87679790299444
+  },
+  "groups": {
+    "default": {
+      "baseline": {
+        "runs": 334,
+        "outcomes": {
+          "CLEARED_GOAL": 229,
+          "GOAL": 81,
+          "TIMEOUT": 23,
+          "OUT": 1
+        },
+        "stalls_over_20s": 23,
+        "mean_turn_seconds": 14.928143712574771,
+        "mean_behind_ball_seconds": 8.936167664670661,
+        "mean_duration_seconds": 104.45053892215986,
+        "controlled_retreat_runs": 232
+      },
+      "candidate": {
+        "runs": 334,
+        "outcomes": {
+          "CLEARED_GOAL": 246,
+          "GOAL": 83,
+          "TIMEOUT": 5
+        },
+        "stalls_over_20s": 10,
+        "mean_turn_seconds": 14.613532934131658,
+        "mean_behind_ball_seconds": 8.098203592814336,
+        "mean_duration_seconds": 100.83257485030407,
+        "controlled_retreat_runs": 246
+      }
+    },
+    "near": {
+      "baseline": {
+        "runs": 333,
+        "outcomes": {
+          "CLEARED_GOAL": 127,
+          "GOAL": 170,
+          "TIMEOUT": 34,
+          "OUT": 2
+        },
+        "stalls_over_20s": 16,
+        "mean_turn_seconds": 14.389069069068986,
+        "mean_behind_ball_seconds": 16.21873873873887,
+        "mean_duration_seconds": 84.26798798799011,
+        "controlled_retreat_runs": 139
+      },
+      "candidate": {
+        "runs": 333,
+        "outcomes": {
+          "CLEARED_GOAL": 142,
+          "GOAL": 169,
+          "TIMEOUT": 22
+        },
+        "stalls_over_20s": 18,
+        "mean_turn_seconds": 13.56708708708701,
+        "mean_behind_ball_seconds": 16.624144144144285,
+        "mean_duration_seconds": 82.60336336336587,
+        "controlled_retreat_runs": 142
+      }
+    },
+    "wide": {
+      "baseline": {
+        "runs": 333,
+        "outcomes": {
+          "CLEARED_GOAL": 246,
+          "GOAL": 76,
+          "TIMEOUT": 9,
+          "OUT": 2
+        },
+        "stalls_over_20s": 16,
+        "mean_turn_seconds": 14.09009009009004,
+        "mean_behind_ball_seconds": 6.290330330330265,
+        "mean_duration_seconds": 107.31699699700145,
+        "controlled_retreat_runs": 253
+      },
+      "candidate": {
+        "runs": 333,
+        "outcomes": {
+          "CLEARED_GOAL": 251,
+          "GOAL": 76,
+          "TIMEOUT": 6
+        },
+        "stalls_over_20s": 11,
+        "mean_turn_seconds": 12.751231231231188,
+        "mean_behind_ball_seconds": 6.580780780780711,
+        "mean_duration_seconds": 104.19171171171664,
+        "controlled_retreat_runs": 256
+      }
+    }
+  },
+  "outcome_transitions": {
+    "CLEARED_GOAL -> CLEARED_GOAL": 598,
+    "GOAL -> GOAL": 321,
+    "GOAL -> CLEARED_GOAL": 6,
+    "TIMEOUT -> CLEARED_GOAL": 33,
+    "TIMEOUT -> TIMEOUT": 26,
+    "TIMEOUT -> GOAL": 7,
+    "CLEARED_GOAL -> TIMEOUT": 4,
+    "OUT -> CLEARED_GOAL": 2,
+    "OUT -> TIMEOUT": 3
+  },
+  "blue_left_goal_change": {
+    "percentage_points": 3.6999999999999997,
+    "paired_normal_95_interval_pp": [
+      2.404698374006154,
+      4.9953016259938465
+    ],
+    "note": "Descriptive seed-sample interval; not hardware performance or a guarantee for other spawn distributions."
+  }
+}
