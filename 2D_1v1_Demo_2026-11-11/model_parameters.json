@@ -1,0 +1,49 @@
+{
+  "parameters": {
+    "walk_speed": 0.08525241087733532,
+    "back_speed": 0.034151821846239855,
+    "left_speed": 0.012710006709112306,
+    "right_speed": 0.02229703610271777,
+    "left_turn": 0.07362390384491213,
+    "right_turn": 0.07569683357192747,
+    "robot_radius": 0.15,
+    "rolling_deceleration": 0.35,
+    "shot_range": 0.406003256198733,
+    "pass_range": 0.3051396105104535,
+    "shot_seconds": 4.8,
+    "pass_seconds": 3.299,
+    "kick_noise_radians": 0.04,
+    "pitch_length": 9.0,
+    "pitch_width": 6.0,
+    "goal_width": 2.6,
+    "goal_height": 1.2,
+    "goal_depth": 0.6,
+    "ball_radius": 0.07,
+    "dt": 0.04,
+    "round_seconds": 180
+  },
+  "purpose": "Standalone continuous 1 attacker vs 1 defender vs 1 ball, with randomized reproducible starting states",
+  "policy": "Independent small 1v1 state policies; not a port of TeamPolicy or the existing 4v4 controller",
+  "course_dimensions": "Project specification p. 3: 9×6 m pitch; 2.6×1.2×0.6 m goal; approximately 0.14 m ball diameter",
+  "measured_rates": "Existing isolated Webots motion tests, not real NAO6 calibration",
+  "kick_distance_warning": "Single-fixture displacement parameters; pass fixture included receiver contact",
+  "assumptions": [
+    "Disc radius, constant rolling deceleration, kick direction noise and simplified contact response",
+    "Exact object positions, planar motion, a 180 s attempt and a 0.04 s numerical step",
+    "Dribbling through disc contact; kick contact gate and independent 1v1 policies",
+    "A clearance event requires defender kick contact and at least 0.18 m leftward ball displacement; play continues",
+    "Random setup samples ball position, attacking gap and heading, defensive offset and attacking lane; no outcome is drawn randomly"
+  ],
+  "starting_scene": "Random by default, fresh seed on opening; explicit fixed fixtures and repeat-seed control remain available",
+  "continuous_play": "Clearances continue; goals, exits and 180 s timeout end a round. Optional next random round after 3 real seconds.",
+  "default_playback_multiplier": 2,
+  "playback": "1×/2×/4×/8×/16× change wall-clock playback only; no change to simulated motion rates",
+  "source_sha256": {
+    "tools/soccer2d.py": "477063864feb933ad734af2619fab0efd88f3079c0183884c615619e0fb0d50a",
+    "Wenao/controllers/Utils/CourseSpecs.py": "329cc279f44dc6e3fa19e089319787c2cafd6c33d5118f0be3fb2e6eeb624bf0",
+    "verification/development/navigation/motion-result.json": "e015f767ab831c575bf57358f7f6a99d24166379d6cbf3af0dde34318d679bfc",
+    "verification/development/navigation/skills-result.json": "54a558b6cc7ccd7fd97f48c9f0e128819f01de48a7751ae1f0a22bbee1f1501a",
+    "Wenao/motions/Shoot.motion": "80d17d1eda96be7ee77e63aa5fcbe5470941103f82bcf147decf2e42e0c82443",
+    "Wenao/motions/LongPass.motion": "9ea816bb2501a9e8c2043e1ff7be91333d71801998fa1019320028b677175acb"
+  }
+}

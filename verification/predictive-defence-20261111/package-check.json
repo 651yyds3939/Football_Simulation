@@ -1,0 +1,10 @@
+{
+  "files": 19,
+  "source_hashes_match": true,
+  "seeded_outcomes": [
+    "CLEARED_GOAL",
+    "CLEARED_GOAL"
+  ],
+  "windows_native_tested": false,
+  "default_speed": 8
+}

@@ -1,0 +1,42 @@
+{
+  "mode": "recorded_kinematic_2d_scene",
+  "created_utc": "2026-11-19T01:13:47.566165+00:00",
+  "seed": 27,
+  "candidate": "baseline",
+  "candidate_team": "RED",
+  "viewer_language": "en",
+  "model": {
+    "dt": 0.2,
+    "half_seconds": 10.0,
+    "ready_seconds": 1.0,
+    "walk_speed": 0.08525241087733532,
+    "back_speed": 0.034151821846239855,
+    "left_speed": 0.012710006709112306,
+    "right_speed": 0.02229703610271777,
+    "left_turn": 0.07362390384491213,
+    "right_turn": 0.07569683357192747,
+    "robot_radius": 0.15,
+    "rolling_deceleration": 0.35,
+    "shot_range": 0.406003256198733,
+    "pass_range": 0.3051396105104535,
+    "shot_seconds": 4.8,
+    "pass_seconds": 3.299,
+    "kick_noise_radians": 0.04
+  },
+  "python": "3.12.9 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:56:27) [GCC 11.2.0]",
+  "source_sha256": {
+    "tools/view_soccer2d.py": "5dcbefa44be06ea4eafac287ce955369737380214ec1ef13d125b48e5bd299ac",
+    "tools/soccer2d_viewer_en.html": "00fe4160eda0d9a826045ea80c72c228ea07b38c7c1886229a093b51de3479c9",
+    "tools/soccer2d.py": "c2eda4bbf61c1e0cf7ed75e725c0d5511e2c8a518c0da8269cb7de8c5c267f4a",
+    "Wenao/controllers/Utils/TeamPolicy.py": "c4a4ebfdfea12e98ed760480c89365ad1ff018bbc9ae299ba84f2eb0c23f2ff2",
+    "Wenao/controllers/Utils/Navigation.py": "43d055d660ab9a426de11cabd0137a8bad556ace2ac0ab692fdaafabe28cb58f",
+    "Wenao/controllers/Utils/MatchEngine.py": "d92cab0c4a9618608b503c49014ad53dd03c33b960ef5bfcbf896537ae4b0ed2",
+    "Wenao/controllers/Utils/CourseSpecs.py": "329cc279f44dc6e3fa19e089319787c2cafd6c33d5118f0be3fb2e6eeb624bf0",
+    "Wenao/controllers/Utils/ProcessSupervisor.py": "8edaedf1fdb5f00410aa7ecd1e777c5ec95b46e747f35078a52747f4c1bd91a8"
+  },
+  "frames": 110,
+  "sample_seconds": 0.2,
+  "observations": "ground_truth",
+  "formation_fixture": true,
+  "note": "Recorded simulation replay, not live control or 3D/hardware validation."
+}

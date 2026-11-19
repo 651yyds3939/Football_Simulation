@@ -1,0 +1,17 @@
+{
+  "players": 8,
+  "english_interface": true,
+  "desktop_controls_visible": true,
+  "frame_step": true,
+  "seek": true,
+  "selection": true,
+  "playback_clock": "02:00.2",
+  "terminal_frame": true,
+  "loop": true,
+  "event_jump": true,
+  "mobile_width": {
+    "scroll": 390,
+    "viewport": 390
+  },
+  "runtime_errors": []
+}

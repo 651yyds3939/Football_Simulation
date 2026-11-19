@@ -1,0 +1,70 @@
+{
+  "source": "Webots_Robotics_TDP/tools/soccer2d.py",
+  "source_sha256": "477063864feb933ad734af2619fab0efd88f3079c0183884c615619e0fb0d50a",
+  "model": {
+    "dt": 0.2,
+    "half_seconds": 300,
+    "ready_seconds": 10,
+    "walk_speed": 0.08525241087733532,
+    "back_speed": 0.034151821846239855,
+    "left_speed": 0.012710006709112306,
+    "right_speed": 0.02229703610271777,
+    "left_turn": 0.07362390384491213,
+    "right_turn": 0.07569683357192747,
+    "robot_radius": 0.15,
+    "rolling_deceleration": 0.35,
+    "shot_range": 0.406003256198733,
+    "pass_range": 0.3051396105104535,
+    "shot_seconds": 4.8,
+    "pass_seconds": 3.299,
+    "kick_noise_radians": 0.04
+  },
+  "ball_example": {
+    "v0": 0.5,
+    "time": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8,
+      1.0,
+      1.2000000000000002,
+      1.4000000000000001,
+      1.6,
+      1.8,
+      2.0
+    ],
+    "distance": [
+      0.0,
+      0.093,
+      0.17200000000000001,
+      0.237,
+      0.288,
+      0.32499999999999996,
+      0.348,
+      0.357,
+      0.35714285714285715,
+      0.35714285714285715,
+      0.35714285714285715
+    ],
+    "speed": [
+      0.5,
+      0.43,
+      0.36,
+      0.29,
+      0.21999999999999997,
+      0.14999999999999997,
+      0.07999999999999999,
+      0.009999999999999995,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "analytic_stop_seconds": 1.4285714285714286,
+    "analytic_stop_metres": 0.35714285714285715,
+    "max_position_error_metres": 5.551115123125783e-17,
+    "physical_calibration": false
+  },
+  "robot_figure": "Schematic of existing planar approximation; not new model validation",
+  "controller_modified": false
+}

@@ -1,0 +1,80 @@
+{
+  "conditions": {
+    "seeds": [
+      347,
+      446
+    ],
+    "seconds": 180,
+    "spawn_rule": "same updated goal-side starting_layout for both policies",
+    "model_unchanged": true,
+    "timeouts_are_defence_wins": false
+  },
+  "baseline": {
+    "runs": 100,
+    "outcomes": {
+      "GOAL": 82,
+      "CLEARED_GOAL": 18
+    },
+    "close_encounters": 49,
+    "controlled_left_progress_runs": 19,
+    "breakthrough_after_contact_runs": 31,
+    "close_stalls_over_10s": 15,
+    "close_stalls_over_20s": 2,
+    "mean_close_seconds": 7.129199999999932,
+    "wall_seconds": 17.01748186099576
+  },
+  "candidate": {
+    "runs": 100,
+    "outcomes": {
+      "GOAL": 63,
+      "CLEARED_GOAL": 33,
+      "TIMEOUT": 4
+    },
+    "close_encounters": 45,
+    "controlled_left_progress_runs": 34,
+    "breakthrough_after_contact_runs": 8,
+    "close_stalls_over_10s": 15,
+    "close_stalls_over_20s": 3,
+    "mean_close_seconds": 9.508799999999948,
+    "wall_seconds": 20.920588139997562
+  },
+  "baseline_source": {
+    "kind": "bundled snapshot",
+    "modules": [
+      "Utils.TeamPolicy.TeamPolicy.decide",
+      "Utils.Navigation.Navigator.choose"
+    ],
+    "sha256": {
+      "tools/soccer2d.py": "c2eda4bbf61c1e0cf7ed75e725c0d5511e2c8a518c0da8269cb7de8c5c267f4a",
+      "Wenao/controllers/Utils/PolicyProfile.py": "fbfc04690cd449acc11817b5cff9d33faf7ada0af1c9454605e38af6d8ae51e2",
+      "Wenao/controllers/Utils/TeamPolicy.py": "5d76625a78314db46c85efb9c39e4651a31115fe59a627e0e861869914d08dcd",
+      "Wenao/controllers/Utils/Navigation.py": "c3d44dcda082ad20e92bce69b8dd3846020cf97de4ed034352d348cdf6e6490f",
+      "Wenao/controllers/Utils/CourseSpecs.py": "329cc279f44dc6e3fa19e089319787c2cafd6c33d5118f0be3fb2e6eeb624bf0",
+      "Wenao/controllers/Utils/MatchEngine.py": "d92cab0c4a9618608b503c49014ad53dd03c33b960ef5bfcbf896537ae4b0ed2"
+    }
+  },
+  "candidate_source": {
+    "kind": "workspace",
+    "modules": [
+      "Utils.TeamPolicy.TeamPolicy.decide",
+      "Utils.Navigation.Navigator.choose"
+    ],
+    "sha256": {
+      "tools/soccer2d.py": "c2eda4bbf61c1e0cf7ed75e725c0d5511e2c8a518c0da8269cb7de8c5c267f4a",
+      "Wenao/controllers/Utils/PolicyProfile.py": "fbfc04690cd449acc11817b5cff9d33faf7ada0af1c9454605e38af6d8ae51e2",
+      "Wenao/controllers/Utils/TeamPolicy.py": "c4a4ebfdfea12e98ed760480c89365ad1ff018bbc9ae299ba84f2eb0c23f2ff2",
+      "Wenao/controllers/Utils/Navigation.py": "43d055d660ab9a426de11cabd0137a8bad556ace2ac0ab692fdaafabe28cb58f",
+      "Wenao/controllers/Utils/CourseSpecs.py": "329cc279f44dc6e3fa19e089319787c2cafd6c33d5118f0be3fb2e6eeb624bf0",
+      "Wenao/controllers/Utils/MatchEngine.py": "d92cab0c4a9618608b503c49014ad53dd03c33b960ef5bfcbf896537ae4b0ed2",
+      "Wenao/controllers/Utils/DefensivePlan.py": "e632321973f03a67537a92575eea8b010c11ee0012dd83db3f3335bf630727a4"
+    }
+  },
+  "verification": {
+    "unit_tests": 113,
+    "random_spawn_checks": 5000,
+    "browser": "browser-check.json",
+    "webots_trace_rows": 446,
+    "webots_trace_mismatches": 0,
+    "package": "package-check.json"
+  }
+}

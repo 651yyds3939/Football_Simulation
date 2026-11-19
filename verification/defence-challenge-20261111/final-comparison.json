@@ -1,0 +1,72 @@
+{
+  "baseline": {
+    "runs": 100,
+    "outcomes": {
+      "GOAL": 89,
+      "CLEARED_GOAL": 4,
+      "TIMEOUT": 7
+    },
+    "close_encounters": 44,
+    "controlled_left_progress_runs": 5,
+    "breakthrough_after_contact_runs": 33,
+    "close_stalls_over_10s": 10,
+    "close_stalls_over_20s": 4,
+    "mean_close_seconds": 15.340400000000418,
+    "wall_seconds": 12.172395037021488
+  },
+  "model_only": {
+    "runs": 100,
+    "outcomes": {
+      "GOAL": 86,
+      "CLEARED_GOAL": 7,
+      "TIMEOUT": 7
+    },
+    "close_encounters": 44,
+    "controlled_left_progress_runs": 12,
+    "breakthrough_after_contact_runs": 30,
+    "close_stalls_over_10s": 9,
+    "close_stalls_over_20s": 4,
+    "mean_close_seconds": 12.813200000000133,
+    "wall_seconds": 14.544337875006022
+  },
+  "final": {
+    "runs": 100,
+    "outcomes": {
+      "TIMEOUT": 4,
+      "GOAL": 79,
+      "CLEARED_GOAL": 17
+    },
+    "close_encounters": 49,
+    "controlled_left_progress_runs": 18,
+    "breakthrough_after_contact_runs": 28,
+    "close_stalls_over_10s": 12,
+    "close_stalls_over_20s": 1,
+    "mean_close_seconds": 7.009599999999929,
+    "wall_seconds": 15.173938366991933
+  },
+  "validation_seeds": [
+    147,
+    246
+  ],
+  "source": {
+    "kind": "workspace",
+    "modules": [
+      "Utils.TeamPolicy.TeamPolicy.decide",
+      "Utils.Navigation.Navigator.choose"
+    ],
+    "sha256": {
+      "tools/soccer2d.py": "c2eda4bbf61c1e0cf7ed75e725c0d5511e2c8a518c0da8269cb7de8c5c267f4a",
+      "Wenao/controllers/Utils/PolicyProfile.py": "fbfc04690cd449acc11817b5cff9d33faf7ada0af1c9454605e38af6d8ae51e2",
+      "Wenao/controllers/Utils/TeamPolicy.py": "5d76625a78314db46c85efb9c39e4651a31115fe59a627e0e861869914d08dcd",
+      "Wenao/controllers/Utils/Navigation.py": "c3d44dcda082ad20e92bce69b8dd3846020cf97de4ed034352d348cdf6e6490f",
+      "Wenao/controllers/Utils/CourseSpecs.py": "329cc279f44dc6e3fa19e089319787c2cafd6c33d5118f0be3fb2e6eeb624bf0",
+      "Wenao/controllers/Utils/MatchEngine.py": "d92cab0c4a9618608b503c49014ad53dd03c33b960ef5bfcbf896537ae4b0ed2"
+    }
+  },
+  "limits": [
+    "Both 2D execution assumptions and shared tactics changed; ablation uses the old policy on the same corrected model.",
+    "Controlled recovery is an observed 2D metric, not calibrated hardware possession.",
+    "Four final validation runs time out; fixed shoulder cases can still stall.",
+    "3D short fixture has one red-player recovery action; no full-match stability claim."
+  ]
+}

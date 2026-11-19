@@ -1,0 +1,43 @@
+{
+  "scope": "Source diagrams only; no simulation or controller changes",
+  "languages": [
+    "EN",
+    "ZH"
+  ],
+  "exports": [
+    "S3_1_Data_Sources_EN.png",
+    "S3_1_Data_Sources_EN.pdf",
+    "S3_1_Data_Sources_ZH.png",
+    "S3_1_Data_Sources_ZH.pdf",
+    "S3_2_Data_Sources_EN.png",
+    "S3_2_Data_Sources_EN.pdf",
+    "S3_2_Data_Sources_ZH.png",
+    "S3_2_Data_Sources_ZH.pdf",
+    "S3_3_Data_Sources_EN.png",
+    "S3_3_Data_Sources_EN.pdf",
+    "S3_3_Data_Sources_ZH.png",
+    "S3_3_Data_Sources_ZH.pdf"
+  ],
+  "source_documents": [
+    "TDP_Project_Specification_2026_27.pdf, pp. 1, 3, 6 (App. A)",
+    "TDP_Kickoff_Slides_2026_27.pdf, p. 5"
+  ],
+  "source_records": [
+    "verification/development/navigation/motion-result.json",
+    "verification/development/navigation/skills-result.json"
+  ],
+  "rule_scope": "Course-linked reference and current partial implementation; not a full rules compliance claim",
+  "model_assumptions_are_not_hardware_measurements": true,
+  "source_sha256": {
+    "TDP_Project_Specification_2026_27.pdf": "7f9babf35c6cc50de55787b670e6497bfcf31b2223473b4be724d54780a2a354",
+    "TDP_Kickoff_Slides_2026_27.pdf": "b0b850f14c79ec9459dc8e588654a7af3cd8823f0c3301ee15d26664783af4c4",
+    "2D_Robotics_TDP/2D_Shared_Policy_2026-11-11/backend/tools/soccer2d.py": "1becda51673efc1078c1678c82cf980e5e50c5fa6f0959ad127ca5fc8eb69bd3",
+    "2D_Robotics_TDP/2D_Shared_Policy_2026-11-11/backend/Wenao/controllers/Utils/CourseSpecs.py": "329cc279f44dc6e3fa19e089319787c2cafd6c33d5118f0be3fb2e6eeb624bf0",
+    "2D_Robotics_TDP/2D_Shared_Policy_2026-11-11/backend/Wenao/controllers/Utils/MatchEngine.py": "d92cab0c4a9618608b503c49014ad53dd03c33b960ef5bfcbf896537ae4b0ed2",
+    "2D_Robotics_TDP/2D_Shared_Policy_2026-11-11/backend/Wenao/protos/CourseGoal.proto": "47b91bf84b7d37fd43b37b4b7b1c8c602721998b0187043ea136c8e178cbad7c",
+    "2D_Robotics_TDP/2D_Shared_Policy_2026-11-11/backend/Wenao/motions/Shoot.motion": "80d17d1eda96be7ee77e63aa5fcbe5470941103f82bcf147decf2e42e0c82443",
+    "2D_Robotics_TDP/2D_Shared_Policy_2026-11-11/backend/Wenao/motions/LongPass.motion": "9ea816bb2501a9e8c2043e1ff7be91333d71801998fa1019320028b677175acb",
+    "2D_Robotics_TDP/2D_Shared_Policy_2026-11-11/backend/verification/development/navigation/motion-result.json": "e015f767ab831c575bf57358f7f6a99d24166379d6cbf3af0dde34318d679bfc",
+    "2D_Robotics_TDP/2D_Shared_Policy_2026-11-11/backend/verification/development/navigation/skills-result.json": "54a558b6cc7ccd7fd97f48c9f0e128819f01de48a7751ae1f0a22bbee1f1501a"
+  }
+}

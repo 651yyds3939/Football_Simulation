@@ -1,0 +1,61 @@
+{
+  "seed": 27,
+  "candidate_team": "RED",
+  "candidate": "baseline",
+  "score_red_blue": [
+    0,
+    0
+  ],
+  "candidate_goal_difference": 0,
+  "simulated_seconds": 21.799999999999955,
+  "phase": "FINISHED",
+  "team_stats": {
+    "RED": {
+      "decision_transitions": 60,
+      "action_transitions": 41,
+      "playing_player_seconds": 63.20000000000036,
+      "support_seconds": 13.799999999999983,
+      "support_behind_ball_seconds": 13.799999999999983,
+      "defending_support_seconds": 7.400000000000004,
+      "defending_support_behind_seconds": 7.400000000000004,
+      "contact_transitions": 1
+    },
+    "BLUE": {
+      "decision_transitions": 66,
+      "action_transitions": 49,
+      "playing_player_seconds": 63.20000000000036,
+      "contact_transitions": 1,
+      "support_seconds": 14.39999999999998,
+      "support_behind_ball_seconds": 12.599999999999987,
+      "defending_support_seconds": 9.399999999999999,
+      "defending_support_behind_seconds": 7.600000000000004
+    }
+  },
+  "model": {
+    "dt": 0.2,
+    "half_seconds": 10.0,
+    "ready_seconds": 1.0,
+    "walk_speed": 0.08525241087733532,
+    "back_speed": 0.034151821846239855,
+    "left_speed": 0.012710006709112306,
+    "right_speed": 0.02229703610271777,
+    "left_turn": 0.07362390384491213,
+    "right_turn": 0.07569683357192747,
+    "robot_radius": 0.15,
+    "rolling_deceleration": 0.35,
+    "shot_range": 0.406003256198733,
+    "pass_range": 0.3051396105104535,
+    "shot_seconds": 4.8,
+    "pass_seconds": 3.299,
+    "kick_noise_radians": 0.04
+  },
+  "physics_or_hardware_validated": false,
+  "limitations": [
+    "Kinematic discs and contact impulses; no NAO balance or joint dynamics.",
+    "Perfect ground-truth state; no independent camera localisation.",
+    "Ball friction, noise and contact are uncalibrated model assumptions.",
+    "Formation placement at each half is a declared fixture.",
+    "Uses current referee geometry, but not complete physical-foul rules.",
+    "An abstract pass completion is not a validated Webots pass."
+  ]
+}

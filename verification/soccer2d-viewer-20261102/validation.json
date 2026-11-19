@@ -1,0 +1,29 @@
+{
+  "baseline_equivalent": true,
+  "frames": 3009,
+  "events": 1308,
+  "score": [
+    0,
+    0
+  ],
+  "simulated_seconds": 601.5999999999998,
+  "scene_html_sha256": "228d743dd65e02b7f630c23d1e9108caa56c2d61cb46096782c3bbcb242a8dea",
+  "run": "Webots_Robotics_TDP/runs/scene2d_20261102_02",
+  "logic_tests_passed": 78,
+  "browser": {
+    "players": 8,
+    "desktop_controls_visible": true,
+    "frame_step": true,
+    "seek": true,
+    "selection": true,
+    "playback_clock": "02:00.2",
+    "terminal_frame": true,
+    "loop": true,
+    "event_jump": true,
+    "mobile_width": {
+      "scroll": 390,
+      "viewport": 390
+    },
+    "runtime_errors": []
+  }
+}

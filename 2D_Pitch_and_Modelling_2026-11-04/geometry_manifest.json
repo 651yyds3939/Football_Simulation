@@ -1,0 +1,33 @@
+{
+  "source": "Webots_Robotics_TDP/Wenao/controllers/Utils/CourseSpecs.py",
+  "source_sha256": "329cc279f44dc6e3fa19e089319787c2cafd6c33d5118f0be3fb2e6eeb624bf0",
+  "dimensions": {
+    "BALL_DIAMETER": 0.14,
+    "BALL_RADIUS": 0.07,
+    "BORDER_WIDTH": 1.0,
+    "CENTRE_CIRCLE_DIAMETER": 1.5,
+    "GOAL_AREA_LENGTH": 1.0,
+    "GOAL_AREA_WIDTH": 3.0,
+    "GOAL_DEPTH": 0.6,
+    "GOAL_HEIGHT": 1.2,
+    "GOAL_WIDTH": 2.6,
+    "GRID_RESOLUTION": 0.1,
+    "LINE_WIDTH": 0.05,
+    "PENALTY_AREA_LENGTH": 2.0,
+    "PENALTY_AREA_WIDTH": 5.0,
+    "PENALTY_MARK_DISTANCE": 1.5,
+    "PITCH_LENGTH": 9.0,
+    "PITCH_WIDTH": 6.0,
+    "TIME_STEP": 40
+  },
+  "goal_post_radius": 0.05,
+  "goal_post_radius_source": "CourseGoal.proto",
+  "exports": [
+    "pitch_2d_clean.png",
+    "pitch_2d_clean.svg",
+    "pitch_2d_clean.pdf",
+    "pitch_2d_dimensions_en.png",
+    "pitch_2d_dimensions_en.svg",
+    "pitch_2d_dimensions_en.pdf"
+  ]
+}

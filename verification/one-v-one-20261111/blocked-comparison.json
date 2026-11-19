@@ -1,0 +1,72 @@
+{
+  "seeds": [
+    27,
+    46
+  ],
+  "duration_cap": 180,
+  "scenario": "random",
+  "baseline_outcomes": {
+    "GOAL": 14,
+    "TIMEOUT": 6
+  },
+  "final_outcomes": {
+    "GOAL": 16,
+    "CLEARED_GOAL": 3,
+    "TIMEOUT": 1
+  },
+  "live_capture_seed_before": {
+    "seed": 309071988,
+    "outcome": "TIMEOUT",
+    "seconds": 179.99999999999847
+  },
+  "live_capture_seed_after": {
+    "seed": 309071988,
+    "scenario": "random",
+    "seconds": 87.04000000000241,
+    "outcome": "GOAL",
+    "score": [
+      1,
+      0
+    ],
+    "stats": {
+      "shotAttempts": 2,
+      "shotContacts": 1,
+      "clearAttempts": 1,
+      "clearContacts": 1,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "escape_episodes": 2
+  },
+  "remaining_timeout_seeds": [
+    37
+  ],
+  "source": {
+    "kind": "workspace",
+    "modules": [
+      "Utils.TeamPolicy.TeamPolicy.decide",
+      "Utils.Navigation.Navigator.choose"
+    ],
+    "sha256": {
+      "tools/soccer2d.py": "c38b1144639639fc429e5698d31123d833ef4aa79576befb56e6570c30973c9a",
+      "Wenao/controllers/Utils/PolicyProfile.py": "fbfc04690cd449acc11817b5cff9d33faf7ada0af1c9454605e38af6d8ae51e2",
+      "Wenao/controllers/Utils/TeamPolicy.py": "598e3343cb3f980977b14528bd5428e8eecd8b96f21c178488ead3cc092bd9d7",
+      "Wenao/controllers/Utils/Navigation.py": "73f9b537cb38742f4725b85e33808368249a820a6dde69023af4287e8587a472",
+      "Wenao/controllers/Utils/CourseSpecs.py": "329cc279f44dc6e3fa19e089319787c2cafd6c33d5118f0be3fb2e6eeb624bf0",
+      "Wenao/controllers/Utils/MatchEngine.py": "d92cab0c4a9618608b503c49014ad53dd03c33b960ef5bfcbf896537ae4b0ed2"
+    }
+  },
+  "limits": [
+    "Both the 2D rebound calculation and shared recovery policy changed.",
+    "Outcomes are for this approximate 2D model, not general performance or 3D success.",
+    "The screenshot did not show its seed; a similar stationary duel was reproduced from the live server seed."
+  ]
+}

@@ -1,0 +1,550 @@
+{
+  "runs": [
+    {
+      "case": "beaten",
+      "direction": 1,
+      "first": {
+        "name": "BlueDefender",
+        "role": "defender",
+        "x": 0.7513660728738496,
+        "y": 0.38,
+        "yaw": 3.141592653589793,
+        "state": "RECOVER_DEFENCE",
+        "target": {
+          "x": 1.75,
+          "y": 0.0
+        },
+        "action": "back",
+        "stage": "RECOVERY_BACKTRACK",
+        "kick": null
+      },
+      "at_three_seconds": {
+        "state": {
+          "name": "BlueDefender",
+          "role": "defender",
+          "x": 0.85245546553872,
+          "y": 0.38,
+          "yaw": 3.141592653589793,
+          "state": "RECOVER_DEFENCE",
+          "target": {
+            "x": 2.0649490648987783,
+            "y": 0.0
+          },
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK",
+          "kick": null
+        },
+        "displacement": 0.10245546553871998,
+        "goalward_metres": 0.10245546553871998
+      },
+      "first_translation_over_1cm_seconds": 0.32,
+      "recovery_requested_seconds": 39.56,
+      "seed": 27,
+      "scenario": "random",
+      "seconds": 39.59999999999933,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      }
+    },
+    {
+      "case": "beaten",
+      "direction": -1,
+      "first": {
+        "name": "BlueDefender",
+        "role": "defender",
+        "x": -0.7513660728738496,
+        "y": -0.38,
+        "yaw": 0,
+        "state": "RECOVER_DEFENCE",
+        "target": {
+          "x": -1.75,
+          "y": 0.0
+        },
+        "action": "back",
+        "stage": "RECOVERY_BACKTRACK",
+        "kick": null
+      },
+      "at_three_seconds": {
+        "state": {
+          "name": "BlueDefender",
+          "role": "defender",
+          "x": -0.85245546553872,
+          "y": -0.38,
+          "yaw": 0,
+          "state": "RECOVER_DEFENCE",
+          "target": {
+            "x": -2.0649490648987783,
+            "y": 3.146353238319399e-17
+          },
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK",
+          "kick": null
+        },
+        "displacement": 0.10245546553871998,
+        "goalward_metres": 0.10245546553871998
+      },
+      "first_translation_over_1cm_seconds": 0.32,
+      "recovery_requested_seconds": 39.56,
+      "seed": 27,
+      "scenario": "random",
+      "seconds": 39.59999999999933,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      }
+    },
+    {
+      "case": "just_beaten",
+      "direction": 1,
+      "first": {
+        "name": "BlueDefender",
+        "role": "defender",
+        "x": 1.0013660728738496,
+        "y": 0.35,
+        "yaw": 3.141592653589793,
+        "state": "RECOVER_DEFENCE",
+        "target": {
+          "x": 1.75,
+          "y": 0.0
+        },
+        "action": "back",
+        "stage": "RECOVERY_BACKTRACK",
+        "kick": null
+      },
+      "at_three_seconds": {
+        "state": {
+          "name": "BlueDefender",
+          "role": "defender",
+          "x": 1.10245546553872,
+          "y": 0.35,
+          "yaw": 3.141592653589793,
+          "state": "RECOVER_DEFENCE",
+          "target": {
+            "x": 2.0649490648987783,
+            "y": 0.0
+          },
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK",
+          "kick": null
+        },
+        "displacement": 0.10245546553871998,
+        "goalward_metres": 0.10245546553871998
+      },
+      "first_translation_over_1cm_seconds": 0.32,
+      "recovery_requested_seconds": 39.56,
+      "seed": 27,
+      "scenario": "random",
+      "seconds": 39.59999999999933,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      }
+    },
+    {
+      "case": "just_beaten",
+      "direction": -1,
+      "first": {
+        "name": "BlueDefender",
+        "role": "defender",
+        "x": -1.0013660728738496,
+        "y": -0.35,
+        "yaw": 0,
+        "state": "RECOVER_DEFENCE",
+        "target": {
+          "x": -1.75,
+          "y": 0.0
+        },
+        "action": "back",
+        "stage": "RECOVERY_BACKTRACK",
+        "kick": null
+      },
+      "at_three_seconds": {
+        "state": {
+          "name": "BlueDefender",
+          "role": "defender",
+          "x": -1.10245546553872,
+          "y": -0.35,
+          "yaw": 0,
+          "state": "RECOVER_DEFENCE",
+          "target": {
+            "x": -2.0649490648987783,
+            "y": 3.146353238319399e-17
+          },
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK",
+          "kick": null
+        },
+        "displacement": 0.10245546553871998,
+        "goalward_metres": 0.10245546553871998
+      },
+      "first_translation_over_1cm_seconds": 0.32,
+      "recovery_requested_seconds": 39.56,
+      "seed": 27,
+      "scenario": "random",
+      "seconds": 39.59999999999933,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      }
+    },
+    {
+      "case": "wide_beaten",
+      "direction": 1,
+      "first": {
+        "name": "BlueDefender",
+        "role": "defender",
+        "x": 0.7013660728738496,
+        "y": 1.0,
+        "yaw": 3.141592653589793,
+        "state": "RECOVER_DEFENCE",
+        "target": {
+          "x": 1.75,
+          "y": 0.0
+        },
+        "action": "back",
+        "stage": "RECOVERY_BACKTRACK",
+        "kick": null
+      },
+      "at_three_seconds": {
+        "state": {
+          "name": "BlueDefender",
+          "role": "defender",
+          "x": 0.8024554655387199,
+          "y": 1.0,
+          "yaw": 3.141592653589793,
+          "state": "RECOVER_DEFENCE",
+          "target": {
+            "x": 2.0649490648987783,
+            "y": 0.0
+          },
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK",
+          "kick": null
+        },
+        "displacement": 0.10245546553871998,
+        "goalward_metres": 0.10245546553871998
+      },
+      "first_translation_over_1cm_seconds": 0.32,
+      "recovery_requested_seconds": 39.56,
+      "seed": 27,
+      "scenario": "random",
+      "seconds": 39.59999999999933,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      }
+    },
+    {
+      "case": "wide_beaten",
+      "direction": -1,
+      "first": {
+        "name": "BlueDefender",
+        "role": "defender",
+        "x": -0.7013660728738496,
+        "y": -1.0,
+        "yaw": 0,
+        "state": "RECOVER_DEFENCE",
+        "target": {
+          "x": -1.75,
+          "y": 0.0
+        },
+        "action": "back",
+        "stage": "RECOVERY_BACKTRACK",
+        "kick": null
+      },
+      "at_three_seconds": {
+        "state": {
+          "name": "BlueDefender",
+          "role": "defender",
+          "x": -0.8024554655387199,
+          "y": -1.0,
+          "yaw": 0,
+          "state": "RECOVER_DEFENCE",
+          "target": {
+            "x": -2.0649490648987783,
+            "y": 3.146353238319399e-17
+          },
+          "action": "back",
+          "stage": "RECOVERY_BACKTRACK",
+          "kick": null
+        },
+        "displacement": 0.10245546553871998,
+        "goalward_metres": 0.10245546553871998
+      },
+      "first_translation_over_1cm_seconds": 0.32,
+      "recovery_requested_seconds": 39.56,
+      "seed": 27,
+      "scenario": "random",
+      "seconds": 39.59999999999933,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      }
+    },
+    {
+      "case": "goal_side",
+      "direction": 1,
+      "first": {
+        "name": "BlueDefender",
+        "role": "defender",
+        "x": 1.8,
+        "y": 0.1494915997316355,
+        "yaw": 3.141592653589793,
+        "state": "INTERCEPT",
+        "target": {
+          "x": 1.3699999999999999,
+          "y": 0.05
+        },
+        "action": "step_left",
+        "stage": "ALIGN_FOOT_LATERALLY",
+        "kick": null
+      },
+      "at_three_seconds": {
+        "state": {
+          "name": "BlueDefender",
+          "role": "defender",
+          "x": 1.8,
+          "y": 0.11186997987266328,
+          "yaw": 3.141592653589793,
+          "state": "CLEAR",
+          "target": {
+            "x": 1.62234713619691,
+            "y": 0.05
+          },
+          "action": "step_left",
+          "stage": "ALIGN_FOOT_LATERALLY",
+          "kick": null
+        },
+        "displacement": 0.03813002012733671,
+        "goalward_metres": 0.0
+      },
+      "first_translation_over_1cm_seconds": 0.8000000000000002,
+      "recovery_requested_seconds": 0.0,
+      "seed": 27,
+      "scenario": "random",
+      "seconds": 100.00000000000443,
+      "outcome": "TIMEOUT",
+      "score": [
+        0,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 20,
+        "clearContacts": 20,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      }
+    },
+    {
+      "case": "goal_side",
+      "direction": -1,
+      "first": {
+        "name": "BlueDefender",
+        "role": "defender",
+        "x": -1.8,
+        "y": -0.1494915997316355,
+        "yaw": 0,
+        "state": "INTERCEPT",
+        "target": {
+          "x": -1.3699999999999999,
+          "y": -0.05
+        },
+        "action": "step_left",
+        "stage": "ALIGN_FOOT_LATERALLY",
+        "kick": null
+      },
+      "at_three_seconds": {
+        "state": {
+          "name": "BlueDefender",
+          "role": "defender",
+          "x": -1.8,
+          "y": -0.11186997987266328,
+          "yaw": 0,
+          "state": "CLEAR",
+          "target": {
+            "x": -1.62234713619691,
+            "y": -0.04999999999999997
+          },
+          "action": "step_left",
+          "stage": "ALIGN_FOOT_LATERALLY",
+          "kick": null
+        },
+        "displacement": 0.03813002012733671,
+        "goalward_metres": -0.0
+      },
+      "first_translation_over_1cm_seconds": 0.8000000000000002,
+      "recovery_requested_seconds": 0.0,
+      "seed": 27,
+      "scenario": "random",
+      "seconds": 100.00000000000443,
+      "outcome": "TIMEOUT",
+      "score": [
+        0,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 20,
+        "clearContacts": 20,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      }
+    }
+  ],
+  "source": {
+    "kind": "workspace",
+    "modules": [
+      "Utils.TeamPolicy.TeamPolicy.decide",
+      "Utils.Navigation.Navigator.choose"
+    ],
+    "sha256": {
+      "tools/soccer2d.py": "c38b1144639639fc429e5698d31123d833ef4aa79576befb56e6570c30973c9a",
+      "Wenao/controllers/Utils/PolicyProfile.py": "fbfc04690cd449acc11817b5cff9d33faf7ada0af1c9454605e38af6d8ae51e2",
+      "Wenao/controllers/Utils/TeamPolicy.py": "7dd7c9efdff64347969fd3bfadaeb7628684b7f363342952e642e75d8b432abf",
+      "Wenao/controllers/Utils/Navigation.py": "48c6998042f3494f1e899f1726136db36ccbfa7bea8bbe6bdaa8c71b1bc33e16",
+      "Wenao/controllers/Utils/CourseSpecs.py": "329cc279f44dc6e3fa19e089319787c2cafd6c33d5118f0be3fb2e6eeb624bf0",
+      "Wenao/controllers/Utils/MatchEngine.py": "d92cab0c4a9618608b503c49014ad53dd03c33b960ef5bfcbf896537ae4b0ed2"
+    }
+  },
+  "model": {
+    "dt": 0.04,
+    "half_seconds": 110,
+    "ready_seconds": 1,
+    "walk_speed": 0.08525241087733532,
+    "back_speed": 0.034151821846239855,
+    "left_speed": 0.012710006709112306,
+    "right_speed": 0.02229703610271777,
+    "left_turn": 0.07362390384491213,
+    "right_turn": 0.07569683357192747,
+    "robot_radius": 0.15,
+    "rolling_deceleration": 0.35,
+    "shot_range": 0.406003256198733,
+    "pass_range": 0.3051396105104535,
+    "shot_seconds": 4.8,
+    "pass_seconds": 3.299,
+    "kick_noise_radians": 0.04,
+    "ball_radius": 0.07
+  }
+}

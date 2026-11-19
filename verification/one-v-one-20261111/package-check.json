@@ -1,0 +1,13 @@
+{
+  "version": "continuous_random_starts",
+  "archive": "2D_1v1_Demo_2026-11-11.zip",
+  "size_bytes": 21267,
+  "sha256": "a1e42afb4e07aee1a1a78c3c59e996aef616e204dc0d89ab8dbd8bac76cd7703",
+  "members": [
+    "2D_1v1_Demo_2026-11-11/index.html",
+    "2D_1v1_Demo_2026-11-11/README.md",
+    "2D_1v1_Demo_2026-11-11/MODEL_NOTES.md",
+    "2D_1v1_Demo_2026-11-11/model_parameters.json"
+  ],
+  "extracted_html_matches": true
+}

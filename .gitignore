@@ -1,0 +1,34 @@
+# Python environments and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local credentials and machine settings
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary output
+*.log
+*.tmp
+*.crdownload
+*.part
+
+# Duplicate local copies and extracted archives
+/2D_1v1_Demo_2026-11-11 (1)/
+/verification/**/extracted/
+/verification/**/shared-extracted/
+/verification/**/shared-downloads/
+
+# Generated verification pages; keep their source templates and data
+/verification/**/*.html
+!/verification/**/template.html
+/verification/**/*.png

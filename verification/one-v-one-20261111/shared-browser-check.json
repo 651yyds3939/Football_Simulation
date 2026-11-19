@@ -1,0 +1,48 @@
+{
+  "default_speed": "8x",
+  "goal_side_presets": 6,
+  "canvas_roles": "red attacker / blue defender",
+  "policy_modules": [
+    "Utils.TeamPolicy.TeamPolicy.decide",
+    "Utils.Navigation.Navigator.choose"
+  ],
+  "no_javascript_simulation_core": true,
+  "python_step": true,
+  "random_setup": true,
+  "early_predictive_interception": {
+    "seconds": 0.2,
+    "action": "left40",
+    "stage": "INTERCEPT_MOVE_EARLY",
+    "target": {
+      "x": 1.855,
+      "y": 0
+    }
+  },
+  "defender_can_win": {
+    "seconds": 83.88000000000191,
+    "result": "CLEARED_GOAL"
+  },
+  "congestion_recovery": {
+    "seconds": 8.519999999999994,
+    "attacker": "DUEL_ESCAPE",
+    "defender": "CHALLENGE"
+  },
+  "shared_policy_near_goal_attack": {
+    "seconds": 124.96000000000834,
+    "result": "OUT",
+    "contacts": 0
+  },
+  "html_replay_export": true,
+  "batch20": {
+    "wall": 5.526383497999632,
+    "outcomes": {
+      "OUT": 20
+    }
+  },
+  "python_manual_setup": true,
+  "bilingual": true,
+  "mobile_no_overflow": true,
+  "offline_replay_runs_without_python_calls": true,
+  "external_requests": [],
+  "runtime_errors": []
+}

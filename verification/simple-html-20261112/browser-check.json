@@ -1,0 +1,32 @@
+{
+  "offline_autoplay_at_8x": true,
+  "pause": true,
+  "examples": [
+    {
+      "seed": 355,
+      "outcome": "CLEARED_GOAL"
+    },
+    {
+      "seed": 347,
+      "outcome": "GOAL"
+    },
+    {
+      "seed": 348,
+      "outcome": "GOAL"
+    },
+    {
+      "seed": 351,
+      "outcome": "CLEARED_GOAL"
+    },
+    {
+      "seed": 366,
+      "outcome": "TIMEOUT"
+    }
+  ],
+  "recordings_equal_original_frames": true,
+  "seeking_all_five_endings": true,
+  "bilingual": true,
+  "mobile_no_overflow": true,
+  "runtime_errors": [],
+  "no_network_requests": true
+}

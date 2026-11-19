@@ -1,0 +1,21 @@
+{
+  "initial_state": "paused, English, two players and one ball",
+  "single_step": true,
+  "live_play_and_pause": true,
+  "reset": true,
+  "seed_control": true,
+  "live_goal": {
+    "outcome": "GOAL",
+    "seconds": 6.560000000000005,
+    "shot_contacts": 1
+  },
+  "bilingual": true,
+  "pointer_drag": true,
+  "download_json": true,
+  "mobile_no_overflow": {
+    "scroll": 390,
+    "viewport": 390
+  },
+  "external_network_requests": [],
+  "javascript_errors": []
+}

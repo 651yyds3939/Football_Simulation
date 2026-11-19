@@ -1,0 +1,43 @@
+{
+  "error": "Error: Timed out: sharedView.state.outcome; Request failed: Failed to fetch",
+  "networkFailures": [
+    {
+      "requestId": "138037.151",
+      "timestamp": 14939.538268,
+      "type": "Fetch",
+      "errorText": "net::ERR_ABORTED",
+      "canceled": true
+    }
+  ],
+  "errors": [],
+  "checks": {
+    "default_speed": "8x",
+    "goal_side_presets": 6,
+    "canvas_roles": "red attacker / blue defender",
+    "policy_modules": [
+      "Utils.TeamPolicy.TeamPolicy.decide",
+      "Utils.Navigation.Navigator.choose"
+    ],
+    "no_javascript_simulation_core": true,
+    "python_step": true,
+    "random_setup": true,
+    "early_predictive_interception": {
+      "seconds": 0.2,
+      "action": "left40",
+      "stage": "INTERCEPT_MOVE_EARLY",
+      "target": {
+        "x": 1.855,
+        "y": 0
+      }
+    },
+    "defender_can_win": {
+      "seconds": 83.88000000000191,
+      "result": "CLEARED_GOAL"
+    },
+    "congestion_recovery": {
+      "seconds": 7.440000000000006,
+      "attacker": "DUEL_ESCAPE",
+      "defender": "CHALLENGE"
+    }
+  }
+}

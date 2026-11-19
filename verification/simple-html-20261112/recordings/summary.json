@@ -1,0 +1,137 @@
+[
+  {
+    "seed": 355,
+    "scenario": "random",
+    "seconds": 78.56000000000108,
+    "outcome": "CLEARED_GOAL",
+    "score": [
+      0,
+      1
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 2,
+      "clearContacts": 1,
+      "clearancesCompleted": 1
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "frames": 394
+  },
+  {
+    "seed": 347,
+    "scenario": "random",
+    "seconds": 56.439999999998975,
+    "outcome": "GOAL",
+    "score": [
+      1,
+      0
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 0,
+      "clearContacts": 0,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "frames": 284
+  },
+  {
+    "seed": 348,
+    "scenario": "random",
+    "seconds": 31.439999999999507,
+    "outcome": "GOAL",
+    "score": [
+      1,
+      0
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 0,
+      "clearContacts": 0,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "frames": 159
+  },
+  {
+    "seed": 351,
+    "scenario": "random",
+    "seconds": 127.36000000000871,
+    "outcome": "CLEARED_GOAL",
+    "score": [
+      0,
+      1
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 2,
+      "clearContacts": 1,
+      "clearancesCompleted": 1
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "frames": 638
+  },
+  {
+    "seed": 366,
+    "scenario": "random",
+    "seconds": 179.99999999999847,
+    "outcome": "TIMEOUT",
+    "score": [
+      0,
+      0
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 0,
+      "clearContacts": 0,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "frames": 901
+  }
+]

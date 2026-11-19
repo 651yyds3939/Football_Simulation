@@ -1,0 +1,51 @@
+import fs from 'node:fs';
+import {fileURLToPath,pathToFileURL} from 'node:url';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..');
+const out=root+'/verification/soccer2d-viewer-20261102';
+const replay=root+'/2D足球可视化场景_2026-11-02.html';
+const profile=process.env.TDP_2D_QA_PROFILE||'/tmp/tdp-soccer2d-qa-20261102';
+const port=fs.readFileSync(profile+'/DevToolsActivePort','utf8').split('\n')[0];
+const targets=await (await fetch(`http://127.0.0.1:${port}/json/list`)).json();
+const ws=new WebSocket(targets.find(t=>t.type==='page').webSocketDebuggerUrl);
+await new Promise((resolve,reject)=>{ws.onopen=resolve;ws.onerror=reject;});
+let id=0;const pending=new Map(),errors=[];
+ws.onmessage=({data})=>{const m=JSON.parse(data);if(m.method==='Runtime.exceptionThrown')errors.push(m.params.exceptionDetails);if(m.id){const p=pending.get(m.id);pending.delete(m.id);if(m.error)p.reject(m.error);else p.resolve(m.result);}};
+const send=(method,params={})=>new Promise((resolve,reject)=>{const n=++id;pending.set(n,{resolve,reject});ws.send(JSON.stringify({id:n,method,params}));});
+const ev=async expression=>{const r=await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(r.exceptionDetails)throw new Error(JSON.stringify(r.exceptionDetails));return r.result.value;};
+const pause=ms=>new Promise(r=>setTimeout(r,ms));
+const checks={};
+try{
+ await send('Page.enable');await send('Runtime.enable');
+ await send('Emulation.setDeviceMetricsOverride',{width:1600,height:1050,deviceScaleFactor:1,mobile:false});
+ await send('Page.navigate',{url:pathToFileURL(replay).href});
+ for(let i=0;i<100;i++){if(await ev('document.querySelectorAll(".player").length===8'))break;await pause(50);}
+ assert.equal(await ev('document.querySelectorAll(".player").length'),8);checks.players=8;
+ assert.equal(await ev('document.getElementById("clock").textContent'),'00:00.0');
+ checks.desktop_controls_visible=await ev('document.getElementById("play").getBoundingClientRect().bottom < innerHeight');
+ assert.ok(checks.desktop_controls_visible);
+ await ev('document.getElementById("next").click()');assert.equal(await ev('document.getElementById("clock").textContent'),'00:00.2');
+ await ev('document.getElementById("previous").click()');assert.equal(await ev('document.getElementById("clock").textContent'),'00:00.0');checks.frame_step=true;
+ await ev('document.getElementById("seek").value=500;document.getElementById("seek").dispatchEvent(new Event("input"))');
+ assert.equal(await ev('document.getElementById("clock").textContent'),'01:40.0');checks.seek=true;
+ await ev('document.querySelectorAll(".player")[5].click()');assert.equal(await ev('document.getElementById("selectedName").textContent'),'BlueDefender');checks.selection=true;
+ await ev('document.getElementById("speed").value="32";document.getElementById("play").click()');await pause(650);await ev('document.getElementById("play").click()');
+ checks.playback_clock=await ev('document.getElementById("clock").textContent');assert.notEqual(checks.playback_clock,'01:40.0');
+ await ev('document.getElementById("seek").value=document.getElementById("seek").max;document.getElementById("seek").dispatchEvent(new Event("input"))');
+ assert.match(await ev('document.getElementById("phase").textContent'),/FINISHED/);checks.terminal_frame=true;
+ await ev('document.getElementById("loop").checked=true;document.getElementById("seek").value=3005;document.getElementById("seek").dispatchEvent(new Event("input"));document.getElementById("play").click()');await pause(250);await ev('document.getElementById("play").click()');
+ assert.ok(Number(await ev('document.getElementById("seek").value'))<100);checks.loop=true;
+ await ev('document.getElementById("seek").value=800;document.getElementById("seek").dispatchEvent(new Event("input"))');
+ await ev('document.querySelector(".event").click()');checks.event_jump=true;
+ await ev('document.getElementById("trails").click();document.getElementById("labels").click();document.getElementById("trails").click();document.getElementById("labels").click()');
+ await ev('document.getElementById("seek").value=560;document.getElementById("seek").dispatchEvent(new Event("input"));document.querySelectorAll(".player")[3].click()');
+ await pause(100);
+ const desktop=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:true});fs.writeFileSync(out+'/desktop.png',Buffer.from(desktop.data,'base64'));
+ await send('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});await pause(150);
+ checks.mobile_width=await ev('({scroll:document.documentElement.scrollWidth,viewport:innerWidth})');assert.ok(checks.mobile_width.scroll<=checks.mobile_width.viewport);
+ const mobile=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:true});fs.writeFileSync(out+'/mobile.png',Buffer.from(mobile.data,'base64'));
+ assert.equal(errors.length,0);checks.runtime_errors=errors;
+ fs.writeFileSync(out+'/browser-check.json',JSON.stringify(checks,null,2)+'\n');console.log(JSON.stringify(checks,null,2));
+}finally{ws.close();}

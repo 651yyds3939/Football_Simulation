@@ -1,0 +1,1179 @@
+[
+  {
+    "seed": 309071988,
+    "scenario": "random",
+    "seconds": 87.04000000000241,
+    "outcome": "GOAL",
+    "score": [
+      1,
+      0
+    ],
+    "stats": {
+      "shotAttempts": 2,
+      "shotContacts": 1,
+      "clearAttempts": 1,
+      "clearContacts": 1,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "escape_episodes": 2,
+    "ball_10s": [
+      [
+        -0.057815334595252274,
+        0.42960663181869085
+      ],
+      [
+        0.03164439761637072,
+        0.3694884887570836
+      ],
+      [
+        0.3918074496130303,
+        0.35206756319829036
+      ],
+      [
+        1.244321086769488,
+        0.34784210439973906
+      ],
+      [
+        2.096834723925926,
+        0.34361664560118776
+      ],
+      [
+        2.949348361082364,
+        0.33939118680263647
+      ],
+      [
+        3.801861998238802,
+        0.3351657280040852
+      ],
+      [
+        4.417763132151493,
+        0.3400343051831401
+      ]
+    ]
+  },
+  {
+    "seed": 27,
+    "scenario": "random",
+    "seconds": 42.95999999999926,
+    "outcome": "GOAL",
+    "score": [
+      1,
+      0
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 0,
+      "clearContacts": 0,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "escape_episodes": 0,
+    "ball_10s": [
+      [
+        1.773968723927623,
+        0.469193854371077
+      ],
+      [
+        2.6242307855828093,
+        0.4071311236091106
+      ],
+      [
+        3.474492847237981,
+        0.34506839284714413
+      ],
+      [
+        4.324754908893195,
+        0.2830056620851777
+      ]
+    ]
+  },
+  {
+    "seed": 28,
+    "scenario": "random",
+    "seconds": 114.76000000000674,
+    "outcome": "CLEARED_GOAL",
+    "score": [
+      0,
+      1
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 14,
+      "clearContacts": 14,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "escape_episodes": 4,
+    "ball_10s": [
+      [
+        -0.8660912393501196,
+        -0.9361744392113424
+      ],
+      [
+        -0.8542837721298611,
+        -0.840749374162149
+      ],
+      [
+        -0.8669360490176262,
+        -0.7545981794981057
+      ],
+      [
+        -0.9021268302799309,
+        -0.7290615386840453
+      ],
+      [
+        -0.9804565313137401,
+        -0.6654112609795862
+      ],
+      [
+        -0.9642612240988269,
+        -0.5777105979972303
+      ],
+      [
+        -1.054661641013253,
+        -0.5041280320452581
+      ],
+      [
+        -1.6440823505350675,
+        -0.4088094606733363
+      ],
+      [
+        -2.486857652966998,
+        -0.2802515140087826
+      ],
+      [
+        -3.3296329553989286,
+        -0.15169356734422895
+      ],
+      [
+        -4.172408257830837,
+        -0.023135620679673057
+      ]
+    ]
+  },
+  {
+    "seed": 29,
+    "scenario": "random",
+    "seconds": 100.68000000000454,
+    "outcome": "CLEARED_GOAL",
+    "score": [
+      0,
+      1
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 1,
+      "clearContacts": 1,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "escape_episodes": 2,
+    "ball_10s": [
+      [
+        1.3756594562548572,
+        -0.4302399608715602
+      ],
+      [
+        1.380079580564757,
+        -0.33387344490673565
+      ],
+      [
+        1.1844930661395836,
+        -0.23403539686719962
+      ],
+      [
+        0.3652476436574571,
+        0.00183383338950957
+      ],
+      [
+        -0.4539977788246618,
+        0.23770306364621874
+      ],
+      [
+        -1.1405929765563458,
+        0.3543879983152212
+      ],
+      [
+        -1.9848979648442597,
+        0.47248305660266415
+      ],
+      [
+        -2.8292029531321736,
+        0.590578114890107
+      ],
+      [
+        -3.6735079414200875,
+        0.70867317317755
+      ],
+      [
+        -4.51781292970807,
+        0.8267682314649929
+      ]
+    ]
+  },
+  {
+    "seed": 30,
+    "scenario": "random",
+    "seconds": 46.63999999999918,
+    "outcome": "GOAL",
+    "score": [
+      1,
+      0
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 0,
+      "clearContacts": 0,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "escape_episodes": 0,
+    "ball_10s": [
+      [
+        1.4543627359508071,
+        -0.5166616049040069
+      ],
+      [
+        2.3063073699389602,
+        -0.4852339632712872
+      ],
+      [
+        3.158252003927149,
+        -0.4538063216385675
+      ],
+      [
+        4.010196637915336,
+        -0.4223786800058478
+      ]
+    ]
+  },
+  {
+    "seed": 31,
+    "scenario": "random",
+    "seconds": 71.11999999999992,
+    "outcome": "GOAL",
+    "score": [
+      1,
+      0
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 0,
+      "clearContacts": 0,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "escape_episodes": 0,
+    "ball_10s": [
+      [
+        -0.6310816135038017,
+        -0.9715093443361702
+      ],
+      [
+        0.22061259981994377,
+        -0.9339018579718374
+      ],
+      [
+        1.0723068131436844,
+        -0.8962943716075047
+      ],
+      [
+        1.9240010264674459,
+        -0.8586868852431719
+      ],
+      [
+        2.775695239791207,
+        -0.8210793988788392
+      ],
+      [
+        3.6273894531149686,
+        -0.7834719125145064
+      ],
+      [
+        4.479083666438668,
+        -0.7458644261501737
+      ]
+    ]
+  },
+  {
+    "seed": 32,
+    "scenario": "random",
+    "seconds": 68.23999999999947,
+    "outcome": "GOAL",
+    "score": [
+      1,
+      0
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 0,
+      "clearContacts": 0,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "escape_episodes": 0,
+    "ball_10s": [
+      [
+        -0.3664324310874477,
+        -0.6644713691211334
+      ],
+      [
+        0.4821620708356786,
+        -0.5827111872130751
+      ],
+      [
+        1.3307565727588118,
+        -0.5009510053050169
+      ],
+      [
+        2.17935107468195,
+        -0.41919082339697245
+      ],
+      [
+        3.0279455766050445,
+        -0.3374306414889281
+      ],
+      [
+        3.876540078528139,
+        -0.25567045958088375
+      ]
+    ]
+  },
+  {
+    "seed": 33,
+    "scenario": "random",
+    "seconds": 46.27999999999919,
+    "outcome": "GOAL",
+    "score": [
+      1,
+      0
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 0,
+      "clearContacts": 0,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "escape_episodes": 0,
+    "ball_10s": [
+      [
+        1.487051564428704,
+        0.30299667490176363
+      ],
+      [
+        2.338358165092641,
+        0.25745078918406206
+      ],
+      [
+        3.1896647657565445,
+        0.2119049034663663
+      ],
+      [
+        4.0409713664204485,
+        0.16635901774867168
+      ]
+    ]
+  },
+  {
+    "seed": 34,
+    "scenario": "random",
+    "seconds": 51.279999999999085,
+    "outcome": "GOAL",
+    "score": [
+      1,
+      0
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 0,
+      "clearContacts": 0,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "escape_episodes": 0,
+    "ball_10s": [
+      [
+        1.313032696952646,
+        0.2949353312134263
+      ],
+      [
+        2.1237520797469327,
+        0.37273821469011914
+      ],
+      [
+        2.9723773099336275,
+        0.454178835576755
+      ],
+      [
+        3.8210025401203223,
+        0.5356194564633908
+      ],
+      [
+        4.467876477884694,
+        0.59769846761337
+      ]
+    ]
+  },
+  {
+    "seed": 35,
+    "scenario": "random",
+    "seconds": 49.23999999999913,
+    "outcome": "GOAL",
+    "score": [
+      1,
+      0
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 0,
+      "clearContacts": 0,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "escape_episodes": 0,
+    "ball_10s": [
+      [
+        1.4076349030011326,
+        0.7188401987959361
+      ],
+      [
+        2.256889262503582,
+        0.7934350304255735
+      ],
+      [
+        3.1061436220060314,
+        0.8680298620552109
+      ],
+      [
+        3.9553979815084808,
+        0.9426246936848484
+      ]
+    ]
+  },
+  {
+    "seed": 36,
+    "scenario": "random",
+    "seconds": 72.2400000000001,
+    "outcome": "GOAL",
+    "score": [
+      1,
+      0
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 0,
+      "clearContacts": 0,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "escape_episodes": 0,
+    "ball_10s": [
+      [
+        0.514803708766853,
+        1.3301831542650666
+      ],
+      [
+        1.3630348183591812,
+        1.415631037559909
+      ],
+      [
+        2.2112659279514935,
+        1.5010789208547515
+      ],
+      [
+        2.8951616117696983,
+        1.569972218820245
+      ],
+      [
+        3.6559867593316593,
+        1.4707202504287944
+      ],
+      [
+        3.975753981696058,
+        1.429005637881568
+      ],
+      [
+        4.4079203968907255,
+        1.2568330138214456
+      ]
+    ]
+  },
+  {
+    "seed": 37,
+    "scenario": "random",
+    "seconds": 179.99999999999847,
+    "outcome": "TIMEOUT",
+    "score": [
+      0,
+      0
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 25,
+      "clearContacts": 25,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "escape_episodes": 24,
+    "ball_10s": [
+      [
+        1.764841478176791,
+        -0.9567798667118212
+      ],
+      [
+        1.8741169155897595,
+        -0.9205293030732117
+      ],
+      [
+        1.8929079548310401,
+        -0.9160847938769419
+      ],
+      [
+        1.8895890558573627,
+        -0.9236315340147362
+      ],
+      [
+        1.8893690749147067,
+        -0.9252050064469047
+      ],
+      [
+        1.888978764700776,
+        -0.9265862039949865
+      ],
+      [
+        1.8882178320901952,
+        -0.9286844856594272
+      ],
+      [
+        1.8878394696501897,
+        -0.9304919992772424
+      ],
+      [
+        1.887266841609364,
+        -0.9318077283762306
+      ],
+      [
+        1.8864762630068324,
+        -0.9347081629046764
+      ],
+      [
+        1.8857031221128595,
+        -0.9377627159257222
+      ],
+      [
+        1.8853344877864509,
+        -0.9393889409809937
+      ],
+      [
+        1.8848061100586468,
+        -0.9408008257633067
+      ],
+      [
+        1.8840075592035674,
+        -0.9438776901377217
+      ],
+      [
+        1.8837777518740089,
+        -0.9447797310653826
+      ],
+      [
+        1.8831710312155938,
+        -0.9460598237846595
+      ],
+      [
+        1.8822671588586863,
+        -0.9489687328985474
+      ]
+    ]
+  },
+  {
+    "seed": 38,
+    "scenario": "random",
+    "seconds": 136.88000000000704,
+    "outcome": "CLEARED_GOAL",
+    "score": [
+      0,
+      1
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 9,
+      "clearContacts": 9,
+      "clearancesCompleted": 1
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "escape_episodes": 4,
+    "ball_10s": [
+      [
+        1.7204991203910784,
+        -0.25630435438892774
+      ],
+      [
+        1.7555382981442644,
+        -0.15194429511492993
+      ],
+      [
+        1.7736468168499973,
+        -0.10012927642440826
+      ],
+      [
+        1.7972868748128958,
+        -0.009554200813240378
+      ],
+      [
+        1.7886003387201033,
+        0.07534293853391043
+      ],
+      [
+        1.559578777197568,
+        0.14410834005760534
+      ],
+      [
+        0.9158323916116429,
+        0.2565662021370531
+      ],
+      [
+        0.0756966076727107,
+        0.40137373158604844
+      ],
+      [
+        -0.7644391762662207,
+        0.5461812610350394
+      ],
+      [
+        -1.604574960205154,
+        0.6909887904840208
+      ],
+      [
+        -2.2855557604106744,
+        0.7376729617851064
+      ],
+      [
+        -3.1377132772491,
+        0.7626714124482504
+      ],
+      [
+        -3.9898707940875253,
+        0.7876698631113944
+      ]
+    ]
+  },
+  {
+    "seed": 39,
+    "scenario": "random",
+    "seconds": 61.67999999999886,
+    "outcome": "GOAL",
+    "score": [
+      1,
+      0
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 0,
+      "clearContacts": 0,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "escape_episodes": 0,
+    "ball_10s": [
+      [
+        0.1706763712308495,
+        -0.31932390334035765
+      ],
+      [
+        1.0229328887692795,
+        -0.3406823759698201
+      ],
+      [
+        1.8751894063077317,
+        -0.36204084859928254
+      ],
+      [
+        2.7274459238461364,
+        -0.383399321228745
+      ],
+      [
+        3.579702441384533,
+        -0.4047577938582074
+      ],
+      [
+        4.43195895892293,
+        -0.42611626648766987
+      ]
+    ]
+  },
+  {
+    "seed": 40,
+    "scenario": "random",
+    "seconds": 50.359999999999104,
+    "outcome": "GOAL",
+    "score": [
+      1,
+      0
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 0,
+      "clearContacts": 0,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "escape_episodes": 0,
+    "ball_10s": [
+      [
+        1.139928254637725,
+        0.9379599081842642
+      ],
+      [
+        1.9912903426658874,
+        0.8934632666471025
+      ],
+      [
+        2.84265243069405,
+        0.8489666251099408
+      ],
+      [
+        3.6940145187222124,
+        0.8044699835727791
+      ],
+      [
+        4.545376606750375,
+        0.7599733420356174
+      ]
+    ]
+  },
+  {
+    "seed": 41,
+    "scenario": "random",
+    "seconds": 54.079999999999025,
+    "outcome": "GOAL",
+    "score": [
+      1,
+      0
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 0,
+      "clearContacts": 0,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "escape_episodes": 0,
+    "ball_10s": [
+      [
+        0.834303407099888,
+        -0.6155965402470791
+      ],
+      [
+        1.6826261232162836,
+        -0.5310629649013936
+      ],
+      [
+        2.5309488393326496,
+        -0.4465293895557081
+      ],
+      [
+        3.379271555448995,
+        -0.3619958142100226
+      ],
+      [
+        4.22759427156537,
+        -0.2774622388643371
+      ]
+    ]
+  },
+  {
+    "seed": 42,
+    "scenario": "random",
+    "seconds": 54.87999999999901,
+    "outcome": "GOAL",
+    "score": [
+      1,
+      0
+    ],
+    "stats": {
+      "shotAttempts": 2,
+      "shotContacts": 1,
+      "clearAttempts": 0,
+      "clearContacts": 0,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "escape_episodes": 0,
+    "ball_10s": [
+      [
+        1.6313735036752086,
+        -1.1681769146148184
+      ],
+      [
+        2.3612160284730286,
+        -1.1100958071557128
+      ],
+      [
+        3.2091003232729007,
+        -1.0212725068814472
+      ],
+      [
+        4.011420185113065,
+        -0.9372224797240976
+      ],
+      [
+        4.411208391206708,
+        -0.8664550132412538
+      ]
+    ]
+  },
+  {
+    "seed": 43,
+    "scenario": "random",
+    "seconds": 69.47999999999966,
+    "outcome": "GOAL",
+    "score": [
+      1,
+      0
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 0,
+      "clearContacts": 0,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "escape_episodes": 0,
+    "ball_10s": [
+      [
+        -0.49715818543483375,
+        0.5025172247162419
+      ],
+      [
+        0.35533145571454805,
+        0.49485121057614667
+      ],
+      [
+        1.2078210968639345,
+        0.4871851964360514
+      ],
+      [
+        2.0603107380133023,
+        0.47951918229595614
+      ],
+      [
+        2.91280037916267,
+        0.47185316815586087
+      ],
+      [
+        3.7652900203120376,
+        0.4641871540157656
+      ]
+    ]
+  },
+  {
+    "seed": 44,
+    "scenario": "random",
+    "seconds": 53.79999999999903,
+    "outcome": "GOAL",
+    "score": [
+      1,
+      0
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 0,
+      "clearContacts": 0,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "escape_episodes": 0,
+    "ball_10s": [
+      [
+        0.8514529401598764,
+        0.05017520805473119
+      ],
+      [
+        1.701411472746608,
+        -0.015914495552015837
+      ],
+      [
+        2.5513700053333443,
+        -0.08200419915876322
+      ],
+      [
+        3.401328537920081,
+        -0.14809390276551082
+      ],
+      [
+        4.251287070506817,
+        -0.21418360637225842
+      ]
+    ]
+  },
+  {
+    "seed": 45,
+    "scenario": "random",
+    "seconds": 58.87999999999892,
+    "outcome": "GOAL",
+    "score": [
+      1,
+      0
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 0,
+      "clearContacts": 0,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "escape_episodes": 0,
+    "ball_10s": [
+      [
+        0.41219976540117337,
+        -0.06411448387222103
+      ],
+      [
+        1.2640854147043925,
+        -0.0971023081568008
+      ],
+      [
+        2.1159710640076193,
+        -0.13009013244138112
+      ],
+      [
+        2.9678567133108937,
+        -0.16307795672596437
+      ],
+      [
+        3.819742362614168,
+        -0.1960657810105476
+      ]
+    ]
+  },
+  {
+    "seed": 46,
+    "scenario": "random",
+    "seconds": 56.71999999999897,
+    "outcome": "GOAL",
+    "score": [
+      1,
+      0
+    ],
+    "stats": {
+      "shotAttempts": 0,
+      "shotContacts": 0,
+      "clearAttempts": 5,
+      "clearContacts": 4,
+      "clearancesCompleted": 0
+    },
+    "profile": {
+      "locomotion": "guarded",
+      "finishing_aim": "centre",
+      "support_mode": "baseline",
+      "active_names": [
+        "RedForwardA",
+        "BlueDefender"
+      ]
+    },
+    "escape_episodes": 2,
+    "ball_10s": [
+      [
+        2.205222721293218,
+        -0.23794571044968765
+      ],
+      [
+        2.2052224769340785,
+        -0.23794458130288393
+      ],
+      [
+        2.458667407136678,
+        -0.33997100496972216
+      ],
+      [
+        3.154470837491102,
+        -0.31916378440759297
+      ],
+      [
+        4.003818661432074,
+        -0.2456407947614017
+      ]
+    ]
+  }
+]

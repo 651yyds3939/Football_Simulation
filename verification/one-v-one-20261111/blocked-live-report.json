@@ -1,0 +1,819 @@
+{
+  "seed": 309071988,
+  "scenario": "random",
+  "seconds": 2.8400000000000016,
+  "outcome": null,
+  "score": [
+    0,
+    0
+  ],
+  "stats": {
+    "shotAttempts": 0,
+    "shotContacts": 0,
+    "clearAttempts": 0,
+    "clearContacts": 0,
+    "clearancesCompleted": 0
+  },
+  "profile": {
+    "locomotion": "guarded",
+    "finishing_aim": "centre",
+    "support_mode": "baseline",
+    "active_names": [
+      "RedForwardA",
+      "BlueDefender"
+    ]
+  },
+  "initial_setup": {
+    "ball": [
+      -0.9103289717517177,
+      0.43383209061724215,
+      0.07
+    ],
+    "robots": {
+      "RedForwardA": {
+        "position": [
+          -1.180849232489066,
+          0.38383209061724216,
+          0.334
+        ],
+        "yaw": -0.00495643003604386
+      },
+      "BlueDefender": {
+        "position": [
+          0.7806091202078232,
+          0.7178292379970042,
+          0.334
+        ],
+        "yaw": -2.9751932327742923
+      }
+    }
+  },
+  "custom_setup": false,
+  "source": {
+    "kind": "workspace",
+    "modules": [
+      "Utils.TeamPolicy.TeamPolicy.decide",
+      "Utils.Navigation.Navigator.choose"
+    ],
+    "sha256": {
+      "tools/soccer2d.py": "fb76d72ec08e7945b0bd9b189ed6c32989d5b984545963f105033cbb46b99920",
+      "Wenao/controllers/Utils/PolicyProfile.py": "fbfc04690cd449acc11817b5cff9d33faf7ada0af1c9454605e38af6d8ae51e2",
+      "Wenao/controllers/Utils/TeamPolicy.py": "d91a2d6de2bc8347ee059343b5baada3f518573fb5e39a22af2d8341b605cb16",
+      "Wenao/controllers/Utils/Navigation.py": "2f47b1499bd3db445b591879330fde3212176868a14b9b320cc47f27a04450dc",
+      "Wenao/controllers/Utils/CourseSpecs.py": "329cc279f44dc6e3fa19e089319787c2cafd6c33d5118f0be3fb2e6eeb624bf0",
+      "Wenao/controllers/Utils/MatchEngine.py": "d92cab0c4a9618608b503c49014ad53dd03c33b960ef5bfcbf896537ae4b0ed2"
+    }
+  },
+  "model": {
+    "dt": 0.04,
+    "half_seconds": 190.0,
+    "ready_seconds": 1,
+    "walk_speed": 0.08525241087733532,
+    "back_speed": 0.034151821846239855,
+    "left_speed": 0.012710006709112306,
+    "right_speed": 0.02229703610271777,
+    "left_turn": 0.07362390384491213,
+    "right_turn": 0.07569683357192747,
+    "robot_radius": 0.15,
+    "rolling_deceleration": 0.35,
+    "shot_range": 0.406003256198733,
+    "pass_range": 0.3051396105104535,
+    "shot_seconds": 4.8,
+    "pass_seconds": 3.299,
+    "kick_noise_radians": 0.04
+  },
+  "frames": [
+    {
+      "t": 0,
+      "attacker": {
+        "name": "RedForwardA",
+        "role": "attacker",
+        "x": -1.180849232489066,
+        "y": 0.38383209061724216,
+        "yaw": -0.00495643003604386,
+        "state": "INITIAL",
+        "target": {
+          "x": -1.180849232489066,
+          "y": 0.38383209061724216
+        },
+        "action": "stand",
+        "stage": "",
+        "kick": null
+      },
+      "defender": {
+        "name": "BlueDefender",
+        "role": "defender",
+        "x": 0.7806091202078232,
+        "y": 0.7178292379970042,
+        "yaw": -2.9751932327742923,
+        "state": "INITIAL",
+        "target": {
+          "x": 0.7806091202078232,
+          "y": 0.7178292379970042
+        },
+        "action": "stand",
+        "stage": "",
+        "kick": null
+      },
+      "ball": {
+        "x": -0.9103289717517177,
+        "y": 0.43383209061724215,
+        "vx": 0.0,
+        "vy": 0.0
+      },
+      "outcome": null,
+      "lastTouch": null,
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      }
+    },
+    {
+      "t": 0.2,
+      "attacker": {
+        "name": "RedForwardA",
+        "role": "attacker",
+        "x": -1.1637989597459373,
+        "y": 0.38374758144127114,
+        "yaw": -0.00495643003604386,
+        "state": "DRIBBLE",
+        "target": {
+          "x": -1.0861403463722152,
+          "y": 0.44818994617576585
+        },
+        "action": "walk",
+        "stage": "DRIBBLE_TOWARD_GOAL",
+        "kick": null
+      },
+      "defender": {
+        "name": "BlueDefender",
+        "role": "defender",
+        "x": 0.7637941472820156,
+        "y": 0.7150051225743848,
+        "yaw": -2.9751932327742923,
+        "state": "INTERCEPT",
+        "target": {
+          "x": -0.6704636575566728,
+          "y": 0.5014777828522481
+        },
+        "action": "walk",
+        "stage": "APPROACH_BEHIND_BALL",
+        "kick": null
+      },
+      "ball": {
+        "x": -0.8932786990085884,
+        "y": 0.4337475814412711,
+        "vx": 0.07825144969716577,
+        "vy": -0.00038785101165654887
+      },
+      "outcome": null,
+      "lastTouch": "attacker",
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      }
+    },
+    {
+      "t": 0.39999999999999997,
+      "attacker": {
+        "name": "RedForwardA",
+        "role": "attacker",
+        "x": -1.1467486870028085,
+        "y": 0.3836630722653001,
+        "yaw": -0.00495643003604386,
+        "state": "DRIBBLE",
+        "target": {
+          "x": -1.0690870044119374,
+          "y": 0.44814568896682455
+        },
+        "action": "walk",
+        "stage": "DRIBBLE_TOWARD_GOAL",
+        "kick": null
+      },
+      "defender": {
+        "name": "BlueDefender",
+        "role": "defender",
+        "x": 0.7469791743562079,
+        "y": 0.7121810071517654,
+        "yaw": -2.9751932327742923,
+        "state": "INTERCEPT",
+        "target": {
+          "x": -0.6534119643719658,
+          "y": 0.5013898568451279
+        },
+        "action": "walk",
+        "stage": "APPROACH_BEHIND_BALL",
+        "kick": null
+      },
+      "ball": {
+        "x": -0.876228426265459,
+        "y": 0.4336630722653001,
+        "vx": 0.07825144969716577,
+        "vy": -0.00038785101165654887
+      },
+      "outcome": null,
+      "lastTouch": "attacker",
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      }
+    },
+    {
+      "t": 0.6,
+      "attacker": {
+        "name": "RedForwardA",
+        "role": "attacker",
+        "x": -1.1296984142596798,
+        "y": 0.3835785630893291,
+        "yaw": -0.00495643003604386,
+        "state": "DRIBBLE",
+        "target": {
+          "x": -1.052033635439932,
+          "y": 0.4481016721816213
+        },
+        "action": "walk",
+        "stage": "DRIBBLE_TOWARD_GOAL",
+        "kick": null
+      },
+      "defender": {
+        "name": "BlueDefender",
+        "role": "defender",
+        "x": 0.7301642014304002,
+        "y": 0.709356891729146,
+        "yaw": -2.9751932327742923,
+        "state": "INTERCEPT",
+        "target": {
+          "x": -0.6363602712521831,
+          "y": 0.5013019307928859
+        },
+        "action": "walk",
+        "stage": "APPROACH_BEHIND_BALL",
+        "kick": null
+      },
+      "ball": {
+        "x": -0.8591781535223297,
+        "y": 0.43357856308932907,
+        "vx": 0.07825144969716577,
+        "vy": -0.00038785101165654887
+      },
+      "outcome": null,
+      "lastTouch": "attacker",
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      }
+    },
+    {
+      "t": 0.8000000000000002,
+      "attacker": {
+        "name": "RedForwardA",
+        "role": "attacker",
+        "x": -1.112648141516551,
+        "y": 0.38349405391335806,
+        "yaw": -0.00495643003604386,
+        "state": "DRIBBLE",
+        "target": {
+          "x": -1.0349802391352354,
+          "y": 0.4480578979750575
+        },
+        "action": "walk",
+        "stage": "DRIBBLE_TOWARD_GOAL",
+        "kick": null
+      },
+      "defender": {
+        "name": "BlueDefender",
+        "role": "defender",
+        "x": 0.7133492285045925,
+        "y": 0.7065327763065266,
+        "yaw": -2.9751932327742923,
+        "state": "INTERCEPT",
+        "target": {
+          "x": -0.6193085781973273,
+          "y": 0.5012140046955257
+        },
+        "action": "walk",
+        "stage": "APPROACH_BEHIND_BALL",
+        "kick": null
+      },
+      "ball": {
+        "x": -0.8421278807792004,
+        "y": 0.43349405391335805,
+        "vx": 0.07825144969716577,
+        "vy": -0.00038785101165654887
+      },
+      "outcome": null,
+      "lastTouch": "attacker",
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      }
+    },
+    {
+      "t": 1.0000000000000002,
+      "attacker": {
+        "name": "RedForwardA",
+        "role": "attacker",
+        "x": -1.0955978687734222,
+        "y": 0.38340954473738703,
+        "yaw": -0.00495643003604386,
+        "state": "DRIBBLE",
+        "target": {
+          "x": -1.0179268151720873,
+          "y": 0.4480143685277958
+        },
+        "action": "walk",
+        "stage": "DRIBBLE_TOWARD_GOAL",
+        "kick": null
+      },
+      "defender": {
+        "name": "BlueDefender",
+        "role": "defender",
+        "x": 0.6965342555787848,
+        "y": 0.7037086608839072,
+        "yaw": -2.9751932327742923,
+        "state": "INTERCEPT",
+        "target": {
+          "x": -0.6022568852074013,
+          "y": 0.5011260785530514
+        },
+        "action": "walk",
+        "stage": "APPROACH_BEHIND_BALL",
+        "kick": null
+      },
+      "ball": {
+        "x": -0.8250776080360711,
+        "y": 0.433409544737387,
+        "vx": 0.07825144969716577,
+        "vy": -0.00038785101165654887
+      },
+      "outcome": null,
+      "lastTouch": "attacker",
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      }
+    },
+    {
+      "t": 1.2000000000000004,
+      "attacker": {
+        "name": "RedForwardA",
+        "role": "attacker",
+        "x": -1.0785475960302935,
+        "y": 0.383325035561416,
+        "yaw": -0.00495643003604386,
+        "state": "DRIBBLE",
+        "target": {
+          "x": -1.0008733632198443,
+          "y": 0.44797108604664493
+        },
+        "action": "walk",
+        "stage": "DRIBBLE_TOWARD_GOAL",
+        "kick": null
+      },
+      "defender": {
+        "name": "BlueDefender",
+        "role": "defender",
+        "x": 0.6797192826529771,
+        "y": 0.7008845454612878,
+        "yaw": -2.9751932327742923,
+        "state": "INTERCEPT",
+        "target": {
+          "x": -0.5852051922824079,
+          "y": 0.5010381523654671
+        },
+        "action": "walk",
+        "stage": "APPROACH_BEHIND_BALL",
+        "kick": null
+      },
+      "ball": {
+        "x": -0.8080273352929418,
+        "y": 0.433325035561416,
+        "vx": 0.07825144969716577,
+        "vy": -0.00038785101165654887
+      },
+      "outcome": null,
+      "lastTouch": "attacker",
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      }
+    },
+    {
+      "t": 1.4000000000000006,
+      "attacker": {
+        "name": "RedForwardA",
+        "role": "attacker",
+        "x": -1.0614973232871647,
+        "y": 0.383240526385445,
+        "yaw": -0.00495643003604386,
+        "state": "DRIBBLE",
+        "target": {
+          "x": -0.9792109105067508,
+          "y": 0.47730473676680846
+        },
+        "action": "walk",
+        "stage": "DRIBBLE_TOWARD_GOAL",
+        "kick": null
+      },
+      "defender": {
+        "name": "BlueDefender",
+        "role": "defender",
+        "x": 0.6629043097271694,
+        "y": 0.6980604300386684,
+        "yaw": -2.9751932327742923,
+        "state": "INTERCEPT",
+        "target": {
+          "x": -0.5681534994223497,
+          "y": 0.5009502261327766
+        },
+        "action": "walk",
+        "stage": "APPROACH_BEHIND_BALL",
+        "kick": null
+      },
+      "ball": {
+        "x": -0.7909770625498125,
+        "y": 0.43324052638544497,
+        "vx": 0.07825144969716577,
+        "vy": -0.00038785101165654887
+      },
+      "outcome": null,
+      "lastTouch": "attacker",
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      }
+    },
+    {
+      "t": 1.6000000000000008,
+      "attacker": {
+        "name": "RedForwardA",
+        "role": "attacker",
+        "x": -1.044447050544036,
+        "y": 0.38315601720947395,
+        "yaw": -0.00495643003604386,
+        "state": "DRIBBLE",
+        "target": {
+          "x": -0.9621308655589181,
+          "y": 0.4773449659453956
+        },
+        "action": "walk",
+        "stage": "DRIBBLE_TOWARD_GOAL",
+        "kick": null
+      },
+      "defender": {
+        "name": "BlueDefender",
+        "role": "defender",
+        "x": 0.6460893368013617,
+        "y": 0.695236314616049,
+        "yaw": -2.9751932327742923,
+        "state": "INTERCEPT",
+        "target": {
+          "x": -0.5511018066272297,
+          "y": 0.500862299854984
+        },
+        "action": "walk",
+        "stage": "APPROACH_BEHIND_BALL",
+        "kick": null
+      },
+      "ball": {
+        "x": -0.7739267898066832,
+        "y": 0.43315601720947394,
+        "vx": 0.07825144969716577,
+        "vy": -0.00038785101165654887
+      },
+      "outcome": null,
+      "lastTouch": "attacker",
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      }
+    },
+    {
+      "t": 1.800000000000001,
+      "attacker": {
+        "name": "RedForwardA",
+        "role": "attacker",
+        "x": -1.0273967778009072,
+        "y": 0.3830715080335029,
+        "yaw": -0.00495643003604386,
+        "state": "DRIBBLE",
+        "target": {
+          "x": -0.9450505627929404,
+          "y": 0.4773858992214336
+        },
+        "action": "walk",
+        "stage": "DRIBBLE_TOWARD_GOAL",
+        "kick": null
+      },
+      "defender": {
+        "name": "BlueDefender",
+        "role": "defender",
+        "x": 0.629274363875554,
+        "y": 0.6924121991934296,
+        "yaw": -2.9751932327742923,
+        "state": "INTERCEPT",
+        "target": {
+          "x": -0.5340501138970506,
+          "y": 0.5007743735320931
+        },
+        "action": "walk",
+        "stage": "APPROACH_BEHIND_BALL",
+        "kick": null
+      },
+      "ball": {
+        "x": -0.7568765170635539,
+        "y": 0.4330715080335029,
+        "vx": 0.07825144969716577,
+        "vy": -0.00038785101165654887
+      },
+      "outcome": null,
+      "lastTouch": "attacker",
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      }
+    },
+    {
+      "t": 2.000000000000001,
+      "attacker": {
+        "name": "RedForwardA",
+        "role": "attacker",
+        "x": -1.0103465050577785,
+        "y": 0.3829869988575319,
+        "yaw": -0.00495643003604386,
+        "state": "DRIBBLE",
+        "target": {
+          "x": -0.9279699992543666,
+          "y": 0.47742754239338187
+        },
+        "action": "walk",
+        "stage": "DRIBBLE_TOWARD_GOAL",
+        "kick": null
+      },
+      "defender": {
+        "name": "BlueDefender",
+        "role": "defender",
+        "x": 0.6124593909497463,
+        "y": 0.6895880837708102,
+        "yaw": -2.9751932327742923,
+        "state": "INTERCEPT",
+        "target": {
+          "x": -0.516998421231815,
+          "y": 0.500686447164108
+        },
+        "action": "walk",
+        "stage": "APPROACH_BEHIND_BALL",
+        "kick": null
+      },
+      "ball": {
+        "x": -0.7398262443204245,
+        "y": 0.4329869988575319,
+        "vx": 0.07825144969716577,
+        "vy": -0.00038785101165654887
+      },
+      "outcome": null,
+      "lastTouch": "attacker",
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      }
+    },
+    {
+      "t": 2.200000000000001,
+      "attacker": {
+        "name": "RedForwardA",
+        "role": "attacker",
+        "x": -0.9932962323146495,
+        "y": 0.3829024896815609,
+        "yaw": -0.00495643003604386,
+        "state": "DRIBBLE",
+        "target": {
+          "x": -0.9108891719468617,
+          "y": 0.4774699013213392
+        },
+        "action": "walk",
+        "stage": "DRIBBLE_TOWARD_GOAL",
+        "kick": null
+      },
+      "defender": {
+        "name": "BlueDefender",
+        "role": "defender",
+        "x": 0.5956444180239386,
+        "y": 0.6867639683481908,
+        "yaw": -2.9751932327742923,
+        "state": "INTERCEPT",
+        "target": {
+          "x": -0.4999467286315263,
+          "y": 0.5005985207510326
+        },
+        "action": "walk",
+        "stage": "APPROACH_BEHIND_BALL",
+        "kick": null
+      },
+      "ball": {
+        "x": -0.7227759715772952,
+        "y": 0.43290248968156086,
+        "vx": 0.07825144969716577,
+        "vy": -0.00038785101165654887
+      },
+      "outcome": null,
+      "lastTouch": "attacker",
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      }
+    },
+    {
+      "t": 2.4000000000000012,
+      "attacker": {
+        "name": "RedForwardA",
+        "role": "attacker",
+        "x": -0.9762459595715202,
+        "y": 0.38281798050558985,
+        "yaw": -0.00495643003604386,
+        "state": "DRIBBLE",
+        "target": {
+          "x": -0.8938080778315026,
+          "y": 0.47751298192783087
+        },
+        "action": "walk",
+        "stage": "DRIBBLE_TOWARD_GOAL",
+        "kick": null
+      },
+      "defender": {
+        "name": "BlueDefender",
+        "role": "defender",
+        "x": 0.578829445098131,
+        "y": 0.6839398529255714,
+        "yaw": -2.9751932327742923,
+        "state": "INTERCEPT",
+        "target": {
+          "x": -0.4828950360961865,
+          "y": 0.5005105942928709
+        },
+        "action": "walk",
+        "stage": "APPROACH_BEHIND_BALL",
+        "kick": null
+      },
+      "ball": {
+        "x": -0.7057256988341659,
+        "y": 0.43281798050558984,
+        "vx": 0.07825144969716577,
+        "vy": -0.00038785101165654887
+      },
+      "outcome": null,
+      "lastTouch": "attacker",
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      }
+    },
+    {
+      "t": 2.6000000000000014,
+      "attacker": {
+        "name": "RedForwardA",
+        "role": "attacker",
+        "x": -0.9591956868283908,
+        "y": 0.3827334713296188,
+        "yaw": -0.00495643003604386,
+        "state": "DRIBBLE",
+        "target": {
+          "x": -0.8767267138260604,
+          "y": 0.47755679019860653
+        },
+        "action": "walk",
+        "stage": "DRIBBLE_TOWARD_GOAL",
+        "kick": null
+      },
+      "defender": {
+        "name": "BlueDefender",
+        "role": "defender",
+        "x": 0.5620144721723233,
+        "y": 0.681115737502952,
+        "yaw": -2.9751932327742923,
+        "state": "INTERCEPT",
+        "target": {
+          "x": -0.4658433436257988,
+          "y": 0.5004226677896269
+        },
+        "action": "walk",
+        "stage": "APPROACH_BEHIND_BALL",
+        "kick": null
+      },
+      "ball": {
+        "x": -0.6886754260910366,
+        "y": 0.4327334713296188,
+        "vx": 0.07825144969716577,
+        "vy": -0.00038785101165654887
+      },
+      "outcome": null,
+      "lastTouch": "attacker",
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      }
+    },
+    {
+      "t": 2.8000000000000016,
+      "attacker": {
+        "name": "RedForwardA",
+        "role": "attacker",
+        "x": -0.9421454140852615,
+        "y": 0.3826489621536478,
+        "yaw": -0.00495643003604386,
+        "state": "DRIBBLE",
+        "target": {
+          "x": -0.8596450768042688,
+          "y": 0.47760133218345013
+        },
+        "action": "walk",
+        "stage": "DRIBBLE_TOWARD_GOAL",
+        "kick": null
+      },
+      "defender": {
+        "name": "BlueDefender",
+        "role": "defender",
+        "x": 0.5451994992465156,
+        "y": 0.6782916220803326,
+        "yaw": -2.9751932327742923,
+        "state": "INTERCEPT",
+        "target": {
+          "x": -0.4487916512203659,
+          "y": 0.5003347412413045
+        },
+        "action": "walk",
+        "stage": "APPROACH_BEHIND_BALL",
+        "kick": null
+      },
+      "ball": {
+        "x": -0.6716251533479073,
+        "y": 0.4326489621536478,
+        "vx": 0.07825144969716577,
+        "vy": -0.00038785101165654887
+      },
+      "outcome": null,
+      "lastTouch": "attacker",
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      }
+    }
+  ],
+  "events": [
+    {
+      "event": "contact",
+      "time": 0.04,
+      "robot": "RedForwardA"
+    }
+  ],
+  "limits": [
+    "Same Python policy/navigation and matching policy profile as Webots.",
+    "Different execution: 2D average-rate discs versus 3D joint motions and safety gates.",
+    "Exact positions and uncalibrated contact/rolling assumptions; no falls or cameras."
+  ]
+}

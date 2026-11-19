@@ -1,0 +1,3541 @@
+{
+  "summary": {
+    "runs": 100,
+    "outcomes": {
+      "GOAL": 63,
+      "CLEARED_GOAL": 33,
+      "TIMEOUT": 4
+    },
+    "close_encounters": 45,
+    "controlled_left_progress_runs": 34,
+    "breakthrough_after_contact_runs": 8,
+    "close_stalls_over_10s": 15,
+    "close_stalls_over_20s": 3,
+    "mean_close_seconds": 9.508799999999948,
+    "wall_seconds": 20.920588139997562
+  },
+  "runs": [
+    {
+      "seed": 347,
+      "scenario": "random",
+      "seconds": 56.439999999998975,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "347",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 348,
+      "scenario": "random",
+      "seconds": 31.439999999999507,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "348",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 349,
+      "scenario": "random",
+      "seconds": 65.47999999999904,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 1,
+        "shotContacts": 1,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "349",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": true,
+      "close_seconds": 12.719999999999905,
+      "longest_close_stall": 1.7599999999999643,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 350,
+      "scenario": "random",
+      "seconds": 30.91999999999952,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "350",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 351,
+      "scenario": "random",
+      "seconds": 127.36000000000871,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "351",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 23.959999999999667,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 9.079999999999982,
+      "longest_close_stall": 2.199999999999953,
+      "exclusive_blue_foot_calls": 2228
+    },
+    {
+      "seed": 352,
+      "scenario": "random",
+      "seconds": 30.79999999999952,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "352",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 353,
+      "scenario": "random",
+      "seconds": 67.71999999999939,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "353",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 354,
+      "scenario": "random",
+      "seconds": 61.599999999998865,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "354",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 355,
+      "scenario": "random",
+      "seconds": 78.56000000000108,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "355",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 23.39999999999968,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 17.919999999999796,
+      "longest_close_stall": 7.11999999999985,
+      "exclusive_blue_foot_calls": 1458
+    },
+    {
+      "seed": 356,
+      "scenario": "random",
+      "seconds": 98.84000000000425,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "356",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 20.759999999999735,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 15.27999999999985,
+      "longest_close_stall": 10.399999999999785,
+      "exclusive_blue_foot_calls": 1938
+    },
+    {
+      "seed": 357,
+      "scenario": "random",
+      "seconds": 68.19999999999946,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "357",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 16.679999999999822,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 14.159999999999874,
+      "longest_close_stall": 7.199999999999886,
+      "exclusive_blue_foot_calls": 1262
+    },
+    {
+      "seed": 358,
+      "scenario": "random",
+      "seconds": 36.5999999999994,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "358",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 359,
+      "scenario": "random",
+      "seconds": 123.40000000000809,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "359",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 54.599999999999014,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 51.239999999999085,
+      "longest_close_stall": 15.279999999999674,
+      "exclusive_blue_foot_calls": 1629
+    },
+    {
+      "seed": 360,
+      "scenario": "random",
+      "seconds": 30.479999999999528,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "360",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 361,
+      "scenario": "random",
+      "seconds": 32.559999999999484,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "361",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 362,
+      "scenario": "random",
+      "seconds": 36.83999999999939,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "362",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 363,
+      "scenario": "random",
+      "seconds": 36.11999999999941,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "363",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 364,
+      "scenario": "random",
+      "seconds": 36.83999999999939,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "364",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 365,
+      "scenario": "random",
+      "seconds": 97.28000000000401,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "365",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 12.599999999999907,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 11.359999999999934,
+      "longest_close_stall": 2.799999999999974,
+      "exclusive_blue_foot_calls": 1766
+    },
+    {
+      "seed": 366,
+      "scenario": "random",
+      "seconds": 179.99999999999847,
+      "outcome": "TIMEOUT",
+      "score": [
+        0,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "366",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 19.15999999999977,
+      "longest_close_stall": 19.119999999999592,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 367,
+      "scenario": "random",
+      "seconds": 71.27999999999994,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "367",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 368,
+      "scenario": "random",
+      "seconds": 44.39999999999923,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 2,
+        "shotContacts": 1,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "368",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": true,
+      "close_seconds": 5.560000000000004,
+      "longest_close_stall": 0.9199999999999804,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 369,
+      "scenario": "random",
+      "seconds": 52.11999999999907,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "369",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 370,
+      "scenario": "random",
+      "seconds": 66.63999999999922,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "370",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 371,
+      "scenario": "random",
+      "seconds": 65.03999999999897,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 1,
+        "shotContacts": 1,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "371",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": true,
+      "close_seconds": 6.400000000000005,
+      "longest_close_stall": 1.1999999999999744,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 372,
+      "scenario": "random",
+      "seconds": 66.91999999999926,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "372",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 373,
+      "scenario": "random",
+      "seconds": 70.87999999999988,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "373",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": true,
+      "close_seconds": 0.12,
+      "longest_close_stall": 0.0799999999999983,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 374,
+      "scenario": "random",
+      "seconds": 57.23999999999896,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "374",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 375,
+      "scenario": "random",
+      "seconds": 70.75999999999986,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "375",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 18.079999999999792,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 17.559999999999803,
+      "longest_close_stall": 10.839999999999847,
+      "exclusive_blue_foot_calls": 1348
+    },
+    {
+      "seed": 376,
+      "scenario": "random",
+      "seconds": 88.68000000000266,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "376",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 12.759999999999904,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 10.639999999999949,
+      "longest_close_stall": 4.11999999999995,
+      "exclusive_blue_foot_calls": 1734
+    },
+    {
+      "seed": 377,
+      "scenario": "random",
+      "seconds": 74.60000000000046,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "377",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 378,
+      "scenario": "random",
+      "seconds": 60.639999999998885,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "378",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 14.039999999999877,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 10.55999999999995,
+      "longest_close_stall": 3.7599999999999225,
+      "exclusive_blue_foot_calls": 1027
+    },
+    {
+      "seed": 379,
+      "scenario": "random",
+      "seconds": 70.87999999999988,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "379",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 380,
+      "scenario": "random",
+      "seconds": 119.40000000000747,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 2,
+        "shotContacts": 1,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "380",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": true,
+      "close_seconds": 77.68000000000094,
+      "longest_close_stall": 11.839999999999748,
+      "exclusive_blue_foot_calls": 929
+    },
+    {
+      "seed": 381,
+      "scenario": "random",
+      "seconds": 60.87999999999888,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 1,
+        "shotContacts": 1,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "381",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 382,
+      "scenario": "random",
+      "seconds": 68.83999999999956,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "382",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 383,
+      "scenario": "random",
+      "seconds": 47.63999999999916,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "383",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 384,
+      "scenario": "random",
+      "seconds": 42.879999999999264,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "384",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 385,
+      "scenario": "random",
+      "seconds": 179.99999999999847,
+      "outcome": "TIMEOUT",
+      "score": [
+        0,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "385",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 19.07999999999977,
+      "longest_close_stall": 0.999999999999801,
+      "exclusive_blue_foot_calls": 184
+    },
+    {
+      "seed": 386,
+      "scenario": "random",
+      "seconds": 43.35999999999925,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "386",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 387,
+      "scenario": "random",
+      "seconds": 52.27999999999906,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "387",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 388,
+      "scenario": "random",
+      "seconds": 34.91999999999943,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "388",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 389,
+      "scenario": "random",
+      "seconds": 83.84000000000191,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "389",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 11.879999999999923,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 10.759999999999946,
+      "longest_close_stall": 5.399999999999969,
+      "exclusive_blue_foot_calls": 1694
+    },
+    {
+      "seed": 390,
+      "scenario": "random",
+      "seconds": 109.76000000000596,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "390",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 34.51999999999944,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 35.91999999999941,
+      "longest_close_stall": 17.039999999999637,
+      "exclusive_blue_foot_calls": 1925
+    },
+    {
+      "seed": 391,
+      "scenario": "random",
+      "seconds": 62.71999999999884,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "391",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 392,
+      "scenario": "random",
+      "seconds": 44.03999999999924,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "392",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 393,
+      "scenario": "random",
+      "seconds": 54.23999999999902,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "393",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 394,
+      "scenario": "random",
+      "seconds": 27.359999999999594,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "394",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 395,
+      "scenario": "random",
+      "seconds": 54.599999999999014,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "395",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 396,
+      "scenario": "random",
+      "seconds": 69.43999999999966,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "396",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 15.679999999999842,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 8.959999999999985,
+      "longest_close_stall": 2.9199999999999378,
+      "exclusive_blue_foot_calls": 1124
+    },
+    {
+      "seed": 397,
+      "scenario": "random",
+      "seconds": 67.1199999999993,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "397",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 398,
+      "scenario": "random",
+      "seconds": 179.99999999999847,
+      "outcome": "TIMEOUT",
+      "score": [
+        0,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "398",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 92.04000000000319,
+      "longest_close_stall": 11.359999999999758,
+      "exclusive_blue_foot_calls": 146
+    },
+    {
+      "seed": 399,
+      "scenario": "random",
+      "seconds": 69.79999999999971,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "399",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 400,
+      "scenario": "random",
+      "seconds": 83.36000000000183,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "400",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 22.759999999999692,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 15.71999999999984,
+      "longest_close_stall": 9.91999999999979,
+      "exclusive_blue_foot_calls": 1532
+    },
+    {
+      "seed": 401,
+      "scenario": "random",
+      "seconds": 103.40000000000497,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "401",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 22.91999999999969,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 11.55999999999993,
+      "longest_close_stall": 3.1199999999999353,
+      "exclusive_blue_foot_calls": 1787
+    },
+    {
+      "seed": 402,
+      "scenario": "random",
+      "seconds": 156.1600000000032,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "402",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 54.999999999999005,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 46.87999999999918,
+      "longest_close_stall": 9.719999999999793,
+      "exclusive_blue_foot_calls": 2670
+    },
+    {
+      "seed": 403,
+      "scenario": "random",
+      "seconds": 102.60000000000484,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "403",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 25.999999999999623,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 9.839999999999966,
+      "longest_close_stall": 4.079999999999913,
+      "exclusive_blue_foot_calls": 1516
+    },
+    {
+      "seed": 404,
+      "scenario": "random",
+      "seconds": 78.20000000000103,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "404",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 18.63999999999978,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 9.479999999999974,
+      "longest_close_stall": 3.3999999999999275,
+      "exclusive_blue_foot_calls": 1262
+    },
+    {
+      "seed": 405,
+      "scenario": "random",
+      "seconds": 89.12000000000273,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "405",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 31.159999999999513,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 22.319999999999702,
+      "longest_close_stall": 6.599999999999861,
+      "exclusive_blue_foot_calls": 1476
+    },
+    {
+      "seed": 406,
+      "scenario": "random",
+      "seconds": 52.31999999999906,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "406",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 407,
+      "scenario": "random",
+      "seconds": 44.39999999999923,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "407",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 408,
+      "scenario": "random",
+      "seconds": 125.84000000000847,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "408",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 29.119999999999557,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 34.99999999999943,
+      "longest_close_stall": 9.999999999999789,
+      "exclusive_blue_foot_calls": 2341
+    },
+    {
+      "seed": 409,
+      "scenario": "random",
+      "seconds": 110.92000000000614,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "409",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 20.03999999999975,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 20.159999999999748,
+      "longest_close_stall": 4.959999999999894,
+      "exclusive_blue_foot_calls": 2157
+    },
+    {
+      "seed": 410,
+      "scenario": "random",
+      "seconds": 179.99999999999847,
+      "outcome": "TIMEOUT",
+      "score": [
+        0,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "410",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 62.63999999999884,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 49.07999999999913,
+      "longest_close_stall": 14.159999999999698,
+      "exclusive_blue_foot_calls": 853
+    },
+    {
+      "seed": 411,
+      "scenario": "random",
+      "seconds": 78.36000000000105,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "411",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 18.039999999999793,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 10.959999999999942,
+      "longest_close_stall": 5.399999999999885,
+      "exclusive_blue_foot_calls": 1380
+    },
+    {
+      "seed": 412,
+      "scenario": "random",
+      "seconds": 62.19999999999885,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "412",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 413,
+      "scenario": "random",
+      "seconds": 118.92000000000739,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "413",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 21.07999999999973,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 9.839999999999966,
+      "longest_close_stall": 3.1999999999999336,
+      "exclusive_blue_foot_calls": 2138
+    },
+    {
+      "seed": 414,
+      "scenario": "random",
+      "seconds": 53.35999999999904,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "414",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 415,
+      "scenario": "random",
+      "seconds": 35.95999999999941,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "415",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 416,
+      "scenario": "random",
+      "seconds": 66.5199999999992,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "416",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 417,
+      "scenario": "random",
+      "seconds": 29.639999999999546,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "417",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 418,
+      "scenario": "random",
+      "seconds": 56.55999999999897,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "418",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 419,
+      "scenario": "random",
+      "seconds": 42.759999999999266,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "419",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 420,
+      "scenario": "random",
+      "seconds": 70.43999999999981,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "420",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 421,
+      "scenario": "random",
+      "seconds": 43.11999999999926,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "421",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": true,
+      "close_seconds": 7.000000000000005,
+      "longest_close_stall": 0.9999999999999787,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 422,
+      "scenario": "random",
+      "seconds": 61.03999999999888,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "422",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": true,
+      "close_seconds": 0.9200000000000003,
+      "longest_close_stall": 0.6799999999999855,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 423,
+      "scenario": "random",
+      "seconds": 57.759999999998946,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "423",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 424,
+      "scenario": "random",
+      "seconds": 86.16000000000227,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "424",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 13.599999999999886,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 10.759999999999946,
+      "longest_close_stall": 3.479999999999933,
+      "exclusive_blue_foot_calls": 1642
+    },
+    {
+      "seed": 425,
+      "scenario": "random",
+      "seconds": 87.28000000000245,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "425",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 21.119999999999727,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 16.75999999999982,
+      "longest_close_stall": 10.279999999999792,
+      "exclusive_blue_foot_calls": 1657
+    },
+    {
+      "seed": 426,
+      "scenario": "random",
+      "seconds": 91.12000000000305,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 1,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "426",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 20.199999999999747,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 8.599999999999993,
+      "longest_close_stall": 1.8399999999999626,
+      "exclusive_blue_foot_calls": 1419
+    },
+    {
+      "seed": 427,
+      "scenario": "random",
+      "seconds": 65.11999999999898,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "427",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 428,
+      "scenario": "random",
+      "seconds": 60.31999999999889,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "428",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 429,
+      "scenario": "random",
+      "seconds": 54.31999999999902,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "429",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 430,
+      "scenario": "random",
+      "seconds": 69.83999999999972,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "430",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 431,
+      "scenario": "random",
+      "seconds": 99.68000000000438,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "431",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 10.239999999999958,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 9.879999999999965,
+      "longest_close_stall": 2.6000000000000023,
+      "exclusive_blue_foot_calls": 1986
+    },
+    {
+      "seed": 432,
+      "scenario": "random",
+      "seconds": 44.679999999999225,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "432",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 433,
+      "scenario": "random",
+      "seconds": 62.15999999999885,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "433",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 434,
+      "scenario": "random",
+      "seconds": 87.76000000000252,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "434",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 33.03999999999947,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 33.15999999999947,
+      "longest_close_stall": 17.39999999999963,
+      "exclusive_blue_foot_calls": 1512
+    },
+    {
+      "seed": 435,
+      "scenario": "random",
+      "seconds": 135.96000000000723,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "435",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 34.07999999999945,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 51.51999999999908,
+      "longest_close_stall": 10.439999999999777,
+      "exclusive_blue_foot_calls": 2407
+    },
+    {
+      "seed": 436,
+      "scenario": "random",
+      "seconds": 64.5599999999989,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 2,
+        "shotContacts": 1,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "436",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": true,
+      "close_seconds": 6.160000000000005,
+      "longest_close_stall": 1.2799999999999727,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 437,
+      "scenario": "random",
+      "seconds": 117.28000000000713,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "437",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 40.11999999999932,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 30.35999999999953,
+      "longest_close_stall": 20.359999999999566,
+      "exclusive_blue_foot_calls": 1930
+    },
+    {
+      "seed": 438,
+      "scenario": "random",
+      "seconds": 128.1200000000088,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 1,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "438",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 32.919999999999476,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 26.919999999999604,
+      "longest_close_stall": 17.199999999999633,
+      "exclusive_blue_foot_calls": 1524
+    },
+    {
+      "seed": 439,
+      "scenario": "random",
+      "seconds": 98.64000000000422,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "439",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 31.39999999999951,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 25.75999999999963,
+      "longest_close_stall": 20.11999999999957,
+      "exclusive_blue_foot_calls": 1725
+    },
+    {
+      "seed": 440,
+      "scenario": "random",
+      "seconds": 77.20000000000087,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "440",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 441,
+      "scenario": "random",
+      "seconds": 64.03999999999881,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "441",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 442,
+      "scenario": "random",
+      "seconds": 54.91999999999901,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "442",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 443,
+      "scenario": "random",
+      "seconds": 48.879999999999136,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "443",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    },
+    {
+      "seed": 444,
+      "scenario": "random",
+      "seconds": 103.08000000000492,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "444",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 32.67999999999948,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 26.55999999999961,
+      "longest_close_stall": 20.439999999999564,
+      "exclusive_blue_foot_calls": 1643
+    },
+    {
+      "seed": 445,
+      "scenario": "random",
+      "seconds": 113.8400000000066,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "445",
+      "direction": 1,
+      "close_encounter": true,
+      "controlled_left_progress": true,
+      "first_controlled_left_progress": 22.759999999999692,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 9.479999999999974,
+      "longest_close_stall": 1.95999999999996,
+      "exclusive_blue_foot_calls": 1878
+    },
+    {
+      "seed": 446,
+      "scenario": "random",
+      "seconds": 36.07999999999941,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "case": "446",
+      "direction": 1,
+      "close_encounter": false,
+      "controlled_left_progress": false,
+      "first_controlled_left_progress": null,
+      "attacker_broke_through_after_contact": false,
+      "close_seconds": 0.0,
+      "longest_close_stall": 0.0,
+      "exclusive_blue_foot_calls": 0
+    }
+  ],
+  "source": {
+    "kind": "workspace",
+    "modules": [
+      "Utils.TeamPolicy.TeamPolicy.decide",
+      "Utils.Navigation.Navigator.choose"
+    ],
+    "sha256": {
+      "tools/soccer2d.py": "c2eda4bbf61c1e0cf7ed75e725c0d5511e2c8a518c0da8269cb7de8c5c267f4a",
+      "Wenao/controllers/Utils/PolicyProfile.py": "fbfc04690cd449acc11817b5cff9d33faf7ada0af1c9454605e38af6d8ae51e2",
+      "Wenao/controllers/Utils/TeamPolicy.py": "c4a4ebfdfea12e98ed760480c89365ad1ff018bbc9ae299ba84f2eb0c23f2ff2",
+      "Wenao/controllers/Utils/Navigation.py": "43d055d660ab9a426de11cabd0137a8bad556ace2ac0ab692fdaafabe28cb58f",
+      "Wenao/controllers/Utils/CourseSpecs.py": "329cc279f44dc6e3fa19e089319787c2cafd6c33d5118f0be3fb2e6eeb624bf0",
+      "Wenao/controllers/Utils/MatchEngine.py": "d92cab0c4a9618608b503c49014ad53dd03c33b960ef5bfcbf896537ae4b0ed2",
+      "Wenao/controllers/Utils/DefensivePlan.py": "e632321973f03a67537a92575eea8b010c11ee0012dd83db3f3335bf630727a4"
+    }
+  },
+  "definitions": {
+    "close": "players <0.40m apart and both <0.50m from ball",
+    "controlled_left_progress": "last exclusive active-foot toucher is defender, ball moved >=0.25m toward its attacking end in that episode, defender still within 0.50m",
+    "stall": "close encounter with ball staying within 0.06m of its local anchor",
+    "limits": "Approximate 2D observations, not validated possession, referee results or physical tackles. Recovery and breakthrough can both occur in one run."
+  }
+}

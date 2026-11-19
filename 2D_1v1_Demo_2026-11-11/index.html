@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Football Lab · 1 vs 1</title>
+<style>
+:root{--ink:#163841;--muted:#60747c;--teal:#147a72;--line:#dae4e6;--paper:#f4f7f7;--red:#d34d4a;--blue:#397bd2}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}button,select,input{font:inherit}button,select,input[type=number]{border:1px solid #cad8dc;border-radius:9px;background:#fff;color:var(--ink);padding:8px 12px}button{cursor:pointer;font-weight:650}button:hover{background:#eaf3f1}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #75bbb5;outline-offset:2px}button.primary{background:var(--teal);border-color:var(--teal);color:#fff;min-width:112px}button:disabled{opacity:.45;cursor:default}.shell{max-width:1480px;margin:auto;padding:24px 30px 20px}.top{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:13px;letter-spacing:2px;font-weight:800;display:flex;align-items:center;gap:10px}.logo{background:var(--ink);color:white;border-radius:8px;padding:6px 9px;letter-spacing:0}.local{color:var(--muted);font-size:12px;letter-spacing:0;font-weight:500}h1{font-size:clamp(24px,3vw,36px);letter-spacing:-1px;margin:22px 0 5px;line-height:1.2}.intro{color:var(--muted);margin:0 0 20px}.layout{display:grid;grid-template-columns:minmax(0,1fr) 296px;gap:18px}.board,.side,.settings{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}.scorebar{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--line);gap:12px}.role{display:flex;gap:8px;align-items:center;font-weight:700;font-size:13px}.dot{width:11px;height:11px;border-radius:50%;display:inline-block;flex-shrink:0}.red{background:var(--red)}.blue{background:var(--blue)}.middle{text-align:center}.clock{font-variant-numeric:tabular-nums;font-size:25px;font-weight:750;letter-spacing:1px}.phase{font-size:10px;letter-spacing:1.4px;color:var(--muted)}.canvas-wrap{position:relative;background:#194f40}canvas{display:block;width:100%;aspect-ratio:11/8;touch-action:none}.legend{display:flex;justify-content:space-between;gap:10px;padding:10px 18px;color:var(--muted);font-size:11px}.controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:14px 18px;border-top:1px solid var(--line)}.controls label{display:flex;gap:7px;align-items:center;color:var(--muted);font-size:13px}.controls select{padding:7px 8px}.side{padding:19px}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:1.6px;color:var(--muted);margin-bottom:12px}.agent{padding:0 0 17px;margin-bottom:17px;border-bottom:1px solid var(--line)}.agent-title{display:flex;gap:8px;align-items:center;font-weight:750}.state{font-size:20px;font-weight:750;margin:9px 0 3px}.explain{color:var(--muted);font-size:12px;min-height:34px}.progress{height:4px;background:#e8eeee;border-radius:3px;overflow:hidden;margin-top:8px}.progress span{height:100%;display:block;width:0;background:var(--teal)}.data-row{display:flex;justify-content:space-between;gap:12px;font-size:12px;margin:8px 0}.data-row span{color:var(--muted)}.data-row strong{font-variant-numeric:tabular-nums;text-align:right}.result{background:#edf6f3;border-radius:10px;padding:11px;margin:14px 0;font-size:13px}.small{color:var(--muted);font-size:11px}.side button{font-size:12px;width:100%;margin-top:9px}.settings{margin-top:18px;padding:17px 20px;display:flex;gap:20px;flex-wrap:wrap;align-items:flex-end}.setting{flex:1;min-width:160px}.setting label{font-size:11px;color:var(--muted);display:block;margin-bottom:5px}.setting select{width:100%}.setting input{width:100%}.setting label.check{display:flex;align-items:center;gap:6px;font-size:12px;min-height:38px}.footer{font-size:11px;color:var(--muted);margin-top:15px;display:flex;justify-content:space-between;gap:18px}.language{font-size:12px;padding:7px 10px}.notice{margin-top:8px;color:var(--muted);font-size:11px}#status{font-weight:650}.download{background:transparent} @media(max-width:1000px){.layout{grid-template-columns:minmax(0,1fr) 245px}.shell{padding:20px}.side{padding:15px}.state{font-size:18px}}@media(max-width:750px){.layout{grid-template-columns:1fr}.side{display:grid;grid-template-columns:1fr 1fr;gap:12px}.side>.eyebrow,.side>.summary,.side>.small,.side>button{grid-column:1/-1}.agent{margin:0}.local{display:none}.shell{padding:14px}.scorebar{padding:12px}.role{font-size:11px}.clock{font-size:23px}.footer{flex-direction:column;gap:4px}.settings{gap:12px}.setting{min-width:135px}.controls{padding:11px;gap:7px}.legend{font-size:10px;padding:9px 11px}h1{margin-top:18px}.intro{font-size:13px}.language{flex-shrink:0}}
+</style>
+</head>
+<body><main class="shell">
+<header class="top"><div class="brand"><span class="logo">1V1</span>FOOTBALL LAB <span class="local" data-i="local">OFFLINE · LIVE 2D SIMULATION</span></div><button id="language" class="language">中文</button></header>
+<h1 data-i="title">One attacker. One defender. One ball.</h1>
+<p class="intro" data-i="intro">A small test scene for approach, dribble, shoot, intercept and clear.</p>
+<div class="layout">
+<section class="board" aria-label="Football simulation">
+ <div class="scorebar"><div class="role"><span class="dot red"></span><span data-i="attacker">RED · ATTACKER</span></div><div class="middle"><div id="clock" class="clock">00:00.0</div><div id="phase" class="phase">PAUSED</div></div><div class="role"><span data-i="defender">BLUE · DEFENDER</span><span class="dot blue"></span></div></div>
+ <div class="controls"><button id="play" class="primary" data-i="play">▶ Play</button><button id="newSetup" data-i="newSetup">New random setup</button><button id="reset" data-i="reset">Repeat seed</button><button id="step" data-i="step">Step +0.2 s</button><label><span data-i="speed">Playback</span><select id="speed"><option value="1">1×</option><option value="2" selected>2×</option><option value="4">4×</option><option value="8">8×</option><option value="16">16×</option></select></label><label><input id="autoNext" type="checkbox" checked><span data-i="autoNext">Auto next round</span></label><label><input id="trail" type="checkbox" checked><span data-i="trail">Ball trail</span></label></div>
+ <div class="canvas-wrap"><canvas id="pitch" width="1100" height="800" aria-label="Two robots and one ball on a 9 by 6 metre football pitch"></canvas></div>
+ <div class="legend"><span data-i="attackDirection">Red attacks the right goal →</span><span data-i="dragHint">Pause to drag the players or ball</span></div>
+
+</section>
+<aside class="side"><div class="eyebrow" data-i="decisions">What each player is doing</div>
+ <div class="agent"><div class="agent-title"><span class="dot red"></span><span data-i="attackerShort">Attacker</span></div><div id="attackerState" class="state">Approach</div><div id="attackerReason" class="explain"></div><div class="progress"><span id="attackerProgress"></span></div></div>
+ <div class="agent"><div class="agent-title"><span class="dot blue"></span><span data-i="defenderShort">Defender</span></div><div id="defenderState" class="state">Intercept</div><div id="defenderReason" class="explain"></div><div class="progress"><span id="defenderProgress"></span></div></div>
+ <div class="summary"><div class="data-row"><span data-i="ballPosition">Ball position (m)</span><strong id="ballPosition"></strong></div><div class="data-row"><span data-i="ballSpeed">Ball speed</span><strong id="ballSpeed"></strong></div><div class="data-row"><span data-i="touch">Last contact</span><strong id="touch">—</strong></div><div class="data-row"><span data-i="shots">Shot / clearance contacts</span><strong id="contacts">0 / 0</strong></div><div class="data-row"><span data-i="sessionTotals">Session goals / clearances</span><strong id="sessionTotals">0 / 0</strong></div><div id="result" class="result" role="status"><span id="status"></span></div></div>
+ <div class="small" data-i="scaleNote">Playback speed changes viewing time only. Motion rates remain at the existing Webots test averages.</div>
+ <button id="export" class="download" data-i="export">Download run data (.json)</button>
+</aside></div>
+<section class="settings" aria-label="Scene settings"><div class="setting"><label for="scenario" data-i="scenario">Starting scene</label><select id="scenario"><option value="random" data-i="randomScene">Random attack vs defence</option><option value="duel" data-i="duel">Midfield duel (fixed)</option><option value="lane" data-i="lane">Open-lane attack (fixed)</option><option value="shot" data-i="shotScene">Near-goal finish (fixed)</option></select></div><div class="setting" style="max-width:150px"><label for="seed" data-i="seed">Seed (repeatable)</label><input id="seed" type="number" min="0" max="4294967295" value="27"></div><div class="setting"><label data-i="display">Display</label><label class="check"><input id="targets" type="checkbox" checked><span data-i="targets">Show navigation targets</span></label></div><div class="setting"><label data-i="model">Model</label><div class="small" data-i="modelNote">9 × 6 m pitch · two 0.15 m discs · one 0.14 m ball</div></div></section>
+<div class="notice" id="notice" data-i="setupNote">Changing the scene or seed resets the run. Each attempt lasts up to 180 simulated seconds.</div>
+<footer class="footer"><span data-i="limitations">Simplified 2D model with exact positions. Balance, falls and camera perception are not simulated.</span><span data-i="standalone">Standalone · no installation · no network</span></footer>
+</main>
+<script id="config" type="application/json">{"walk_speed":0.08525241087733532,"back_speed":0.034151821846239855,"left_speed":0.012710006709112306,"right_speed":0.02229703610271777,"left_turn":0.07362390384491213,"right_turn":0.07569683357192747,"robot_radius":0.15,"rolling_deceleration":0.35,"shot_range":0.406003256198733,"pass_range":0.3051396105104535,"shot_seconds":4.8,"pass_seconds":3.299,"kick_noise_radians":0.04,"pitch_length":9.0,"pitch_width":6.0,"goal_width":2.6,"goal_height":1.2,"goal_depth":0.6,"ball_radius":0.07,"dt":0.04,"round_seconds":180}</script>
+<script id="simulation-core">
+'use strict';
+// Independent 1v1 demonstration policy. This is not the existing 4v4 controller.
+(() => {
+const TAU=Math.PI*2, clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const wrap=a=>((a+Math.PI)%TAU+TAU)%TAU-Math.PI;
+const distance=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y);
+class Simulation {
+ constructor(config,scenario='random',seed=27){this.p={...config};this.scenario=scenario;this.seed=seed>>>0;this.reset();}
+ reset(){
+  this.randomState=this.seed;this.t=0;this.outcome=null;this.lastTouch=null;this.events=[];this.samples=[];this.trail=[];this.customSetup=false;
+  this.stats={shotAttempts:0,shotContacts:0,clearAttempts:0,clearContacts:0,clearancesCompleted:0,robotContactSteps:0};this.clearance=null;
+  const starts={duel:[[-1.8,-.2,0],[-1.5,-.2],[.05,-.2,Math.PI]],lane:[[1.1,-.9,0],[1.42,-.9],[2.3,1.1,Math.PI]],shot:[[3.95,-.45,0],[4.21,-.45],[3.3,.7,Math.PI]]};
+  let s=starts[this.scenario]||starts.duel;
+  if(this.scenario==='random'){
+   const bx=-1.5+this.random()*3.9,by=-1.45+this.random()*2.9,gap=.25+this.random()*.1;
+   const dx=clamp(bx+.45+this.random()*1.5,-3.8,4.08),dy=clamp(by+(this.random()-.5)*2.8,-2.35,2.35);
+   const yaw=Math.atan2(-by*.15,4.8-bx)+(this.random()-.5)*.18;
+   s=[[bx-Math.cos(yaw)*gap,by-Math.sin(yaw)*gap,yaw],[bx,by],[dx,dy,Math.atan2(by-dy,bx-dx)]];
+  }
+  this.attacker=this.makePlayer('attacker',s[0]);this.defender=this.makePlayer('defender',s[2]);
+  this.ball={x:s[1][0],y:s[1][1],vx:0,vy:0};this.laneY=this.scenario==='random'?clamp(this.ball.y+(this.defender.y>this.ball.y?-.65:.65),-1.05,1.05):(s[1][1]<0?-.72:.72);
+  this.initialSetup={attacker:{x:this.attacker.x,y:this.attacker.y,yaw:this.attacker.yaw},defender:{x:this.defender.x,y:this.defender.y,yaw:this.defender.yaw},ball:{...this.ball},laneY:this.laneY};this.sample();
+ }
+ makePlayer(role,v){return {role,x:v[0],y:v[1],yaw:v[2],state:role==='attacker'?'APPROACH':'INTERCEPT',target:{x:v[0],y:v[1]},vx:0,vy:0,kick:null,cooldown:0};}
+ random(){this.randomState=(this.randomState+0x6D2B79F5)>>>0;let t=this.randomState;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return ((t^t>>>14)>>>0)/4294967296;}
+ noise(){return Math.sqrt(-2*Math.log(Math.max(1e-9,this.random())))*Math.cos(TAU*this.random())*this.p.kick_noise_radians;}
+ event(kind,extra={}){this.events.push({time:+this.t.toFixed(3),kind,...extra});}
+ setState(player,state){if(player.state!==state){player.state=state;this.event('state',{player:player.role,state});}}
+ finish(outcome){if(!this.outcome){this.outcome=outcome;this.event('finished',{outcome});}}
+ nearFoot(player){const dx=this.ball.x-player.x,dy=this.ball.y-player.y;const front=dx*Math.cos(player.yaw)+dy*Math.sin(player.yaw),side=-dx*Math.sin(player.yaw)+dy*Math.cos(player.yaw);return front>=.13&&front<=.32&&Math.abs(side)<.115;}
+ beginKick(player,kind){if(player.kick||player.cooldown>0)return;const duration=kind==='SHOOT'?this.p.shot_seconds:this.p.pass_seconds;player.kick={kind,start:this.t,end:this.t+duration};this.stats[kind==='SHOOT'?'shotAttempts':'clearAttempts']++;this.setState(player,kind);this.event('kick_started',{player:player.role,action:kind});}
+ completeKick(player){const kick=player.kick;if(!kick||this.t+1e-9<kick.end)return;
+  player.kick=null;player.cooldown=1;
+  if(!this.nearFoot(player)){this.event('kick_missed',{player:player.role,action:kick.kind});return;}
+  const range=kick.kind==='SHOOT'?this.p.shot_range:this.p.pass_range;
+  const v=Math.sqrt(2*this.p.rolling_deceleration*range),a=player.yaw+this.noise();
+  this.ball.vx=v*Math.cos(a);this.ball.vy=v*Math.sin(a);this.lastTouch=player.role;
+  this.stats[kick.kind==='SHOOT'?'shotContacts':'clearContacts']++;
+  this.event('kick_contact',{player:player.role,action:kick.kind,x:this.ball.x,y:this.ball.y});
+  if(kick.kind==='CLEAR')this.clearance={x:this.ball.x,time:this.t};
+ }
+ // Body-frame velocity and measured turn limits; viewing speed never enters here.
+ navigate(player,target,face=null,slow=1){
+  const p=this.p,dt=p.dt;player.target={x:target.x,y:target.y};
+  const dx=target.x-player.x,dy=target.y-player.y,d=Math.hypot(dx,dy);
+  const bearing=Math.atan2(dy,dx),desired=face===null?bearing:face;
+  const error=wrap(desired-player.yaw),omega=error>=0?p.left_turn:p.right_turn;
+  player.yaw=wrap(player.yaw+clamp(error,-omega*dt,omega*dt));
+  if(d<.025)return;
+  const forward=dx*Math.cos(player.yaw)+dy*Math.sin(player.yaw),side=-dx*Math.sin(player.yaw)+dy*Math.cos(player.yaw);
+  let vf=0,vl=0;
+  if(Math.abs(wrap(bearing-player.yaw))<.72)vf=Math.min(p.walk_speed*slow,d/dt);
+  else if(face!==null&&forward<-.04)vf=-Math.min(p.back_speed,Math.abs(forward)/dt);
+  if(Math.abs(side)>.025)vl=Math.sign(side)*Math.min(side>0?p.left_speed:p.right_speed,Math.abs(side)/dt);
+  player.x+=(vf*Math.cos(player.yaw)-vl*Math.sin(player.yaw))*dt;
+  player.y+=(vf*Math.sin(player.yaw)+vl*Math.cos(player.yaw))*dt;
+ }
+ attack(){
+  const a=this.attacker,b=this.ball;
+  if(a.kick){this.completeKick(a);return;}
+  const close=distance(a,b)<.39;
+  // Pick one lane at setup, rather than reversing the target every frame.
+  const goalY=b.x>3.6?clamp(b.y,-1.05,1.05):this.laneY;
+  const angle=Math.atan2(goalY-b.y,4.85-b.x),headingError=Math.abs(wrap(angle-a.yaw));
+  if(close&&b.x>4.24&&Math.abs(b.y)<1.12&&headingError<.14&&this.nearFoot(a)&&a.cooldown<=0){this.beginKick(a,'SHOOT');return;}
+  // Separate entry/exit tolerances prevent alignment chatter near the ball.
+  if(distance(a,b)<(a.state==='DRIBBLE'?.39:.34)&&headingError<(a.state==='DRIBBLE'?.65:.45)){
+   this.setState(a,'DRIBBLE');
+   this.navigate(a,{x:b.x+Math.cos(angle)*.38,y:b.y+Math.sin(angle)*.38},angle,.92);
+  }else{
+   this.setState(a,close?'ALIGN':'APPROACH');
+   const target={x:b.x-Math.cos(angle)*.24,y:b.y-Math.sin(angle)*.24};
+   this.navigate(a,target,distance(a,target)<.13?angle:null);
+  }
+ }
+ defend(){
+  const d=this.defender,b=this.ball;
+  if(d.kick){this.completeKick(d);return;}
+  const near=distance(d,b)<.35,clearAngle=Math.PI;
+  if(near&&Math.abs(wrap(clearAngle-d.yaw))<.45&&this.nearFoot(d)&&d.cooldown<=0){this.beginKick(d,'CLEAR');return;}
+  this.setState(d,near?'BLOCK':'INTERCEPT');
+  const ahead=clamp(distance(d,b)/this.p.walk_speed,0,1.2);
+  const target={x:clamp(b.x+b.vx*ahead+.24,-4.05,4.12),y:clamp(b.y+b.vy*ahead,-2.65,2.65)};
+  this.navigate(d,target,distance(d,target)<.35?clearAngle:null);
+ }
+ constrain(player){player.x=clamp(player.x,-4.42,4.42);player.y=clamp(player.y,-2.92,2.92);}
+ bodies(){
+  const a=this.attacker,d=this.defender,r=2*this.p.robot_radius;
+  for(let i=0;i<2;i++){const dx=d.x-a.x,dy=d.y-a.y,l=Math.hypot(dx,dy);if(l>=r)break;
+   const nx=l>1e-9?dx/l:1,ny=l>1e-9?dy/l:0,move=(r-l+.00001)/2;
+   a.x-=nx*move;a.y-=ny*move;d.x+=nx*move;d.y+=ny*move;this.constrain(a);this.constrain(d);
+   if(i===0)this.stats.robotContactSteps++;
+  }
+ }
+ ballContacts(){
+  const b=this.ball,r=this.p.robot_radius+this.p.ball_radius;
+  // Resolve the ball against both discs. Small dt limits tunnelling.
+  for(let iteration=0;iteration<2;iteration++)for(const player of [this.attacker,this.defender]){
+   const dx=b.x-player.x,dy=b.y-player.y,l=Math.hypot(dx,dy);if(l>=r-1e-8)continue;
+   const nx=l>1e-9?dx/l:Math.cos(player.yaw),ny=l>1e-9?dy/l:Math.sin(player.yaw);
+   b.x=player.x+nx*(r+.000001);b.y=player.y+ny*(r+.000001);
+   const relative=(b.vx-player.vx)*nx+(b.vy-player.vy)*ny;
+   if(relative<0){b.vx-=(1+.35)*relative*nx;b.vy-=(1+.35)*relative*ny;}
+   this.lastTouch=player.role;
+  }
+ }
+ roll(){
+  const b=this.ball,v=Math.hypot(b.vx,b.vy);if(v<1e-9){b.vx=b.vy=0;return;}
+  const a=this.p.rolling_deceleration,dt=Math.min(this.p.dt,v/a),travel=v*dt-.5*a*dt*dt,remaining=Math.max(0,v-a*this.p.dt);
+  b.x+=b.vx/v*travel;b.y+=b.vy/v*travel;b.vx*=remaining/v;b.vy*=remaining/v;
+ }
+ boundary(previous){
+  const b=this.ball,p=this.p,crossings=[];
+  for(const [axis,limit] of [['x',p.pitch_length/2+p.ball_radius],['y',p.pitch_width/2+p.ball_radius]])for(const sign of [-1,1]){
+   const before=sign*previous[axis],after=sign*b[axis];if(before<=limit&&after>limit){const f=(limit-before)/(after-before);crossings.push({f,axis,sign,y:previous.y+(b.y-previous.y)*f});}
+  }
+  crossings.sort((x,y)=>x.f-y.f);const first=crossings[0];if(!first)return;
+  if(first.axis==='x'&&first.sign===1&&Math.abs(first.y)+p.ball_radius<p.goal_width/2)this.finish('GOAL');
+  else this.finish('OUT');
+ }
+ sample(){this.samples.push({t:+this.t.toFixed(3),attacker:{x:this.attacker.x,y:this.attacker.y,yaw:this.attacker.yaw,state:this.attacker.state},defender:{x:this.defender.x,y:this.defender.y,yaw:this.defender.yaw,state:this.defender.state},ball:{...this.ball}});this.trail.push({x:this.ball.x,y:this.ball.y});}
+ step(){
+  if(this.outcome)return;
+  const previous={...this.ball},old=[{x:this.attacker.x,y:this.attacker.y},{x:this.defender.x,y:this.defender.y}];
+  this.t+=this.p.dt;for(const player of [this.attacker,this.defender])player.cooldown=Math.max(0,player.cooldown-this.p.dt);
+  this.attack();this.defend();this.constrain(this.attacker);this.constrain(this.defender);this.bodies();
+  [this.attacker,this.defender].forEach((player,i)=>{player.vx=(player.x-old[i].x)/this.p.dt;player.vy=(player.y-old[i].y)/this.p.dt;});
+  this.roll();this.ballContacts();this.boundary(previous);
+  if(this.clearance&&this.ball.x<this.clearance.x-.18&&this.lastTouch==='defender'){
+   this.stats.clearancesCompleted++;this.event('clearance_completed',{x:this.ball.x,y:this.ball.y});this.clearance=null;
+  }
+  if(this.t+1e-9>=this.p.round_seconds&&!this.outcome)this.finish('TIMEOUT');
+  if(Math.round(this.t/this.p.dt)%5===0||this.outcome)this.sample();
+ }
+ moveObject(name,x,y){
+  const object=name==='ball'?this.ball:this[name];if(!object||this.outcome)return;
+  object.x=clamp(x,-4.25,4.25);object.y=clamp(y,-2.7,2.7);
+  if(name==='ball'){object.vx=object.vy=0;}else{object.kick=null;object.vx=object.vy=0;}
+  this.bodies();this.ballContacts();this.ball.vx=this.ball.vy=0;this.clearance=null;
+  for(const p of [this.attacker,this.defender])p.kick=null;
+  this.customSetup=true;this.lastTouch=null;this.trail=[];this.event('manual_setup',{object:name,x:object.x,y:object.y});this.sample();
+ }
+ report(){return {schema:2,model:'standalone_1v1_kinematic_demo',scenario:this.scenario,seed:this.seed,initialSetup:this.initialSetup,customSetup:this.customSetup,simulatedSeconds:this.t,outcome:this.outcome,parameters:this.p,stats:{...this.stats},events:this.events,samples:this.samples,limitations:['Independent demonstration policy; not the existing 4v4 controller.','Exact positions; no camera perception, balance, falls or joint dynamics.','Simulation measurements and assumptions are not hardware calibration.','Playback multiplier changes viewing time, not motion rates.']};}
+}
+globalThis.Football1v1={Simulation,clamp,wrap,distance};
+})();
+</script>
+<script id="viewer">
+(() => {
+const $=id=>document.getElementById(id),p=JSON.parse($('config').textContent),{Simulation,clamp}=Football1v1;
+let sim=new Simulation(p),running=false,lang='en',accumulator=0,lastReal=null,dragging=null;
+let session={round:1,goals:0,clearances:0},history=[],observedClears=0,countedGoal=false,pendingNextAt=null;
+const translations={
+en:{local:'OFFLINE · LIVE 2D SIMULATION',title:'One attacker. One defender. One ball.',intro:'A small test scene for approach, dribble, shoot, intercept and clear.',attacker:'RED · ATTACKER',defender:'BLUE · DEFENDER',attackerShort:'Attacker',defenderShort:'Defender',attackDirection:'Red attacks the right goal →',dragHint:'Pause to drag the players or ball',play:'▶ Play',pause:'Ⅱ Pause',step:'Step +0.2 s',reset:'Reset',speed:'Playback',trail:'Ball trail',decisions:'What each player is doing',ballPosition:'Ball position (m)',ballSpeed:'Ball speed',touch:'Last contact',shots:'Shot / clearance contacts',scaleNote:'Playback speed changes viewing time only. Motion rates remain at the existing Webots test averages.',export:'Download run data (.json)',scenario:'Starting scene',duel:'Midfield duel',lane:'Open-lane attack',shotScene:'Near-goal finish',seed:'Seed (repeatable)',display:'Display',targets:'Show navigation targets',model:'Model',modelNote:'9 × 6 m pitch · two 0.15 m discs · one 0.14 m ball',setupNote:'Changing the scene or seed resets the run. Each attempt lasts up to 180 simulated seconds.',limitations:'Simplified 2D model with exact positions. Balance, falls and camera perception are not simulated.',standalone:'Standalone · no installation · no network',PAUSED:'PAUSED',RUNNING:'RUNNING',FINISHED:'FINISHED',READY:'Ready. Press Play to begin.',GOAL:'Goal — the whole ball crossed the right goal line.',CLEARED:'Defended — blue contacted and cleared the ball left.',OUT:'Ball out of play. Reset to try again.',TIMEOUT:'Time limit reached. No goal in this attempt.',APPROACH:'Approach',ALIGN:'Align',DRIBBLE:'Dribble',SHOOT:'Shoot',INTERCEPT:'Intercept',BLOCK:'Block / align',CLEAR:'Clear',APPROACH_reason:'Move behind the ball to face the right goal.',ALIGN_reason:'Adjust heading before moving the ball.',DRIBBLE_reason:'Push the ball along a fixed attacking lane.',SHOOT_reason:'Hold position; execute the shot if the ball remains at the foot.',INTERCEPT_reason:'Move between the ball and the right goal.',BLOCK_reason:'Block the route and turn to clear left.',CLEAR_reason:'Hold position; clear only if the ball stays within reach.',live:'Live simulation',goalLabel:'TARGET GOAL',custom:'Custom starting positions',resultLabel:'Attempt finished',again:'Reset to try another attempt'},
+zh:{local:'离线 · 实时二维仿真',title:'一攻、一防、一个球。',intro:'用于观察接近、带球、射门、拦截与解围的小场景。',attacker:'红方 · 进攻',defender:'蓝方 · 防守',attackerShort:'进攻球员',defenderShort:'防守球员',attackDirection:'红方向右侧球门进攻 →',dragHint:'暂停后可拖动球员或足球',play:'▶ 开始',pause:'Ⅱ 暂停',step:'单步 +0.2 秒',reset:'重置',speed:'播放速度',trail:'足球轨迹',decisions:'球员当前在做什么',ballPosition:'足球位置（米）',ballSpeed:'足球速度',touch:'最近触球',shots:'射门 / 解围触球次数',scaleNote:'播放倍速只改变观看速度。运动参数仍采用之前 Webots 单项测试的平均值。',export:'下载本次运行数据（JSON）',scenario:'初始场景',duel:'中场攻防',lane:'边路进攻',shotScene:'门前射门',seed:'随机种子（可重复）',display:'显示设置',targets:'显示导航目标',model:'模型',modelNote:'9 × 6 米球场 · 两个半径 0.15 米圆盘 · 一个直径 0.14 米足球',setupNote:'切换场景或种子会重置本次运行。每次最长 180 秒仿真时间。',limitations:'采用精确位置的二维简化模型，不模拟平衡、摔倒或相机感知。',standalone:'独立文件 · 无需安装 · 无需联网',PAUSED:'已暂停',RUNNING:'运行中',FINISHED:'本次结束',READY:'场景已就绪，点击“开始”。',GOAL:'进球：整个足球越过了右侧球门线。',CLEARED:'防守成功：蓝方触球并向左解围。',OUT:'足球出界，重置后可重新测试。',TIMEOUT:'达到本次时间上限，未进球。',APPROACH:'接近足球',ALIGN:'调整朝向',DRIBBLE:'带球',SHOOT:'准备 / 执行射门',INTERCEPT:'拦截',BLOCK:'封堵 / 调整朝向',CLEAR:'准备 / 执行解围',APPROACH_reason:'移动到球后方，准备面向右侧球门。',ALIGN_reason:'调整身体朝向，再推进足球。',DRIBBLE_reason:'沿固定进攻通道推动足球。',SHOOT_reason:'保持位置；动作结束时球仍在脚边才踢出。',INTERCEPT_reason:'移动到足球与右侧球门之间。',BLOCK_reason:'封堵路线，并转向左侧准备解围。',CLEAR_reason:'保持位置；足球仍在脚边才执行解围。',live:'实时仿真',goalLabel:'目标球门',custom:'自定义初始位置',resultLabel:'本次测试结束',again:'点击重置可重新测试'}
+};
+Object.assign(translations.en,{reset:'Repeat seed',newSetup:'New random setup',autoNext:'Auto next round',randomScene:'Random attack vs defence',duel:'Midfield duel (fixed)',lane:'Open-lane attack (fixed)',shotScene:'Near-goal finish (fixed)',sessionTotals:'Session goals / clearances',round:'Round',setupNote:'Clearances do not end play. New random setup changes positions; Repeat seed reproduces this start. Default playback: 2×.',intro:'Continuous attack and defence. Recover the ball after a clearance and try again.',again:'Use New random setup or Repeat seed',nextRound:'Next random round in',OUT:'Ball out of play.',TIMEOUT:'180-second round complete.',clearLive:'Clearance completed — play continues.'});
+Object.assign(translations.zh,{reset:'重测当前种子',newSetup:'随机新开局',autoNext:'自动下一轮',randomScene:'随机攻防',duel:'中场攻防（固定）',lane:'边路进攻（固定）',shotScene:'门前射门（固定）',sessionTotals:'累计进球 / 完成解围',round:'第',setupNote:'解围后继续踢。随机新开局会改变位置；重测当前种子用于复现。默认播放速度为 2 倍。',intro:'持续攻防：解围后继续找球、带球和尝试射门。',again:'可随机新开局，或重测当前种子',nextRound:'下一轮随机攻防倒计时',OUT:'足球出界。',TIMEOUT:'本轮已达到 180 秒仿真时间。',clearLive:'已完成解围，比赛继续。'});
+const tr=key=>translations[lang][key]||key;
+function translate(){document.documentElement.lang=lang==='zh'?'zh-CN':'en';document.querySelectorAll('[data-i]').forEach(el=>el.textContent=tr(el.dataset.i));$('language').textContent=lang==='en'?'中文':'English';update();}
+function saveSummary(){if(sim.t>0){history.push({round:session.round,scenario:sim.scenario,seed:sim.seed,initialSetup:sim.initialSetup,simulatedSeconds:sim.t,outcome:sim.outcome,stats:{...sim.stats}});if(history.length>50)history.shift();}}
+function reset(keepSession=false){
+ running=false;accumulator=0;lastReal=null;pendingNextAt=null;
+ if(!keepSession){session={round:1,goals:0,clearances:0};history=[];}
+ let seed=Number($('seed').value);if(!Number.isFinite(seed))seed=27;seed=clamp(Math.trunc(seed),0,4294967295);$('seed').value=seed;
+ sim=new Simulation(p,$('scenario').value,seed);observedClears=0;countedGoal=false;window.demo.sim=sim;update();draw();
+}
+function freshSeed(){let seed;do{seed=crypto.getRandomValues(new Uint32Array(1))[0];}while(seed===sim.seed);return seed;}
+function newSetup(resume=false,first=false){
+ saveSummary();if(!first)session.round++;$('scenario').value='random';$('seed').value=freshSeed();reset(true);running=resume;update();
+}
+function account(){
+ session.clearances+=sim.stats.clearancesCompleted-observedClears;observedClears=sim.stats.clearancesCompleted;
+ if(sim.outcome==='GOAL'&&!countedGoal){session.goals++;countedGoal=true;}
+}
+function update(){
+ const total=Math.round(sim.t*10)/10;$('clock').textContent=String(Math.floor(total/60)).padStart(2,'0')+':'+(total%60).toFixed(1).padStart(4,'0');
+ $('phase').textContent=tr(sim.outcome?'FINISHED':running?'RUNNING':'PAUSED')+' · '+tr('round')+' '+session.round;$('play').textContent=tr(running?'pause':'play');$('play').disabled=!!sim.outcome;$('step').disabled=running||!!sim.outcome;
+ for(const role of ['attacker','defender']){const player=sim[role];$(role+'State').textContent=tr(player.state);$(role+'Reason').textContent=tr(player.state+'_reason');$(role+'Progress').style.width=player.kick?clamp((sim.t-player.kick.start)/(player.kick.end-player.kick.start)*100,0,100)+'%':'0';}
+ $('ballPosition').textContent=`${sim.ball.x.toFixed(2)}, ${sim.ball.y.toFixed(2)}`;$('ballSpeed').textContent=Math.hypot(sim.ball.vx,sim.ball.vy).toFixed(3)+' m/s';$('touch').textContent=sim.lastTouch?tr(sim.lastTouch+'Short'):'—';$('contacts').textContent=sim.stats.shotContacts+' / '+sim.stats.clearContacts;
+ $('sessionTotals').textContent=session.goals+' / '+session.clearances;
+ $('status').textContent=tr(sim.outcome||'READY');if(!sim.outcome&&sim.t>0)$('status').textContent=tr(sim.stats.clearancesCompleted?'clearLive':sim.customSetup?'custom':'live');
+ if(pendingNextAt!==null)$('status').textContent+=' '+tr('nextRound')+' '+Math.max(1,Math.ceil((pendingNextAt-performance.now())/1000))+' s';
+}
+const canvas=$('pitch'),ctx=canvas.getContext('2d');
+function point(x,y){return {x:(x+5.5)*100,y:(4-y)*100};}
+function line(x1,y1,x2,y2,color,width=1,dash=[]){const a=point(x1,y1),b=point(x2,y2);ctx.beginPath();ctx.setLineDash(dash);ctx.strokeStyle=color;ctx.lineWidth=width;ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();ctx.setLineDash([]);}
+function rect(x,y,w,h,fill,stroke=null){const a=point(x,y+h);if(fill){ctx.fillStyle=fill;ctx.fillRect(a.x,a.y,w*100,h*100);}if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=3;ctx.strokeRect(a.x,a.y,w*100,h*100);}}
+function circle(x,y,r,fill,stroke=null,width=2){const a=point(x,y);ctx.beginPath();ctx.arc(a.x,a.y,r*100,0,Math.PI*2);if(fill){ctx.fillStyle=fill;ctx.fill();}if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=width;ctx.stroke();}}
+function draw(){
+ ctx.clearRect(0,0,1100,800);rect(-5.5,-4,11,8,'#194f40');rect(-4.5,-3,9,6,'#2b7956');for(let i=0;i<9;i++)if(i%2===0)rect(-4.5+i,-3,1,6,'rgba(255,255,255,.025)');
+ rect(-4.5,-3,9,6,null,'#e8f0df');line(0,-3,0,3,'#e8f0df',3);circle(0,0,.75,null,'#e8f0df',3);circle(0,0,.045,'#e8f0df');
+ for(const sign of [-1,1]){const gx=sign*4.5;rect(sign<0?-4.5:3.5,-1.5,1,3,null,'#e8f0df');rect(sign<0?-4.5:2.5,-2.5,2,5,null,'#e8f0df');circle(gx-sign*1.5,0,.045,'#e8f0df');rect(sign<0?-5.1:4.5,-1.3,.6,2.6,sign>0?'rgba(224,177,99,.16)':'rgba(208,226,222,.08)','#cddfce');for(let j=1;j<6;j++)line(sign<0?-5.1+j*.1:4.5+j*.1,-1.3,sign<0?-5.1+j*.1:4.5+j*.1,1.3,'rgba(230,241,224,.23)');for(let j=1;j<13;j++)line(sign<0?-5.1:4.5,-1.3+j*.2,sign<0?-4.5:5.1,-1.3+j*.2,'rgba(230,241,224,.23)');circle(gx,-1.35,.05,'#f4f4e8');circle(gx,1.35,.05,'#f4f4e8');}
+ if($('trail').checked&&sim.trail.length>1){ctx.beginPath();ctx.lineWidth=2;ctx.strokeStyle='rgba(255,231,161,.6)';sim.trail.forEach((v,i)=>{const p=point(v.x,v.y);if(i)ctx.lineTo(p.x,p.y);else ctx.moveTo(p.x,p.y);});ctx.stroke();}
+ if($('targets').checked)for(const player of [sim.attacker,sim.defender]){line(player.x,player.y,player.target.x,player.target.y,player.role==='attacker'?'#edb0a5':'#a9c8ee',1.3,[4,6]);const t=player.target;line(t.x-.06,t.y,t.x+.06,t.y,'#d7e5d3',1.5);line(t.x,t.y-.06,t.x,t.y+.06,'#d7e5d3',1.5);}
+ for(const player of [sim.attacker,sim.defender]){
+  const color=player.role==='attacker'?'#de5c55':'#498de5';circle(player.x+.018,player.y-.04,p.robot_radius,'rgba(0,0,0,.19)');circle(player.x,player.y,p.robot_radius,color,'#f6f6e8',2.3);
+  line(player.x,player.y,player.x+Math.cos(player.yaw)*.24,player.y+Math.sin(player.yaw)*.24,'#fff5d9',3.2);
+  const q=point(player.x,player.y);ctx.font='600 12px system-ui';ctx.fillStyle='#fff';ctx.textAlign='center';ctx.fillText(player.role==='attacker'?'A':'D',q.x,q.y+4);
+  ctx.font='12px system-ui';ctx.fillStyle='#e6eee3';ctx.fillText(tr(player.state),q.x,q.y-28);
+ }
+ circle(sim.ball.x+.012,sim.ball.y-.024,p.ball_radius,'rgba(0,0,0,.28)');circle(sim.ball.x,sim.ball.y,p.ball_radius,'#fffbe9','#203c36',1.3);circle(sim.ball.x,sim.ball.y,.025,'#203c36');
+ ctx.font='600 12px system-ui';ctx.textAlign='center';ctx.fillStyle='#d6e4d1';ctx.fillText('9 × 6 m',550,42);ctx.fillStyle='#f0d5a2';ctx.fillText(tr('goalLabel'),1000,227);
+ line(-.5,-3.58,.5,-3.58,'#bdcfbd',2);line(-.5,-3.53,-.5,-3.63,'#bdcfbd',2);line(.5,-3.53,.5,-3.63,'#bdcfbd',2);ctx.font='11px system-ui';ctx.fillStyle='#bdcfbd';ctx.fillText('1 m',550,779);
+ if(sim.outcome){ctx.fillStyle='rgba(16,38,34,.81)';ctx.fillRect(160,325,780,125);ctx.fillStyle='#f8f5e9';ctx.font='700 25px system-ui';ctx.fillText(tr('resultLabel'),550,365);ctx.font='16px system-ui';ctx.fillText(tr(sim.outcome),550,397);ctx.font='12px system-ui';ctx.fillStyle='#c6d7cf';ctx.fillText(pendingNextAt!==null?tr('nextRound')+' '+Math.max(1,Math.ceil((pendingNextAt-performance.now())/1000))+' s':tr('again'),550,426);}
+}
+function frame(stamp){
+ if(lastReal===null)lastReal=stamp;const elapsed=Math.min(.08,(stamp-lastReal)/1000);lastReal=stamp;
+ if(running&&!document.hidden){accumulator+=elapsed*Number($('speed').value);let steps=0;while(accumulator>=p.dt&&steps++<60&&!sim.outcome){sim.step();accumulator-=p.dt;}account();if(sim.outcome){running=false;accumulator=0;if($('autoNext').checked)pendingNextAt=performance.now()+3000;}}
+ if(pendingNextAt!==null&&performance.now()>=pendingNextAt&&!document.hidden){newSetup(true);}
+ update();draw();requestAnimationFrame(frame);
+}
+$('play').onclick=()=>{if(sim.outcome)return;running=!running;accumulator=0;lastReal=null;update();};
+$('step').onclick=()=>{if(!running){for(let i=0;i<5&&!sim.outcome;i++)sim.step();account();update();draw();}};
+$('reset').onclick=()=>reset();$('scenario').onchange=()=>reset();$('seed').onchange=()=>reset();
+$('newSetup').onclick=()=>newSetup(running||pendingNextAt!==null);
+$('autoNext').onchange=()=>{if(!$('autoNext').checked)pendingNextAt=null;};
+$('language').onclick=()=>{lang=lang==='en'?'zh':'en';translate();draw();};
+$('export').onclick=()=>{const blob=new Blob([JSON.stringify({...sim.report(),session:{...session},previousRounds:history},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`football-1v1-${sim.scenario}-seed${sim.seed}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+function world(event){const r=canvas.getBoundingClientRect();return {x:(event.clientX-r.left)/r.width*11-5.5,y:4-(event.clientY-r.top)/r.height*8};}
+canvas.addEventListener('pointerdown',event=>{if(running||sim.outcome)return;const w=world(event);let closest=.35;for(const name of ['ball','attacker','defender']){const object=name==='ball'?sim.ball:sim[name],d=Math.hypot(w.x-object.x,w.y-object.y);if(d<closest){closest=d;dragging=name;}}if(dragging)canvas.setPointerCapture(event.pointerId);});
+canvas.addEventListener('pointermove',event=>{if(dragging&&!running){const w=world(event);sim.moveObject(dragging,w.x,w.y);update();draw();}});
+for(const name of ['pointerup','pointercancel'])canvas.addEventListener(name,()=>{dragging=null;});
+document.addEventListener('visibilitychange',()=>{if(document.hidden){running=false;pendingNextAt=null;accumulator=0;lastReal=null;update();}});
+window.demo={sim,reset,newSetup,draw,update,get session(){return session;},get running(){return running;},set running(value){running=Boolean(value)&&!sim.outcome;accumulator=0;},get language(){return lang;}};
+newSetup(false,true);translate();draw();requestAnimationFrame(frame);
+})();
+</script>
+</body></html>

@@ -1,0 +1,124 @@
+{
+  "schema": 2,
+  "model": "standalone_1v1_kinematic_demo",
+  "scenario": "shot",
+  "seed": 27,
+  "initialSetup": {
+    "attacker": {
+      "x": 3.95,
+      "y": -0.45,
+      "yaw": 0
+    },
+    "defender": {
+      "x": 3.3,
+      "y": 0.7,
+      "yaw": 3.141592653589793
+    },
+    "ball": {
+      "x": 4.21,
+      "y": -0.45,
+      "vx": 0,
+      "vy": 0
+    },
+    "laneY": -0.72
+  },
+  "customSetup": true,
+  "simulatedSeconds": 0,
+  "outcome": null,
+  "parameters": {
+    "walk_speed": 0.08525241087733532,
+    "back_speed": 0.034151821846239855,
+    "left_speed": 0.012710006709112306,
+    "right_speed": 0.02229703610271777,
+    "left_turn": 0.07362390384491213,
+    "right_turn": 0.07569683357192747,
+    "robot_radius": 0.15,
+    "rolling_deceleration": 0.35,
+    "shot_range": 0.406003256198733,
+    "pass_range": 0.3051396105104535,
+    "shot_seconds": 4.8,
+    "pass_seconds": 3.299,
+    "kick_noise_radians": 0.04,
+    "pitch_length": 9,
+    "pitch_width": 6,
+    "goal_width": 2.6,
+    "goal_height": 1.2,
+    "goal_depth": 0.6,
+    "ball_radius": 0.07,
+    "dt": 0.04,
+    "round_seconds": 180
+  },
+  "stats": {
+    "shotAttempts": 0,
+    "shotContacts": 0,
+    "clearAttempts": 0,
+    "clearContacts": 0,
+    "clearancesCompleted": 0,
+    "robotContactSteps": 0
+  },
+  "events": [
+    {
+      "time": 0,
+      "kind": "manual_setup",
+      "object": "ball",
+      "x": 4.02949125660589,
+      "y": -0.24486204611477502
+    }
+  ],
+  "samples": [
+    {
+      "t": 0,
+      "attacker": {
+        "x": 3.95,
+        "y": -0.45,
+        "yaw": 0,
+        "state": "APPROACH"
+      },
+      "defender": {
+        "x": 3.3,
+        "y": 0.7,
+        "yaw": 3.141592653589793,
+        "state": "INTERCEPT"
+      },
+      "ball": {
+        "x": 4.21,
+        "y": -0.45,
+        "vx": 0,
+        "vy": 0
+      }
+    },
+    {
+      "t": 0,
+      "attacker": {
+        "x": 3.95,
+        "y": -0.45,
+        "yaw": 0,
+        "state": "APPROACH"
+      },
+      "defender": {
+        "x": 3.3,
+        "y": 0.7,
+        "yaw": 3.141592653589793,
+        "state": "INTERCEPT"
+      },
+      "ball": {
+        "x": 4.02949125660589,
+        "y": -0.24486204611477502,
+        "vx": 0,
+        "vy": 0
+      }
+    }
+  ],
+  "limitations": [
+    "Independent demonstration policy; not the existing 4v4 controller.",
+    "Exact positions; no camera perception, balance, falls or joint dynamics.",
+    "Simulation measurements and assumptions are not hardware calibration.",
+    "Playback multiplier changes viewing time, not motion rates."
+  ],
+  "session": {
+    "round": 1,
+    "goals": 0,
+    "clearances": 0
+  },
+  "previousRounds": []
+}

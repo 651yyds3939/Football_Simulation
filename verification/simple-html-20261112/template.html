@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Football Lab · 1 vs 1</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f3f6f5;color:#193d43;font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}main{max-width:1320px;margin:auto;padding:24px}header{display:flex;justify-content:space-between;align-items:center;gap:14px}h1{font-size:clamp(23px,4vw,34px);line-height:1.2;margin:8px 0}.eyebrow{font-size:12px;letter-spacing:.14em;font-weight:750;text-transform:uppercase;color:#147e79}.intro{color:#637c83;margin:12px 0 22px}button,select{font:inherit;border:1px solid #ccdbdf;border-radius:9px;background:white;color:#193d43;padding:9px 13px;cursor:pointer}button:hover,select:hover{border-color:#147e79}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #e6b85e;outline-offset:3px}.primary{background:#147e79;color:white;border-color:#147e79;font-weight:700;min-width:110px}.layout{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:18px}.pitch-card,aside{border:1px solid #dce5e6;border-radius:16px;background:white;overflow:hidden;min-width:0}.teams{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 20px;font-size:12px;font-weight:750}.red{color:#d95450}.blue{color:#4289dd}.clock{text-align:center}.clock strong{display:block;font-size:24px;color:#193d43;line-height:1.2}#phase{font-size:10px;letter-spacing:.1em;color:#6d858a}canvas{display:block;width:100%;height:auto;aspect-ratio:11/8}.controls{display:flex;flex-wrap:wrap;gap:9px;align-items:center;padding:14px 16px;border-top:1px solid #e6eded}.controls label{display:flex;gap:7px;align-items:center;color:#637c83;font-size:13px}.timeline{display:flex;align-items:center;gap:10px;padding:0 18px 15px;font-size:12px;color:#6d858a}input[type=range]{flex:1;min-width:20px;accent-color:#147e79}aside{padding:20px}.player{padding-bottom:18px;margin-bottom:18px;border-bottom:1px solid #e0e9ea}.player h2{font-size:15px;margin:0 0 9px}.state{font-size:21px;font-weight:700;line-height:1.3}.action{font-size:12px;color:#6d858a;margin:7px 0 0}.info{display:flex;justify-content:space-between;gap:12px;margin:12px 0;font-size:12px;color:#637c83}.info strong{color:#193d43;text-align:right}#result{padding:12px;border-radius:10px;background:#edf6f3;margin-top:18px;font-size:13px;font-weight:650}.note{font-size:12px;color:#6d858a;margin:18px 0 0}.footer{font-size:12px;color:#6d858a;margin:14px 0}#language{flex-shrink:0}@media(max-width:760px){main{padding:12px}.layout{grid-template-columns:1fr}aside{display:grid;grid-template-columns:1fr 1fr;gap:0 15px;padding:15px}.player{margin:0 0 12px;padding:0 0 12px}.info{margin:6px 0}#result,.note{grid-column:1/-1}.teams{padding:12px;font-size:10px}.clock strong{font-size:20px}.controls{padding:12px}.controls select{max-width:100%}h1{margin-top:4px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+<main>
+<header><div><div class="eyebrow" data-i="badge">Offline · replay</div><h1 data-i="title">One attacker. One defender. One ball.</h1></div><button id="language" type="button">中文</button></header>
+<p class="intro" data-i="intro">The same pitch and recorded movement as the Python version. No installation required.</p>
+<div class="layout">
+ <section class="pitch-card" aria-label="Football replay">
+  <div class="teams"><span class="red" data-i="red">● RED · ATTACKER</span><div class="clock"><strong id="clock">00:00.0</strong><span id="phase"></span></div><span class="blue" data-i="blue">BLUE · DEFENDER ●</span></div>
+  <canvas id="pitch" width="1100" height="800" aria-label="Recorded football scene"></canvas>
+  <div class="controls">
+   <button class="primary" id="play" type="button">Pause</button><button id="reset" data-i="restart" type="button">Restart</button>
+   <select id="scene" aria-label="Recorded example"><option value="0" data-i="defenceExample">1 · Defence A</option><option value="1" data-i="attackExample">2 · Attack A</option><option value="2" data-i="attackB">3 · Attack B</option><option value="3" data-i="defenceB">4 · Defence B</option><option value="4" data-i="timeoutExample">5 · Unresolved / timeout</option></select>
+   <label><span data-i="speed">Speed</span><select id="speed" aria-label="Playback speed"><option value="1">1×</option><option value="2">2×</option><option value="4">4×</option><option value="8" selected>8×</option><option value="16">16×</option><option value="32">32×</option></select></label>
+   <label><input id="trail" type="checkbox" checked><span data-i="trail">Ball trail</span></label>
+   <input id="targets" type="checkbox" checked hidden>
+  </div>
+  <div class="timeline"><span data-i="timeline">Seek</span><input id="seek" type="range" min="0" max="1" step="1" value="0" aria-label="Replay position"><span id="duration"></span></div>
+ </section>
+ <aside>
+  <div class="player"><h2 class="red" data-i="attacker">● Attacker</h2><div id="attackerState" class="state"></div><p id="attackerAction" class="action"></p></div>
+  <div class="player"><h2 class="blue" data-i="defender">● Defender</h2><div id="defenderState" class="state"></div><p id="defenderAction" class="action"></p></div>
+  <div class="info"><span data-i="seed">Recorded seed</span><strong id="seed"></strong></div>
+  <div class="info"><span data-i="ballSpeed">Ball speed</span><strong id="ballSpeed"></strong></div>
+  <div class="info"><span data-i="touch">Last contact</span><strong id="touch"></strong></div>
+  <div id="result" role="status"></div>
+  <p class="note" data-i="note">Five recorded examples: two attacking wins, two defensive wins and one timeout. These selected examples are not a success-rate test.</p>
+ </aside>
+</div>
+<p class="footer" data-i="footer">Replay only: no Python, server or internet needed. New random runs and policy changes require the full version. This 2D model does not simulate falls.</p>
+</main>
+<script id="recordings" type="application/json">__RECORDINGS__</script>
+<script>
+(() => {
+'use strict';
+const records=JSON.parse(document.getElementById('recordings').textContent),$=id=>document.getElementById(id);
+let selected=0,index=0,time=0,running=true,lastReal=null,lang='en',sim,p;
+const pendingNextAt=null;
+const translations={
+ en:{badge:'OFFLINE · RECORDED REPLAY',title:'One attacker. One defender. One ball.',intro:'The same pitch and recorded movement as the Python version. No installation required.',red:'● RED · ATTACKER',blue:'BLUE · DEFENDER ●',attacker:'● Attacker',defender:'● Defender',attackerShort:'Attacker',defenderShort:'Defender',restart:'Restart',defenceExample:'1 · Defence A',attackExample:'2 · Attack A',attackB:'3 · Attack B',defenceB:'4 · Defence B',timeoutExample:'5 · Unresolved / timeout',speed:'Speed',trail:'Ball trail',timeline:'Seek',seed:'Recorded seed',ballSpeed:'Ball speed',touch:'Last contact',note:'Five recorded examples: two attacking wins, two defensive wins and one timeout. These selected examples are not a success-rate test.',footer:'Replay only: no Python, server or internet needed. New random runs and policy changes require the full version. This 2D model does not simulate falls.',playing:'PLAYING REPLAY',paused:'PAUSED',finished:'REPLAY FINISHED',play:'Play',pause:'Pause',replay:'Replay',goalLabel:'RED TARGET GOAL',resultLabel:'Example finished',again:'Restart or choose another example.',GOAL:'Red scored in the right goal.',CLEARED_GOAL:'Blue won the ball and scored in the left goal.',OUT:'Ball out of play.',TIMEOUT:'Time limit reached.',live:'Playing a recording calculated by the shared Python policy.',INITIAL:'Ready',FORMATION:'Formation',DRIBBLE:'Dribble',SHOOT:'Shoot',INTERCEPT:'Approach ball',CLEAR:'Clear',CHALLENGE:'Challenge ball',DEFENSIVE_INTERCEPT:'Predictive interception',DUEL_ESCAPE:'Create space',RECOVER_DEFENCE:'Recover goal-side',WAIT:'Wait',walk:'Walk',back:'Backtrack',stand:'Hold position',step_left:'Step left',step_right:'Step right',left20:'Turn left',left40:'Turn left',right20:'Turn right',right40:'Turn right',shoot:'Shoot',pass:'Pass / clear'},
+ zh:{badge:'离线 · 已录制回放',title:'一攻、一防、一个球。',intro:'保留 Python 版本的球场与已记录运动过程，无需安装。',red:'● 红方 · 进攻',blue:'蓝方 · 防守 ●',attacker:'● 进攻球员',defender:'● 防守球员',attackerShort:'进攻方',defenderShort:'防守方',restart:'重新播放',defenceExample:'1 · 防守成功 A',attackExample:'2 · 进攻成功 A',attackB:'3 · 进攻成功 B',defenceB:'4 · 防守成功 B',timeoutExample:'5 · 未分胜负 / 超时',speed:'倍速',trail:'足球轨迹',timeline:'进度',seed:'记录的种子',ballSpeed:'球速',touch:'最近触球',note:'内置五个回放：两次进攻成功、两次防守成功、一次超时。这些选出的示例不代表总体成功率。',footer:'这是回放：无需 Python、服务或联网。随机新开局和修改策略需要完整版。二维模型不模拟摔倒。',playing:'正在播放回放',paused:'已暂停',finished:'回放结束',play:'开始',pause:'暂停',replay:'重播',goalLabel:'红方目标球门',resultLabel:'示例播放结束',again:'点击重新播放，或切换另一个示例。',GOAL:'红方进球，足球越过右侧球门线。',CLEARED_GOAL:'蓝方断球，随后推进至左侧球门进球。',OUT:'足球出界。',TIMEOUT:'达到测试时限。',live:'正在播放共用 Python 策略计算的记录。',INITIAL:'就绪',FORMATION:'阵型',DRIBBLE:'带球',SHOOT:'射门',INTERCEPT:'接近足球',CLEAR:'解围',CHALLENGE:'封堵与断球',DEFENSIVE_INTERCEPT:'预判拦截',DUEL_ESCAPE:'遇堵换位',RECOVER_DEFENCE:'回防球门侧',WAIT:'等待',walk:'前进',back:'后退',stand:'保持位置',step_left:'向左侧移',step_right:'向右侧移',left20:'左转',left40:'左转',right20:'右转',right40:'右转',shoot:'射门',pass:'传球 / 解围'}
+};
+const tr=key=>translations[lang][key]||key;
+const duration=()=>records[selected].frames.at(-1).t;
+function clock(value){return String(Math.floor(value/60)).padStart(2,'0')+':'+(value%60).toFixed(1).padStart(4,'0');}
+function update(){
+ $('clock').textContent=clock(sim.t);$('duration').textContent=clock(duration());
+ $('phase').textContent=tr(sim.outcome?'finished':running?'playing':'paused');
+ $('play').textContent=tr(running?'pause':sim.outcome?'replay':'play');
+ $('seek').value=index;$('seed').textContent=records[selected].seed;
+ for(const role of ['attacker','defender']){$(role+'State').textContent=tr(sim[role].state);$(role+'Action').textContent=tr(sim[role].action);}
+ $('ballSpeed').textContent=Math.hypot(sim.ball.vx,sim.ball.vy).toFixed(3)+' m/s';
+ $('touch').textContent=sim.lastTouch?tr(sim.lastTouch+'Short'):'—';$('result').textContent=tr(sim.outcome||'live');
+}
+function seek(frame){index=Math.max(0,Math.min(records[selected].frames.length-1,frame));const frames=records[selected].frames;sim={...frames[index],trail:frames.slice(0,index+1).map(f=>({x:f.ball.x,y:f.ball.y}))};update();draw();}
+function select(value){selected=value;p=records[selected].parameters;$('seek').max=records[selected].frames.length-1;time=0;lastReal=null;seek(0);}
+function translate(){document.documentElement.lang=lang==='en'?'en':'zh-CN';document.querySelectorAll('[data-i]').forEach(el=>el.textContent=tr(el.dataset.i));$('language').textContent=lang==='en'?'中文':'English';update();draw();}
+__DRAWING__
+function frame(stamp){
+ if(lastReal===null)lastReal=stamp;
+ const elapsed=Math.min(.1,(stamp-lastReal)/1000);lastReal=stamp;
+ if(running&&!document.hidden){time=Math.min(duration(),time+elapsed*Number($('speed').value));let next=index;const frames=records[selected].frames;while(next+1<frames.length&&frames[next+1].t<=time+1e-9)next++;if(next!==index)seek(next);if(time>=duration()){running=false;update();}}
+ requestAnimationFrame(frame);
+}
+$('play').onclick=()=>{if(sim.outcome){time=0;seek(0);}running=!running;lastReal=null;update();};
+$('reset').onclick=()=>{running=true;select(selected);};
+$('scene').onchange=()=>{running=true;select(Number($('scene').value));};
+$('seek').oninput=()=>{running=false;seek(Number($('seek').value));time=sim.t;lastReal=null;};
+$('trail').onchange=draw;
+$('language').onclick=()=>{lang=lang==='en'?'zh':'en';translate();};
+document.addEventListener('visibilitychange',()=>{if(document.hidden){running=false;update();}lastReal=null;});
+window.simpleReplay={get state(){return sim;},get running(){return running;},get index(){return index;},get selected(){return selected;},records};
+select(0);translate();requestAnimationFrame(frame);
+})();
+</script>
+</html>
