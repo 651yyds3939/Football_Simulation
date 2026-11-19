@@ -1,0 +1,63 @@
+{
+  "test": "Frozen matched rectangular starts, seeds5000..5999,180simseconds,unchanged execution model",
+  "baseline": {
+    "runs": 1000,
+    "outcomes": {
+      "GOAL": 311,
+      "CLEARED_GOAL": 595,
+      "TIMEOUT": 87,
+      "OUT": 7
+    },
+    "defender_foot_control_runs": 725,
+    "controlled_retreat_runs": 620,
+    "clearance_completed_runs": 596,
+    "stalls_over_20s": 112,
+    "mean_turn_seconds": 18.11659999999986,
+    "mean_behind_ball_seconds": 8.50287999999989,
+    "mean_duration_seconds": 102.6595200000035,
+    "wall_seconds": 238.14601573799882
+  },
+  "candidate": {
+    "runs": 1000,
+    "outcomes": {
+      "GOAL": 253,
+      "CLEARED_GOAL": 665,
+      "TIMEOUT": 78,
+      "OUT": 4
+    },
+    "defender_foot_control_runs": 765,
+    "controlled_retreat_runs": 686,
+    "clearance_completed_runs": 660,
+    "stalls_over_20s": 107,
+    "mean_turn_seconds": 17.978559999999867,
+    "mean_behind_ball_seconds": 9.204679999999984,
+    "mean_duration_seconds": 106.13848000000401,
+    "wall_seconds": 248.5276206790004
+  },
+  "red_goal_rate_difference_pp": -5.800000000000001,
+  "approximate_paired_95pct_interval_pp": [
+    -7.581725168481379,
+    -4.018274831518622
+  ],
+  "transitions": {
+    "CLEARED_GOAL -> CLEARED_GOAL": 579,
+    "CLEARED_GOAL -> GOAL": 9,
+    "CLEARED_GOAL -> OUT": 1,
+    "CLEARED_GOAL -> TIMEOUT": 6,
+    "GOAL -> CLEARED_GOAL": 31,
+    "GOAL -> GOAL": 239,
+    "GOAL -> OUT": 2,
+    "GOAL -> TIMEOUT": 39,
+    "OUT -> CLEARED_GOAL": 4,
+    "OUT -> OUT": 1,
+    "OUT -> TIMEOUT": 2,
+    "TIMEOUT -> CLEARED_GOAL": 51,
+    "TIMEOUT -> GOAL": 5,
+    "TIMEOUT -> TIMEOUT": 31
+  },
+  "limits": [
+    "Only the selected rectangular-start distribution shows an improvement.",
+    "Legacy starts and wide-channel tests did not improve.",
+    "Turning duration is essentially unchanged; no new gait or hardware capability is demonstrated."
+  ]
+}

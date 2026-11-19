@@ -1,0 +1,153 @@
+{
+  "direct": {
+    "tuning": {
+      "prediction": "direct",
+      "face_weight": 0.0,
+      "plan_seconds": 0.7
+    },
+    "runs": 150,
+    "outcomes": {
+      "GOAL": 100,
+      "CLEARED_GOAL": 45,
+      "TIMEOUT": 5
+    },
+    "defender_foot_control_runs": 54,
+    "controlled_retreat_runs": 48,
+    "clearance_completed_runs": 46,
+    "stalls_over_20s": 16,
+    "mean_turn_seconds": 23.799733333333037,
+    "mean_behind_ball_seconds": 21.215199999999665,
+    "mean_duration_seconds": 76.44693333333448,
+    "wall_seconds": 26.264506088002236
+  },
+  "pursuit-half": {
+    "tuning": {
+      "prediction": "pursuit",
+      "lead": 0.5,
+      "face_weight": 0.25,
+      "plan_seconds": 0.8
+    },
+    "runs": 150,
+    "outcomes": {
+      "GOAL": 95,
+      "CLEARED_GOAL": 49,
+      "OUT": 2,
+      "TIMEOUT": 4
+    },
+    "defender_foot_control_runs": 64,
+    "controlled_retreat_runs": 54,
+    "clearance_completed_runs": 49,
+    "stalls_over_20s": 13,
+    "mean_turn_seconds": 22.91573333333305,
+    "mean_behind_ball_seconds": 19.42133333333303,
+    "mean_duration_seconds": 79.50400000000151,
+    "wall_seconds": 27.5130671980005
+  },
+  "pursuit-one": {
+    "tuning": {
+      "prediction": "pursuit",
+      "lead": 1.0,
+      "face_weight": 0.25,
+      "plan_seconds": 0.8
+    },
+    "runs": 150,
+    "outcomes": {
+      "GOAL": 79,
+      "CLEARED_GOAL": 66,
+      "TIMEOUT": 5
+    },
+    "defender_foot_control_runs": 77,
+    "controlled_retreat_runs": 69,
+    "clearance_completed_runs": 66,
+    "stalls_over_20s": 9,
+    "mean_turn_seconds": 19.75306666666643,
+    "mean_behind_ball_seconds": 14.801866666666443,
+    "mean_duration_seconds": 85.19226666666898,
+    "wall_seconds": 30.26016891999825
+  },
+  "pursuit-long": {
+    "tuning": {
+      "prediction": "pursuit",
+      "lead": 1.5,
+      "face_weight": 0.25,
+      "plan_seconds": 0.8
+    },
+    "runs": 150,
+    "outcomes": {
+      "GOAL": 76,
+      "CLEARED_GOAL": 74
+    },
+    "defender_foot_control_runs": 76,
+    "controlled_retreat_runs": 74,
+    "clearance_completed_runs": 74,
+    "stalls_over_20s": 15,
+    "mean_turn_seconds": 18.848266666666454,
+    "mean_behind_ball_seconds": 11.759199999999838,
+    "mean_duration_seconds": 85.46373333333611,
+    "wall_seconds": 29.233751567997388
+  },
+  "arrival-facing": {
+    "tuning": {
+      "prediction": "arrival",
+      "face_weight": 1.0,
+      "plan_seconds": 1.2
+    },
+    "runs": 150,
+    "outcomes": {
+      "CLEARED_GOAL": 87,
+      "TIMEOUT": 5,
+      "GOAL": 58
+    },
+    "defender_foot_control_runs": 106,
+    "controlled_retreat_runs": 89,
+    "clearance_completed_runs": 87,
+    "stalls_over_20s": 19,
+    "mean_turn_seconds": 15.914133333333176,
+    "mean_behind_ball_seconds": 12.195999999999861,
+    "mean_duration_seconds": 96.46186666667015,
+    "wall_seconds": 33.99703626400151
+  },
+  "lane": {
+    "tuning": {
+      "prediction": "lane",
+      "face_weight": 0.4,
+      "plan_seconds": 1.2
+    },
+    "runs": 150,
+    "outcomes": {
+      "GOAL": 76,
+      "CLEARED_GOAL": 61,
+      "TIMEOUT": 13
+    },
+    "defender_foot_control_runs": 64,
+    "controlled_retreat_runs": 62,
+    "clearance_completed_runs": 60,
+    "stalls_over_20s": 10,
+    "mean_turn_seconds": 17.911733333333142,
+    "mean_behind_ball_seconds": 11.697599999999898,
+    "mean_duration_seconds": 99.78586666666807,
+    "wall_seconds": 34.662979812997946
+  },
+  "arrival-body": {
+    "tuning": {
+      "prediction": "arrival",
+      "face_weight": 0.0,
+      "plan_seconds": 0.6
+    },
+    "runs": 150,
+    "outcomes": {
+      "CLEARED_GOAL": 104,
+      "TIMEOUT": 11,
+      "GOAL": 34,
+      "OUT": 1
+    },
+    "defender_foot_control_runs": 122,
+    "controlled_retreat_runs": 107,
+    "clearance_completed_runs": 103,
+    "stalls_over_20s": 22,
+    "mean_turn_seconds": 16.393599999999875,
+    "mean_behind_ball_seconds": 7.557866666666599,
+    "mean_duration_seconds": 108.18800000000422,
+    "wall_seconds": 38.41680324299887
+  }
+}

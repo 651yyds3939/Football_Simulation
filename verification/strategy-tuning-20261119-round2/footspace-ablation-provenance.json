@@ -1,0 +1,15 @@
+{
+  "status": "Experimental only; not included in live app or ZIP",
+  "candidate_modules_sha256": {
+    "DefensivePlan.py": "1ea38e8749afdba2abb9218fec1fe1bce23958c272f3b00bea1d835a5fdbc833",
+    "Navigation.py": "77cab1de378c49558c13a55b53706ce2581d2b127488fb19ce5862fcbf47aa06",
+    "TeamPolicy.py": "d1164cb0f518f55b6e14dbb7d7818e38a0238ee77956578b418da991670ae84d"
+  },
+  "frozen_navigation_sha256": "7b6c3fa823abdd223af80dfb26e2e8020d1e30be14c0521ceb4f6fe44947141b",
+  "tuning": {
+    "space_first": 0.2,
+    "challenge_space": true
+  },
+  "defender-only": "RedForwardA uses the previous production Navigator; Blue uses candidate",
+  "attacker-only": "BlueDefender uses the previous production Navigator; Red uses candidate"
+}

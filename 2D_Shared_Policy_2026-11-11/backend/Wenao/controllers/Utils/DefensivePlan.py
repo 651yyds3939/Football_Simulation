@@ -1,4 +1,4 @@
-"""Reachability estimates for interception, shared by 2D and Webots policy.
+"""Reachability estimates for planar interception.
 
 Rates are existing isolated-motion averages, not a new gait or a hardware
 calibration. Paths use successive translations/turns; no simultaneous steering.
@@ -10,6 +10,8 @@ BACK = .034151821846239855
 LEFT = .012710006709112306
 RIGHT = .02229703610271777
 TURN = math.radians(16.873355846361836)/4
+SETTINGS = {'plan_seconds': .6, 'buffer': .30, 'horizon': 40.,
+            'duel_hold_seconds': 8., 'recovery_lookahead_seconds': 10.}
 
 
 def wrap(angle):
@@ -68,13 +70,15 @@ def interception(own, yaw, ball, velocity, direction, carrier_yaw=None):
         vx, vy, speed = ux, uy, WALK
         if carrier_yaw is not None and -direction*math.cos(carrier_yaw) > .2:
             vx, vy = math.cos(carrier_yaw), math.sin(carrier_yaw)
-    horizon = min(40., max(0., (-direction*4.3-ball[0])/(vx*speed)) if abs(vx) > .01 else 40.)
+    horizon = min(SETTINGS['horizon'], max(0., (-direction*4.3-ball[0])/(vx*speed))
+                  if abs(vx) > .01 else SETTINGS['horizon'])
     best = None
-    for index in range(21):
-        t = horizon*index/20
+    samples = max(1, math.ceil(horizon/.75))
+    for index in range(samples+1):
+        t = horizon*index/samples
         predicted = (ball[0]+vx*speed*t, ball[1]+vy*speed*t)
-        target = (max(-4.3, min(4.3, predicted[0]+ux*.19)),
-                  max(-2.6, min(2.6, predicted[1]+uy*.19)))
+        target = (max(-4.3, min(4.3, predicted[0]+ux*SETTINGS['buffer'])),
+                  max(-2.6, min(2.6, predicted[1]+uy*SETTINGS['buffer'])))
         eta, action, arrival_yaw = route(own, yaw, target)
         # Arrival means covering the lane with the body, not completing a
         # tackle. Facing and foot alignment are still separate later actions.
@@ -84,3 +88,33 @@ def interception(own, yaw, ball, velocity, direction, carrier_yaw=None):
         if eta <= t+.5:
             return target, predicted, t, True
     return best[2], best[3], best[1], False
+
+
+def recovery_action(own, yaw, target, ball):
+    """Choose recovery motion by useful progress before the threat arrives.
+
+    A shortest arrival-time route may start with a long stationary turn. When
+    that consumes the remaining defensive window, cover some ground immediately
+    instead. This does not combine turning with walking or increase any rate.
+    The goal deadline is a carrier-speed estimate, not measured shot flight.
+    """
+    _, action, heading = route(own, yaw, target, tolerance=.10)
+    if not action.startswith(('left', 'right')):
+        return action
+    goal_sign = 1 if target[0] > 0 else -1
+    threat_seconds = max(.5, (4.5-goal_sign*ball[0])/WALK)
+    remaining = min(SETTINGS['recovery_lookahead_seconds'], threat_seconds)
+    turn_time = max(0., abs(wrap(heading-yaw))-math.radians(10))/TURN
+    dx, dy = target[0]-own[0], target[1]-own[1]
+    length = max(math.hypot(dx,dy), 1e-9)
+    front = dx*math.cos(yaw)+dy*math.sin(yaw)
+    side = -dx*math.sin(yaw)+dy*math.cos(yaw)
+    options = [('walk', front/length*WALK), ('back', -front/length*BACK),
+               ('step_left', side/length*LEFT), ('step_right', -side/length*RIGHT)]
+    primitive, rate = max(options, key=lambda item: item[1])
+    arrival_forward = dx*math.cos(heading)+dy*math.sin(heading)
+    arrival_speed = WALK if arrival_forward >= 0 else BACK
+    after_turn = max(0., remaining-turn_time)*arrival_speed
+    if rate*remaining > after_turn+.08:
+        return primitive
+    return action

@@ -1,0 +1,10 @@
+{
+  "zip_integrity": true,
+  "independent_cli_batch": true,
+  "custom_working_directory": true,
+  "outcomes": {
+    "CLEARED_GOAL": 2,
+    "TIMEOUT": 1
+  },
+  "members": 20
+}

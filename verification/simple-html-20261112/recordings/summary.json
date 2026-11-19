@@ -1,8 +1,8 @@
 [
   {
-    "seed": 355,
+    "seed": 347,
     "scenario": "random",
-    "seconds": 78.56000000000108,
+    "seconds": 116.68000000000704,
     "outcome": "CLEARED_GOAL",
     "score": [
       0,
@@ -11,7 +11,7 @@
     "stats": {
       "shotAttempts": 0,
       "shotContacts": 0,
-      "clearAttempts": 2,
+      "clearAttempts": 1,
       "clearContacts": 1,
       "clearancesCompleted": 1
     },
@@ -24,12 +24,27 @@
         "BlueDefender"
       ]
     },
-    "frames": 394
+    "spawn_zones": {
+      "attacker": [
+        -1.0,
+        1.0,
+        -1.1,
+        1.1
+      ],
+      "defender": [
+        1.8,
+        3.2,
+        -1.25,
+        1.25
+      ],
+      "goal_side_margin": 0.25
+    },
+    "frames": 585
   },
   {
-    "seed": 347,
+    "seed": 350,
     "scenario": "random",
-    "seconds": 56.439999999998975,
+    "seconds": 41.839999999999286,
     "outcome": "GOAL",
     "score": [
       1,
@@ -51,20 +66,35 @@
         "BlueDefender"
       ]
     },
-    "frames": 284
+    "spawn_zones": {
+      "attacker": [
+        -1.0,
+        1.0,
+        -1.1,
+        1.1
+      ],
+      "defender": [
+        1.8,
+        3.2,
+        -1.25,
+        1.25
+      ],
+      "goal_side_margin": 0.25
+    },
+    "frames": 211
   },
   {
-    "seed": 348,
+    "seed": 363,
     "scenario": "random",
-    "seconds": 31.439999999999507,
+    "seconds": 49.71999999999912,
     "outcome": "GOAL",
     "score": [
       1,
       0
     ],
     "stats": {
-      "shotAttempts": 0,
-      "shotContacts": 0,
+      "shotAttempts": 1,
+      "shotContacts": 1,
       "clearAttempts": 0,
       "clearContacts": 0,
       "clearancesCompleted": 0
@@ -78,12 +108,27 @@
         "BlueDefender"
       ]
     },
-    "frames": 159
+    "spawn_zones": {
+      "attacker": [
+        -1.0,
+        1.0,
+        -1.1,
+        1.1
+      ],
+      "defender": [
+        1.8,
+        3.2,
+        -1.25,
+        1.25
+      ],
+      "goal_side_margin": 0.25
+    },
+    "frames": 250
   },
   {
     "seed": 351,
     "scenario": "random",
-    "seconds": 127.36000000000871,
+    "seconds": 117.88000000000723,
     "outcome": "CLEARED_GOAL",
     "score": [
       0,
@@ -105,10 +150,25 @@
         "BlueDefender"
       ]
     },
-    "frames": 638
+    "spawn_zones": {
+      "attacker": [
+        -1.0,
+        1.0,
+        -1.1,
+        1.1
+      ],
+      "defender": [
+        1.8,
+        3.2,
+        -1.25,
+        1.25
+      ],
+      "goal_side_margin": 0.25
+    },
+    "frames": 591
   },
   {
-    "seed": 366,
+    "seed": 348,
     "scenario": "random",
     "seconds": 179.99999999999847,
     "outcome": "TIMEOUT",
@@ -131,6 +191,21 @@
         "RedForwardA",
         "BlueDefender"
       ]
+    },
+    "spawn_zones": {
+      "attacker": [
+        -1.0,
+        1.0,
+        -1.1,
+        1.1
+      ],
+      "defender": [
+        1.8,
+        3.2,
+        -1.25,
+        1.25
+      ],
+      "goal_side_margin": 0.25
     },
     "frames": 901
   }

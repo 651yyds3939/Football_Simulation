@@ -8,9 +8,8 @@ DEMO = ROOT/'2D_Shared_Policy_2026-11-11'
 spec = importlib.util.spec_from_file_location('five_example_source', DEMO/'server.py')
 module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
-cases = [('defence', 355, 'CLEARED_GOAL'), ('attack', 347, 'GOAL'),
-         ('attack_b', 348, 'GOAL'), ('defence_b', 351, 'CLEARED_GOAL'),
-         ('timeout', 366, 'TIMEOUT')]
+cases = [(c['kind'], c['seed'], c['outcome'])
+         for c in json.loads((DEMO/'example_cases.json').read_text())]
 recordings, summaries = [], []
 evidence = Path(__file__).with_name('recordings')
 evidence.mkdir(exist_ok=True)
@@ -30,7 +29,8 @@ for kind, seed, expected in cases:
         assert data['frames'] == old['frames']
         assert data['source']['sha256'] == old['source']['sha256']
     recordings.append({'kind': kind, 'seed': seed, 'frames': data['frames'],
-                       'parameters': data['parameters'], 'source': data['source'], 'profile': data['profile']})
+                       'parameters': data['parameters'], 'source': data['source'], 'profile': data['profile'],
+                       'spawn_zones': data['spawn_zones']})
     summaries.append({**scene.summary(), 'frames': len(scene.frames)})
 
 viewer = (DEMO/'viewer.html').read_text(encoding='utf-8')

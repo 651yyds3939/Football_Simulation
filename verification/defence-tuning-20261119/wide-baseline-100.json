@@ -1,0 +1,4522 @@
+{
+  "summary": {
+    "runs": 100,
+    "outcomes": {
+      "CLEARED_GOAL": 78,
+      "GOAL": 19,
+      "OUT": 1,
+      "TIMEOUT": 2
+    },
+    "defender_foot_control_runs": 81,
+    "controlled_retreat_runs": 80,
+    "clearance_completed_runs": 79,
+    "stalls_over_20s": 7,
+    "mean_turn_seconds": 12.244399999999962,
+    "mean_behind_ball_seconds": 4.8983999999999295,
+    "mean_duration_seconds": 109.48480000000491,
+    "wall_seconds": 25.710899475998303
+  },
+  "runs": [
+    {
+      "seed": 7000,
+      "scenario": "random",
+      "seconds": 110.40000000000606,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 6.320000000000005,
+        "walk": 83.96000000000193,
+        "step_left": 2.6400000000000015,
+        "step_right": 6.640000000000005,
+        "right20": 3.7200000000000024,
+        "back": 0.36,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 12.43999999999991,
+        "CHALLENGE": 18.319999999999787,
+        "CLEAR": 79.60000000000124
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 13.679999999999884,
+      "longest_stall_seconds": 5.040000000000004,
+      "first_defender_foot_control": 22.3999999999997,
+      "first_controlled_retreat": 29.999999999999538,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7001,
+      "scenario": "random",
+      "seconds": 118.08000000000726,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 7.2400000000000055,
+        "walk": 94.0000000000035,
+        "step_left": 1.1200000000000003,
+        "step_right": 3.280000000000002,
+        "right20": 5.640000000000004,
+        "back": 0.04,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 20.199999999999747,
+        "CHALLENGE": 14.479999999999867,
+        "CLEAR": 83.36000000000183
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 9.759999999999968,
+      "longest_stall_seconds": 3.9200000000000026,
+      "first_defender_foot_control": 24.919999999999646,
+      "first_controlled_retreat": 34.43999999999944,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7002,
+      "scenario": "random",
+      "seconds": 123.56000000000812,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 97.08000000000398,
+        "right20": 0.16,
+        "step_right": 7.880000000000006,
+        "stand": 12.719999999999905,
+        "left40": 0.64,
+        "left20": 4.720000000000003,
+        "back": 0.32
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 10.55999999999995,
+        "CHALLENGE": 22.319999999999702,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "CLEAR": 82.60000000000171
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 26.919999999999604,
+      "longest_stall_seconds": 20.239999999999746,
+      "first_defender_foot_control": 15.159999999999853,
+      "first_controlled_retreat": 37.87999999999937,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7003,
+      "scenario": "random",
+      "seconds": 41.47999999999929,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left40": 10.279999999999957,
+        "left20": 11.879999999999923,
+        "walk": 19.279999999999767
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 18.079999999999792,
+        "RECOVER_DEFENCE": 23.35999999999968
+      },
+      "behind_ball_seconds": 22.83999999999969,
+      "close_seconds": 0.0,
+      "longest_stall_seconds": 0.0,
+      "first_defender_foot_control": null,
+      "first_controlled_retreat": null,
+      "clearance_completed": false
+    },
+    {
+      "seed": 7004,
+      "scenario": "random",
+      "seconds": 82.60000000000171,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 2,
+        "shotContacts": 1,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 23.439999999999678,
+        "step_right": 8.160000000000002,
+        "right20": 3.6800000000000024,
+        "left40": 0.64,
+        "back": 42.279999999999276,
+        "left20": 4.360000000000003
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 21.679999999999715,
+        "CHALLENGE": 10.839999999999945,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "CLEAR": 0.64,
+        "RECOVER_DEFENCE": 41.359999999999296
+      },
+      "behind_ball_seconds": 45.8799999999992,
+      "close_seconds": 23.719999999999672,
+      "longest_stall_seconds": 13.719999999999883,
+      "first_defender_foot_control": 20.95999999999973,
+      "first_controlled_retreat": null,
+      "clearance_completed": false
+    },
+    {
+      "seed": 7005,
+      "scenario": "random",
+      "seconds": 123.92000000000817,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 111.68000000000626,
+        "left20": 3.280000000000002,
+        "step_left": 1.6000000000000008,
+        "back": 0.6,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 17.27999999999981,
+        "CHALLENGE": 35.39999999999942,
+        "CLEAR": 71.19999999999993
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 31.39999999999951,
+      "longest_stall_seconds": 12.639999999999906,
+      "first_defender_foot_control": 21.91999999999971,
+      "first_controlled_retreat": 46.27999999999919,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7006,
+      "scenario": "random",
+      "seconds": 128.72000000000867,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 3.6800000000000024,
+        "walk": 112.16000000000633,
+        "step_left": 3.5200000000000022,
+        "back": 0.7200000000000001,
+        "stand": 6.720000000000005,
+        "right20": 1.880000000000001
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 18.15999999999979,
+        "CHALLENGE": 35.759999999999415,
+        "CLEAR": 74.76000000000049
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 31.679999999999502,
+      "longest_stall_seconds": 6.480000000000005,
+      "first_defender_foot_control": 22.79999999999969,
+      "first_controlled_retreat": 46.519999999999186,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7007,
+      "scenario": "random",
+      "seconds": 129.24000000000856,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "right20": 1.3600000000000005,
+        "walk": 101.92000000000473,
+        "step_right": 6.960000000000005,
+        "left20": 4.800000000000003,
+        "left40": 4.440000000000003,
+        "back": 3.0000000000000018,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 9.079999999999982,
+        "CHALLENGE": 35.43999999999942,
+        "CLEAR": 84.68000000000204
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 31.439999999999507,
+      "longest_stall_seconds": 7.840000000000006,
+      "first_defender_foot_control": 13.639999999999885,
+      "first_controlled_retreat": 37.35999999999938,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7008,
+      "scenario": "random",
+      "seconds": 141.76000000000607,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "right20": 7.640000000000006,
+        "walk": 97.28000000000401,
+        "step_right": 9.759999999999968,
+        "left40": 14.639999999999864,
+        "left20": 4.760000000000003,
+        "back": 0.9200000000000003,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 14.079999999999876,
+        "CHALLENGE": 13.91999999999988,
+        "CLEAR": 113.72000000000658
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 9.799999999999967,
+      "longest_stall_seconds": 1.840000000000001,
+      "first_defender_foot_control": 18.59999999999978,
+      "first_controlled_retreat": 58.319999999998934,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7009,
+      "scenario": "random",
+      "seconds": 146.96000000000504,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left40": 0.43999999999999995,
+        "left20": 15.879999999999837,
+        "walk": 103.88000000000504,
+        "step_left": 2.8800000000000017,
+        "step_right": 0.4799999999999999,
+        "right20": 16.119999999999834,
+        "back": 0.5199999999999999,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 23.239999999999682,
+        "CHALLENGE": 17.599999999999802,
+        "CLEAR": 106.08000000000538
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 13.479999999999889,
+      "longest_stall_seconds": 1.0000000000000002,
+      "first_defender_foot_control": 33.23999999999947,
+      "first_controlled_retreat": 59.9199999999989,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7010,
+      "scenario": "random",
+      "seconds": 34.75999999999944,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 10.59999999999995,
+        "walk": 18.959999999999773,
+        "left40": 5.160000000000004
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 10.719999999999947,
+        "RECOVER_DEFENCE": 23.999999999999666
+      },
+      "behind_ball_seconds": 23.439999999999678,
+      "close_seconds": 0.0,
+      "longest_stall_seconds": 0.0,
+      "first_defender_foot_control": null,
+      "first_controlled_retreat": null,
+      "clearance_completed": false
+    },
+    {
+      "seed": 7011,
+      "scenario": "random",
+      "seconds": 142.00000000000603,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 91.80000000000315,
+        "left40": 3.040000000000002,
+        "left20": 9.479999999999974,
+        "step_right": 26.279999999999617,
+        "right20": 4.640000000000003,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 1.5600000000000007,
+        "CHALLENGE": 39.15999999999934,
+        "CLEAR": 101.24000000000463
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 25.15999999999964,
+      "longest_stall_seconds": 6.760000000000005,
+      "first_defender_foot_control": 6.160000000000005,
+      "first_controlled_retreat": 23.559999999999675,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7012,
+      "scenario": "random",
+      "seconds": 110.28000000000604,
+      "outcome": "OUT",
+      "score": [
+        0,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 2.7600000000000016,
+        "walk": 97.48000000000404,
+        "step_left": 2.360000000000001,
+        "back": 0.9200000000000003,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 9.839999999999966,
+        "CHALLENGE": 40.35999999999932,
+        "CLEAR": 60.0399999999989
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 36.199999999999406,
+      "longest_stall_seconds": 5.560000000000004,
+      "first_defender_foot_control": 14.479999999999867,
+      "first_controlled_retreat": 33.55999999999946,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7013,
+      "scenario": "random",
+      "seconds": 33.839999999999456,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "right20": 3.200000000000002,
+        "walk": 0.39999999999999997,
+        "step_right": 5.040000000000004,
+        "left40": 1.7200000000000009,
+        "back": 23.439999999999678
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 6.160000000000005,
+        "CHALLENGE": 1.880000000000001,
+        "CLEAR": 0.6,
+        "RECOVER_DEFENCE": 25.15999999999964
+      },
+      "behind_ball_seconds": 24.599999999999653,
+      "close_seconds": 4.240000000000003,
+      "longest_stall_seconds": 0.68,
+      "first_defender_foot_control": null,
+      "first_controlled_retreat": null,
+      "clearance_completed": false
+    },
+    {
+      "seed": 7014,
+      "scenario": "random",
+      "seconds": 101.0800000000046,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "right20": 1.840000000000001,
+        "walk": 83.24000000000181,
+        "step_right": 2.240000000000001,
+        "left40": 2.240000000000001,
+        "left20": 4.760000000000003,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 13.679999999999884,
+        "CHALLENGE": 16.599999999999824,
+        "CLEAR": 70.75999999999986
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 12.47999999999991,
+      "longest_stall_seconds": 6.440000000000005,
+      "first_defender_foot_control": 18.279999999999788,
+      "first_controlled_retreat": 27.719999999999587,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7015,
+      "scenario": "random",
+      "seconds": 115.04000000000678,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 93.20000000000337,
+        "right20": 2.240000000000001,
+        "step_right": 2.5600000000000014,
+        "left40": 5.520000000000004,
+        "left20": 4.760000000000003,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 16.23999999999983,
+        "CHALLENGE": 16.23999999999983,
+        "CLEAR": 82.5200000000017
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 12.119999999999918,
+      "longest_stall_seconds": 6.320000000000005,
+      "first_defender_foot_control": 20.839999999999733,
+      "first_controlled_retreat": 30.719999999999523,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7016,
+      "scenario": "random",
+      "seconds": 155.2000000000034,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 1,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 96.52000000000389,
+        "step_right": 37.99999999999937,
+        "right20": 6.480000000000005,
+        "left40": 1.2800000000000005,
+        "left20": 9.519999999999973,
+        "stand": 3.360000000000002
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 12.559999999999908,
+        "CHALLENGE": 42.63999999999927,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "CLEAR": 91.92000000000317
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 32.35999999999949,
+      "longest_stall_seconds": 14.039999999999877,
+      "first_defender_foot_control": 17.159999999999812,
+      "first_controlled_retreat": 47.479999999999166,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7017,
+      "scenario": "random",
+      "seconds": 36.4399999999994,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 9.399999999999975,
+        "walk": 14.31999999999987,
+        "left40": 12.679999999999906
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 13.959999999999878,
+        "RECOVER_DEFENCE": 22.4399999999997
+      },
+      "behind_ball_seconds": 21.87999999999971,
+      "close_seconds": 0.0,
+      "longest_stall_seconds": 0.0,
+      "first_defender_foot_control": null,
+      "first_controlled_retreat": null,
+      "clearance_completed": false
+    },
+    {
+      "seed": 7018,
+      "scenario": "random",
+      "seconds": 124.96000000000834,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 1,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 8.559999999999993,
+        "walk": 97.80000000000409,
+        "step_left": 1.840000000000001,
+        "step_right": 5.400000000000004,
+        "right20": 7.960000000000006,
+        "stand": 3.360000000000002
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 21.03999999999973,
+        "CHALLENGE": 14.199999999999873,
+        "CLEAR": 89.68000000000282
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 10.15999999999996,
+      "longest_stall_seconds": 4.120000000000003,
+      "first_defender_foot_control": 28.51999999999957,
+      "first_controlled_retreat": 45.679999999999204,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7019,
+      "scenario": "random",
+      "seconds": 37.39999999999938,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 5.0000000000000036,
+        "left40": 15.31999999999985,
+        "walk": 17.039999999999814
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 9.15999999999998,
+        "RECOVER_DEFENCE": 28.199999999999577
+      },
+      "behind_ball_seconds": 27.63999999999959,
+      "close_seconds": 0.0,
+      "longest_stall_seconds": 0.0,
+      "first_defender_foot_control": null,
+      "first_controlled_retreat": null,
+      "clearance_completed": false
+    },
+    {
+      "seed": 7020,
+      "scenario": "random",
+      "seconds": 55.55999999999899,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left40": 10.15999999999996,
+        "left20": 18.59999999999978,
+        "walk": 26.55999999999961,
+        "step_right": 0.2
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 31.999999999999496,
+        "CHALLENGE": 1.3600000000000005,
+        "CLEAR": 0.6,
+        "RECOVER_DEFENCE": 21.559999999999718
+      },
+      "behind_ball_seconds": 20.99999999999973,
+      "close_seconds": 3.9200000000000026,
+      "longest_stall_seconds": 0.68,
+      "first_defender_foot_control": null,
+      "first_controlled_retreat": null,
+      "clearance_completed": false
+    },
+    {
+      "seed": 7021,
+      "scenario": "random",
+      "seconds": 113.8800000000066,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 99.84000000000441,
+        "left20": 2.6800000000000015,
+        "step_left": 3.9600000000000026,
+        "back": 0.64,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 20.07999999999975,
+        "CHALLENGE": 28.47999999999957,
+        "CLEAR": 65.279999999999
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 24.27999999999966,
+      "longest_stall_seconds": 7.120000000000005,
+      "first_defender_foot_control": 24.71999999999965,
+      "first_controlled_retreat": 42.03999999999928,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7022,
+      "scenario": "random",
+      "seconds": 128.44000000000872,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left40": 1.2400000000000004,
+        "left20": 8.959999999999985,
+        "walk": 100.04000000000444,
+        "step_left": 0.08,
+        "step_right": 2.040000000000001,
+        "right20": 9.319999999999977,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 13.87999999999988,
+        "CHALLENGE": 14.639999999999864,
+        "CLEAR": 99.88000000000442
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 10.439999999999953,
+      "longest_stall_seconds": 1.960000000000001,
+      "first_defender_foot_control": 20.51999999999974,
+      "first_controlled_retreat": 28.679999999999566,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7023,
+      "scenario": "random",
+      "seconds": 108.92000000000583,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 91.04000000000303,
+        "left20": 2.5600000000000014,
+        "step_left": 8.080000000000004,
+        "back": 0.4799999999999999,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 11.439999999999932,
+        "CHALLENGE": 23.35999999999968,
+        "DUEL_ESCAPE": 6.160000000000005,
+        "CLEAR": 67.91999999999942
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 25.519999999999634,
+      "longest_stall_seconds": 19.679999999999758,
+      "first_defender_foot_control": 15.71999999999984,
+      "first_controlled_retreat": 37.91999999999937,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7024,
+      "scenario": "random",
+      "seconds": 132.44000000000793,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 101.7200000000047,
+        "right20": 1.7200000000000009,
+        "step_right": 10.59999999999995,
+        "left40": 4.160000000000003,
+        "left20": 4.720000000000003,
+        "back": 2.7600000000000016,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 8.479999999999995,
+        "CHALLENGE": 27.0799999999996,
+        "DUEL_ESCAPE": 3.8000000000000025,
+        "CLEAR": 93.04000000000335
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 26.919999999999604,
+      "longest_stall_seconds": 18.59999999999978,
+      "first_defender_foot_control": 13.079999999999897,
+      "first_controlled_retreat": 35.67999999999942,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7025,
+      "scenario": "random",
+      "seconds": 138.1200000000068,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 1,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 95.60000000000375,
+        "step_right": 32.59999999999948,
+        "right20": 0.9200000000000003,
+        "left40": 0.4799999999999999,
+        "left20": 5.120000000000004,
+        "stand": 3.360000000000002
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 9.719999999999969,
+        "CHALLENGE": 28.279999999999575,
+        "DUEL_ESCAPE": 4.120000000000003,
+        "CLEAR": 95.9600000000038
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 24.31999999999966,
+      "longest_stall_seconds": 17.919999999999796,
+      "first_defender_foot_control": 14.079999999999876,
+      "first_controlled_retreat": 34.67999999999944,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7026,
+      "scenario": "random",
+      "seconds": 41.919999999999284,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left40": 8.439999999999996,
+        "left20": 13.999999999999877,
+        "walk": 19.439999999999763
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 17.7599999999998,
+        "RECOVER_DEFENCE": 24.119999999999663
+      },
+      "behind_ball_seconds": 23.599999999999675,
+      "close_seconds": 0.0,
+      "longest_stall_seconds": 0.0,
+      "first_defender_foot_control": null,
+      "first_controlled_retreat": null,
+      "clearance_completed": false
+    },
+    {
+      "seed": 7027,
+      "scenario": "random",
+      "seconds": 116.56000000000702,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "right20": 4.000000000000003,
+        "walk": 88.20000000000259,
+        "step_right": 4.400000000000003,
+        "left40": 8.479999999999995,
+        "left20": 4.720000000000003,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 13.639999999999885,
+        "CHALLENGE": 14.519999999999866,
+        "CLEAR": 88.36000000000261
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 9.999999999999963,
+      "longest_stall_seconds": 5.0000000000000036,
+      "first_defender_foot_control": 18.23999999999979,
+      "first_controlled_retreat": 45.9599999999992,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7028,
+      "scenario": "random",
+      "seconds": 105.28000000000526,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 93.56000000000343,
+        "left20": 4.560000000000003,
+        "stand": 6.720000000000005,
+        "step_left": 0.39999999999999997
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 6.280000000000005,
+        "CHALLENGE": 20.51999999999974,
+        "CLEAR": 78.44000000000106
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 14.83999999999986,
+      "longest_stall_seconds": 10.999999999999941,
+      "first_defender_foot_control": 10.279999999999957,
+      "first_controlled_retreat": 24.27999999999966,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7029,
+      "scenario": "random",
+      "seconds": 156.7600000000031,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 91.60000000000312,
+        "step_right": 35.03999999999943,
+        "right20": 8.200000000000001,
+        "left40": 5.640000000000004,
+        "left20": 9.519999999999973,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 10.719999999999947,
+        "CHALLENGE": 40.919999999999305,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "CLEAR": 97.04000000000397
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 29.43999999999955,
+      "longest_stall_seconds": 19.55999999999976,
+      "first_defender_foot_control": 15.27999999999985,
+      "first_controlled_retreat": 41.1199999999993,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7030,
+      "scenario": "random",
+      "seconds": 118.16000000000727,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 8.67999999999999,
+        "walk": 88.80000000000268,
+        "step_left": 1.5600000000000007,
+        "right20": 8.599999999999993,
+        "step_right": 3.7600000000000025,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 17.119999999999813,
+        "CHALLENGE": 15.559999999999844,
+        "CLEAR": 85.44000000000216
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 11.679999999999927,
+      "longest_stall_seconds": 4.280000000000003,
+      "first_defender_foot_control": 26.039999999999623,
+      "first_controlled_retreat": 43.759999999999245,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7031,
+      "scenario": "random",
+      "seconds": 133.96000000000762,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 12.879999999999901,
+        "walk": 100.28000000000448,
+        "step_left": 0.4799999999999999,
+        "step_right": 0.43999999999999995,
+        "right20": 13.119999999999896,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 22.279999999999703,
+        "CHALLENGE": 14.559999999999865,
+        "CLEAR": 97.08000000000398
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 10.759999999999946,
+      "longest_stall_seconds": 1.2000000000000004,
+      "first_defender_foot_control": 29.159999999999556,
+      "first_controlled_retreat": 53.79999999999903,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7032,
+      "scenario": "random",
+      "seconds": 122.04000000000788,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 3.6400000000000023,
+        "step_left": 11.99999999999992,
+        "walk": 97.72000000000408,
+        "left40": 1.2000000000000004,
+        "back": 0.7200000000000001,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 9.519999999999973,
+        "CHALLENGE": 28.239999999999576,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "CLEAR": 76.20000000000071
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 32.39999999999949,
+      "longest_stall_seconds": 15.679999999999842,
+      "first_defender_foot_control": 14.079999999999876,
+      "first_controlled_retreat": 40.039999999999324,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7033,
+      "scenario": "random",
+      "seconds": 100.16000000000446,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 90.840000000003,
+        "step_left": 0.43999999999999995,
+        "left20": 1.6000000000000008,
+        "back": 0.5199999999999999,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 6.240000000000005,
+        "CHALLENGE": 20.719999999999736,
+        "CLEAR": 73.16000000000024
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 15.239999999999851,
+      "longest_stall_seconds": 10.679999999999948,
+      "first_defender_foot_control": 9.759999999999968,
+      "first_controlled_retreat": 23.999999999999666,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7034,
+      "scenario": "random",
+      "seconds": 124.40000000000825,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "right20": 3.240000000000002,
+        "walk": 95.9200000000038,
+        "step_right": 5.200000000000004,
+        "left40": 8.040000000000004,
+        "left20": 4.720000000000003,
+        "back": 0.5199999999999999,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 13.999999999999877,
+        "CHALLENGE": 14.479999999999867,
+        "CLEAR": 95.88000000000379
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 10.359999999999955,
+      "longest_stall_seconds": 4.800000000000003,
+      "first_defender_foot_control": 18.59999999999978,
+      "first_controlled_retreat": 46.91999999999918,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7035,
+      "scenario": "random",
+      "seconds": 43.239999999999256,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left40": 9.119999999999981,
+        "left20": 13.91999999999988,
+        "walk": 20.159999999999748
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 17.599999999999802,
+        "RECOVER_DEFENCE": 25.599999999999632
+      },
+      "behind_ball_seconds": 25.079999999999643,
+      "close_seconds": 0.0,
+      "longest_stall_seconds": 0.0,
+      "first_defender_foot_control": null,
+      "first_controlled_retreat": null,
+      "clearance_completed": false
+    },
+    {
+      "seed": 7036,
+      "scenario": "random",
+      "seconds": 120.08000000000757,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 3.0000000000000018,
+        "walk": 94.16000000000352,
+        "step_left": 12.199999999999916,
+        "left40": 1.2400000000000004,
+        "back": 0.8400000000000002,
+        "stand": 6.720000000000005,
+        "right20": 1.880000000000001
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 7.120000000000005,
+        "CHALLENGE": 25.67999999999963,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "CLEAR": 79.20000000000118
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 29.119999999999557,
+      "longest_stall_seconds": 15.439999999999847,
+      "first_defender_foot_control": 11.279999999999935,
+      "first_controlled_retreat": 35.63999999999942,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7037,
+      "scenario": "random",
+      "seconds": 129.16000000000858,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 8.999999999999984,
+        "walk": 98.44000000000419,
+        "step_left": 2.000000000000001,
+        "right20": 7.680000000000006,
+        "step_right": 5.280000000000004,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 25.039999999999644,
+        "CHALLENGE": 15.559999999999844,
+        "CLEAR": 88.52000000000264
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 11.719999999999926,
+      "longest_stall_seconds": 4.240000000000003,
+      "first_defender_foot_control": 33.959999999999454,
+      "first_controlled_retreat": 50.6399999999991,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7038,
+      "scenario": "random",
+      "seconds": 137.28000000000696,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 95.44000000000372,
+        "left20": 4.9600000000000035,
+        "step_right": 29.239999999999554,
+        "right20": 0.8800000000000002,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 11.479999999999931,
+        "CHALLENGE": 33.15999999999947,
+        "CLEAR": 92.60000000000328
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 24.199999999999662,
+      "longest_stall_seconds": 7.480000000000006,
+      "first_defender_foot_control": 16.079999999999835,
+      "first_controlled_retreat": 34.19999999999945,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7039,
+      "scenario": "random",
+      "seconds": 110.52000000000608,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 6.160000000000005,
+        "walk": 86.76000000000236,
+        "step_left": 2.5200000000000014,
+        "right20": 4.600000000000003,
+        "step_right": 3.440000000000002,
+        "back": 0.28,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 15.839999999999838,
+        "CHALLENGE": 18.15999999999979,
+        "CLEAR": 76.48000000000076
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 13.559999999999887,
+      "longest_stall_seconds": 6.000000000000004,
+      "first_defender_foot_control": 22.959999999999688,
+      "first_controlled_retreat": 33.23999999999947,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7040,
+      "scenario": "random",
+      "seconds": 113.2000000000065,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 98.56000000000421,
+        "stand": 6.880000000000005,
+        "step_left": 3.320000000000002,
+        "left20": 3.9600000000000026,
+        "back": 0.43999999999999995
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 17.479999999999805,
+        "CHALLENGE": 23.559999999999675,
+        "DUEL_ESCAPE": 3.320000000000002,
+        "CLEAR": 68.79999999999956
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 22.87999999999969,
+      "longest_stall_seconds": 16.879999999999818,
+      "first_defender_foot_control": 22.119999999999706,
+      "first_controlled_retreat": 41.3199999999993,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7041,
+      "scenario": "random",
+      "seconds": 40.11999999999932,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left40": 8.040000000000004,
+        "left20": 15.079999999999854,
+        "walk": 16.519999999999825,
+        "step_left": 0.43999999999999995
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 22.319999999999702,
+        "RECOVER_DEFENCE": 17.7599999999998
+      },
+      "behind_ball_seconds": 17.19999999999981,
+      "close_seconds": 0.0,
+      "longest_stall_seconds": 0.0,
+      "first_defender_foot_control": null,
+      "first_controlled_retreat": null,
+      "clearance_completed": false
+    },
+    {
+      "seed": 7042,
+      "scenario": "random",
+      "seconds": 117.16000000000712,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 2.7200000000000015,
+        "walk": 104.64000000000516,
+        "step_left": 2.320000000000001,
+        "back": 0.7200000000000001,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 11.399999999999933,
+        "CHALLENGE": 32.63999999999948,
+        "CLEAR": 73.08000000000023
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 28.51999999999957,
+      "longest_stall_seconds": 8.599999999999993,
+      "first_defender_foot_control": 15.999999999999835,
+      "first_controlled_retreat": 37.719999999999374,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7043,
+      "scenario": "random",
+      "seconds": 112.52000000000639,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 6.720000000000005,
+        "walk": 86.12000000000226,
+        "step_left": 2.040000000000001,
+        "step_right": 5.520000000000004,
+        "right20": 5.360000000000004,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 16.959999999999816,
+        "CHALLENGE": 15.71999999999984,
+        "CLEAR": 79.80000000000128
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 10.959999999999942,
+      "longest_stall_seconds": 4.9600000000000035,
+      "first_defender_foot_control": 24.67999999999965,
+      "first_controlled_retreat": 32.27999999999949,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7044,
+      "scenario": "random",
+      "seconds": 126.16000000000852,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 105.60000000000531,
+        "step_left": 5.800000000000004,
+        "left40": 2.7200000000000015,
+        "left20": 4.760000000000003,
+        "step_right": 0.2,
+        "back": 0.32,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 12.43999999999991,
+        "CHALLENGE": 23.439999999999678,
+        "DUEL_ESCAPE": 5.800000000000004,
+        "CLEAR": 84.440000000002
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 25.23999999999964,
+      "longest_stall_seconds": 19.479999999999762,
+      "first_defender_foot_control": 17.079999999999814,
+      "first_controlled_retreat": 39.15999999999934,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7045,
+      "scenario": "random",
+      "seconds": 96.24000000000385,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 84.88000000000207,
+        "left20": 3.320000000000002,
+        "step_left": 1.0400000000000003,
+        "back": 0.24000000000000002,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 11.639999999999928,
+        "CHALLENGE": 20.719999999999736,
+        "CLEAR": 63.83999999999882
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 15.119999999999854,
+      "longest_stall_seconds": 10.999999999999941,
+      "first_defender_foot_control": 15.639999999999842,
+      "first_controlled_retreat": 29.559999999999548,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7046,
+      "scenario": "random",
+      "seconds": 107.64000000000563,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 98.36000000000418,
+        "step_left": 0.68,
+        "left20": 1.3200000000000005,
+        "back": 0.5199999999999999,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 14.999999999999856,
+        "CHALLENGE": 20.759999999999735,
+        "CLEAR": 71.84000000000003
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 14.83999999999986,
+      "longest_stall_seconds": 11.319999999999935,
+      "first_defender_foot_control": 18.67999999999978,
+      "first_controlled_retreat": 33.15999999999947,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7047,
+      "scenario": "random",
+      "seconds": 106.64000000000547,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "step_left": 0.68,
+        "walk": 94.0000000000035,
+        "left40": 0.43999999999999995,
+        "left20": 4.760000000000003,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 14.959999999999857,
+        "CHALLENGE": 20.359999999999744,
+        "CLEAR": 71.27999999999994
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 14.399999999999869,
+      "longest_stall_seconds": 11.03999999999994,
+      "first_defender_foot_control": 18.919999999999774,
+      "first_controlled_retreat": 32.919999999999476,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7048,
+      "scenario": "random",
+      "seconds": 121.36000000000777,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 4.040000000000003,
+        "walk": 99.48000000000435,
+        "step_left": 0.9600000000000003,
+        "right20": 1.3600000000000005,
+        "step_right": 3.7200000000000024,
+        "stand": 11.03999999999994,
+        "back": 0.7200000000000001
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 13.39999999999989,
+        "CHALLENGE": 31.39999999999951,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "CLEAR": 68.4799999999995
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 35.319999999999425,
+      "longest_stall_seconds": 19.59999999999976,
+      "first_defender_foot_control": 18.039999999999793,
+      "first_controlled_retreat": 45.8399999999992,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7049,
+      "scenario": "random",
+      "seconds": 155.88000000000326,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 106.8400000000055,
+        "stand": 6.760000000000005,
+        "left40": 2.4400000000000013,
+        "left20": 8.799999999999988,
+        "step_right": 27.1199999999996,
+        "right20": 3.8800000000000026
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 8.559999999999993,
+        "CHALLENGE": 37.119999999999386,
+        "DUEL_ESCAPE": 0.04,
+        "CLEAR": 110.12000000000602
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 24.27999999999966,
+      "longest_stall_seconds": 15.199999999999852,
+      "first_defender_foot_control": 13.119999999999896,
+      "first_controlled_retreat": 32.39999999999949,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7050,
+      "scenario": "random",
+      "seconds": 118.52000000000733,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 102.48000000000482,
+        "left20": 5.560000000000004,
+        "step_left": 3.7200000000000024,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 14.239999999999872,
+        "CHALLENGE": 24.439999999999657,
+        "DUEL_ESCAPE": 2.360000000000001,
+        "CLEAR": 77.44000000000091
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 22.959999999999688,
+      "longest_stall_seconds": 15.879999999999837,
+      "first_defender_foot_control": 18.839999999999776,
+      "first_controlled_retreat": 36.99999999999939,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7051,
+      "scenario": "random",
+      "seconds": 120.20000000000759,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 5.880000000000004,
+        "walk": 93.76000000000346,
+        "step_left": 2.9200000000000017,
+        "step_right": 6.280000000000005,
+        "back": 0.8400000000000002,
+        "stand": 6.720000000000005,
+        "right20": 3.7600000000000025
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 15.119999999999854,
+        "CHALLENGE": 17.039999999999814,
+        "CLEAR": 88.00000000000256
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 12.359999999999912,
+      "longest_stall_seconds": 5.880000000000004,
+      "first_defender_foot_control": 22.79999999999969,
+      "first_controlled_retreat": 31.079999999999515,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7052,
+      "scenario": "random",
+      "seconds": 39.91999999999933,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 3.6400000000000023,
+        "left40": 1.2400000000000004,
+        "walk": 0.24000000000000002,
+        "step_left": 3.8000000000000025,
+        "right20": 7.360000000000006,
+        "back": 23.599999999999675
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 4.8800000000000034,
+        "CHALLENGE": 4.040000000000003,
+        "CLEAR": 0.39999999999999997,
+        "RECOVER_DEFENCE": 30.559999999999526
+      },
+      "behind_ball_seconds": 29.599999999999547,
+      "close_seconds": 3.440000000000002,
+      "longest_stall_seconds": 0.68,
+      "first_defender_foot_control": null,
+      "first_controlled_retreat": null,
+      "clearance_completed": false
+    },
+    {
+      "seed": 7053,
+      "scenario": "random",
+      "seconds": 39.83999999999933,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 7.360000000000006,
+        "walk": 1.1600000000000004,
+        "step_left": 3.5600000000000023,
+        "left40": 1.0000000000000002,
+        "right20": 7.800000000000006,
+        "back": 18.919999999999774
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 8.639999999999992,
+        "CHALLENGE": 3.8800000000000026,
+        "CLEAR": 0.64,
+        "RECOVER_DEFENCE": 26.63999999999961
+      },
+      "behind_ball_seconds": 25.67999999999963,
+      "close_seconds": 4.680000000000003,
+      "longest_stall_seconds": 0.68,
+      "first_defender_foot_control": null,
+      "first_controlled_retreat": null,
+      "clearance_completed": false
+    },
+    {
+      "seed": 7054,
+      "scenario": "random",
+      "seconds": 107.68000000000563,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 91.36000000000308,
+        "left20": 3.240000000000002,
+        "step_left": 5.800000000000004,
+        "back": 0.5199999999999999,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 11.119999999999939,
+        "CHALLENGE": 23.599999999999675,
+        "DUEL_ESCAPE": 4.240000000000003,
+        "CLEAR": 68.67999999999954
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 23.83999999999967,
+      "longest_stall_seconds": 17.7199999999998,
+      "first_defender_foot_control": 15.75999999999984,
+      "first_controlled_retreat": 35.63999999999942,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7055,
+      "scenario": "random",
+      "seconds": 149.1200000000046,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 1,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 99.44000000000435,
+        "right20": 2.160000000000001,
+        "step_right": 30.959999999999518,
+        "stand": 10.359999999999955,
+        "left20": 6.160000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 11.319999999999935,
+        "CHALLENGE": 32.31999999999949,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "CLEAR": 97.40000000000403
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 29.87999999999954,
+      "longest_stall_seconds": 21.599999999999717,
+      "first_defender_foot_control": 15.959999999999836,
+      "first_controlled_retreat": 41.2799999999993,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7056,
+      "scenario": "random",
+      "seconds": 100.24000000000447,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "step_left": 7.680000000000006,
+        "walk": 84.24000000000197,
+        "left40": 0.7200000000000001,
+        "back": 0.8400000000000002,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 6.520000000000005,
+        "CHALLENGE": 22.3999999999997,
+        "CLEAR": 71.27999999999994
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 17.6399999999998,
+      "longest_stall_seconds": 11.479999999999931,
+      "first_defender_foot_control": 9.999999999999963,
+      "first_controlled_retreat": 25.27999999999964,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7057,
+      "scenario": "random",
+      "seconds": 128.80000000000865,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 1,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 9.279999999999978,
+        "walk": 100.88000000000457,
+        "step_left": 0.6,
+        "step_right": 6.280000000000005,
+        "right20": 8.359999999999998,
+        "stand": 3.360000000000002
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 18.879999999999775,
+        "CHALLENGE": 22.559999999999697,
+        "CLEAR": 87.32000000000245
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 18.959999999999773,
+      "longest_stall_seconds": 2.8000000000000016,
+      "first_defender_foot_control": 25.079999999999643,
+      "first_controlled_retreat": 39.559999999999334,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7058,
+      "scenario": "random",
+      "seconds": 130.16000000000838,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 106.1600000000054,
+        "right20": 2.000000000000001,
+        "step_right": 8.28,
+        "left20": 4.8800000000000034,
+        "step_left": 6.680000000000005,
+        "left40": 2.120000000000001
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 15.559999999999844,
+        "CHALLENGE": 52.159999999999066,
+        "CLEAR": 62.39999999999885
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 48.63999999999914,
+      "longest_stall_seconds": 9.19999999999998,
+      "first_defender_foot_control": 20.11999999999975,
+      "first_controlled_retreat": 43.99999999999924,
+      "clearance_completed": false
+    },
+    {
+      "seed": 7059,
+      "scenario": "random",
+      "seconds": 179.99999999999847,
+      "outcome": "TIMEOUT",
+      "score": [
+        0,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "right20": 12.9599999999999,
+        "walk": 102.52000000000483,
+        "step_right": 25.359999999999637,
+        "step_left": 3.9200000000000026,
+        "stand": 10.839999999999945,
+        "left40": 14.919999999999858,
+        "left20": 9.439999999999975
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 11.51999999999993,
+        "CHALLENGE": 52.639999999999056,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "CLEAR": 107.76000000000565
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 33.919999999999455,
+      "longest_stall_seconds": 20.279999999999745,
+      "first_defender_foot_control": 16.039999999999836,
+      "first_controlled_retreat": 44.31999999999923,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7060,
+      "scenario": "random",
+      "seconds": 179.99999999999847,
+      "outcome": "TIMEOUT",
+      "score": [
+        0,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 1.760000000000001,
+        "step_left": 174.15999999999963,
+        "walk": 4.040000000000003
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 4.800000000000003,
+        "CHALLENGE": 171.7200000000001,
+        "DUEL_ESCAPE": 3.440000000000002
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 14.119999999999875,
+      "longest_stall_seconds": 9.519999999999973,
+      "first_defender_foot_control": null,
+      "first_controlled_retreat": null,
+      "clearance_completed": false
+    },
+    {
+      "seed": 7061,
+      "scenario": "random",
+      "seconds": 49.75999999999912,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left40": 9.479999999999974,
+        "left20": 16.79999999999982,
+        "walk": 22.279999999999703,
+        "step_right": 0.4799999999999999,
+        "right20": 0.68
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 28.99999999999956,
+        "CHALLENGE": 2.280000000000001,
+        "CLEAR": 0.68,
+        "RECOVER_DEFENCE": 17.7599999999998
+      },
+      "behind_ball_seconds": 16.79999999999982,
+      "close_seconds": 5.480000000000004,
+      "longest_stall_seconds": 0.7600000000000001,
+      "first_defender_foot_control": null,
+      "first_controlled_retreat": null,
+      "clearance_completed": false
+    },
+    {
+      "seed": 7062,
+      "scenario": "random",
+      "seconds": 35.03999999999943,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left40": 7.360000000000006,
+        "left20": 10.15999999999996,
+        "walk": 17.479999999999805
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 19.15999999999977,
+        "RECOVER_DEFENCE": 15.839999999999838
+      },
+      "behind_ball_seconds": 15.239999999999851,
+      "close_seconds": 0.0,
+      "longest_stall_seconds": 0.0,
+      "first_defender_foot_control": null,
+      "first_controlled_retreat": null,
+      "clearance_completed": false
+    },
+    {
+      "seed": 7063,
+      "scenario": "random",
+      "seconds": 94.08000000000351,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 82.40000000000168,
+        "left40": 0.12,
+        "left20": 4.720000000000003,
+        "back": 0.08,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 1.800000000000001,
+        "CHALLENGE": 19.15999999999977,
+        "CLEAR": 73.08000000000023
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 15.079999999999854,
+      "longest_stall_seconds": 7.1600000000000055,
+      "first_defender_foot_control": 6.360000000000005,
+      "first_controlled_retreat": 16.919999999999817,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7064,
+      "scenario": "random",
+      "seconds": 122.00000000000787,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 5.800000000000004,
+        "walk": 99.60000000000437,
+        "step_left": 3.040000000000002,
+        "right20": 3.5200000000000022,
+        "step_right": 2.6800000000000015,
+        "back": 0.6,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 17.359999999999808,
+        "CHALLENGE": 21.119999999999727,
+        "CLEAR": 83.48000000000185
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 17.039999999999814,
+      "longest_stall_seconds": 7.080000000000005,
+      "first_defender_foot_control": 24.639999999999652,
+      "first_controlled_retreat": 36.719999999999395,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7065,
+      "scenario": "random",
+      "seconds": 119.12000000000742,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 102.28000000000479,
+        "left20": 3.480000000000002,
+        "step_left": 6.160000000000005,
+        "back": 0.43999999999999995,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 16.519999999999825,
+        "CHALLENGE": 23.679999999999673,
+        "DUEL_ESCAPE": 4.760000000000003,
+        "CLEAR": 74.12000000000039
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 24.479999999999656,
+      "longest_stall_seconds": 18.279999999999788,
+      "first_defender_foot_control": 21.07999999999973,
+      "first_controlled_retreat": 41.55999999999929,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7066,
+      "scenario": "random",
+      "seconds": 116.60000000000703,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 6.800000000000005,
+        "walk": 88.52000000000264,
+        "step_left": 1.840000000000001,
+        "step_right": 6.920000000000005,
+        "right20": 5.320000000000004,
+        "back": 0.43999999999999995,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 16.199999999999832,
+        "CHALLENGE": 15.639999999999842,
+        "CLEAR": 84.72000000000205
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 10.879999999999944,
+      "longest_stall_seconds": 4.9200000000000035,
+      "first_defender_foot_control": 23.599999999999675,
+      "first_controlled_retreat": 31.119999999999514,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7067,
+      "scenario": "random",
+      "seconds": 149.6800000000045,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left40": 0.43999999999999995,
+        "left20": 14.599999999999865,
+        "walk": 105.20000000000525,
+        "step_left": 4.440000000000003,
+        "step_right": 0.36,
+        "right20": 17.23999999999981,
+        "back": 0.64,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 24.119999999999663,
+        "CHALLENGE": 16.439999999999827,
+        "CLEAR": 109.08000000000585
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 12.47999999999991,
+      "longest_stall_seconds": 1.0800000000000003,
+      "first_defender_foot_control": 32.559999999999484,
+      "first_controlled_retreat": 65.47999999999904,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7068,
+      "scenario": "random",
+      "seconds": 110.08000000000601,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 100.16000000000446,
+        "step_left": 0.9200000000000003,
+        "left20": 1.880000000000001,
+        "back": 0.36,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 15.959999999999836,
+        "CHALLENGE": 20.639999999999738,
+        "CLEAR": 73.44000000000028
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 14.719999999999862,
+      "longest_stall_seconds": 11.319999999999935,
+      "first_defender_foot_control": 19.759999999999756,
+      "first_controlled_retreat": 34.07999999999945,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7069,
+      "scenario": "random",
+      "seconds": 120.16000000000759,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left40": 0.43999999999999995,
+        "left20": 10.999999999999941,
+        "walk": 91.36000000000308,
+        "step_left": 0.8800000000000002,
+        "step_right": 0.4799999999999999,
+        "right20": 9.239999999999979,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 19.879999999999754,
+        "CHALLENGE": 14.599999999999865,
+        "CLEAR": 85.64000000000219
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 10.719999999999947,
+      "longest_stall_seconds": 1.3200000000000005,
+      "first_defender_foot_control": 26.439999999999614,
+      "first_controlled_retreat": 45.23999999999921,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7070,
+      "scenario": "random",
+      "seconds": 102.56000000000483,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "step_left": 7.720000000000006,
+        "walk": 83.7600000000019,
+        "left20": 4.200000000000003,
+        "back": 0.12,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 7.720000000000006,
+        "CHALLENGE": 21.239999999999725,
+        "CLEAR": 73.5600000000003
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 16.31999999999983,
+      "longest_stall_seconds": 10.759999999999946,
+      "first_defender_foot_control": 11.479999999999931,
+      "first_controlled_retreat": 25.67999999999963,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7071,
+      "scenario": "random",
+      "seconds": 43.91999999999924,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "right20": 25.039999999999644,
+        "walk": 18.839999999999776
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 7.960000000000006,
+        "RECOVER_DEFENCE": 35.91999999999941
+      },
+      "behind_ball_seconds": 35.19999999999943,
+      "close_seconds": 0.0,
+      "longest_stall_seconds": 0.0,
+      "first_defender_foot_control": null,
+      "first_controlled_retreat": null,
+      "clearance_completed": false
+    },
+    {
+      "seed": 7072,
+      "scenario": "random",
+      "seconds": 117.92000000000724,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 99.08000000000429,
+        "step_left": 5.240000000000004,
+        "left40": 1.760000000000001,
+        "left20": 4.760000000000003,
+        "back": 0.32,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 7.1600000000000055,
+        "CHALLENGE": 23.519999999999676,
+        "DUEL_ESCAPE": 5.240000000000004,
+        "CLEAR": 81.96000000000161
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 24.79999999999965,
+      "longest_stall_seconds": 18.919999999999774,
+      "first_defender_foot_control": 11.759999999999925,
+      "first_controlled_retreat": 33.23999999999947,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7073,
+      "scenario": "random",
+      "seconds": 121.28000000000776,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 1,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 102.3200000000048,
+        "step_right": 5.960000000000004,
+        "left40": 2.6800000000000015,
+        "left20": 4.760000000000003,
+        "back": 2.160000000000001,
+        "stand": 3.360000000000002
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 6.600000000000005,
+        "CHALLENGE": 29.079999999999558,
+        "DUEL_ESCAPE": 0.04,
+        "CLEAR": 85.52000000000217
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 25.119999999999642,
+      "longest_stall_seconds": 16.199999999999832,
+      "first_defender_foot_control": 11.199999999999937,
+      "first_controlled_retreat": 31.23999999999951,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7074,
+      "scenario": "random",
+      "seconds": 50.03999999999911,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left40": 19.11999999999977,
+        "left20": 7.080000000000005,
+        "walk": 23.79999999999967
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 32.079999999999494,
+        "RECOVER_DEFENCE": 17.919999999999796
+      },
+      "behind_ball_seconds": 16.31999999999983,
+      "close_seconds": 0.0,
+      "longest_stall_seconds": 0.0,
+      "first_defender_foot_control": null,
+      "first_controlled_retreat": null,
+      "clearance_completed": false
+    },
+    {
+      "seed": 7075,
+      "scenario": "random",
+      "seconds": 118.04000000000725,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 98.72000000000423,
+        "step_left": 6.280000000000005,
+        "left40": 1.1200000000000003,
+        "left20": 4.760000000000003,
+        "back": 0.39999999999999997,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 13.599999999999886,
+        "CHALLENGE": 23.239999999999682,
+        "DUEL_ESCAPE": 6.280000000000005,
+        "CLEAR": 74.8800000000005
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 25.519999999999634,
+      "longest_stall_seconds": 19.879999999999754,
+      "first_defender_foot_control": 18.079999999999792,
+      "first_controlled_retreat": 40.55999999999931,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7076,
+      "scenario": "random",
+      "seconds": 40.879999999999306,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 4.720000000000003,
+        "walk": 15.679999999999842,
+        "left40": 18.71999999999978,
+        "right20": 1.7200000000000009
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 10.55999999999995,
+        "RECOVER_DEFENCE": 30.279999999999532
+      },
+      "behind_ball_seconds": 29.679999999999545,
+      "close_seconds": 0.0,
+      "longest_stall_seconds": 0.0,
+      "first_defender_foot_control": null,
+      "first_controlled_retreat": null,
+      "clearance_completed": false
+    },
+    {
+      "seed": 7077,
+      "scenario": "random",
+      "seconds": 107.40000000000559,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 2.8400000000000016,
+        "walk": 93.00000000000334,
+        "step_left": 4.120000000000003,
+        "back": 0.68,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 15.119999999999854,
+        "CHALLENGE": 28.119999999999578,
+        "DUEL_ESCAPE": 0.36,
+        "CLEAR": 63.75999999999882
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 24.35999999999966,
+      "longest_stall_seconds": 15.71999999999984,
+      "first_defender_foot_control": 19.759999999999756,
+      "first_controlled_retreat": 38.87999999999935,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7078,
+      "scenario": "random",
+      "seconds": 112.52000000000639,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 101.7200000000047,
+        "left20": 4.040000000000003,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 19.839999999999755,
+        "CHALLENGE": 20.639999999999738,
+        "CLEAR": 72.00000000000006
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 14.759999999999861,
+      "longest_stall_seconds": 11.319999999999935,
+      "first_defender_foot_control": 23.919999999999668,
+      "first_controlled_retreat": 38.079999999999366,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7079,
+      "scenario": "random",
+      "seconds": 160.56000000000233,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "step_right": 36.239999999999405,
+        "walk": 95.00000000000365,
+        "stand": 9.63999999999997,
+        "left40": 4.320000000000003,
+        "left20": 9.559999999999972,
+        "right20": 5.760000000000004
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 6.760000000000005,
+        "CHALLENGE": 39.83999999999933,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "CLEAR": 105.88000000000535
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 30.31999999999953,
+      "longest_stall_seconds": 19.279999999999767,
+      "first_defender_foot_control": 11.319999999999935,
+      "first_controlled_retreat": 37.55999999999938,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7080,
+      "scenario": "random",
+      "seconds": 154.44000000000355,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 4.040000000000003,
+        "walk": 140.72000000000628,
+        "step_left": 2.200000000000001,
+        "back": 0.7200000000000001,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 13.279999999999893,
+        "CHALLENGE": 80.16000000000133,
+        "CLEAR": 60.95999999999888
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 76.16000000000071,
+      "longest_stall_seconds": 6.880000000000005,
+      "first_defender_foot_control": 17.879999999999797,
+      "first_controlled_retreat": 39.23999999999934,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7081,
+      "scenario": "random",
+      "seconds": 115.24000000000682,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "right20": 2.9200000000000017,
+        "walk": 90.72000000000298,
+        "step_right": 3.6400000000000023,
+        "left40": 6.1200000000000045,
+        "left20": 4.760000000000003,
+        "back": 0.32,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 13.91999999999988,
+        "CHALLENGE": 14.759999999999861,
+        "CLEAR": 86.52000000000233
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 10.59999999999995,
+      "longest_stall_seconds": 5.560000000000004,
+      "first_defender_foot_control": 18.479999999999784,
+      "first_controlled_retreat": 28.239999999999576,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7082,
+      "scenario": "random",
+      "seconds": 55.83999999999899,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 2,
+        "shotContacts": 1,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left40": 6.680000000000005,
+        "left20": 7.640000000000006,
+        "walk": 5.480000000000004,
+        "step_left": 2.8400000000000016,
+        "right20": 10.839999999999945,
+        "back": 22.319999999999702
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 17.359999999999808,
+        "CHALLENGE": 5.280000000000004,
+        "CLEAR": 0.6,
+        "RECOVER_DEFENCE": 32.559999999999484
+      },
+      "behind_ball_seconds": 36.83999999999939,
+      "close_seconds": 7.480000000000006,
+      "longest_stall_seconds": 1.5600000000000007,
+      "first_defender_foot_control": null,
+      "first_controlled_retreat": null,
+      "clearance_completed": false
+    },
+    {
+      "seed": 7083,
+      "scenario": "random",
+      "seconds": 106.1600000000054,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 95.44000000000372,
+        "left20": 2.7600000000000016,
+        "step_left": 0.9600000000000003,
+        "back": 0.24000000000000002,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 14.999999999999856,
+        "CHALLENGE": 20.439999999999742,
+        "CLEAR": 70.67999999999985
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 14.479999999999867,
+      "longest_stall_seconds": 10.879999999999944,
+      "first_defender_foot_control": 18.839999999999776,
+      "first_controlled_retreat": 32.79999999999948,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7084,
+      "scenario": "random",
+      "seconds": 113.32000000000652,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 98.00000000000412,
+        "left20": 4.160000000000003,
+        "step_left": 4.320000000000003,
+        "back": 0.08,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 13.639999999999885,
+        "CHALLENGE": 24.079999999999664,
+        "DUEL_ESCAPE": 2.6400000000000015,
+        "CLEAR": 72.9200000000002
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 22.87999999999969,
+      "longest_stall_seconds": 16.199999999999832,
+      "first_defender_foot_control": 18.19999999999979,
+      "first_controlled_retreat": 36.5599999999994,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7085,
+      "scenario": "random",
+      "seconds": 98.84000000000425,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 83.28000000000182,
+        "stand": 6.880000000000005,
+        "left40": 3.8800000000000026,
+        "left20": 4.760000000000003
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 2.6000000000000014,
+        "CHALLENGE": 18.839999999999776,
+        "CLEAR": 77.3600000000009
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 14.759999999999861,
+      "longest_stall_seconds": 5.920000000000004,
+      "first_defender_foot_control": 7.1600000000000055,
+      "first_controlled_retreat": 17.23999999999981,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7086,
+      "scenario": "random",
+      "seconds": 136.20000000000718,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 106.76000000000549,
+        "right20": 1.5200000000000007,
+        "step_right": 9.559999999999972,
+        "left40": 3.9600000000000026,
+        "left20": 4.760000000000003,
+        "back": 2.8800000000000017,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 13.679999999999884,
+        "CHALLENGE": 28.07999999999958,
+        "DUEL_ESCAPE": 4.040000000000003,
+        "CLEAR": 90.36000000000293
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 28.119999999999578,
+      "longest_stall_seconds": 19.399999999999764,
+      "first_defender_foot_control": 18.279999999999788,
+      "first_controlled_retreat": 41.879999999999285,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7087,
+      "scenario": "random",
+      "seconds": 160.52000000000234,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 95.88000000000379,
+        "right20": 7.480000000000006,
+        "step_right": 30.679999999999524,
+        "stand": 10.679999999999948,
+        "left40": 6.280000000000005,
+        "left20": 9.479999999999974
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 17.079999999999814,
+        "CHALLENGE": 33.07999999999947,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "CLEAR": 102.28000000000479
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 23.959999999999667,
+      "longest_stall_seconds": 16.83999999999982,
+      "first_defender_foot_control": 21.679999999999715,
+      "first_controlled_retreat": 41.95999999999928,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7088,
+      "scenario": "random",
+      "seconds": 155.80000000000328,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 1,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 104.44000000000513,
+        "right20": 2.6800000000000015,
+        "step_right": 31.159999999999513,
+        "stand": 10.11999999999996,
+        "left20": 7.360000000000006
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 13.959999999999878,
+        "CHALLENGE": 33.31999999999947,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "CLEAR": 100.4400000000045
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 29.799999999999542,
+      "longest_stall_seconds": 21.639999999999716,
+      "first_defender_foot_control": 18.59999999999978,
+      "first_controlled_retreat": 43.95999999999924,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7089,
+      "scenario": "random",
+      "seconds": 120.32000000000761,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 100.28000000000448,
+        "left20": 5.200000000000004,
+        "step_left": 7.560000000000006,
+        "left40": 0.2,
+        "back": 0.32,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 14.559999999999865,
+        "CHALLENGE": 23.31999999999968,
+        "DUEL_ESCAPE": 6.480000000000005,
+        "CLEAR": 75.92000000000067
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 25.799999999999628,
+      "longest_stall_seconds": 19.99999999999975,
+      "first_defender_foot_control": 18.799999999999777,
+      "first_controlled_retreat": 41.47999999999929,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7090,
+      "scenario": "random",
+      "seconds": 54.39999999999902,
+      "outcome": "GOAL",
+      "score": [
+        1,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 2,
+        "shotContacts": 1,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left40": 8.28,
+        "left20": 9.559999999999972,
+        "walk": 7.360000000000006,
+        "step_left": 2.8400000000000016,
+        "right20": 14.239999999999872,
+        "back": 12.079999999999918
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 21.199999999999726,
+        "CHALLENGE": 6.280000000000005,
+        "CLEAR": 0.64,
+        "RECOVER_DEFENCE": 26.23999999999962
+      },
+      "behind_ball_seconds": 31.31999999999951,
+      "close_seconds": 7.840000000000006,
+      "longest_stall_seconds": 1.2800000000000005,
+      "first_defender_foot_control": null,
+      "first_controlled_retreat": null,
+      "clearance_completed": false
+    },
+    {
+      "seed": 7091,
+      "scenario": "random",
+      "seconds": 127.60000000000875,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "right20": 5.240000000000004,
+        "walk": 94.16000000000352,
+        "step_right": 6.360000000000005,
+        "left40": 10.15999999999996,
+        "left20": 4.760000000000003,
+        "back": 0.16,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 13.519999999999888,
+        "CHALLENGE": 14.439999999999868,
+        "CLEAR": 99.60000000000437
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 10.439999999999953,
+      "longest_stall_seconds": 2.6000000000000014,
+      "first_defender_foot_control": 18.079999999999792,
+      "first_controlled_retreat": 48.55999999999914,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7092,
+      "scenario": "random",
+      "seconds": 116.56000000000702,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 98.08000000000413,
+        "left20": 3.7600000000000025,
+        "step_left": 7.400000000000006,
+        "back": 0.5599999999999999,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 14.79999999999986,
+        "CHALLENGE": 23.27999999999968,
+        "DUEL_ESCAPE": 5.280000000000004,
+        "CLEAR": 73.16000000000024
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 24.519999999999655,
+      "longest_stall_seconds": 18.559999999999782,
+      "first_defender_foot_control": 19.11999999999977,
+      "first_controlled_retreat": 40.23999999999932,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7093,
+      "scenario": "random",
+      "seconds": 117.48000000000717,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 1,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 91.60000000000312,
+        "right20": 1.4000000000000006,
+        "step_right": 13.559999999999887,
+        "left40": 1.1200000000000003,
+        "left20": 4.760000000000003,
+        "back": 1.6400000000000008,
+        "stand": 3.360000000000002
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 7.960000000000006,
+        "CHALLENGE": 26.959999999999603,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "CLEAR": 74.48000000000044
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 30.559999999999526,
+      "longest_stall_seconds": 24.79999999999965,
+      "first_defender_foot_control": 12.519999999999909,
+      "first_controlled_retreat": 39.79999999999933,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7094,
+      "scenario": "random",
+      "seconds": 113.68000000000657,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 97.00000000000396,
+        "step_left": 7.640000000000006,
+        "left20": 1.920000000000001,
+        "back": 0.36,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 15.159999999999853,
+        "CHALLENGE": 23.39999999999968,
+        "DUEL_ESCAPE": 7.440000000000006,
+        "CLEAR": 67.63999999999938
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 26.839999999999606,
+      "longest_stall_seconds": 21.159999999999727,
+      "first_defender_foot_control": 19.239999999999768,
+      "first_controlled_retreat": 43.15999999999926,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7095,
+      "scenario": "random",
+      "seconds": 118.3600000000073,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 2.7200000000000015,
+        "walk": 102.00000000000475,
+        "step_left": 6.560000000000005,
+        "back": 0.32,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 12.159999999999917,
+        "CHALLENGE": 24.71999999999965,
+        "DUEL_ESCAPE": 2.5600000000000014,
+        "CLEAR": 78.88000000000113
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 23.35999999999968,
+      "longest_stall_seconds": 16.039999999999836,
+      "first_defender_foot_control": 16.75999999999982,
+      "first_controlled_retreat": 35.11999999999943,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7096,
+      "scenario": "random",
+      "seconds": 120.76000000000768,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "left20": 10.999999999999941,
+        "walk": 92.7600000000033,
+        "step_left": 0.9600000000000003,
+        "step_right": 0.6,
+        "right20": 8.67999999999999,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 18.879999999999775,
+        "CHALLENGE": 14.519999999999866,
+        "CLEAR": 87.32000000000245
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 10.639999999999949,
+      "longest_stall_seconds": 1.4000000000000006,
+      "first_defender_foot_control": 25.399999999999636,
+      "first_controlled_retreat": 33.55999999999946,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7097,
+      "scenario": "random",
+      "seconds": 116.12000000000695,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 103.08000000000492,
+        "left20": 1.800000000000001,
+        "step_left": 4.040000000000003,
+        "back": 0.43999999999999995,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 20.59999999999974,
+        "CHALLENGE": 24.35999999999966,
+        "DUEL_ESCAPE": 1.6400000000000008,
+        "CLEAR": 69.47999999999966
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 22.039999999999708,
+      "longest_stall_seconds": 15.079999999999854,
+      "first_defender_foot_control": 25.23999999999964,
+      "first_controlled_retreat": 42.55999999999927,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7098,
+      "scenario": "random",
+      "seconds": 154.2400000000036,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 1,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 102.56000000000483,
+        "right20": 6.720000000000005,
+        "step_right": 29.079999999999558,
+        "left40": 3.280000000000002,
+        "left20": 9.19999999999998,
+        "stand": 3.360000000000002
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 8.599999999999993,
+        "CHALLENGE": 46.119999999999195,
+        "DUEL_ESCAPE": 1.6400000000000008,
+        "CLEAR": 97.8400000000041
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 33.35999999999947,
+      "longest_stall_seconds": 18.63999999999978,
+      "first_defender_foot_control": 13.199999999999894,
+      "first_controlled_retreat": 40.79999999999931,
+      "clearance_completed": true
+    },
+    {
+      "seed": 7099,
+      "scenario": "random",
+      "seconds": 134.96000000000743,
+      "outcome": "CLEARED_GOAL",
+      "score": [
+        0,
+        1
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 2,
+        "clearContacts": 1,
+        "clearancesCompleted": 1
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "defender_actions_seconds": {
+        "walk": 104.12000000000508,
+        "right20": 1.4400000000000006,
+        "step_right": 13.39999999999989,
+        "left40": 2.080000000000001,
+        "left20": 4.760000000000003,
+        "back": 2.4000000000000012,
+        "stand": 6.720000000000005
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 11.599999999999929,
+        "CHALLENGE": 26.919999999999604,
+        "DUEL_ESCAPE": 8.040000000000004,
+        "CLEAR": 88.36000000000261
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 30.91999999999952,
+      "longest_stall_seconds": 23.119999999999685,
+      "first_defender_foot_control": 16.199999999999832,
+      "first_controlled_retreat": 42.95999999999926,
+      "clearance_completed": true
+    }
+  ],
+  "source": {
+    "kind": "bundled snapshot",
+    "modules": [
+      "Utils.TeamPolicy.TeamPolicy.decide",
+      "Utils.Navigation.Navigator.choose"
+    ],
+    "sha256": {
+      "tools/soccer2d.py": "1becda51673efc1078c1678c82cf980e5e50c5fa6f0959ad127ca5fc8eb69bd3",
+      "Wenao/controllers/Utils/PolicyProfile.py": "fbfc04690cd449acc11817b5cff9d33faf7ada0af1c9454605e38af6d8ae51e2",
+      "Wenao/controllers/Utils/TeamPolicy.py": "3fb87e95e0603f5646a663eb9dc310d0ec2120d35d20108d33bfbfc0b4a73fe7",
+      "Wenao/controllers/Utils/Navigation.py": "43d055d660ab9a426de11cabd0137a8bad556ace2ac0ab692fdaafabe28cb58f",
+      "Wenao/controllers/Utils/CourseSpecs.py": "329cc279f44dc6e3fa19e089319787c2cafd6c33d5118f0be3fb2e6eeb624bf0",
+      "Wenao/controllers/Utils/MatchEngine.py": "d92cab0c4a9618608b503c49014ad53dd03c33b960ef5bfcbf896537ae4b0ed2",
+      "Wenao/controllers/Utils/DefensivePlan.py": "e632321973f03a67537a92575eea8b010c11ee0012dd83db3f3335bf630727a4"
+    }
+  },
+  "tuning": {},
+  "limits": "Timeout and OUT are not automatically defensive wins. Controlled retreat requires exclusive active-foot evidence plus 0.5 m retreat; a later attacker goal can still occur."
+}

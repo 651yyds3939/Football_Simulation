@@ -1,7 +1,7 @@
 """Pure role decisions. Coordinates in metres; no simulator/ground-truth API."""
 from dataclasses import dataclass
 import math
-from Utils.DefensivePlan import interception
+from Utils.DefensivePlan import interception, SETTINGS
 
 
 def distance(a, b):
@@ -127,8 +127,8 @@ class TeamPolicy:
             if self.role == 'defender' and threatening and distance(own, ball) > .40:
                 now = world['time']
                 if (self.intercept_plan is None or now < self.intercept_plan[0]
-                        or now-self.intercept_plan[0] >= .4
-                        or distance(ball, self.intercept_plan[1]) > .12):
+                        or now-self.intercept_plan[0] >= SETTINGS['plan_seconds']
+                        or distance(ball, self.intercept_plan[1]) > .18):
                     carriers = [r for n, r in world['robots'].items() if not n.startswith(self.prefix)]
                     carrier = min(carriers, key=lambda r: distance(r['position'], ball), default={})
                     target, predicted, horizon, reachable = interception(own, yaw, ball, velocity, direction, carrier.get('yaw'))
@@ -149,7 +149,7 @@ class TeamPolicy:
                         self.duel_anchor = (tuple(ball), now)
                     # Keep a genuine foot challenge through a brief contest,
                     # but do not let two defenders press forever without progress.
-                    if self.duel_escape is None and now-self.duel_anchor[1] < 14:
+                    if self.duel_escape is None and now-self.duel_anchor[1] < SETTINGS['duel_hold_seconds']:
                         return Decision("CHALLENGE", tuple(ball), tuple(ball))
             escape = self.unblock_duel(world, own, ball, opponents)
             if escape is not None:
@@ -199,9 +199,10 @@ class TeamPolicy:
         if not self.recovering_defence:
             return None
         predicted = (ball[0]+velocity[0]*.8, ball[1]+velocity[1]*.8)
-        ux, uy = unit(predicted, (-direction*4.5, 0))
-        target = (max(-4.3, min(4.3, predicted[0]+ux*.55)),
-                  max(-2.6, min(2.6, predicted[1]+uy*.55)))
+        # Recover towards the goal corridor, rather than forever pursuing a
+        # point just beyond a carrier that is faster than backward walking.
+        goal_x = -direction*4.18
+        target = (goal_x, max(-1.05, min(1.05, predicted[1]*.55)))
         return Decision("RECOVER_DEFENCE", target, tuple(ball))
 
     def unblock_duel(self, world, own, ball, opponents):

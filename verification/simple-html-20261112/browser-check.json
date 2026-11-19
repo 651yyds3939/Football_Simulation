@@ -3,15 +3,15 @@
   "pause": true,
   "examples": [
     {
-      "seed": 355,
+      "seed": 347,
       "outcome": "CLEARED_GOAL"
     },
     {
-      "seed": 347,
+      "seed": 350,
       "outcome": "GOAL"
     },
     {
-      "seed": 348,
+      "seed": 363,
       "outcome": "GOAL"
     },
     {
@@ -19,7 +19,7 @@
       "outcome": "CLEARED_GOAL"
     },
     {
-      "seed": 366,
+      "seed": 348,
       "outcome": "TIMEOUT"
     }
   ],

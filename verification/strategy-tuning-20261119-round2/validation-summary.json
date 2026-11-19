@@ -1,0 +1,85 @@
+{
+  "validation-fix-only": {
+    "tuning": {},
+    "runs": 300,
+    "outcomes": {
+      "CLEARED_GOAL": 164,
+      "GOAL": 109,
+      "TIMEOUT": 23,
+      "OUT": 4
+    },
+    "defender_foot_control_runs": 193,
+    "controlled_retreat_runs": 175,
+    "clearance_completed_runs": 163,
+    "stalls_over_20s": 30,
+    "mean_turn_seconds": 17.490533333333204,
+    "mean_behind_ball_seconds": 11.189333333333346,
+    "mean_duration_seconds": 97.73746666666983,
+    "wall_seconds": 68.40696847099753
+  },
+  "validation-deadline": {
+    "tuning": {
+      "urgent_seconds": 10.0
+    },
+    "runs": 300,
+    "outcomes": {
+      "CLEARED_GOAL": 164,
+      "GOAL": 108,
+      "TIMEOUT": 24,
+      "OUT": 4
+    },
+    "defender_foot_control_runs": 193,
+    "controlled_retreat_runs": 175,
+    "clearance_completed_runs": 163,
+    "stalls_over_20s": 31,
+    "mean_turn_seconds": 14.789466666666588,
+    "mean_behind_ball_seconds": 11.61106666666669,
+    "mean_duration_seconds": 98.18906666666983,
+    "wall_seconds": 68.74454543299726
+  },
+  "validation-combined": {
+    "tuning": {
+      "urgent_seconds": 10.0,
+      "blocked_escape": true,
+      "blocked_seconds": 3.0,
+      "escape_metres": 0.1
+    },
+    "runs": 300,
+    "outcomes": {
+      "CLEARED_GOAL": 171,
+      "GOAL": 104,
+      "TIMEOUT": 24,
+      "OUT": 1
+    },
+    "defender_foot_control_runs": 193,
+    "controlled_retreat_runs": 179,
+    "clearance_completed_runs": 169,
+    "stalls_over_20s": 38,
+    "mean_turn_seconds": 14.655066666666587,
+    "mean_behind_ball_seconds": 10.882533333333372,
+    "mean_duration_seconds": 98.95320000000319,
+    "wall_seconds": 73.41743915299958
+  },
+  "validation-progress": {
+    "tuning": {
+      "blocked_escape": true,
+      "blocked_seconds": 3.0,
+      "escape_metres": 0.1
+    },
+    "runs": 300,
+    "outcomes": {
+      "CLEARED_GOAL": 171,
+      "GOAL": 105,
+      "TIMEOUT": 23,
+      "OUT": 1
+    },
+    "defender_foot_control_runs": 193,
+    "controlled_retreat_runs": 179,
+    "clearance_completed_runs": 169,
+    "stalls_over_20s": 37,
+    "mean_turn_seconds": 16.889866666666546,
+    "mean_behind_ball_seconds": 10.468800000000025,
+    "mean_duration_seconds": 98.51373333333652,
+    "wall_seconds": 76.21336036999855
+  }
+}

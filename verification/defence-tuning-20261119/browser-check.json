@@ -1,0 +1,18 @@
+{
+  "default_speed": "8x",
+  "repeat_seed_reproduces_start": true,
+  "editable_bounds": true,
+  "invalid_regions_preserve_previous_scene": true,
+  "random_setup_preserves_bounds_and_goal_side": true,
+  "python_step": true,
+  "pitch_drag_creates_rectangle": true,
+  "near_goal_preset": true,
+  "bilingual_spawn_controls": true,
+  "batch_respects_spawn_regions": {
+    "TIMEOUT": 20
+  },
+  "mobile_no_overflow": true,
+  "exported_replay_runs_offline": true,
+  "runtime_errors": [],
+  "no_external_requests": true
+}

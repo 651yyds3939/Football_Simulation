@@ -1,0 +1,1219 @@
+{
+  "wall_seconds": 120.397,
+  "rounds": 8,
+  "latest": {
+    "wall": 120472.29999999702,
+    "seed": 474459578,
+    "t": 134.6400000000075,
+    "round": 8,
+    "running": false,
+    "outcome": "CLEARED_GOAL",
+    "goals": 3,
+    "clearances": 3
+  },
+  "language_switch_during_play": true,
+  "default_8x": "8",
+  "runtime_errors": [],
+  "samples": [
+    {
+      "wall": 1078,
+      "seed": 27,
+      "t": 8.000000000000005,
+      "round": 1,
+      "running": true,
+      "outcome": null,
+      "goals": 0,
+      "clearances": 0
+    },
+    {
+      "wall": 2085.89999999851,
+      "seed": 27,
+      "t": 15.999999999999835,
+      "round": 1,
+      "running": true,
+      "outcome": null,
+      "goals": 0,
+      "clearances": 0
+    },
+    {
+      "wall": 3088.699999999255,
+      "seed": 27,
+      "t": 23.959999999999667,
+      "round": 1,
+      "running": true,
+      "outcome": null,
+      "goals": 0,
+      "clearances": 0
+    },
+    {
+      "wall": 4092.599999997765,
+      "seed": 27,
+      "t": 31.8399999999995,
+      "round": 1,
+      "running": true,
+      "outcome": null,
+      "goals": 0,
+      "clearances": 0
+    },
+    {
+      "wall": 5094.599999997765,
+      "seed": 27,
+      "t": 39.959999999999326,
+      "round": 1,
+      "running": true,
+      "outcome": null,
+      "goals": 0,
+      "clearances": 0
+    },
+    {
+      "wall": 6097.199999999255,
+      "seed": 27,
+      "t": 47.959999999999155,
+      "round": 1,
+      "running": true,
+      "outcome": null,
+      "goals": 0,
+      "clearances": 0
+    },
+    {
+      "wall": 7099.5,
+      "seed": 27,
+      "t": 55.959999999998985,
+      "round": 1,
+      "running": true,
+      "outcome": null,
+      "goals": 0,
+      "clearances": 0
+    },
+    {
+      "wall": 8102.199999999255,
+      "seed": 27,
+      "t": 58.11999999999894,
+      "round": 1,
+      "running": false,
+      "outcome": "GOAL",
+      "goals": 1,
+      "clearances": 0
+    },
+    {
+      "wall": 9106.89999999851,
+      "seed": 27,
+      "t": 58.11999999999894,
+      "round": 1,
+      "running": false,
+      "outcome": "GOAL",
+      "goals": 1,
+      "clearances": 0
+    },
+    {
+      "wall": 10110.79999999702,
+      "seed": 27,
+      "t": 58.11999999999894,
+      "round": 1,
+      "running": false,
+      "outcome": "GOAL",
+      "goals": 1,
+      "clearances": 0
+    },
+    {
+      "wall": 11112.39999999851,
+      "seed": 1027123313,
+      "t": 5.840000000000004,
+      "round": 2,
+      "running": true,
+      "outcome": null,
+      "goals": 1,
+      "clearances": 0
+    },
+    {
+      "wall": 12117.699999999255,
+      "seed": 1027123313,
+      "t": 13.83999999999988,
+      "round": 2,
+      "running": true,
+      "outcome": null,
+      "goals": 1,
+      "clearances": 0
+    },
+    {
+      "wall": 13120.199999999255,
+      "seed": 1027123313,
+      "t": 21.719999999999715,
+      "round": 2,
+      "running": true,
+      "outcome": null,
+      "goals": 1,
+      "clearances": 0
+    },
+    {
+      "wall": 14124.099999997765,
+      "seed": 1027123313,
+      "t": 29.719999999999544,
+      "round": 2,
+      "running": true,
+      "outcome": null,
+      "goals": 1,
+      "clearances": 0
+    },
+    {
+      "wall": 15127.199999999255,
+      "seed": 1027123313,
+      "t": 37.83999999999937,
+      "round": 2,
+      "running": true,
+      "outcome": null,
+      "goals": 1,
+      "clearances": 0
+    },
+    {
+      "wall": 16130.79999999702,
+      "seed": 1027123313,
+      "t": 43.47999999999925,
+      "round": 2,
+      "running": false,
+      "outcome": "GOAL",
+      "goals": 2,
+      "clearances": 0
+    },
+    {
+      "wall": 17135.39999999851,
+      "seed": 1027123313,
+      "t": 43.47999999999925,
+      "round": 2,
+      "running": false,
+      "outcome": "GOAL",
+      "goals": 2,
+      "clearances": 0
+    },
+    {
+      "wall": 18140.099999997765,
+      "seed": 1027123313,
+      "t": 43.47999999999925,
+      "round": 2,
+      "running": false,
+      "outcome": "GOAL",
+      "goals": 2,
+      "clearances": 0
+    },
+    {
+      "wall": 19142.199999999255,
+      "seed": 3857739571,
+      "t": 2.120000000000001,
+      "round": 3,
+      "running": true,
+      "outcome": null,
+      "goals": 2,
+      "clearances": 0
+    },
+    {
+      "wall": 20146.599999997765,
+      "seed": 3857739571,
+      "t": 10.239999999999958,
+      "round": 3,
+      "running": true,
+      "outcome": null,
+      "goals": 2,
+      "clearances": 0
+    },
+    {
+      "wall": 21149.099999997765,
+      "seed": 3857739571,
+      "t": 18.23999999999979,
+      "round": 3,
+      "running": true,
+      "outcome": null,
+      "goals": 2,
+      "clearances": 0
+    },
+    {
+      "wall": 22151.29999999702,
+      "seed": 3857739571,
+      "t": 26.23999999999962,
+      "round": 3,
+      "running": true,
+      "outcome": null,
+      "goals": 2,
+      "clearances": 0
+    },
+    {
+      "wall": 23153.199999999255,
+      "seed": 3857739571,
+      "t": 34.23999999999945,
+      "round": 3,
+      "running": true,
+      "outcome": null,
+      "goals": 2,
+      "clearances": 0
+    },
+    {
+      "wall": 24157.89999999851,
+      "seed": 3857739571,
+      "t": 42.23999999999928,
+      "round": 3,
+      "running": true,
+      "outcome": null,
+      "goals": 2,
+      "clearances": 0
+    },
+    {
+      "wall": 25161.699999999255,
+      "seed": 3857739571,
+      "t": 43.43999999999925,
+      "round": 3,
+      "running": false,
+      "outcome": "GOAL",
+      "goals": 3,
+      "clearances": 0
+    },
+    {
+      "wall": 26167.599999997765,
+      "seed": 3857739571,
+      "t": 43.43999999999925,
+      "round": 3,
+      "running": false,
+      "outcome": "GOAL",
+      "goals": 3,
+      "clearances": 0
+    },
+    {
+      "wall": 27173.29999999702,
+      "seed": 3857739571,
+      "t": 43.43999999999925,
+      "round": 3,
+      "running": false,
+      "outcome": "GOAL",
+      "goals": 3,
+      "clearances": 0
+    },
+    {
+      "wall": 28175,
+      "seed": 862258946,
+      "t": 6.800000000000005,
+      "round": 4,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 0
+    },
+    {
+      "wall": 29180.89999999851,
+      "seed": 862258946,
+      "t": 14.919999999999858,
+      "round": 4,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 0
+    },
+    {
+      "wall": 30183,
+      "seed": 862258946,
+      "t": 22.91999999999969,
+      "round": 4,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 0
+    },
+    {
+      "wall": 31185.699999999255,
+      "seed": 862258946,
+      "t": 30.91999999999952,
+      "round": 4,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 0
+    },
+    {
+      "wall": 32190.89999999851,
+      "seed": 862258946,
+      "t": 38.91999999999935,
+      "round": 4,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 0
+    },
+    {
+      "wall": 33193.39999999851,
+      "seed": 862258946,
+      "t": 47.039999999999175,
+      "round": 4,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 0
+    },
+    {
+      "wall": 34195,
+      "seed": 862258946,
+      "t": 55.039999999999004,
+      "round": 4,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 0
+    },
+    {
+      "wall": 35196.39999999851,
+      "seed": 862258946,
+      "t": 63.039999999998834,
+      "round": 4,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 1
+    },
+    {
+      "wall": 36198.29999999702,
+      "seed": 862258946,
+      "t": 71.0399999999999,
+      "round": 4,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 1
+    },
+    {
+      "wall": 37199.39999999851,
+      "seed": 862258946,
+      "t": 78.76000000000111,
+      "round": 4,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 1
+    },
+    {
+      "wall": 38200.599999997765,
+      "seed": 862258946,
+      "t": 86.76000000000236,
+      "round": 4,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 1
+    },
+    {
+      "wall": 39203.29999999702,
+      "seed": 862258946,
+      "t": 94.76000000000361,
+      "round": 4,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 1
+    },
+    {
+      "wall": 40207.5,
+      "seed": 862258946,
+      "t": 102.76000000000487,
+      "round": 4,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 1
+    },
+    {
+      "wall": 41211,
+      "seed": 862258946,
+      "t": 110.92000000000614,
+      "round": 4,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 1
+    },
+    {
+      "wall": 42212.79999999702,
+      "seed": 862258946,
+      "t": 118.92000000000739,
+      "round": 4,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 1
+    },
+    {
+      "wall": 43215.89999999851,
+      "seed": 862258946,
+      "t": 126.92000000000864,
+      "round": 4,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 1
+    },
+    {
+      "wall": 44218.199999999255,
+      "seed": 862258946,
+      "t": 134.92000000000743,
+      "round": 4,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 1
+    },
+    {
+      "wall": 45220.39999999851,
+      "seed": 862258946,
+      "t": 135.76000000000727,
+      "round": 4,
+      "running": false,
+      "outcome": "CLEARED_GOAL",
+      "goals": 3,
+      "clearances": 1
+    },
+    {
+      "wall": 46223.599999997765,
+      "seed": 862258946,
+      "t": 135.76000000000727,
+      "round": 4,
+      "running": false,
+      "outcome": "CLEARED_GOAL",
+      "goals": 3,
+      "clearances": 1
+    },
+    {
+      "wall": 47227.199999999255,
+      "seed": 862258946,
+      "t": 135.76000000000727,
+      "round": 4,
+      "running": false,
+      "outcome": "CLEARED_GOAL",
+      "goals": 3,
+      "clearances": 1
+    },
+    {
+      "wall": 48228.79999999702,
+      "seed": 3556327516,
+      "t": 7.040000000000005,
+      "round": 5,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 1
+    },
+    {
+      "wall": 49234,
+      "seed": 3556327516,
+      "t": 15.039999999999855,
+      "round": 5,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 1
+    },
+    {
+      "wall": 50235.5,
+      "seed": 3556327516,
+      "t": 23.039999999999687,
+      "round": 5,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 1
+    },
+    {
+      "wall": 51239.5,
+      "seed": 3556327516,
+      "t": 31.039999999999516,
+      "round": 5,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 1
+    },
+    {
+      "wall": 52243.29999999702,
+      "seed": 3556327516,
+      "t": 38.91999999999935,
+      "round": 5,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 1
+    },
+    {
+      "wall": 53245.29999999702,
+      "seed": 3556327516,
+      "t": 46.91999999999918,
+      "round": 5,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 54247.5,
+      "seed": 3556327516,
+      "t": 54.91999999999901,
+      "round": 5,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 55250.39999999851,
+      "seed": 3556327516,
+      "t": 62.63999999999884,
+      "round": 5,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 56252.199999999255,
+      "seed": 3556327516,
+      "t": 70.63999999999984,
+      "round": 5,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 57256,
+      "seed": 3556327516,
+      "t": 78.6400000000011,
+      "round": 5,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 58259.699999999255,
+      "seed": 3556327516,
+      "t": 86.76000000000236,
+      "round": 5,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 59261.5,
+      "seed": 3556327516,
+      "t": 94.76000000000361,
+      "round": 5,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 60263.89999999851,
+      "seed": 3556327516,
+      "t": 102.76000000000487,
+      "round": 5,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 61286.099999997765,
+      "seed": 3556327516,
+      "t": 110.52000000000608,
+      "round": 5,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 62290.199999999255,
+      "seed": 3556327516,
+      "t": 118.24000000000729,
+      "round": 5,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 63292.699999999255,
+      "seed": 3556327516,
+      "t": 125.48000000000842,
+      "round": 5,
+      "running": false,
+      "outcome": "CLEARED_GOAL",
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 64297.199999999255,
+      "seed": 3556327516,
+      "t": 125.48000000000842,
+      "round": 5,
+      "running": false,
+      "outcome": "CLEARED_GOAL",
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 65302.79999999702,
+      "seed": 3556327516,
+      "t": 125.48000000000842,
+      "round": 5,
+      "running": false,
+      "outcome": "CLEARED_GOAL",
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 66307.39999999851,
+      "seed": 3665621884,
+      "t": 0.64,
+      "round": 6,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 67312.19999999925,
+      "seed": 3665621884,
+      "t": 8.639999999999992,
+      "round": 6,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 68313.69999999925,
+      "seed": 3665621884,
+      "t": 16.639999999999823,
+      "round": 6,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 69315.19999999925,
+      "seed": 3665621884,
+      "t": 24.23999999999966,
+      "round": 6,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 70317.59999999776,
+      "seed": 3665621884,
+      "t": 32.23999999999949,
+      "round": 6,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 71321.89999999851,
+      "seed": 3665621884,
+      "t": 40.23999999999932,
+      "round": 6,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 72325.5,
+      "seed": 3665621884,
+      "t": 48.35999999999915,
+      "round": 6,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 73327.89999999851,
+      "seed": 3665621884,
+      "t": 56.359999999998976,
+      "round": 6,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 74329.5,
+      "seed": 3665621884,
+      "t": 64.35999999999886,
+      "round": 6,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 75331.89999999851,
+      "seed": 3665621884,
+      "t": 72.36000000000011,
+      "round": 6,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 76334.29999999702,
+      "seed": 3665621884,
+      "t": 80.36000000000136,
+      "round": 6,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 77338.29999999702,
+      "seed": 3665621884,
+      "t": 88.36000000000261,
+      "round": 6,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 78342.29999999702,
+      "seed": 3665621884,
+      "t": 96.52000000000389,
+      "round": 6,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 79344.09999999776,
+      "seed": 3665621884,
+      "t": 104.52000000000514,
+      "round": 6,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 80345.89999999851,
+      "seed": 3665621884,
+      "t": 112.52000000000639,
+      "round": 6,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 81347.69999999925,
+      "seed": 3665621884,
+      "t": 120.52000000000764,
+      "round": 6,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 82349.89999999851,
+      "seed": 3665621884,
+      "t": 128.5200000000087,
+      "round": 6,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 83354.69999999925,
+      "seed": 3665621884,
+      "t": 133.84000000000765,
+      "round": 6,
+      "running": false,
+      "outcome": "CLEARED_GOAL",
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 84359,
+      "seed": 3665621884,
+      "t": 133.84000000000765,
+      "round": 6,
+      "running": false,
+      "outcome": "CLEARED_GOAL",
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 85363.89999999851,
+      "seed": 3665621884,
+      "t": 133.84000000000765,
+      "round": 6,
+      "running": false,
+      "outcome": "CLEARED_GOAL",
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 86365.69999999925,
+      "seed": 4255552159,
+      "t": 2.6400000000000015,
+      "round": 7,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 87372.89999999851,
+      "seed": 4255552159,
+      "t": 10.639999999999949,
+      "round": 7,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 88374.59999999776,
+      "seed": 4255552159,
+      "t": 18.799999999999777,
+      "round": 7,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 89377.19999999925,
+      "seed": 4255552159,
+      "t": 26.759999999999607,
+      "round": 7,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 90379.89999999851,
+      "seed": 4255552159,
+      "t": 34.75999999999944,
+      "round": 7,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 91382.39999999851,
+      "seed": 4255552159,
+      "t": 42.759999999999266,
+      "round": 7,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 92385.19999999925,
+      "seed": 4255552159,
+      "t": 50.759999999999096,
+      "round": 7,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 2
+    },
+    {
+      "wall": 93388.5,
+      "seed": 4255552159,
+      "t": 58.759999999998925,
+      "round": 7,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 94392.79999999702,
+      "seed": 4255552159,
+      "t": 66.91999999999926,
+      "round": 7,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 95395.09999999776,
+      "seed": 4255552159,
+      "t": 74.92000000000051,
+      "round": 7,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 96397,
+      "seed": 4255552159,
+      "t": 82.92000000000176,
+      "round": 7,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 97399.59999999776,
+      "seed": 4255552159,
+      "t": 90.92000000000301,
+      "round": 7,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 98407.5,
+      "seed": 4255552159,
+      "t": 99.04000000000428,
+      "round": 7,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 99410.59999999776,
+      "seed": 4255552159,
+      "t": 106.76000000000549,
+      "round": 7,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 100414.19999999925,
+      "seed": 4255552159,
+      "t": 114.28000000000667,
+      "round": 7,
+      "running": false,
+      "outcome": "CLEARED_GOAL",
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 101420.09999999776,
+      "seed": 4255552159,
+      "t": 114.28000000000667,
+      "round": 7,
+      "running": false,
+      "outcome": "CLEARED_GOAL",
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 102424.5,
+      "seed": 4255552159,
+      "t": 114.28000000000667,
+      "round": 7,
+      "running": false,
+      "outcome": "CLEARED_GOAL",
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 103427.19999999925,
+      "seed": 474459578,
+      "t": 0.39999999999999997,
+      "round": 8,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 104431.89999999851,
+      "seed": 474459578,
+      "t": 8.120000000000003,
+      "round": 8,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 105434.69999999925,
+      "seed": 474459578,
+      "t": 16.119999999999834,
+      "round": 8,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 106438.69999999925,
+      "seed": 474459578,
+      "t": 24.119999999999663,
+      "round": 8,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 107440.69999999925,
+      "seed": 474459578,
+      "t": 32.23999999999949,
+      "round": 8,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 108443.29999999702,
+      "seed": 474459578,
+      "t": 40.23999999999932,
+      "round": 8,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 109444.69999999925,
+      "seed": 474459578,
+      "t": 47.959999999999155,
+      "round": 8,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 110447,
+      "seed": 474459578,
+      "t": 55.959999999998985,
+      "round": 8,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 111449.19999999925,
+      "seed": 474459578,
+      "t": 63.959999999998814,
+      "round": 8,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 112451.09999999776,
+      "seed": 474459578,
+      "t": 71.96000000000005,
+      "round": 8,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 113455.29999999702,
+      "seed": 474459578,
+      "t": 79.9600000000013,
+      "round": 8,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 114456.89999999851,
+      "seed": 474459578,
+      "t": 87.84000000000253,
+      "round": 8,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 115458.29999999702,
+      "seed": 474459578,
+      "t": 95.84000000000378,
+      "round": 8,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 116460.39999999851,
+      "seed": 474459578,
+      "t": 103.84000000000503,
+      "round": 8,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 117462.39999999851,
+      "seed": 474459578,
+      "t": 111.84000000000628,
+      "round": 8,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 118465.59999999776,
+      "seed": 474459578,
+      "t": 119.84000000000754,
+      "round": 8,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 119470,
+      "seed": 474459578,
+      "t": 127.84000000000879,
+      "round": 8,
+      "running": true,
+      "outcome": null,
+      "goals": 3,
+      "clearances": 3
+    },
+    {
+      "wall": 120472.29999999702,
+      "seed": 474459578,
+      "t": 134.6400000000075,
+      "round": 8,
+      "running": false,
+      "outcome": "CLEARED_GOAL",
+      "goals": 3,
+      "clearances": 3
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "zip_members_match_workspace": true,
+  "members": 20,
+  "zip_sha256": "8e0e99960e8ee53b62c5373291c91f2c7eeb3d5850000606b8d6cfe092a752b2",
+  "bytes": 256422,
+  "no_3d_dependency_smoke": {
+    "outcomes": {
+      "CLEARED_GOAL": 2,
+      "TIMEOUT": 1
+    },
+    "source": {
+      "kind": "local snapshot",
+      "modules": [
+        "Utils.TeamPolicy.TeamPolicy.decide",
+        "Utils.Navigation.Navigator.choose"
+      ],
+      "sha256": {
+        "tools/soccer2d.py": "1becda51673efc1078c1678c82cf980e5e50c5fa6f0959ad127ca5fc8eb69bd3",
+        "Wenao/controllers/Utils/PolicyProfile.py": "fbfc04690cd449acc11817b5cff9d33faf7ada0af1c9454605e38af6d8ae51e2",
+        "Wenao/controllers/Utils/TeamPolicy.py": "d1164cb0f518f55b6e14dbb7d7818e38a0238ee77956578b418da991670ae84d",
+        "Wenao/controllers/Utils/Navigation.py": "7b6c3fa823abdd223af80dfb26e2e8020d1e30be14c0521ceb4f6fe44947141b",
+        "Wenao/controllers/Utils/CourseSpecs.py": "329cc279f44dc6e3fa19e089319787c2cafd6c33d5118f0be3fb2e6eeb624bf0",
+        "Wenao/controllers/Utils/MatchEngine.py": "d92cab0c4a9618608b503c49014ad53dd03c33b960ef5bfcbf896537ae4b0ed2",
+        "Wenao/controllers/Utils/DefensivePlan.py": "1d10044b06952292f2c04770b366bcb9cea2b39d85dfd5b288280cea16bdc9d6",
+        "Wenao/controllers/Utils/SpawnZones.py": "6cabbdc4885aa120cabebc2debac20a7cc5b65a56b83254212df6ae28422b8ec"
+      }
+    }
+  },
+  "python_38_syntax_parse": true,
+  "native_windows_execution_claimed": false
+}

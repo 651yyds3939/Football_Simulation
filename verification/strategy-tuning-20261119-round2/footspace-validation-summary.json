@@ -1,0 +1,63 @@
+{
+  "footspace-validation-defender-only": {
+    "tuning": {
+      "space_first": 0.2,
+      "challenge_space": true
+    },
+    "runs": 300,
+    "outcomes": {
+      "CLEARED_GOAL": 183,
+      "GOAL": 105,
+      "TIMEOUT": 12
+    },
+    "defender_foot_control_runs": 194,
+    "controlled_retreat_runs": 186,
+    "clearance_completed_runs": 173,
+    "stalls_over_20s": 14,
+    "mean_turn_seconds": 13.802666666666589,
+    "mean_behind_ball_seconds": 12.21200000000009,
+    "mean_duration_seconds": 95.14493333333712,
+    "wall_seconds": 64.67557673000192
+  },
+  "footspace-validation-both": {
+    "tuning": {
+      "space_first": 0.2,
+      "challenge_space": true
+    },
+    "runs": 300,
+    "outcomes": {
+      "CLEARED_GOAL": 148,
+      "GOAL": 128,
+      "TIMEOUT": 24
+    },
+    "defender_foot_control_runs": 194,
+    "controlled_retreat_runs": 179,
+    "clearance_completed_runs": 141,
+    "stalls_over_20s": 10,
+    "mean_turn_seconds": 14.087466666666593,
+    "mean_behind_ball_seconds": 15.854533333333308,
+    "mean_duration_seconds": 97.20386666666991,
+    "wall_seconds": 67.99294744600047
+  },
+  "footspace-validation-attacker-only": {
+    "tuning": {
+      "space_first": 0.2,
+      "challenge_space": true
+    },
+    "runs": 300,
+    "outcomes": {
+      "CLEARED_GOAL": 138,
+      "GOAL": 127,
+      "TIMEOUT": 34,
+      "OUT": 1
+    },
+    "defender_foot_control_runs": 193,
+    "controlled_retreat_runs": 168,
+    "clearance_completed_runs": 135,
+    "stalls_over_20s": 23,
+    "mean_turn_seconds": 14.56813333333326,
+    "mean_behind_ball_seconds": 14.913466666666663,
+    "mean_duration_seconds": 99.35733333333619,
+    "wall_seconds": 70.35469565899984
+  }
+}

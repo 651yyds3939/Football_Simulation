@@ -1,4 +1,4 @@
-"""Live/batch 1v1 adapter around the actual Webots Python policy modules."""
+"""Live/batch 1v1 exercise using the local Python policy modules."""
 from pathlib import Path
 from dataclasses import asdict
 from collections import Counter
@@ -18,45 +18,31 @@ import time
 import webbrowser
 
 HERE = Path(__file__).resolve().parent
-workspace = HERE.parent/'Webots_Robotics_TDP'
-REPOSITORY = (HERE/'backend' if '--bundled' in sys.argv or not (workspace/'tools/soccer2d.py').exists()
-              else workspace)
+REPOSITORY = HERE/'backend'
 sys.path.insert(0, str(REPOSITORY/'tools'))
 from soccer2d import Model, Simulation
 from Utils.PolicyProfile import PolicyProfile
 from Utils.CourseSpecs import BALL_RADIUS
 from Utils.MatchEngine import MatchEngine, MatchConfig
+from Utils.SpawnZones import SpawnZones
 
 NAMES = ('RedForwardA', 'BlueDefender')
 SOURCE_FILES = ['tools/soccer2d.py', 'Wenao/controllers/Utils/PolicyProfile.py',
                 'Wenao/controllers/Utils/TeamPolicy.py', 'Wenao/controllers/Utils/Navigation.py',
                 'Wenao/controllers/Utils/CourseSpecs.py', 'Wenao/controllers/Utils/MatchEngine.py',
-                'Wenao/controllers/Utils/DefensivePlan.py']
+                'Wenao/controllers/Utils/DefensivePlan.py', 'Wenao/controllers/Utils/SpawnZones.py']
 
 
 @lru_cache(maxsize=1)
 def source_info():
-    return {'kind': 'workspace' if REPOSITORY == workspace else 'bundled snapshot',
+    return {'kind': 'local snapshot',
             'modules': ['Utils.TeamPolicy.TeamPolicy.decide', 'Utils.Navigation.Navigator.choose'],
             'sha256': {name: hashlib.sha256((REPOSITORY/name).read_bytes()).hexdigest() for name in SOURCE_FILES}}
 
 
-def starting_layout(seed, scenario):
-    rng = random.Random(seed)
+def starting_layout(seed, scenario, spawn_zones=None):
     if scenario == 'random':
-        x, y = rng.uniform(-1.5, 2.4), rng.uniform(-1.3, 1.3)
-        gap, yaw = rng.uniform(.25, .4), rng.uniform(-.12, .12)
-        dx = min(4.05, x+rng.uniform(.5, 1.7))
-        dy = max(-2.35, min(2.35, y+rng.uniform(-1.4, 1.4)))
-        # Goal-side in x alone is insufficient near the corner: a large
-        # lateral offset can put the defender farther from the actual goal.
-        # Keep the sampled x, reduce only the lateral offset if necessary.
-        goal_distance = min(math.hypot(4.5-x, y), math.hypot(4.5-(x-gap), y-.05))
-        max_y = math.sqrt(max(0, (goal_distance-.05)**2-(4.5-dx)**2))
-        dy = max(-max_y, min(max_y, dy))
-        return {'ball': [x, y, BALL_RADIUS], 'robots': {
-            NAMES[0]: {'position': [x-gap, y-.05, .334], 'yaw': yaw},
-            NAMES[1]: {'position': [dx, dy, .334], 'yaw': math.atan2(y-dy, x-dx)}}}
+        return SpawnZones.parse(spawn_zones).sample(seed, BALL_RADIUS)
     fixtures = {
         'duel': ([-1.8, -.25, .334], [-1.5, -.2, BALL_RADIUS], [.05, -.15, .334]),
         'lane': ([1.1, -.95, .334], [1.42, -.9, BALL_RADIUS], [2.3, 1.1, .334]),
@@ -72,7 +58,7 @@ def starting_layout(seed, scenario):
 
 
 class SharedScene(Simulation):
-    def __init__(self, seed=27, scenario='random', seconds=180, locomotion='guarded', finishing_aim='centre'):
+    def __init__(self, seed=27, scenario='random', seconds=180, locomotion='guarded', finishing_aim='centre', spawn_zones=None):
         self.profile = PolicyProfile(locomotion, finishing_aim, active_names=NAMES)
         super().__init__(seed=seed, candidate='baseline', model=Model(dt=.04, half_seconds=seconds+10, ready_seconds=1),
                          active_names=NAMES, policy_profile=self.profile)
@@ -85,7 +71,8 @@ class SharedScene(Simulation):
         self.engine.restart_team, self.engine.released = 'RED', True
         self.engine.kickoff_restriction = False
         self.engine.initial_kickoff = 'RED'
-        self.initial_setup = starting_layout(seed, scenario)
+        self.spawn_zones = SpawnZones.parse(spawn_zones)
+        self.initial_setup = starting_layout(seed, scenario, self.spawn_zones)
         self.ball = list(self.initial_setup['ball'])
         for name, point in self.initial_setup['robots'].items():
             self.players[name].update(copy.deepcopy(point), standing=True)
@@ -183,21 +170,22 @@ class SharedScene(Simulation):
     def summary(self):
         return {'seed': self.seed, 'scenario': self.scenario, 'seconds': self.time,
                 'outcome': self.outcome, 'score': list(self.engine.score),
-                'stats': self.snapshot()['stats'], 'profile': self.profile.dictionary()}
+                'stats': self.snapshot()['stats'], 'profile': self.profile.dictionary(),
+                'spawn_zones': self.spawn_zones.dictionary()}
 
     def report(self):
         return {**self.summary(), 'initial_setup': self.initial_setup, 'custom_setup': self.custom_setup,
                 'source': source_info(), 'model': asdict(self.model), 'frames': self.frames, 'events': self.events,
-                'limits': ['Same Python policy/navigation and matching policy profile as Webots.',
+                'limits': ['Independent Python policy/navigation revision for the planar exercise.',
                            'Different execution: 2D average-rate discs versus 3D joint motions and safety gates.',
                            'Exact positions and uncalibrated contact/rolling assumptions; no falls or cameras.']}
 
 
-def run_batch(count, seed, scenario, seconds, locomotion, finishing_aim):
+def run_batch(count, seed, scenario, seconds, locomotion, finishing_aim, spawn_zones=None):
     start = time.perf_counter()
     rows = []
     for offset in range(count):
-        scene = SharedScene((seed+offset) % 2**32, scenario, seconds, locomotion, finishing_aim)
+        scene = SharedScene((seed+offset) % 2**32, scenario, seconds, locomotion, finishing_aim, spawn_zones)
         while scene.step():
             pass
         rows.append(scene.summary())
@@ -210,7 +198,8 @@ def run_batch(count, seed, scenario, seconds, locomotion, finishing_aim):
 def envelope(scene):
     return {'state': scene.snapshot(), 'parameters': {**asdict(scene.model), 'ball_radius': BALL_RADIUS},
             'seed': scene.seed, 'scenario': scene.scenario, 'seconds': scene.seconds,
-            'profile': scene.profile.dictionary(), 'source': source_info()}
+            'profile': scene.profile.dictionary(), 'source': source_info(),
+            'spawn_zones': scene.spawn_zones.dictionary()}
 
 
 def replay_html(scene):
@@ -276,8 +265,11 @@ def serve(port, open_browser, initial):
                     seconds = float(data.get('seconds', 180))
                     if not 0 <= seed < 2**32 or not math.isfinite(seconds) or not 5 <= seconds <= 1800:
                         raise ValueError('Invalid seed or duration')
+                    with lock:
+                        current_zones = state[0].spawn_zones
                     new_scene = SharedScene(seed, data.get('scenario', 'random'), seconds,
-                                            data.get('locomotion', 'guarded'), data.get('finishing_aim', 'centre'))
+                                            data.get('locomotion', 'guarded'), data.get('finishing_aim', 'centre'),
+                                            data.get('spawn_zones', current_zones))
                     with lock:
                         state[0] = new_scene
                         result = envelope(new_scene)
@@ -304,7 +296,7 @@ def serve(port, open_browser, initial):
                     with lock:
                         scene = state[0]
                         args = (count, scene.seed, scene.scenario, scene.seconds,
-                                scene.profile.locomotion, scene.profile.finishing_aim)
+                                scene.profile.locomotion, scene.profile.finishing_aim, scene.spawn_zones)
                     result = run_batch(*args)
                 else:
                     return self.send(404, {'error': 'Not found'})
@@ -328,7 +320,7 @@ def serve(port, open_browser, initial):
 def main():
     source_info()  # Record the source version loaded by this process; restart after edits.
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--bundled', action='store_true', help='Use the packaged policy snapshot instead of the adjacent workspace')
+    parser.add_argument('--bundled', action='store_true', help='Compatibility flag; this standalone project always uses its local backend')
     parser.add_argument('--open', action='store_true')
     parser.add_argument('--port', type=int, default=0)
     parser.add_argument('--seed', type=int, default=None)
@@ -336,10 +328,17 @@ def main():
     parser.add_argument('--seconds', type=float, default=180)
     parser.add_argument('--locomotion', choices=('legacy', 'guarded'), default='guarded')
     parser.add_argument('--finishing-aim', choices=('centre', 'nearest'), default='centre')
+    parser.add_argument('--spawn-zones', type=Path, help='Optional JSON file with attacker/defender rectangles')
     parser.add_argument('--batch', type=int)
     parser.add_argument('--output', type=Path)
     args = parser.parse_args()
     seed = args.seed if args.seed is not None else secrets.randbits(32)
+    try:
+        zone_file = args.spawn_zones or HERE/'spawn_zones.json'
+        zones = SpawnZones.parse(json.loads(zone_file.read_text())
+                                 if args.spawn_zones or zone_file.exists() else None)
+    except (ValueError, OSError) as error:
+        parser.error(str(error))
     if not 0 <= seed < 2**32 or not math.isfinite(args.seconds) or not 5 <= args.seconds <= 1800:
         parser.error('Invalid seed or duration')
     if args.batch:
@@ -348,14 +347,16 @@ def main():
         if args.output.exists():
             parser.error('Use a fresh output directory to preserve previous tests')
         args.output.mkdir(parents=True)
-        result = run_batch(args.batch, seed, args.scenario, args.seconds, args.locomotion, args.finishing_aim)
+        result = run_batch(args.batch, seed, args.scenario, args.seconds, args.locomotion, args.finishing_aim, zones)
         (args.output/'metrics.json').write_text(json.dumps(result, indent=2)+'\n', encoding='utf-8')
-        first = SharedScene(seed, args.scenario, args.seconds, args.locomotion, args.finishing_aim)
+        first = SharedScene(seed, args.scenario, args.seconds, args.locomotion, args.finishing_aim, zones)
+        while first.step():
+            pass
         (args.output/'replay.html').write_text(replay_html(first), encoding='utf-8')
         print(json.dumps({k: v for k, v in result.items() if k not in ('runs', 'source')}, indent=2))
         print('Replay: '+str((args.output/'replay.html').resolve()))
     else:
-        serve(args.port, args.open, SharedScene(seed, args.scenario, args.seconds, args.locomotion, args.finishing_aim))
+        serve(args.port, args.open, SharedScene(seed, args.scenario, args.seconds, args.locomotion, args.finishing_aim, zones))
 
 
 if __name__ == '__main__':

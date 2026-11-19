@@ -1,0 +1,41 @@
+{
+  "footspace-clearance-duel": {
+    "tuning": {
+      "space_first": 0.2,
+      "challenge_space": true
+    },
+    "runs": 180,
+    "outcomes": {
+      "CLEARED_GOAL": 96,
+      "GOAL": 72,
+      "TIMEOUT": 12
+    },
+    "defender_foot_control_runs": 123,
+    "controlled_retreat_runs": 116,
+    "clearance_completed_runs": 91,
+    "stalls_over_20s": 8,
+    "mean_turn_seconds": 13.33977777777771,
+    "mean_behind_ball_seconds": 14.747999999999974,
+    "mean_duration_seconds": 98.61511111111486,
+    "wall_seconds": 41.14882919599768
+  },
+  "footspace-clearance": {
+    "tuning": {
+      "space_first": 0.2
+    },
+    "runs": 180,
+    "outcomes": {
+      "CLEARED_GOAL": 94,
+      "GOAL": 76,
+      "TIMEOUT": 10
+    },
+    "defender_foot_control_runs": 123,
+    "controlled_retreat_runs": 113,
+    "clearance_completed_runs": 91,
+    "stalls_over_20s": 9,
+    "mean_turn_seconds": 13.416444444444378,
+    "mean_behind_ball_seconds": 14.98599999999997,
+    "mean_duration_seconds": 98.03866666667047,
+    "wall_seconds": 41.91635901399786
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "summary": {
+    "runs": 1,
+    "outcomes": {
+      "TIMEOUT": 1
+    },
+    "defender_foot_control_runs": 1,
+    "controlled_retreat_runs": 0,
+    "clearance_completed_runs": 0,
+    "stalls_over_20s": 1,
+    "mean_turn_seconds": 39.239999999999625,
+    "mean_behind_ball_seconds": 0.0,
+    "mean_duration_seconds": 179.99999999999847,
+    "wall_seconds": 0.38986320000185515
+  },
+  "runs": [
+    {
+      "seed": 10063,
+      "scenario": "random",
+      "seconds": 179.99999999999847,
+      "outcome": "TIMEOUT",
+      "score": [
+        0,
+        0
+      ],
+      "stats": {
+        "shotAttempts": 0,
+        "shotContacts": 0,
+        "clearAttempts": 0,
+        "clearContacts": 0,
+        "clearancesCompleted": 0
+      },
+      "profile": {
+        "locomotion": "guarded",
+        "finishing_aim": "centre",
+        "support_mode": "baseline",
+        "active_names": [
+          "RedForwardA",
+          "BlueDefender"
+        ]
+      },
+      "spawn_zones": {
+        "attacker": [
+          -1.0,
+          1.0,
+          -1.1,
+          1.1
+        ],
+        "defender": [
+          1.8,
+          3.2,
+          -1.25,
+          1.25
+        ],
+        "goal_side_margin": 0.25
+      },
+      "defender_actions_seconds": {
+        "right20": 16.639999999999823,
+        "walk": 20.03999999999975,
+        "step_right": 119.92000000000755,
+        "step_left": 0.7600000000000001,
+        "left40": 17.879999999999797,
+        "left20": 4.720000000000003
+      },
+      "defender_states_seconds": {
+        "DEFENSIVE_INTERCEPT": 22.91999999999969,
+        "CHALLENGE": 123.60000000000812,
+        "CLEAR": 33.439999999999465
+      },
+      "behind_ball_seconds": 0.0,
+      "close_seconds": 72.64000000000016,
+      "longest_stall_seconds": 64.91999999999895,
+      "first_defender_foot_control": 27.239999999999597,
+      "first_controlled_retreat": null,
+      "clearance_completed": false,
+      "defender_action_transitions": 61
+    }
+  ],
+  "source": {
+    "kind": "local snapshot",
+    "modules": [
+      "Utils.TeamPolicy.TeamPolicy.decide",
+      "Utils.Navigation.Navigator.choose"
+    ],
+    "sha256": {
+      "tools/soccer2d.py": "1becda51673efc1078c1678c82cf980e5e50c5fa6f0959ad127ca5fc8eb69bd3",
+      "Wenao/controllers/Utils/PolicyProfile.py": "fbfc04690cd449acc11817b5cff9d33faf7ada0af1c9454605e38af6d8ae51e2",
+      "Wenao/controllers/Utils/TeamPolicy.py": "83471fde50e45e06e8f7227eaabfae8863c6567f19ccb31e7352d59857f86c2f",
+      "Wenao/controllers/Utils/Navigation.py": "b6dfa7736a08791459fddd3ac64ef3f3154714e09c6d08b5a40f70f9106e22e6",
+      "Wenao/controllers/Utils/CourseSpecs.py": "329cc279f44dc6e3fa19e089319787c2cafd6c33d5118f0be3fb2e6eeb624bf0",
+      "Wenao/controllers/Utils/MatchEngine.py": "d92cab0c4a9618608b503c49014ad53dd03c33b960ef5bfcbf896537ae4b0ed2",
+      "Wenao/controllers/Utils/DefensivePlan.py": "1e0adaf609e185e1642c23f07a74f7d193266782e60cbfbd95c1da6b45c4fcd6",
+      "Wenao/controllers/Utils/SpawnZones.py": "6cabbdc4885aa120cabebc2debac20a7cc5b65a56b83254212df6ae28422b8ec"
+    }
+  },
+  "tuning": {},
+  "limits": "Timeout and OUT are not automatically defensive wins. Controlled retreat requires exclusive active-foot evidence plus 0.5 m retreat; a later attacker goal can still occur."
+}

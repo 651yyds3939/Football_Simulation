@@ -1,0 +1,26 @@
+{
+  "start_utc": "2026-11-19T05:02:02+00:00",
+  "end_utc": "2026-11-19T05:32:23.044546+00:00",
+  "elapsed_seconds": 1821.044546,
+  "paired_final_fixtures": 1000,
+  "all_completed_case_executions_in_saved_json": 12891,
+  "unit_regressions_passed": 16,
+  "spawn_seeds_checked": 5000,
+  "policy_matches_pre_holdout_selection": true,
+  "physics_unchanged": true,
+  "browser_runtime_errors": 0,
+  "continuous_play_rounds": 8,
+  "continuous_play_seconds": 120.405,
+  "offline_five_examples": true,
+  "zip_matches_workspace": true,
+  "cli_replay_contains_complete_first_attempt": true,
+  "experimental_footspace_not_shipped": true,
+  "three_dimensional_project_not_modified": true,
+  "git_commit_or_push_performed": false,
+  "zip_sha256": "8e0e99960e8ee53b62c5373291c91f2c7eeb3d5850000606b8d6cfe092a752b2",
+  "offline_html_sha256": "ab6a03351d46550dcfe8a3b6374f9bb5081882796067d565fb39da8ad672eb8e",
+  "known_regressions": [
+    "Timeout 83 to 87 in held-out 1000; stationary crowded endings within timeout runs 61 to 70.",
+    "Mean behind-ball time 9.94 to 10.27 seconds; no general win-rate improvement established."
+  ]
+}

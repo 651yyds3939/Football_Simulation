@@ -1,0 +1,9 @@
+{
+  "selected_after_validation": true,
+  "choice": "Unified 8-second duel escape and finite-window defensive recovery; no speculative collision retreat or attacker bypass",
+  "sha256": {
+    "DefensivePlan.py": "1d10044b06952292f2c04770b366bcb9cea2b39d85dfd5b288280cea16bdc9d6",
+    "Navigation.py": "7b6c3fa823abdd223af80dfb26e2e8020d1e30be14c0521ceb4f6fe44947141b",
+    "TeamPolicy.py": "d1164cb0f518f55b6e14dbb7d7818e38a0238ee77956578b418da991670ae84d"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "face-ball": {
+    "tuning": {
+      "face_real_ball": true
+    },
+    "runs": 180,
+    "outcomes": {
+      "CLEARED_GOAL": 112,
+      "GOAL": 56,
+      "OUT": 1,
+      "TIMEOUT": 11
+    },
+    "defender_foot_control_runs": 123,
+    "controlled_retreat_runs": 116,
+    "clearance_completed_runs": 111,
+    "stalls_over_20s": 19,
+    "mean_turn_seconds": 15.642222222222118,
+    "mean_behind_ball_seconds": 10.383777777777826,
+    "mean_duration_seconds": 100.00977777778142,
+    "wall_seconds": 40.63712641400343
+  },
+  "loose-turn": {
+    "tuning": {
+      "turn_stop": 18.0
+    },
+    "runs": 180,
+    "outcomes": {
+      "CLEARED_GOAL": 103,
+      "GOAL": 61,
+      "TIMEOUT": 16
+    },
+    "defender_foot_control_runs": 123,
+    "controlled_retreat_runs": 112,
+    "clearance_completed_runs": 106,
+    "stalls_over_20s": 19,
+    "mean_turn_seconds": 17.057777777777655,
+    "mean_behind_ball_seconds": 9.549999999999978,
+    "mean_duration_seconds": 101.1628888888922,
+    "wall_seconds": 42.26477628000066
+  },
+  "tight-turn": {
+    "tuning": {
+      "turn_stop": 5.0
+    },
+    "runs": 180,
+    "outcomes": {
+      "CLEARED_GOAL": 109,
+      "GOAL": 62,
+      "TIMEOUT": 7,
+      "OUT": 2
+    },
+    "defender_foot_control_runs": 123,
+    "controlled_retreat_runs": 114,
+    "clearance_completed_runs": 109,
+    "stalls_over_20s": 10,
+    "mean_turn_seconds": 15.36577777777767,
+    "mean_behind_ball_seconds": 10.105555555555577,
+    "mean_duration_seconds": 95.52622222222568,
+    "wall_seconds": 38.67271542599701
+  },
+  "challenge-near": {
+    "tuning": {
+      "challenge_range": 0.3
+    },
+    "runs": 180,
+    "outcomes": {
+      "CLEARED_GOAL": 111,
+      "GOAL": 56,
+      "TIMEOUT": 13
+    },
+    "defender_foot_control_runs": 122,
+    "controlled_retreat_runs": 116,
+    "clearance_completed_runs": 114,
+    "stalls_over_20s": 19,
+    "mean_turn_seconds": 15.578666666666566,
+    "mean_behind_ball_seconds": 10.27111111111116,
+    "mean_duration_seconds": 100.66933333333692,
+    "wall_seconds": 41.46041461700224
+  },
+  "challenge-far": {
+    "tuning": {
+      "challenge_range": 0.6
+    },
+    "runs": 180,
+    "outcomes": {
+      "CLEARED_GOAL": 100,
+      "GOAL": 69,
+      "OUT": 1,
+      "TIMEOUT": 10
+    },
+    "defender_foot_control_runs": 115,
+    "controlled_retreat_runs": 104,
+    "clearance_completed_runs": 101,
+    "stalls_over_20s": 20,
+    "mean_turn_seconds": 17.007555555555424,
+    "mean_behind_ball_seconds": 11.036888888888841,
+    "mean_duration_seconds": 95.86822222222524,
+    "wall_seconds": 39.52676281500317
+  },
+  "challenge-wide": {
+    "tuning": {
+      "challenge_side": 0.16
+    },
+    "runs": 180,
+    "outcomes": {
+      "CLEARED_GOAL": 107,
+      "GOAL": 56,
+      "TIMEOUT": 17
+    },
+    "defender_foot_control_runs": 123,
+    "controlled_retreat_runs": 117,
+    "clearance_completed_runs": 106,
+    "stalls_over_20s": 14,
+    "mean_turn_seconds": 15.023999999999905,
+    "mean_behind_ball_seconds": 10.344444444444493,
+    "mean_duration_seconds": 100.93488888889254,
+    "wall_seconds": 40.91616823200093
+  },
+  "recover-lead": {
+    "tuning": {
+      "recovery_mode": "lead"
+    },
+    "runs": 180,
+    "outcomes": {
+      "CLEARED_GOAL": 112,
+      "GOAL": 57,
+      "OUT": 1,
+      "TIMEOUT": 10
+    },
+    "defender_foot_control_runs": 123,
+    "controlled_retreat_runs": 116,
+    "clearance_completed_runs": 111,
+    "stalls_over_20s": 19,
+    "mean_turn_seconds": 15.500666666666568,
+    "mean_behind_ball_seconds": 9.510222222222229,
+    "mean_duration_seconds": 99.15111111111476,
+    "wall_seconds": 44.127259707998746
+  },
+  "recover-near": {
+    "tuning": {
+      "recovery_mode": "near"
+    },
+    "runs": 180,
+    "outcomes": {
+      "CLEARED_GOAL": 112,
+      "GOAL": 58,
+      "OUT": 1,
+      "TIMEOUT": 9
+    },
+    "defender_foot_control_runs": 125,
+    "controlled_retreat_runs": 116,
+    "clearance_completed_runs": 111,
+    "stalls_over_20s": 20,
+    "mean_turn_seconds": 15.453777777777681,
+    "mean_behind_ball_seconds": 9.198222222222206,
+    "mean_duration_seconds": 98.82244444444811,
+    "wall_seconds": 40.74039707799966
+  }
+}

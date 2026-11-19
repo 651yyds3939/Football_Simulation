@@ -1,0 +1,62 @@
+{
+  "escape-medium": {
+    "tuning": {
+      "blocked_escape": true,
+      "escape_metres": 0.1
+    },
+    "runs": 180,
+    "outcomes": {
+      "CLEARED_GOAL": 82,
+      "GOAL": 65,
+      "TIMEOUT": 33
+    },
+    "defender_foot_control_runs": 121,
+    "controlled_retreat_runs": 92,
+    "clearance_completed_runs": 75,
+    "stalls_over_20s": 8,
+    "mean_turn_seconds": 15.405111111111001,
+    "mean_behind_ball_seconds": 12.201333333333352,
+    "mean_duration_seconds": 105.2757777777803,
+    "wall_seconds": 45.8383883250026
+  },
+  "escape-short": {
+    "tuning": {
+      "blocked_escape": true,
+      "escape_metres": 0.06
+    },
+    "runs": 180,
+    "outcomes": {
+      "CLEARED_GOAL": 92,
+      "GOAL": 58,
+      "TIMEOUT": 30
+    },
+    "defender_foot_control_runs": 121,
+    "controlled_retreat_runs": 107,
+    "clearance_completed_runs": 88,
+    "stalls_over_20s": 11,
+    "mean_turn_seconds": 16.217555555555432,
+    "mean_behind_ball_seconds": 12.170444444444463,
+    "mean_duration_seconds": 106.9353333333363,
+    "wall_seconds": 46.45276199300133
+  },
+  "escape-large": {
+    "tuning": {
+      "blocked_escape": true,
+      "escape_metres": 0.16
+    },
+    "runs": 180,
+    "outcomes": {
+      "CLEARED_GOAL": 72,
+      "TIMEOUT": 33,
+      "GOAL": 75
+    },
+    "defender_foot_control_runs": 118,
+    "controlled_retreat_runs": 84,
+    "clearance_completed_runs": 65,
+    "stalls_over_20s": 7,
+    "mean_turn_seconds": 16.59044444444431,
+    "mean_behind_ball_seconds": 14.67533333333331,
+    "mean_duration_seconds": 104.27066666666907,
+    "wall_seconds": 45.49152257300011
+  }
+}

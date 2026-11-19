@@ -1,0 +1,78 @@
+{
+  "spawn_and_route_tests": 9,
+  "sampled_spawn_seeds": 5000,
+  "final_matched_runs_per_policy": 1000,
+  "browser_ui": {
+    "default_speed": "8x",
+    "repeat_seed_reproduces_start": true,
+    "editable_bounds": true,
+    "invalid_regions_preserve_previous_scene": true,
+    "random_setup_preserves_bounds_and_goal_side": true,
+    "python_step": true,
+    "pitch_drag_creates_rectangle": true,
+    "near_goal_preset": true,
+    "bilingual_spawn_controls": true,
+    "batch_respects_spawn_regions": {
+      "TIMEOUT": 20
+    },
+    "mobile_no_overflow": true,
+    "exported_replay_runs_offline": true,
+    "runtime_errors": [],
+    "no_external_requests": true
+  },
+  "offline_five_examples": {
+    "offline_autoplay_at_8x": true,
+    "pause": true,
+    "examples": [
+      {
+        "seed": 347,
+        "outcome": "CLEARED_GOAL"
+      },
+      {
+        "seed": 350,
+        "outcome": "GOAL"
+      },
+      {
+        "seed": 363,
+        "outcome": "GOAL"
+      },
+      {
+        "seed": 351,
+        "outcome": "CLEARED_GOAL"
+      },
+      {
+        "seed": 348,
+        "outcome": "TIMEOUT"
+      }
+    ],
+    "recordings_equal_original_frames": true,
+    "seeking_all_five_endings": true,
+    "bilingual": true,
+    "mobile_no_overflow": true,
+    "runtime_errors": [],
+    "no_network_requests": true
+  },
+  "endurance": {
+    "wall_seconds": 120.397,
+    "rounds": 8,
+    "latest": {
+      "wall": 120472.29999999702,
+      "seed": 474459578,
+      "t": 134.6400000000075,
+      "round": 8,
+      "running": false,
+      "outcome": "CLEARED_GOAL",
+      "goals": 3,
+      "clearances": 3
+    },
+    "language_switch_during_play": true,
+    "default_8x": "8",
+    "runtime_errors": []
+  },
+  "package_members": 20,
+  "zip_sha256": "4d9fa11d1a0ab5153ad8e15ce3bc33cd369ba0506de62164e3ef080c585a1e91",
+  "physics_model_unchanged": true,
+  "attacker_attack_logic_unchanged": true,
+  "three_d_modified": false,
+  "committed_or_pushed": false
+}

@@ -1,0 +1,8 @@
+{
+  "selection_basis": "Training seeds347..496 only; favour completed clearance/left-goal outcomes without extra long stalls or timeouts",
+  "candidate": "buffer-large",
+  "plan_seconds": 0.6,
+  "buffer": 0.3,
+  "horizon": 40.0,
+  "physics_changed": false
+}

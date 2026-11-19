@@ -1,12 +1,14 @@
 """Body-frame ball alignment and hysteresis, independent of the robot SDK."""
 import math
 from Utils.TeamPolicy import distance, unit, avoid_obstacles
-from Utils.DefensivePlan import route
+from Utils.DefensivePlan import route, recovery_action
 
 ATTACK = {'INTERCEPT', 'DRIBBLE', 'SHOOT', 'PASS', 'CLEAR', 'RESTART'}
 
 
 def angle_to(own, target, yaw):
+    if distance(own, target) < 1e-8:
+        return 0.
     angle = math.atan2(target[1]-own[1], target[0]-own[0])-yaw
     return math.degrees((angle+math.pi) % (2*math.pi)-math.pi)
 
@@ -55,16 +57,11 @@ class Navigator:
             return 'walk', 'CHALLENGE_EXPOSED_BALL'
         if decision.behaviour == 'RECOVER_DEFENCE':
             self.arrived = self.aligned = False
-            target = avoid_obstacles(own, decision.target, robots)
-            angle = angle_to(own, target, yaw)
-            if abs(angle) <= 60:
-                return 'walk', 'RECOVERY_ADVANCE'
-            if abs(angle) >= 120:
-                return 'back', 'RECOVERY_BACKTRACK'
-            # Align the nearer translation axis, rather than always turning
-            # through 180 degrees to walk forwards after being overtaken.
-            reverse_angle = angle-math.copysign(180, angle)
-            return turn_action(angle if abs(angle) <= 90 else reverse_angle), 'RECOVERY_CHANGE_HEADING'
+            action = recovery_action(own, yaw, decision.target, ball)
+            stage = ('RECOVERY_BACKTRACK' if action == 'back' else 'RECOVERY_ADVANCE' if action == 'walk'
+                     else 'RECOVERY_HOLD_LANE' if action == 'stand'
+                     else 'RECOVERY_SIDE_COVER' if action.startswith('step_') else 'RECOVERY_CHANGE_HEADING')
+            return action, stage
         if decision.behaviour == 'DUEL_ESCAPE':
             self.arrived = self.aligned = False
             dx, dy = decision.target[0]-own[0], decision.target[1]-own[1]

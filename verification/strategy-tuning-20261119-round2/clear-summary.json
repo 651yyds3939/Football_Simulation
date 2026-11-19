@@ -1,0 +1,101 @@
+{
+  "carry-medium": {
+    "tuning": {
+      "pressure_carry": 1.0
+    },
+    "runs": 180,
+    "outcomes": {
+      "CLEARED_GOAL": 113,
+      "GOAL": 56,
+      "OUT": 1,
+      "TIMEOUT": 10
+    },
+    "defender_foot_control_runs": 123,
+    "controlled_retreat_runs": 116,
+    "clearance_completed_runs": 101,
+    "stalls_over_20s": 19,
+    "mean_turn_seconds": 15.589999999999899,
+    "mean_behind_ball_seconds": 10.383777777777826,
+    "mean_duration_seconds": 99.36711111111488,
+    "wall_seconds": 42.12246471199978
+  },
+  "carry-close": {
+    "tuning": {
+      "pressure_carry": 0.65
+    },
+    "runs": 180,
+    "outcomes": {
+      "CLEARED_GOAL": 112,
+      "GOAL": 56,
+      "OUT": 1,
+      "TIMEOUT": 11
+    },
+    "defender_foot_control_runs": 123,
+    "controlled_retreat_runs": 116,
+    "clearance_completed_runs": 111,
+    "stalls_over_20s": 19,
+    "mean_turn_seconds": 15.642222222222118,
+    "mean_behind_ball_seconds": 10.383777777777826,
+    "mean_duration_seconds": 100.00977777778142,
+    "wall_seconds": 43.928718330000265
+  },
+  "carry-open": {
+    "tuning": {
+      "pressure_carry": 2.0
+    },
+    "runs": 180,
+    "outcomes": {
+      "CLEARED_GOAL": 113,
+      "GOAL": 56,
+      "OUT": 1,
+      "TIMEOUT": 10
+    },
+    "defender_foot_control_runs": 123,
+    "controlled_retreat_runs": 116,
+    "clearance_completed_runs": 91,
+    "stalls_over_20s": 19,
+    "mean_turn_seconds": 15.59444444444434,
+    "mean_behind_ball_seconds": 10.383777777777826,
+    "mean_duration_seconds": 98.80488888889272,
+    "wall_seconds": 41.21433232799973
+  },
+  "hold-eight": {
+    "tuning": {
+      "duel_hold": 8.0
+    },
+    "runs": 180,
+    "outcomes": {
+      "CLEARED_GOAL": 113,
+      "GOAL": 56,
+      "TIMEOUT": 11
+    },
+    "defender_foot_control_runs": 123,
+    "controlled_retreat_runs": 116,
+    "clearance_completed_runs": 112,
+    "stalls_over_20s": 9,
+    "mean_turn_seconds": 15.733999999999895,
+    "mean_behind_ball_seconds": 10.36888888888894,
+    "mean_duration_seconds": 99.40066666667036,
+    "wall_seconds": 41.59039243799998
+  },
+  "hold-twenty": {
+    "tuning": {
+      "duel_hold": 20.0
+    },
+    "runs": 180,
+    "outcomes": {
+      "CLEARED_GOAL": 112,
+      "GOAL": 56,
+      "OUT": 1,
+      "TIMEOUT": 11
+    },
+    "defender_foot_control_runs": 123,
+    "controlled_retreat_runs": 116,
+    "clearance_completed_runs": 111,
+    "stalls_over_20s": 15,
+    "mean_turn_seconds": 15.679111111111009,
+    "mean_behind_ball_seconds": 10.383777777777826,
+    "mean_duration_seconds": 100.08088888889252,
+    "wall_seconds": 47.377880266998545
+  }
+}
