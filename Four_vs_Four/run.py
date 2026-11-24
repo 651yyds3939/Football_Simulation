@@ -19,18 +19,28 @@ from Utils import CourseSpecs as specs
 def source_hashes():
  return {str(p.relative_to(HERE)):hashlib.sha256(p.read_bytes()).hexdigest() for p in HERE.rglob('*.py') if '__pycache__' not in str(p) and 'runs' not in p.relative_to(HERE).parts}
 
-def create_match(seed,red='coordinated',blue='coordinated',model=None):
- s=Simulation(seed,'RED','baseline',model or Model())
- for name in s.names:
-  selected=red if name.startswith('Red') else blue
-  if selected in ('coordinated','relay','passing'):
-   s.policies[name]=PassingPolicy(name,goal_depth=.3,model=s.model)
-   if selected in ('coordinated','relay'):s.contest_players.add(name)
-   if selected=='coordinated' and name.endswith('Goalkeeper'):s.goal_cover.defend.add(name)
-  elif selected=='reference':s.policies[name]=TacticalPolicy(name,goal_depth=.3)
-  elif selected=='previous':s.policies[name]=PreviousPolicy(name,goal_depth=.3)
- s.install_team_navigators()
- return s
+POLICIES = ("baseline", "previous", "reference", "passing", "relay", "coordinated", "flow")
+
+
+def create_match(seed, red="flow", blue="flow", model=None):
+    s = Simulation(seed, "RED", "baseline", model or Model())
+    s.flow.enabled = {team for team, policy in (("Red", red), ("Blue", blue)) if policy == "flow"}
+    s.reset_on_goal = s.clip_body_contacts = bool(s.flow.enabled)
+    for name in s.names:
+        selected = red if name.startswith("Red") else blue
+        if selected in ("flow", "coordinated", "relay", "passing"):
+            s.policies[name] = PassingPolicy(name, goal_depth=0.3, model=s.model)
+            if selected in ("coordinated", "relay"):
+                s.contest_players.add(name)
+            if selected == "coordinated" and name.endswith("Goalkeeper"):
+                s.goal_cover.defend.add(name)
+        elif selected == "reference":
+            s.policies[name] = TacticalPolicy(name, goal_depth=0.3)
+        elif selected == "previous":
+            s.policies[name] = PreviousPolicy(name, goal_depth=0.3)
+    s.install_team_navigators()
+    return s
+
 
 def play(seed,red,blue,model,record=False):
  s=create_match(seed,red,blue,model);frames=[]
@@ -47,11 +57,13 @@ def play(seed,red,blue,model,record=False):
  result=s.run(observer=observe);result['policies']={'RED':red,'BLUE':blue}
  result['directed_passes']=report.summary()
  geometry={name:getattr(specs,name) for name in ('PITCH_LENGTH','PITCH_WIDTH','GOAL_WIDTH','GOAL_HEIGHT','GOAL_DEPTH','GOAL_AREA_LENGTH','GOAL_AREA_WIDTH','PENALTY_AREA_LENGTH','PENALTY_AREA_WIDTH','PENALTY_MARK_DISTANCE','CENTRE_CIRCLE_DIAMETER','BORDER_WIDTH','LINE_WIDTH','BALL_RADIUS')}
- scene={'schema':2,'seed':seed,'candidate':'coordinated' if red==blue=='coordinated' else 'baseline' if red==blue=='baseline' else 'coordinated','candidateTeam':'BOTH' if red==blue=='coordinated' else 'RED' if red=='coordinated' else 'BLUE','policies':result['policies'],'names':list(ROBOT_NAMES),'geometry':geometry,'model':asdict(model),'frames':frames,'events':s.events,'result':result,'source_sha256':source_hashes()}
+ candidate = 'flow' if 'flow' in (red, blue) else 'baseline' if red == blue == 'baseline' else 'coordinated'
+ candidate_team = 'BOTH' if red == blue else 'RED' if red == candidate else 'BLUE'
+ scene={'schema':2,'seed':seed,'candidate':candidate,'candidateTeam':candidate_team,'policies':result['policies'],'names':list(ROBOT_NAMES),'geometry':geometry,'model':asdict(model),'frames':frames,'events':s.events,'result':result,'source_sha256':source_hashes()}
  return result,scene
 
 def main():
- p=argparse.ArgumentParser(description=__doc__);p.add_argument('--seed',type=int,default=27);p.add_argument('--red-policy',choices=['baseline','previous','reference','passing','relay','coordinated'],default='coordinated');p.add_argument('--blue-policy',choices=['baseline','previous','reference','passing','relay','coordinated'],default='coordinated');p.add_argument('--half-seconds',type=float,default=300);p.add_argument('--ready-seconds',type=float,default=10);p.add_argument('--dt',type=float,default=.2);p.add_argument('--batch',type=int,default=1);p.add_argument('--language',choices=['en','zh'],default='en');p.add_argument('--no-replay',action='store_true');p.add_argument('--output',type=Path);p.add_argument('--open',action='store_true');a=p.parse_args()
+ p=argparse.ArgumentParser(description=__doc__);p.add_argument('--seed',type=int,default=27);p.add_argument('--red-policy',choices=POLICIES,default='flow');p.add_argument('--blue-policy',choices=POLICIES,default='flow');p.add_argument('--half-seconds',type=float,default=300);p.add_argument('--ready-seconds',type=float,default=10);p.add_argument('--dt',type=float,default=.2);p.add_argument('--batch',type=int,default=1);p.add_argument('--language',choices=['en','zh'],default='en');p.add_argument('--no-replay',action='store_true');p.add_argument('--output',type=Path);p.add_argument('--open',action='store_true');a=p.parse_args()
  if a.batch<1:p.error('--batch must be positive')
  try:model=Model(dt=a.dt,half_seconds=a.half_seconds,ready_seconds=a.ready_seconds)
  except ValueError as e:p.error(str(e))

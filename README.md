@@ -10,11 +10,11 @@
 
 [Football_1v1_Demo.mp4](Football_1v1_Demo.mp4) 和 `TDP-2026-11-12_16.21.10.mkv` 是历史演示视频，未随本轮策略修改重新录制。
 
-## 2D 四对四：接应与短传（2026-11-19）
+## 2D 四对四（2026-11-24）
 
-双击 [Football_4v4_Demo.html](Football_4v4_Demo.html) 看英文回放，[中文回放](Football_4v4_Demo_ZH.html)。默认32倍，最高128倍；目标虚线显示真实决策目标。展示例中蓝队使用新配合策略、红队使用上一轮策略，包含指定队友接球。
+双击 [中文回放](Football_4v4_Demo_ZH.html) 或 [英文回放](Football_4v4_Demo.html)。演示使用新版策略，包含指定队友接球、绕过防守、门将挡球和进球后复位。默认 32 倍，最高 128 倍。可拖动时间轴，点击球员查看当前动作。
 
-重新计算：`python Four_vs_Four/run.py --open`，或Windows双击 [启动文件](Four_vs_Four/start_windows.bat)。[使用说明](Four_vs_Four/README.md) · [独立运行包](Football_4v4.zip)。
+重新计算可运行 `python3 Four_vs_Four/run.py --language zh --open`，或在 Windows 双击 [启动文件](Four_vs_Four/start_windows.bat)。[使用说明](Four_vs_Four/README.md) · [独立运行包](Football_4v4.zip)。
 
 本轮增加可达接应点搜索、局部让位和保守短传。最终版本60场对照22胜22负16平，出现6次带脚下接触的短传，整体胜率没有明显提升，拥堵仍会出现。[完整结果及限制](docs/FOUR_V_FOUR_TEAMWORK_2026-11-19.md)；[上一轮记录](docs/FOUR_V_FOUR_TUNING_2026-11-19.md)。一攻一防和三维工程保持原样。
 

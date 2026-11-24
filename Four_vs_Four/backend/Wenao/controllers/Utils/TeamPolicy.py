@@ -34,6 +34,7 @@ class Decision:
     receiver: str = ""
     receive_stance: tuple = ()
     receive_heading: float = 0.
+    kick_distance: float = 0.
 
 
 class TeamPolicy:

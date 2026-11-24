@@ -7,6 +7,8 @@ from dataclasses import dataclass, asdict
 from collections import Counter
 import math
 from pathlib import Path
+
+from contact_motion import foot_entry, stop_conflicting_moves
 import random
 import sys
 
@@ -15,6 +17,7 @@ sys.path.insert(0, str(ROOT / "Wenao/controllers"))
 from Utils.CourseSpecs import BALL_RADIUS
 from Utils.MatchEngine import MatchConfig, MatchEngine
 from Utils.Navigation import Navigator
+from Utils.PlanarMotion import PlanarMotion
 from Utils.ProcessSupervisor import ROBOT_NAMES
 from Utils.TeamPolicy import TeamPolicy, distance
 
@@ -39,6 +42,17 @@ class Model:
     shot_seconds: float = 4.8
     pass_seconds: float = 3.299
     kick_noise_radians: float = .04
+    planar_pass_range: float = 1.65
+    planar_shot_range: float = 2.47
+    planar_turn_rate: float = .23
+    planar_side_speed: float = .049
+    planar_tap_seconds: float = .44
+    planar_tap_range: float = .48
+    planar_touch_pass_range: float = 1.48
+    planar_shot_seconds: float = 1.55
+    planar_pass_seconds: float = 1.45
+    planar_snap_range: float = 1.89
+    planar_snap_seconds: float = .68
 
     def __post_init__(self):
         values = asdict(self)
@@ -99,6 +113,9 @@ class Simulation:
         self.previous_foot_contact = None
         self.previous_foot_contact_time = None
         self.prepared = set()
+        self.reset_on_goal = False
+        self.clip_body_contacts = False
+        self.active_receiver = None
         self._place_formation(jitter=True)
 
     def _place_formation(self, jitter=False):
@@ -114,6 +131,16 @@ class Simulation:
             player.update(position=[x, y, .334], yaw=0 if direction == 1 else math.pi)
             self.navigators[name] = Navigator()
         self.kicking.clear()
+
+    def _reset_after_goal(self):
+        self._place_formation()
+        self.ball = list(self.engine.restart_point)
+        self.velocity = [0., 0., 0.]
+        self.touch = self.previous_contact = None
+        self.previous_foot_contact = self.previous_foot_contact_time = None
+        self.pass_intent = self.pending_pass = None
+        self._event("goal_formation", team=self.engine.restart_team)
+        self._event("place_ball", point=list(self.ball))
 
     def observation(self):
         world = {"version": 2, "time": self.time, "match": self.engine.snapshot(),
@@ -157,25 +184,47 @@ class Simulation:
         front = dx*math.cos(player["yaw"])+dy*math.sin(player["yaw"])
         lateral = -dx*math.sin(player["yaw"])+dy*math.cos(player["yaw"])
         team = self.policies[name].team
+        tap = decision.kick == "tap"
+        on_foot = (.075 <= front <= .32 and abs(lateral) <= .148 if tap
+                   else .10 <= front <= .30 and abs(lateral-.05) <= .08)
         # A modelled foot contact must still exist at completion; do not kick a
         # ball that an opponent has already moved away during the wind-up.
-        if not (.10 <= front <= .30 and abs(lateral-.05) <= .08):
+        if not on_foot:
             self.stats[team]["kick_misses"] += 1
-            if (decision.behaviour in ("COORDINATED_PASS", "LEAD_PASS") and self.pass_intent
+            if (decision.behaviour in ("COORDINATED_PASS", "LEAD_PASS", "OUTLET_PASS", "TOUCH_PASS") and self.pass_intent
                     and self.pass_intent.get("sender") == name):
                 self.pass_intent = None
                 self._event("pass_cancelled", robot=name, reason="lost_foot_contact")
             return
-        desired_range = self.model.shot_range if decision.kick == "shoot" else self.model.pass_range
+        heading = player["yaw"]
+        if tap:
+            aim = math.atan2(decision.face[1]-self.ball[1],decision.face[0]-self.ball[0])
+            change = wrap(aim - heading)
+            if abs(change) > math.radians(107):
+                self.stats[team]["kick_misses"] += 1
+                return
+            heading += change
+            if decision.receiver:
+                maximum = self.model.planar_touch_pass_range
+            elif decision.behaviour == "SNAP_SHOT":
+                maximum = self.model.planar_snap_range
+            else:
+                maximum = self.model.planar_tap_range
+            desired_range = min(decision.kick_distance, maximum) or maximum
+        elif decision.kick == "shoot":
+            desired_range = min(decision.kick_distance, self.model.planar_shot_range) or self.model.shot_range
+        else:
+            desired_range = min(decision.kick_distance, self.model.planar_pass_range) or self.model.pass_range
         speed = math.sqrt(2*self.model.rolling_deceleration*desired_range)
-        angle = player["yaw"]+self.noise[name].gauss(0, self.model.kick_noise_radians)
+        angle = heading+self.noise[name].gauss(0, self.model.kick_noise_radians)
         self.velocity = [speed*math.cos(angle), speed*math.sin(angle), 0.]
         self._contact(name, 'kick')
         self.stats[team]["kick_contacts"] += 1
-        self._event("kick_contact", robot=name, action=decision.kick)
+        kick_event = {"technique": decision.behaviour} if tap else {}
+        self._event("kick_contact", robot=name, action=decision.kick, **kick_event)
         if decision.receiver:
             self.pending_pass = {"sender": name, "receiver": decision.receiver, "expires": self.time+24}
-            self.pass_intent = {**self.pending_pass, "kind": "pass_intent", "coordinated": decision.behaviour in ("COORDINATED_PASS", "LEAD_PASS"), "stage": "released"}
+            self.pass_intent = {**self.pending_pass, "kind": "pass_intent", "coordinated": decision.behaviour in ("COORDINATED_PASS", "LEAD_PASS", "OUTLET_PASS", "TOUCH_PASS"), "stage": "released"}
             if decision.receive_stance:
                 self.pending_pass["expires"] = self.time + 8.
                 self.pass_intent.update(expires=self.pending_pass["expires"], landing=decision.face,
@@ -248,6 +297,16 @@ class Simulation:
                 if 0 <= fraction <= 1:
                     hits.append((fraction, name))
             fraction, name = min(hits) if hits else (1, None)
+            receiver = self.active_receiver
+            if self.pending_pass and receiver == self.pending_pass["receiver"]:
+                player = self.players[receiver]
+                entry = foot_entry(self.ball, (dx, dy), player["position"], player["yaw"])
+                if entry is not None and entry <= fraction:
+                    self.ball[0] += dx * entry
+                    self.ball[1] += dy * entry
+                    self.velocity = [0., 0., 0.]
+                    self._contact(receiver, 'foot_trap')
+                    break
             self.ball[0] += dx*fraction
             self.ball[1] += dy*fraction
             if name is None:
@@ -260,7 +319,12 @@ class Simulation:
             # Assumed inelastic reflection, not calibrated NAO/body contact.
             self.velocity[0] = .35*(self.velocity[0]-2*inward*nx)
             self.velocity[1] = .35*(self.velocity[1]-2*inward*ny)
+            decision = self.current_decisions.get(name)
+            fresh_block = (self.clip_body_contacts and name != self.previous_contact and decision
+                           and decision.behaviour == "KEEPER_SHOT")
             self._contact(name)
+            if fresh_block:
+                self._event("goalkeeper_block", robot=name)
             inward_travel = dx*nx+dy*ny
             dx, dy = (.35*(1-fraction)*(dx-2*inward_travel*nx),
                       .35*(1-fraction)*(dy-2*inward_travel*ny))
@@ -285,6 +349,8 @@ class Simulation:
                 self.previous_foot_contact = self.previous_foot_contact_time = None
                 self.pass_intent = self.pending_pass = None
                 self.kicking.clear()
+        if self.reset_on_goal and any(event["event"] == "goal" for event in referee_events):
+            self._reset_after_goal()
         if self._stop_after_referee(referee_events):
             return False
         if self.engine.phase == "READY" and self.engine.half not in self.prepared:
@@ -298,10 +364,16 @@ class Simulation:
         world = self.observation()
         decisions = self.decide_all(world)
         self.current_decisions = decisions
+        self.active_receiver = None
+        if self.pending_pass:
+            receiver = self.pending_pass["receiver"]
+            if receiver in decisions and decisions[receiver].behaviour == "FLOW_RECEIVE":
+                self.active_receiver = receiver
         proposed = {}
-        actions = {}
+        pushing = set()
         for name, player in self.players.items():
             decision = decisions[name]
+            drive = None
             team = self.policies[name].team
             if self.engine.phase == "PLAYING":
                 self.stats[team]["playing_player_seconds"] += dt
@@ -338,17 +410,31 @@ class Simulation:
             elif decision.behaviour in ("WAIT", "PENALIZED"):
                 action = "stand"
             else:
-                action, stage = self.navigators[name].choose(decision, player["position"], player["yaw"],
+                command, stage = self.navigators[name].choose(decision, player["position"], player["yaw"],
                     self.ball, [p["position"] for n, p in self.players.items() if n != name])
                 self.navigation_stages[name] = stage
-                if action in ("shoot", "pass"):
-                    seconds = self.model.shot_seconds if action == "shoot" else self.model.pass_seconds
+                drive = command if isinstance(command, PlanarMotion) else None
+                action = drive.label if drive else command
+                if action in ("shoot", "pass", "tap"):
+                    durations = {"shoot": self.model.shot_seconds, "pass": self.model.pass_seconds,
+                                 "tap": self.model.planar_tap_seconds}
+                    if decision.behaviour == "FINISH_OPEN":
+                        seconds = self.model.planar_shot_seconds
+                    elif decision.behaviour == "SNAP_SHOT":
+                        seconds = self.model.planar_snap_seconds
+                    elif decision.behaviour == "OUTLET_PASS":
+                        seconds = self.model.planar_pass_seconds
+                    else:
+                        seconds = durations[action]
                     self.kicking[name] = (self.time+seconds, decision)
-                    self.stats[team]["shot_attempts" if action == "shoot" else "pass_attempts"] += 1
-                    self._event("kick_start", robot=name, action=action, receiver=decision.receiver)
+                    counter = {"shoot": "shot_attempts", "pass": "pass_attempts", "tap": "tap_attempts"}
+                    category = "shot_attempts" if decision.behaviour == "SNAP_SHOT" else counter[action]
+                    self.stats[team][category] += 1
+                    kick_event = {"technique": decision.behaviour} if action == "tap" else {}
+                    self._event("kick_start", robot=name, action=action, receiver=decision.receiver, **kick_event)
                     if decision.receiver:
                         self.pass_intent = {"kind": "pass_intent", "sender": name,
-                                            "receiver": decision.receiver, "expires": self.time+24, "coordinated": decision.behaviour in ("COORDINATED_PASS", "LEAD_PASS"), "stage": "preparing"}
+                                            "receiver": decision.receiver, "expires": self.time+24, "coordinated": decision.behaviour in ("COORDINATED_PASS", "LEAD_PASS", "OUTLET_PASS", "TOUCH_PASS"), "stage": "preparing"}
                         if decision.receive_stance:
                             self.pass_intent.update(landing=decision.face, stance=decision.receive_stance,
                                                     heading=decision.receive_heading)
@@ -361,34 +447,49 @@ class Simulation:
                 player["yaw"] = wrap(player["yaw"]+rate*dt)
             forward = self.model.walk_speed if action == "walk" else -self.model.back_speed if action == "back" else 0
             left = self.model.left_speed if action == "step_left" else -self.model.right_speed if action == "step_right" else 0
+            if drive:
+                player["yaw"] = wrap(player["yaw"] + drive.angular * dt)
+                forward = drive.forward
+                left = drive.lateral
+            if forward >= self.model.walk_speed * .60:
+                pushing.add(name)
             c, s = math.cos(player["yaw"]), math.sin(player["yaw"])
             x, y = player["position"][:2]
             proposed[name] = [max(-4.4, min(4.4, x+(forward*c-left*s)*dt)),
                               max(-2.9, min(2.9, y+(forward*s+left*c)*dt)), .334]
-            actions[name] = action
-        # Simultaneous, symmetric disc exclusion; no stochastic 'fall success'
-        # is invented, and neither player's motion has loop-order priority.
-        for _ in range(3):
-            offsets = {n: [0., 0.] for n in proposed}
-            for i, a in enumerate(self.names):
-                for b in self.names[i+1:]:
-                    sep = distance(proposed[a], proposed[b])
-                    overlap = 2*self.model.robot_radius-sep
-                    if overlap > 0:
-                        if self.engine.phase == "PLAYING" and _ == 0:
-                            self.stats[self.policies[a].team]["disc_overlap_player_seconds"] += dt
-                            self.stats[self.policies[b].team]["disc_overlap_player_seconds"] += dt
-                        ux, uy = ((proposed[a][0]-proposed[b][0])/sep,
-                                  (proposed[a][1]-proposed[b][1])/sep) if sep > 1e-9 else (1., 0.)
-                        for n, sign in ((a, 1), (b, -1)):
-                            offsets[n][0] += sign*ux*overlap*.5
-                            offsets[n][1] += sign*uy*overlap*.5
-            for n in proposed:
-                proposed[n][0] = max(-4.4, min(4.4, proposed[n][0]+offsets[n][0]))
-                proposed[n][1] = max(-2.9, min(2.9, proposed[n][1]+offsets[n][1]))
-                if self.engine.phase == "PLAYING":
-                    proposed[n] = self._limit_body_motion_at_ball(
-                        self.players[n]["position"], proposed[n], self.players[n]["yaw"])
+        if self.clip_body_contacts:
+            if self.engine.phase == "PLAYING":
+                for name, point in proposed.items():
+                    player = self.players[name]
+                    proposed[name] = self._limit_body_motion_at_ball(player["position"], point, player["yaw"])
+            blocked = stop_conflicting_moves(self.names, self.players, proposed, 2 * self.model.robot_radius)
+            if self.engine.phase == "PLAYING":
+                for name in blocked:
+                    self.stats[self.policies[name].team]["body_blocked_seconds"] += dt
+        else:
+            # Simultaneous, symmetric disc exclusion; no stochastic 'fall success'
+            # is invented, and neither player's motion has loop-order priority.
+            for _ in range(3):
+                offsets = {n: [0., 0.] for n in proposed}
+                for i, a in enumerate(self.names):
+                    for b in self.names[i+1:]:
+                        sep = distance(proposed[a], proposed[b])
+                        overlap = 2*self.model.robot_radius-sep
+                        if overlap > 0:
+                            if self.engine.phase == "PLAYING" and _ == 0:
+                                self.stats[self.policies[a].team]["disc_overlap_player_seconds"] += dt
+                                self.stats[self.policies[b].team]["disc_overlap_player_seconds"] += dt
+                            ux, uy = ((proposed[a][0]-proposed[b][0])/sep,
+                                      (proposed[a][1]-proposed[b][1])/sep) if sep > 1e-9 else (1., 0.)
+                            for n, sign in ((a, 1), (b, -1)):
+                                offsets[n][0] += sign*ux*overlap*.5
+                                offsets[n][1] += sign*uy*overlap*.5
+                for n in proposed:
+                    proposed[n][0] = max(-4.4, min(4.4, proposed[n][0]+offsets[n][0]))
+                    proposed[n][1] = max(-2.9, min(2.9, proposed[n][1]+offsets[n][1]))
+                    if self.engine.phase == "PLAYING":
+                        proposed[n] = self._limit_body_motion_at_ball(
+                            self.players[n]["position"], proposed[n], self.players[n]["yaw"])
         for name, point in proposed.items():
             self.players[name]["position"] = point
         if self.engine.phase == "PLAYING":
@@ -399,7 +500,7 @@ class Simulation:
                 dx, dy = self.ball[0]-p["position"][0], self.ball[1]-p["position"][1]
                 front = dx*math.cos(p["yaw"])+dy*math.sin(p["yaw"])
                 left = -dx*math.sin(p["yaw"])+dy*math.cos(p["yaw"])
-                if .08 < front < .28 and abs(left) < .12 and actions[n] == "walk":
+                if .08 < front < .28 and abs(left) < .12 and n in pushing:
                     contacts.append(n)
             if contacts and math.hypot(*self.velocity[:2]) < self.model.walk_speed*1.5:
                 speed = self.model.walk_speed+self.model.rolling_deceleration*dt*.5
@@ -444,6 +545,6 @@ class Simulation:
                 "limitations": ["Kinematic discs and contact impulses; no NAO balance or joint dynamics.",
                     "Perfect ground-truth state; no independent camera localisation.",
                     "Ball friction, noise and contact are uncalibrated model assumptions.",
-                    "Formation placement at each half is a declared fixture.",
+                    "Kickoff formation placement is a 2D replay convention.",
                     "Uses current referee geometry, but not complete physical-foul rules.",
                     "An abstract pass completion is not a validated Webots pass."]}
