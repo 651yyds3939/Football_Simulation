@@ -2,7 +2,7 @@
 
 ## 直接看
 
-双击 `demo.html`，用 Chrome 或 Edge 打开即可。无需 Python、Webots 或联网。这是完整比赛的离线回放：蓝队使用本轮配合策略，红队使用上一轮策略，示例包含一次指定队友接球。
+双击 `demo.html`，用 Chrome 或 Edge 打开即可。无需 Python、Webots 或联网。这是 11 月 19 日保留的完整比赛回放，示例包含一次指定队友接球。新版配合可用下方命令重新计算。
 
 默认32倍，可选最高128倍；支持暂停、拖动进度、逐帧查看和点击球员。“Team targets / 球队目标点”虚线显示实际决策目标，可以关闭。目标点不是走过的轨迹，也不代表已完成传球。
 
@@ -21,18 +21,29 @@
 ```sh
 python run.py --open
 python run.py --seed 28 --language zh --open
-python run.py --red-policy coordinated --blue-policy previous --seed 222000 --open
-python run.py --red-policy coordinated --blue-policy previous --seed 222000 --batch 20 --no-replay
+python run.py --red-policy reference --blue-policy coordinated --seed 256058 --language zh --open
+python run.py --red-policy coordinated --blue-policy reference --seed 246000 --batch 20 --no-replay
 ```
 
-- `coordinated`：本轮接应、让位和保守短传策略，默认双方均使用。
-- `previous`：上一轮策略，供对照。
+- `coordinated` 使用新版接应、短传落点与接球后推进，默认双方均使用。
+- `reference` 使用 11 月 19 日配合版本。
+- `previous` 使用更早的配合版本。
 - `baseline`：基础TeamPolicy策略。
 - `--batch 20 --no-replay`：全速批量计算20个种子，不渲染。
 
 结果自动保存在新建的 `runs/match_时间/` 中：`metrics.json` 为比分和源码哈希，`replay.html` 为回放，`scene.json` 为轨迹。批量模式只给第一场生成回放；`--no-replay` 不记录轨迹。修改代码后需要重新生成，旧HTML不会自动更新。
 
-## 这次改了什么
+## 11 月 23 日更新
+
+`Passing.py` 根据球的滚动距离、球员朝向、到达时间及对手位置，选择短传落点和接应位置。球员在出球前调整朝向。若球只差一点才进入脚下范围，接球球员会小幅前移或侧移，接到球后再推进。后卫在中场有空间时可以带球，受到压力时继续执行原有防守与解围。回放在传球准备阶段标出预定落点，事件列表区分身体碰球与脚下接球。
+
+`metrics.json` 的 `directed_passes` 保存每场传球尝试、两类接触、接球朝向误差与后续推进距离。接球后的推进按朝对方球门的纵向距离计算，最多观察 15 秒，球权变化或裁判重新放球时结束。`directed_pass_totals` 汇总本批次，`scene.json` 保存实际事件和轨迹。
+
+新版在 150 个新种子交换红蓝后的 300 场对照中为 121 胜、83 负、96 平。新版有 45 次指定队友脚下接球，对照有 18 次。新版有 8 次接球后向球门推进至少 0.25 米，对照为 0 次。球员身体重叠时间仍接近。种子 256058 的回放中，蓝方在仿真 6:13.4 接球后推进约 0.72 米。
+
+将步长改为 0.04 秒后，在另外 65 个种子的 130 场对照中，新版为 46 胜、43 负、41 平。指定队友脚下接球 12 次，对照为 2 次。
+
+## 11 月 19 日配合记录
 
 无球队员根据到达时间、对手距离和线路寻找接应点，短暂保持目标，进入争球区时局部让位。补位可以使用原有的倒退、侧移等动作，减少不必要的大转身。短传只在附近队友朝向合适、线路清楚且压力允许时触发；接球队员先准备，实际踢到球后再接近，踢空则取消等待。
 

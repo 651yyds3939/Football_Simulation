@@ -32,6 +32,8 @@ class Decision:
     face: tuple
     kick: str = ""
     receiver: str = ""
+    receive_stance: tuple = ()
+    receive_heading: float = 0.
 
 
 class TeamPolicy:

@@ -117,7 +117,7 @@ class Simulation:
     def observation(self):
         world = {"version": 2, "time": self.time, "match": self.engine.snapshot(),
                  "ball": {"position": list(self.ball), "velocity": list(self.velocity)},
-                 "robots": self.players, "penalties": {}}
+                 "robots": self.players, "penalties": {}, "last_foot_contact": self.previous_foot_contact}
         if self.pass_intent and self.pass_intent["expires"] > self.time:
             world["pass_intent"] = self.pass_intent
         return world
@@ -140,7 +140,9 @@ class Simulation:
             same_team = self.policies[name].team == self.policies[sender].team
             outcome = "completed_passes" if completed else "misdirected_passes" if same_team else "intercepted_passes"
             self.stats[self.policies[sender].team][outcome] += 1
-            self._event("pass_result", sender=sender, receiver=name, completed=completed)
+            self._event("pass_result", sender=sender, receiver=name, completed=completed,
+                        intended_receiver=self.pending_pass["receiver"],
+                        contact_source=source, point=list(self.ball[:2]))
             self.pending_pass = None
             self.pass_intent = None
 
@@ -155,7 +157,7 @@ class Simulation:
         # ball that an opponent has already moved away during the wind-up.
         if not (.10 <= front <= .30 and abs(lateral-.05) <= .08):
             self.stats[team]["kick_misses"] += 1
-            if (decision.behaviour == "COORDINATED_PASS" and self.pass_intent
+            if (decision.behaviour in ("COORDINATED_PASS", "LEAD_PASS") and self.pass_intent
                     and self.pass_intent.get("sender") == name):
                 self.pass_intent = None
                 self._event("pass_cancelled", robot=name, reason="lost_foot_contact")
@@ -169,7 +171,11 @@ class Simulation:
         self._event("kick_contact", robot=name, action=decision.kick)
         if decision.receiver:
             self.pending_pass = {"sender": name, "receiver": decision.receiver, "expires": self.time+24}
-            self.pass_intent = {**self.pending_pass, "kind": "pass_intent", "coordinated": decision.behaviour=="COORDINATED_PASS", "stage": "released"}
+            self.pass_intent = {**self.pending_pass, "kind": "pass_intent", "coordinated": decision.behaviour in ("COORDINATED_PASS", "LEAD_PASS"), "stage": "released"}
+            if decision.receive_stance:
+                self.pending_pass["expires"] = self.time + 8.
+                self.pass_intent.update(expires=self.pending_pass["expires"], landing=decision.face,
+                                        stance=decision.receive_stance, heading=decision.receive_heading)
 
     def _ball_body_penetration(self, position, yaw):
         """Depth into the body proxy, excluding its declared forward foot space."""
@@ -335,7 +341,10 @@ class Simulation:
                     self._event("kick_start", robot=name, action=action, receiver=decision.receiver)
                     if decision.receiver:
                         self.pass_intent = {"kind": "pass_intent", "sender": name,
-                                            "receiver": decision.receiver, "expires": self.time+24, "coordinated": decision.behaviour=="COORDINATED_PASS", "stage": "preparing"}
+                                            "receiver": decision.receiver, "expires": self.time+24, "coordinated": decision.behaviour in ("COORDINATED_PASS", "LEAD_PASS"), "stage": "preparing"}
+                        if decision.receive_stance:
+                            self.pass_intent.update(landing=decision.face, stance=decision.receive_stance,
+                                                    heading=decision.receive_heading)
                     action = "stand"
             if action != self.last_actions.get(name):
                 self.stats[team]["action_transitions"] += 1

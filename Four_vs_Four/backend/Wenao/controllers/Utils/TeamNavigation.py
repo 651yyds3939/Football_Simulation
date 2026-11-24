@@ -1,4 +1,7 @@
 """Off-ball routes compare existing turn, forward, backward and side primitives."""
+import math
+
+from Utils.Passing import foot_can_push, frame
 from Utils.Navigation import Navigator, angle_to, turn_action
 from Utils.TeamPolicy import distance, avoid_obstacles
 from Utils.DefensivePlan import route
@@ -7,7 +10,11 @@ from soccer2d import Simulation
 
 class CooperativeNavigator(Navigator):
     def choose(self, decision, own, yaw, ball, robots=()):
-        if decision.behaviour=='COORDINATED_PASS':
+        if decision.behaviour == 'ADVANCE_FROM_PASS':
+            return 'walk', 'ADVANCE_FROM_PASS'
+        if decision.behaviour in ('OPEN_SUPPORT', 'PREPARE_FORWARD', 'RECEIVE_FORWARD'):
+            return self.receive_or_support(decision, own, yaw, ball, robots)
+        if decision.behaviour in ('COORDINATED_PASS', 'LEAD_PASS'):
             from Utils.TeamPolicy import Decision
             decision=Decision('PASS',decision.target,decision.face,decision.kick,decision.receiver)
         if SETTINGS['navigation']!='route' or decision.behaviour not in ('YIELD_TO_CARRIER','FIND_PASS_LANE'):
@@ -21,6 +28,34 @@ class CooperativeNavigator(Navigator):
         target=avoid_obstacles(own,decision.target,robots)
         _,action,_=route(own,yaw,target,tolerance=.10)
         return action,'TEAM_REPOSITION'
+
+    def receive_or_support(self, decision, own, yaw, ball, robots):
+        receiving = decision.behaviour == 'RECEIVE_FORWARD'
+        if receiving and foot_can_push(own, ball, yaw):
+            return 'walk', 'RECEIVE_WITH_FORWARD_FOOT'
+        tolerance = .035 if receiving else .075
+        if receiving and distance(own, decision.target) < .16:
+            desired = math.atan2(decision.face[1] - decision.target[1],
+                                 decision.face[0] - decision.target[0])
+            error = math.degrees((desired - yaw + math.pi) % (2 * math.pi) - math.pi)
+            if abs(error) <= 20:
+                front, side = frame(own, ball, yaw)
+                if .27 <= front < .43 and abs(side) <= .11:
+                    return 'walk', 'CLOSE_TO_RECEIVE'
+                if .035 <= front < .31 and .11 < abs(side) < .22:
+                    action = 'step_left' if side > 0 else 'step_right'
+                    return action, 'ALIGN_RECEIVING_FOOT'
+        if distance(own, decision.target) > tolerance:
+            target = avoid_obstacles(own, decision.target, robots, margin=.35 if receiving else .5)
+            _, action, _ = route(own, yaw, target, tolerance=tolerance*.85)
+            return action, 'MOVE_TO_RECEIVING_POSITION'
+        desired = math.atan2(decision.face[1] - decision.target[1],
+                             decision.face[0] - decision.target[0])
+        error = math.degrees((desired - yaw + math.pi) % (2*math.pi) - math.pi)
+        if abs(error) > 12:
+            return turn_action(error), 'FACE_ATTACKING_GOAL'
+        return 'stand', 'HOLD_RECEIVING_POSITION'
+
 
 class TeamSimulation(Simulation):
     def install_team_navigators(self):
