@@ -2,6 +2,7 @@
 import math
 
 from Utils.Contest import Contest
+from Utils.GoalCover import GoalCover, keeper_motion
 from Utils.Passing import foot_can_push, frame
 from Utils.Navigation import Navigator, angle_to, turn_action
 from Utils.TeamPolicy import distance, avoid_obstacles
@@ -10,7 +11,13 @@ from Utils.TeamTactics import TacticalPolicy, SETTINGS
 from soccer2d import Simulation
 
 class CooperativeNavigator(Navigator):
+    def __init__(self, model=None):
+        super().__init__()
+        self.model = model
+
     def choose(self, decision, own, yaw, ball, robots=()):
+        if decision.behaviour.startswith('KEEPER_'):
+            return keeper_motion(decision, own, yaw, self.model)
         if decision.behaviour == 'DUEL_RELAY':
             if distance(own, ball) < .425:
                 angle = angle_to(own, ball, yaw)
@@ -75,19 +82,20 @@ class CooperativeNavigator(Navigator):
 class TeamSimulation(Simulation):
     def __init__(self, *args, **kwargs):
         self.contest = Contest()
+        self.goal_cover = GoalCover()
         self.contest_players = set()
         super().__init__(*args, **kwargs)
 
     def decide_all(self, world):
         decisions = super().decide_all(world)
         if self.contest_players:
-            return self.contest.adjust(world, decisions, self.contest_players - self.kicking.keys())
-        return decisions
+            decisions = self.contest.adjust(world, decisions, self.contest_players - self.kicking.keys())
+        return self.goal_cover.adjust(world, decisions, self.model, self.kicking)
 
 
     def install_team_navigators(self):
         for name,policy in self.policies.items():
-            if isinstance(policy,TacticalPolicy):self.navigators[name]=CooperativeNavigator()
+            if isinstance(policy,TacticalPolicy):self.navigators[name]=CooperativeNavigator(self.model)
     def _place_formation(self,jitter=False):
         super()._place_formation(jitter=jitter)
         self.install_team_navigators()
