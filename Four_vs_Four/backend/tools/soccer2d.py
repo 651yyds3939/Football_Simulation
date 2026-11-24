@@ -97,6 +97,7 @@ class Simulation:
         self.navigation_stages = {}
         self.previous_contact = None
         self.previous_foot_contact = None
+        self.previous_foot_contact_time = None
         self.prepared = set()
         self._place_formation(jitter=True)
 
@@ -117,7 +118,8 @@ class Simulation:
     def observation(self):
         world = {"version": 2, "time": self.time, "match": self.engine.snapshot(),
                  "ball": {"position": list(self.ball), "velocity": list(self.velocity)},
-                 "robots": self.players, "penalties": {}, "last_foot_contact": self.previous_foot_contact}
+                 "robots": self.players, "penalties": {}, "last_foot_contact": self.previous_foot_contact,
+                 "last_foot_contact_time": self.previous_foot_contact_time}
         if self.pass_intent and self.pass_intent["expires"] > self.time:
             world["pass_intent"] = self.pass_intent
         return world
@@ -127,9 +129,11 @@ class Simulation:
 
     def _contact(self, name, source='body'):
         self.touch = name
-        if source != 'body' and name != self.previous_foot_contact:
-            self._event('foot_control_change', robot=name, source=source, point=list(self.ball[:2]))
-            self.previous_foot_contact = name
+        if source != 'body':
+            self.previous_foot_contact_time = self.time
+            if name != self.previous_foot_contact:
+                self._event('foot_control_change', robot=name, source=source, point=list(self.ball[:2]))
+                self.previous_foot_contact = name
         if name != self.previous_contact:
             self.stats[self.policies[name].team]["contact_transitions"] += 1
             self._event("contact", robot=name)
@@ -265,6 +269,9 @@ class Simulation:
         """Adapters can end an attempt before issuing post-result commands."""
         return False
 
+    def decide_all(self, world):
+        return {name: policy.decide(world) for name, policy in self.policies.items()}
+
     def step(self):
         dt = self.model.dt
         self.time += dt
@@ -275,7 +282,7 @@ class Simulation:
                 self.ball = list(event["point"])
                 self.velocity = [0., 0., 0.]
                 self.touch = self.previous_contact = None
-                self.previous_foot_contact = None
+                self.previous_foot_contact = self.previous_foot_contact_time = None
                 self.pass_intent = self.pending_pass = None
                 self.kicking.clear()
         if self._stop_after_referee(referee_events):
@@ -289,7 +296,7 @@ class Simulation:
             self.stats[self.policies[self.pending_pass["sender"]].team]["expired_passes"] += 1
             self.pending_pass = self.pass_intent = None
         world = self.observation()
-        decisions = {n: p.decide(world) for n, p in self.policies.items()}
+        decisions = self.decide_all(world)
         self.current_decisions = decisions
         proposed = {}
         actions = {}

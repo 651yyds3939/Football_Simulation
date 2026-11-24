@@ -23,7 +23,9 @@ def create_match(seed,red='coordinated',blue='coordinated',model=None):
  s=Simulation(seed,'RED','baseline',model or Model())
  for name in s.names:
   selected=red if name.startswith('Red') else blue
-  if selected=='coordinated':s.policies[name]=PassingPolicy(name,goal_depth=.3,model=s.model)
+  if selected in ('coordinated','passing'):
+   s.policies[name]=PassingPolicy(name,goal_depth=.3,model=s.model)
+   if selected=='coordinated':s.contest_players.add(name)
   elif selected=='reference':s.policies[name]=TacticalPolicy(name,goal_depth=.3)
   elif selected=='previous':s.policies[name]=PreviousPolicy(name,goal_depth=.3)
  s.install_team_navigators()
@@ -48,7 +50,7 @@ def play(seed,red,blue,model,record=False):
  return result,scene
 
 def main():
- p=argparse.ArgumentParser(description=__doc__);p.add_argument('--seed',type=int,default=27);p.add_argument('--red-policy',choices=['baseline','previous','reference','coordinated'],default='coordinated');p.add_argument('--blue-policy',choices=['baseline','previous','reference','coordinated'],default='coordinated');p.add_argument('--half-seconds',type=float,default=300);p.add_argument('--ready-seconds',type=float,default=10);p.add_argument('--dt',type=float,default=.2);p.add_argument('--batch',type=int,default=1);p.add_argument('--language',choices=['en','zh'],default='en');p.add_argument('--no-replay',action='store_true');p.add_argument('--output',type=Path);p.add_argument('--open',action='store_true');a=p.parse_args()
+ p=argparse.ArgumentParser(description=__doc__);p.add_argument('--seed',type=int,default=27);p.add_argument('--red-policy',choices=['baseline','previous','reference','passing','coordinated'],default='coordinated');p.add_argument('--blue-policy',choices=['baseline','previous','reference','passing','coordinated'],default='coordinated');p.add_argument('--half-seconds',type=float,default=300);p.add_argument('--ready-seconds',type=float,default=10);p.add_argument('--dt',type=float,default=.2);p.add_argument('--batch',type=int,default=1);p.add_argument('--language',choices=['en','zh'],default='en');p.add_argument('--no-replay',action='store_true');p.add_argument('--output',type=Path);p.add_argument('--open',action='store_true');a=p.parse_args()
  if a.batch<1:p.error('--batch must be positive')
  try:model=Model(dt=a.dt,half_seconds=a.half_seconds,ready_seconds=a.ready_seconds)
  except ValueError as e:p.error(str(e))

@@ -1,6 +1,7 @@
 """Off-ball routes compare existing turn, forward, backward and side primitives."""
 import math
 
+from Utils.Contest import Contest
 from Utils.Passing import foot_can_push, frame
 from Utils.Navigation import Navigator, angle_to, turn_action
 from Utils.TeamPolicy import distance, avoid_obstacles
@@ -10,9 +11,23 @@ from soccer2d import Simulation
 
 class CooperativeNavigator(Navigator):
     def choose(self, decision, own, yaw, ball, robots=()):
+        if decision.behaviour == 'DUEL_RELAY':
+            if distance(own, ball) < .425:
+                angle = angle_to(own, ball, yaw)
+                if abs(angle) > 13:
+                    return turn_action(angle), 'FACE_BALL_FROM_SIDE'
+                front, side = frame(own, ball, yaw)
+                if .105 < front < .38 and abs(side) < .095:
+                    return 'walk', 'APPROACH_BALL_FROM_SIDE'
+            _, action, _ = route(own, yaw, decision.target, tolerance=.055)
+            return action, 'MOVE_TO_SIDE_OF_CONTEST'
+        if decision.behaviour == 'DUEL_SCREEN':
+            return 'stand', 'YIELD_AFTER_TEAMMATE_CONTACT'
+        if decision.behaviour == 'DUEL_TAKEOVER':
+            return 'walk', 'TAKE_BALL_FROM_SIDE'
         if decision.behaviour == 'ADVANCE_FROM_PASS':
             return 'walk', 'ADVANCE_FROM_PASS'
-        if decision.behaviour in ('OPEN_SUPPORT', 'PREPARE_FORWARD', 'RECEIVE_FORWARD'):
+        if decision.behaviour in ('OPEN_SUPPORT', 'PREPARE_FORWARD', 'RECEIVE_FORWARD', 'EARLY_RECEIVE'):
             return self.receive_or_support(decision, own, yaw, ball, robots)
         if decision.behaviour in ('COORDINATED_PASS', 'LEAD_PASS'):
             from Utils.TeamPolicy import Decision
@@ -58,6 +73,18 @@ class CooperativeNavigator(Navigator):
 
 
 class TeamSimulation(Simulation):
+    def __init__(self, *args, **kwargs):
+        self.contest = Contest()
+        self.contest_players = set()
+        super().__init__(*args, **kwargs)
+
+    def decide_all(self, world):
+        decisions = super().decide_all(world)
+        if self.contest_players:
+            return self.contest.adjust(world, decisions, self.contest_players - self.kicking.keys())
+        return decisions
+
+
     def install_team_navigators(self):
         for name,policy in self.policies.items():
             if isinstance(policy,TacticalPolicy):self.navigators[name]=CooperativeNavigator()

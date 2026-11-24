@@ -25,13 +25,28 @@ python run.py --red-policy reference --blue-policy coordinated --seed 256058 --l
 python run.py --red-policy coordinated --blue-policy reference --seed 246000 --batch 20 --no-replay
 ```
 
-- `coordinated` 使用新版接应、短传落点与接球后推进，默认双方均使用。
+- `coordinated` 使用侧面接应、提前准备短传和接球后推进，默认双方均使用。
+- `passing` 使用 11 月 23 日的短传策略，供对照。
 - `reference` 使用 11 月 19 日配合版本。
 - `previous` 使用更早的配合版本。
 - `baseline`：基础TeamPolicy策略。
 - `--batch 20 --no-replay`：全速批量计算20个种子，不渲染。
 
 结果自动保存在新建的 `runs/match_时间/` 中：`metrics.json` 为比分和源码哈希，`replay.html` 为回放，`scene.json` 为轨迹。批量模式只给第一场生成回放；`--no-replay` 不记录轨迹。修改代码后需要重新生成，旧HTML不会自动更新。
+
+## 11 月 24 日更新
+
+当双方球员面对面、球连续约 3 秒没有明显移动时，策略评估哪名队友能沿空闲路线从侧面接近球。每次只派一名可及时到达的前锋。正面球员继续争抢，直到队友实际用脚触球并把球带离原位置，才短暂让位。对手推进、比赛暂停或换边会结束当前计划。
+
+短传意图在对脚阶段就交给指定队友，由他提前走到接球位置。传球动作、触球与裁判判定仍由仿真执行。程序参数 `passing` 可运行 11 月 23 日的短传版本，用于与默认的 `coordinated` 对照。
+
+在 150 个有队友位于侧面的对顶专项开局里，25 秒内把球带离原点至少 0.25 米的案例从 21 个增到 74 个。另有 240 个近距离短传专项开局，指定队友脚下接球从 63 次增到 66 次。完整比赛的接应机会取决于实际站位。
+
+完整比赛与上一版对照，每个种子交换红蓝。默认步长 0.2 秒的 300 场为 110 胜、111 负、79 平，0.04 秒步长的 120 场为 45 胜、45 负、30 平。
+
+```sh
+python3 run.py --seed 267064 --red-policy coordinated --blue-policy passing --language zh --open
+```
 
 ## 11 月 23 日更新
 
