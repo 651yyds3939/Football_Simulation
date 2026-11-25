@@ -63,7 +63,7 @@ def stage_project(source, workspace, candidate, check, scenario=None):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
-    parser.add_argument("--tactics", choices=("baseline", "support", "flow", "passing"), default="flow")
+    parser.add_argument("--tactics", choices=("baseline", "support", "flow", "passing"), default="baseline")
     parser.add_argument("--team", choices=("RED", "BLUE", "both"), default="both")
     parser.add_argument("--check", action="store_true", help="Run the original project's verification harness")
     parser.add_argument("--locomotion", choices=("legacy", "guarded"),
