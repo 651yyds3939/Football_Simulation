@@ -297,6 +297,16 @@ class TeamSimulation(Simulation):
         decisions = self.goal_cover.adjust(world, decisions, self.model, self.kicking)
         return self.flow.adjust(world, decisions, self.kicking)
 
+    def _pass_can_release(self, name, decision, heading, roll_distance):
+        team = self.policies[name].team.title()
+        if team not in self.flow.enabled:
+            return True
+        if self.flow.pass_can_release(name, decision, self.players, self.ball[:2], heading, roll_distance):
+            return True
+        self.flow.pass_hold.pop(team, None)
+        self.flow.last_pass[team] = self.time
+        return False
+
     def install_team_navigators(self):
         for name, policy in self.policies.items():
             if self.flow is not None and policy.team.title() in self.flow.enabled:

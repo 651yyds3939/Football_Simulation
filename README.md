@@ -12,7 +12,7 @@
 
 ## 2D 四对四（2026-11-25）
 
-双击 [中文回放](Football_4v4_Demo_ZH.html) 或 [英文回放](Football_4v4_Demo.html)。演示使用新版策略，包含指定队友接球、绕过防守、门将挡球和进球后复位。默认 32 倍，最高 128 倍。可拖动时间轴，点击球员查看当前动作。
+双击 [中文回放](Football_4v4_Demo_ZH.html) 或 [英文回放](Football_4v4_Demo.html)。演示使用新版策略，包含短趟变向、指定队友接球、对手截球和进球后复位。默认 32 倍，最高 128 倍。可拖动时间轴，点击球员查看当前动作。
 
 重新计算可运行 `python3 Four_vs_Four/run.py --language zh --open`，或在 Windows 双击 [启动文件](Four_vs_Four/start_windows.bat)。[使用说明](Four_vs_Four/README.md) · [独立运行包](Football_4v4.zip)。
 

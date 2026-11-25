@@ -465,9 +465,12 @@ class Flow:
                 if (
                     self.tap_enabled
                     and in_control
-                    and pressure < 1.20
+                    and pressure < 0.82
                     and abs(wrap(aim - own["yaw"])) > math.radians(19)
-                    and self.set_tap(name, own, ball, cut, now, orders, "CARRY_TAP", 0.38)
+                    and self.safe_pass_path(
+                        ball, offset(ball, aim, 0.22), opponents, self.model.planar_tap_seconds
+                    )
+                    and self.set_tap(name, own, ball, cut, now, orders, "CARRY_TAP", 0.22)
                 ):
                     return None
                 orders[name] = Decision("BEAT_MARKER", pose_for_contact(ball, aim, 0.0), cut)
@@ -475,7 +478,7 @@ class Flow:
         if (
             self.steer
             and distance(own["position"], ball) < 0.57
-            and orders[name].behaviour not in ("PASS", "LEAD_PASS")
+            and (orders[name].behaviour not in ("PASS", "LEAD_PASS") or pressure >= 0.82)
         ):
             aim = (direction * (HALF_FIELD + 0.1), clamp(ball[1] * 0.52, -0.96, 0.96))
             orders[name] = Decision(
@@ -578,6 +581,39 @@ class Flow:
             "FINISH_OPEN", pose_for_contact(ball, yaw), target, "shoot", kick_distance=swing
         )
 
+    def safe_pass_path(self, ball, target, rivals, windup, roll_distance=None):
+        """Reject passes that an opponent could reach before the rolling ball."""
+        length = distance(ball, target)
+        travel = length if roll_distance is None else roll_distance
+        if length < 0.05 or travel <= 0.0:
+            return False
+        deceleration = self.model.rolling_deceleration
+        speed = math.sqrt(2 * deceleration * travel)
+        contact_radius = self.model.robot_radius + BALL_RADIUS
+        if not rolling_lane(ball, target, rivals, contact_radius):
+            return False
+        for fraction in (0.25, 0.50, 0.75, 1.0):
+            elapsed = (speed - math.sqrt(max(0.0, speed**2 * (1 - fraction)))) / deceleration
+            point = tuple(a + fraction * (b - a) for a, b in zip(ball, target))
+            margin = contact_radius + 0.04 * fraction * length
+            reach = margin + self.model.walk_speed * max(0.0, windup + elapsed - 0.24)
+            if any(distance(point, rival) < reach for rival in rivals):
+                return False
+        return True
+
+    def pass_can_release(self, name, decision, players, ball, heading, roll_distance):
+        receiver = players.get(decision.receiver)
+        if not receiver or not receiver.get("standing", True):
+            return False
+        predicted = offset(ball, heading, roll_distance)
+        if distance(receiver["position"], predicted) > 0.36 + self.model.walk_speed * math.sqrt(
+            2 * roll_distance / self.model.rolling_deceleration
+        ):
+            return False
+        prefix = "Red" if name.startswith("Red") else "Blue"
+        rivals = [p["position"] for n, p in players.items() if not n.startswith(prefix)]
+        return self.safe_pass_path(ball, predicted, rivals, 0.0, roll_distance)
+
     def try_touch_pass(
         self, team, name, field, other, ball, velocity, direction, now, orders, kicking
     ):
@@ -593,7 +629,7 @@ class Flow:
         rivals = [p["position"] for p in other.values()]
         pressure = min(distance(ball, p) for p in rivals)
         risk = pressure < 0.80 or not rolling_lane(ball, offset(ball, yaw, 1.05), rivals, 0.35)
-        if not risk and abs(ball[0]) > 2.65:
+        if not risk:
             return False
         options = []
         wide = self.model.planar_touch_pass_range if self.use_wider_pass else self.model.pass_range
@@ -635,7 +671,9 @@ class Flow:
                 if clear < 0.32 or clear < pressure - 0.15 and forward < 0.12:
                     continue
                 cost = min(clear, 1.05) + 0.63 * forward + 0.37 * forward_path - 0.34 * turn
-                if cost >= self.touch_pass_threshold:
+                if cost >= self.touch_pass_threshold and self.safe_pass_path(
+                    ball, target, rivals, self.model.planar_tap_seconds
+                ):
                     options.append((cost, mate, target, heading, stance, length))
         if not options:
             return False
@@ -714,7 +752,9 @@ class Flow:
                         - error * 0.8
                         - 0.11 * receive_time
                     )
-                    if preference < self.preferred_pass:
+                    if preference < self.preferred_pass or not self.safe_pass_path(
+                        ball, landing, rivals, self.model.planar_pass_seconds
+                    ):
                         continue
                     options.append((preference, mate, landing, stance, receive_yaw, heading, travel))
         if not options:

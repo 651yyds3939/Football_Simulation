@@ -24,16 +24,53 @@ def open_play(sim, direction=1):
 
 
 class MatchChecks(unittest.TestCase):
-    def test_demo_crowd_releases_the_ball_before_full_time(self):
+    def test_off_ball_player_makes_space_in_a_stationary_crowd(self):
+        sim = create_match(27)
+        ball = (0.0, 0.0)
+        for name, point in {
+            "RedDefender": (0.43, 0.0),
+            "RedForwardA": (0.55, 0.30),
+            "BlueDefender": (-0.20, 0.0),
+        }.items():
+            sim.players[name]["position"] = [*point, 0.334]
+        decisions = {}
+        sim.flow.open_crowded_lane(sim.players, ball, 0, 0, decisions, {}, None)
+        sim.flow.open_crowded_lane(sim.players, ball, 0, 4.2, decisions, {}, None)
+        self.assertEqual(decisions["RedForwardA"].behaviour, "MAKE_SPACE")
+        self.assertNotIn("RedDefender", decisions)
+
+    def test_demo_ball_still_moves_near_full_time(self):
         _, scene = play(294034, "flow", "flow", Model(), record=True)
-        second_half = [frame for frame in scene["frames"] if frame["t"] >= 510]
+        tail = [frame for frame in scene["frames"] if frame["t"] >= 560]
         self.assertTrue(
-            any(p[3] == "MAKE_SPACE" for frame in second_half for p in frame["players"])
+            any(math.dist(frame["ball"], tail[0]["ball"]) > 0.30 for frame in tail)
         )
-        self.assertTrue(
-            any(math.dist(frame["ball"], second_half[0]["ball"]) > 0.30 for frame in second_half)
+        self.assertEqual(tail[-1]["match"]["phase"], "FINISHED")
+
+    def test_pass_accounts_for_an_opponent_running_into_the_lane(self):
+        flow = create_match(27).flow
+        ball, target = (0.0, 0.0), (1.2, 0.0)
+        rival = [(1.2, 0.52)]
+        self.assertTrue(flow.safe_pass_path(ball, target, rival, 0.0))
+        self.assertFalse(flow.safe_pass_path(ball, target, rival, 1.45))
+        self.assertTrue(flow.safe_pass_path(ball, target, [(1.2, 1.0)], 1.45))
+
+    def test_cancelled_pass_does_not_move_ball_or_retain_intent(self):
+        sim = create_match(27)
+        open_play(sim)
+        sender, receiver = "RedForwardA", "RedForwardB"
+        sim.ball = [0.0, 0.0, 0.07]
+        sim.players[sender].update(position=[-0.2, 0.0, 0.334], yaw=0.0)
+        sim.players[receiver].update(position=[1.3, 0.0, 0.334])
+        sim.players["BlueDefender"].update(position=[0.7, 0.1, 0.334])
+        sim.pass_intent = {"sender": sender, "stage": "preparing"}
+        decision = Decision(
+            "TOUCH_PASS", (-0.2, 0.0), (1.2, 0.0), "tap", receiver, kick_distance=1.2
         )
-        self.assertEqual(second_half[-1]["match"]["phase"], "FINISHED")
+        sim._finish_kick(sender, decision)
+        self.assertEqual(sim.velocity, [0.0, 0.0, 0.0])
+        self.assertIsNone(sim.pass_intent)
+        self.assertEqual(sim.events[-1]["reason"], "interception_risk")
 
     def test_both_teams_use_the_same_navigation_path(self):
         sim = create_match(27)

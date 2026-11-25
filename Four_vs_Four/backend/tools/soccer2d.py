@@ -177,6 +177,9 @@ class Simulation:
             self.pending_pass = None
             self.pass_intent = None
 
+    def _pass_can_release(self, name, decision, heading, roll_distance):
+        return True
+
     def _finish_kick(self, name, decision):
         player = self.players[name]
         dx = self.ball[0]-player["position"][0]
@@ -215,6 +218,11 @@ class Simulation:
             desired_range = min(decision.kick_distance, self.model.planar_shot_range) or self.model.shot_range
         else:
             desired_range = min(decision.kick_distance, self.model.planar_pass_range) or self.model.pass_range
+        if decision.receiver and not self._pass_can_release(name, decision, heading, desired_range):
+            if self.pass_intent and self.pass_intent.get("sender") == name and self.pass_intent.get("stage") == "preparing":
+                self.pass_intent = None
+            self._event("pass_cancelled", robot=name, reason="interception_risk")
+            return
         speed = math.sqrt(2*self.model.rolling_deceleration*desired_range)
         angle = heading+self.noise[name].gauss(0, self.model.kick_noise_radians)
         self.velocity = [speed*math.cos(angle), speed*math.sin(angle), 0.]
