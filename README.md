@@ -1,73 +1,60 @@
 # Football Simulation
 
-二维项目已于 2026-11-19 整理到本目录。三维工程仍位于同级的 `../Webots_Robotics_TDP`，原文件与代码保持原位。
+[English](README.en.md)
 
-## 直接看演示
+`main` 是团队的 2D 仿真基线，包含 1v1 实时测试、4v4 比赛计算、浏览器回放和批量测试。Webots 3D 接入目前在 `LWY` 分支开发。
 
-新增 [1v1 三类案例视频：3:3:1](Football_1v1_Cases_3-3-1.mp4)（1分28.6秒，8倍速），以及[同轨迹单文件交互回放](Football_1v1_Cases_3-3-1.html)。共七例：三次正面接触后突破进球、三次抢断反进球、一次防守回追不及。[案例与核验说明](docs/ONE_V_ONE_CASES_3_3_1_2026-11-19.md)。
+## Windows 快速开始
 
-双击 [Football_1v1_Demo.html](Football_1v1_Demo.html)，用 Chrome 或 Edge 打开即可。文件内含五个固定回放，第三例展示正面对抗后突破进球；支持切换示例、暂停、进度拖动和倍速；不需要 Python、Webots 或联网。
+从 GitHub 的 `main` 分支选择 **Code → Download ZIP**，然后完整解压。已有本地仓库时，可以切到 `main` 并拉取更新。
 
-[Football_1v1_Demo.mp4](Football_1v1_Demo.mp4) 和 `TDP-2026-11-12_16.21.10.mkv` 是历史演示视频，未随本轮策略修改重新录制。
-
-## 2D 四对四（2026-11-25）
-
-双击 [中文回放](Football_4v4_Demo_ZH.html) 或 [英文回放](Football_4v4_Demo.html)。演示使用新版策略，包含短趟变向、指定队友接球、对手截球和进球后复位。默认 32 倍，最高 128 倍。可拖动时间轴，点击球员查看当前动作。
-
-重新计算可运行 `python3 Four_vs_Four/run.py --language zh --open`，或在 Windows 双击 [启动文件](Four_vs_Four/start_windows.bat)。[使用说明](Four_vs_Four/README.md) · [独立运行包](Football_4v4.zip)。
-
-本轮增加可达接应点搜索、局部让位和保守短传。最终版本60场对照22胜22负16平，出现6次带脚下接触的短传，整体胜率没有明显提升，拥堵仍会出现。[完整结果及限制](docs/FOUR_V_FOUR_TEAMWORK_2026-11-19.md)；[上一轮记录](docs/FOUR_V_FOUR_TUNING_2026-11-19.md)。一攻一防和三维工程保持原样。
-
-## 当前一攻一防版本（2026-11-19）
-
-实时界面新增了红、蓝双方的出生矩形：可以输入边界，也可以暂停后在球场上框选。提供中场、门前和边路三组预设。随机出生时，蓝方到右侧球门中心的距离至少比红方和足球短 0.25 米（门前预设为 0.20 米）；两名球员和足球不会在出生时重叠。默认播放速度仍为 8 倍。
-
-默认区域以场地中心为原点，向右为 x 正方向、向上为 y 正方向：
-
-| 对象 | x 范围（米） | y 范围（米） |
-| --- | --- | --- |
-| 红方进攻球员 | −1.0 至 1.0 | −1.1 至 1.1 |
-| 蓝方防守球员 | 1.8 至 3.2 | −1.25 至 1.25 |
-
-足球在红方脚前生成。界面中的修改在当前服务会话内保留；修改实时版目录内的 `spawn_zones.json` 可以设置下次启动的默认范围。若两个矩形无法满足球门侧约束，会提示错误，不会偷偷把球员放到区域之外。
-
-当前增加了绕行带球：球门路线被堵时提前选择侧路并保持方向；已经贴近时避免强行大角度转向。有效脚下争球不再约3秒就主动侧移让位；脚位失效时仍及时重定位。被断后保留丢球反抢，进球或出界后停止动作。
-
-200个独立正面接近开局均发生实际正面接触：首次突破2→43，首次丢球198→151，长僵持14→9，超时0→2。正面对抗仍以丢球居多。新的1000个独立保留开局中，红方进球492→721，超时24→16，长僵持37→19，出界0→6。正面争球仍然偏向防守，不保证撞上后能突破。
-
-最新记录见 [正面对抗与带球突破](docs/ATTACKING_DUELS_2026-11-19.md)，包含新旧都实际正面接触的配对统计。历史记录：[反抢与回追](docs/COUNTERPRESS_TUNING_2026-11-19.md)、[出生区域与预判拦截](docs/DEFENCE_TUNING_2026-11-19.md)、[第二轮策略调试](docs/STRATEGY_TUNING_ROUND2_2026-11-19.md)。不同轮次的开局不同，各表仅比较本表的配对基线。
-
-修改后需要关闭旧 Python 服务并重新启动，仅刷新旧网页不会重新加载 Python 策略。
-
-## 运行随机攻防测试
-
-打开 [2D_Shared_Policy_2026-11-11](2D_Shared_Policy_2026-11-11/README.md) 文件夹：Windows 双击其中的 `start_windows.bat`；Ubuntu 可以在该文件夹运行 `bash start.sh`。实时测试需要 Python 3.8 或更新版本，使用标准库。
-
-需要分享可运行版本时，发送 [2D_Shared_Policy_2026-11-11.zip](2D_Shared_Policy_2026-11-11.zip)。压缩包内保留简短的 Windows 使用说明；详细历史说明在本地 `2D_Shared_Policy_2026-11-11/README_DETAILED_LOCAL.md`，未放入压缩包。
-
-## 主要内容
-
-| 路径 | 用途 |
+| 想做什么 | 打开哪个文件 |
 | --- | --- |
-| `Football_1v1_Demo.html` | 五个示例的单文件离线回放，分享展示优先使用 |
-| `2D_Shared_Policy_2026-11-11/` | Python 一攻一防实时版、浏览器界面及独立代码快照 |
-| `2D_Shared_Policy_2026-11-11/backend/tools/soccer2d.py` | 二维运动、足球接触与比赛计算 |
-| `2D_Shared_Policy_2026-11-11/backend/Wenao/controllers/Utils/` | 二维使用的策略、导航、预判拦截和比赛规则代码 |
-| `2D_Shared_Policy_2026-11-11/backend/tools/view_soccer2d.py` | 原二维四对四回放生成器；同目录保留批量策略实验工具及界面模板 |
-| `2D足球可视化场景_2026-11-02.html`、`2D_Football_Viewer_EN_2026-11-04.html` | 原四对四二维中英文回放 |
-| `2D_1v1_Demo_2026-11-11/`、`2D_1v1_Demo_2026-11-11 (1)/` | 较早的独立 JavaScript 演示与原有副本，保留作历史对照 |
-| `2D_Pitch_and_Modelling_2026-11-04/` | 球场、足球、机器人平面模型图片及导出脚本 |
-| `S3_数据来源图片_中英文_2026-11-04/` | 六张中英文参数来源图 |
-| `verification/` | 二维验证记录、对照数据、回放构建和打包脚本 |
-| `docs/` | 二维策略、模型限制和历史测试说明的本地参考副本 |
+| 直接看 1v1 | 双击 [五例回放](Football_1v1_Demo.html) 或 [七例对抗回放](Football_1v1_Cases_3-3-1.html) |
+| 直接看 4v4 | 双击 [中文回放](Football_4v4_Demo_ZH.html) 或 [英文回放](Football_4v4_Demo.html) |
+| 重新运行 1v1 | 双击 [1v1 启动脚本](2D_Shared_Policy_2026-11-11/start_windows.bat)。网页打开后点 **Play**，可用 **New random setup** 换开局，或用 **Repeat seed** 重跑当前开局 |
+| 重新运行 4v4 | 双击 [4v4 启动脚本](Four_vs_Four/start_windows.bat)。程序先计算整场，再打开回放 |
 
-## 二维与三维暂时独立
+HTML 回放离线打开即可。重新计算比赛需安装 Python 3.8 或更新版本，使用 Python 标准库即可。安装后可在 CMD 或 PowerShell 输入 `py -3 --version` 检查，若系统使用 `python` 命令则输入 `python --version`。 [Python for Windows](https://www.python.org/downloads/windows/)
 
-二维实时版从本目录的 `backend/` 导入策略和模型。代码已在分离后独立调试，不再保证与三维当前版本完全一致。此后修改三维工程不会自动更新二维，修改二维也不会自动更新三维。文件夹中的 `Wenao` 是保留的 Python 模块路径及少量来源参考文件，不是另一个完整 Webots 工程。
+在仓库根目录的 CMD 或 PowerShell 中，可以指定开局和语言。若系统只有 `python` 命令，将每行开头的 `py -3` 换成 `python`。
 
-二维打包和五例回放构建分别使用 `verification/one-v-one-20261111/package_shared_policy.py` 和 `verification/simple-html-20261112/build_demo.py`。二者已按新目录工作，打包默认使用本地二维快照。
+```powershell
+py -3 Four_vs_Four/run.py --seed 27 --language zh --open
+py -3 Four_vs_Four/run.py --seed 27 --batch 20 --no-replay
+```
 
-图表导出使用本地模型及复制的历史测量记录；涉及课程 PDF 来源核对的脚本继续读取上一级工作区的原始 PDF。图片再生成还需要已有的 Matplotlib、NumPy 和字体环境，日常查看图片、播放 HTML 或运行一攻一防不需要这些图表依赖。
+4v4 的输出在 `Four_vs_Four/runs/match_*/`。终端的 `4V4_READY` 行会给出本次路径。浏览器没有自动打开时，可从该目录双击 `replay.html`。批测用 `--no-replay` 时，查看 `metrics.json`。1v1 实时版需要保持终端窗口打开，浏览器没有自动打开时，把终端显示的本地网址复制到浏览器。
 
-原 `verification/` 中的三维输入重算、执行结果等记录留在原处；三维仓库内的共用代码、既有工具和测试也保留原位。`docs/` 及详细历史说明中的旧路径和命令代表当时的工程布局，当前二维入口以本页为准。重新组织后，请关闭旧 Python 服务，从新位置重新启动。
+Ubuntu / macOS 从仓库根目录可运行 `python3 Four_vs_Four/run.py --language zh --open` 或 `python3 2D_Shared_Policy_2026-11-11/server.py --open`。也可单独下载并解压 [4v4 运行包](Football_4v4.zip) 或 [1v1 运行包](2D_Shared_Policy_2026-11-11.zip)。
 
+## 已完成和待改进
+
+| 板块 | 当前能做什么 | 下一轮要验证或改进什么 |
+| --- | --- | --- |
+| **1v1** | 设置出生区域，复测同一种子，观察带球绕行、抢断和解围，下载运行记录。 | 补测正面贴身、被过后回追和慢转向导致的失位。 [1v1 实时版说明](2D_Shared_Policy_2026-11-11/README.md) |
+| **4v4** | 八名球员使用 `flow` 策略完成比赛。可观察短趟、指定队友接球、拦截、门将封角及进球后复位。 | 减少长时间围球，验证接球后能否继续推进或射门，并检查门前封角和解围。 [4v4 实验与限制](Four_vs_Four/README.md) |
+| **测试工具** | 固定种子回放、实时报表下载、4v4 批跑和结果导出。4v4 可输出 `metrics.json`、`replay.html`、`scene.json`。 | 为前锋、后卫、门将和团队策略建立固定用例，按同一开局、球员速度和步长比较修改前后。 |
+| **3D 与真机** | 2D 使用精确位置和简化运动、接触模型。摄像头误差、平衡和摔倒留待 3D 与真机验证。3D 接入的实验在 `LWY`。 | 用 Webots 复测挑选出的行为，再核实 NAO6 的感知、动作、平衡和实际速度。 |
+
+4v4 回放中的球员目标线显示策略计划。判断传球是否成功，查看事件或 `metrics.json` 中的指定队友脚下接球统计。回放倍速只改变观看时间。
+
+## 五人分工与代码入口
+
+以下为按甘特图映射到当前仓库的任务。第一轮每个分支交一组能重跑的用例和结果，策略改动可随同提交。
+
+| 分支 | 甘特图任务 | 主要代码与建议交付 |
+| --- | --- | --- |
+| **SBH** | 4.2 前锋 | `Flow.py` 的 `attack()`、`choose_carry()`、`find_shot()`。测试绕过后卫、丢球与射门。 |
+| **CJL** | 3.1 球场规则、3.5 可视化与批跑、4.3 后卫 | 后卫从 `DefensivePlan.py` 的 `interception()`、`recovery_action()` 和 `Flow.defend()` 入手。用 `CourseSpecs.py`、`MatchEngine.py` 验证进球、出界和复位，可视化与规则变更独立提交。 |
+| **LXR** | 3.4 感知表示、4.1 导航、4.4 门将 | 当前 `flow` 门将从 `Flow.keep_goal()` 和 `TeamNavigation.py` 的门将分支入手。用近角、远角固定来球测试横移和触球，记录观测接口。 |
+| **ZYH** | 4.5 团队策略、P0 集成 | `Flow.py` 的 `pick_chaser()`、`place_support()`、`offer_width()`。验证主抢、接应、补位及实际接球，并组织 PR 评审。 |
+| **LWY** | 2.3 接口、3.2–3.3 模型、3.6 验证、4.6–4.7 对照实验 | `soccer2d.py` 的足球和机器人模型，`run_policy_experiment.py` 的批量对照，以及 `LWY` 分支上的 2D→3D 适配。维护共同基线和测试记录。 |
+
+策略、导航和裁判模块在 [四对四控制器目录](Four_vs_Four/backend/Wenao/controllers/Utils/)，仿真模型和实验入口在 [工具目录](Four_vs_Four/backend/tools/)。`Flow.py` 由多个成员共用，第一轮按表内函数划分改动。各自从最新 `main` 同步到个人分支，复测后发 PR 到 `main`。PR 写上任务号、开局或种子、运行命令和修改前后的结果。
+
+## 更多记录
+
+- [1v1 七例对抗说明](docs/ONE_V_ONE_CASES_3_3_1_2026-11-19.md) · [1v1 带球与抢断测试](docs/ATTACKING_DUELS_2026-11-19.md)
+- [4v4 策略更新与数据](Four_vs_Four/README.md) · [早期团队配合对照](docs/FOUR_V_FOUR_TEAMWORK_2026-11-19.md)
+- [2D 场地与模型图](2D_Pitch_and_Modelling_2026-11-04/) · [中英文数据来源图](S3_数据来源图片_中英文_2026-11-04/) · [验证脚本与记录](verification/)
