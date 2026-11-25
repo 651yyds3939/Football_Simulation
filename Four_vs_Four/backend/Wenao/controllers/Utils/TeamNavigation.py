@@ -152,6 +152,8 @@ class FlowNavigator(CooperativeNavigator):
             "RECOVER_DEFENCE",
         ):
             return self.follow(decision.target, own, yaw, robots, "MOVE_TO_LANE", face=decision.face)
+        if behaviour == "MAKE_SPACE":
+            return self.translate(own, yaw, decision.target, bearing(own, decision.face)), "OPEN_CONTEST_LANE"
         if behaviour == "PURSUE_BALL":
             return self.follow(decision.target, own, yaw, robots, "PURSUE_ROLLING_BALL")
         if behaviour in ("INTERCEPT", "COUNTERPRESS", "CHALLENGE") and self.flow.steer:

@@ -75,6 +75,8 @@ class Flow:
         self.carry = {}
         self.duel = {}
         self.anchor = None
+        self.crowd_snapshot = None
+        self.crowd_exit = {}
         self.pass_hold = {}
         self.support_plan = {}
         self.last_pass = {}
@@ -152,6 +154,8 @@ class Flow:
         self.support_hold_seconds = 5.0
 
     def reset(self):
+        self.crowd_snapshot = None
+        self.crowd_exit.clear()
         self.carry.clear()
         self.duel.clear()
         self.anchor = None
@@ -194,7 +198,72 @@ class Flow:
             other = {n: p for n, p in players.items() if not n.startswith(team)}
             direction = match["red_direction"] * (1 if team == "Red" else -1)
             self.order_team(team, one, other, ball, velocity, now, direction, world, orders, kicking)
+        self.open_crowded_lane(players, ball, speed, now, orders, kicking, world.get("pass_intent"))
         return orders
+
+    def open_crowded_lane(self, players, ball, speed, now, orders, kicking, intent):
+        """Move off-ball players out when their commands produce no movement."""
+        if intent or speed > 0.035:
+            self.crowd_snapshot = None
+            self.crowd_exit.clear()
+            return
+        nearby = {
+            name: tuple(player["position"][:2])
+            for name, player in players.items()
+            if not name.endswith("Goalkeeper") and distance(player["position"], ball) < 0.83
+        }
+        teams = {
+            team: sorted((distance(point, ball), name) for name, point in nearby.items()
+                         if name.startswith(team))
+            for team in ("Red", "Blue")
+        }
+        if any(not members or members[0][0] > 0.55 for members in teams.values()):
+            self.crowd_snapshot = None
+            self.crowd_exit.clear()
+            return
+        if self.crowd_exit:
+            started, anchor, _ = self.crowd_snapshot
+            if now - started < 5.0 and distance(ball, anchor) < 0.12:
+                for name, target in self.crowd_exit.items():
+                    if name in players and name not in kicking:
+                        orders[name] = Decision("MAKE_SPACE", target, ball)
+                return
+            self.crowd_exit.clear()
+            self.crowd_snapshot = None
+        if len(nearby) < 3:
+            self.crowd_snapshot = None
+            return
+        if self.crowd_snapshot:
+            started, anchor, poses = self.crowd_snapshot
+            unchanged = (
+                distance(ball, anchor) < 0.065 and poses.keys() == nearby.keys()
+                and all(distance(point, poses[name]) < 0.10 for name, point in nearby.items())
+            )
+            if unchanged and now - started < 4.0:
+                return
+            if unchanged:
+                for team, members in teams.items():
+                    if team not in self.enabled:
+                        continue
+                    for _, name in members[1:]:
+                        point = nearby[name]
+                        yaw = bearing(ball, point)
+                        options = [
+                            inside(offset(point, yaw + angle, 0.43))
+                            for angle in (0.0, -0.65, 0.65)
+                        ]
+                        obstacles = [r["position"] for n, r in players.items() if n != name]
+                        target = max(
+                            options, key=lambda q: (
+                                lane_clear(point, q, obstacles, 0.285),
+                                min(distance(q, p) for p in obstacles),
+                            )
+                        )
+                        if distance(target, ball) > distance(point, ball) + 0.16:
+                            self.crowd_exit[name] = target
+                            if name not in kicking:
+                                orders[name] = Decision("MAKE_SPACE", target, ball)
+        self.crowd_snapshot = now, ball, nearby
 
     def order_team(self, team, one, other, ball, velocity, now, direction, world, orders, kicking):
         field = {n: p for n, p in one.items() if not n.endswith("Goalkeeper")}

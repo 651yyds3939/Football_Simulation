@@ -6,7 +6,7 @@ import sys
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "Four_vs_Four"))
-from run import Model, create_match
+from run import Model, create_match, play
 from contact_motion import foot_entry, stop_conflicting_moves
 from Utils.TeamNavigation import FlowNavigator
 from Utils.TeamPolicy import Decision
@@ -24,6 +24,17 @@ def open_play(sim, direction=1):
 
 
 class MatchChecks(unittest.TestCase):
+    def test_demo_crowd_releases_the_ball_before_full_time(self):
+        _, scene = play(294034, "flow", "flow", Model(), record=True)
+        second_half = [frame for frame in scene["frames"] if frame["t"] >= 510]
+        self.assertTrue(
+            any(p[3] == "MAKE_SPACE" for frame in second_half for p in frame["players"])
+        )
+        self.assertTrue(
+            any(math.dist(frame["ball"], second_half[0]["ball"]) > 0.30 for frame in second_half)
+        )
+        self.assertEqual(second_half[-1]["match"]["phase"], "FINISHED")
+
     def test_both_teams_use_the_same_navigation_path(self):
         sim = create_match(27)
         self.assertTrue(all(isinstance(nav, FlowNavigator) for nav in sim.navigators.values()))
