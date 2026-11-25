@@ -1,10 +1,10 @@
 """Select short passes that a teammate can receive facing the attack."""
 import math
 
-from Utils.CourseSpecs import PITCH_LENGTH, PITCH_WIDTH, BALL_RADIUS
-from Utils.DefensivePlan import route, wrap
-from Utils.TeamPolicy import Decision, distance, lane_clear
-from Utils.TeamTactics import TacticalPolicy
+from .CourseSpecs import PITCH_LENGTH, PITCH_WIDTH, BALL_RADIUS
+from .DefensivePlan import route, wrap
+from .TeamPolicy import Decision, distance, lane_clear
+from .TeamTactics import TacticalPolicy
 
 SETTINGS = {
     'lead_pass': True,

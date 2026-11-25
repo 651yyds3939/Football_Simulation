@@ -5,7 +5,7 @@ when its team controls the ball; non-carriers yield out of the contest corridor.
 All targets use observed state and measured primitive rates, never placements.
 """
 import math
-from Utils.TeamPolicy import TeamPolicy, Decision, distance, lane_clear
+from .TeamPolicy import TeamPolicy, Decision, distance, lane_clear
 
 SETTINGS = {
     'handoff_distance': .60,
@@ -89,7 +89,7 @@ class TacticalPolicy(TeamPolicy):
             own_near=distance(mates[carrier]['position'],ball);enemy_near=min((distance(p,ball) for p in enemies),default=math.inf)
             possessing=match.get('last_touch') in mates and own_near<.8
             if possessing or not SETTINGS['search_attack_only']:
-                from Utils.DefensivePlan import route
+                from .DefensivePlan import route
                 velocity=world['ball'].get('velocity',[0.,0.])
                 speed=math.hypot(*velocity[:2]);horizon=SETTINGS['search_predict']
                 predicted=(ball[0]+velocity[0]*min(horizon,.5/max(speed,.001)),ball[1]+velocity[1]*min(horizon,.5/max(speed,.001)))

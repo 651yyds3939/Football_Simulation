@@ -2,11 +2,11 @@
 
 import math
 
-from Utils.CourseSpecs import BALL_RADIUS, GOAL_WIDTH, PITCH_LENGTH
-from Utils.DefensivePlan import route, wrap
-from Utils.Navigation import turn_action
-from Utils.Passing import frame
-from Utils.TeamPolicy import Decision, distance
+from .CourseSpecs import BALL_RADIUS, GOAL_WIDTH, PITCH_LENGTH
+from .DefensivePlan import route, wrap
+from .Navigation import turn_action
+from .Passing import frame
+from .TeamPolicy import Decision, distance
 
 GOALKEEPER_DEPTH = 4.14
 GOALKEEPER_SPAN = 1.10

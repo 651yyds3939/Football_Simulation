@@ -1,7 +1,7 @@
 """Body-frame ball alignment and hysteresis, independent of the robot SDK."""
 import math
-from Utils.TeamPolicy import distance, unit, avoid_obstacles
-from Utils.DefensivePlan import route, recovery_action, SETTINGS
+from .TeamPolicy import distance, unit, avoid_obstacles
+from .DefensivePlan import route, recovery_action, SETTINGS
 
 ATTACK = {'INTERCEPT', 'DRIBBLE', 'EVADE_DRIBBLE', 'SHOOT', 'PASS', 'CLEAR', 'RESTART'}
 

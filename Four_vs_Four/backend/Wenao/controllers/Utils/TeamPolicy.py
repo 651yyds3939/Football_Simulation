@@ -1,7 +1,7 @@
 """Pure role decisions. Coordinates in metres; no simulator/ground-truth API."""
 from dataclasses import dataclass
 import math
-from Utils.DefensivePlan import interception, SETTINGS
+from .DefensivePlan import interception, SETTINGS
 
 
 def distance(a, b):

@@ -3,11 +3,11 @@
 from dataclasses import dataclass
 import math
 
-from Utils.CourseSpecs import BALL_RADIUS, GOAL_WIDTH, PITCH_LENGTH, PITCH_WIDTH
-from Utils.DefensivePlan import route, wrap
-from Utils.GoalCover import rolling_crossing, reachable_shot_point
-from Utils.Passing import bearing, frame, offset
-from Utils.TeamPolicy import Decision, distance, lane_clear
+from .CourseSpecs import BALL_RADIUS, GOAL_WIDTH, PITCH_LENGTH, PITCH_WIDTH
+from .DefensivePlan import route, wrap
+from .GoalCover import rolling_crossing, reachable_shot_point
+from .Passing import bearing, frame, offset
+from .TeamPolicy import Decision, distance, lane_clear
 
 HALF_FIELD = PITCH_LENGTH / 2
 HALF_WIDTH = PITCH_WIDTH / 2
