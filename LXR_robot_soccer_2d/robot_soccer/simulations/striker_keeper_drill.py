@@ -28,7 +28,7 @@ import random
 from dataclasses import dataclass
 from typing import Callable, Dict, List, Optional, Tuple, Union
 
-from ..behaviours.goalkeeper import goalkeeper_behaviour
+from ..behaviours.goalkeeper import KEEPER_DESIGNS, KeeperParams, goalkeeper_behaviour
 from ..behaviours.striker import striker_behaviour
 from ..environment.ball import Ball, BallParams, ball_kick
 from ..environment.pitch import PitchParams
@@ -85,15 +85,28 @@ def striker_keeper_drill(n_trials: int = 5,
                          sensors: Union[Setting, Tuple[Setting, Setting]] = 'realistic',
                          seed: int = 1, use_odometry: bool = True, n_attackers: int = 1,
                          verbose: bool = True,
-                         on_step: Optional[Callable[[DrillFrame], bool]] = None) -> List[Attempt]:
+                         on_step: Optional[Callable[[DrillFrame], bool]] = None,
+                         *, keeper_design: Union[str, KeeperParams] = 'refined',
+                         per_trial_rng: bool = False) -> List[Attempt]:
     """Run the drill and return one Attempt per attempt.
 
     sensors is one setting for every robot, or (attackers, keeper). on_step, if
     given, is called after every step with a DrillFrame; returning False stops
     the drill (the unfinished attempt is left out of the results).
+    keeper_design selects a named or custom policy. per_trial_rng shares the
+    initial random seed for each trial across designs, independently of prior
+    trial lengths. The default preserves the historical sensor comparison.
     """
     if n_attackers not in (1, 2):
         raise ValueError('n_attackers must be 1 or 2')
+    if isinstance(keeper_design, KeeperParams):
+        keeper_params = keeper_design
+        design_name = 'custom'
+    else:
+        if keeper_design not in KEEPER_DESIGNS:
+            raise ValueError(f'unknown keeper design: {keeper_design}')
+        keeper_params = KEEPER_DESIGNS[keeper_design]
+        design_name = keeper_design
     na = n_attackers
     n = na + 1                                   # robots: attackers, then the keeper
     if not isinstance(sensors, tuple):
@@ -107,6 +120,7 @@ def striker_keeper_drill(n_trials: int = 5,
     ball_y = [4 * rng.random() - 2 for _ in range(n_trials)]
     support_x = [1.0 + 1.5 * rng.random() for _ in range(n_trials)]
     support_y = [4 * rng.random() - 2 for _ in range(n_trials)]
+    trial_seeds = [rng.getrandbits(64) for _ in range(n_trials)] if per_trial_rng else None
 
     pp = PitchParams()
     bp = BallParams()
@@ -121,9 +135,11 @@ def striker_keeper_drill(n_trials: int = 5,
 
     if verbose:
         print(f'\nStriker v goalkeeper: {na} attacker(s) {_describe(sensors[0])}, '
-              f'keeper {_describe(sensors[1])}')
+              f'keeper {_describe(sensors[1])} ({design_name} design)')
 
     for trial in range(n_trials):
+        if trial_seeds is not None:
+            rng = random.Random(trial_seeds[trial])
         # ---- Start of an attempt ----
         ball_start = (ball_x[trial], ball_y[trial])
         support = (support_x[trial], support_y[trial])
@@ -157,7 +173,8 @@ def striker_keeper_drill(n_trials: int = 5,
                 if k < na:
                     cmd, mem[k] = striker_behaviour(percepts[k], mem[k], 1, pp, bp, rp, odo, rng)
                 else:
-                    cmd, mem[k] = goalkeeper_behaviour(percepts[k], mem[k], 2, pp, bp, rp, odo)
+                    cmd, mem[k] = goalkeeper_behaviour(percepts[k], mem[k], 2, pp, bp, rp, odo,
+                                                       params=keeper_params)
                 cmds.append(cmd)
 
             done = False
@@ -236,6 +253,8 @@ def main() -> None:
     parser.add_argument('--attempts', type=int, default=5)
     parser.add_argument('--sensors', default='realistic', help="attackers: realistic or perfect")
     parser.add_argument('--keeper-sensors', default=None, help='keeper (default: same as attackers)')
+    parser.add_argument('--keeper-design', choices=KEEPER_DESIGNS, default='refined',
+                        help='goalkeeper policy (default: refined)')
     parser.add_argument('--attackers', type=int, default=1, choices=(1, 2))
     parser.add_argument('--seed', type=int, default=1)
     parser.add_argument('--no-odometry', action='store_true', help='behaviours ignore odometry')
@@ -251,7 +270,7 @@ def main() -> None:
         settings = [sensor_setting(sensors[0])] * args.attackers + [sensor_setting(sensors[1])]
         viewer = DrillViewer(args.attackers, settings, RobotParams(), speed=args.speed, save=args.save)
     striker_keeper_drill(args.attempts, sensors, args.seed, not args.no_odometry, args.attackers,
-                         on_step=viewer)
+                         on_step=viewer, keeper_design=args.keeper_design)
     if viewer is not None:
         viewer.finish(hold=not args.no_hold)
         if args.save:

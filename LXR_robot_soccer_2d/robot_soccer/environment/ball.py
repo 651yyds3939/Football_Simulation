@@ -8,7 +8,7 @@ from __future__ import annotations
 import math
 import random
 from dataclasses import dataclass
-from typing import Optional, Sequence
+from typing import Callable, Optional, Sequence
 
 from ..geometry import Vec2, dot, norm, wrap_angle
 from .pitch import PitchParams, goal_geometry
@@ -50,16 +50,39 @@ class Ball:
     last_touch_robot: Optional[int] = None    # index into world.robots
 
 
-def ball_step(ball: Ball, robots: Sequence, pp: PitchParams, bp: BallParams, dt: float) -> None:
+def _rolling_substeps(speed: float, bp: BallParams, dt: float) -> int:
+    return max(1, math.ceil(speed * dt / (0.5 * bp.radius)))
+
+
+def _rolling_factor(speed: float, bp: BallParams, dt: float) -> float:
+    dv = (bp.roll_decel + bp.drag * speed) * dt
+    return 0.0 if dv >= speed or speed < bp.v_stop else 1 - dv / speed
+
+
+def rolling_range(speed: float, bp: BallParams, dt: float) -> float:
+    """Distance before a ball rolling without collisions stops at this time step."""
+    distance = 0.0
+    while speed > 0:
+        n_sub = _rolling_substeps(speed, bp, dt)
+        h = dt / n_sub
+        for _ in range(n_sub):
+            speed *= _rolling_factor(speed, bp, h)
+            distance += speed * h
+    return distance
+
+
+def ball_step(ball: Ball, robots: Sequence, pp: PitchParams, bp: BallParams, dt: float,
+              *, on_robot_contact: Optional[Callable[[int], None]] = None) -> None:
     """Move the ball for one time step.
 
     The ball rolls on the ground (2D) and slows down from rolling resistance.
     It bounces off robots, goal posts and goal nets; a walking robot pushes it
     along (dribbling). Whether it has crossed a line is decided by referee_step.
+    The optional contact callback receives the index of each robot hit.
     """
     # Sub-steps short enough (half a ball radius) that the ball cannot jump
     # through a post or a net in one step.
-    n_sub = max(1, math.ceil(norm(ball.vel) * dt / (0.5 * bp.radius)))
+    n_sub = _rolling_substeps(norm(ball.vel), bp, dt)
     h = dt / n_sub
     posts, nets = goal_geometry(pp)
 
@@ -67,12 +90,8 @@ def ball_step(ball: Ball, robots: Sequence, pp: PitchParams, bp: BallParams, dt:
         # Rolling resistance: slows the ball down, never reverses it
         speed = norm(ball.vel)
         if speed > 0:
-            dv = (bp.roll_decel + bp.drag * speed) * h
-            if dv >= speed or speed < bp.v_stop:
-                ball.vel = (0.0, 0.0)
-            else:
-                factor = 1 - dv / speed
-                ball.vel = (ball.vel[0] * factor, ball.vel[1] * factor)
+            factor = _rolling_factor(speed, bp, h)
+            ball.vel = (ball.vel[0] * factor, ball.vel[1] * factor) if factor else (0.0, 0.0)
         ball.pos = (ball.pos[0] + ball.vel[0] * h, ball.pos[1] + ball.vel[1] * h)
 
         # Robots: circles that may be moving
@@ -80,6 +99,8 @@ def ball_step(ball: Ball, robots: Sequence, pp: PitchParams, bp: BallParams, dt:
             if _hit_circle(ball, robot.pos, bp.robot_radius + bp.radius, robot.vel, bp.e_robot):
                 ball.last_touch_team = robot.team
                 ball.last_touch_robot = k
+                if on_robot_contact is not None:
+                    on_robot_contact(k)
 
         # Goal posts: fixed circles
         for post in posts:

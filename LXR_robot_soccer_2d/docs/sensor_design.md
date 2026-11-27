@@ -70,7 +70,7 @@ NAO6 有上下两个摄像头。代码只表示上摄像头的水平视野，`mi
 
 ## 前锋对门将的感知对比
 
-仿真步长 0.02 s，随机种子 `1`，每种组合 500 次尝试。四种组合使用相同的起始站位和球位。平均进球用时只统计进球的尝试。
+本表使用 MATLAB 基线门将（`--keeper-design matlab`）。仿真步长 0.02 s，随机种子 `1`，每种组合 500 次尝试。四种组合使用相同的起始站位和球位。平均进球用时只统计进球的尝试。
 
 | 前锋 / 门将 | 进球 | 扑救或解围 | 射失 | 超时 | 进球率 | 平均进球用时 |
 |---|---:|---:|---:|---:|---:|---:|
@@ -85,7 +85,7 @@ NAO6 有上下两个摄像头。代码只表示上摄像头的水平视野，`mi
 
 ```bash
 .venv/bin/python -m unittest discover -s tests -p 'test_sensor.py' -v
-.venv/bin/python -m robot_soccer.simulations.compare_sensor_settings --attempts 500 --seed 1
+.venv/bin/python -m robot_soccer.simulations.compare_sensor_settings --attempts 500 --seed 1 --keeper-design matlab
 ```
 
 ## 局限
