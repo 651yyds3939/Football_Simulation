@@ -1,4 +1,4 @@
-"""The historical Python motion configuration must reproduce the MATLAB code.
+"""The historical Python keeper and motion configuration must reproduce MATLAB.
 
 golden/matlab_traces.json comes from golden/make_matlab_traces.m. Each trace is
 compared every 0.5 s: positions, headings, the ball and each robot's state.
@@ -9,6 +9,7 @@ from dataclasses import replace
 from pathlib import Path
 
 from robot_soccer.behaviours.ball_prediction import ball_path, intercept_point, pass_speed
+from robot_soccer.behaviours.goalkeeper import MATLAB_KEEPER
 from robot_soccer.environment.ball import Ball, BallParams
 from robot_soccer.environment.pitch import PitchParams
 from robot_soccer.environment.world import Robot, World
@@ -39,7 +40,7 @@ class MatlabCrossCheck(unittest.TestCase):
                 w = World(ball=Ball(pos=tuple(trace['ball_start']), vel=tuple(trace['ball_vel'])),
                           robots=robots)
                 outcome, info = run_sim(w, trace['roles'], SENSORS[trace['sensors']], PP, BP, RP, 40,
-                                        sample_every=25)
+                                        sample_every=25, keeper_params=MATLAB_KEEPER)
                 self.assertEqual(outcome, trace['outcome'])
                 self.assertAlmostEqual(w.t, trace['t_end'], delta=1e-9)
                 self.assertEqual(len(info.samples), len(trace['samples']))

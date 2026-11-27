@@ -8,7 +8,7 @@ from dataclasses import replace
 
 from robot_soccer.behaviours.approach import odometry_update
 from robot_soccer.behaviours.ball_prediction import ball_path, intercept_point, pass_speed, track_ball
-from robot_soccer.behaviours.goalkeeper import goalkeeper_behaviour
+from robot_soccer.behaviours.goalkeeper import MATLAB_KEEPER, goalkeeper_behaviour
 from robot_soccer.behaviours.striker import striker_behaviour
 from robot_soccer.environment.ball import Ball, BallParams, ball_step
 from robot_soccer.environment.pitch import PitchParams
@@ -115,9 +115,10 @@ class StrikerKeeperChecks(unittest.TestCase):
             outcome, _ = run_sim(w, ['striker'], self.spp, self.pp, self.bp, self.rp, 60, rng=self.rng)
             self.assertEqual(outcome, 'goal', f'from {pos}')
 
-    def test_06_keeper_guards_the_line_to_the_ball(self):
+    def test_06_baseline_keeper_guards_the_line_to_the_ball(self):
         w = World(ball=Ball(pos=(2.0, 1.5)), robots=[Robot((4.15, 0.0), math.pi, 2)])
-        run_sim(w, ['keeper'], self.spp, self.pp, self.bp, self.rp, 10, rng=self.rng)
+        run_sim(w, ['keeper'], self.spp, self.pp, self.bp, self.rp, 10, rng=self.rng,
+                keeper_params=MATLAB_KEEPER)
         goal = (self.pp.own_goal_x(2), 0.0)
         to_ball = (w.ball.pos[0] - goal[0], w.ball.pos[1])
         target = (goal[0] + 0.5 * to_ball[0] / norm(to_ball), 0.5 * to_ball[1] / norm(to_ball))

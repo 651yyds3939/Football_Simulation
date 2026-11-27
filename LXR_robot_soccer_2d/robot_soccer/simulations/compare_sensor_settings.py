@@ -13,6 +13,7 @@ from __future__ import annotations
 import argparse
 from typing import Dict, List
 
+from ..behaviours.goalkeeper import KEEPER_DESIGNS
 from .striker_keeper_drill import striker_keeper_drill
 
 SETTINGS = (('both perfect', ('perfect', 'perfect')),
@@ -21,11 +22,12 @@ SETTINGS = (('both perfect', ('perfect', 'perfect')),
             ('both realistic', ('realistic', 'realistic')))
 
 
-def compare_sensor_settings(n_trials: int = 50, seed: int = 1, verbose: bool = True) -> List[Dict]:
+def compare_sensor_settings(n_trials: int = 50, seed: int = 1, verbose: bool = True,
+                            *, keeper_design: str = 'refined') -> List[Dict]:
     """Returns one row per setting: counts, goal rate and mean time to a goal (s)."""
     rows = []
     for name, sensors in SETTINGS:
-        results = striker_keeper_drill(n_trials, sensors, seed, verbose=False)
+        results = striker_keeper_drill(n_trials, sensors, seed, verbose=False, keeper_design=keeper_design)
         goal_times = [r.time for r in results if r.outcome == 'goal']
         count = lambda outcome: sum(r.outcome == outcome for r in results)
         rows.append({'setting': name, 'goals': count('goal'), 'saved': count('saved'),
@@ -33,12 +35,13 @@ def compare_sensor_settings(n_trials: int = 50, seed: int = 1, verbose: bool = T
                      'goal_rate': count('goal') / n_trials,
                      'time_to_goal': sum(goal_times) / len(goal_times) if goal_times else float('nan')})
     if verbose:
-        print(f'\nStriker v goalkeeper: {n_trials} attempts per setting, seed {seed}\n')
+        print(f'\nStriker v goalkeeper: {n_trials} attempts per setting, seed {seed}, '
+              f'keeper design {keeper_design}\n')
         print(f"  {'setting':<18s} {'goals':>6s} {'saved':>6s} {'missed':>7s} {'timeout':>8s} "
               f"{'goal rate':>10s} {'time to goal':>14s}")
         for r in rows:
             print(f"  {r['setting']:<18s} {r['goals']:6d} {r['saved']:6d} {r['missed']:7d} "
-                  f"{r['timeout']:8d} {100 * r['goal_rate']:9.0f}% {r['time_to_goal']:12.1f} s")
+                  f"{r['timeout']:8d} {r['goal_rate']:>10.1%} {r['time_to_goal']:12.2f} s")
         print()
     return rows
 
@@ -47,5 +50,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument('--attempts', type=int, default=50)
     parser.add_argument('--seed', type=int, default=1)
+    parser.add_argument('--keeper-design', choices=KEEPER_DESIGNS, default='refined',
+                        help='goalkeeper policy (default: refined)')
     args = parser.parse_args()
-    compare_sensor_settings(args.attempts, args.seed)
+    compare_sensor_settings(args.attempts, args.seed, keeper_design=args.keeper_design)

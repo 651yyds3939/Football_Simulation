@@ -3,7 +3,7 @@ import random
 from dataclasses import dataclass, field
 from typing import List
 
-from robot_soccer.behaviours.goalkeeper import goalkeeper_behaviour
+from robot_soccer.behaviours.goalkeeper import DEFAULT_KEEPER, goalkeeper_behaviour
 from robot_soccer.behaviours.striker import striker_behaviour
 from robot_soccer.environment.ball import ball_kick
 from robot_soccer.environment.world import world_step
@@ -21,7 +21,8 @@ class RunInfo:
     samples: List[dict] = field(default_factory=list)
 
 
-def run_sim(w, roles, sp, pp, bp, rp, T, stop_on_receive=False, sample_every=0, rng=None):
+def run_sim(w, roles, sp, pp, bp, rp, T, stop_on_receive=False, sample_every=0, rng=None,
+            *, keeper_params=DEFAULT_KEEPER):
     """All robots sense, then decide, then move.
 
     Returns (outcome, info). outcome is a referee event type, 'cleared' (the
@@ -47,7 +48,7 @@ def run_sim(w, roles, sp, pp, bp, rp, T, stop_on_receive=False, sample_every=0, 
                                                 rs[k].odom, rng)
             else:
                 cmd, mem[k] = goalkeeper_behaviour(percepts[k], mem[k], w.robots[k].team, pp, bp, rp,
-                                                   rs[k].odom)
+                                                   rs[k].odom, params=keeper_params)
             cmds.append(cmd)
             if mem[k].state not in info.states[k]:
                 info.states[k].append(mem[k].state)
